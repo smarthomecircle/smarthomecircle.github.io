@@ -3,7 +3,7 @@ name: NPM Build and Deploy to gh-pages
 on:
   push:
     branches:
-      - master
+      - main
 
   workflow_dispatch:
 
