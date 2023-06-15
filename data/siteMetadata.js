@@ -6,12 +6,12 @@ const siteMetadata = {
     'Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.',
   language: 'en-us',
   theme: 'light', // system, dark or light
-  siteUrl: 'SmartHomeCircle.com', //TODO
+  siteUrl: 'https://smarthomecircle.com', //TODO
   siteRepo: 'https://github.com/',
   siteLogo: '/static/images/favicons/icon.png', 
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.jpg',
-  email: '',
+  email: 'smarthomecircle@gmail.com',
   github: '',
   twitter: 'https://twitter.com/amrutprabhu42',
   facebook: '',
