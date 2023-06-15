@@ -1,0 +1,84 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>RefactorFirst</title>
+      <link></link>
+      <description>Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.</description>
+      <language>en-us</language>
+      <managingEditor> (Amrut Prabhu)</managingEditor>
+      <webMaster> (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Thu, 15 Jun 2023 00:00:00 GMT</lastBuildDate>
+      <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>/spring-boot-3-with-docker-compose-support</guid>
+    <title>Spring Boot 3 Docker Compose Support</title>
+    <link>/spring-boot-3-with-docker-compose-support</link>
+    <description>We will have a look at the new Spring Boot 3.1 feature supporting Docker Compose files on startup. No need to start Docker compose separately again</description>
+    <pubDate>Thu, 15 Jun 2023 00:00:00 GMT</pubDate>
+    <author> (Amrut Prabhu)</author>
+    <category>docker</category><category>docker compose</category><category>Spring Boot</category><category>Spring Data</category><category>MySQL</category>
+  </item>
+
+  <item>
+    <guid>/spring-cloud-aws-s3-localstack</guid>
+    <title>Spring Cloud AWS 3.0 S3 with Spring Boot and Localstack</title>
+    <link>/spring-cloud-aws-s3-localstack</link>
+    <description>In this article, we will look into how we can use Spring Cloud AWS S3 in a Spring Boot Application to communicate with AWS. We will run our setup with LocalStack to mock the actual AWS S3 service</description>
+    <pubDate>Thu, 25 May 2023 00:00:00 GMT</pubDate>
+    <author> (Amrut Prabhu)</author>
+    <category>Spring Boot</category><category>AWS</category><category>AWS S3</category><category>Spring Cloud</category><category>Spring Clous AWS</category>
+  </item>
+
+  <item>
+    <guid>/distributed-tracing-with-opentelemetry-jaeger-in-spring-boot</guid>
+    <title>Distributed Tracing With OpenTelemetry and Jaeger In Spring Boot 3</title>
+    <link>/distributed-tracing-with-opentelemetry-jaeger-in-spring-boot</link>
+    <description>In this article, we will look at how we can export distributed traces using Opentelemetry to Jaeger from a Spring Boot Application</description>
+    <pubDate>Thu, 11 May 2023 00:00:00 GMT</pubDate>
+    <author> (Amrut Prabhu)</author>
+    <category>Distributed Tracing</category><category>Spring Boot</category><category>Java</category><category>Jaeger</category>
+  </item>
+
+  <item>
+    <guid>/spring-boot-with-mongodb-using-spring-data</guid>
+    <title>Spring Boot With MongoDB Using Spring Data</title>
+    <link>/spring-boot-with-mongodb-using-spring-data</link>
+    <description>In this article, we will look at how we can start a local MongoDB instance using Docker and then communicate with it using a Spring Boot Application</description>
+    <pubDate>Thu, 04 May 2023 00:00:00 GMT</pubDate>
+    <author> (Amrut Prabhu)</author>
+    <category>MongoDB</category><category>Spring Boot</category><category>Spring Data</category><category>Mongo Express</category><category>NoSQL</category>
+  </item>
+
+  <item>
+    <guid>/setup-fido2-passwordless-authentication-with-keycloak</guid>
+    <title>FIDO2 Passwordless Authentication With Keycloak - Part 2</title>
+    <link>/setup-fido2-passwordless-authentication-with-keycloak</link>
+    <description>In this article, we will explore how we can implement FIDO2 passwordless authentication using Keycloak.</description>
+    <pubDate>Thu, 20 Apr 2023 00:00:00 GMT</pubDate>
+    <author> (Amrut Prabhu)</author>
+    <category>Keycloak</category><category>Authentication</category><category>Passwordless</category><category>FIDO2</category>
+  </item>
+
+  <item>
+    <guid>/how-does-fido2-passwordless-authentication-work</guid>
+    <title>FIDO2 Passwordless Authentication With Keycloak - Part 1</title>
+    <link>/how-does-fido2-passwordless-authentication-work</link>
+    <description>In this article we will look into understanding how FIDO2 passwordless authentication works</description>
+    <pubDate>Thu, 13 Apr 2023 00:00:00 GMT</pubDate>
+    <author> (Amrut Prabhu)</author>
+    <category>Keycloak</category><category>Passwordless</category><category>Authentication</category><category>FIDO2</category>
+  </item>
+
+  <item>
+    <guid>/kick-start-spring-boot-application-with-aws-lambda-snap-start</guid>
+    <title>Kick Start Spring Boot On AWS Lambda with Snap Start</title>
+    <link>/kick-start-spring-boot-application-with-aws-lambda-snap-start</link>
+    <description>We will look into how we can create an AWS Lambda with Terraform and run a Spring Boot application to view its performance with the Snap Start option enabled</description>
+    <pubDate>Thu, 26 Jan 2023 00:00:00 GMT</pubDate>
+    <author> (Amrut Prabhu)</author>
+    <category>Java</category><category>Spring Boot</category><category>AWS</category><category>AWS Lambda</category><category>Spring Cloud</category><category>Spring Cloud Functions</category>
+  </item>
+
+    </channel>
+  </rss>

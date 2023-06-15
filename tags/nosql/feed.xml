@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>RefactorFirst</title>
+      <link></link>
+      <description>Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.</description>
+      <language>en-us</language>
+      <managingEditor> (Amrut Prabhu)</managingEditor>
+      <webMaster> (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Thu, 04 May 2023 00:00:00 GMT</lastBuildDate>
+      <atom:link href="/tags/nosql/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>/spring-boot-with-mongodb-using-spring-data</guid>
+    <title>Spring Boot With MongoDB Using Spring Data</title>
+    <link>/spring-boot-with-mongodb-using-spring-data</link>
+    <description>In this article, we will look at how we can start a local MongoDB instance using Docker and then communicate with it using a Spring Boot Application</description>
+    <pubDate>Thu, 04 May 2023 00:00:00 GMT</pubDate>
+    <author> (Amrut Prabhu)</author>
+    <category>MongoDB</category><category>Spring Boot</category><category>Spring Data</category><category>Mongo Express</category><category>NoSQL</category>
+  </item>
+
+    </channel>
+  </rss>

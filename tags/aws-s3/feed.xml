@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>RefactorFirst</title>
+      <link></link>
+      <description>Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.</description>
+      <language>en-us</language>
+      <managingEditor> (Amrut Prabhu)</managingEditor>
+      <webMaster> (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Thu, 25 May 2023 00:00:00 GMT</lastBuildDate>
+      <atom:link href="/tags/aws-s3/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>/spring-cloud-aws-s3-localstack</guid>
+    <title>Spring Cloud AWS 3.0 S3 with Spring Boot and Localstack</title>
+    <link>/spring-cloud-aws-s3-localstack</link>
+    <description>In this article, we will look into how we can use Spring Cloud AWS S3 in a Spring Boot Application to communicate with AWS. We will run our setup with LocalStack to mock the actual AWS S3 service</description>
+    <pubDate>Thu, 25 May 2023 00:00:00 GMT</pubDate>
+    <author> (Amrut Prabhu)</author>
+    <category>Spring Boot</category><category>AWS</category><category>AWS S3</category><category>Spring Cloud</category><category>Spring Clous AWS</category>
+  </item>
+
+    </channel>
+  </rss>

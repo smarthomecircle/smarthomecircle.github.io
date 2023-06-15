@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>/about</loc>
+  </url>
+
+  <url>
+    <loc></loc>
+  </url>
+
+  <url>
+    <loc>/posts</loc>
+  </url>
+
+  <url>
+    <loc>/privacy</loc>
+  </url>
+
+  <url>
+    <loc>/projects</loc>
+  </url>
+
+  <url>
+    <loc>/tags</loc>
+  </url>
+
+  <url>
+    <loc>/distributed-tracing-with-opentelemetry-jaeger-in-spring-boot</loc>
+  </url>
+
+  <url>
+    <loc>/how-does-fido2-passwordless-authentication-work</loc>
+  </url>
+
+  <url>
+    <loc>/kick-start-spring-boot-application-with-aws-lambda-snap-start</loc>
+  </url>
+
+  <url>
+    <loc>/setup-fido2-passwordless-authentication-with-keycloak</loc>
+  </url>
+
+  <url>
+    <loc>/spring-boot-3-with-docker-compose-support</loc>
+  </url>
+
+  <url>
+    <loc>/spring-boot-with-mongodb-using-spring-data</loc>
+  </url>
+
+  <url>
+    <loc>/spring-cloud-aws-s3-localstack</loc>
+  </url>
+
+  <url>
+    <loc>/tags/authentication</loc>
+  </url>
+
+  <url>
+    <loc>/tags/aws</loc>
+  </url>
+
+  <url>
+    <loc>/tags/aws-lambda</loc>
+  </url>
+
+  <url>
+    <loc>/tags/aws-s3</loc>
+  </url>
+
+  <url>
+    <loc>/tags/distributed-tracing</loc>
+  </url>
+
+  <url>
+    <loc>/tags/docker</loc>
+  </url>
+
+  <url>
+    <loc>/tags/docker-compose</loc>
+  </url>
+
+  <url>
+    <loc>/tags/fido2</loc>
+  </url>
+
+  <url>
+    <loc>/tags/jaeger</loc>
+  </url>
+
+  <url>
+    <loc>/tags/java</loc>
+  </url>
+
+  <url>
+    <loc>/tags/keycloak</loc>
+  </url>
+
+  <url>
+    <loc>/tags/mongo-express</loc>
+  </url>
+
+  <url>
+    <loc>/tags/mongodb</loc>
+  </url>
+
+  <url>
+    <loc>/tags/mysql</loc>
+  </url>
+
+  <url>
+    <loc>/tags/nosql</loc>
+  </url>
+
+  <url>
+    <loc>/tags/passwordless</loc>
+  </url>
+
+  <url>
+    <loc>/tags/spring-boot</loc>
+  </url>
+
+  <url>
+    <loc>/tags/spring-cloud</loc>
+  </url>
+
+  <url>
+    <loc>/tags/spring-cloud-functions</loc>
+  </url>
+
+  <url>
+    <loc>/tags/spring-clous-aws</loc>
+  </url>
+
+  <url>
+    <loc>/tags/spring-data</loc>
+  </url>
+</urlset>
