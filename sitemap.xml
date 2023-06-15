@@ -25,114 +25,22 @@
   </url>
 
   <url>
-    <loc>SmartHomeCircle.com/distributed-tracing-with-opentelemetry-jaeger-in-spring-boot</loc>
+    <loc>SmartHomeCircle.com/intro</loc>
   </url>
 
   <url>
-    <loc>SmartHomeCircle.com/how-does-fido2-passwordless-authentication-work</loc>
+    <loc>SmartHomeCircle.com/tags/home-assistant</loc>
   </url>
 
   <url>
-    <loc>SmartHomeCircle.com/kick-start-spring-boot-application-with-aws-lambda-snap-start</loc>
+    <loc>SmartHomeCircle.com/tags/os</loc>
   </url>
 
   <url>
-    <loc>SmartHomeCircle.com/setup-fido2-passwordless-authentication-with-keycloak</loc>
+    <loc>SmartHomeCircle.com/tags/raspberry-pi</loc>
   </url>
 
   <url>
-    <loc>SmartHomeCircle.com/spring-boot-3-with-docker-compose-support</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/spring-boot-with-mongodb-using-spring-data</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/spring-cloud-aws-s3-localstack</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/authentication</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/aws</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/aws-lambda</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/aws-s3</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/distributed-tracing</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/docker</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/docker-compose</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/fido2</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/jaeger</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/java</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/keycloak</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/mongo-express</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/mongodb</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/mysql</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/nosql</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/passwordless</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/spring-boot</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/spring-cloud</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/spring-cloud-functions</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/spring-clous-aws</loc>
-  </url>
-
-  <url>
-    <loc>SmartHomeCircle.com/tags/spring-data</loc>
+    <loc>SmartHomeCircle.com/tags/wifi</loc>
   </url>
 </urlset>
