@@ -8,6 +8,7 @@ email: SmartHomeCircle@gmail.com
 twitter: https://twitter.com/amrutprabhu42
 linkedin: ""
 github: ""
+youtube: "https://www.youtube.com/@SmartHomeCircle"
 ---
 
 Hi there,

@@ -15,7 +15,7 @@ const siteMetadata = {
   github: '',
   twitter: 'https://twitter.com/amrutprabhu42',
   facebook: '',
-  youtube: '',
+  youtube: 'https://www.youtube.com/@SmartHomeCircle',
   linkedin: '',
   locale: 'en-US',
   analytics: {

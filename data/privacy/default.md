@@ -5,17 +5,18 @@ avatar: /static/images/avatar-small.jpg
 avatarBig: /static/images/avatar-big.jpg
 occupation: ""
 company: Personal
-email: contact@refactorfirst.com
+email: smarthomecircle@gmail.com
 twitter: https://twitter.com/amrutprabhu42
-linkedin: https://www.linkedin.com/in/amrut-prabhu-722baa65/
-github: https://github.com/amrutprabhu
+linkedin: "https://www.youtube.com/@SmartHomeCircle"
+youtube: "https://www.youtube.com/@SmartHomeCircle"
+github: https://github.com/smarthomecircle
 ---
 
 Last Modified: June 15, 2023
 
 <hr/>
 
-https://RefactorFirst.com (hereinafter referred to as Service) is operated by Amrut Prabhu. To be compliant with data protection regulations, such as European General Data Protection Regulation, I’m required to explain to you everything about which personal data this Service is collecting, with whom it’s shared, and the reasons behind it.
+https://SmartHomeCircle.com (hereinafter referred to as Service) is operated by Amrut Prabhu. To be compliant with data protection regulations, such as European General Data Protection Regulation, I’m required to explain to you everything about which personal data this Service is collecting, with whom it’s shared, and the reasons behind it.
 
 This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use this Service and the choices you have associated with that data.
 
@@ -24,7 +25,7 @@ We use your data to provide and improve this Service. By using this Service, you
 ## Definitions
 
 <hr/>
-- **Service**: Service is the https://refactorfirst.com website operated by Amrut Prabhu.
+- **Service**: Service is the https://SmartHomeCircle.com website operated by Amrut Prabhu.
 
 - **Personal Data**: Personal Data refers to any data related to a user such as an email address, user name, IP address, etc., which could by itself or combined with other data help me identify the User
 
@@ -147,4 +148,4 @@ Old User’s Cookies might remain in the browser’s local storage, however, the
 
 ## Contact Us
 
-In case you have anything to ask about the privacy policy you can contact me at [contact@refactorfirst.com](mailto:contact@refactorfirst.com)
+In case you have anything to ask about the privacy policy you can contact me at [smarthomecircle@gmail.com](mailto:smarthomecircle@gmail)
