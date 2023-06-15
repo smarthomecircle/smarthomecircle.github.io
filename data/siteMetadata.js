@@ -22,7 +22,7 @@ const siteMetadata = {
     // supports plausible, simpleAnalytics or googleAnalytics
     plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
     simpleAnalytics: false, // true or false
-    googleAnalyticsId: '', // e.g. UA-000000-2 or G-XXXXXXX
+    googleAnalyticsId: 'G-K6F6SF1Y5P', // e.g. UA-000000-2 or G-XXXXXXX
     //"for local-debug"= 8LCBJY1KS1
   },
   newsletter: {
