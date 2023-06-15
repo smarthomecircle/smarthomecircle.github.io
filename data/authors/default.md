@@ -4,7 +4,7 @@ avatar: /static/images/avatar-small.jpg
 avatarBig: /static/images/avatar-big.jpg
 occupation: ""
 company: ""
-email: contact@refactorfirst.com
+email: SmartHomeCircle@gmail.com
 twitter: https://twitter.com/amrutprabhu42
 linkedin: ""
 github: ""

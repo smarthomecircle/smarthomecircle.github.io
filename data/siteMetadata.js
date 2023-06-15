@@ -1,12 +1,12 @@
 const siteMetadata = {
-  title: 'RefactorFirst',
+  title: 'SmartHomeCircle',
   author: 'Amrut Prabhu',
-  headerTitle: 'RefactorFirst',
+  headerTitle: 'SmartHomeCircle',
   description:
     'Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.',
   language: 'en-us',
   theme: 'light', // system, dark or light
-  siteUrl: '', //TODO
+  siteUrl: 'SmartHomeCircle.com', //TODO
   siteRepo: 'https://github.com/',
   siteLogo: '/static/images/favicons/icon.png', //TODO
   image: '/static/images/avatar.png',

@@ -14,7 +14,7 @@ const LayoutWrapper = ({ children }) => {
       <div className="flex flex-col justify-between h-screen">
         <header className="flex items-center justify-between py-10">
           <div>
-            <Link href="/" aria-label="RefactorFirst">
+            <Link href="/" aria-label="SmartHomeCircle">
               <div className="flex items-center justify-between">
                 <div className="mr-3">
                   <Image src="//static/favicons/icon.png" height={50} width={50} />
