@@ -2,21 +2,21 @@
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
       <title>Smart Home Circle</title>
-      <link>SmartHomeCircle.com</link>
+      <link>https://smarthomecircle.com</link>
       <description>Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.</description>
       <language>en-us</language>
-      <managingEditor> (Amrut Prabhu)</managingEditor>
-      <webMaster> (Amrut Prabhu)</webMaster>
+      <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
       <lastBuildDate>Thu, 15 Jun 2023 00:00:00 GMT</lastBuildDate>
-      <atom:link href="SmartHomeCircle.com/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://smarthomecircle.com/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>SmartHomeCircle.com/intro</guid>
+    <guid>https://smarthomecircle.com/intro</guid>
     <title>How to Install Home Assistant OS With WIFI on Raspberry PI</title>
-    <link>SmartHomeCircle.com/intro</link>
+    <link>https://smarthomecircle.com/intro</link>
     
     <pubDate>Thu, 15 Jun 2023 00:00:00 GMT</pubDate>
-    <author> (Amrut Prabhu)</author>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Home Assistant</category><category>OS</category><category>Raspberry Pi</category><category>wifi</category>
   </item>
 
