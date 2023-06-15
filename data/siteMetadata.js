@@ -1,7 +1,7 @@
 const siteMetadata = {
-  title: 'SmartHomeCircle',
+  title: 'Smart Home Circle',
   author: 'Amrut Prabhu',
-  headerTitle: 'SmartHomeCircle',
+  headerTitle: 'Smart Home Circle',
   description:
     'Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.',
   language: 'en-us',
