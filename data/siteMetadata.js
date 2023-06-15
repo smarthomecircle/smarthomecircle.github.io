@@ -8,9 +8,9 @@ const siteMetadata = {
   theme: 'light', // system, dark or light
   siteUrl: 'SmartHomeCircle.com', //TODO
   siteRepo: 'https://github.com/',
-  siteLogo: '/static/images/favicons/icon.png', //TODO
+  siteLogo: '/static/images/favicons/icon.png', 
   image: '/static/images/avatar.png',
-  socialBanner: '', //TODO
+  socialBanner: '/static/images/twitter-card.jpg',
   email: '',
   github: '',
   twitter: 'https://twitter.com/amrutprabhu42',
