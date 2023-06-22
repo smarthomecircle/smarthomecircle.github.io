@@ -7,15 +7,15 @@
       <language>en-us</language>
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 15 Jun 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 22 Jun 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/wifi/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://smarthomecircle.com/intro</guid>
-    <title>How to Install Home Assistant OS With WIFI on Raspberry PI</title>
-    <link>https://smarthomecircle.com/intro</link>
-    
-    <pubDate>Thu, 15 Jun 2023 00:00:00 GMT</pubDate>
+    <guid>https://smarthomecircle.com/connect-wifi-on-home-assistant-on-startup</guid>
+    <title>How to Install Home Assistant and Connect to WIFI on Raspberry PI</title>
+    <link>https://smarthomecircle.com/connect-wifi-on-home-assistant-on-startup</link>
+    <description>In this article we will look into how we can install Home Assistant OS and connect it to the Wifi on boot up.</description>
+    <pubDate>Thu, 22 Jun 2023 00:00:00 GMT</pubDate>
     <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Home Assistant</category><category>OS</category><category>Raspberry Pi</category><category>wifi</category>
   </item>
