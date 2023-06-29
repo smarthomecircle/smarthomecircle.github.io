@@ -11,6 +11,7 @@ summary: 'In this article we will look into how we can install Home Assistant OS
 imageUrl: /static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/cover.png
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
+youtubeLink: https://www.youtube.com/embed/oqN_AA93Atg
 ---
 
 
@@ -23,27 +24,27 @@ To install this Home Assistant OS on your SD card, you will need to follow the f
 1.  Download the Raspberry Pi Imager from [https://www.raspberrypi.com/software/](https://www.raspberrypi.com/software/)
 2.  After installing the imager on your system open it.
 
-![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/1.png)
+![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/1.jpg)
 
 3. click on Choose OS and select “Other specific-purpose OS”.
 
-![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/2.png)
+![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/2.jpg)
 
 4. Then select “Home assistants and home automation” and then select “Home Assistant”
 
-![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/3.png)
+![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/3.jpg)
 
 5. Finally select “Home Assistant OS” depending on the Raspberry PI you have. For example, select RPi 4 for Raspberry PI 4.
 
-![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/4.png)
+![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/4.jpg)
 
 6. Next, Select your storage i.e. your SD card by clicking on “choose storage”.
 
-![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/5.png)
+![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/5.jpg)
 
 7. Make sure you select your SD card here and **not** your computer's hard drive.
 
-![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/6.png)
+![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/6.jpg)
 
 8. With this we are now ready to write the Home Assistant OS on the SD card.
 
@@ -51,7 +52,7 @@ To install this Home Assistant OS on your SD card, you will need to follow the f
 
 With this, you will soon start writing the Home Assistant OS on the SD card.
 
-![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/7.png)
+![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/7.jpg)
 
 Once this finishes, your SD card will automatically be ejected. You will have to reinsert the SD card to your computer.
 
@@ -67,7 +68,7 @@ If you are using a Windows system then the steps are mentioned below this sectio
 
 **Step 1:** run the command `sudo fdisk -l` . You should see some devices something like this.
 
-![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/8.png)
+![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/8.jpg)
 
 **Step 2:** Mount the device with the type “Microsoft reserved” using the command `sudo mount -t auto <device location> /mnt/ha` . Make sure you replace the device id from the output of step number 1.
 
@@ -82,9 +83,9 @@ Also, make sure that the location `/mnt/ha` is a directory. If it does not exist
 **Step 5:** Paste the below content in the file and update the places where you have to put the Wifi SSID and Wifi password.
 
 
-![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/9.png)
+![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/9.jpg)
 
-![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/10.png)
+![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/10.jpg)
 
 that's all you have to do.
 
@@ -100,17 +101,17 @@ sudo arp-scan -l --interface <name of the network interface>
 
 Insert the SD card again in the computer and you will be able to see a boot drive popping up.
 
-![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/11.png)
+![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/11.jpg)
 
 **Step 1:** Open the drive and create a folder called `config` . Then open the config folder and create another folder called `network` .
 
 **Step 2:** Inside the network folder create a file with the name `my-network` . make sure you do not give any extension to the file.
 
-![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/12.png)
+![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/12.jpg)
 
 **Step 3:** Add the following configuration to the file.
 
-![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/13.png)
+![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/13.jpg)
 
 **Step 4:** Change the Wifi SSID and password in the file as per your Wifi SSID and password.
 
@@ -130,7 +131,7 @@ Or you can access it using the location
 ```shell
 http://homeassistant.local:8123
 ```
-![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/14.png)
+![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/14.jpg)
 
 You can always follow the step-by-step guide in the Youtube video mentioned above.
 
