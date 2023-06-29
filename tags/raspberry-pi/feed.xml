@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 22 Jun 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 29 Jun 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/raspberry-pi/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/run-home-assistant-container-with-docker</guid>
+    <title>How to Run Home Assistant Container with Docker</title>
+    <link>https://smarthomecircle.com/run-home-assistant-container-with-docker</link>
+    <description>In this article we will look into how we can run Home Assistant Container with Docker</description>
+    <pubDate>Thu, 29 Jun 2023 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Home Assistant Container</category><category>Home Assistant</category><category>Ubuntu</category><category>Raspberry Pi</category><category>docker compose</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/connect-wifi-on-home-assistant-on-startup</guid>
     <title>How to Install Home Assistant and Connect to WIFI on Raspberry PI</title>

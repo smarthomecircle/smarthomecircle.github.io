@@ -29,7 +29,19 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/run-home-assistant-container-with-docker</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/docker-compose</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/tags/home-assistant</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/home-assistant-container</loc>
   </url>
 
   <url>
@@ -38,6 +50,10 @@
 
   <url>
     <loc>https://smarthomecircle.com/tags/raspberry-pi</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/ubuntu</loc>
   </url>
 
   <url>

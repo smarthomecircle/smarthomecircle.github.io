@@ -8,7 +8,7 @@
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
       <lastBuildDate>Thu, 29 Jun 2023 00:00:00 GMT</lastBuildDate>
-      <atom:link href="https://smarthomecircle.com/tags/home-assistant/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://smarthomecircle.com/tags/ubuntu/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
     <guid>https://smarthomecircle.com/run-home-assistant-container-with-docker</guid>
@@ -18,16 +18,6 @@
     <pubDate>Thu, 29 Jun 2023 00:00:00 GMT</pubDate>
     <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Home Assistant Container</category><category>Home Assistant</category><category>Ubuntu</category><category>Raspberry Pi</category><category>docker compose</category>
-  </item>
-
-  <item>
-    <guid>https://smarthomecircle.com/connect-wifi-on-home-assistant-on-startup</guid>
-    <title>How to Install Home Assistant and Connect to WIFI on Raspberry PI</title>
-    <link>https://smarthomecircle.com/connect-wifi-on-home-assistant-on-startup</link>
-    <description>In this article we will look into how we can install Home Assistant OS and connect it to the Wifi on boot up.</description>
-    <pubDate>Thu, 22 Jun 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
-    <category>Home Assistant</category><category>OS</category><category>Raspberry Pi</category><category>wifi</category>
   </item>
 
     </channel>
