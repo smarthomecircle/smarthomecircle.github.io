@@ -11,6 +11,7 @@ summary: 'In this article we will look into how we can run Home Assistant Contai
 imageUrl: /static/images/2023/run-home-assistant-container/cover.png
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
+youtubeLink: "https://www.youtube.com/embed/Cvjc66-mkFo"
 ---
 
 ## Pre-Requisites
