@@ -8,7 +8,7 @@
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
       <lastBuildDate>Thu, 20 Jul 2023 00:00:00 GMT</lastBuildDate>
-      <atom:link href="https://smarthomecircle.com/tags/ubuntu/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://smarthomecircle.com/tags/esp8266/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
     <guid>https://smarthomecircle.com/esp32-esp8266-esphome-with-home-assistant</guid>
@@ -18,16 +18,6 @@
     <pubDate>Thu, 20 Jul 2023 00:00:00 GMT</pubDate>
     <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Home Assistant Container</category><category>ESP32</category><category>ESP8266</category><category>Home Assistant</category><category>Ubuntu</category><category>Raspberry Pi</category><category>docker compose</category>
-  </item>
-
-  <item>
-    <guid>https://smarthomecircle.com/run-home-assistant-container-with-docker</guid>
-    <title>How to Run Home Assistant Container with Docker</title>
-    <link>https://smarthomecircle.com/run-home-assistant-container-with-docker</link>
-    <description>In this article we will look into how we can run Home Assistant Container with Docker</description>
-    <pubDate>Thu, 29 Jun 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
-    <category>Home Assistant Container</category><category>Home Assistant</category><category>Ubuntu</category><category>Raspberry Pi</category><category>docker compose</category>
   </item>
 
     </channel>

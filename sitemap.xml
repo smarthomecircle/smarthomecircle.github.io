@@ -29,11 +29,23 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/esp32-esp8266-esphome-with-home-assistant</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/run-home-assistant-container-with-docker</loc>
   </url>
 
   <url>
     <loc>https://smarthomecircle.com/tags/docker-compose</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/esp32</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/esp8266</loc>
   </url>
 
   <url>
