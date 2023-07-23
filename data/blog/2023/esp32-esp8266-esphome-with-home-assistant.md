@@ -8,7 +8,7 @@ applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-07-20'
 draft: false
 summary: 'In this article we will look into how we can setup ESP32 / ESP8266 with ESP Home and Home Assistant'
-imageUrl: /static/images/2023/esp32-esp8266-esphome-with-home-assistant/cover.png
+imageUrl: /static/images/2023/esp32-esp8266-esphome-with-home-assistant/cover.jpg
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/S6If_kj9MCM"
@@ -30,11 +30,11 @@ Then, click on the “Add-On Store” in the bottom right-hand corner
 
 Select ESPHome
 
-![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/1-esphome.png)
+![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/1-esphome.jpg)
 
 Click on Install and then “Show in sidebar”
 
-![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/2-esphome-addon.png)
+![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/2-esphome-addon.jpg)
 
   
 
@@ -93,11 +93,11 @@ web_server:
 ```
 Your file would look something like this.
 
-![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/3-esp32-configuration.png)
+![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/3-esp32-configuration.jpg)
 
 Once you are done, click on save and then click on the install option.
 
-![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/4-manual-download.png)
+![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/4-manual-download.jpg)
 
 Now, select “Manual Download” then click on “Modern Format” and wait for it to start compiling.
 
@@ -105,15 +105,15 @@ Once it's completed, the generated file will be downloaded or you can click on t
 
 Now, go to [https://web.esphome.io](https://web.esphome.io) , connect your ESP32 to the USB port, and click on connect
 
-![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/5-web-esphome.png)
+![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/5-web-esphome.jpg)
 
 Once presented with a window, select the “USB Single Serial”
 
-![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/6-select-web-esphome.png)
+![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/6-select-web-esphome.jpg)
 
 Next, click on the “Install” Option and select the file which we just downloaded previously, and then click Install.
 
-![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/7-install-web-esphome.png)
+![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/7-install-web-esphome.jpg)
 
 Finally when you see connecting progress, press and hold the “Boot” button on your ESP32 until you see the Installing progress bar.
 
@@ -123,7 +123,7 @@ You will now have to search the IP address of the device in your router or use s
 
 Once you figured out the IP address of the device simply paste the IP in the browser and you will see the ESP32 device webpage from the HTTP Server we added.
 
-![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/8-esp32-http-server.png)
+![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/8-esp32-http-server.jpg)
 
 ## Connecting ESP32 with Home Assistant
 
@@ -131,22 +131,22 @@ Navigate to settings in Home Assistant, then click on devices, then click on “
 
 Then search for ESPHome
 
-![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/9-esphome.png)
+![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/9-esphome.jpg)
 
 Now specify the IP address and keep the port as 6053 and then click submit. No need to change the port.
 
-![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/10-esp32-home-assistant-setup.png)
+![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/10-esp32-home-assistant-setup.jpg)
 
 Now, if it asks you for an encryption key, then you will find this in the configuration file in the ESPHome.
 
-![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/11-encryption-key.png)
+![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/11-encryption-key.jpg)
 
 With this, you are done.
 
 In the ESPHome click on the devices
 
-![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/11-esphome-homeassistant.png)
+![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/11-esphome-homeassistant.jpg)
 
 Here you will be able to see the ESP32 device.
 
-![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/12-home-assistant-esp32-device.png)
+![](/static/images/2023/esp32-esp8266-esphome-with-home-assistant/12-home-assistant-esp32-device.jpg)
