@@ -79,8 +79,8 @@ export default function ListLayout({
                 referalLink="https://www.copecart.com/products/521411d4/p/techapk42"
               /> */}
             </div>
-            <AdsSection id="ad1" slot="6310228644" />
-            <AdsSection id="ad2" slot="1649763058" />
+            {/* <AdsSection id="ad1" slot="6310228644" /> */}
+            {/* <AdsSection id="ad2" slot="1649763058" /> */}
           </div>
         </div>
       </div>
