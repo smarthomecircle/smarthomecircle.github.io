@@ -29,6 +29,10 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/esp32-cam-esphome-with-home-assistant</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/esp32-esp8266-esphome-with-home-assistant</loc>
   </url>
 
@@ -45,7 +49,15 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/tags/esp32-cam</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/tags/esp8266</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/esphome</loc>
   </url>
 
   <url>
