@@ -14,6 +14,8 @@ customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/Cvjc66-mkFo"
 ---
 
+<TOCInline toc={props.toc} asDisclosure />
+
 ## Pre-Requisites
 
 -   A device with Ubuntu running.
