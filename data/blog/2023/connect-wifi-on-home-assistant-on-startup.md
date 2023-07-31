@@ -17,6 +17,8 @@ youtubeLink: https://www.youtube.com/embed/oqN_AA93Atg
 
 This article is a step-by-step guide on installing Home Assistant on a Raspberry PI and connecting to WIFI on boot up.
 
+<TOCInline toc={props.toc} asDisclosure />
+
 ## Installing Home Assistant On Raspberry PI.
 
 To install this Home Assistant OS on your SD card, you will need to follow the following steps

@@ -14,6 +14,8 @@ customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/S6If_kj9MCM"
 ---
 
+<TOCInline toc={props.toc} asDisclosure />
+
 ## Pre-Requisites
 
 -   Home Assistant OS Or Home Assistant Container up and running.

@@ -15,6 +15,7 @@ youtubeLink: "https://www.youtube.com/embed/mDxNwZGAw7k"
 ---
 In this article, we will be looking at how we can actually connect ESP32 CAM with Home Assistant.  
   
+<TOCInline toc={props.toc} asDisclosure />
 
 ## ESP32 CAM Configuration
 
