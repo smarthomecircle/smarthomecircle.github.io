@@ -5,13 +5,13 @@ categories: ''
 tags: [Matter, Home Assistant, Smart Plug]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2023-07-27'
+date: '2023-08-03'
 draft: false
 summary: 'In this article, we will be looking at how we can connect Matter-enabled devices to Home Assistant'
 imageUrl: /static/images/2023/add-matter-to-home-assistant/cover.jpg
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/mDxNwZGAw7k"
+youtubeLink: "https://www.youtube.com/embed/51LCiq7RhXc"
 ---
 
 In this article, we will be looking at how we can connect Matter-enabled devices to Home Assistant.  
@@ -141,3 +141,9 @@ With this, you can now see the device in the Home Assistant UI in the Matter Int
 In my case, It was showing the Smart Socket.
 
 ![10-matter-device-in-home-assistant](/static/images/2023/add-matter-to-home-assistant/10-matter-device-in-home-assistant.webp)
+
+## Fixing Failure While Connecting to Home Assistant
+
+In case you are facing issues while connecting the device to Home Assistant, you will have to make sure you have IPv6 enabled in the network settings. 
+
+For this click on "Settings", then "System", then click on "Network". Here you must have IPv6 set to "Automatic".
