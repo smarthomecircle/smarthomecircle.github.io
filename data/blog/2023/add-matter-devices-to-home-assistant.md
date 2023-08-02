@@ -15,7 +15,8 @@ youtubeLink: "https://www.youtube.com/embed/51LCiq7RhXc"
 ---
 
 In this article, we will be looking at how we can connect Matter-enabled devices to Home Assistant.  
-  
+
+<TOCInline toc={props.toc} asDisclosure />
 
 ## Pre-Requisites
 
