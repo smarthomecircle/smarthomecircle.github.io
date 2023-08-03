@@ -25,6 +25,10 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/add-matter-devices-to-home-assistant</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/connect-wifi-on-home-assistant-on-startup</loc>
   </url>
 
@@ -69,11 +73,19 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/tags/matter</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/tags/os</loc>
   </url>
 
   <url>
     <loc>https://smarthomecircle.com/tags/raspberry-pi</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/smart-plug</loc>
   </url>
 
   <url>

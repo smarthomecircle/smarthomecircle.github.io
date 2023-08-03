@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 27 Jul 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 03 Aug 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/add-matter-devices-to-home-assistant</guid>
+    <title>How I Added a Matter Device to Home Assistant - Step By Step Guide</title>
+    <link>https://smarthomecircle.com/add-matter-devices-to-home-assistant</link>
+    <description>In this article, we will be looking at how we can connect Matter-enabled devices to Home Assistant</description>
+    <pubDate>Thu, 03 Aug 2023 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Matter</category><category>Home Assistant</category><category>Smart Plug</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/esp32-cam-esphome-with-home-assistant</guid>
     <title>How I Setup ESP32 CAM With ESP Home and Home Assistant - Step By Step Guide</title>
