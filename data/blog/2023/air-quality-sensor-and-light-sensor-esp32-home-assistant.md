@@ -11,7 +11,7 @@ summary: 'In this article, we will be looking at how we can connect SGP30 CO2 (C
 imageUrl: /static/images/2023/air-quality-sensor-esp32-home-assistant/cover.jpg
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/mDxNwZGAw7k"
+youtubeLink: "https://www.youtube.com/embed/bwVttXh4Lk4"
 ---
 
 In this article, we will be looking at how we can monitor CO2 (Carbon Dioxide) with SGP30 sensor and add a light sensor BH17450 to Home Assistant. 
