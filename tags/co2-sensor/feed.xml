@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Smart Home Circle</title>
+      <link>https://smarthomecircle.com</link>
+      <description>Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.</description>
+      <language>en-us</language>
+      <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Thu, 10 Aug 2023 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://smarthomecircle.com/tags/co2-sensor/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://smarthomecircle.com/air-quality-sensor-and-light-sensor-esp32-home-assistant</guid>
+    <title>How I Built My Own Air Quality Monitor With Light Sensor For Home Assistant - Step By Step Guide</title>
+    <link>https://smarthomecircle.com/air-quality-sensor-and-light-sensor-esp32-home-assistant</link>
+    <description>In this article, we will be looking at how we can connect SGP30 CO2 (Carbon Dioxide) sensor and BH17450 Light sensor to Home Assistant</description>
+    <pubDate>Thu, 10 Aug 2023 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>ESP32</category><category>D1 Mini</category><category>CO2 Sensor</category><category>SGP30</category><category>BH1750</category><category>Home Assistant</category><category>ESPHome</category>
+  </item>
+
+    </channel>
+  </rss>
