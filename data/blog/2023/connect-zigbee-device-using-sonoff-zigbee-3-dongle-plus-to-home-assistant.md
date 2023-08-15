@@ -5,7 +5,7 @@ categories: ''
 tags: [Zigbee, Sonoff Dongle Plus, Home Assistant]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2023-08-21'
+date: '2023-08-17'
 draft: false
 summary: 'In this article, we will be looking at how we can connect Zigbee Devices using Sonoff Zigbee 3.0 USB Dongle Plus to Home Assistant.'
 imageUrl: /static/images/2023/sonoff-zigbee-3-dongle-home-assistant/cover.jpg
@@ -69,8 +69,17 @@ First, we need to connect the Sonoff Zigbee Dongle to the machine running the Ho
 Next, we need to find the path which we need to mount as a device to the Home Assistant Container.
 
 For this I have this script you can use to find out the path.
-```yaml
-
+```shell
+for sysdevpath in $(find /sys/bus/usb/devices/usb*/ -name dev); do
+    (
+        syspath="${sysdevpath%/dev}"
+        devname="$(udevadm info -q name -p $syspath)"
+        [[ "$devname" == "bus/"* ]] && exit
+        eval "$(udevadm info -q property --export -p $syspath)"
+        [[ -z "$ID_SERIAL" ]] && exit
+        echo "/dev/$devname - $ID_SERIAL"
+    )
+done
 ```  
 
 You need to copy this script to a file called “find-usb.sh”.
