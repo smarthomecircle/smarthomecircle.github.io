@@ -37,6 +37,12 @@
   </url>
 
   <url>
+    <loc
+      >https://smarthomecircle.com/connect-zigbee-device-using-sonoff-zigbee-3-dongle-plus-to-home-assistant</loc
+    >
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/esp32-cam-esphome-with-home-assistant</loc>
   </url>
 
@@ -109,10 +115,18 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/tags/sonoff-dongle-plus</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/tags/ubuntu</loc>
   </url>
 
   <url>
     <loc>https://smarthomecircle.com/tags/wifi</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/zigbee</loc>
   </url>
 </urlset>
