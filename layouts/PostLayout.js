@@ -29,6 +29,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
     'photo-credits': photoCredits,
     readingTime,
     youtubeLink,
+    youtubeLink2,
   } = frontMatter
   return (
     <SectionContainer>
@@ -120,8 +121,24 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   {youtubeLink && (
                     <div className="xl:px-48">
                       <iframe
+                        id={`youtubeLink1${date}`}
                         className="w-full aspect-video"
                         src={youtubeLink}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      ></iframe>
+                      <br />
+                    </div>
+                  )}
+                </div>
+                <div>
+                  {youtubeLink2 && (
+                    <div className="xl:px-48">
+                      <iframe
+                        id={`youtubeLink2${date}`}
+                        className="w-full aspect-video"
+                        src={youtubeLink2}
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen

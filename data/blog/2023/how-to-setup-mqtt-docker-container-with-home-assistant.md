@@ -2,7 +2,7 @@
 title: 'How I Setup MQTT Broker Docker Container Or Addon In Home Assistant — Step-By-Step Guide'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [Tuya, Local Tuya, Smart Wifi Plug, Home Assistant]
+tags: [MQTT, Home Assistant, Docker]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-09-07'
@@ -11,7 +11,7 @@ summary: 'In this article, we will be looking at how we configure Frigate to det
 imageUrl: /static/images/2023/mqtt-broker-setup/cover.jpg
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/wtzw_d4KMEQ"
+youtubeLink: ""
 ---
 
 In this article, we will be looking at how we configure MQTT Broker as a Home Assistant Addon or run at as a Docker Container.

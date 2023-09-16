@@ -11,12 +11,11 @@ summary: 'In this article, we will be looking at how we configure Frigate to det
 imageUrl: /static/images/2023/frigate-setup-with-home-assistant/cover.jpg
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/wtzw_d4KMEQ"
+youtubeLink: "https://www.youtube.com/embed/83xFs79NzTY"
+youtubeLink2: "https://www.youtube.com/embed/05_BF4DVJWg"
 ---
-
 In this article, we will be looking at how we configure Frigate to detect object and then connect it to Home Assistant to receive notification.
 
-  
 <TOCInline toc={props.toc} asDisclosure />  
 
 ## Requirements
