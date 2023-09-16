@@ -79,6 +79,10 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/tags/docker</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/tags/docker-compose</loc>
   </url>
 
@@ -112,6 +116,10 @@
 
   <url>
     <loc>https://smarthomecircle.com/tags/matter</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/mqtt</loc>
   </url>
 
   <url>

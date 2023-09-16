@@ -27,7 +27,7 @@
     <description>In this article, we will be looking at how we configure Frigate to detect object and then connect it to Home Assistant to receive notification.</description>
     <pubDate>Thu, 07 Sep 2023 00:00:00 GMT</pubDate>
     <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
-    <category>Tuya</category><category>Local Tuya</category><category>Smart Wifi Plug</category><category>Home Assistant</category>
+    <category>MQTT</category><category>Home Assistant</category><category>Docker</category>
   </item>
 
   <item>
