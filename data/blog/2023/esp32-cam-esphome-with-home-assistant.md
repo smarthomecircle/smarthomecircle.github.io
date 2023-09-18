@@ -38,9 +38,15 @@ esp32_camera:
   href_pin: GPIO23
   pixel_clock_pin: GPIO22
   power_down_pin: GPIO32
-
   # Image settings
   name: My Camera
+
+# http server setting
+esp32_camera_web_server:
+  - port: 8080
+    mode: stream
+  - port: 8081
+    mode: snapshot
 ```
 
 Click on save and then click on install, click on manual download, and then click on Modern format.
