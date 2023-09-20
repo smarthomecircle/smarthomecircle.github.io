@@ -11,7 +11,7 @@ summary: 'In this article, we will look at how you can change colors for your en
 imageUrl: /static/images/2023/energy-dashboard-home-assistant/cover.jpg
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/83xFs79NzTY"
+youtubeLink: "https://www.youtube.com/embed/9c2XUjobVB8"
 ---
 In this article, we will look at how you can change colors for your energy graph in the energy dashboard of Home Assistant.
 
