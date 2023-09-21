@@ -33,6 +33,10 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/change-graph-colors-in-energy-dashboard-home-assistant</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/connect-wifi-on-home-assistant-on-startup</loc>
   </url>
 
@@ -84,6 +88,14 @@
 
   <url>
     <loc>https://smarthomecircle.com/tags/docker-compose</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/energy-dashboard</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/energy-graph</loc>
   </url>
 
   <url>

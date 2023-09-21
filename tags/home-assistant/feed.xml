@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 07 Sep 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Wed, 20 Sep 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/home-assistant/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/change-graph-colors-in-energy-dashboard-home-assistant</guid>
+    <title>How To Change Graph Colors in Energy Dashboard In Home Assistant</title>
+    <link>https://smarthomecircle.com/change-graph-colors-in-energy-dashboard-home-assistant</link>
+    <description>In this article, we will look at how you can change colors for your energy graph in the energy dashboard of Home Assistant.</description>
+    <pubDate>Wed, 20 Sep 2023 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Energy Graph</category><category>Energy Dashboard</category><category>Home Assistant</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/how-to-setup-frigate-with-home-assistant</guid>
     <title>How I Setup ESP32 Cam with Frigate And Home Assistant To Detect Objects — Step-By-Step Guide</title>
