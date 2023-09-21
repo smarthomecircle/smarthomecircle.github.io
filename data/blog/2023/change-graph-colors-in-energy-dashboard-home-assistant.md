@@ -5,7 +5,7 @@ categories: ''
 tags: [Energy Graph, Energy Dashboard, Home Assistant]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2023-09-20'
+date: '2023-09-21'
 draft: false
 summary: 'In this article, we will look at how you can change colors for your energy graph in the energy dashboard of Home Assistant.'
 imageUrl: /static/images/2023/energy-dashboard-home-assistant/cover.jpg
