@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Smart Home Circle</title>
+      <link>https://smarthomecircle.com</link>
+      <description>Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.</description>
+      <language>en-us</language>
+      <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Mon, 02 Oct 2023 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://smarthomecircle.com/tags/zigbee2mqtt/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://smarthomecircle.com/install-zigbee2mqtt-with-home-assistant</guid>
+    <title>How to Setup Zigbee2Mqtt with Home Assistant — Step By Step Guide</title>
+    <link>https://smarthomecircle.com/install-zigbee2mqtt-with-home-assistant</link>
+    <description>In this article, we will look at how you can set up a Zigbee2Mqtt with Home Assistant</description>
+    <pubDate>Mon, 02 Oct 2023 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Zigbee</category><category>Zigbee2mqtt</category><category>Sonoff Dongle Plus</category><category>MQTT</category><category>Home Assistant</category>
+  </item>
+
+    </channel>
+  </rss>

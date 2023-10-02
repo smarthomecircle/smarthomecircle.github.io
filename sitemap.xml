@@ -67,6 +67,10 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/install-zigbee2mqtt-with-home-assistant</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/run-home-assistant-container-with-docker</loc>
   </url>
 
@@ -172,5 +176,9 @@
 
   <url>
     <loc>https://smarthomecircle.com/tags/zigbee</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/zigbee2mqtt</loc>
   </url>
 </urlset>
