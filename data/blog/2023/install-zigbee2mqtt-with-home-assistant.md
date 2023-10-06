@@ -11,7 +11,7 @@ summary: 'In this article, we will look at how you can set up a Zigbee2Mqtt with
 imageUrl: /static/images/2023/zigbee2mqtt-setup/cover.jpg
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/9c2XUjobVB8"
+youtubeLink: "https://www.youtube.com/embed/nNLgCUFRNsk"
 ---
 In this article, we will look at how you can set up a Zigbee2Mqtt with Home Assistant
 

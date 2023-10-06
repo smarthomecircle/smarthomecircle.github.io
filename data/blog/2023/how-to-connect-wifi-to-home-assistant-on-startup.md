@@ -85,7 +85,28 @@ Also, make sure that the location `/mnt/ha` is a directory. If it does not exist
 **Step 5:** Paste the below content in the file and update the places where you have to put the Wifi SSID and Wifi password.
 
 
-![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/9.jpg)
+```yaml
+[connection]
+id=my-wifi
+uuid=b6e4e249-1c14-420c-bf6f-b1f6e2166022
+type=802-11-wireless
+
+[802-11-wireless]
+mode=infrastructure
+ssid=YOUR_WIFI_NAME
+
+[802-11-wireless-security]
+auth-alg=open
+key-mgmt=wpa-psk
+psk=YOUR_WIFI_PASSWORD
+
+[ipv4]
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+method=auto
+```
 
 ![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/10.jpg)
 
@@ -107,9 +128,30 @@ Insert the SD card again in the computer and you will be able to see a boot driv
 
 **Step 1:** Open the drive and create a folder called `config` . Then open the config folder and create another folder called `network` .
 
-**Step 2:** Inside the network folder create a file with the name `my-network` . make sure you do not give any extension to the file.
+**Step 2:** Inside the network folder create a file with the name `my-network`. Make sure you do not give any extension to the file.
 
-![](/static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/12.jpg)
+```yaml
+[connection]
+id=my-wifi
+uuid=b6e4e249-1c14-420c-bf6f-b1f6e2166022
+type=802-11-wireless
+
+[802-11-wireless]
+mode=infrastructure
+ssid=YOUR_WIFI_NAME
+
+[802-11-wireless-security]
+auth-alg=open
+key-mgmt=wpa-psk
+psk=YOUR_WIFI_PASSWORD
+
+[ipv4]
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+method=auto
+```
 
 **Step 3:** Add the following configuration to the file.
 
