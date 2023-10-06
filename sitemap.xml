@@ -37,10 +37,6 @@
   </url>
 
   <url>
-    <loc>https://smarthomecircle.com/connect-wifi-on-home-assistant-on-startup</loc>
-  </url>
-
-  <url>
     <loc
       >https://smarthomecircle.com/connect-zigbee-device-using-sonoff-zigbee-3-dongle-plus-to-home-assistant</loc
     >
@@ -52,6 +48,10 @@
 
   <url>
     <loc>https://smarthomecircle.com/esp32-esp8266-esphome-with-home-assistant</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/how-to-connect-wifi-to-home-assistant-on-startup</loc>
   </url>
 
   <url>
