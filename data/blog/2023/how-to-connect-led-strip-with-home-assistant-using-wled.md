@@ -5,13 +5,13 @@ categories: ''
 tags: [WLED, LED lights, LED strip, Home Assistant]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2023-09-07'
+date: '2023-10-12'
 draft: false
 summary: 'In this article, we will look at how you can control an LED strip with Home Assistant using WLED.'
-imageUrl: /static/images/2023/frigate-setup-with-home-assistant/cover.jpg
+imageUrl: /static/images/2023/wled-with-home-assistant/cover.jpg
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/83xFs79NzTY"
+youtubeLink: "https://www.youtube.com/embed/eFPBkX-jPag"
 
 ---
 In this article, we will look at how you can control an LED strip with Home Assistant using WLED.
