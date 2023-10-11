@@ -26,11 +26,11 @@ In this article, we will look at how you can control an LED strip with Home Assi
 [![WS2812B LED](/static/images/2023/wled-with-home-assistant/led-strip.jpg)](https://amzn.to/3Pjtmbr)
 
 -   [**AliExpress - WS2812B LED**](https://s.click.aliexpress.com/e/_DEYtbQb)
-[![WS2812B LED](/static/images/2023/wled-with-home-assistant/led-strip-aliexpress.webp)](https://s.click.aliexpress.com/e/_DnKbqIr)
+[![WS2812B LED](/static/images/2023/wled-with-home-assistant/led-strip-aliexpress.webp)](https://s.click.aliexpress.com/e/_DEYtbQb)
 2.  ESP32 or D1 Mini board. You can buy it using the links below.
 
 -   [**AliExpress - ESP32 Wroom**](https://s.click.aliexpress.com/e/_DB4HfST)
-[![ESP32 Wroom](/static/images/2023/wled-with-home-assistant/esp32-wroom.webp)](https://s.click.aliexpress.com/e/_DeqlHMr)
+[![ESP32 Wroom](/static/images/2023/wled-with-home-assistant/esp32-wroom.webp)](https://s.click.aliexpress.com/e/_DB4HfST)
 
 -   [**AliExpress - D1 Mini**](https://s.click.aliexpress.com/e/_DB6gHF9)
 [![ESP32 Wroom](/static/images/2023/wled-with-home-assistant/d1-mini.webp)](https://s.click.aliexpress.com/e/_DB6gHF9)
