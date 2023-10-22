@@ -2,7 +2,7 @@
 title: 'Setup Local Voice Assistant In Home Assistant Using USB Microphone - Docker Containers Setup Guide'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [WLED, LED lights, LED strip, Home Assistant]
+tags: [Wake Word, USB Microphone, Voice Assistant, Home Assistant]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-10-23'
@@ -12,7 +12,7 @@ This article will look at how you can set up voice assistance with Home Assistan
 imageUrl: /static/images/2023/voice-home-assistant-usb-microphone/cover.jpg
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/eFPBkX-jPag"
+youtubeLink: "https://www.youtube.com/embed/8uW3RfC7oVo"
 
 ---
 
@@ -28,7 +28,7 @@ This article will look at how you can set up voice assistance with Home Assistan
 2.  USB Microphone  
     For Example
     -   [**Amazon - Razon Mini**](https://amzn.to/402lMXB)
-[![WS2812B LED](/static/images/2023/voice-home-assistant-usb-microphone/microphone.jpg)](https://amzn.to/402lMXB)
+[![Razon Mini](/static/images/2023/voice-home-assistant-usb-microphone/microphone.jpg)](https://amzn.to/402lMXB)
 
 To set up voice assistant, we would need three components to create the voice assist pipeline in Home Assistant.
 
@@ -47,6 +47,9 @@ If you are new to docker, this setup can be overwhelming. I would recommend to u
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                       ></iframe>
+
+<br/>
+In case you want to set it up using Docker, then continue with the next steps. 
 
 ## Run Whisper, Piper, and OpenWakeWord with Docker
 
@@ -201,8 +204,9 @@ To set up a USB microphone to invoke the Assist Pipeline, you will need to insta
 With this, you have just configured your USB microphone to be used by the Assist Pipeline.
 
 You can now invoke the Home Assistant using your selected wake word.
-Now if you are interested in exploring more of such easy to follow step by step guides about Home Assistant, then here are a few suggestions
 
--   [**Connect Zigbee Plug Using Sonoff Zigbee 3.0 USB Dongle Plus**](https://smarthomecircle.com/connect-zigbee-device-using-sonoff-zigbee-3-dongle-plus-to-home-assistant)
--   [**How I Setup ESP32 Cam with Frigate And Home Assistant To Detect Objects**](https://smarthomecircle.com/how-to-setup-frigate-with-home-assistant)
+If you are interested in exploring more of such easy to follow step by step guides about Home Assistant, then here are a few suggestions
+
+-   [**Setup Zigbee2Mqtt with Home Assistant**](https://smarthomecircle.com/install-zigbee2mqtt-with-home-assistant)
+-   [**Control LED Strip with Home Assistant Using WLED**](https://smarthomecircle.com/how-to-connect-led-strip-with-home-assistant-using-wled)
 -   [**How I Added a Matter Device to Home Assistant**](https://smarthomecircle.com/add-matter-devices-to-home-assistant)
