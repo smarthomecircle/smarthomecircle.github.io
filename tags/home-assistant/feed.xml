@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 12 Oct 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 23 Oct 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/home-assistant/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/setup-voice-assistant-with-home-assistant-using-docker-usb-microphone</guid>
+    <title>Setup Local Voice Assistant In Home Assistant Using USB Microphone - Docker Containers Setup Guide</title>
+    <link>https://smarthomecircle.com/setup-voice-assistant-with-home-assistant-using-docker-usb-microphone</link>
+    <description> This article will look at how you can set up voice assistance with Home Assistant and invoke Home Assistant devices using a USB microphone.</description>
+    <pubDate>Mon, 23 Oct 2023 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Wake Word</category><category>USB Microphone</category><category>Voice Assistant</category><category>Home Assistant</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/how-to-connect-led-strip-with-home-assistant-using-wled</guid>
     <title>How to Control LED Strip with Home Assistant Using WLED — Step-By-Step Guide</title>

@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Smart Home Circle</title>
+      <link>https://smarthomecircle.com</link>
+      <description>Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.</description>
+      <language>en-us</language>
+      <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Mon, 23 Oct 2023 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://smarthomecircle.com/tags/usb-microphone/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://smarthomecircle.com/setup-voice-assistant-with-home-assistant-using-docker-usb-microphone</guid>
+    <title>Setup Local Voice Assistant In Home Assistant Using USB Microphone - Docker Containers Setup Guide</title>
+    <link>https://smarthomecircle.com/setup-voice-assistant-with-home-assistant-using-docker-usb-microphone</link>
+    <description> This article will look at how you can set up voice assistance with Home Assistant and invoke Home Assistant devices using a USB microphone.</description>
+    <pubDate>Mon, 23 Oct 2023 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Wake Word</category><category>USB Microphone</category><category>Voice Assistant</category><category>Home Assistant</category>
+  </item>
+
+    </channel>
+  </rss>
