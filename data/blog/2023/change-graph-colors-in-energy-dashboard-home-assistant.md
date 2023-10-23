@@ -20,7 +20,7 @@ In this article, we will look at how you can change colors for your energy graph
 ## Requirements
 
 1.  Home Assistant 2023.09 or later up and running.  
-    You can check this link to see how you can install it for the first time
+    You can check [this](https://smarthomecircle.com/connect-wifi-on-home-assistant-on-startup) link to see how you can install it for the first time
 2.  The energy dashboard is already configured showing the energy graph.
 
 ## Changing Graph Colors in Energy Dashboard
