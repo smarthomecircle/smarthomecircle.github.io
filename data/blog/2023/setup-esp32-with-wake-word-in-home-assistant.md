@@ -27,15 +27,21 @@ In this article, we will look at how we can set up an ESP32 with a microphone as
     You can check [this](https://smarthomecircle.com/connect-wifi-on-home-assistant-on-startup) link to see how you can install it for the first time
 2.  **ESPHome** is setup and running  
     In case you have not set it up, you can look at it [here](https://smarthomecircle.com/esp32-esp8266-esphome-with-home-assistant).
+    <br/>
 3.  **INMP441** microphone  
     Links to buy this:
         
 [![INMP441 MICROPHONE](/static/images/2023/esp32-voice-assistant/inmp441-microphone.webp)](https://s.click.aliexpress.com/e/_Dmn2PyR)
         -   [**AliExpress - INMP441 Microphone**](https://s.click.aliexpress.com/e/_Dmn2PyR)
         -   [**Amazon - INMP441 Microphone**](https://amzn.to/47uScws)
-
-        
-4.  **3-watt Speakers** (Optional: Only required to listen to the pipeline output)  
+        <br/>
+4. **MAX98357A Audio Amplifier**  
+    Links to buy this:
+[![MAX98357A](/static/images/2023/esp32-voice-assistant/MAX98357A.webp)](https://s.click.aliexpress.com/e/_DdyIFTH)
+        -   [**AliExpress - MAX98357A**](https://s.click.aliexpress.com/e/_DdyIFTH)
+        -   [**Amazon - MAX98357A**](https://amzn.to/47vEMjH)      
+        <br/>
+5.  **3-watt Speakers** (Optional: Only required to listen to the pipeline output)  
     Links to buy these.  
 [![3 watt speaker](/static/images/2023/esp32-voice-assistant/3-watt-speakers.webp)](https://s.click.aliexpress.com/e/_DBDIScT)
         -   [**AliExpress - 3-watt Speakers**](https://s.click.aliexpress.com/e/_DBDIScT)
@@ -61,9 +67,9 @@ Now, I have set up these components using Home Assistant Addons in the video bel
 </div>
 You will get to see how to set up the following components that are required
 
-1.  Whisper Addon
-2.  Piper Addon
-3.  OpenWakeWord Addon
+1.  **Whisper** Addon
+2.  **Piper** Addon
+3.  **OpenWakeWord** Addon
 4.  And finally the entire **Voice Assist** pipeline.
 
 So make sure to watch it and set up the **Voice Assist** pipeline
