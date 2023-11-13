@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Mon, 23 Oct 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 13 Nov 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/voice-assistant/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/setup-esp32-with-wake-word-in-home-assistant</guid>
+    <title>ESP32 as a Local Voice Assistant With Wake Word In Home Assistant</title>
+    <link>https://smarthomecircle.com/setup-esp32-with-wake-word-in-home-assistant</link>
+    <description> This article will look at how to setup an ESP32 as local voice assistant and use Wake word to invoke Home Assistant devices</description>
+    <pubDate>Mon, 13 Nov 2023 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Wake Word</category><category>ESP32</category><category>Voice Assistant</category><category>Home Assistant</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/setup-voice-assistant-with-home-assistant-using-docker-usb-microphone</guid>
     <title>Setup Local Voice Assistant In Home Assistant Using USB Microphone - Docker Containers Setup Guide</title>

@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 10 Aug 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 13 Nov 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/esp32/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/setup-esp32-with-wake-word-in-home-assistant</guid>
+    <title>ESP32 as a Local Voice Assistant With Wake Word In Home Assistant</title>
+    <link>https://smarthomecircle.com/setup-esp32-with-wake-word-in-home-assistant</link>
+    <description> This article will look at how to setup an ESP32 as local voice assistant and use Wake word to invoke Home Assistant devices</description>
+    <pubDate>Mon, 13 Nov 2023 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Wake Word</category><category>ESP32</category><category>Voice Assistant</category><category>Home Assistant</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/air-quality-sensor-and-light-sensor-esp32-home-assistant</guid>
     <title>How I Built My Own Air Quality Monitor With Light Sensor For Home Assistant - Step By Step Guide</title>
