@@ -24,7 +24,7 @@ In this article, we will look at how we can set up an ESP32 with a microphone as
 ## Requirements
 
 1.  **Home Assistant** up and running.  
-    You can check [this](https://smarthomecircle.com/connect-wifi-on-home-assistant-on-startup) link to see how you can install it for the first time
+    You can check [this](https://smarthomecircle.com/how-to-connect-wifi-to-home-assistant-on-startup) link to see how you can install it for the first time
 2.  **ESPHome** is setup and running  
     In case you have not set it up, you can look at it [here](https://smarthomecircle.com/esp32-esp8266-esphome-with-home-assistant).
     <br/>
