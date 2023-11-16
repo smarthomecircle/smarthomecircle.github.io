@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Mon, 13 Nov 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 16 Nov 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/Setup-LG-Washer-with-Home-Assistant</guid>
+    <title>Setup LG Washer with Home Assistant using ThinQ Integration</title>
+    <link>https://smarthomecircle.com/Setup-LG-Washer-with-Home-Assistant</link>
+    <description>In this article we will look at how you can connect an LG Washer with Home Assistant using LG ThinQ integration and configure a dashboard card</description>
+    <pubDate>Thu, 16 Nov 2023 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>LG</category><category>LG Washer</category><category>Home Assistant</category><category>Dashboard Cards</category><category>Dashboards</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/setup-esp32-with-wake-word-in-home-assistant</guid>
     <title>ESP32 as a Local Voice Assistant With Wake Word In Home Assistant</title>

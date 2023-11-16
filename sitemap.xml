@@ -25,6 +25,10 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/Setup-LG-Washer-with-Home-Assistant</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/add-matter-devices-to-home-assistant</loc>
   </url>
 
@@ -101,6 +105,14 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/tags/dashboard-cards</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/dashboards</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/tags/docker</loc>
   </url>
 
@@ -146,6 +158,14 @@
 
   <url>
     <loc>https://smarthomecircle.com/tags/led-strip</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/lg</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/lg-washer</loc>
   </url>
 
   <url>
