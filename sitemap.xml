@@ -47,6 +47,12 @@
   </url>
 
   <url>
+    <loc
+      >https://smarthomecircle.com/created-voice-assistant-esp32-with-wake-word-in-home-assistant</loc
+    >
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/esp32-cam-esphome-with-home-assistant</loc>
   </url>
 
@@ -93,11 +99,11 @@
   </url>
 
   <url>
-    <loc>https://smarthomecircle.com/tags/bh1750</loc>
+    <loc>https://smarthomecircle.com/tags/co2-sensor</loc>
   </url>
 
   <url>
-    <loc>https://smarthomecircle.com/tags/co2-sensor</loc>
+    <loc>https://smarthomecircle.com/tags/bh1750</loc>
   </url>
 
   <url>
