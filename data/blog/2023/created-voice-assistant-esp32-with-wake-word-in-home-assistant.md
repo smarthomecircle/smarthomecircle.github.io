@@ -85,6 +85,10 @@ You will get to see how to set up the following components that are required
 
 So make sure to watch it and set up the **Voice Assist** pipeline
 
+## Voice Assistant Device 3D Model
+
+The 3D model is uploaded [here](https://www.thingiverse.com/thing:6329167). You can download the STL file from there. 
+
 Now we will look at how we can prepare our ESP32 with a microphone and 3-watt speakers.
 
 ## Circuit Diagram for Creating Voice Assistant Device With ESP32
