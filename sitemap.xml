@@ -85,6 +85,10 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/moes-zigbee-smart-knob-with-homeassistant</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/run-home-assistant-container-with-docker</loc>
   </url>
 
@@ -99,11 +103,11 @@
   </url>
 
   <url>
-    <loc>https://smarthomecircle.com/tags/co2-sensor</loc>
+    <loc>https://smarthomecircle.com/tags/bh1750</loc>
   </url>
 
   <url>
-    <loc>https://smarthomecircle.com/tags/bh1750</loc>
+    <loc>https://smarthomecircle.com/tags/co2-sensor</loc>
   </url>
 
   <url>
@@ -196,6 +200,10 @@
 
   <url>
     <loc>https://smarthomecircle.com/tags/sgp30</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/smart-device</loc>
   </url>
 
   <url>

@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 23 Nov 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 07 Dec 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/moes-zigbee-smart-knob-with-homeassistant</guid>
+    <title>MOES Zigbee Smart Knob</title>
+    <link>https://smarthomecircle.com/moes-zigbee-smart-knob-with-homeassistant</link>
+    <description>In this article, we will explore the new MOES Zigbee Smart Knob and connect it to Home Assistant ZHA and Zigbee2MQTT</description>
+    <pubDate>Thu, 07 Dec 2023 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Smart Device</category><category>Zigbee</category><category>Home Assistant</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/created-voice-assistant-esp32-with-wake-word-in-home-assistant</guid>
     <title>My Local Voice Assistant Device With Wake Word In Home Assistant</title>
