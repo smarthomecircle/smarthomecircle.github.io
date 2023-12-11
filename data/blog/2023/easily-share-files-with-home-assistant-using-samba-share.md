@@ -2,13 +2,12 @@
 title: 'How to Easily Share Files With Home Assistant OS with Samba Share'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [Wake Word, USB Microphone, Voice Assistant, Home Assistant]
+tags: [Samba Share, Setup, Beginners, Home Assistant]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-12-11'
 draft: false
-summary: '
-This article will look at how you can set up voice assistance with Home Assistant and invoke Home Assistant devices using a USB microphone.'
+summary: 'In this article, we will explore how we can share files with Home Assistant OS'
 imageUrl: /static/images/2023/share-files-with-home-assistant/cover.jpg
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
