@@ -53,6 +53,10 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/easily-share-files-with-home-assistant-using-samba-share</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/esp32-cam-esphome-with-home-assistant</loc>
   </url>
 
@@ -100,6 +104,10 @@
     <loc
       >https://smarthomecircle.com/setup-voice-assistant-with-home-assistant-using-docker-usb-microphone</loc
     >
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/beginners</loc>
   </url>
 
   <url>
@@ -196,6 +204,14 @@
 
   <url>
     <loc>https://smarthomecircle.com/tags/raspberry-pi</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/samba-share</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/setup</loc>
   </url>
 
   <url>

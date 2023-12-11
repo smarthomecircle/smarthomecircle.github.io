@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 07 Dec 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 11 Dec 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/home-assistant/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/easily-share-files-with-home-assistant-using-samba-share</guid>
+    <title>How to Easily Share Files With Home Assistant OS with Samba Share</title>
+    <link>https://smarthomecircle.com/easily-share-files-with-home-assistant-using-samba-share</link>
+    <description>In this article, we will explore how we can share files with Home Assistant OS</description>
+    <pubDate>Mon, 11 Dec 2023 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Samba Share</category><category>Setup</category><category>Beginners</category><category>Home Assistant</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/moes-zigbee-smart-knob-with-homeassistant</guid>
     <title>MOES Zigbee Smart Knob</title>
