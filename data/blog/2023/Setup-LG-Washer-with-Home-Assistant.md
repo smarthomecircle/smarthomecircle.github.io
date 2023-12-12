@@ -157,7 +157,7 @@ mkdir www
 cd www
 ```
 
-If the command  `mkdir www`  fails, saying that the '*directory already exists*' then you can just run the  `cd wwww`command.
+If the command  `mkdir www`  fails, saying that the '*directory already exists*' then you can just run the  `cd www`command.
 
 **Step 3** : Run the below command:
 `git clone https://github.com/phrz/lg-washer-dryer-card.git`
