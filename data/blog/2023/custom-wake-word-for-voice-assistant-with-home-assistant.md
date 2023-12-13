@@ -2,16 +2,16 @@
 title: 'How to Create Custom Wake Word For Your Voice Assistant In Home Assistant'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [Samba Share, Setup, Beginners, Home Assistant]
+tags: [Wake Word, Setup, VOICE ASSISTANT, Home Assistant]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-12-14'
 draft: false
 summary: 'In this article, we will explore how we can create a custom wake word for our voice assistant to invoke Home Assistant'
-imageUrl: /static/images/2023/share-files-with-home-assistant/cover.jpg
+imageUrl: /static/images/2023/custom-wake-word-for-voice-assistant/cover.jpg
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/TAkU-Q6YAsk"
+youtubeLink: "https://www.youtube.com/embed/UIzM_nIluPY"
 
 ---
 
