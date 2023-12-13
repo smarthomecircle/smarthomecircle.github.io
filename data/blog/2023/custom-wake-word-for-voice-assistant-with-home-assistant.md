@@ -41,6 +41,8 @@ We will use a different wake word detector called Snowboy with our custom Wake W
 
 **Step 3:** Select the **Snowboy** add-on, click on **Install,** and start the add-on.
 
+**Note:** In case you don't find the addon, you can directly added from [this](https://github.com/rhasspy/hassio-addons) GitHub link.
+
 ![snowboy-addon](/static/images/2023/custom-wake-word-for-voice-assistant/snowboy-addon.webp)
 
 
