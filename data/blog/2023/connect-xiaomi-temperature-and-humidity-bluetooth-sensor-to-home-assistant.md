@@ -1,8 +1,8 @@
 ---
-title: 'How to Xiaomi Temperature and Humidity (LYWSD03MMC) Bluetooth Sensor to Home Assistant'
+title: 'Connect Xiaomi Temperature and Humidity (LYWSD03MMC) Bluetooth Sensor to Home Assistant'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [Wake Word, Setup, VOICE ASSISTANT, Home Assistant]
+tags: [Xiaomi, Sensor,Bluetooth, Home Assistant]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-12-19'
@@ -11,10 +11,10 @@ summary: 'In this article, we will look at how we can connect the Xiaomi Tempera
 imageUrl: /static/images/2023/xiaomi-temp-humidity-sensor/cover.jpg
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/UIzM_nIluPY"
+youtubeLink: "https://www.youtube.com/embed/lKjgbug9WNY"
 
 ---
-###   
+
 
 In this article, we will explore how we can connect the Xiaomi Temperature and Humidity (_LYWSD03MMC_) Bluetooth Sensor to Home Assistant
 
@@ -24,7 +24,11 @@ In this article, we will explore how we can connect the Xiaomi Temperature and H
     You can check [this](https://smarthomecircle.com/how-to-connect-wifi-to-home-assistant-on-startup) link to see how you can install it for the first time.
 2.  **Bluetooth Proxy** setup and running  
     You can check [this](https://smarthomecircle.com/connect-bluetooth-devices-to-home-assistant-with-bluetooth-proxy) page, to see how you can set it up.
-
+3. **Xiaomi Temperature and Humidity (LYWSD03MMC) Bluetooth Sensor**
+    [![Xiaomi Temperature and Humidity (LYWSD03MMC) Bluetooth Sensor](/static/images/2023/xiaomi-temp-humidity-sensor/xiaomi-temp-humidity-sensor.png)](https://s.click.aliexpress.com/e/_DkrUrzT)
+        -   [**Buy On AliExpress**](https://s.click.aliexpress.com/e/_DkrUrzT)
+        -   [**Buy On Amazon**](https://amzn.to/480BKEO)
+      <br/> 
 To connect the sensor to Home Assistant, we must first Factory Reset the device and then flash it with custom firmware.
 
 Let’s look at how we can do that.

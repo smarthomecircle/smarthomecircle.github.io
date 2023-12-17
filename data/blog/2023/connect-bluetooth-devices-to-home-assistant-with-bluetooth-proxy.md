@@ -2,16 +2,16 @@
 title: 'How to Connect Bluetooth Devices to Home Assistant with Bluetooth Proxy'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [Wake Word, Setup, VOICE ASSISTANT, Home Assistant]
+tags: [ Bluetooth, Home Assistant]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-12-18'
 draft: false
-summary: 'In this article, we will explore how we can setup a Bluetooth Proxy to connect Bluetooth devices compatible with Home Assistant'
+summary: 'In this article, we will explore how we can setup a Bluetooth Proxy to connect Bluetooth devices with Home Assistant'
 imageUrl: /static/images/2023/bluetooth-proxy-home-assistant/cover.jpg
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/UIzM_nIluPY"
+youtubeLink: "https://www.youtube.com/embed/lKjgbug9WNY"
 
 ---
 
