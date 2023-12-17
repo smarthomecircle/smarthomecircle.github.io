@@ -18,6 +18,8 @@ youtubeLink: "https://www.youtube.com/embed/lKjgbug9WNY"
 
 In this article, we will explore how we can connect the Xiaomi Temperature and Humidity (_LYWSD03MMC_) Bluetooth Sensor to Home Assistant
 
+<TOCInline toc={props.toc} asDisclosure />  
+
 ## Requirements
 
 1.  **Home Assistant OS** setup and running.  
