@@ -42,6 +42,18 @@
 
   <url>
     <loc
+      >https://smarthomecircle.com/connect-bluetooth-devices-to-home-assistant-with-bluetooth-proxy</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://smarthomecircle.com/connect-xiaomi-temperature-and-humidity-bluetooth-sensor-to-home-assistant</loc
+    >
+  </url>
+
+  <url>
+    <loc
       >https://smarthomecircle.com/connect-zigbee-device-using-sonoff-zigbee-3-dongle-plus-to-home-assistant</loc
     >
   </url>
@@ -116,6 +128,10 @@
 
   <url>
     <loc>https://smarthomecircle.com/tags/bh1750</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/bluetooth</loc>
   </url>
 
   <url>
@@ -215,6 +231,10 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/tags/sensor</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/tags/setup</loc>
   </url>
 
@@ -264,6 +284,10 @@
 
   <url>
     <loc>https://smarthomecircle.com/tags/wled</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/xiaomi</loc>
   </url>
 
   <url>
