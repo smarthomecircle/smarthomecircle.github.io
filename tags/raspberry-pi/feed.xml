@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 20 Jul 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 25 Jan 2024 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/raspberry-pi/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/create-nas-with-raspberry-pi-5</guid>
+    <title>How to Create a NAS with Raspberry Pi 5</title>
+    <link>https://smarthomecircle.com/create-nas-with-raspberry-pi-5</link>
+    <description>In this article, we will create a NAS (network attached storage) usign a Raspberry Pi 5. This guide is also meant Raspberry Pi 4 and 3B</description>
+    <pubDate>Thu, 25 Jan 2024 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Raspberry Pi 5</category><category>NAS</category><category>Raspberry Pi</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/esp32-esp8266-esphome-with-home-assistant</guid>
     <title>How I Setup ESP32/ESP8266 With ESP Home and Home Assistant OS And Container - Step By Step Guide</title>
