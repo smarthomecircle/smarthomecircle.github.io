@@ -11,7 +11,7 @@ summary: 'In this article, we will look at how we can take automated backups of 
 imageUrl: /static/images/2024/home-assistant-backup/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/t52Nd6k_9cc"
+youtubeLink: "https://www.youtube.com/embed/8fmOfTuFqHo"
 
 ---
 <TOCInline toc={props.toc} asDisclosure />  
@@ -77,5 +77,5 @@ For example, the above setting will take and maintain a day-old back, a week-old
 If you are interested in exploring more of such easy to follow step by step guides about Home Assistant, then here are a few suggestions
 
 -   [**Create Custom Wake Word For Your Voice Assistant**](https://smarthomecircle.com/custom-wake-word-for-voice-assistant-with-home-assistant)
--   [**Create Your Voice Assistant Device With Wake Word**](https://smarthomecircle.com/created-voice-assistant-esp32-with-wake-word-in-home-assistant)
+-   [**Connect Bluetooth Devices to Home Assistant with Bluetooth Proxy**](https://smarthomecircle.com/connect-bluetooth-devices-to-home-assistant-with-bluetooth-proxy)
 -   [**Share Files With Home Assistant OS with Samba Share**](https://smarthomecircle.com/easily-share-files-with-home-assistant-using-samba-share)
