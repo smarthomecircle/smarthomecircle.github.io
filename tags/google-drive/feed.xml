@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Smart Home Circle</title>
+      <link>https://smarthomecircle.com</link>
+      <description>Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.</description>
+      <language>en-us</language>
+      <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Thu, 08 Feb 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://smarthomecircle.com/tags/google-drive/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://smarthomecircle.com/how-to-backup-home-assistant-on-google-drive</guid>
+    <title>How To Backup Home Assistant On Google Drive</title>
+    <link>https://smarthomecircle.com/how-to-backup-home-assistant-on-google-drive</link>
+    <description>In this article, we will look at how we can take automated backups of Home Assistant on Google Drive.</description>
+    <pubDate>Thu, 08 Feb 2024 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Home Assistant</category><category>Google Drive</category><category>Back up</category>
+  </item>
+
+    </channel>
+  </rss>

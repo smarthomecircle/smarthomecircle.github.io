@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Mon, 25 Dec 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 08 Feb 2024 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/home-assistant/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/how-to-backup-home-assistant-on-google-drive</guid>
+    <title>How To Backup Home Assistant On Google Drive</title>
+    <link>https://smarthomecircle.com/how-to-backup-home-assistant-on-google-drive</link>
+    <description>In this article, we will look at how we can take automated backups of Home Assistant on Google Drive.</description>
+    <pubDate>Thu, 08 Feb 2024 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Home Assistant</category><category>Google Drive</category><category>Back up</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/connect-automate-tuya-zigbee-smart-scene-switch-with-home-assistant</guid>
     <title>Connect &amp; Automate Tuya Zigbee Smart Scene Switch To Home Assistant</title>
