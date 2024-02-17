@@ -33,6 +33,10 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/how-to-update-bootloader-on-raspberrypi</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/Setup-LG-Washer-with-Home-Assistant</loc>
   </url>
 
@@ -157,6 +161,10 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/tags/bootloader</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/tags/co2-sensor</loc>
   </url>
 
@@ -182,6 +190,10 @@
 
   <url>
     <loc>https://smarthomecircle.com/tags/docker-compose</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/eeprom</loc>
   </url>
 
   <url>

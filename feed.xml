@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 08 Feb 2024 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sat, 17 Feb 2024 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/how-to-update-bootloader-on-raspberrypi</guid>
+    <title>How To Update Bootloader (EEPROM) On The Raspberry Pi</title>
+    <link>https://smarthomecircle.com/how-to-update-bootloader-on-raspberrypi</link>
+    <description>This article on how you can update the bootloader (EEPROM) on the Raspberry Pi</description>
+    <pubDate>Sat, 17 Feb 2024 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Raspberry Pi</category><category>bootloader</category><category>EEPROM</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/how-to-backup-home-assistant-on-google-drive</guid>
     <title>How To Backup Home Assistant On Google Drive</title>

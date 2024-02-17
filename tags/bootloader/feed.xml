@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Smart Home Circle</title>
+      <link>https://smarthomecircle.com</link>
+      <description>Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.</description>
+      <language>en-us</language>
+      <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Sat, 17 Feb 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://smarthomecircle.com/tags/bootloader/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://smarthomecircle.com/how-to-update-bootloader-on-raspberrypi</guid>
+    <title>How To Update Bootloader (EEPROM) On The Raspberry Pi</title>
+    <link>https://smarthomecircle.com/how-to-update-bootloader-on-raspberrypi</link>
+    <description>This article on how you can update the bootloader (EEPROM) on the Raspberry Pi</description>
+    <pubDate>Sat, 17 Feb 2024 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Raspberry Pi</category><category>bootloader</category><category>EEPROM</category>
+  </item>
+
+    </channel>
+  </rss>
