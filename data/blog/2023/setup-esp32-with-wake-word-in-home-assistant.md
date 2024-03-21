@@ -115,6 +115,11 @@ Now to flash the code required to make the ESP32 work with the microphone and sp
 
 **Step 5**: Place the following YAML code.
 
+<b>Update 22-March-2024:</b> 
+
+I found some INMP441 Microphone may have the left and right channel reversed. In my case, the microphone was set to right channel on setting the L/R pin to ground. So you might have to change the `channel:` config below to left.
+
+
 ```yaml
 
 i2s_audio:

@@ -117,6 +117,10 @@ Let's look at the code we need to install in the ESP32
 If you are new to how to install YAML code on an ESP32 using ESPhome then you can follow this guide, wherein I have explained how you can install code on an ESP32.
 Now here is the code that you will have to add after creating a device in ESPHome
 
+<b>Update 22-March-2024:</b> 
+
+I found some INMP441 Microphone may have the left and right channel reversed. In my case, the microphone was set to right channel on setting the L/R pin to ground. So you might have to change the `channel:` config below to left.
+
 ```yaml
 i2s_audio:
   - id: i2s_in
