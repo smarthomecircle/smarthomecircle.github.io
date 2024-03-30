@@ -28,23 +28,24 @@ In this article, we will look at how we can set up an ESP32 S3 with on-device Wa
     In case you have not set it up, you can look at it [here](https://smarthomecircle.com/esp32-esp8266-esphome-with-home-assistant).
 3. **ESP32 S3 S3 N8R2 Dev Board**  
     Links to buy this:
-[![ESP32 Wroom](/static/images/2024/on-device-wake-word/esp32-s3-n8r2.webp)](https://s.click.aliexpress.com/e/_DFopt57)
+[![ESP32 S3 ](/static/images/2024/on-device-wake-word/esp32-s3-n8r2.webp)](https://s.click.aliexpress.com/e/_DFopt57)
         -   [**AliExpress - ESP32 S3 N8R2 Dev Board**](https://s.click.aliexpress.com/e/_DFopt57)
         -   [**Amazon - ESP32 S3 N8R2 Dev Board**](https://amzn.to/3xnA8ax)
 
+Guide for ordering ESP32 N8R2 or N16R8 Board is [here](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/hw-reference/esp32s3/user-guide-devkitc-1.html#ordering-information)
       <br/>
 4.  **INMP441 Microphone**  
     Links to buy this:
         
 [![INMP441 MICROPHONE](/static/images/2023/esp32-voice-assistant/inmp441-microphone.webp)](https://s.click.aliexpress.com/e/_Dmn2PyR)
         -   [**AliExpress - INMP441 Microphone**](https://s.click.aliexpress.com/e/_Dmn2PyR)
-        -   [**Amazon - INMP441 Microphone**](https://amzn.to/47uScws)
+        -   [**Amazon - INMP441 Microphone**](https://amzn.to/3GdxO7o)
         <br/>
 5. **MAX98357A Audio Amplifier**  
     Links to buy this:
 [![MAX98357A](/static/images/2023/esp32-voice-assistant/MAX98357A.webp)](https://s.click.aliexpress.com/e/_DdyIFTH)
         -   [**AliExpress - MAX98357A**](https://s.click.aliexpress.com/e/_DdyIFTH)
-        -   [**Amazon - MAX98357A**](https://amzn.to/47vEMjH)      
+        -   [**Amazon - MAX98357A**](https://amzn.to/46wKTmW)      
         <br/>
 6.  **3-watt Speakers** (Optional: Only required to listen to the pipeline output)  
     Links to buy these.  
@@ -315,7 +316,8 @@ voice_assistant:
                 voice_assistant.is_running:
           - micro_wake_word.start:  
 ```
-  
+
+**Important:** You need to set the PSRAM mode to octal or quad depending on the type of the board by referring to [this](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/hw-reference/esp32s3/user-guide-devkitc-1.html#ordering-information) link.
 
 **Step 6**: click on “**Save**” and then click on “**Install**” on the top right-hand corner.
 
