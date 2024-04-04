@@ -133,6 +133,12 @@
   </url>
 
   <url>
+    <loc
+      >https://smarthomecircle.com/How-to-setup-on-device-wake-word-for-voice-assistant-home-assistant</loc
+    >
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/create-nas-with-raspberry-pi-5</loc>
   </url>
 
@@ -254,6 +260,10 @@
 
   <url>
     <loc>https://smarthomecircle.com/tags/matter</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/micro-wake-word</loc>
   </url>
 
   <url>

@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 14 Dec 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 04 Apr 2024 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/wake-word/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/How-to-setup-on-device-wake-word-for-voice-assistant-home-assistant</guid>
+    <title>How To Setup On-Device Wake Word Detection For Voice Assistant using Micro Wake Word</title>
+    <link>https://smarthomecircle.com/How-to-setup-on-device-wake-word-for-voice-assistant-home-assistant</link>
+    <description>In this article, we will look at how we can set up an ESP32 S3 with on-device Wake Word detection using MicroWake Word for your Voice Assistant to send commands to Home Assistant</description>
+    <pubDate>Thu, 04 Apr 2024 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Wake Word</category><category>Micro Wake Word</category><category>ESP32</category><category>Voice Assistant</category><category>Home Assistant</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/custom-wake-word-for-voice-assistant-with-home-assistant</guid>
     <title>How to Create Custom Wake Word For Your Voice Assistant In Home Assistant</title>
