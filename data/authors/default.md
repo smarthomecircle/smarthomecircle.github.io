@@ -13,13 +13,14 @@ youtube: "https://www.youtube.com/@SmartHomeCircle"
 
 Hi there,
 
-I am Amrut and if you want to get onboard with learning about home automation and building smart home then you are at the right place.
+I am Amrut and if you want to get on board with learning about home automation and building smart homes then you are at the right place.
 
-I like to explore various topics in home automation and smart devices. It facinates me what endless apportunities are there to make your home smarter everyday.
+I like to explore various topics in home automation and smart devices. It fascinates me what endless opportunities are there to make your home smarter every day.
 
-Currently I use Home Assistant as a main source for doing all my automations. I monitor my house with various sensors and complex automation scenarios. 
-If you want to get in touch with me or have any feedback about my writing, don’t hesitate to contact me on [twitter](https://twitter.com/smarthomecircle)
+Home Assistant is my main source for doing all my automation. I monitor my house with various sensors and complex automation scenarios. 
 
-Follow me on Twitter to learn more about how you can make your home smarter everyday. 
+If you want to get in touch with me or have any feedback about my writing, don't hesitate to contact me on [Twitter](https://twitter.com/smarthomecircle)
+
+Follow me on Twitter to learn more about how you can make your home smarter every day. 
 
 For business related queries : <a href="mailto:smarthomecircle@gmail.com">smarthomecircle@gmail.com</a>
