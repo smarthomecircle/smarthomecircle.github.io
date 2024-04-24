@@ -100,9 +100,7 @@ services:
     image: rhasspy/wyoming-snowboy
     container_name: snowboy
 
-    entrypoint: python3
     command: >
-      -m wyoming_snowboy
       --uri 'tcp://0.0.0.0:10500'
       --custom-model-dir /share/snowboy
     volumes:
