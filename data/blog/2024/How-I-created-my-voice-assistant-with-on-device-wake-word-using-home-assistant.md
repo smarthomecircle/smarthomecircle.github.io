@@ -1,21 +1,21 @@
 ---
-title: 'How To Setup On-Device Wake Word Detection For Voice Assistant using Micro Wake Word'
+title: 'How I Created My Voice Assistant With On-Device Wake Word Detection On ESP32 Using Micro Wake Word'
 author: 'Amrut Prabhu'
 categories: ''
 tags: [Wake Word, Micro Wake Word, ESP32, Voice Assistant, Home Assistant]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2024-04-04'
+date: '2024-05-23'
 draft: false
-summary: 'In this article, we will look at how we can set up an ESP32 S3 with on-device Wake Word detection using MicroWake Word for your Voice Assistant to send commands to Home Assistant'
-imageUrl: /static/images/2024/on-device-wake-word/cover.webp
+summary: 'In this article, we will look at how I created my Voice Assistant with an ESP32 S3 with on-device Wake Word detection using MicroWake Word to send commands to Home Assistant'
+imageUrl: /static/images/2024/created-my-voice-assistant/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/rT_q0g8dtmY"
+youtubeLink: "https://www.youtube.com/embed/aPP2alIU7Gg"
 
 ---
 
-In this article, we will look at how we can set up an ESP32 S3 with on-device Wake Word detection using MicroWake Word for your Voice Assistant to send commands to Home Assistant.
+In this article, we will look at how I created my voice Assistant with On-Device Wake Word detection on an ESP32 S3 using MicroWake Word to send commands to Home Assistant.
 
 <TOCInline toc={props.toc} asDisclosure />  
 
@@ -26,11 +26,11 @@ In this article, we will look at how we can set up an ESP32 S3 with on-device Wa
     You can check [this](https://smarthomecircle.com/how-to-connect-wifi-to-home-assistant-on-startup) link to see how you can install it for the first time
 2.  **ESPHome** is setup and running  
     In case you have not set it up, you can look at it [here](https://smarthomecircle.com/esp32-esp8266-esphome-with-home-assistant).
-3. **ESP32 S3 N8R2 Dev Board**  
+3. **ESP32 S3 N8R2 or N16R8 Dev Board**  
     Links to buy this:
-[![ESP32 S3 ](/static/images/2024/on-device-wake-word/esp32-s3-n8r2.webp)](https://s.click.aliexpress.com/e/_DFopt57)
-        -   [**AliExpress - ESP32 S3 N8R2 Dev Board**](https://s.click.aliexpress.com/e/_DFopt57)
-        -   [**Amazon - ESP32 S3 N8R2 Dev Board**](https://amzn.to/3xnA8ax)
+[![ESP32 S3 ](/static/images/components/esp32-s3-n8r2.webp)](https://s.click.aliexpress.com/e/_DFopt57)
+        -   [**AliExpress - ESP32 S3 Dev Board**](https://s.click.aliexpress.com/e/_DFopt57)
+        -   [**Amazon - ESP32 S3 Dev Board**](https://amzn.to/3xnA8ax)
 
 Guide for ordering ESP32 N8R2 or N16R8 Board is [here](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/hw-reference/esp32s3/user-guide-devkitc-1.html#ordering-information)
       <br/>
@@ -52,9 +52,19 @@ Guide for ordering ESP32 N8R2 or N16R8 Board is [here](https://docs.espressif.co
 [![3 watt speaker](/static/images/2023/esp32-voice-assistant/3-watt-speakers.webp)](https://s.click.aliexpress.com/e/_DBDIScT)
         -   [**AliExpress - 3-watt Speakers**](https://s.click.aliexpress.com/e/_DBDIScT)
         -   [**Amazon - 3-watt Speakers**](https://amzn.to/49BbAJR)      
-     
 
-## Set Up Voice Assist Pipeline
+
+7.  **COB 5mm WS2812B LED Strip** 
+    Links to buy these.  
+[![WS2812B LED Strip](/static/images/components/Ws2812b-cob-led-strip.webp)](https://s.click.aliexpress.com/e/_DDtD9SP)
+        -   [**AliExpress - COB 5mm WS2812B LED Strip**](https://s.click.aliexpress.com/e/_DDtD9SP)
+        -   [**Amazon - WS2812B LED Strip (Not the exact model)**](https://amzn.to/3yqR7t7)      
+
+
+## 3D Print Template For Voice Assistant Case
+You can find the link [here](https://www.thingiverse.com/thing:6631205) to the STL file for 3D printing the case and the cover. 
+
+## Set up Voice Assist Pipeline
 
 To set up voice assistant, we would need two components to create the Voice Assist pipeline in Home Assistant.
 
@@ -88,24 +98,27 @@ Now we will look at how we can prepare our ESP32 S3 with a microphone and 3-watt
 ## Circuit Diagram for ESP32 S3 With INMP441 Microphone & MAX98357A Audio Amplifier
 
 Here is the circuit diagram for connecting the ESP32 S3 with a microphone and speakers.
-![esp32-wiring-diagram.webp](/static/images/2024/on-device-wake-word/esp32-s3-connections.webp)
+![esp32-wiring-diagram.webp](/static/images/2024/created-my-voice-assistant/circuit-diagram.webp)
 
 **Important:** You need to connect the 5v pads as shown in the diagram to enable 5v output on the 5v pin.
 
 Here is the pin mapping table
 
-| ESP32 S3 N8R2 or N16R8 | INMP441 Microphone | Speaker |  
-| ----------- | ----------- | -------- |  
-| Vin (5v)    |             | Vin      |  
-| GND         |             | Gnd  |  
-| GPIO 6      |             | LRC  |  
-| GPIO 7      |             | BLCK |  
-| GPIO 8      |             | DIN  |  
-| GPIO 4      |   SD        |      |  
-| GPIO 3      |   WS        |      |  
-| GPIO 2      |   SCK       |      |  
-| 3v3         |   VDD       |      |  
-| GND         |  GND & L/R  |      |
+| ESP32 S3 N8R2 or N16R8 | INMP441 Microphone | Speaker |  LED Strip WS2812B |
+| ----------- | ----------- | -------- |  -------- |
+| GND         |             | Gnd  |         |  
+| GPIO 6      |             | LRC  |         |  
+| GPIO 7      |             | BLCK |         |  
+| GPIO 8      |             | DIN  |         |  
+| 3v3         |             | Vin  |         |  
+| GPIO 4      |   SD        |      |         |  
+| GPIO 3      |   WS        |      |         |  
+| GPIO 2      |   SCK       |      |         |  
+| 3v3         |   VDD       |      |         |  
+| GND         |  GND & L/R  |      |         |
+| GND         |             |      |    GND  |
+| GPIO 9      |             |      |    Din  |
+| Vin (5v)    |             |      |    Vin  |
 
 
 Once you have connected the microphone and the audio amplifier, let’s look at the code we must flash to the ESP32 S3 using ESPHome.
@@ -130,7 +143,6 @@ Now, you can follow these steps to flash the code required to make the ESP32 S3 
 
 **Step 5**: Place the following YAML code below.
 
-[The original](https://github.com/BigBobbas/esphome_firmware/blob/main/kahrendt_micro_wake_word/obww_esp32_s3_mic_and_speaker.yaml) yaml configuration is by ["_bigbobba"](https://github.com/BigBobbas/) from the Home Assistant Discord Channel
 
 ```yaml
 esphome:
@@ -157,13 +169,8 @@ esp32:
       CONFIG_AUDIO_BOARD_CUSTOM: "y"
    
 psram:
-  mode: quad  # quad for N8R2 and octal for N16R8
+  mode: octal # Please change this to quad for N8R2 and octal for N16R8
   speed: 80MHz
-
-
-# Enable logging
-logger:
-  hardware_uart: UART0
 
 # Enable Home Assistant API
 api:
@@ -195,6 +202,7 @@ wifi:
 captive_portal:
 
 
+
 button:
   - platform: restart
     name: "Restart"
@@ -215,15 +223,33 @@ switch:
           blue: 0%
           brightness: 60%
           effect: fast pulse 
+      - light.turn_on:
+          id: led_strip           
+          red: 100%
+          green: 0%
+          blue: 0%
+          brightness: 60%
+          effect: fast pulse 
+          
       - delay: 2s
       - light.turn_off:
           id: led_ww
+      - light.turn_off:
+          id: led_strip
+
       - light.turn_on:
-          id: led_ww           
+          id: led_ww          
           red: 100%
           green: 0%
           blue: 0%
           brightness: 30%
+      - light.turn_on:
+          id: led_strip           
+          red: 100%
+          green: 0%
+          blue: 0%
+          brightness: 30%
+
     on_turn_off:
       - micro_wake_word.start:
       - light.turn_on:
@@ -233,9 +259,32 @@ switch:
           blue: 0%
           brightness: 60%
           effect: fast pulse 
+      - light.turn_on:
+          id: led_strip  
+          red: 0%
+          green: 100%
+          blue: 0%
+          brightness: 60%
+          effect: fast pulse 
       - delay: 2s
       - light.turn_off:
-          id: led_ww 
+          id: led_strip
+      - light.turn_off:
+          id: led_ww
+
+binary_sensor:
+  - platform: gpio
+    id: button01
+    name: "Mute Button" # Physical Mute switch
+    pin:
+      number: GPIO10  #Physical Button connected to this pin.
+      inverted: True
+      mode:
+        input: True
+        pullup: True
+    on_press: 
+      then:
+        - switch.toggle: mute
    
 light:
   - platform: esp32_rmt_led_strip
@@ -245,7 +294,7 @@ light:
     num_leds: 1
     rmt_channel: 0
     chipset: ws2812
-    name: "on board light"
+    name: "On board light"
     effects:
       - pulse:
       - pulse:
@@ -254,14 +303,37 @@ light:
           update_interval: 0.5s
           min_brightness: 0%
           max_brightness: 100%
+
+  - platform: esp32_rmt_led_strip
+    id: led_strip
+    rgb_order: GRB
+    pin: GPIO09
+    num_leds: 29
+    rmt_channel: 1
+    chipset: ws2812
+    name: "Led Strip"
+    effects:
+      - pulse:
+      - pulse:
+          name: "Fast Pulse"
+          transition_length: 0.5s
+          update_interval: 0.5s
+          min_brightness: 0%
+          max_brightness: 100%
+      - addressable_scan:
+          name: "Scan Effect With Custom Values"
+          move_interval: 5ms
+          scan_width: 10
+
           
           
  # Audio and Voice Assistant Config          
 i2s_audio:
-  - id: i2s_in
+  - id: i2s_in # For microphone
     i2s_lrclk_pin: GPIO3  #WS 
     i2s_bclk_pin: GPIO2 #SCK
-  - id: i2s_speaker
+
+  - id: i2s_speaker #For Speaker
     i2s_lrclk_pin: GPIO6  #LRC 
     i2s_bclk_pin: GPIO7 #BLCK
 
@@ -269,11 +341,11 @@ microphone:
   - platform: i2s_audio
     id: va_mic
     adc_type: external
-    i2s_din_pin: GPIO4 #SD pin on the INMP441
+    i2s_din_pin: GPIO4 #SD
     channel: left
     pdm: false
     i2s_audio_id: i2s_in
-    bits_per_sample: 32 bit
+    bits_per_sample: 32bit
     
 speaker:
     platform: i2s_audio
@@ -285,9 +357,10 @@ speaker:
 
 micro_wake_word:
   on_wake_word_detected:
-    # then:
+    
     - voice_assistant.start:
         wake_word: !lambda return wake_word;
+        silence_detection: true
     - light.turn_on:
         id: led_ww           
         red: 30%
@@ -295,22 +368,32 @@ micro_wake_word:
         blue: 70%
         brightness: 60%
         effect: fast pulse 
+    - light.turn_on:
+        id: led_strip
+        effect: "Scan Effect With Custom Values"
+        red: 80%
+        green: 0%
+        blue: 80%
+        brightness: 80%
   model: hey_jarvis
     
 voice_assistant:
   id: va
   microphone: va_mic
-  noise_suppression_level: 2.0
+  auto_gain: 31dBFS
+  noise_suppression_level: 0
   volume_multiplier: 4.0
   speaker: va_speaker
   on_stt_end:
        then: 
          - light.turn_off: led_ww
+         - light.turn_off: led_strip
   on_error:
           - micro_wake_word.start:  
   on_end:
         then:
           - light.turn_off: led_ww
+          - light.turn_off: led_strip
           - wait_until:
               not:
                 voice_assistant.is_running:
@@ -368,6 +451,6 @@ If the device is not auto-discovered, then
 
 With this, you are now done setting up the ESP32 S3 with On-Device Wake Word detection for your Voice Assistant connected to Home Assistant.
 
--   [**My Local Voice Assistant Device**](https://smarthomecircle.com/created-voice-assistant-esp32-with-wake-word-in-home-assistant)
+-   [**Connect Bluetooth Devices to Home Assistant with Bluetooth Proxy**](https://smarthomecircle.com/connect-bluetooth-devices-to-home-assistant-with-bluetooth-proxy)
 -   [**Control LED Strip with Home Assistant Using WLED**](https://smarthomecircle.com/how-to-connect-led-strip-with-home-assistant-using-wled)
--   [**How I Added a Matter Device to Home Assistant**](https://smarthomecircle.com/add-matter-devices-to-home-assistant)
+-   [**Connect Home Assistant to the WIFI on First Boot**](https://smarthomecircle.com/how-to-connect-wifi-to-home-assistant-on-startup)
