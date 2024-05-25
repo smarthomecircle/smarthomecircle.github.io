@@ -31,7 +31,7 @@ sudo raspi-config
 
 **Step 3:** Now update your Raspberry Pi OS with the following command.
 ```shell
-sudo apt update
+sudo apt upgrade
 ```
 **Step 4:** Now run this command
 ```shell
