@@ -185,7 +185,7 @@ api:
         then:
           - voice_assistant.stop: 
 
-
+logger:
 
 ota:
   password: "1245211a05eef56614a2ef5a3f3e971c"
