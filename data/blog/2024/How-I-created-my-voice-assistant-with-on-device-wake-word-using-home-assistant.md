@@ -104,21 +104,23 @@ Here is the circuit diagram for connecting the ESP32 S3 with a microphone and sp
 
 Here is the pin mapping table
 
-| ESP32 S3 N8R2 or N16R8 | INMP441 Microphone | Speaker |  LED Strip WS2812B |
-| ----------- | ----------- | -------- |  -------- |
-| GND         |             | Gnd  |         |  
-| GPIO 6      |             | LRC  |         |  
-| GPIO 7      |             | BLCK |         |  
-| GPIO 8      |             | DIN  |         |  
-| 3v3         |             | Vin  |         |  
-| GPIO 4      |   SD        |      |         |  
-| GPIO 3      |   WS        |      |         |  
-| GPIO 2      |   SCK       |      |         |  
-| 3v3         |   VDD       |      |         |  
-| GND         |  GND & L/R  |      |         |
-| GND         |             |      |    GND  |
-| GPIO 9      |             |      |    Din  |
-| Vin (5v)    |             |      |    Vin  |
+| ESP32 S3 N8R2 or N16R8 | INMP441 Microphone | Speaker |  LED Strip WS2812B | Mute Switch |
+| ----------- | ----------- | -------- |  -------- |  -------- |
+| GND         |             |      |         |  switch pin 1 |  
+| GPIO 10     |             |      |         |  switch pin 2 |  
+| GND         |             | Gnd  |         |         |  
+| GPIO 6      |             | LRC  |         |         |  
+| GPIO 7      |             | BLCK |         |         |    
+| GPIO 8      |             | DIN  |         |         |    
+| 3v3         |             | Vin  |         |         |    
+| GPIO 4      |   SD        |      |         |         |    
+| GPIO 3      |   WS        |      |         |         |    
+| GPIO 2      |   SCK       |      |         |         |    
+| 3v3         |   VDD       |      |         |         |    
+| GND         |  GND & L/R  |      |         |         |
+| GND         |             |      |    GND  |         |    
+| GPIO 9      |             |      |    Din  |         |    
+| Vin (5v)    |             |      |    Vin  |         |    
 
 
 Once you have connected the microphone and the audio amplifier, let’s look at the code we must flash to the ESP32 S3 using ESPHome.
