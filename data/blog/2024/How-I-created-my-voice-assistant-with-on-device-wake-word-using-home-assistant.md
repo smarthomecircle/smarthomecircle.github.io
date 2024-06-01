@@ -383,7 +383,7 @@ voice_assistant:
   id: va
   microphone: va_mic
   auto_gain: 31dBFS
-  noise_suppression_level: 0
+  noise_suppression_level: 2
   volume_multiplier: 4.0
   speaker: va_speaker
   on_stt_end:
