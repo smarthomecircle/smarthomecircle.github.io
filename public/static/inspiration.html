@@ -32,10 +32,22 @@
         .verse:last-child {
             margin-bottom: 0;
         }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
     </style>
+    <script>
+        function openImage(url) {
+            window.open(url);
+        }
+    </script>
 </head>
 <body>
     <div class="prayer">
+        <img src="/static/Shree-Swami-Samarth.jpg" alt="Prayer Image" onclick="openImage('/static/Shree-Swami-Samarth.jpg')">
         <h1>॥ श्री स्वामी समर्थ ॥</h1>
         <div class="verse">
             <p>गुरु ब्रम्हा गुरु विष्णू<br>
