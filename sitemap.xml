@@ -25,6 +25,30 @@
   </url>
 
   <url>
+    <loc
+      >https://smarthomecircle.com/How-I-created-my-voice-assistant-with-on-device-wake-word-using-home-assistant</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://smarthomecircle.com/How-to-setup-on-device-wake-word-for-voice-assistant-home-assistant</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/create-nas-with-raspberry-pi-5</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/how-to-backup-home-assistant-on-google-drive</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/how-to-update-bootloader-on-raspberrypi</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/Setup-LG-Washer-with-Home-Assistant</loc>
   </url>
 
@@ -130,30 +154,6 @@
     <loc
       >https://smarthomecircle.com/setup-voice-assistant-with-home-assistant-using-docker-usb-microphone</loc
     >
-  </url>
-
-  <url>
-    <loc
-      >https://smarthomecircle.com/How-I-created-my-voice-assistant-with-on-device-wake-word-using-home-assistant</loc
-    >
-  </url>
-
-  <url>
-    <loc
-      >https://smarthomecircle.com/How-to-setup-on-device-wake-word-for-voice-assistant-home-assistant</loc
-    >
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/create-nas-with-raspberry-pi-5</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/how-to-backup-home-assistant-on-google-drive</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/how-to-update-bootloader-on-raspberrypi</loc>
   </url>
 
   <url>
