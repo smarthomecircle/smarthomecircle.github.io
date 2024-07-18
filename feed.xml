@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 23 May 2024 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 18 Jul 2024 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/add-timers-to-voice-assistant-on-device-wake-word-home-assistant</guid>
+    <title>Voice Assistant Timers With On-Device Wake Word Detection On ESP32 S3</title>
+    <link>https://smarthomecircle.com/add-timers-to-voice-assistant-on-device-wake-word-home-assistant</link>
+    <description>In this article, we will look at how I added timers to my Voice Assistant with an ESP32 S3 with on-device Wake Word detection</description>
+    <pubDate>Thu, 18 Jul 2024 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Wake Word</category><category>Micro Wake Word</category><category>ESP32</category><category>Voice Assistant</category><category>Home Assistant</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/How-I-created-my-voice-assistant-with-on-device-wake-word-using-home-assistant</guid>
     <title>How I Created My Voice Assistant With On-Device Wake Word Detection On ESP32 Using Micro Wake Word</title>
