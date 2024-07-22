@@ -296,7 +296,8 @@ micro_wake_word:
         blue: 70%
         brightness: 60%
         effect: fast pulse 
-  model: hey_jarvis
+  models:
+    - model: hey_jarvis
     
 voice_assistant:
   id: va

@@ -378,7 +378,8 @@ micro_wake_word:
         green: 0%
         blue: 80%
         brightness: 80%
-  model: hey_jarvis
+  models:
+    - model: hey_jarvis
     
 voice_assistant:
   id: va
