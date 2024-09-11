@@ -1,5 +1,5 @@
 ---
-title: 'How To Control LED Matrix With Home Assistant Like A Pro'
+title: 'How To Control LED Matrix With Home Assistant Like A Pro | Send Text Messages'
 author: 'Amrut Prabhu'
 categories: ''
 tags: [LED, LED Matrix, WLED, WS2812B LED, Home Assistant]
@@ -8,7 +8,7 @@ applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2024-09-12'
 draft: false
 summary: 'In this article we will look at controlling a 32x8 LED Matrix panel with Home Assistant like a pro'
-imageUrl: /static/images/2024/update-bootloader/cover.jpg
+imageUrl: /static/images/2024/led-matrix/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://youtu.be/L5L_ABFvAjg"
@@ -22,7 +22,7 @@ youtubeLink: "https://youtu.be/L5L_ABFvAjg"
     You can buy using the links below.
     -   [**Amazon -  8x32 LED Matrix**](https://amzn.to/3TJnZ8z)
     -   [**AliExpress -  8x32 LED Matrix**](https://s.click.aliexpress.com/e/_DFOOsH9)
-[![ 8x32 LED Matrix ](/static/images/2024/led-matrix/8x32-led-matrix.png)](https://amzn.to/3TJnZ8z)
+[![ 8x32 LED Matrix ](/static/images/2024/led-matrix/8x32-led-matrix.webp)](https://amzn.to/3TJnZ8z)
 
 2.  D1 Mini board
 
@@ -37,7 +37,7 @@ The link to the STL file for the 3D printing model is [here](https://www.thingiv
 
 ## Circuit Diagram
 
-![circuit diagram](/static/images/2024/led-matrix/circuit-diagram.png)
+![circuit diagram](/static/images/2024/led-matrix/circuit-diagram.webp)
 
 ## Installing WLED on D1 mini
 
@@ -46,7 +46,7 @@ The link to the STL file for the 3D printing model is [here](https://www.thingiv
 3.  After installation, configure Wifi credentials.
 4.  Once connected, add it to Home Assistant.
 
-## REST Commands for Controlling LED Matrix Text Input
+## REST Commands For Controlling LED Matrix Text Input
 
 ### Simple Text Options command
 ```yaml
