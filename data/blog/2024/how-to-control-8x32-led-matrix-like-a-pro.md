@@ -11,7 +11,7 @@ summary: 'In this article we will look at controlling a 32x8 LED Matrix panel wi
 imageUrl: /static/images/2024/led-matrix/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://youtu.be/L5L_ABFvAjg"
+youtubeLink: "https://www.youtube.com/embed/L5L_ABFvAjg"
 
 ---
 <TOCInline toc={props.toc} asDisclosure />  
