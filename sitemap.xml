@@ -25,36 +25,6 @@
   </url>
 
   <url>
-    <loc
-      >https://smarthomecircle.com/How-I-created-my-voice-assistant-with-on-device-wake-word-using-home-assistant</loc
-    >
-  </url>
-
-  <url>
-    <loc
-      >https://smarthomecircle.com/How-to-setup-on-device-wake-word-for-voice-assistant-home-assistant</loc
-    >
-  </url>
-
-  <url>
-    <loc
-      >https://smarthomecircle.com/add-timers-to-voice-assistant-on-device-wake-word-home-assistant</loc
-    >
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/create-nas-with-raspberry-pi-5</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/how-to-backup-home-assistant-on-google-drive</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/how-to-update-bootloader-on-raspberrypi</loc>
-  </url>
-
-  <url>
     <loc>https://smarthomecircle.com/Setup-LG-Washer-with-Home-Assistant</loc>
   </url>
 
@@ -163,6 +133,40 @@
   </url>
 
   <url>
+    <loc
+      >https://smarthomecircle.com/How-I-created-my-voice-assistant-with-on-device-wake-word-using-home-assistant</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://smarthomecircle.com/How-to-setup-on-device-wake-word-for-voice-assistant-home-assistant</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://smarthomecircle.com/add-timers-to-voice-assistant-on-device-wake-word-home-assistant</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/create-nas-with-raspberry-pi-5</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/how-to-backup-home-assistant-on-google-drive</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/how-to-control-8x32-led-matrix-like-a-pro</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/how-to-update-bootloader-on-raspberrypi</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/tags/back-up</loc>
   </url>
 
@@ -251,7 +255,15 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/tags/led</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/tags/led-lights</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/led-matrix</loc>
   </url>
 
   <url>
@@ -356,6 +368,10 @@
 
   <url>
     <loc>https://smarthomecircle.com/tags/wled</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/ws2812b-led</loc>
   </url>
 
   <url>

@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 12 Oct 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 12 Sep 2024 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/wled/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/how-to-control-8x32-led-matrix-like-a-pro</guid>
+    <title>How To Control LED Matrix With Home Assistant Like A Pro | Send Text Messages</title>
+    <link>https://smarthomecircle.com/how-to-control-8x32-led-matrix-like-a-pro</link>
+    <description>In this article we will look at controlling a 32x8 LED Matrix panel with Home Assistant like a pro</description>
+    <pubDate>Thu, 12 Sep 2024 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>LED</category><category>LED Matrix</category><category>WLED</category><category>WS2812B LED</category><category>Home Assistant</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/how-to-connect-led-strip-with-home-assistant-using-wled</guid>
     <title>How to Control LED Strip with Home Assistant Using WLED — Step-By-Step Guide</title>
