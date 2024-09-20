@@ -282,7 +282,7 @@ speaker:
     i2s_audio_id: i2s_speaker
     dac_type: external
     i2s_dout_pin: GPIO8   #  DIN Pin of the MAX98357A Audio Amplifier
-    mode: mono
+    channel: mono
 
 micro_wake_word:
   on_wake_word_detected:
