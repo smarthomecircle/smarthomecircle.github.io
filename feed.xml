@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 12 Sep 2024 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Wed, 25 Sep 2024 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro</guid>
+    <title>Exploring the Orange Pi 5 MAX: A Powerful Successor to the Orange Pi 5 Pro</title>
+    <link>https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro</link>
+    <description>In this article we will look at the Orange Pi 5 MAX and compare it with the Raspberry Pi 5 in terms of performance</description>
+    <pubDate>Wed, 25 Sep 2024 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>SBC</category><category>Orange pi</category><category>Orange pi 5</category><category>Orange pi 5 max</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/how-to-control-8x32-led-matrix-like-a-pro</guid>
     <title>How To Control LED Matrix With Home Assistant Like A Pro | Send Text Messages</title>

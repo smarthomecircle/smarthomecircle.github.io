@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Smart Home Circle</title>
+      <link>https://smarthomecircle.com</link>
+      <description>Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.</description>
+      <language>en-us</language>
+      <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Wed, 25 Sep 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://smarthomecircle.com/tags/orange-pi/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro</guid>
+    <title>Exploring the Orange Pi 5 MAX: A Powerful Successor to the Orange Pi 5 Pro</title>
+    <link>https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro</link>
+    <description>In this article we will look at the Orange Pi 5 MAX and compare it with the Raspberry Pi 5 in terms of performance</description>
+    <pubDate>Wed, 25 Sep 2024 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>SBC</category><category>Orange pi</category><category>Orange pi 5</category><category>Orange pi 5 max</category>
+  </item>
+
+    </channel>
+  </rss>
