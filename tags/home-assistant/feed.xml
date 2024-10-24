@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 12 Sep 2024 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 24 Oct 2024 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/home-assistant/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/matter-bridge-home-assistant-addon-for-google-home-alexa-apple-home</guid>
+    <title>How to Integrate Home Assistant with Google Home, Apple Home, and Alexa Without Exposing it to the Internet</title>
+    <link>https://smarthomecircle.com/matter-bridge-home-assistant-addon-for-google-home-alexa-apple-home</link>
+    <description>Securely connect Home Assistant devices to Google Home, Apple Home, and Alexa without internet exposure.</description>
+    <pubDate>Thu, 24 Oct 2024 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Home Assistant</category><category>Home Assistant Add-On</category><category>Matter</category><category>Apple Home</category><category>Google Home</category><category>Alexa</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/how-to-control-8x32-led-matrix-like-a-pro</guid>
     <title>How To Control LED Matrix With Home Assistant Like A Pro | Send Text Messages</title>
