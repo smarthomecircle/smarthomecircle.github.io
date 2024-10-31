@@ -171,6 +171,10 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/local-voice-assistant-with-seeed-studio-respeaker-lite</loc>
+  </url>
+
+  <url>
     <loc
       >https://smarthomecircle.com/matter-bridge-home-assistant-addon-for-google-home-alexa-apple-home</loc
     >
@@ -341,11 +345,19 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/tags/piper</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/tags/raspberry-pi</loc>
   </url>
 
   <url>
     <loc>https://smarthomecircle.com/tags/raspberry-pi-5</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/respeaker-lite</loc>
   </url>
 
   <url>
@@ -402,6 +414,10 @@
 
   <url>
     <loc>https://smarthomecircle.com/tags/wake-word</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/whisper</loc>
   </url>
 
   <url>

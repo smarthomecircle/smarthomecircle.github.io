@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Smart Home Circle</title>
+      <link>https://smarthomecircle.com</link>
+      <description>Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.</description>
+      <language>en-us</language>
+      <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://smarthomecircle.com/tags/piper/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://smarthomecircle.com/local-voice-assistant-with-seeed-studio-respeaker-lite</guid>
+    <title>How to Build Your Own Local Voice Assistant with ReSpeaker Lite and Home Assistant</title>
+    <link>https://smarthomecircle.com/local-voice-assistant-with-seeed-studio-respeaker-lite</link>
+    <description>Step by step guide to create your own local voice assistant with Home Assistant with on-device Wake Word detection</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Home Assistant</category><category>Voice Assistant</category><category>ReSpeaker Lite</category><category>micro wake word</category><category>whisper</category><category>piper</category>
+  </item>
+
+    </channel>
+  </rss>
