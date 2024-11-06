@@ -7,11 +7,11 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2024-11-07'
 draft: false
-summary: 'Step by step guide to create your own local voice assistant with Home Assistant with on-device Wake Word detection'
-imageUrl: /static/images/2024/respeaker-lite/cover.webp
+summary: 'Radxa X4, A New Intel-Based Single Board Computer: Features, Performance, and Use Cases'
+imageUrl: /static/images/2024/radxa-x4-sbc/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: ""
+youtubeLink: "https://www.youtube.com/embed/IiDMtrdSGsg"
 
 ---
 <TOCInline toc={props.toc} asDisclosure />  
@@ -97,7 +97,7 @@ If you enjoy my content and want to support the channel, consider [buying me a c
 Thanks for following along, and happy building!
 
 -   [**Create a NAS with Raspberry Pi 5**](https://smarthomecircle.com/create-nas-with-raspberry-pi-5)
--   [**Control LED Matrix With Home Assistant Like A Pro**](https://smarthomecircle.com/how-to-control-8x32-led-matrix-like-a-pro)
+-   [**Create Custom Wake Word For Your Voice Assistant**](https://smarthomecircle.com/custom-wake-word-for-voice-assistant-with-home-assistant)
 -   [**Share Files With Home Assistant OS with Samba Share**](https://smarthomecircle.com/easily-share-files-with-home-assistant-using-samba-share)
 -   [**Orange Pi 5 MAX: A Powerful Successor to the Orange Pi 5 Pro**](https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro)
 
