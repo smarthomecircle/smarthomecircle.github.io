@@ -103,6 +103,56 @@ As for cooling, although I couldn’t find an official fan for the board, I used
 
 For optimal performance, I recommend using this board with a heatsink and a fan, especially if you plan to push the CPU to its limits.
 
+## Memory Bandwidth Test 
+
+Here is the output of 1 GB of memory bandwidth test. 
+
+<details>
+  <summary>Memory Bandwidth Test</summary>
+
+    ```shell
+    amrut@orangepi5-max:~$ mbw -s 1024 1000
+    mbw: invalid option -- 's'
+    Long uses 8 bytes. Allocating 2*134217728 elements = 2147483648 bytes of memory.
+    Using 262144 bytes as blocks for memcpy block copy test.
+    Getting down to business... Doing 10 runs per test.
+    0       Method: MEMCPY  Elapsed: 0.10618        MiB: 1024.00000 Copy: 9643.728 MiB/s
+    1       Method: MEMCPY  Elapsed: 0.10495        MiB: 1024.00000 Copy: 9757.306 MiB/s
+    2       Method: MEMCPY  Elapsed: 0.10495        MiB: 1024.00000 Copy: 9757.120 MiB/s
+    3       Method: MEMCPY  Elapsed: 0.10491        MiB: 1024.00000 Copy: 9760.561 MiB/s
+    4       Method: MEMCPY  Elapsed: 0.10491        MiB: 1024.00000 Copy: 9760.933 MiB/s
+    5       Method: MEMCPY  Elapsed: 0.10494        MiB: 1024.00000 Copy: 9757.771 MiB/s
+    6       Method: MEMCPY  Elapsed: 0.10494        MiB: 1024.00000 Copy: 9757.492 MiB/s
+    7       Method: MEMCPY  Elapsed: 0.10492        MiB: 1024.00000 Copy: 9759.631 MiB/s
+    8       Method: MEMCPY  Elapsed: 0.10497        MiB: 1024.00000 Copy: 9754.982 MiB/s
+    9       Method: MEMCPY  Elapsed: 0.10496        MiB: 1024.00000 Copy: 9756.469 MiB/s
+    AVG     Method: MEMCPY  Elapsed: 0.10506        MiB: 1024.00000 Copy: 9746.477 MiB/s
+    0       Method: DUMB    Elapsed: 0.08920        MiB: 1024.00000 Copy: 11479.692 MiB/s
+    1       Method: DUMB    Elapsed: 0.09364        MiB: 1024.00000 Copy: 10935.965 MiB/s
+    2       Method: DUMB    Elapsed: 0.08939        MiB: 1024.00000 Copy: 11455.548 MiB/s
+    3       Method: DUMB    Elapsed: 0.08941        MiB: 1024.00000 Copy: 11452.217 MiB/s
+    4       Method: DUMB    Elapsed: 0.09430        MiB: 1024.00000 Copy: 10858.500 MiB/s
+    5       Method: DUMB    Elapsed: 0.09518        MiB: 1024.00000 Copy: 10758.563 MiB/s
+    6       Method: DUMB    Elapsed: 0.09274        MiB: 1024.00000 Copy: 11041.741 MiB/s
+    7       Method: DUMB    Elapsed: 0.08932        MiB: 1024.00000 Copy: 11464.013 MiB/s
+    8       Method: DUMB    Elapsed: 0.08927        MiB: 1024.00000 Copy: 11470.305 MiB/s
+    9       Method: DUMB    Elapsed: 0.08925        MiB: 1024.00000 Copy: 11474.032 MiB/s
+    AVG     Method: DUMB    Elapsed: 0.09117        MiB: 1024.00000 Copy: 11231.691 MiB/s
+    0       Method: MCBLOCK Elapsed: 0.06921        MiB: 1024.00000 Copy: 14794.908 MiB/s
+    1       Method: MCBLOCK Elapsed: 0.06832        MiB: 1024.00000 Copy: 14989.387 MiB/s
+    2       Method: MCBLOCK Elapsed: 0.06806        MiB: 1024.00000 Copy: 15045.990 MiB/s
+    3       Method: MCBLOCK Elapsed: 0.06831        MiB: 1024.00000 Copy: 14990.923 MiB/s
+    4       Method: MCBLOCK Elapsed: 0.06808        MiB: 1024.00000 Copy: 15040.686 MiB/s
+    5       Method: MCBLOCK Elapsed: 0.06749        MiB: 1024.00000 Copy: 15172.843 MiB/s
+    6       Method: MCBLOCK Elapsed: 0.06800        MiB: 1024.00000 Copy: 15059.045 MiB/s
+    7       Method: MCBLOCK Elapsed: 0.06741        MiB: 1024.00000 Copy: 15189.723 MiB/s
+    8       Method: MCBLOCK Elapsed: 0.06749        MiB: 1024.00000 Copy: 15172.618 MiB/s
+    9       Method: MCBLOCK Elapsed: 0.06758        MiB: 1024.00000 Copy: 15152.412 MiB/s
+    AVG     Method: MCBLOCK Elapsed: 0.06799        MiB: 1024.00000 Copy: 15059.975 MiB/s
+    ```
+
+</details>
+
 ## Conclusion: A Capable Competitor to Raspberry Pi 5
 
 The Orange Pi 5 MAX offers significant improvements over its predecessor and strong competition to the Raspberry Pi 5. With built-in support for PCIe Gen 3, faster NVMe speeds, and excellent multi-core performance, it’s an excellent option for those looking to build home servers, NAS devices, or home automation systems.
