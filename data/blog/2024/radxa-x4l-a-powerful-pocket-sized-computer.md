@@ -1,5 +1,5 @@
 ---
-title: 'Radxa X4L: A Comprehensive Review of the Pocket-Sized Powerhouse'
+title: 'Radxa X4L: A Pocket-Sized Powerhouse'
 author: 'Amrut Prabhu'
 categories: ''
 tags: [Radxa, SBC, Windows, Linux,  Home Assistant, Voice Assistant, whisper, piper]
@@ -8,10 +8,10 @@ applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2024-12-05'
 draft: false
 summary: 'A powerful pocket-sized PC featuring the Intel N100 processor, dual 32-bit LPDDR5 memory channels, and versatile OS support. Ideal for home automation, virtualization, and portable computing.'
-imageUrl: /static/images/2024/radxa-x4-sbc/cover.webp
+imageUrl: /static/images/2024/radxa-x4l/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/IiDMtrdSGsg"
+youtubeLink: "https://www.youtube.com/embed/5ARf0nh62rU"
 
 ---
 <TOCInline toc={props.toc} asDisclosure />  
@@ -81,7 +81,7 @@ The X4L comes pre-installed with **Roobi**, a recovery installer developed by Ra
 
 -   **Geekbench**: Scored ~10% better than the X4 on Windows; no significant difference on Ubuntu.
     - Scores on [Windows](https://browser.geekbench.com/v6/cpu/8901652) and [Linux](https://browser.geekbench.com/v6/cpu/8899835)
--   **Tiny MemBench**: The X4L showed improvements across the board:
+-   **Tiny MemBench**: The X4L showed improvements across the board compared to the X4:
 
     -   **C copy**: +30%
     -   **C fill**: +16%
@@ -236,9 +236,8 @@ If you’re interested in this device, drop your suggestions for tests you’d l
 
 Stay tuned for more content on home automation and tech reviews.
 
-
+-   [**Radxa X4: 60$ Powerful Atlernative to Raspberry Pi 5**](https://smarthomecircle.com/radxa-x4-alternative-to-raspberry-pi-5)
 -   [**Create a NAS with Raspberry Pi 5**](https://smarthomecircle.com/create-nas-with-raspberry-pi-5)
 -   [**Create Custom Wake Word For Your Voice Assistant**](https://smarthomecircle.com/custom-wake-word-for-voice-assistant-with-home-assistant)
--   [**Share Files With Home Assistant OS with Samba Share**](https://smarthomecircle.com/easily-share-files-with-home-assistant-using-samba-share)
 -   [**Orange Pi 5 MAX: A Powerful Successor to the Orange Pi 5 Pro**](https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro)
 
