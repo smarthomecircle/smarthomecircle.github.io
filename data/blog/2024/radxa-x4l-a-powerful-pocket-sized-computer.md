@@ -66,7 +66,8 @@ The X4L comes pre-installed with **Roobi**, a recovery installer developed by Ra
     -  **Windows**: 3400 MB/s (read speed).
     - **Ubuntu**: 2400 MB/s (read speed).
 
-  
+### Power Consumption
+- At Idle, the X4L sips about 10 Watts of energy. While I was running a stress test, the power consumption went up to 21 Watts of energy.
 
 ### Ethernet Speeds:
 
