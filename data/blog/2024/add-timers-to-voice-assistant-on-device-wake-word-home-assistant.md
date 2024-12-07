@@ -91,7 +91,7 @@ esp32:
       CONFIG_AUDIO_BOARD_CUSTOM: "y"
    
 psram:
-  mode: octal
+  mode: octal # Please change this to quad for N8R2 and octal for N16R8
   speed: 80MHz
 
 
@@ -201,12 +201,14 @@ switch:
       - light.turn_off:
           id: led_ww
   - platform: template
-    id: timer_ringing #to control the ringing when the timer is finished
+    id: timer_ringing
     optimistic: true
     internal: False
     name: "Timer Ringing"
     restore_mode: ALWAYS_OFF
 
+
+# GPIO Mute Button Config
 binary_sensor:
   - platform: gpio
     id: button01
@@ -225,7 +227,9 @@ binary_sensor:
           - switch.turn_off: timer_ringing
         else:
           - switch.toggle: mute
-   
+
+
+
 light:
   - platform: esp32_rmt_led_strip
     id: led_ww
@@ -234,7 +238,7 @@ light:
     num_leds: 1
     rmt_channel: 0
     chipset: ws2812
-    name: "on board light"
+    name: "On board light"
     effects:
       - pulse:
       - pulse:
@@ -245,7 +249,7 @@ light:
           max_brightness: 100%
 
   - platform: esp32_rmt_led_strip
-    id: led_strip
+    id: led_strip    # LED Strip Config
     rgb_order: GRB
     pin: GPIO09
     num_leds: 29
@@ -293,7 +297,7 @@ speaker:
     i2s_audio_id: i2s_speaker
     dac_type: external
     i2s_dout_pin: GPIO8   #  DIN Pin of the MAX98357A Audio Amplifier
-    mode: mono
+    channel: mono
 
     
 micro_wake_word:
@@ -317,7 +321,7 @@ micro_wake_word:
         blue: 80%
         brightness: 80%
   models:
-    - model: hey_jarvis
+    - model: okay_nabu
     
 voice_assistant:
   id: va
@@ -366,6 +370,7 @@ voice_assistant:
     - wait_until:
         and:
           - micro_wake_word.is_running:
+
     - while:
         condition:
           switch.is_on: timer_ringing
@@ -387,7 +392,7 @@ external_components:
 file: 
   - id: timer_finished_wave_file
     file: https://github.com/esphome/firmware/raw/main/voice-assistant/sounds/timer_finished.wav
-  
+ 
 ```
 With this, you can configure timers in an ESP32 S3 with On-Device Wake Word detection for your Voice Assistant connected to Home Assistant.
 
