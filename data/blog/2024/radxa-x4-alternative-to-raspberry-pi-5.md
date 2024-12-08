@@ -2,7 +2,7 @@
 title: 'Radxa X4: 60$ Powerful Atlernative to Raspberry Pi 5'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [Radxa, SBC, Windows, Linux,  Home Assistant, Voice Assistant, whisper, piper]
+tags: [Radxa, SBC, Windows, Linux,  Home Assistant, whisper, piper]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2024-11-07'

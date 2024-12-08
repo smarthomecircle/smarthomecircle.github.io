@@ -11,7 +11,7 @@ summary: 'In this article, we will look at how I added timers to my Voice Assist
 imageUrl: /static/images/2024/add-timer-to-voice-assistant/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/aPP2alIU7Gg"
+youtubeLink: "https://www.youtube.com/embed/QMCB6hLPUM4"
 
 ---
 
