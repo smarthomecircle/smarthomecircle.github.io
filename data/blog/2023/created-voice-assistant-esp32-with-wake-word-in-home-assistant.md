@@ -122,6 +122,7 @@ Now here is the code that you will have to add after creating a device in ESPHom
 I found some INMP441 Microphone may have the left and right channel reversed. In my case, the microphone was set to right channel on setting the L/R pin to ground. So you might have to change the `channel:` config below to left.
 
 ```yaml
+
 i2s_audio:
   - id: i2s_in
     i2s_lrclk_pin: GPIO26 #WS 
@@ -175,7 +176,7 @@ voice_assistant:
         red: 0%
         green: 100%
         blue: 0%
-
+        
   on_error: 
     - light.turn_on:
         id: led_light
@@ -210,7 +211,6 @@ voice_assistant:
         id: led_light
 
 
-
 binary_sensor:
   - platform: status
     name: API Connection
@@ -230,6 +230,10 @@ binary_sensor:
           then:
             - voice_assistant.stop:
 
+button:
+  - platform: restart
+    name: "Restart"
+    id: but_rest
 
 switch:
   - platform: template
@@ -256,7 +260,7 @@ light:
     id: led_light
     type: grb
     pin: GPIO32      # DIN pin of the LED Strip
-    num_leds: 9      # change the Number of LEDS according to your LED Strip.
+    num_leds: 9      # change the Number of LEDS accordign to your LED Strip.
     name: "Light"
     variant: ws2812x
     default_transition_length: 0.5s
@@ -266,7 +270,6 @@ light:
           name: Scan Effect With Custom Values
           move_interval: 50ms
           scan_width: 2
-
 
 ```
 Here is how finally the device looks like after assembling it. 
