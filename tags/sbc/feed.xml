@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 05 Dec 2024 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 12 Dec 2024 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/sbc/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/raspberry-pi-compute-module-5-review</guid>
+    <title>Raspberry Pi Compute Module 5: Performance, Testing, and Potential</title>
+    <link>https://smarthomecircle.com/raspberry-pi-compute-module-5-review</link>
+    <description>Unleash Raspberry Pi Compute Module 5: compact, versatile mini-computer for high-speed storage, DIY NAS, and innovative projects.</description>
+    <pubDate>Thu, 12 Dec 2024 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Raspberry Pi</category><category>CM5</category><category>Compute Module</category><category>Compute Module 5</category><category>SBC</category><category>Linux</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/radxa-x4l-a-powerful-pocket-sized-computer</guid>
     <title>Radxa X4L: A Pocket-Sized Powerhouse</title>
