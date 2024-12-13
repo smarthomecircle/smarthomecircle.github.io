@@ -31,6 +31,7 @@ youtubeLink: "https://www.youtube.com/embed/4m7v72YCzm4"
 The Raspberry Pi Compute Module 5 (CM5) is an impressively compact computer that fits in the palm of your hand. But while its size and capabilities are remarkable, it isn’t something you can use straight out of the box. To unlock its full potential, you’ll need a carrier board. The [official development carrier board](https://www.raspberrypi.com/products/compute-module-5-io-board/) is one option, and as the ecosystem grows, more specialized carrier boards are expected to hit the market. These boards will cater to applications ranging from server machines in the server racks to DIY NAS setups.
 
 ![Board-view](/static/images/2024/raspberrypi-cm5/io-board.webp)
+
 ### Setting Up the Compute Module 5
 
 To get started, I installed Raspberry Pi OS using the [USBboot](https://github.com/raspberrypi/usbboot) mechanism, as my CM5 had 32GB eMMC storage. Once the OS was up and running, I began testing the module’s capabilities.
