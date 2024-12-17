@@ -5,13 +5,13 @@ categories: ''
 tags: [Raspberry Pi, CM5, Compute Module, Compute Module 5, SBC, Linux]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2024-12-16'
+date: '2024-12-19'
 draft: false
-summary: 'Unleash Raspberry Pi Compute Module 5: compact, versatile mini-computer for high-speed storage, DIY NAS, and innovative projects.'
+summary: 'Step by step guide to install Raspberry Pi OS on Raspberry Pi Compute Module 5 with eMMC Storage '
 imageUrl: /static/images/2024/os-cm5-emmc/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/4m7v72YCzm4"
+youtubeLink: "https://www.youtube.com/embed/SWv-WYlHJWQ"
 
 ---
 <TOCInline toc={props.toc} asDisclosure />  
