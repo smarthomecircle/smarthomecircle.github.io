@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 12 Dec 2024 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 19 Dec 2024 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/compute-module-5/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/how-to-install-os-on-raspberry-pi-compute-module-5-emmc-storage</guid>
+    <title>How to Install OS on Raspberry Pi Compute Module 5 with eMMC Storage</title>
+    <link>https://smarthomecircle.com/how-to-install-os-on-raspberry-pi-compute-module-5-emmc-storage</link>
+    <description>Step by step guide to install Raspberry Pi OS on Raspberry Pi Compute Module 5 with eMMC Storage </description>
+    <pubDate>Thu, 19 Dec 2024 00:00:00 GMT</pubDate>
+    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Raspberry Pi</category><category>CM5</category><category>Compute Module</category><category>Compute Module 5</category><category>SBC</category><category>Linux</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/raspberry-pi-compute-module-5-review</guid>
     <title>Raspberry Pi Compute Module 5: Performance, Testing, and Potential</title>
