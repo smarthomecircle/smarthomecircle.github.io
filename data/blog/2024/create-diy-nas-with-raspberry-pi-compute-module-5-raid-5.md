@@ -99,7 +99,7 @@ While these speeds are solid for hard drives, my SSD-based NAS setup achieved fa
 
 ----------
 
-#### Power Consumption and Future Plans
+#### Power Consumption
 
 Power consumption for the HDD-based NAS was measured:
 
