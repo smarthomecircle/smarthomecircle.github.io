@@ -2,7 +2,7 @@
 title: 'Create a Network-Attached Storage (NAS) with Raspberry Pi Compute Module 5 and NVMe to SATA Adapter'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [Raspberry Pi, CM5, Compute Module, Compute Module 5, SBC, Linux]
+tags: [Raspberry Pi, CM5, Compute Module, Compute Module 5, open media vault,NAS, Raid 5]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2025-01-02'
