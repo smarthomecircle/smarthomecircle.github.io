@@ -23,4 +23,4 @@ If you want to get in touch with me or have any feedback about my writing, don't
 
 Follow me on Twitter to learn more about how you can make your home smarter every day. 
 
-You can contact me at : <a href="mailto:smarthomecircle@gmail.com">smarthomecircle@gmail.com</a>
+You can contact me at : <a href="mailto:contact.smarthomecircle@gmail.com">contact.smarthomecircle@gmail.com</a>
