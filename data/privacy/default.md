@@ -5,8 +5,8 @@ avatar: /static/images/avatar-small.jpg
 avatarBig: /static/images/avatar-big.jpg
 occupation: ""
 company: Personal
-email: smarthomecircle@gmail.com
-twitter: https://twitter.com/amrutprabhu42
+email: contactsmarthomecircle@gmail.com
+twitter: https://twitter.com/smarthomecircle
 linkedin: "https://www.youtube.com/@SmartHomeCircle"
 youtube: "https://www.youtube.com/@SmartHomeCircle"
 github: https://github.com/smarthomecircle
@@ -148,4 +148,4 @@ Old User’s Cookies might remain in the browser’s local storage, however, the
 
 ## Contact Us
 
-In case you have anything to ask about the privacy policy you can contact me at [smarthomecircle@gmail.com](mailto:smarthomecircle@gmail)
+In case you have anything to ask about the privacy policy you can contact me at [contactsmarthomecircle@gmail.com](mailto:contactsmarthomecircle@gmail)

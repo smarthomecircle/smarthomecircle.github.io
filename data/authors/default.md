@@ -4,8 +4,8 @@ avatar: /static/images/avatar-small.jpg
 avatarBig: /static/images/avatar-big.jpg
 occupation: ""
 company: ""
-email: SmartHomeCircle@gmail.com
-twitter: https://twitter.com/amrutprabhu42
+email: contactsmarthomecircle@gmail.com
+twitter: https://twitter.com/smarthomecircle
 linkedin: ""
 github: ""
 youtube: "https://www.youtube.com/@SmartHomeCircle"
