@@ -5,8 +5,8 @@
       <link>https://smarthomecircle.com</link>
       <description>Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.</description>
       <language>en-us</language>
-      <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
-      <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
       <lastBuildDate>Thu, 14 Dec 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/setup/feed.xml" rel="self" type="application/rss+xml"/>
       
@@ -16,7 +16,7 @@
     <link>https://smarthomecircle.com/custom-wake-word-for-voice-assistant-with-home-assistant</link>
     <description>In this article, we will explore how we can create a custom wake word for our voice assistant to invoke Home Assistant</description>
     <pubDate>Thu, 14 Dec 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Wake Word</category><category>Setup</category><category>VOICE ASSISTANT</category><category>Home Assistant</category>
   </item>
 
@@ -26,7 +26,7 @@
     <link>https://smarthomecircle.com/easily-share-files-with-home-assistant-using-samba-share</link>
     <description>In this article, we will explore how we can share files with Home Assistant OS</description>
     <pubDate>Mon, 11 Dec 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Samba Share</category><category>Setup</category><category>Beginners</category><category>Home Assistant</category>
   </item>
 

@@ -5,8 +5,8 @@
       <link>https://smarthomecircle.com</link>
       <description>Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.</description>
       <language>en-us</language>
-      <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
-      <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
       <lastBuildDate>Thu, 27 Jul 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/esp32-cam/feed.xml" rel="self" type="application/rss+xml"/>
       
@@ -16,7 +16,7 @@
     <link>https://smarthomecircle.com/esp32-cam-esphome-with-home-assistant</link>
     <description>In this article, we will be looking at how we can actually connect ESP32 CAM with Home Assistant</description>
     <pubDate>Thu, 27 Jul 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>ESP32 CAM</category><category>Home Assistant</category><category>ESPHome</category>
   </item>
 

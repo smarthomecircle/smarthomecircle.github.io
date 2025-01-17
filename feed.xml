@@ -5,8 +5,8 @@
       <link>https://smarthomecircle.com</link>
       <description>Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.</description>
       <language>en-us</language>
-      <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
-      <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
       <lastBuildDate>Thu, 19 Dec 2024 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/feed.xml" rel="self" type="application/rss+xml"/>
       
@@ -16,7 +16,7 @@
     <link>https://smarthomecircle.com/how-to-install-os-on-raspberry-pi-compute-module-5-emmc-storage</link>
     <description>Step by step guide to install Raspberry Pi OS on Raspberry Pi Compute Module 5 with eMMC Storage </description>
     <pubDate>Thu, 19 Dec 2024 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Raspberry Pi</category><category>CM5</category><category>Compute Module</category><category>Compute Module 5</category><category>SBC</category><category>Linux</category>
   </item>
 
@@ -26,7 +26,7 @@
     <link>https://smarthomecircle.com/raspberry-pi-compute-module-5-review</link>
     <description>Unleash Raspberry Pi Compute Module 5: compact, versatile mini-computer for high-speed storage, DIY NAS, and innovative projects.</description>
     <pubDate>Thu, 12 Dec 2024 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Raspberry Pi</category><category>CM5</category><category>Compute Module</category><category>Compute Module 5</category><category>SBC</category><category>Linux</category>
   </item>
 
@@ -36,7 +36,7 @@
     <link>https://smarthomecircle.com/radxa-x4l-a-powerful-pocket-sized-computer</link>
     <description>A powerful pocket-sized PC featuring the Intel N100 processor, dual 32-bit LPDDR5 memory channels, and versatile OS support. Ideal for home automation, virtualization, and portable computing.</description>
     <pubDate>Thu, 05 Dec 2024 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Radxa</category><category>SBC</category><category>Windows</category><category>Linux</category><category>Home Assistant</category><category>whisper</category><category>piper</category>
   </item>
 
@@ -46,7 +46,7 @@
     <link>https://smarthomecircle.com/radxa-x4-alternative-to-raspberry-pi-5</link>
     <description>Radxa X4, A New Intel-Based Single Board Computer: Features, Performance, and Use Cases</description>
     <pubDate>Thu, 07 Nov 2024 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Radxa</category><category>SBC</category><category>Windows</category><category>Linux</category><category>Home Assistant</category><category>whisper</category><category>piper</category>
   </item>
 
@@ -56,7 +56,7 @@
     <link>https://smarthomecircle.com/local-voice-assistant-with-seeed-studio-respeaker-lite</link>
     <description>Step by step guide to create your own local voice assistant with Home Assistant with on-device Wake Word detection</description>
     <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Home Assistant</category><category>Voice Assistant</category><category>ReSpeaker Lite</category><category>micro wake word</category><category>whisper</category><category>piper</category>
   </item>
 
@@ -66,7 +66,7 @@
     <link>https://smarthomecircle.com/matter-bridge-home-assistant-addon-for-google-home-alexa-apple-home</link>
     <description>Securely connect Home Assistant devices to Google Home, Apple Home, and Alexa without internet exposure.</description>
     <pubDate>Thu, 24 Oct 2024 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Home Assistant</category><category>Home Assistant Add-On</category><category>Matter</category><category>Apple Home</category><category>Google Home</category><category>Alexa</category>
   </item>
 
@@ -76,7 +76,7 @@
     <link>https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro</link>
     <description>In this article we will look at the Orange Pi 5 MAX and compare it with the Raspberry Pi 5 in terms of performance</description>
     <pubDate>Wed, 25 Sep 2024 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>SBC</category><category>Orange pi</category><category>Orange pi 5</category><category>Orange pi 5 max</category>
   </item>
 
@@ -86,7 +86,7 @@
     <link>https://smarthomecircle.com/how-to-control-8x32-led-matrix-like-a-pro</link>
     <description>In this article we will look at controlling a 32x8 LED Matrix panel with Home Assistant like a pro</description>
     <pubDate>Thu, 12 Sep 2024 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>LED</category><category>LED Matrix</category><category>WLED</category><category>WS2812B LED</category><category>Home Assistant</category>
   </item>
 
@@ -96,7 +96,7 @@
     <link>https://smarthomecircle.com/add-timers-to-voice-assistant-on-device-wake-word-home-assistant</link>
     <description>In this article, we will look at how I added timers to my Voice Assistant with an ESP32 S3 with on-device Wake Word detection</description>
     <pubDate>Thu, 18 Jul 2024 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Wake Word</category><category>Micro Wake Word</category><category>ESP32</category><category>Voice Assistant</category><category>Home Assistant</category>
   </item>
 
@@ -106,7 +106,7 @@
     <link>https://smarthomecircle.com/How-I-created-my-voice-assistant-with-on-device-wake-word-using-home-assistant</link>
     <description>In this article, we will look at how I created my Voice Assistant with an ESP32 S3 with on-device Wake Word detection using MicroWake Word to send commands to Home Assistant</description>
     <pubDate>Thu, 23 May 2024 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Wake Word</category><category>Micro Wake Word</category><category>ESP32</category><category>Voice Assistant</category><category>Home Assistant</category>
   </item>
 
@@ -116,7 +116,7 @@
     <link>https://smarthomecircle.com/How-to-setup-on-device-wake-word-for-voice-assistant-home-assistant</link>
     <description>In this article, we will look at how we can set up an ESP32 S3 with on-device Wake Word detection using MicroWake Word for your Voice Assistant to send commands to Home Assistant</description>
     <pubDate>Thu, 04 Apr 2024 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Wake Word</category><category>Micro Wake Word</category><category>ESP32</category><category>Voice Assistant</category><category>Home Assistant</category>
   </item>
 
@@ -126,7 +126,7 @@
     <link>https://smarthomecircle.com/how-to-update-bootloader-on-raspberrypi</link>
     <description>This article on how you can update the bootloader (EEPROM) on the Raspberry Pi</description>
     <pubDate>Sat, 17 Feb 2024 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Raspberry Pi</category><category>bootloader</category><category>EEPROM</category>
   </item>
 
@@ -136,7 +136,7 @@
     <link>https://smarthomecircle.com/how-to-backup-home-assistant-on-google-drive</link>
     <description>In this article, we will look at how we can take automated backups of Home Assistant on Google Drive.</description>
     <pubDate>Thu, 08 Feb 2024 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Home Assistant</category><category>Google Drive</category><category>Back up</category>
   </item>
 
@@ -146,7 +146,7 @@
     <link>https://smarthomecircle.com/create-nas-with-raspberry-pi-5</link>
     <description>In this article, we will create a NAS (network attached storage) usign a Raspberry Pi 5. This guide is also meant Raspberry Pi 4 and 3B</description>
     <pubDate>Thu, 25 Jan 2024 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Raspberry Pi 5</category><category>NAS</category><category>Raspberry Pi</category>
   </item>
 
@@ -156,7 +156,7 @@
     <link>https://smarthomecircle.com/connect-automate-tuya-zigbee-smart-scene-switch-with-home-assistant</link>
     <description>This article will explore how we can connect and automate the Tuya Zigbee 4 Button Smart Scene Switch with Home Assistant</description>
     <pubDate>Mon, 25 Dec 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Custom</category><category>Voice Assistant</category><category>Home Assistant</category>
   </item>
 
@@ -166,7 +166,7 @@
     <link>https://smarthomecircle.com/custom-sentences-for-voice-assistant-in-home-assistant</link>
     <description>In this article, we will explore how we can create custom sentences for your voice assistant in for Home Assistant</description>
     <pubDate>Thu, 21 Dec 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Custom</category><category>Voice Assistant</category><category>Home Assistant</category>
   </item>
 
@@ -176,7 +176,7 @@
     <link>https://smarthomecircle.com/connect-xiaomi-temperature-and-humidity-bluetooth-sensor-to-home-assistant</link>
     <description>In this article, we will look at how we can connect the Xiaomi Temperature and Humidity (LYWSD03MMC) Bluetooth Sensor to Home Assistant</description>
     <pubDate>Mon, 18 Dec 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Xiaomi</category><category>Sensor</category><category>Bluetooth</category><category>Home Assistant</category>
   </item>
 
@@ -186,7 +186,7 @@
     <link>https://smarthomecircle.com/connect-bluetooth-devices-to-home-assistant-with-bluetooth-proxy</link>
     <description>In this article, we will explore how we can setup a Bluetooth Proxy to connect Bluetooth devices with Home Assistant</description>
     <pubDate>Sun, 17 Dec 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Bluetooth</category><category>Home Assistant</category>
   </item>
 
@@ -196,7 +196,7 @@
     <link>https://smarthomecircle.com/custom-wake-word-for-voice-assistant-with-home-assistant</link>
     <description>In this article, we will explore how we can create a custom wake word for our voice assistant to invoke Home Assistant</description>
     <pubDate>Thu, 14 Dec 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Wake Word</category><category>Setup</category><category>VOICE ASSISTANT</category><category>Home Assistant</category>
   </item>
 
@@ -206,7 +206,7 @@
     <link>https://smarthomecircle.com/easily-share-files-with-home-assistant-using-samba-share</link>
     <description>In this article, we will explore how we can share files with Home Assistant OS</description>
     <pubDate>Mon, 11 Dec 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Samba Share</category><category>Setup</category><category>Beginners</category><category>Home Assistant</category>
   </item>
 
@@ -216,7 +216,7 @@
     <link>https://smarthomecircle.com/moes-zigbee-smart-knob-with-homeassistant</link>
     <description>In this article, we will explore the new MOES Zigbee Smart Knob and connect it to Home Assistant ZHA and Zigbee2MQTT</description>
     <pubDate>Thu, 07 Dec 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Smart Device</category><category>Zigbee</category><category>Home Assistant</category>
   </item>
 
@@ -226,7 +226,7 @@
     <link>https://smarthomecircle.com/created-voice-assistant-esp32-with-wake-word-in-home-assistant</link>
     <description>In this article, we will look at how I created my voice assistant device to send commands to Home Assistant using Wake Word</description>
     <pubDate>Thu, 23 Nov 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Wake Word</category><category>ESP32</category><category>Voice Assistant</category><category>Home Assistant</category>
   </item>
 
@@ -236,7 +236,7 @@
     <link>https://smarthomecircle.com/Setup-LG-Washer-with-Home-Assistant</link>
     <description>In this article we will look at how you can connect an LG Washer with Home Assistant using LG ThinQ integration and configure a dashboard card</description>
     <pubDate>Thu, 16 Nov 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>LG</category><category>LG Washer</category><category>Home Assistant</category><category>Dashboard Cards</category><category>Dashboards</category>
   </item>
 
@@ -246,7 +246,7 @@
     <link>https://smarthomecircle.com/setup-esp32-with-wake-word-in-home-assistant</link>
     <description> This article will look at how to setup an ESP32 as local voice assistant and use Wake word to invoke Home Assistant devices</description>
     <pubDate>Mon, 13 Nov 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Wake Word</category><category>ESP32</category><category>Voice Assistant</category><category>Home Assistant</category>
   </item>
 
@@ -256,7 +256,7 @@
     <link>https://smarthomecircle.com/setup-voice-assistant-with-home-assistant-using-docker-usb-microphone</link>
     <description> This article will look at how you can set up voice assistance with Home Assistant and invoke Home Assistant devices using a USB microphone.</description>
     <pubDate>Mon, 23 Oct 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Wake Word</category><category>USB Microphone</category><category>Voice Assistant</category><category>Home Assistant</category>
   </item>
 
@@ -266,7 +266,7 @@
     <link>https://smarthomecircle.com/how-to-connect-led-strip-with-home-assistant-using-wled</link>
     <description>In this article, we will look at how you can control an LED strip with Home Assistant using WLED.</description>
     <pubDate>Thu, 12 Oct 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>WLED</category><category>LED lights</category><category>LED strip</category><category>Home Assistant</category>
   </item>
 
@@ -276,7 +276,7 @@
     <link>https://smarthomecircle.com/install-zigbee2mqtt-with-home-assistant</link>
     <description>In this article, we will look at how you can set up a Zigbee2Mqtt with Home Assistant</description>
     <pubDate>Mon, 02 Oct 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Zigbee</category><category>Zigbee2mqtt</category><category>Sonoff Dongle Plus</category><category>MQTT</category><category>Home Assistant</category>
   </item>
 
@@ -286,7 +286,7 @@
     <link>https://smarthomecircle.com/change-graph-colors-in-energy-dashboard-home-assistant</link>
     <description>In this article, we will look at how you can change colors for your energy graph in the energy dashboard of Home Assistant.</description>
     <pubDate>Thu, 21 Sep 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Energy Graph</category><category>Energy Dashboard</category><category>Home Assistant</category>
   </item>
 
@@ -296,7 +296,7 @@
     <link>https://smarthomecircle.com/how-to-setup-frigate-with-home-assistant</link>
     <description>In this article, we will be looking at how we configure Frigate to detect object and then connect it to Home Assistant to receive notification.</description>
     <pubDate>Thu, 07 Sep 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Tuya</category><category>Local Tuya</category><category>Smart Wifi Plug</category><category>Home Assistant</category>
   </item>
 
@@ -306,7 +306,7 @@
     <link>https://smarthomecircle.com/how-to-setup-mqtt-docker-container-with-home-assistant</link>
     <description>In this article, we will be looking at how we configure Frigate to detect object and then connect it to Home Assistant to receive notification.</description>
     <pubDate>Thu, 07 Sep 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>MQTT</category><category>Home Assistant</category><category>Docker</category>
   </item>
 
@@ -316,7 +316,7 @@
     <link>https://smarthomecircle.com/how-to-setup-local-tuya-in-home-assistant</link>
     <description>In this article, we will be looking at how we control Tuya Devices Locally using Local Tuya.</description>
     <pubDate>Thu, 24 Aug 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Tuya</category><category>Local Tuya</category><category>Smart Wifi Plug</category><category>Home Assistant</category>
   </item>
 
@@ -326,7 +326,7 @@
     <link>https://smarthomecircle.com/connect-zigbee-device-using-sonoff-zigbee-3-dongle-plus-to-home-assistant</link>
     <description>In this article, we will be looking at how we can connect Zigbee Devices using Sonoff Zigbee 3.0 USB Dongle Plus to Home Assistant.</description>
     <pubDate>Thu, 17 Aug 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Zigbee</category><category>Sonoff Dongle Plus</category><category>Home Assistant</category>
   </item>
 
@@ -336,7 +336,7 @@
     <link>https://smarthomecircle.com/air-quality-sensor-and-light-sensor-esp32-home-assistant</link>
     <description>In this article, we will be looking at how we can connect SGP30 CO2 (Carbon Dioxide) sensor and BH17450 Light sensor to Home Assistant</description>
     <pubDate>Thu, 10 Aug 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>ESP32</category><category>D1 Mini</category><category>CO2 Sensor</category><category>SGP30</category><category>BH1750</category><category>Home Assistant</category><category>ESPHome</category>
   </item>
 
@@ -346,7 +346,7 @@
     <link>https://smarthomecircle.com/add-matter-devices-to-home-assistant</link>
     <description>In this article, we will be looking at how we can connect Matter-enabled devices to Home Assistant</description>
     <pubDate>Thu, 03 Aug 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Matter</category><category>Home Assistant</category><category>Smart Plug</category>
   </item>
 
@@ -356,7 +356,7 @@
     <link>https://smarthomecircle.com/esp32-cam-esphome-with-home-assistant</link>
     <description>In this article, we will be looking at how we can actually connect ESP32 CAM with Home Assistant</description>
     <pubDate>Thu, 27 Jul 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>ESP32 CAM</category><category>Home Assistant</category><category>ESPHome</category>
   </item>
 
@@ -366,7 +366,7 @@
     <link>https://smarthomecircle.com/esp32-esp8266-esphome-with-home-assistant</link>
     <description>In this article we will look into how we can setup ESP32 / ESP8266 with ESP Home and Home Assistant</description>
     <pubDate>Thu, 20 Jul 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Home Assistant Container</category><category>ESP32</category><category>ESP8266</category><category>Home Assistant</category><category>Ubuntu</category><category>Raspberry Pi</category><category>docker compose</category>
   </item>
 
@@ -376,7 +376,7 @@
     <link>https://smarthomecircle.com/run-home-assistant-container-with-docker</link>
     <description>In this article we will look into how we can run Home Assistant Container with Docker</description>
     <pubDate>Thu, 29 Jun 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Home Assistant Container</category><category>Home Assistant</category><category>Ubuntu</category><category>Raspberry Pi</category><category>docker compose</category>
   </item>
 
@@ -386,7 +386,7 @@
     <link>https://smarthomecircle.com/how-to-connect-wifi-to-home-assistant-on-startup</link>
     <description>In this article we will look into how we can install Home Assistant OS and connect it to the Wifi on boot up.</description>
     <pubDate>Thu, 22 Jun 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Home Assistant</category><category>OS</category><category>Raspberry Pi</category><category>wifi</category>
   </item>
 

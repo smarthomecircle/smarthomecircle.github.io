@@ -5,8 +5,8 @@
       <link>https://smarthomecircle.com</link>
       <description>Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.</description>
       <language>en-us</language>
-      <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
-      <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
       <lastBuildDate>Thu, 12 Sep 2024 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/wled/feed.xml" rel="self" type="application/rss+xml"/>
       
@@ -16,7 +16,7 @@
     <link>https://smarthomecircle.com/how-to-control-8x32-led-matrix-like-a-pro</link>
     <description>In this article we will look at controlling a 32x8 LED Matrix panel with Home Assistant like a pro</description>
     <pubDate>Thu, 12 Sep 2024 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>LED</category><category>LED Matrix</category><category>WLED</category><category>WS2812B LED</category><category>Home Assistant</category>
   </item>
 
@@ -26,7 +26,7 @@
     <link>https://smarthomecircle.com/how-to-connect-led-strip-with-home-assistant-using-wled</link>
     <description>In this article, we will look at how you can control an LED strip with Home Assistant using WLED.</description>
     <pubDate>Thu, 12 Oct 2023 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>WLED</category><category>LED lights</category><category>LED strip</category><category>Home Assistant</category>
   </item>
 

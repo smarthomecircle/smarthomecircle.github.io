@@ -5,8 +5,8 @@
       <link>https://smarthomecircle.com</link>
       <description>Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.</description>
       <language>en-us</language>
-      <managingEditor>smarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
-      <webMaster>smarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
       <lastBuildDate>Thu, 24 Oct 2024 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/apple-home/feed.xml" rel="self" type="application/rss+xml"/>
       
@@ -16,7 +16,7 @@
     <link>https://smarthomecircle.com/matter-bridge-home-assistant-addon-for-google-home-alexa-apple-home</link>
     <description>Securely connect Home Assistant devices to Google Home, Apple Home, and Alexa without internet exposure.</description>
     <pubDate>Thu, 24 Oct 2024 00:00:00 GMT</pubDate>
-    <author>smarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Home Assistant</category><category>Home Assistant Add-On</category><category>Matter</category><category>Apple Home</category><category>Google Home</category><category>Alexa</category>
   </item>
 
