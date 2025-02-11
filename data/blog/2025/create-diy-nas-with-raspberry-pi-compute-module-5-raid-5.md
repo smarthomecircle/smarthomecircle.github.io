@@ -121,7 +121,7 @@ In comparison, my SSD-based NAS consumed only ~9W at peak load, making it more e
 
 This DIY NAS setup demonstrates the potential of the Raspberry Pi Compute Module 5 and the NVMe to SATA adapter. While it’s not as energy-efficient as SSD-based solutions, it offers a reliable backup system with decent performance.
 
-For more innovative projects, subscribe to [my channel](https://www.youtube.com/@SmartHomeCircle) and hit the like button.
+For more innovative projects, subscribe to [my channel](https://www.youtube.com/@SmartHomeCircle).
 
 If you’d like to support my work, consider [buying me a coffee](https://www.buymeacoffee.com/amrutprabhu) or contributing via [Patreon](https://patreon.com/AmrutPrabhu).
 
