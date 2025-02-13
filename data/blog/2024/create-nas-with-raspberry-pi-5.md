@@ -2,7 +2,7 @@
 title: 'How to Create a NAS with Raspberry Pi 5'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [Raspberry Pi 5, NAS, Raspberry Pi]
+tags: [Raspberry Pi 5, NAS, Raspberry Pi, open media vault]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2024-01-25'
