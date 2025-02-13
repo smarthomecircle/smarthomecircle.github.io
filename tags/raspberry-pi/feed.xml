@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 19 Dec 2024 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 13 Feb 2025 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/raspberry-pi/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/create-diy-nas-with-raspberry-pi-compute-module-5-raid-5</guid>
+    <title>Create a Network-Attached Storage (NAS) with Raspberry Pi Compute Module 5 and NVMe to SATA Adapter</title>
+    <link>https://smarthomecircle.com/create-diy-nas-with-raspberry-pi-compute-module-5-raid-5</link>
+    <description>Build a DIY NAS using Raspberry Pi Compute Module 5, NVMe to SATA adapter, and OpenMediaVault with RAID 5.</description>
+    <pubDate>Thu, 13 Feb 2025 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Raspberry Pi</category><category>CM5</category><category>Compute Module</category><category>Compute Module 5</category><category>open media vault</category><category>NAS</category><category>Raid 5</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/how-to-install-os-on-raspberry-pi-compute-module-5-emmc-storage</guid>
     <title>How to Install OS on Raspberry Pi Compute Module 5 with eMMC Storage</title>
@@ -47,7 +57,7 @@
     <description>In this article, we will create a NAS (network attached storage) usign a Raspberry Pi 5. This guide is also meant Raspberry Pi 4 and 3B</description>
     <pubDate>Thu, 25 Jan 2024 00:00:00 GMT</pubDate>
     <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
-    <category>Raspberry Pi 5</category><category>NAS</category><category>Raspberry Pi</category>
+    <category>Raspberry Pi 5</category><category>NAS</category><category>Raspberry Pi</category><category>open media vault</category>
   </item>
 
   <item>
