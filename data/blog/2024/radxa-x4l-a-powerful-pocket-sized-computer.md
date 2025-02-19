@@ -19,7 +19,7 @@ youtubeLink: "https://www.youtube.com/embed/5ARf0nh62rU"
 
 Radxa has recently launched the **X4L**, the successor to their popular X4. Marketed as a portable PC that fits in your pocket, the X4L offers a suite of features aimed at enhancing functionality and performance for tech enthusiasts and professionals alike. Here’s an in-depth look at what this device provides, its benchmarks, and potential use cases.
 
-![Board-view](/static/images/2024/radxa-x4l/board-view-1.webp)
+![Board-view](/static/images/2024/radxa-x4l/Board-view-1.webp)
 
 **Links to buy Radxa X4L:**
 - **AliExpress** : https://s.click.aliexpress.com/e/_DESXdqh
