@@ -3,7 +3,6 @@ import '@/css/prism.css'
 
 import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'
-import Script from 'next/script'
 
 import siteMetadata from '@/data/siteMetadata'
 import LayoutWrapper from '@/components/LayoutWrapper'
@@ -18,7 +17,7 @@ export default function App({ Component, pageProps }) {
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <Script
+        <script
           id="buymeacoffee"
           data-name="BMC-Widget"
           data-cfasync="false"
@@ -32,7 +31,7 @@ export default function App({ Component, pageProps }) {
           data-y_margin="18"
           strategy="afterInteractive"
           async
-        ></Script>
+        ></script>
       </Head>
 
       {isDevelopment && isSocket && <ClientReload />}
