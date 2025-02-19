@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [18.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -24,7 +24,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Update NPM
-        run: npm i -g npm@9.8.1
+        run: npm i -g npm@10.8.2
 
       - name: Cache dependencies
         uses: actions/cache@v2
