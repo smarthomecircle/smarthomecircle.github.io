@@ -6,7 +6,7 @@ import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import Script from 'next/script'
-import Image from 'next/image'
+import Image from '@/components/Image'
 
 const LayoutWrapper = ({ children }) => {
   return (
@@ -17,7 +17,12 @@ const LayoutWrapper = ({ children }) => {
             <Link href="/" aria-label="SmartHomeCircle">
               <div className="flex items-center justify-between">
                 <div className="mr-3">
-                  <Image src="/static/favicons/icon.png" alt='smart home circle' height={50} width={50} />
+                  <Image
+                    src="/static/favicons/icon.png"
+                    alt="smart home circle"
+                    height={50}
+                    width={50}
+                  />
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
                   <div className="h-6 text-2xl font-semibold sm:block">

@@ -15,8 +15,8 @@ export default function ListRecord({ frontMatter, authorDetails }) {
                 <Link href={`/${slug}`} className="text-gray-900 dark:text-gray-100">
                   <Image
                     alt={title}
-                    src={`/${imageUrl}`}
-                    className="object-cover object-center rounded-xl lg:h-58 md:h-36"
+                    src={`${imageUrl}`}
+                    className="object-cover object-center rounded-xl "
                     width={844}
                     height={406}
                   />
@@ -51,9 +51,9 @@ export default function ListRecord({ frontMatter, authorDetails }) {
                         <li className="flex items-center space-x-2" key={author.name}>
                           {author.avatar && (
                             <Image
-                              src={`/${author.avatar}`}
-                              width="38px"
-                              height="38px"
+                              src={`${author.avatar}`}
+                              width="38"
+                              height="38"
                               alt="avatar"
                               className="w-10 h-10 rounded-full"
                             />

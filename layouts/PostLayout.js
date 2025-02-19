@@ -56,13 +56,17 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <div>
                 <PageTitle>{title}</PageTitle>
                 <div className="mt-6">
-                  <Image
-                    alt={title}
-                    src={imageUrl}
-                    className="object-cover object-center lg:h-48 md:h-36 rounded-2xl"
-                    width={744}
-                    height={406}
-                  />
+                  <div className="max-w-3xl mx-auto">
+                    <div className="aspect-w-16 aspect-h-9 relative">
+                      <Image
+                        alt={title}
+                        src={imageUrl}
+                        className="object-cover object-center rounded-2xl"
+                        width={544}
+                        height={407}
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div className="text-primary-500 hover:text-primary-600 text-md dark:hover:text-primary-400">
                   {photoCredits != '' && photoCredits != null ? (
@@ -89,9 +93,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                       {author.avatar && (
                         <Image
                           src={author.avatar}
-                          width="38px"
-                          height="38px"
+                          width="38"
+                          height="38"
                           alt="avatar"
+                          unoptimized={true}
                           className="w-10 h-10 rounded-full"
                         />
                       )}
@@ -119,15 +124,17 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <div className="pt-10 pb-8 prose text-lg leading-8	 dark:prose-dark max-w-none">
                 <div>
                   {youtubeLink && (
-                    <div className="xl:px-48">
-                      <iframe
-                        id={`youtubeLink1${date}`}
-                        className="w-full aspect-video"
-                        src={youtubeLink}
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
+                    <div className="xl:px-48 ">
+                      <div className="relative w-full pt-[56.25%]">
+                        <iframe
+                          id={`youtubeLink1${date}`}
+                          className="absolute top-0 left-0 w-full h-full"
+                          src={youtubeLink}
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        ></iframe>
+                      </div>
                       <br />
                     </div>
                   )}
