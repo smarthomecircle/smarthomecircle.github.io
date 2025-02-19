@@ -7,7 +7,6 @@ export default function SBCListLayout({
   initialDisplayPosts = [],
   authorDetails,
   pagination,
-  basePath = '',
 }) {
   const [searchValue, setSearchValue] = useState('')
   const filteredBlogPosts = posts.filter((frontMatter) => {
@@ -49,61 +48,35 @@ export default function SBCListLayout({
             </svg>
           </div>
         </div>
-        {/* Main Content */}
-        <div className="pt-8 space-y-12">
-          {/* SBC Cards Grid */}
+        <div className="xl:flex content-wrapper">
           <div>
-            {!filteredBlogPosts.length && (
-              <div className="text-center py-12">
-                <div className="text-gray-500 dark:text-gray-400 text-lg">No SBCs found.</div>
-                <p className="text-gray-400 dark:text-gray-500 text-sm mt-2">
-                  Try adjusting your search terms or browse all single board computers.
-                </p>
-              </div>
-            )}
-
-            {displayPosts.length > 0 && (
-              <>
-                {/* Mobile: Card Grid */}
-                <div className="block md:hidden">
-                  <div className="grid grid-cols-1 gap-6">
-                    {displayPosts.map((frontMatter) => (
-                      <SbcListRecord
-                        key={frontMatter.slug || frontMatter.title}
-                        frontMatter={frontMatter}
-                        authorDetails={authorDetails}
-                        layout="card"
-                      />
-                    ))}
-                  </div>
-                </div>
-
-                {/* Desktop: Horizontal List */}
-                <div className="hidden md:block">
-                  <div className="space-y-8">
-                    {displayPosts.map((frontMatter) => (
-                      <SbcListRecord
-                        key={frontMatter.slug || frontMatter.title}
-                        frontMatter={frontMatter}
-                        authorDetails={authorDetails}
-                        layout="horizontal"
-                      />
-                    ))}
-                  </div>
-                </div>
-              </>
-            )}
-
-            {/* Pagination */}
+            <ul>
+              {!filteredBlogPosts.length && 'No posts found.'}
+              {displayPosts.map((frontMatter) => {
+                return (
+                  <SbcListRecord
+                    key={frontMatter}
+                    frontMatter={frontMatter}
+                    authorDetails={authorDetails}
+                  />
+                )
+              })}
+            </ul>
             {pagination && pagination.totalPages > 1 && !searchValue && (
-              <div className="mt-16 flex justify-center">
-                <Pagination
-                  currentPage={pagination.currentPage}
-                  totalPages={pagination.totalPages}
-                  basePath={basePath}
-                />
-              </div>
+              <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
             )}
+          </div>
+          <div>
+            <div className="hidden xl:block">
+              {/* <AdColumn
+                width="900"
+                height="2150"
+                imageLink="/static/images/promotion/testing-spring-boot-applications-masterclass.png"
+                referalLink="https://www.copecart.com/products/521411d4/p/techapk42"
+              /> */}
+            </div>
+            {/* <AdsSection id="ad1" slot="6310228644" /> */}
+            {/* <AdsSection id="ad2" slot="1649763058" /> */}
           </div>
         </div>
       </div>
