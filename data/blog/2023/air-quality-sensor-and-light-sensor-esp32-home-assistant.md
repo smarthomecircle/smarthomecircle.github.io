@@ -8,7 +8,7 @@ applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-08-10'
 draft: false
 summary: 'In this article, we will be looking at how we can connect SGP30 CO2 (Carbon Dioxide) sensor and BH17450 Light sensor to Home Assistant'
-imageUrl: /static/images/2023/air-quality-sensor-esp32-home-assistant/cover.jpg
+imageUrl: /static/images/2023/air-quality-sensor-esp32-home-assistant/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/bwVttXh4Lk4"
