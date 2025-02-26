@@ -8,7 +8,7 @@ applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-10-02'
 draft: false
 summary: 'In this article, we will look at how you can set up a Zigbee2Mqtt with Home Assistant'
-imageUrl: /static/images/2023/zigbee2mqtt-setup/cover.jpg
+imageUrl: /static/images/2023/zigbee2mqtt-setup/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/nNLgCUFRNsk"
