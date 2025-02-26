@@ -8,7 +8,7 @@ applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-07-27'
 draft: false
 summary: 'In this article, we will be looking at how we can actually connect ESP32 CAM with Home Assistant'
-imageUrl: /static/images/2023/esp32-cam-esphome-with-home-assistant/cover.jpg
+imageUrl: /static/images/2023/esp32-cam-esphome-with-home-assistant/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/mDxNwZGAw7k"

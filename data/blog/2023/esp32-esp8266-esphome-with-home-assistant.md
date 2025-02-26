@@ -8,7 +8,7 @@ applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-07-20'
 draft: false
 summary: 'In this article we will look into how we can setup ESP32 / ESP8266 with ESP Home and Home Assistant'
-imageUrl: /static/images/2023/esp32-esp8266-esphome-with-home-assistant/cover.jpg
+imageUrl: /static/images/2023/esp32-esp8266-esphome-with-home-assistant/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/S6If_kj9MCM"
