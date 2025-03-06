@@ -236,7 +236,6 @@ light:
     rgb_order: GRB
     pin: GPIO48
     num_leds: 1
-    rmt_channel: 0
     chipset: ws2812
     name: "On board light"
     effects:
@@ -253,7 +252,6 @@ light:
     rgb_order: GRB
     pin: GPIO09
     num_leds: 29
-    rmt_channel: 1
     chipset: ws2812
     name: "Led Strip"
     effects:

@@ -303,7 +303,6 @@ light:
     chipset: ws2812
     num_leds: 1
     rgb_order: grb
-    rmt_channel: 0
     effects:
       - pulse:
           name: "Slow Pulse"
