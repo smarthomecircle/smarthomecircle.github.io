@@ -11,16 +11,22 @@ github: ""
 youtube: "https://www.youtube.com/@SmartHomeCircle"
 ---
 
-Hi there,
+**Hi there,**
 
-I am Amrut and if you want to get on board with learning about home automation and building smart homes then you are at the right place. I like to explore various topics in home automation and smart devices. It fascinates me what endless opportunities are there to make your home smarter every day.
+I’m **Amrut**, and if you’re passionate about **home automation, smart homes, and home labs**, you’re in the right place! I love exploring the latest technologies and **sharing my setups and experiences** with a growing audience.
 
-Home Assistant is my main source for doing all my automation. I monitor my house with various sensors and complex automation scenarios.
+I primarily use **Home Assistant** to automate and monitor my home with **various sensors and complex automation scenarios**. Through my content, I showcase how smart technology can practicaly improve **efficiency, security, and daily convenience**.
 
-I am also explore various Home Lab topics like creating my own server, NAS, etc. This also involves exploring single board computers like the Raspberry Pi, Radxa SBCs, etc, explore how they perform under load, benchmarking and power consumption. 
+Beyond home automation, I showcase my **home lab setups**, including **custom servers, NAS solutions, and single-board computers** like Raspberry Pi and Radxa SBCs. I love testing these systems, **benchmarking performance, analyzing power efficiency, and sharing my findings** so others can make informed decisions about their own setups.
 
-If you want to get in touch with me or have any feedback about my writing, don't hesitate to contact me on [Twitter](https://twitter.com/smarthomecircle)
+Whether you’re just starting your **smart home journey** or looking for **advanced automation solutions**, I strive to provide valuable insights, practical guides, and real-world demonstrations to help you along the way.
+<br/>
 
-Follow me on Twitter to learn more about how you can make your home smarter every day. 
+**Contact Details**
 
-You can contact me at : [contactsmarthomecircle@gmail.com](mailto:contactsmarthomecircle@gmail.com)
+📩 **Email** : [contactsmarthomecircle@gmail.com](mailto:contactsmarthomecircle@gmail.com) <br/>
+🌐 **Website** : [smarthomecircle.com](https://smarthomecircle.com) <br/>
+🔗 **YouTube** : https://www.youtube.com/@SmartHomeCircle <br/>
+🔗 **Twitter / X** : https://x.com/smarthomecircle <br/>
+🔗 **BlueSky** : https://bsky.app/profile/smarthomecircle.bsky.social <br/>
+
