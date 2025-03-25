@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import Link from './Link'
 import headerNavLinks from '@/data/headerNavLinks'
+import Image from '@/components/Image'
+import BuyMeACoffee from './Buymeacoffee'
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false)
@@ -69,6 +71,9 @@ const MobileNav = () => {
               </Link>
             </div>
           ))}
+          <div key="buymecoffeemobile" className="px-12 py-4">
+            <BuyMeACoffee />
+          </div>
         </nav>
       </div>
     </div>
