@@ -25,72 +25,6 @@
   </url>
 
   <url>
-    <loc
-      >https://smarthomecircle.com/How-I-created-my-voice-assistant-with-on-device-wake-word-using-home-assistant</loc
-    >
-  </url>
-
-  <url>
-    <loc
-      >https://smarthomecircle.com/How-to-setup-on-device-wake-word-for-voice-assistant-home-assistant</loc
-    >
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro</loc>
-  </url>
-
-  <url>
-    <loc
-      >https://smarthomecircle.com/add-timers-to-voice-assistant-on-device-wake-word-home-assistant</loc
-    >
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/create-nas-with-raspberry-pi-5</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/how-to-backup-home-assistant-on-google-drive</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/how-to-control-8x32-led-matrix-like-a-pro</loc>
-  </url>
-
-  <url>
-    <loc
-      >https://smarthomecircle.com/how-to-install-os-on-raspberry-pi-compute-module-5-emmc-storage</loc
-    >
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/how-to-update-bootloader-on-raspberrypi</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/local-voice-assistant-with-seeed-studio-respeaker-lite</loc>
-  </url>
-
-  <url>
-    <loc
-      >https://smarthomecircle.com/matter-bridge-home-assistant-addon-for-google-home-alexa-apple-home</loc
-    >
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/radxa-x4-alternative-to-raspberry-pi-5</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/radxa-x4l-a-powerful-pocket-sized-computer</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/raspberry-pi-compute-module-5-review</loc>
-  </url>
-
-  <url>
     <loc>https://smarthomecircle.com/Setup-LG-Washer-with-Home-Assistant</loc>
   </url>
 
@@ -196,6 +130,72 @@
     <loc
       >https://smarthomecircle.com/setup-voice-assistant-with-home-assistant-using-docker-usb-microphone</loc
     >
+  </url>
+
+  <url>
+    <loc
+      >https://smarthomecircle.com/How-I-created-my-voice-assistant-with-on-device-wake-word-using-home-assistant</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://smarthomecircle.com/How-to-setup-on-device-wake-word-for-voice-assistant-home-assistant</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://smarthomecircle.com/add-timers-to-voice-assistant-on-device-wake-word-home-assistant</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/create-nas-with-raspberry-pi-5</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/how-to-backup-home-assistant-on-google-drive</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/how-to-control-8x32-led-matrix-like-a-pro</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://smarthomecircle.com/how-to-install-os-on-raspberry-pi-compute-module-5-emmc-storage</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/how-to-update-bootloader-on-raspberrypi</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/local-voice-assistant-with-seeed-studio-respeaker-lite</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://smarthomecircle.com/matter-bridge-home-assistant-addon-for-google-home-alexa-apple-home</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/radxa-x4-alternative-to-raspberry-pi-5</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/radxa-x4l-a-powerful-pocket-sized-computer</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/raspberry-pi-compute-module-5-review</loc>
   </url>
 
   <url>
