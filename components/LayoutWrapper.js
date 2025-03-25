@@ -7,6 +7,7 @@ import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import Script from 'next/script'
 import Image from '@/components/Image'
+import BuyMeACoffee from './Buymeacoffee'
 
 const LayoutWrapper = ({ children }) => {
   return (
@@ -52,7 +53,7 @@ const LayoutWrapper = ({ children }) => {
             /> */}
           </div>
           <div className="flex items-center text-base leading-5">
-            <div className="hidden sm:block">
+            <div className="hidden sm:flex items-center">
               {headerNavLinks.map((link) => (
                 <Link
                   key={link.title}
@@ -62,6 +63,7 @@ const LayoutWrapper = ({ children }) => {
                   {link.title}
                 </Link>
               ))}
+              <BuyMeACoffee />
             </div>
             <ThemeSwitch />
             <MobileNav />
