@@ -14,7 +14,7 @@ const siteMetadata = {
   email: 'contactsmarthomecircle@gmail.com',
   github: '',
   twitter: 'https://twitter.com/smarthomecircle',
-  blueSky: 'https://bsky.app/profile/smarthomecircle.bsky.social',
+  blueSky: 'https://bsky.app/profile/smarthomecircle.com',
   facebook: '',
   youtube: 'https://www.youtube.com/@SmartHomeCircle',
   linkedin: '',

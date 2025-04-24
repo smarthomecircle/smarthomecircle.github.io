@@ -28,5 +28,5 @@ Whether you’re just starting your **smart home journey** or looking for **adva
 🌐 **Website** : [smarthomecircle.com](https://smarthomecircle.com) <br/>
 🔗 **YouTube** : https://www.youtube.com/@SmartHomeCircle <br/>
 🔗 **Twitter / X** : https://x.com/smarthomecircle <br/>
-🔗 **BlueSky** : https://bsky.app/profile/smarthomecircle.bsky.social <br/>
+🔗 **BlueSky** : https://bsky.app/profile/smarthomecircle.com <br/>
 
