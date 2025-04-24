@@ -174,6 +174,12 @@ psram:
   mode: octal # Please change this to quad for N8R2 and octal for N16R8
   speed: 80MHz
 
+external_components:
+  - source: github://jesserockz/esphome-components
+    components: [file]
+    refresh: 0s
+
+
 # Enable Home Assistant API
 api:
   encryption:
@@ -203,7 +209,6 @@ wifi:
     password: "LJfUrdJk3svP"
 
 captive_portal:
-
 
 
 button:
@@ -274,27 +279,43 @@ switch:
           id: led_strip
       - light.turn_off:
           id: led_ww
+  - platform: template
+    id: timer_ringing
+    optimistic: true
+    internal: False
+    name: "Timer Ringing"
+    restore_mode: ALWAYS_OFF
 
+
+# GPIO Mute Button Config
 binary_sensor:
   - platform: gpio
     id: button01
     name: "Mute Button" # Physical Mute switch
     pin:
-      number: GPIO10  #Physical Button connected to this pin.
+      number: GPIO10 #Physical Button connected to this pin.
       inverted: True
       mode:
         input: True
         pullup: True
     on_press: 
-      then:
-        - switch.toggle: mute
-   
+      if:
+        condition:
+          switch.is_on: timer_ringing 
+        then:
+          - switch.turn_off: timer_ringing
+        else:
+          - switch.toggle: mute
+
+
+
 light:
   - platform: esp32_rmt_led_strip
     id: led_ww
     rgb_order: GRB
     pin: GPIO48
     num_leds: 1
+    rmt_symbols: 96
     chipset: ws2812
     name: "On board light"
     effects:
@@ -307,10 +328,11 @@ light:
           max_brightness: 100%
 
   - platform: esp32_rmt_led_strip
-    id: led_strip
+    id: led_strip    # LED Strip Config
     rgb_order: GRB
     pin: GPIO09
     num_leds: 29
+    rmt_symbols: 96
     chipset: ws2812
     name: "Led Strip"
     effects:
@@ -399,7 +421,53 @@ voice_assistant:
           - wait_until:
               not:
                 voice_assistant.is_running:
-          - micro_wake_word.start:  
+          - micro_wake_word.start: 
+  
+  
+  on_timer_finished:
+    - micro_wake_word.stop:
+    - voice_assistant.stop:
+    - switch.turn_on: timer_ringing
+    - wait_until:
+        not:
+          microphone.is_capturing:
+    
+    - wait_until:
+        not:
+          micro_wake_word.is_running:
+    - light.turn_on:
+        id: led_strip
+        effect: "Scan Effect With Custom Values"
+        red: 80%
+        green: 0%
+        blue: 30%
+        brightness: 80%
+    
+    - lambda: id(va_speaker).play(id(timer_finished_wave_file), sizeof(id(timer_finished_wave_file)));
+    - micro_wake_word.start:
+    - wait_until:
+        and:
+          - micro_wake_word.is_running:
+    #       - microphone.is_capturing:
+    - while:
+        condition:
+          switch.is_on: timer_ringing
+        then:
+          - lambda: id(va_speaker).play(id(timer_finished_wave_file), sizeof(id(timer_finished_wave_file)));
+          - delay: 2s
+    - wait_until:
+        not:
+          speaker.is_playing:
+    
+    - light.turn_off: led_strip
+    - micro_wake_word.start:
+
+
+
+file: 
+  - id: timer_finished_wave_file
+    file: https://github.com/esphome/firmware/raw/main/voice-assistant/sounds/timer_finished.wav
+  
 ```
 
 **Important:** You need to set the PSRAM mode to octal or quad depending on the type of the board by referring to [this](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/hw-reference/esp32s3/user-guide-devkitc-1.html#ordering-information) link.
