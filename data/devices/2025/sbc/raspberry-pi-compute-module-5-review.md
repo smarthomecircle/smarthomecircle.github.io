@@ -1,5 +1,5 @@
 ---
-title: 'Raspberry Pi Compute Module 5: Performance, Testing, and Potential'
+title: 'Raspberry Pi Compute Module 5'
 author: 'Amrut Prabhu'
 categories: ''
 tags: [Raspberry Pi, CM5, Compute Module, Compute Module 5, SBC, Linux]
@@ -12,7 +12,22 @@ imageUrl: /static/images/2024/raspberrypi-cm5/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/4m7v72YCzm4"
-
+slug: "raspberry-pi-5-review"
+specs:
+  Processor: >
+    Broadcom BCM2712
+    Quad-core Cortex-A76 (64-bit) @ 2.4GHz
+  RAM: 4GB, 8GB LPDDR4X
+  USB Ports: |
+    2 × USB 3.0  
+    2 × USB 2.0
+  Video Output: |
+    2 × micro HDMI (up to 4Kp60)
+affiliateLinks:
+  - label: "Amazon"
+    url: "https://amzn.to/raspberrypi5"
+  - label: "PiShop"
+    url: "https://www.pishop.us/product/raspberry-pi-5"
 ---
 <TOCInline toc={props.toc} asDisclosure />  
 

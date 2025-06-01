@@ -1,66 +1,96 @@
-import formatDate from '@/lib/utils/formatDate'
 import Link from '@/components/Link'
-import Tag from '@/components/Tag'
 import Image from '@/components/Image'
-import FormattedSummary from './FormattedSummary'
 
-export default function SbcListRecord({ frontMatter, authorDetails }) {
-  const { slug, date, title, summary, tags, imageUrl } = frontMatter
+export default function SbcListRecord({ frontMatter }) {
+  const {
+    slug,
+    title,
+    imageUrl,
+    specs,
+    affiliateLinks = [],
+  } = frontMatter
+
   return (
-    <div>
-      <ul>
-        <li key={slug} className="py-4">
-          <article className="space-y-1 xl:space-y-0 xl:items-baseline">
-            <div className="space-y-3 xl:grid xl:grid-cols-4">
-              <div className="xl:col-span-2 xl:mr-4">
-                <Link href={`/${slug}`} className="text-gray-900 dark:text-gray-100">
-                  <Image
-                    alt={title}
-                    src={`${imageUrl}`}
-                    className="object-cover object-center rounded-xl lg:h-58 md:h-36"
-                    width={844}
-                    height={406}
-                  />
-                </Link>
-              </div>
-              <div className="xl:col-span-2 grid grid-cols-2">
-                <h1 className="text-2xl font-bold leading-8 tracking-tight col-span-2">
-                  <Link href={`/${slug}`} className="text-gray-900 dark:text-gray-100">
-                    <div>{title}</div>
-                  </Link>
-                </h1>
-                {/* <div className="flex flex-wrap my-2 col-span-2">
-                  {tags.map((tag) => (
-                    <Tag key={tag} text={tag} />
-                  ))}
-                </div> */}
-                <div className="prose text-black max-w-none dark:text-gray-200 col-span-2">
-                <FormattedSummary summary={summary} />
-                  <br />
-                  <Link
-                    href={`/${slug}`}
-                    className="text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 ml-4 float-right"
-                    aria-label={`Link to ${title}`}
-                  >
-                    Read more &rarr;
-                  </Link>
-                </div>
-                <div className="mt-5 col-span-2 grid grid-cols-2">
-                  <div className="col-span-1">
-                  </div>
-                  <div className="col-span-1">
-                    {/* <time className="float-right" dateTime={date}>
-                      {formatDate(date)}
-                    </time> */}
-                  </div>
-                </div>
-              </div>
-              <br />
+    <article className="mb-8 border-b pb-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+        {/* Left column: Image + Affiliate Links (desktop only) */}
+        <div className="md:col-span-1 flex flex-col items-center">
+          {/* Image */}
+          <Link href={`/${slug}`}>
+            <Image
+              alt={title}
+              src={imageUrl}
+              className="rounded-xl object-cover"
+              width={300}
+              height={200}
+              style={{ width: 300, height: 200, maxWidth: '100%', height: 'auto' }}
+            />
+          </Link>
+
+          {/* Affiliate Links (vertical for desktop) */}
+          {affiliateLinks.length > 0 && (
+            <div className="hidden md:flex flex-col space-y-2 mt-4 w-full max-w-xs">
+              {affiliateLinks.map((link, idx) => (
+                <a
+                  key={idx}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 text-sm w-fit mx-auto"
+                >
+                  Buy on {link.label}
+                </a>
+              ))}
             </div>
-            <hr />
-          </article>
-        </li>
-      </ul>
-    </div>
+          )}
+        </div>
+
+        {/* Right column: Title, Affiliate Links (mobile), Specs, Review Link */}
+        <div className="md:col-span-2 space-y-2">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+            <Link href={`/${slug}`}>{title}</Link>
+          </h2>
+
+          {/* Affiliate links (horizontal on mobile) */}
+          {affiliateLinks.length > 0 && (
+            <div className="flex md:hidden flex-wrap gap-2 mb-2">
+              {affiliateLinks.map((link, idx) => (
+                <a
+                  key={idx}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 text-sm"
+                >
+                  Buy on {link.label}
+                </a>
+              ))}
+            </div>
+          )}
+
+          {/* Specifications */}
+          {specs && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mt-2 text-sm text-gray-700 dark:text-gray-300 whitespace-pre-wrap">
+              {Object.entries(specs).map(([key, value]) => (
+                <div key={key} className="flex">
+                  <span className="font-semibold w-32">{key}:</span>
+                  <span className="flex-1">{String(value)}</span>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Full review link */}
+          <div className="mt-4">
+            <Link
+              href={`/sbc/${slug}`}
+              className="text-primary-600 dark:text-primary-400 font-medium hover:underline"
+            >
+              Read Full Review →
+            </Link>
+          </div>
+        </div>
+      </div>
+    </article>
   )
 }
