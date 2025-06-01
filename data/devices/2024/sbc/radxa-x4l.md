@@ -1,5 +1,5 @@
 ---
-title: 'Radxa X4L: A Pocket-Sized Powerhouse'
+title: 'Radxa X4L'
 author: 'Amrut Prabhu'
 categories: ''
 tags: [Radxa, SBC, Windows, Linux,  Home Assistant, whisper, piper]
@@ -7,24 +7,22 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2024-12-05'
 draft: false
-summary: |
- - **SoC** Rockchip RK3588(J)
- - **SoC**  Rockchip RK3588(J)
- - **SoC**  Rockchip RK3588(J)
- - **SoC**  Rockchip RK3588(J)
- - **SoC**  Rockchip RK3588(J)
- - **SoC**  Rockchip RK3588(J)
- - **SoC**  Rockchip RK3588(J)
- - **SoC**  Rockchip RK3588(J)
- - **SoC**  Rockchip RK3588(J)
- - **SoC**  Rockchip RK3588(J)
- - **SoC**  Rockchip RK3588(J)
- - **SoC**  Rockchip RK3588(J)
-imageUrl: /static/images/2024/radxa-x4l/cover.webp
+summary: "summary"
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/5ARf0nh62rU"
 
+slug: "raspberry-pi-5-review"
+specs:
+  Processor: "Broadcom BCM2712, Quad-core Cortex-A76 @ 2.4GHz"
+  RAM: "4GB / 8GB LPDDR4X"
+  Video Output: "Dual micro-HDMI (4K@60Hz)"
+  Storage: "microSD + PCIe x1 via FFC connector"
+affiliateLinks:
+  - label: "Amazon"
+    url: "https://amzn.to/raspberrypi5"
+  - label: "PiShop"
+    url: "https://www.pishop.us/product/raspberry-pi-5"
 ---
 <TOCInline toc={props.toc} asDisclosure />  
 
