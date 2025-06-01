@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Pagination from '@/components/Pagination'
 import SbcListRecord from '@/components/SbcListRecord'
+import AdColumn from '@/components/AdColumn'
 export default function SBCListLayout({
   posts,
   title,
@@ -48,8 +49,8 @@ export default function SBCListLayout({
             </svg>
           </div>
         </div>
-        <div className="xl:flex content-wrapper">
-          <div>
+        {/* <div className="content-wrapper"> //commented to remove the ad column */}
+          <div className="w-full">
             <ul>
               {!filteredBlogPosts.length && 'No posts found.'}
               {displayPosts.map((frontMatter) => {
@@ -66,19 +67,19 @@ export default function SBCListLayout({
               <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
             )}
           </div>
-          <div>
-            <div className="hidden xl:block">
-              {/* <AdColumn
+          {/* <div> */}
+            {/* <div className="hidden xl:block">
+              <AdColumn
                 width="900"
                 height="2150"
                 imageLink="/static/images/promotion/testing-spring-boot-applications-masterclass.png"
                 referalLink="https://www.copecart.com/products/521411d4/p/techapk42"
-              /> */}
-            </div>
+              />
+            </div> */}
             {/* <AdsSection id="ad1" slot="6310228644" /> */}
             {/* <AdsSection id="ad2" slot="1649763058" /> */}
-          </div>
-        </div>
+          {/* </div> */}
+        {/* </div>//commented to remove the ad column  */}
       </div>
     </>
   )
