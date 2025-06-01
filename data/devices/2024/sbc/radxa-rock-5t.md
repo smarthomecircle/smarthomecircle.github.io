@@ -1,5 +1,5 @@
 ---
-title: 'Create a Network-Attached Storage (NAS) with Raspberry Pi Compute Module 5 and NVMe to SATA Adapter'
+title: 'Radxa Rock 5T'
 author: 'Amrut Prabhu'
 categories: ''
 tags: [Raspberry Pi, CM5, Compute Module, Compute Module 5, open media vault,NAS, Raid 5]
@@ -12,7 +12,22 @@ imageUrl: /static/images/2024/diy-nas-cm5/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/5J-es6-DBU4"
+slug: "raspberry-pi-5-review"
+specs:
+  Processor: "Broadcom BCM2712, Quad-core Cortex-A76 @ 2.4GHz"
+  RAM: "4GB / 8GB LPDDR4X"
+  Video Output: "Dual micro-HDMI (4K@60Hz)"
+  Storage: "microSD + PCIe x1 via FFC connector"
+  Ethernet: "2x 2.5 Gigabit Ethernet ports, one with PoE support(Optional Build-in PoE)"
+  Wireless: |
+    - Onboard Wi-Fi 6 & BT 5.2 with Dual Antenna Connector(Consume-Grade)
+    - Onboard Wi-Fi 6E & BT 5.3 with Dual Antenna Connector(Industrial-Grade)
 
+affiliateLinks:
+  - label: "Amazon"
+    url: "https://amzn.to/raspberrypi5"
+  - label: "PiShop"
+    url: "https://www.pishop.us/product/raspberry-pi-5"
 ---
 <TOCInline toc={props.toc} asDisclosure />  
 
