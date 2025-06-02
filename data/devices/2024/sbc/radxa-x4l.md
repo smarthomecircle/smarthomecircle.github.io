@@ -11,7 +11,7 @@ summary: "summary"
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/5ARf0nh62rU"
-
+imageUrl: /static/images/2024/radxa-x4l/cover.webp
 slug: "raspberry-pi-5-review"
 specs:
   Processor: "Broadcom BCM2712, Quad-core Cortex-A76 @ 2.4GHz"
