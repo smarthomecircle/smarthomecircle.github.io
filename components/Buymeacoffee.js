@@ -5,7 +5,7 @@ const BuyMeACoffee = () => {
   return (
     <Link href="https://www.buymeacoffee.com/amrutprabhu" target="_blank">
     <Image
-      src="static/buymeacoffee.png"
+      src="/static/buymeacoffee.png"
       alt="Buy Me A Coffee"
       width={140}
       height={20}
