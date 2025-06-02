@@ -52,22 +52,43 @@ const LayoutWrapper = ({ children }) => {
               }}
             /> */}
           </div>
-          <div className="flex items-center text-base leading-5">
-            <div className="hidden sm:flex items-center">
-              {headerNavLinks.map((link) => (
-                <Link
-                  key={link.title}
-                  href={link.href}
-                  className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100"
-                >
-                  {link.title}
-                </Link>
-              ))}
-              <BuyMeACoffee />
+           <div className="flex items-center text-base leading-5">
+              <div className="hidden sm:flex items-center space-x-4">
+                {headerNavLinks.map((link) =>
+                  link.children ? (
+                    <div key={link.title} className="relative group">
+                      <button className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100">
+                        {link.title}
+                      </button>
+                      <div className="absolute top-full left-0 hidden w-48 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded shadow-md group-hover:block z-50">
+                        {link.children.map((child) => (
+                          <Link
+                            key={child.title}
+                            href={child.href}
+                            className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                          >
+                            {child.title}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <Link
+                      key={link.title}
+                      href={link.href}
+                      className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100"
+                    >
+                      {link.title}
+                    </Link>
+                  )
+                )}
+                <BuyMeACoffee />
+              </div>
+              <ThemeSwitch />
+              <MobileNav />
             </div>
-            <ThemeSwitch />
-            <MobileNav />
-          </div>
+
+
         </header>
         <main className="mb-auto">{children}</main>
         {/* <div
