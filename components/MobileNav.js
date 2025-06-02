@@ -6,17 +6,17 @@ import BuyMeACoffee from './Buymeacoffee'
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false)
+  const [openMenus, setOpenMenus] = useState({})
 
   const onToggleNav = () => {
     setNavShow((status) => {
-      if (status) {
-        document.body.style.overflow = 'auto'
-      } else {
-        // Prevent scrolling
-        document.body.style.overflow = 'hidden'
-      }
+      document.body.style.overflow = status ? 'auto' : 'hidden'
       return !status
     })
+  }
+
+  const toggleSubmenu = (title) => {
+    setOpenMenus((prev) => ({ ...prev, [title]: !prev[title] }))
   }
 
   return (
@@ -27,6 +27,7 @@ const MobileNav = () => {
         aria-label="Toggle Menu"
         onClick={onToggleNav}
       >
+        {/* hamburger/cross icon */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
@@ -48,6 +49,7 @@ const MobileNav = () => {
           )}
         </svg>
       </button>
+
       <div
         className={`fixed w-full h-full top-24 right-0 bg-gray-200 dark:bg-gray-800 opacity-95 z-10 transform ease-in-out duration-300 ${
           navShow ? 'translate-x-0' : 'translate-x-full'
@@ -59,16 +61,40 @@ const MobileNav = () => {
           className="fixed w-full h-full cursor-auto focus:outline-none"
           onClick={onToggleNav}
         ></button>
-        <nav className="fixed h-full mt-8">
+
+        <nav className="fixed h-full mt-8 overflow-y-auto">
           {headerNavLinks.map((link) => (
             <div key={link.title} className="px-12 py-4">
-              <Link
-                href={link.href}
-                className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
-                onClick={onToggleNav}
-              >
-                {link.title}
-              </Link>
+              {link.children ? (
+                <>
+                  <button
+                    onClick={() => toggleSubmenu(link.title)}
+                    className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100 focus:outline-none"
+                  >
+                    {link.title}
+                  </button>
+                  {openMenus[link.title] &&
+                    link.children.map((child) => (
+                      <div key={child.title} className="mt-2 ml-4">
+                        <Link
+                          href={child.href}
+                          className="text-xl text-gray-800 dark:text-gray-300"
+                          onClick={onToggleNav}
+                        >
+                          {child.title}
+                        </Link>
+                      </div>
+                    ))}
+                </>
+              ) : (
+                <Link
+                  href={link.href}
+                  className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                  onClick={onToggleNav}
+                >
+                  {link.title}
+                </Link>
+              )}
             </div>
           ))}
           <div key="buymecoffeemobile" className="px-12 py-4">
