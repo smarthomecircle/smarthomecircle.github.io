@@ -16,7 +16,7 @@ export default function SbcListRecord({ frontMatter }) {
         {/* Left column: Image + Affiliate Links (desktop only) */}
         <div className="md:col-span-1 flex flex-col items-center">
           {/* Image */}
-          <Link href={`/${slug}`}>
+          <Link href={`/sbc/${slug}`}>
             <Image
               alt={title}
               src={imageUrl}
@@ -48,7 +48,7 @@ export default function SbcListRecord({ frontMatter }) {
         {/* Right column: Title, Affiliate Links (mobile), Specs, Review Link */}
         <div className="md:col-span-2 space-y-2">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
-            <Link href={`/${slug}`}>{title}</Link>
+            <Link href={`/sbc/${slug}`}>{title}</Link>
           </h2>
 
           {/* Affiliate links (horizontal on mobile) */}
