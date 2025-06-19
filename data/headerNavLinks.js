@@ -7,8 +7,8 @@ const headerNavLinks = [
     title: 'Devices',
     children: [
       { href: '/sbc', title: 'Single Board Computer' },
-      { href: '/devices/beaglebone', title: 'BeagleBone' },
-      { href: '/devices/arduino', title: 'Arduino' },
+      // { href: '/', title: 'Smart Devices' },
+      // { href: '/', title: 'Arduino' },
     ],
   },
   // { href: '/sbc', title: 'SBC' },
