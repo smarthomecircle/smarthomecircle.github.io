@@ -5,7 +5,7 @@ categories: ''
 tags: [Radxa, SBC, Windows, Linux,  Home Assistant, whisper, piper]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2024-12-05'
+date: '2025-05-05'
 draft: false
 summary: 'A powerful pocket-sized PC featuring the Intel N100 processor, dual 32-bit LPDDR5 memory channels, and versatile OS support. Ideal for home automation, virtualization, and portable computing.'
 imageUrl: /static/images/2024/radxa-x4l/cover.webp
