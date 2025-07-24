@@ -30,6 +30,7 @@ I needed a compact rack with the following specifications:
 -   **Depth:** 20 cm
 -   **Width:** Suitable for 10-inch rack mount modules
     
+![rack](/static/images/2025/diy-rack/components.jpg)
 
 The key material used was [**2020 aluminium extrusion profiles**](https://s.click.aliexpress.com/e/_olj4GKu), commonly found in 3D printers. I used different lengths to build a rectangular frame and connected them using [**L-shaped corner brackets**](https://s.click.aliexpress.com/e/_onRkO2g). Here's how the pieces came together:
 
@@ -37,7 +38,7 @@ The key material used was [**2020 aluminium extrusion profiles**](https://s.clic
 -   **250mm rails (4 pcs)** – For rack depth
 -   **200mm rails (4 pcs)** – For rack width (front and back frames)
     
-![](/static/images/2025/diy-rack/empty-rack-image.jpg)
+![rack](/static/images/2025/diy-rack/empty-rack-image.jpg)
 ----------
 ## 🧰 **Components Used**
 
