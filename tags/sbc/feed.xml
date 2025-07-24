@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 19 Dec 2024 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 05 May 2025 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/sbc/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/radxa-x4l-a-powerful-pocket-sized-computer</guid>
+    <title>Radxa X4L: A Pocket-Sized Powerhouse</title>
+    <link>https://smarthomecircle.com/radxa-x4l-a-powerful-pocket-sized-computer</link>
+    <description>A powerful pocket-sized PC featuring the Intel N100 processor, dual 32-bit LPDDR5 memory channels, and versatile OS support. Ideal for home automation, virtualization, and portable computing.</description>
+    <pubDate>Mon, 05 May 2025 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Radxa</category><category>SBC</category><category>Windows</category><category>Linux</category><category>Home Assistant</category><category>whisper</category><category>piper</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/how-to-install-os-on-raspberry-pi-compute-module-5-emmc-storage</guid>
     <title>How to Install OS on Raspberry Pi Compute Module 5 with eMMC Storage</title>
@@ -28,16 +38,6 @@
     <pubDate>Thu, 12 Dec 2024 00:00:00 GMT</pubDate>
     <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Raspberry Pi</category><category>CM5</category><category>Compute Module</category><category>Compute Module 5</category><category>SBC</category><category>Linux</category>
-  </item>
-
-  <item>
-    <guid>https://smarthomecircle.com/radxa-x4l-a-powerful-pocket-sized-computer</guid>
-    <title>Radxa X4L: A Pocket-Sized Powerhouse</title>
-    <link>https://smarthomecircle.com/radxa-x4l-a-powerful-pocket-sized-computer</link>
-    <description>A powerful pocket-sized PC featuring the Intel N100 processor, dual 32-bit LPDDR5 memory channels, and versatile OS support. Ideal for home automation, virtualization, and portable computing.</description>
-    <pubDate>Thu, 05 Dec 2024 00:00:00 GMT</pubDate>
-    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
-    <category>Radxa</category><category>SBC</category><category>Windows</category><category>Linux</category><category>Home Assistant</category><category>whisper</category><category>piper</category>
   </item>
 
   <item>
