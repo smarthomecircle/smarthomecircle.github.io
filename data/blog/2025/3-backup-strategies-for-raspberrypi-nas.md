@@ -5,10 +5,10 @@ categories: ''
 tags: [Raspberry Pi, NAS, Open Media Vault, Radxa, Raspberry Pi HAT]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2025-01-12'
+date: '2025-01-16'
 draft: false
 summary: 'Unleash Raspberry Pi Compute Module 5: compact, versatile mini-computer for high-speed storage, DIY NAS, and innovative projects.'
-imageUrl: /static/images/2024/raspberrypi-cm5/cover.webp
+imageUrl: /static/images/2025/backup-strategies/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/7N2VnqQcOHk"
