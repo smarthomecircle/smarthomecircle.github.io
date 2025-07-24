@@ -2,10 +2,10 @@
 title: 'I Created A DIY 10 Inch Server Rack'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [Raspberry Pi, CM5, Compute Module, Compute Module 5, open media vault,NAS, Raid 5]
+tags: [10 inch rack, Raspberry Pi, radxa, latte panda, orange pi, Glinet]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2025-07-04'
+date: '2025-07-31'
 draft: false
 summary: 'Build a DIY NAS using Raspberry Pi Compute Module 5, NVMe to SATA adapter, and OpenMediaVault with RAID 5.'
 imageUrl: /static/images/2024/diy-nas-cm5/cover.webp
