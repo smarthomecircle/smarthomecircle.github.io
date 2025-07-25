@@ -143,6 +143,7 @@ Now, you can follow these steps to flash the code required to make the ESP32 S3 
 
 ![2-edit-device.webp](/static/images/2023/esp32-voice-assistant/2-edit-device.webp)
 
+**Updated for Home Assistant 2025.07**
 **Step 5**: Place the following YAML code below.
 
 
@@ -193,7 +194,7 @@ api:
         then:
           - voice_assistant.stop: 
 
-logger:
+
 
 ota:
   - platform: esphome
@@ -371,12 +372,32 @@ microphone:
     bits_per_sample: 32bit
     
 speaker:
-    platform: i2s_audio
-    id: va_speaker
+  - platform: i2s_audio
+    id: i2s_audio_speaker
+    sample_rate: 48000
+    bits_per_sample: 32bit
     i2s_audio_id: i2s_speaker
-    dac_type: external
     i2s_dout_pin: GPIO8   #  DIN Pin of the MAX98357A Audio Amplifier
-    channel: mono
+    dac_type: external
+    channel: stereo
+    timeout: never
+    buffer_duration: 100ms
+
+
+media_player:
+  - platform: speaker
+    id: external_media_player
+    name: Media Player
+    internal: False
+    volume_increment: 0.05
+    volume_min: 0.4
+    volume_max: 1
+    announcement_pipeline:
+      speaker: i2s_audio_speaker
+      format: FLAC     # FLAC is the least processor intensive codec
+      num_channels: 1  # Stereo audio is unnecessary for announcements
+      sample_rate: 48000
+      
 
 micro_wake_word:
   on_wake_word_detected:
@@ -399,7 +420,7 @@ micro_wake_word:
         blue: 80%
         brightness: 80%
   models:
-    - model: hey_jarvis
+    - model: okay_nabu
     
 voice_assistant:
   id: va
@@ -407,7 +428,7 @@ voice_assistant:
   auto_gain: 31dBFS
   noise_suppression_level: 2
   volume_multiplier: 4.0
-  speaker: va_speaker
+  media_player: external_media_player
   on_stt_end:
        then: 
          - light.turn_off: led_ww
@@ -443,7 +464,7 @@ voice_assistant:
         blue: 30%
         brightness: 80%
     
-    - lambda: id(va_speaker).play(id(timer_finished_wave_file), sizeof(id(timer_finished_wave_file)));
+    - lambda: id(external_media_player).play(id(timer_finished_wave_file), sizeof(id(timer_finished_wave_file)));
     - micro_wake_word.start:
     - wait_until:
         and:
@@ -453,7 +474,7 @@ voice_assistant:
         condition:
           switch.is_on: timer_ringing
         then:
-          - lambda: id(va_speaker).play(id(timer_finished_wave_file), sizeof(id(timer_finished_wave_file)));
+          - lambda: id(external_media_player).play(id(timer_finished_wave_file), sizeof(id(timer_finished_wave_file)));
           - delay: 2s
     - wait_until:
         not:
