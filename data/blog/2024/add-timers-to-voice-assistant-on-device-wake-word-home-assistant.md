@@ -66,6 +66,9 @@ To create your voice assistant with ESP32 S3, you can refer to my article "[How 
 
 ## Implement Timers
 To implement the timers feature, use the following YAML code.
+
+** **Updated for Home Assistant 2025.07** **
+
 ```yaml
 esphome:
   name: esp32-s3-wake-word
@@ -94,11 +97,10 @@ psram:
   mode: octal # Please change this to quad for N8R2 and octal for N16R8
   speed: 80MHz
 
-
 # Enable logging
 logger:
+  # hardware_uart: UART0
 
-# Enable Home Assistant API
 api:
   encryption:
     key: "TFpb+pBAvQIS1MVwaA7EoJ2DkpWE+79UvVro7yMyGdU="
@@ -120,10 +122,6 @@ ota:
 wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
-  manual_ip: 
-    static_ip: 192.168.0.115
-    gateway: 192.168.0.1
-    subnet: 255.255.255.0
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: "Esp32-S3-Wake-Word"
@@ -236,6 +234,7 @@ light:
     rgb_order: GRB
     pin: GPIO48
     num_leds: 1
+    rmt_symbols: 96
     chipset: ws2812
     name: "On board light"
     effects:
@@ -252,6 +251,7 @@ light:
     rgb_order: GRB
     pin: GPIO09
     num_leds: 29
+    rmt_symbols: 96
     chipset: ws2812
     name: "Led Strip"
     effects:
@@ -290,14 +290,36 @@ microphone:
     bits_per_sample: 32bit
     
 speaker:
-    platform: i2s_audio
-    id: va_speaker
+  - platform: i2s_audio
+    id: i2s_audio_speaker
+    sample_rate: 48000
+    bits_per_sample: 16bit
     i2s_audio_id: i2s_speaker
-    dac_type: external
     i2s_dout_pin: GPIO8   #  DIN Pin of the MAX98357A Audio Amplifier
-    channel: mono
+    dac_type: external
+    channel: stereo
+    timeout: never
+    buffer_duration: 100ms
 
-    
+
+media_player:
+  - platform: speaker
+    id: external_media_player
+    name: Media Player
+    internal: False
+    volume_increment: 0.05
+    volume_min: 0.4
+    volume_max: 1
+    announcement_pipeline:
+      speaker: i2s_audio_speaker
+      format: FLAC     # FLAC is the least processor intensive codec
+      num_channels: 1  # Stereo audio is unnecessary for announcements
+      sample_rate: 48000
+    files:
+      - id: timer_finished_sound
+        file: https://github.com/esphome/home-assistant-voice-pe/raw/dev/sounds/timer_finished.flac
+      
+
 micro_wake_word:
   on_wake_word_detected:
     
@@ -327,7 +349,7 @@ voice_assistant:
   auto_gain: 31dBFS
   noise_suppression_level: 2
   volume_multiplier: 4.0
-  speaker: va_speaker
+  media_player: external_media_player
   on_stt_end:
        then: 
          - light.turn_off: led_ww
@@ -363,17 +385,19 @@ voice_assistant:
         blue: 30%
         brightness: 80%
     
-    - lambda: id(va_speaker).play(id(timer_finished_wave_file), sizeof(id(timer_finished_wave_file)));
+    - media_player.speaker.play_on_device_media_file:
+          media_file: timer_finished_sound
     - micro_wake_word.start:
     - wait_until:
         and:
           - micro_wake_word.is_running:
-
+    #       - microphone.is_capturing:
     - while:
         condition:
           switch.is_on: timer_ringing
         then:
-          - lambda: id(va_speaker).play(id(timer_finished_wave_file), sizeof(id(timer_finished_wave_file)));
+          - media_player.speaker.play_on_device_media_file:
+              media_file: timer_finished_sound
           - delay: 2s
     - wait_until:
         not:
@@ -381,15 +405,6 @@ voice_assistant:
     
     - light.turn_off: led_strip
     - micro_wake_word.start:
-
-external_components:
-  - source: github://jesserockz/esphome-components
-    components: [file]
-    refresh: 0s
-
-file: 
-  - id: timer_finished_wave_file
-    file: https://github.com/esphome/firmware/raw/main/voice-assistant/sounds/timer_finished.wav
  
 ```
 With this, you can configure timers in an ESP32 S3 with On-Device Wake Word detection for your Voice Assistant connected to Home Assistant.
