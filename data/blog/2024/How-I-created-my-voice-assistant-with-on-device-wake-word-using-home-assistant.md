@@ -143,9 +143,9 @@ Now, you can follow these steps to flash the code required to make the ESP32 S3 
 
 ![2-edit-device.webp](/static/images/2023/esp32-voice-assistant/2-edit-device.webp)
 
-**Updated for Home Assistant 2025.07**
 **Step 5**: Place the following YAML code below.
 
+** **Updated for Home Assistant 2025.07** **
 
 ```yaml
 esphome:
@@ -175,13 +175,10 @@ psram:
   mode: octal # Please change this to quad for N8R2 and octal for N16R8
   speed: 80MHz
 
-external_components:
-  - source: github://jesserockz/esphome-components
-    components: [file]
-    refresh: 0s
+# Enable logging
+logger:
+  # hardware_uart: UART0
 
-
-# Enable Home Assistant API
 api:
   encryption:
     key: "TFpb+pBAvQIS1MVwaA7EoJ2DkpWE+79UvVro7yMyGdU="
@@ -203,7 +200,6 @@ ota:
 wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
-
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: "Esp32-S3-Wake-Word"
@@ -397,6 +393,9 @@ media_player:
       format: FLAC     # FLAC is the least processor intensive codec
       num_channels: 1  # Stereo audio is unnecessary for announcements
       sample_rate: 48000
+    files:
+      - id: timer_finished_sound
+        file: https://github.com/esphome/home-assistant-voice-pe/raw/dev/sounds/timer_finished.flac
       
 
 micro_wake_word:
@@ -464,7 +463,8 @@ voice_assistant:
         blue: 30%
         brightness: 80%
     
-    - lambda: id(external_media_player).play(id(timer_finished_wave_file), sizeof(id(timer_finished_wave_file)));
+    - media_player.speaker.play_on_device_media_file:
+          media_file: timer_finished_sound
     - micro_wake_word.start:
     - wait_until:
         and:
@@ -474,7 +474,8 @@ voice_assistant:
         condition:
           switch.is_on: timer_ringing
         then:
-          - lambda: id(external_media_player).play(id(timer_finished_wave_file), sizeof(id(timer_finished_wave_file)));
+          - media_player.speaker.play_on_device_media_file:
+              media_file: timer_finished_sound
           - delay: 2s
     - wait_until:
         not:
@@ -483,12 +484,6 @@ voice_assistant:
     - light.turn_off: led_strip
     - micro_wake_word.start:
 
-
-
-file: 
-  - id: timer_finished_wave_file
-    file: https://github.com/esphome/firmware/raw/main/voice-assistant/sounds/timer_finished.wav
-  
 ```
 
 **Important:** You need to set the PSRAM mode to octal or quad depending on the type of the board by referring to [this](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/hw-reference/esp32s3/user-guide-devkitc-1.html#ordering-information) link.
