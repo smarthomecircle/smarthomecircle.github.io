@@ -11,7 +11,7 @@ summary: 'DIY 10-inch rack using 2020 aluminium profiles—ideal for SBCs and ho
 imageUrl: /static/images/2025/diy-rack/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/5J-es6-DBU4"
+youtubeLink: "https://www.youtube.com/embed/66axG6TpT6A"
 
 ---
 <TOCInline toc={props.toc} asDisclosure />  
