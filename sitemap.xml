@@ -83,26 +83,6 @@
   </url>
 
   <url>
-    <loc>https://smarthomecircle.com/3-backup-strategies-for-raspberrypi-nas</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/create-diy-nas-with-raspberry-pi-compute-module-5-raid-5</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/glinet-slate-7-wifi-7-travel-router</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/radxa-x4l-a-powerful-pocket-sized-computer</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/raspberry-pi-compute-module-5-review</loc>
-  </url>
-
-  <url>
     <loc>https://smarthomecircle.com/Setup-LG-Washer-with-Home-Assistant</loc>
   </url>
 
@@ -211,7 +191,35 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/3-backup-strategies-for-raspberrypi-nas</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/comet-kvm-gl-rm1-review-best-kvm-over-ip-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/create-diy-nas-with-raspberry-pi-compute-module-5-raid-5</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/glinet-slate-7-wifi-7-travel-router</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/radxa-x4l-a-powerful-pocket-sized-computer</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/raspberry-pi-compute-module-5-review</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/tags/25-gbit</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/4k</loc>
   </url>
 
   <url>
@@ -339,6 +347,10 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/tags/kvm-over-ip</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/tags/led</loc>
   </url>
 
@@ -368,6 +380,10 @@
 
   <url>
     <loc>https://smarthomecircle.com/tags/local-tuya</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/mass-storage</loc>
   </url>
 
   <url>
@@ -432,6 +448,10 @@
 
   <url>
     <loc>https://smarthomecircle.com/tags/raspberry-pi-hat</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/remote-access</loc>
   </url>
 
   <url>
