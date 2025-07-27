@@ -1,5 +1,5 @@
 ---
-title: 'I Created A DIY 10 Inch Server Rack'
+title: 'I Built A DIY 10 Inch Server Rack'
 author: 'Amrut Prabhu'
 categories: ''
 tags: [DIY, 10 inch rack, Raspberry Pi, radxa, latte panda, orange pi, Glinet]
@@ -39,6 +39,7 @@ The key material used was [**2020 aluminium extrusion profiles**](https://s.clic
 -   **200mm rails (4 pcs)** – For rack width (front and back frames)
     
 ![rack](/static/images/2025/diy-rack/empty-rack-image.webp)
+
 ----------
 ## 🧰 **Components Used**
 
