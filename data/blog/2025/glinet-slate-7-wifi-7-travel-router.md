@@ -5,7 +5,7 @@ categories: ''
 tags: [GliNet, Travel router, wifi 7, 2.5 Gbit, Wireguard, OpenVPN, AdGuard]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2025-06-19'
+date: '2025-07-03'
 draft: false
 summary: 'Discover the GL.iNet Slate 7: a compact Wi‑Fi 7 travel router with dual 2.5GbE ports, touchscreen interface, and OpenWrt for secure, high-speed connectivity anywhere.'
 imageUrl: /static/images/2025/glinet-slate-7-travel-router/cover.webp
@@ -20,7 +20,8 @@ If you're searching for a **powerful yet portable travel router**, the [**GL.iNe
 <p align="center">
   <img src="/static/images/2025/glinet-slate-7-travel-router/1-router.webp" alt="router" />
 </p>
-**Buy This** (Affiliate Links) : [Amazon US](https://amzn.to/3IwT8t7) \| [Amazon DE](https://amzn.to/44FkqWP) \| [AliExpress](https://s.click.aliexpress.com/e/_oDLL1GK)
+
+**Buy This** (Affiliate Links) : [GLiNet Store](https://link.gl-inet.com/be3600-smarthomecircle-eustore-250523) | [Amazon US](https://amzn.to/3IwT8t7) \| [Amazon DE](https://amzn.to/44FkqWP) \| [AliExpress](https://s.click.aliexpress.com/e/_oDLL1GK)
 
 ## Lightning-Fast Hardware Specs
 
