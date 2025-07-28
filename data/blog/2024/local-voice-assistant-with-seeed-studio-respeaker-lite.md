@@ -61,6 +61,14 @@ esphome:
   platformio_options:
     board_build.flash_mode: dio
     board_build.mcu: esp32s3
+  on_boot:
+    - light.turn_on:
+        id: led           
+        red: 0%
+        green: 100%
+        blue: 0%
+        brightness: 60%
+        effect: fast pulse 
   on_shutdown:
     then:
       # Prevent loud noise on software restart
@@ -80,6 +88,22 @@ esp32:
 psram:
   mode: octal
   speed: 80MHz
+
+external_components:
+  - source:
+      type: git
+      url: https://github.com/formatBCE/esphome
+      ref: respeaker_microphone
+    components:
+      - i2s_audio
+    refresh: 0s
+  - source:
+      type: git
+      url: https://github.com/formatBCE/Respeaker-Lite-ESPHome-integration
+      ref: main
+    components: 
+      - respeaker_lite
+    refresh: 0s
 
 # Enable logging
 logger:
@@ -112,33 +136,27 @@ wifi:
 
 captive_portal:
 
+i2c:
+  - id: internal_i2c
+    sda: GPIO5
+    scl: GPIO6
+    frequency: 400kHz
 
-external_components:
-  - source:
-      type: git
-      url: https://github.com/esphome/voice-kit
-      ref: dev
-
-    components:
-      - aic3204
-      - audio_dac
-      - media_player
-      - micro_wake_word
-      - microphone
-      - nabu
-      - nabu_microphone
-      - voice_assistant
-      - voice_kit
-    refresh: 0s
-  - source: github://pr#7605
-    components: [ audio, i2s_audio, speaker]
-    refresh: 0s
-  - source:
-      type: git
-      url: https://github.com/formatBCE/Respeaker-Lite-ESPHome-integration
-      ref: main
-    components: [ respeaker_lite ]
-    refresh: 0s
+respeaker_lite:
+  id: respeaker
+  reset_pin: GPIO2
+  mute_state:
+    internal: true
+    id: mute_state
+  firmware_version:
+    icon: mdi:application-cog
+    name: XMOS firmware version
+    internal: false
+    id: firmware_version
+  firmware:
+    url: https://github.com/formatBCE/Respeaker-Lite-ESPHome-integration/raw/refs/heads/main/respeaker_lite_i2s_dfu_firmware_48k_v1.1.0.bin
+    version: "1.1.0"
+    md5: 9297155d1bf3eb21a9d4db52a89ea0c6
 
 i2s_audio:
   - id: i2s_output
@@ -163,71 +181,100 @@ i2s_audio:
       number: GPIO9
       allow_other_uses: true
 
-i2c:
-  - id: bus_a
-    sda: GPIO5
-    scl: GPIO6
-    scan: true
-
-respeaker_lite:
-  id: respeaker
-  i2c_id: bus_a
-  reset_pin: GPIO2
-  mute_state:
-    internal: true
-    id: mute_state
-  firmware_version:
-    icon: mdi:application-cog
-    name: XMOS firmware version
-    internal: false
-    id: firmware_version
-
+audio_dac:
+  - platform: aic3204
+    id: aic3204_dac
+    i2c_id: internal_i2c
 
 microphone:
-  - platform: nabu_microphone
-    id: xiao_mic
-    adc_type: external
+  - platform: i2s_audio
+    id: i2s_mics
     i2s_din_pin: GPIO44
+    adc_type: external
     pdm: false
-    sample_rate: 16000
+    sample_rate: 48000
     bits_per_sample: 32bit
     i2s_mode: secondary
-    i2s_audio_id : i2s_input
-
-    channel_0:
-      id: nabu_mic_mww
-    channel_1:
-      id: nabu_mic_va
+    i2s_audio_id: i2s_input
+    channel: stereo
 
 
 speaker:
+
   - platform: i2s_audio
-    id: xiao_speaker
-    dac_type: external
-    i2s_dout_pin: GPIO43
+    id: i2s_audio_speaker
+    sample_rate: 48000
     i2s_mode: secondary
-    sample_rate: 16000
+    i2s_dout_pin: GPIO43
     bits_per_sample: 32bit
     i2s_audio_id: i2s_output
-    channel: mono
+    dac_type: external
+    channel: stereo
+    timeout: never
+    buffer_duration: 100ms
+    audio_dac: aic3204_dac
+
+  - platform: mixer
+    id: mixing_speaker
+    output_speaker: i2s_audio_speaker
+    num_channels: 2
+    source_speakers:
+      - id: announcement_mixing_input
+        timeout: never
+      - id: media_mixing_input
+        timeout: never
+
+  - platform: resampler
+    id: announcement_resampling_speaker
+    output_speaker: announcement_mixing_input
+    sample_rate: 48000
+    bits_per_sample: 16
+  - platform: resampler
+    id: media_resampling_speaker
+    output_speaker: media_mixing_input
+    sample_rate: 48000
+    bits_per_sample: 16
 
 media_player:
-  - platform: nabu
-    id: nabu_media_player
+  - platform: speaker
+    id: external_media_player
     name: Media Player
-    internal: false
-    speaker: xiao_speaker
-    sample_rate: 16000
+    internal: False
     volume_increment: 0.05
     volume_min: 0.4
     volume_max: 0.85
+    announcement_pipeline:
+      speaker: announcement_resampling_speaker
+      format: FLAC     # FLAC is the least processor intensive codec
+      num_channels: 1  # Stereo audio is unnecessary for announcements
+      sample_rate: 48000
+    media_pipeline:
+      speaker: media_resampling_speaker
+      format: FLAC     # FLAC is the least processor intensive codec
+      num_channels: 2
+      sample_rate: 48000
+    on_announcement:
+      - mixer_speaker.apply_ducking:
+          id: media_mixing_input
+          decibel_reduction: 20
+          duration: 0.0s
     files:
       - id: timer_audio
         file: https://github.com/esphome/firmware/raw/main/voice-assistant/sounds/timer_finished.wav
 
 micro_wake_word:
+  id: mww
   vad:
-  microphone: nabu_mic_mww
+    probability_cutoff: 0.05
+  microphone:
+    microphone: i2s_mics
+    channels: 1
+    gain_factor: 4
+  stop_after_detection: false
+  models:
+    - model: hey_jarvis
+      probability_cutoff: 0.5
+      sliding_window_size: 5
   on_wake_word_detected:
     
     - voice_assistant.start:
@@ -241,16 +288,17 @@ micro_wake_word:
         brightness: 60%
         effect: fast pulse 
 
-  models:
-    - model: hey_jarvis
 
 voice_assistant:
-  microphone: nabu_mic_va
+  microphone:
+    microphone: i2s_mics
+    channels: 0
+  media_player: external_media_player
+  micro_wake_word: mww
+  use_wake_word: false
   noise_suppression_level: 0
-  auto_gain: 0dBFS 
-  volume_multiplier: 1 
-  id: assist
-  media_player: nabu_media_player
+  auto_gain: 0 dbfs
+  volume_multiplier: 1
   on_stt_end:
        then: 
          - light.turn_off: led
@@ -264,6 +312,12 @@ voice_assistant:
           - wait_until:
               not:
                 voice_assistant.is_running:
+          # Stop ducking audio.        
+          - mixer_speaker.apply_ducking:
+              id: media_mixing_input
+              decibel_reduction: 0
+              duration: 1.0s
+          - light.turn_off: led
           - micro_wake_word.start:
 
 # timer functionality 
@@ -281,7 +335,7 @@ voice_assistant:
         condition:
           switch.is_on: timer_ringing
         then:
-          - nabu.play_local_media_file: timer_audio
+          # - nabu.play_local_media_file: timer_audio
           - delay: 2s
     - light.turn_off: led
     - micro_wake_word.start:
@@ -293,16 +347,24 @@ switch:
     internal: False
     name: "Timer Ringing"
     restore_mode: ALWAYS_OFF
+    
+button:
+  - platform: restart
+    name: "Restart"
+    id: but_rest
 
 light:
   - platform: esp32_rmt_led_strip
     id: led
     name: "Led Light"
+
     pin: GPIO1
     default_transition_length: 0s
     chipset: ws2812
     num_leds: 1
     rgb_order: grb
+    # rmt_channel: 
+    # rmt_channel: 0
     effects:
       - pulse:
           name: "Slow Pulse"
