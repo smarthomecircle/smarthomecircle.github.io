@@ -56,6 +56,7 @@ Here’s a full list of components with images and links for purchase:
 | **Micro HDMI to HDMI 30cm** <br/> <img src="/static/images/2025/diy-rack/micro-hdmi.avif" width="150"/>  |  - 2 pieces <br/> [Amazon US](https://amzn.to/3ZDAfub) \| [Amazon DE](https://amzn.to/43SKddI) \| [AliExpress](https://s.click.aliexpress.com/e/_oCs4tFe) |
 | **HDMI to HDMI 30cm** <br/> <img src="/static/images/2025/diy-rack/hdmi-to-hdmi.avif" width="150"/>  |  - 2 pieces <br/> [Amazon US](https://amzn.to/3T2E0pf) \| [Amazon DE](https://amzn.to/3HIhxvk) \| [AliExpress](https://s.click.aliexpress.com/e/_opwDBD2) |
 | **RJ45 Keystone Jack** <br/> <img src="/static/images/2025/diy-rack/rj45.webp" width="150"/>  |  - 10 pieces <br/> [Amazon US](https://amzn.to/4elkYnN) \| [Amazon DE](https://amzn.to/3G3Q72q) \| [AliExpress](https://s.click.aliexpress.com/e/_olPuxKy) |
+| **CAT6 Patch Cable** <br/> <img src="/static/images/2025/diy-rack/patch-cable.avif" width="150"/>  |  - 10 pieces <br/> [Amazon US](https://amzn.to/4l3gO5B) \| [Amazon DE](https://amzn.to/46BROPy) \| [AliExpress](https://s.click.aliexpress.com/e/_oEJLvyJ) |
 
 
 
