@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 03 Jul 2025 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 31 Jul 2025 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/glinet/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/I-built-a-diy-10-inch-server-rack</guid>
+    <title>I Built A DIY 10 Inch Server Rack</title>
+    <link>https://smarthomecircle.com/I-built-a-diy-10-inch-server-rack</link>
+    <description>DIY 10-inch rack using 2020 aluminium profiles—ideal for SBCs and home labs. Includes 3D print files and full build guide.</description>
+    <pubDate>Thu, 31 Jul 2025 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>DIY</category><category>10 inch rack</category><category>Raspberry Pi</category><category>radxa</category><category>latte panda</category><category>orange pi</category><category>Glinet</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/glinet-slate-7-wifi-7-travel-router</guid>
     <title>GL.iNet Slate 7 (GL‑BE3600) Review: Your Ultimate Wi‑Fi 7 Travel Router</title>
