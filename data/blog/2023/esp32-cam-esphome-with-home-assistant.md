@@ -26,6 +26,41 @@ Open ESP Home, then click on “New device”, give it a name, and then select �
 Now open the configuration and add this particular configuration
 
 ```yaml
+esphome:
+  name: esp32-cam
+  friendly_name: ESP32-CAM
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "2ZJGNNGkD7DnNJrIPFRizQlsrlPyOVq9+oPL51BmHkc="
+
+ota:
+  - platform: esphome
+    password: "fac07b301e8b4d45c8aedc34cd64c9de"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Esp32-Cam Fallback Hotspot"
+    password: "OLuWr1GL3yCT"
+
+web_server:
+  port: 80
+
+captive_portal:
+
 esp32_camera:
   external_clock:
     pin: GPIO0
@@ -38,15 +73,39 @@ esp32_camera:
   href_pin: GPIO23
   pixel_clock_pin: GPIO22
   power_down_pin: GPIO32
-  # Image settings
-  name: My Camera
+  vertical_flip: False
+  horizontal_mirror: False
 
-# http server setting
+
+  # Image settings
+  name: ESP CAM
+  resolution: 800X600
+
+sensor:
+  - platform: wifi_signal
+    name: "WiFi Signal Sensor"
+    update_interval: 2s
+  - platform: uptime
+    name: Uptime Sensor
+
+
 esp32_camera_web_server:
   - port: 8080
     mode: stream
   - port: 8081
     mode: snapshot
+  # ...
+# Flashlight
+output:
+  - platform: gpio
+    pin: GPIO4
+    id: gpio_4
+
+## GPIO_4 is the flash light pin
+light:
+  - platform: binary
+    output: gpio_4
+    name: flashlight
 ```
 
 Click on save and then click on install, click on manual download, and then click on Modern format.
