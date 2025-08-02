@@ -54,6 +54,8 @@ To enable wake-word detection, we’ll use ESPhome, which supports **Micro Wake 
 
 Here’s the ESPHome Yaml Code
 
+**Updated For Home Assistant 2025.07**
+
 ```yaml
 esphome:
   name: respeaker-lite
