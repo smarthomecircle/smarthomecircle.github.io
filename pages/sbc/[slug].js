@@ -4,10 +4,10 @@ import generateRss from '@/lib/generate-rss'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
 
-const DEFAULT_LAYOUT = 'PostLayout'
+const DEFAULT_LAYOUT = 'SBCLayout'
 
 export async function getStaticPaths() {
-  const posts = getFiles('devices')
+  const posts = getFiles('sbc')
   const urls = posts.map((locations) =>
     locations
       .split('/') // These two were added to get only the last part of the file name
@@ -24,7 +24,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const allPosts = await getAllFilesFrontMatter('devices')
+  const allPosts = await getAllFilesFrontMatter('sbc')
   // const postIndex = allPosts.findIndex((post) => formatSlug(post.slug) === params.slug.join('/'))
   const postIndex = allPosts.findIndex((post) => post.customUrl === params.slug)
   const prev = allPosts[postIndex + 1] || null
@@ -32,7 +32,7 @@ export async function getStaticProps({ params }) {
   const currentPost = allPosts[postIndex] || null
   // const post = await getFileBySlug('blog', params.slug.join('/'))
 
-  const post = await getFileBySlug('devices', currentPost.actualUrl)
+  const post = await getFileBySlug('sbc', currentPost.actualUrl)
 
   const authorList = post.frontMatter.authors || ['default']
   const authorPromise = authorList.map(async (author) => {
