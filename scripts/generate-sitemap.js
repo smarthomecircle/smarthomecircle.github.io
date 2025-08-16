@@ -81,7 +81,7 @@ function encodeTitle(title) {
     'pages/*.js',
     'data/blog/**/*.mdx',
     'data/blog/**/*.md',
-    'data/devices/**/sbc/*.md',
+    'data/sbc/**/*.md',
     'public/tags/**/*.xml',
     '!pages/_*.js',
     '!pages/api',
@@ -117,7 +117,7 @@ function encodeTitle(title) {
               .map((page) => {
                 const path = page
                   .replace('pages/', '/')
-                  .replace('devices/', '')
+                  .replace('data/sbc/', '/sbc/')
                   .replace('data/blog', '')
                   .replace('public/', '/')
                   .replace('2020/', '')

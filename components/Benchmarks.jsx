@@ -1,7 +1,6 @@
 // components/Benchmarks.jsx
 import Link from 'next/link'
 import React from 'react'
-import Image from '@/components/Image'
 
 export default function Benchmarks({ data = {} }) {
   const entries = Object.entries(data || {})
@@ -75,9 +74,7 @@ export default function Benchmarks({ data = {} }) {
           let fallbackBullets = null
           if (!bullets && testData && typeof testData === 'object' && !Array.isArray(testData)) {
             fallbackBullets = Object.entries(testData)
-              .filter(
-                ([k]) => !['bullets', 'url', 'raw', 'linkText', 'links', 'screenshots'].includes(k)
-              )
+              .filter(([k]) => !['bullets', 'url', 'raw', 'linkText', 'links', 'screenshots'].includes(k))
               .map(([k, v]) => ({ [k]: Array.isArray(v) ? v.join(', ') : String(v) }))
           }
 
@@ -145,16 +142,12 @@ export default function Benchmarks({ data = {} }) {
                             className="rounded-md border border-gray-200/70 bg-white p-2 shadow-sm dark:border-white/10 dark:bg-white/5"
                           >
                             <a href={href || src} target="_blank" rel="noopener noreferrer">
-                              <div className="relative aspect-video w-full overflow-hidden rounded">
-                                <Image
-                                  src={src}
-                                  alt={alt || ''}
-                                  fill
-                                  loading="lazy"
-                                  sizes="(max-width: 768px) 50vw, 33vw"
-                                  className="object-cover"
-                                />
-                              </div>
+                              <img
+                                src={src}
+                                alt={alt || ''}
+                                loading="lazy"
+                                className="aspect-video w-full rounded object-cover"
+                              />
                             </a>
                             {caption ? (
                               <figcaption className="mt-1 text-[11px] text-gray-500 dark:text-gray-400">
