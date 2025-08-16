@@ -6,7 +6,7 @@ import { getFileBySlug } from '@/lib/mdx'
 import SBCListLayout from '@/layouts/SBCListLayout'
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('devices')
+  const posts = await getAllFilesFrontMatter('sbc')
   const authorList = ['default']
   const authorPromise = authorList.map(async (author) => {
     const authorResults = await getFileBySlug('authors', [author])
