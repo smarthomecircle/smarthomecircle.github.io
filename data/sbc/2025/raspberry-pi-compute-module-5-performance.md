@@ -28,6 +28,106 @@ affiliateLinks:
     url: "https://amzn.to/raspberrypi5"
   - label: "PiShop"
     url: "https://www.pishop.us/product/raspberry-pi-5"
+
+
+# NEW: test environment for context printed in the page
+testEnv:
+  os: "Raspberry Pi OS 64-bit, Linux 6.6"
+  ambientC: 23
+  cooling: "Official heatsink + fan"
+  psu: "5V/5A USB-C"
+  notes: "Defaults, no OC, fresh image, identical NVMe/microSD for fairness."
+
+# NEW: all benchmarks (used by layout to render UI)
+
+benchmarks:
+  "Sysbench CPU":
+    bullets:
+      - Threads: "1, 2, 4, 8"
+      - Mean: "20500 events/s"
+      - Std Dev: "2.1%"
+      - Peak Temp: "65 °C"
+    links:
+      - text: "Full Sysbench report"
+        href: "https://example.com/sysbench"
+      - text: "Methodology"
+        href: "https://example.com/method"
+    screenshots:
+      - "/static/images/2024/raspberrypi-cm5/cover.webp"
+      - "/static/images/2024/raspberrypi-cm5/io-board.webp"
+      - "/static/images/2024/raspberrypi-cm5/cm5-fan-heatsink.webp"
+      - src: "/static/images/2024/raspberrypi-cm5/cover.webp"
+        alt: "Sysbench scaling chart"
+        caption: "1→8 threads scaling"
+        href: "/static/images/2024/raspberrypi-cm5/cover.webp" 
+    raw: |
+      sysbench cpu --cpu-max-prime=20000 --threads=8 --time=0 --events=100000 run
+      sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+      Running the test with following options:
+      Number of threads: 8
+      Initializing random number generator from current time
+
+
+      Prime numbers limit: 20000
+
+      Initializing worker threads...
+
+      Threads started!
+
+      CPU speed:
+          events per second:  5352.34
+
+      General statistics:
+          total time:                          18.6812s
+          total number of events:              100000
+
+      Latency (ms):
+              min:                                    1.00
+              avg:                                    1.49
+              max:                                   13.04
+              95th percentile:                        2.81
+              sum:                               149416.41
+
+      Threads fairness:
+          events (avg/stddev):           12500.0000/5890.78
+          execution time (avg/stddev):   18.6771/0.00
+
+  "Memory BandWidth Test":
+    bullets:
+      - Copy: "21.7 GB/s"
+      - Add: "21.3 GB/s"
+      - Scale: "20.9 GB/s"
+    raw: |
+      CPU speed:
+          events per second:  5198.76
+
+      General statistics:
+          total time:                          19.2345s
+          total number of events:              100000
+
+      Latency (ms):
+              min:                                    0.77
+              avg:                                    0.77
+              max:                                   17.81
+              95th percentile:                        0.77
+              sum:                                76915.98
+
+      Threads fairness:
+          events (avg/stddev):           25000.0000/25.29
+          execution time (avg/stddev):   19.2290/0.00
+
+  "iperf3":
+    bullets:
+      - TCP: "2.35 Gb/s"
+      - UDP: "2.10 Gb/s"
+      - UDP loss: "0.5%"
+
+  "Some new test":
+    bullets:
+      - result 1: "871"
+    raw: |
+      any text here
 ---
 <TOCInline toc={props.toc} asDisclosure />  
 
@@ -39,9 +139,6 @@ affiliateLinks:
 
 **Links to buy Raspberry Pi Compute Module 5:**
 - **AliExpress** : https://s.click.aliexpress.com/e/_DdzGQGd
-- **ThePiHut** : https://thepihut.com/products/raspberry-pi-compute-module-5
-- **BerryBase** : https://www.berrybase.de/en/detail/019350e97c767050917125760299ebf0
-
 
 The Raspberry Pi Compute Module 5 (CM5) is an impressively compact computer that fits in the palm of your hand. But while its size and capabilities are remarkable, it isn’t something you can use straight out of the box. To unlock its full potential, you’ll need a carrier board. The [official development carrier board](https://www.raspberrypi.com/products/compute-module-5-io-board/) is one option, and as the ecosystem grows, more specialized carrier boards are expected to hit the market. These boards will cater to applications ranging from server machines in the server racks to DIY NAS setups.
 
