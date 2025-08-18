@@ -24,15 +24,22 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
+
+    // ✅ Always take the tag from params
+  const tagParam = Array.isArray(params?.tag) ? params.tag[0] : params?.tag
+
   const allPosts = await getAllFilesFrontMatter('blog')
   const filteredPosts = allPosts.filter(
-    (post) => post.draft !== true && post.tags.map((t) => kebabCase(t)).includes(params.tag)
+    (post) => post.draft !== true && post.tags.map((t) => kebabCase(t)).includes(tagParam)
   )
 
   // rss
   if (filteredPosts.length > 0) {
-    const rss = generateRss(filteredPosts, `tags/${params.tag}/feed.xml`)
-    const rssPath = path.join(root, 'public', 'tags', params.tag)
+    const rss = generateRss(filteredPosts, {
+      page: `tags/${tagParam}/feed.xml`,
+      canonicalUrl: `${siteMetadata.siteUrl}/tags/${tagParam}`,
+    })
+    const rssPath = path.join(root, 'public', 'tags', tagParam)
     fs.mkdirSync(rssPath, { recursive: true })
     fs.writeFileSync(path.join(rssPath, 'feed.xml'), rss)
   }
@@ -44,19 +51,21 @@ export async function getStaticProps({ params }) {
   })
   const authorDetails = await Promise.all(authorPromise)
 
-  return { props: { posts: filteredPosts, tag: params.tag, authorDetails: authorDetails } }
+  return { props: { posts: filteredPosts, tag: tagParam, authorDetails: authorDetails } }
 }
 
 export default function Tag({ posts, authorDetails, tag }) {
+  // Human-friendly title: "Raspberry pi" from "raspberry-pi"
   // Capitalize first letter and convert space to dash
-  const title = tag[0].toUpperCase() + tag.split('-').join(' ').slice(1)
+  const humanTitle =
+    tag && tag.length
+      ? tag.split('-').join(' ').replace(/^./, (c) => c.toUpperCase())
+      : 'Tag'
+
   return (
     <>
-      <TagSEO
-        title={`${tag[0].toUpperCase() + tag.split('-').join(' ').slice(1)}`}
-        description={`${tag[0].toUpperCase() + tag.split('-').join(' ').slice(1)} tags`}
-      />
-      <ListLayout posts={posts} authorDetails={authorDetails} title={title} />
+      <TagSEO title={humanTitle} description={`${humanTitle} tags`} />
+      <ListLayout posts={posts} authorDetails={authorDetails} title={humanTitle} />
     </>
   )
 }
