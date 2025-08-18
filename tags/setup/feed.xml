@@ -9,6 +9,7 @@
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
       <lastBuildDate>Thu, 14 Dec 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/setup/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://smarthomecircle.com/tags/setup" rel="alternate" type="text/html"/>
       
   <item>
     <guid>https://smarthomecircle.com/custom-wake-word-for-voice-assistant-with-home-assistant</guid>

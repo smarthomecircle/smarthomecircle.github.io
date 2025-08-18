@@ -9,6 +9,7 @@
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
       <lastBuildDate>Thu, 18 Jul 2024 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/esp32/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://smarthomecircle.com/tags/esp32" rel="alternate" type="text/html"/>
       
   <item>
     <guid>https://smarthomecircle.com/add-timers-to-voice-assistant-on-device-wake-word-home-assistant</guid>

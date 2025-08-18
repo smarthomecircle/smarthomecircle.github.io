@@ -9,6 +9,7 @@
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
       <lastBuildDate>Mon, 23 Oct 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/usb-microphone/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://smarthomecircle.com/tags/usb-microphone" rel="alternate" type="text/html"/>
       
   <item>
     <guid>https://smarthomecircle.com/setup-voice-assistant-with-home-assistant-using-docker-usb-microphone</guid>

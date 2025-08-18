@@ -9,6 +9,7 @@
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
       <lastBuildDate>Thu, 12 Oct 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/led-strip/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://smarthomecircle.com/tags/led-strip" rel="alternate" type="text/html"/>
       
   <item>
     <guid>https://smarthomecircle.com/how-to-connect-led-strip-with-home-assistant-using-wled</guid>

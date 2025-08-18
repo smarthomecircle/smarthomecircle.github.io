@@ -9,6 +9,7 @@
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
       <lastBuildDate>Mon, 11 Dec 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/samba-share/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://smarthomecircle.com/tags/samba-share" rel="alternate" type="text/html"/>
       
   <item>
     <guid>https://smarthomecircle.com/easily-share-files-with-home-assistant-using-samba-share</guid>

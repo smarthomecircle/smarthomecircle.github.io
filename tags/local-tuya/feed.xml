@@ -9,6 +9,7 @@
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
       <lastBuildDate>Thu, 07 Sep 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/local-tuya/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://smarthomecircle.com/tags/local-tuya" rel="alternate" type="text/html"/>
       
   <item>
     <guid>https://smarthomecircle.com/how-to-setup-frigate-with-home-assistant</guid>
