@@ -101,7 +101,7 @@ services:
       - ./models:/models
       - ./train:/train
     command: >
-      --hass-websocket-uri ws://192.168.0.43:8123/api/websocket
+      --hass-websocket-uri ws://<Your Home assistant IP>:8123/api/websocket
       --hass-token <replace this with your Home Assistant Token>
     stdin_open: true
     tty: true
