@@ -2,16 +2,16 @@
 title: 'Rhasspy Speech: Boost Home Assistant Voice Control on Raspberry Pi — Faster Than Whisper'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [DIY, 10 inch rack, Raspberry Pi, radxa, latte panda, orange pi, Glinet]
+tags: [Voice Assistant, Home Assistant, Rhasspy Speech, Raspberry Pi, micro wake word, piper]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2025-08-21'
 draft: false
 summary: 'Discover how the Rhasspy Speech addon can supercharge your Home Assistant voice assistant on Raspberry Pi. Learn setup, performance tips, and why it might beat Whisper for speed.'
-imageUrl: /static/images/2025/diy-rack/cover.webp
+imageUrl: /static/images/2025/rhasspy-speech/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/66axG6TpT6A"
+youtubeLink: "https://www.youtube.com/embed/0c1OCGVprnI"
 
 ---
 <TOCInline toc={props.toc} asDisclosure />  
@@ -31,7 +31,7 @@ For reference, I’ve been using the **medium-int-8 model**, which:
 - Converts speech to text in about **3 seconds** on my mini PC.
 - Has roughly **90% accuracy**.
 
-![whisper-performance](/static/images/2025/rhasspy-speech/whiper-performance.png)
+![whisper-performance](/static/images/2025/rhasspy-speech/whiper-performance.webp)
 
 But most of us start with a **Raspberry Pi**, and for that hardware, Whisper’s heavier models can feel painfully slow. The question is — do you really need to **upgrade to a mini PC** for good voice control?  
 **The answer: not necessarily.**
@@ -48,7 +48,7 @@ Instead of transcribing anything you say, Rhasspy matches your commands to a set
 - “What’s the time?”
 - “What’s the temperature in the bedroom?”
 
-![whisper-performance](/static/images/2025/rhasspy-speech/rhasspy-ui.png)
+![whisper-performance](/static/images/2025/rhasspy-speech/rhasspy-ui.webp)
 
 The Rhasspy Speech addon lets you access the Intents section to view all devices integrated with your Home Assistant. Using the UI, you can Train it with common device commands, add your own custom sentences using a simple YAML format. Then you can integrate the addon via the Wyoming integration so your voice assistant pipeline can start using Rhasspy for speech-to-text.
 
@@ -59,7 +59,7 @@ The Rhasspy Speech addon lets you access the Intents section to view all devices
 When I tested Rhasspy, it recognized my speech in **under 1 second** — on a **Raspberry Pi 4**.  
 That’s huge for Pi users who don’t want to invest in a mini PC.
 
-![rhasspy-performance.png](/static/images/2025/rhasspy-speech/rhasspy-performance.png)
+![rhasspy-performance.webp](/static/images/2025/rhasspy-speech/rhasspy-performance.webp)
 
 --- 
 
@@ -83,7 +83,7 @@ Rhasspy works brilliantly for everyday, **common voice commands**, but it’s no
 
 Getting started is straightforward — just head to the **Add-on Store**, search for **Rhasspy Speech**, and install it. Once it’s running, you can use the built-in UI to train the addon with your common sentences and custom commands.
 
-![rhasspy-addon.png](/static/images/2025/rhasspy-speech/rhasspy-addon.png)
+![rhasspy-addon.webp](/static/images/2025/rhasspy-speech/rhasspy-addon.webp)
 
 ### On Home Assistant Container
 
