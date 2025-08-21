@@ -7,10 +7,20 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 21 Aug 2025 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/voice-assistant/feed.xml" rel="self" type="application/rss+xml"/>
       <atom:link href="https://smarthomecircle.com/tags/voice-assistant" rel="alternate" type="text/html"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/rhasspy-speech-faster-than-whisper-home-assistant</guid>
+    <title>Rhasspy Speech: Boost Home Assistant Voice Control on Raspberry Pi — Faster Than Whisper</title>
+    <link>https://smarthomecircle.com/rhasspy-speech-faster-than-whisper-home-assistant</link>
+    <description>Discover how the Rhasspy Speech addon can supercharge your Home Assistant voice assistant on Raspberry Pi. Learn setup, performance tips, and why it might beat Whisper for speed.</description>
+    <pubDate>Thu, 21 Aug 2025 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Voice Assistant</category><category>Home Assistant</category><category>Rhasspy Speech</category><category>Raspberry Pi</category><category>micro wake word</category><category>piper</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/local-voice-assistant-with-seeed-studio-respeaker-lite</guid>
     <title>How to Build Your Own Local Voice Assistant with ReSpeaker Lite and Home Assistant</title>

@@ -1,0 +1,25 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Smart Home Circle</title>
+      <link>https://smarthomecircle.com</link>
+      <description>Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.</description>
+      <language>en-us</language>
+      <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Thu, 21 Aug 2025 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://smarthomecircle.com/tags/rhasspy-speech/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://smarthomecircle.com/tags/rhasspy-speech" rel="alternate" type="text/html"/>
+      
+  <item>
+    <guid>https://smarthomecircle.com/rhasspy-speech-faster-than-whisper-home-assistant</guid>
+    <title>Rhasspy Speech: Boost Home Assistant Voice Control on Raspberry Pi — Faster Than Whisper</title>
+    <link>https://smarthomecircle.com/rhasspy-speech-faster-than-whisper-home-assistant</link>
+    <description>Discover how the Rhasspy Speech addon can supercharge your Home Assistant voice assistant on Raspberry Pi. Learn setup, performance tips, and why it might beat Whisper for speed.</description>
+    <pubDate>Thu, 21 Aug 2025 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Voice Assistant</category><category>Home Assistant</category><category>Rhasspy Speech</category><category>Raspberry Pi</category><category>micro wake word</category><category>piper</category>
+  </item>
+
+    </channel>
+  </rss>
