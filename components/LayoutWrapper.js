@@ -52,41 +52,65 @@ const LayoutWrapper = ({ children }) => {
               }}
             /> */}
           </div>
-           <div className="flex items-center text-base leading-5">
-              <div className="hidden sm:flex items-center space-x-4">
-                {headerNavLinks.map((link) =>
-                  link.children ? (
-                    <div key={link.title} className="relative group">
-                      <button className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100">
-                        {link.title}
-                      </button>
-                      <div className="absolute top-full left-0 hidden w-48 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded shadow-md group-hover:block z-50">
-                        {link.children.map((child) => (
-                          <Link
-                            key={child.title}
-                            href={child.href}
-                            className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
-                          >
-                            {child.title}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  ) : (
-                    <Link
-                      key={link.title}
-                      href={link.href}
-                      className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100"
-                    >
-                      {link.title}
-                    </Link>
-                  )
-                )}
+                     <div className="flex items-center text-base leading-5">
+            <div className="hidden sm:flex items-center space-x-1">
+                             {headerNavLinks.map((link) =>
+                 link.children ? (
+                   <div key={link.title} className="relative group">
+                     <button className="group relative px-4 py-2 font-medium text-gray-700 dark:text-gray-300 rounded-lg transition-all duration-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:shadow-md hover:-translate-y-0.5 flex items-center space-x-1">
+                       <span className="relative z-10">{link.title}</span>
+                       {/* Dropdown arrow */}
+                       <svg className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                       </svg>
+                       {/* Animated underline */}
+                       <div className="absolute bottom-1 left-4 right-4 h-0.5 bg-primary-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
+                       {/* Subtle glow effect */}
+                       <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-primary-500/10 to-primary-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                     </button>
+                     {/* Enhanced Dropdown Menu */}
+                     <div className="absolute top-full left-0 mt-2 w-64 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-50 backdrop-blur-sm">
+                       <div className="py-2">
+                         {link.children.map((child, index) => (
+                           <Link
+                             key={child.title}
+                             href={child.href}
+                             className="group/item relative block px-4 py-3 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-all duration-200"
+                           >
+                             <div className="flex items-center justify-between">
+                               <span className="relative z-10">{child.title}</span>
+                               <svg className="w-4 h-4 opacity-0 group-hover/item:opacity-100 transform translate-x-2 group-hover/item:translate-x-0 transition-all duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                               </svg>
+                             </div>
+                             {/* Item hover effect */}
+                             <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary-500 scale-y-0 group-hover/item:scale-y-100 transition-transform duration-200 origin-center"></div>
+                           </Link>
+                         ))}
+                       </div>
+                     </div>
+                   </div>
+                 ) : (
+                   <Link
+                     key={link.title}
+                     href={link.href}
+                     className="group relative px-4 py-2 font-medium text-gray-700 dark:text-gray-300 rounded-lg transition-all duration-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:shadow-md hover:-translate-y-0.5"
+                   >
+                     <span className="relative z-10">{link.title}</span>
+                     {/* Animated underline */}
+                     <div className="absolute bottom-1 left-4 right-4 h-0.5 bg-primary-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
+                     {/* Subtle glow effect */}
+                     <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-primary-500/10 to-primary-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                   </Link>
+                 )
+               )}
+              <div className="ml-2">
                 <BuyMeACoffee />
               </div>
-              <ThemeSwitch />
-              <MobileNav />
             </div>
+            <ThemeSwitch />
+            <MobileNav />
+          </div>
 
 
         </header>
