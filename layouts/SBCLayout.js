@@ -1,21 +1,12 @@
 import Link from '@/components/Link'
-import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import { BlogSEO } from '@/components/SEO'
 import Image from '@/components/Image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
-import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
-import AdColumn from '@/components/AdColumn'
-import Script from 'next/script'
-import AdsSection from '@/components/AdsSection'
 import ShareButtons from '@/components/PostShare'
 import Benchmarks from '@/components/Benchmarks'
-
-const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
-const discussUrl = (slug) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(`${siteMetadata.siteUrl}/${slug}`)}`
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
@@ -41,198 +32,242 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
       />
       <ScrollTopAndComment />
       <article>
-        <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
-          <header className="pt-6 xl:pb-6">
-            <div className="space-y-1 text-center">
-              <dl className="space-y-10">
-                <div>
-                  <dt className="sr-only">Published on</dt>
-                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-100">
-                    <time dateTime={date}>
-                      {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
-                    </time>
-                  </dd>
+        {/* Modern Hero Section */}
+        <header className="relative">
+          {/* Background gradient */}
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-primary-50 dark:from-gray-900 dark:via-gray-900 dark:to-primary-900/20 -z-10"></div>
+          
+          <div className="relative pt-12 pb-16">
+            {/* Breadcrumb / Category */}
+            <div className="flex items-center justify-center mb-6">
+              <Link href="/sbc" className="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 transition-colors">
+                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                </svg>
+                Single Board Computer
+              </Link>
+            </div>
+
+            {/* Title Section */}
+            <div className="max-w-4xl mx-auto text-center space-y-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-100 leading-tight">
+                {title}
+              </h1>
+              
+              {/* Meta Info */}
+              <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-600 dark:text-gray-300">
+                <div className="flex items-center">
+                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  <time dateTime={date}>
+                    {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+                  </time>
                 </div>
-              </dl>
-              <div>
-                <PageTitle>{title}</PageTitle>
-                <div className="mt-6">
-                  <div className="max-w-3xl mx-auto">
-                    <div className="aspect-w-16 aspect-h-9 relative">
-                      <Image
-                        alt={title}
-                        src={imageUrl}
-                        className="object-cover object-center rounded-2xl"
-                        width={544}
-                        height={407}
-                      />
-                    </div>
+                {readingTime && (
+                  <div className="flex items-center">
+                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    {readingTime.text}
                   </div>
-                </div>
-                <div className="text-primary-500 hover:text-primary-600 text-md dark:hover:text-primary-400">
-                  {photoCredits != '' && photoCredits != null ? (
-                    <Link href={photoCredits}> Photo Credits</Link>
-                  ) : (
-                    <div></div>
-                  )}
-                </div>
-                <div className="mt-2 text-gray-500 dark:text-gray-100">{readingTime.text}</div>
+                )}
               </div>
             </div>
-          </header>
 
-          <div
-            className="pb-8 divide-y divide-gray-200 xl:divide-y-0 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6"
-            style={{ gridTemplateRows: 'auto 1fr' }}
-          >
-            <dl className="pt-6 pb-10 xl:pt-11 xl:border-b xl:border-gray-200 xl:dark:border-gray-700">
-              <dt className="sr-only">Authors</dt>
-              <dd>
-                <ul className="flex justify-center space-x-8 xl:block sm:space-x-12 xl:space-x-0 xl:space-y-8">
+            {/* Hero Image */}
+            <div className="max-w-5xl mx-auto mt-12">
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent z-10"></div>
+                <Image
+                  alt={title}
+                  src={imageUrl}
+                  className="object-cover object-center w-full h-auto"
+                  width={800}
+                  height={450}
+                />
+              </div>
+              {photoCredits && (
+                <div className="mt-3 text-center">
+                  <Link 
+                    href={photoCredits} 
+                    className="text-sm text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors"
+                  >
+                    Photo Credits
+                  </Link>
+                </div>
+              )}
+            </div>
+          </div>
+        </header>
+
+        {/* Main Content Area */}
+        <div className="max-w-6xl mx-auto px-4 py-16">
+          <div className="lg:grid lg:grid-cols-12 lg:gap-8">
+            {/* Content */}
+            <div className="lg:col-span-8">
+              {/* Author Section - Above Content */}
+              <div className="mb-12 p-6 bg-gray-50 dark:bg-gray-800/50 rounded-2xl border border-gray-200 dark:border-gray-700">
+                <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-4">
+                  Written by
+                </h3>
+                <div className="flex items-center space-x-4">
                   {authorDetails.map((author) => (
-                    <li className="flex items-center space-x-2" key={author.name}>
+                    <div key={author.name} className="flex items-center space-x-3">
                       {author.avatar && (
                         <Image
                           src={author.avatar}
-                          width="38"
-                          height="38"
-                          alt="avatar"
-                          unoptimized={true}
-                          className="w-10 h-10 rounded-full"
+                          width="48"
+                          height="48"
+                          alt={`${author.name} avatar`}
+                          className="w-12 h-12 rounded-full ring-2 ring-white dark:ring-gray-700"
                         />
                       )}
-                      <dl className="text-sm font-medium leading-5 whitespace-nowrap">
-                        <dt className="sr-only">Name</dt>
-                        <dd className="text-gray-900 dark:text-gray-100">{author.name}</dd>
-                        <dt className="sr-only">Twitter</dt>
-                        <dd>
-                          {author.twitter && (
-                            <Link
-                              href={author.twitter}
-                              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                            >
-                              {author.twitter.replace('https://twitter.com/', '@')}
-                            </Link>
-                          )}
-                        </dd>
-                      </dl>
-                    </li>
-                  ))}
-                </ul>
-              </dd>
-            </dl>
-            <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
-              <div className="pt-10 pb-8 prose text-lg leading-8	 dark:prose-dark max-w-none">
-                <div>
-                  {youtubeLink && (
-                    <div className="xl:px-48 ">
-                      <div className="relative w-full pt-[56.25%]">
-                        <iframe
-                          id={`youtubeLink1${date}`}
-                          className="absolute top-0 left-0 w-full h-full"
-                          src={youtubeLink}
-                          frameBorder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                        ></iframe>
+                      <div>
+                        <div className="font-semibold text-gray-900 dark:text-gray-100">
+                          {author.name}
+                        </div>
+                        {author.twitter && (
+                          <Link
+                            href={author.twitter}
+                            className="text-sm text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 transition-colors"
+                          >
+                            {author.twitter.replace('https://twitter.com/', '@')}
+                          </Link>
+                        )}
                       </div>
-                      <br />
                     </div>
-                  )}
+                  ))}
                 </div>
-                <div>
-                  {youtubeLink2 && (
-                    <div className="xl:px-48">
+              </div>
+
+              {/* Article Content */}
+              <div className="prose prose-lg dark:prose-dark max-w-none prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-gray-100 prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-a:text-primary-600 dark:prose-a:text-primary-400 prose-a:no-underline hover:prose-a:underline prose-strong:text-gray-900 dark:prose-strong:text-gray-100 prose-code:text-primary-600 dark:prose-code:text-primary-400 prose-pre:bg-gray-900 dark:prose-pre:bg-gray-800 prose-blockquote:border-primary-500 prose-blockquote:text-gray-700 dark:prose-blockquote:text-gray-300">
+                {/* YouTube Videos */}
+                {youtubeLink && (
+                  <div className="my-12 not-prose">
+                    <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-lg">
+                      <iframe
+                        id={`youtubeLink1${date}`}
+                        className="absolute top-0 left-0 w-full h-full"
+                        src={youtubeLink}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  </div>
+                )}
+
+                {youtubeLink2 && (
+                  <div className="my-12 not-prose">
+                    <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-lg">
                       <iframe
                         id={`youtubeLink2${date}`}
-                        className="w-full aspect-video"
+                        className="absolute top-0 left-0 w-full h-full"
                         src={youtubeLink2}
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                       ></iframe>
-                      <br />
                     </div>
-                  )}
-                </div>
-                                {/* NEW: auto-render benchmarks from front-matter if present */}
-                {frontMatter.benchmarks && (
-                  <Benchmarks data={frontMatter.benchmarks} env={frontMatter.testEnv} />
+                  </div>
                 )}
-                <div className="mt-8">{children}</div>
-                <div>
-                  <ShareButtons title={title} url={`${siteMetadata.siteUrl}/${customUrl}`} />
+
+                {/* Benchmarks */}
+                {frontMatter.benchmarks && (
+                  <div className="not-prose my-12">
+                    <Benchmarks data={frontMatter.benchmarks} env={frontMatter.testEnv} />
+                  </div>
+                )}
+
+                {/* Main Article Content */}
+                {children}
+
+                {/* Share Buttons */}
+                <div className="not-prose mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+                  <div className="bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-6">
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                      Share this article
+                    </h3>
+                    <ShareButtons title={title} url={`${siteMetadata.siteUrl}/${customUrl}`} />
+                  </div>
                 </div>
               </div>
-
-              <hr />
-              {/* <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={discussUrl(slug)} rel="nofollow">
-                  {'Discuss on Twitter'}
-                </Link>
-                {` • `}
-                <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
-              </div> */}
-              {/* <Comments frontMatter={frontMatter} /> */}
             </div>
-            <footer>
-              <div className="text-sm font-medium leading-5 divide-gray-200 xl:divide-y dark:divide-gray-700 xl:col-start-1 xl:row-start-2">
+
+            {/* Sidebar */}
+            <div className="lg:col-span-4 mt-12 lg:mt-0">
+              <div className="sticky top-8 space-y-8">
+                {/* Tags */}
                 {tags && (
-                  <div className="py-4 xl:py-8">
-                    <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
+                  <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
                       Tags
-                    </h2>
-                    <div className="flex flex-wrap">
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
                       {tags.map((tag) => (
                         <Tag key={tag} text={tag} />
                       ))}
                     </div>
                   </div>
                 )}
+
+                {/* Navigation */}
                 {(next || prev) && (
-                  <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
-                    {prev && (
-                      <div>
-                        <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
-                          Previous Article
-                        </h2>
-                        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
-                          <Link href={`/${prev.slug}`}>{prev.title}</Link>
+                  <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-6">
+                      More Articles
+                    </h3>
+                    <div className="space-y-6">
+                      {prev && (
+                        <div>
+                          <div className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">
+                            Previous
+                          </div>
+                          <Link 
+                            href={`/sbc/${prev.customUrl || prev.slug}`}
+                            className="block group"
+                          >
+                            <div className="text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 font-medium group-hover:underline transition-colors">
+                              {prev.title}
+                            </div>
+                          </Link>
                         </div>
-                      </div>
-                    )}
-                    {next && (
-                      <div>
-                        <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
-                          Next Article
-                        </h2>
-                        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
-                          <Link href={`/${next.slug}`}>{next.title}</Link>
+                      )}
+                      {next && (
+                        <div>
+                          <div className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">
+                            Next
+                          </div>
+                          <Link 
+                            href={`/sbc/${next.customUrl || next.slug}`}
+                            className="block group"
+                          >
+                            <div className="text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 font-medium group-hover:underline transition-colors">
+                              {next.title}
+                            </div>
+                          </Link>
                         </div>
-                      </div>
-                    )}
+                      )}
+                    </div>
                   </div>
                 )}
+
+                {/* Back to Articles */}
+                <div className="bg-gradient-to-br from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-800/20 rounded-2xl p-6 border border-primary-200 dark:border-primary-800">
+                  <Link
+                    href="/sbc"
+                    className="flex items-center text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 font-semibold transition-colors group"
+                  >
+                    <svg className="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                    </svg>
+                    Back to SBC Reviews
+                  </Link>
+                </div>
               </div>
-              <div className="pt-4 xl:pt-8 xl:mb-8 mb-4">
-                <Link
-                  href="/"
-                  className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                >
-                  &larr; Back to the articles
-                </Link>
-              </div>
-              <div className="hidden xl:block">
-                {/* <AdColumn
-                  width="1054"
-                  height="2100"
-                  imageLink="/static/images/promotion/testing-spring-boot-applications-masterclass-architecture-524x733.png"
-                  referalLink="https://www.copecart.com/products/521411d4/p/techapk42"
-                /> */}
-              </div>
-              {/* <AdsSection id="ad3" slot="8862054574" /> */}
-              {/* <AdsSection id="ad4" slot="6180491852" /> */}
-            </footer>
+            </div>
           </div>
         </div>
       </article>
