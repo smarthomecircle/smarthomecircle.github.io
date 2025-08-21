@@ -5,18 +5,61 @@
  * https://github.com/PrismJS/prism-themes
  */
 
-/* Code title styles */
+/* Code title styles - Enhanced */
 .remark-code-title {
-  @apply px-5 py-3 font-mono text-sm font-bold text-gray-200 bg-gray-700 rounded-t;
+  @apply px-6 py-3 font-mono text-sm font-semibold text-gray-200 bg-gray-800 rounded-t-lg border-b border-gray-700;
+  position: relative;
+}
+
+.remark-code-title::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff5f57;
+  box-shadow: 20px 0 #ffbd2e, 40px 0 #28ca42;
 }
 
 .remark-code-title + div > pre {
-  @apply mt-0 rounded-t-none;
+  @apply mt-0 rounded-t-none border-t-0;
 }
 
-/* Code block styles */
+/* Enhanced code block container */
 .code-highlight {
-  @apply float-left min-w-full;
+  @apply float-left min-w-full relative;
+}
+
+/* Modern code block styling */
+pre[class*="language-"] {
+  @apply relative rounded-lg border border-gray-200 dark:border-gray-700 shadow-lg overflow-hidden;
+  font-family: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Menlo', monospace !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%) !important;
+}
+
+/* Light mode code blocks */
+.light pre[class*="language-"] {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
+  color: #334155 !important;
+  border-color: #e2e8f0;
+}
+
+/* Enhanced inline code */
+:not(pre) > code[class*="language-"] {
+  @apply px-2 py-1 rounded-md text-sm font-medium;
+  background: rgba(20, 184, 166, 0.1) !important;
+  color: #0f766e !important;
+  border: 1px solid rgba(20, 184, 166, 0.2);
+}
+
+.dark :not(pre) > code[class*="language-"] {
+  background: rgba(20, 184, 166, 0.15) !important;
+  color: #5eead4 !important;
+  border-color: rgba(20, 184, 166, 0.3);
 }
 
 .code-line {
@@ -76,22 +119,23 @@
 .token.tag,
 .token.operator,
 .token.keyword {
-  color: rgb(127, 219, 202);
+  color: rgb(199, 146, 234);
+  font-weight: 500;
 }
 
 .token.boolean {
-  color: rgb(255, 88, 116);
+  color: rgb(209, 154, 102);
 }
 
 .token.number {
-  color: rgb(247, 140, 108);
+  color: rgb(209, 154, 102);
 }
 
 .token.constant,
 .token.function,
 .token.builtin,
 .token.char {
-  color: rgb(130, 170, 255);
+  color: rgb(97, 218, 251);
 }
 
 .token.selector,
