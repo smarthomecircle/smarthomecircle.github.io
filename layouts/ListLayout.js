@@ -52,36 +52,67 @@ export default function ListLayout({
             </svg>
           </div>
         </div>
-        <div className="xl:flex content-wrapper">
+        {/* Main Content */}
+        <div className="pt-8 space-y-12">
+          {/* Articles Grid */}
           <div>
-            <ul>
-              {!filteredBlogPosts.length && 'No posts found.'}
-              {displayPosts.map((frontMatter) => {
-                return (
+            {!filteredBlogPosts.length && (
+              <div className="text-center py-12">
+                <div className="text-gray-500 dark:text-gray-400 text-lg">
+                  No posts found.
+                </div>
+                <p className="text-gray-400 dark:text-gray-500 text-sm mt-2">
+                  Try adjusting your search terms or browse all articles.
+                </p>
+              </div>
+            )}
+            
+            {displayPosts.length > 0 && (
+              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                {displayPosts.map((frontMatter, index) => (
                   <ListRecord
-                    key={frontMatter}
+                    key={frontMatter.slug || index}
                     frontMatter={frontMatter}
                     authorDetails={authorDetails}
                   />
-                )
-              })}
-            </ul>
+                ))}
+              </div>
+            )}
+
+            {/* Pagination */}
             {pagination && pagination.totalPages > 1 && !searchValue && (
-              <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
+              <div className="mt-16 flex justify-center">
+                <Pagination 
+                  currentPage={pagination.currentPage} 
+                  totalPages={pagination.totalPages} 
+                />
+              </div>
             )}
           </div>
-          <div>
-            <div className="hidden xl:block">
-              {/* <AdColumn
-                width="900"
-                height="2150"
-                imageLink="/static/images/promotion/testing-spring-boot-applications-masterclass.png"
-                referalLink="https://www.copecart.com/products/521411d4/p/techapk42"
-              /> */}
+
+          {/* Newsletter/Subscribe Section - Commented out for later use */}
+          {/*
+          <div className="bg-gradient-to-br from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-800/20 rounded-2xl p-8 md:p-12 text-center">
+            <div className="max-w-2xl mx-auto space-y-4">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100">
+                Don't Miss Our Latest Posts
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 text-lg">
+                Subscribe to our newsletter and stay updated with the latest smart home tech trends and tutorials.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mt-6">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="flex-1 px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none"
+                />
+                <button className="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-colors duration-200 whitespace-nowrap">
+                  Subscribe
+                </button>
+              </div>
             </div>
-            {/* <AdsSection id="ad1" slot="6310228644" /> */}
-            {/* <AdsSection id="ad2" slot="1649763058" /> */}
           </div>
+          */}
         </div>
       </div>
     </>

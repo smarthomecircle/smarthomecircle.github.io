@@ -3,7 +3,7 @@ const siteMetadata = {
   author: 'Amrut Prabhu',
   headerTitle: 'Smart Home Circle',
   description:
-    'Articles about everything related to smart home. Here we explore what are the various ways we can integrated smart devices to Home Assistant and much more.',
+    'A comprehensive resource covering Smart Home Tech, detailed Single Board Computers (SBC) reviews, mini PC, Home Automation, HomeLab upgrades, and Home Assistant guides.',
   language: 'en-us',
   theme: 'light', // system, dark or light
   siteUrl: 'https://smarthomecircle.com', //TODO
