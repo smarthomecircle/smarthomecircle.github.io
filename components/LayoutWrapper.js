@@ -16,7 +16,7 @@ const LayoutWrapper = ({ children }) => {
         <header className="flex items-center justify-between py-10">
           <div>
             <Link href="/" aria-label="SmartHomeCircle">
-              <div className="flex items-center justify-between">
+              <div className="flex items-center">
                 <div className="mr-3">
                   <Image
                     src="/static/favicons/icon.png"
@@ -26,7 +26,7 @@ const LayoutWrapper = ({ children }) => {
                   />
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="h-6 text-2xl font-semibold sm:block">
+                  <div className="text-2xl font-semibold sm:block">
                     {siteMetadata.headerTitle}
                   </div>
                 ) : (
