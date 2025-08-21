@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script'
 import { useRouter } from 'next/router'
 import siteMetadata from '@/data/siteMetadata'
 
@@ -7,11 +8,6 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage }) => {
   return (
     <Head>
       <title>{`${title == siteMetadata.title ? 'Home' : title} | ${siteMetadata.title}`}</title>
-      {/* <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7490174059724719"
-        crossOrigin="anonymous"
-      ></script> */}
       <meta name="robots" content="follow, index" />
       <meta name="description" content={description} />
       <meta property="og:url" content={`${siteMetadata.siteUrl}${router.asPath}`} />
@@ -152,13 +148,14 @@ export const BlogSEO = ({
         {date && <meta property="article:published_time" content={publishedAt} />}
         {lastmod && <meta property="article:modified_time" content={modifiedAt} />}
         <link rel="canonical" href={`${siteMetadata.siteUrl}${router.asPath}`} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(structuredData, null, 2),
-          }}
-        />
       </Head>
+      <Script
+        id="structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData, null, 2),
+        }}
+      />
     </>
   )
 }
