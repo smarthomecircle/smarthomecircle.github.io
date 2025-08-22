@@ -12,10 +12,17 @@ imageUrl: /static/images/2025/rhasspy-speech/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/0c1OCGVprnI"
-
+suggestedArticles:
+  - title: "Local Voice Assistant with ReSpeaker Lite"
+    url: "https://smarthomecircle.com/local-voice-assistant-with-seeed-studio-respeaker-lite"
+  - title: "Setup On-Device Wake Word Detection For Voice Assistant"
+    url: "https://smarthomecircle.com/How-to-setup-on-device-wake-word-for-voice-assistant-home-assistant"
+  - title: "Easily Share Files With Home Assistant OS"
+    url: "https://smarthomecircle.com/easily-share-files-with-home-assistant-using-samba-share"
+  - title: "Control LED Strip with Home Assistant"
+    url: "https://smarthomecircle.com/how-to-connect-led-strip-with-home-assistant-using-wled"
 ---
 <TOCInline toc={props.toc} asDisclosure />  
-
 
 If you’ve been exploring **local voice assistants with Home Assistant**, you’ve probably come across the powerful but resource-heavy **Whisper** speech-to-text engine. I’ve been down that road myself — starting with an [**ESP32 and OpenWakeWord**](https://smarthomecircle.com/created-voice-assistant-esp32-with-wake-word-in-home-assistant), moving to an [**ESP32-S3 with on-device wake word detection**](https://smarthomecircle.com/How-I-created-my-voice-assistant-with-on-device-wake-word-using-home-assistant), and eventually trying out the [**Voice Assistant Preview Edition**](https://youtu.be/4PP14HErHl4) from Home Assistant.
 
@@ -126,10 +133,3 @@ If you enjoyed this project and want to see more like it:
 -   ☕ **Support my work** on [Patreon](https://patreon.com/AmrutPrabhu) or [Buy Me a Coffee](https://www.buymeacoffee.com/amrutprabhu)
     
 -   🔁 **Share** this article with fellow makers and tinkerers
-
-If you are interested in exploring more of such easy to follow step by step guides, then here are a few suggestions.
-
--   [**Local Voice Assistant with ReSpeaker Lite**](https://smarthomecircle.com/local-voice-assistant-with-seeed-studio-respeaker-lite)
--   [**Setup On-Device Wake Word Detection For Voice Assistant**](https://smarthomecircle.com/How-to-setup-on-device-wake-word-for-voice-assistant-home-assistant)
--   [**Easily Share Files With Home Assistant OS**](https://smarthomecircle.com/easily-share-files-with-home-assistant-using-samba-share)
--   [**Control LED Strip with Home Assistant**](https://smarthomecircle.com/how-to-connect-led-strip-with-home-assistant-using-wled)

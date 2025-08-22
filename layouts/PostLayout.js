@@ -184,6 +184,40 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 {/* Main Article Content */}
                 {children}
 
+                {/* Suggested Articles - Seamless Integration (Desktop Only) */}
+                {suggestedArticles && suggestedArticles.length > 0 && (
+                  <div className="mt-12 hidden lg:block">
+                    
+                    {/* Subtle divider */}
+                    <div className="flex items-center my-8">
+                      <div className="flex-1 border-t border-gray-300 dark:border-gray-600"></div>
+                    </div>
+                    
+                    <p className="text-gray-700 dark:text-gray-300 font-medium mb-4">You might also enjoy these related guides and reviews:</p>
+                    
+                    <div className="space-y-3">
+                      {suggestedArticles.map((article, index) => (
+                        <a
+                          key={index}
+                          href={article.url}
+                          className="group flex items-center space-x-3 py-1 px-0 transition-all duration-200"
+                        >
+                          <div className="flex-shrink-0">
+                            <svg className="w-4 h-4 text-primary-600 dark:text-primary-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <span className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors font-medium underline hover:no-underline cursor-pointer">
+                              {article.title}
+                            </span>
+                          </div>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
                 {/* Share Buttons */}
                 <div className="not-prose mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
                   <div className="bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-6">
@@ -193,51 +227,6 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                     <ShareButtons title={title} url={`${siteMetadata.siteUrl}/${customUrl}`} />
                   </div>
                 </div>
-
-                {/* Suggested Articles - Read Next Section (Desktop Only) */}
-                {suggestedArticles && suggestedArticles.length > 0 && (
-                  <div className="not-prose mt-16 hidden lg:block">
-                    <div className="text-center mb-8">
-                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-                        Read Next
-                      </h3>
-                      <p className="text-gray-600 dark:text-gray-300 text-lg">
-                        Continue your learning journey with these related articles
-                      </p>
-                    </div>
-                    
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      {suggestedArticles.map((article, index) => (
-                        <a
-                          key={index}
-                          href={article.url}
-                          className="group block bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-xl hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300 hover:-translate-y-2"
-                        >
-                          <div className="flex items-start space-x-4">
-                            <div className="flex-shrink-0">
-                              <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                </svg>
-                              </div>
-                            </div>
-                            <div className="flex-1 min-w-0">
-                              <h4 className="font-semibold text-gray-900 dark:text-gray-100 text-lg leading-snug group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300">
-                                {article.title}
-                              </h4>
-                              <div className="flex items-center mt-3 text-primary-600 dark:text-primary-400 font-medium text-sm">
-                                <span>Continue reading</span>
-                                <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                )}
               </div>
             </div>
 

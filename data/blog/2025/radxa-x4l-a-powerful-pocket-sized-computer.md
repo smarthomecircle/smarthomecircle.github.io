@@ -12,10 +12,17 @@ imageUrl: /static/images/2024/radxa-x4l/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/5ARf0nh62rU"
-
+suggestedArticles:
+  - title: "Radxa X4: 60$ Powerful Atlernative to Raspberry Pi 5"
+    url: "https://smarthomecircle.com/radxa-x4-alternative-to-raspberry-pi-5"
+  - title: "Create a NAS with Raspberry Pi 5"
+    url: "https://smarthomecircle.com/create-nas-with-raspberry-pi-5"
+  - title: "Create Custom Wake Word For Your Voice Assistant"
+    url: "https://smarthomecircle.com/custom-wake-word-for-voice-assistant-with-home-assistant"
+  - title: "Orange Pi 5 MAX: A Powerful Successor to the Orange Pi 5 Pro"
+    url: "https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro"
 ---
 <TOCInline toc={props.toc} asDisclosure />  
-
 
 Radxa has recently launched the **X4L**, the successor to their popular X4. Marketed as a portable PC that fits in your pocket, the X4L offers a suite of features aimed at enhancing functionality and performance for tech enthusiasts and professionals alike. Here’s an in-depth look at what this device provides, its benchmarks, and potential use cases.
 
@@ -233,12 +240,11 @@ The board features GPIO pin holes, and Radxa may release an optional **RP2040 mo
 
 The **Radxa X4L** builds on its predecessor’s strengths with improved memory bandwidth, enhanced thermal performance, and user-friendly recovery tools.
 
-If you’re interested in this device, drop your suggestions for tests you’d like to see in the video comments section. Don’t forget to **like, subscribe**, and support my [YouTube channel](https://www.youtube.com/@SmartHomeCircle) through [**Patreon**](https://www.patreon.com/AmrutPrabhu) or by [buying me a coffee](https://buymeacoffee.com/amrutprabhu).
+
+If you enjoyed reading this and want to see more like it:
+
+-   ✅ **Subscribe** to the [YouTube channel](https://www.youtube.com/@SmartHomeCircle?sub_confirmation=1)
+    
+-   ☕ **Support my work** on [Patreon](https://patreon.com/AmrutPrabhu) or [Buy Me a Coffee](https://www.buymeacoffee.com/amrutprabhu)
 
 Stay tuned for more content on home automation and tech reviews.
-
--   [**Radxa X4: 60$ Powerful Atlernative to Raspberry Pi 5**](https://smarthomecircle.com/radxa-x4-alternative-to-raspberry-pi-5)
--   [**Create a NAS with Raspberry Pi 5**](https://smarthomecircle.com/create-nas-with-raspberry-pi-5)
--   [**Create Custom Wake Word For Your Voice Assistant**](https://smarthomecircle.com/custom-wake-word-for-voice-assistant-with-home-assistant)
--   [**Orange Pi 5 MAX: A Powerful Successor to the Orange Pi 5 Pro**](https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro)
-

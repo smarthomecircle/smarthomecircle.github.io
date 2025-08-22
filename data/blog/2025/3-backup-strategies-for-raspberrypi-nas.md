@@ -12,10 +12,17 @@ imageUrl: /static/images/2025/backup-strategies/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/7N2VnqQcOHk"
-
+suggestedArticles:
+  - title: "Radxa X4: 60$ Powerful Atlernative to Raspberry Pi 5"
+    url: "https://smarthomecircle.com/radxa-x4-alternative-to-raspberry-pi-5"
+  - title: "Create a NAS with Raspberry Pi 5"
+    url: "https://smarthomecircle.com/create-nas-with-raspberry-pi-5"
+  - title: "Created My Voice Assistant With On-Device Wake Word Detection On ESP32"
+    url: "https://smarthomecircle.com/How-I-created-my-voice-assistant-with-on-device-wake-word-using-home-assistant"
+  - title: "Orange Pi 5 MAX: A Powerful Successor to the Orange Pi 5 Pro"
+    url: "https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro"
 ---
 <TOCInline toc={props.toc} asDisclosure />  
-
 
 A few months ago, I built a Raspberry Pi 5 NAS with RAID 5 using the [Penta SATA HAT](https://s.click.aliexpress.com/e/_olCRd9p) from Radxa. While it’s been a reliable setup, I wanted to enhance the data reliability. In this guide, I’ll walk you through three backup strategies I’ve implemented for my Raspberry Pi 5 NAS, and I’ll also discuss the energy consumption changes resulting from these updates.
 
@@ -48,7 +55,6 @@ Before diving into the strategies, I made some significant hardware upgrades:
     | ![Acrylic Rack](/static/images/2025/backup-strategies/esata.jpg) | - Amazon EU: https://amzn.to/3Dsq2Z5 <br/>- Amazon US :  https://amzn.to/41RZWsz  <br/>- AliExpress : https://s.click.aliexpress.com/e/_ok7mfCB
     |-----------------------------|---------------------------------------------------------|
 
-
 ### Backup Strategy 1: NAS OS Backup To The NAS
 
 First, I configured a system backup to safeguard the NAS OS:
@@ -60,7 +66,6 @@ First, I configured a system backup to safeguard the NAS OS:
     -   Save backups to the RAID 5 shared folder.
     -   Use the DD command for a full disk backup.
     -   Retain up to five copies.
-
 
 2. **Scheduling:**
 
@@ -127,9 +132,3 @@ By implementing these three strategies, I’ve significantly improved the reliab
 3.  Remote backups safeguard against physical damage to the primary NAS.
 
 These strategies have provided peace of mind and a robust system for my video editing workflow. If you’re considering similar upgrades or have questions, feel free to reach out!
-
--   [**Radxa X4: 60$ Powerful Atlernative to Raspberry Pi 5**](https://smarthomecircle.com/radxa-x4-alternative-to-raspberry-pi-5)
--   [**Create a NAS with Raspberry Pi 5**](https://smarthomecircle.com/create-nas-with-raspberry-pi-5)
--   [**Created My Voice Assistant With On-Device Wake Word Detection On ESP32**](https://smarthomecircle.com/How-I-created-my-voice-assistant-with-on-device-wake-word-using-home-assistant)
--   [**Orange Pi 5 MAX: A Powerful Successor to the Orange Pi 5 Pro**](https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro)
-

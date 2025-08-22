@@ -12,7 +12,15 @@ imageUrl: /static/images/2024/raspberrypi-cm5/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/4m7v72YCzm4"
-
+suggestedArticles:
+  - title: "Radxa X4: 60$ Powerful Atlernative to Raspberry Pi 5"
+    url: "https://smarthomecircle.com/radxa-x4-alternative-to-raspberry-pi-5"
+  - title: "Create a NAS with Raspberry Pi 5"
+    url: "https://smarthomecircle.com/create-nas-with-raspberry-pi-5"
+  - title: "Create Custom Wake Word For Your Voice Assistant"
+    url: "https://smarthomecircle.com/custom-wake-word-for-voice-assistant-with-home-assistant"
+  - title: "Orange Pi 5 MAX: A Powerful Successor to the Orange Pi 5 Pro"
+    url: "https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro"
 ---
 <TOCInline toc={props.toc} asDisclosure />  
 
@@ -105,9 +113,4 @@ Interestingly, on shutdown, the fan turned on at full speed and stayed on until 
 [Jeff Geerling](https://x.com/geerlingguy), a fellow enthusiast, also [observed](https://x.com/geerlingguy/status/1864785550898602396) this issue and has started a [forum](https://forums.raspberrypi.com/viewtopic.php?t=380543) discussion to address it. We’re optimistic that a solution will emerge soon.
 
 Stay tuned for more updates and detailed guides on unlocking the full potential of the CM5!
-
--   [**Radxa X4: 60$ Powerful Atlernative to Raspberry Pi 5**](https://smarthomecircle.com/radxa-x4-alternative-to-raspberry-pi-5)
--   [**Create a NAS with Raspberry Pi 5**](https://smarthomecircle.com/create-nas-with-raspberry-pi-5)
--   [**Create Custom Wake Word For Your Voice Assistant**](https://smarthomecircle.com/custom-wake-word-for-voice-assistant-with-home-assistant)
--   [**Orange Pi 5 MAX: A Powerful Successor to the Orange Pi 5 Pro**](https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro)
 

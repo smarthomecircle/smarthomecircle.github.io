@@ -12,7 +12,13 @@ imageUrl: /static/images/2025/glinet-slate-7-travel-router/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/zRavD75-xwI"
-
+suggestedArticles:
+  - title: "How to Create a NAS with Raspberry Pi 5"
+    url: "https://smarthomecircle.com/create-nas-with-raspberry-pi-5"
+  - title: "Radxa X4L: A Pocket‑Sized Powerhouse"
+    url: "https://smarthomecircle.com/radxa-x4l-a-powerful-pocket-sized-computer"
+  - title: "How to Setup Zigbee2Mqtt with Home Assistant—Step by Step Guide"
+    url: "https://smarthomecircle.com/install-zigbee2mqtt-with-home-assistant"
 ---
 <TOCInline toc={props.toc} asDisclosure />  
 If you're searching for a **powerful yet portable travel router**, the [**GL.iNet Slate 7**](https://www.gl-inet.com/products/gl-be3600) delivers with dual‑band **Wi‑Fi 7**, dual **2.5GbE ports**, a sleek **touchscreen**, **OpenWrt** firmware, and efficient **USB‑C Power Delivery**. Whether you're working remotely, gaming, or setting up a private travel LAN, the Slate 7 is engineered to keep you connected anywhere in the world.
@@ -114,9 +120,4 @@ Enjoyed this article? Consider supporting the channel:
     
 -   ☕ **Support my work** on [Patreon](https://patreon.com/AmrutPrabhu) or [Buy Me a Coffee](https://www.buymeacoffee.com/amrutprabhu)
 
-<br/>
-You might also enjoy these related guides and reviews:
 
-- [**How to Create a NAS with Raspberry Pi 5**](https://smarthomecircle.com/create-nas-with-raspberry-pi-5)
-- [**Radxa X4L: A Pocket‑Sized Powerhouse**](https://smarthomecircle.com/radxa-x4l-a-powerful-pocket-sized-computer)
-- [**How to Setup Zigbee2Mqtt with Home Assistant—Step by Step Guide**](https://smarthomecircle.com/install-zigbee2mqtt-with-home-assistant)
