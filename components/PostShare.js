@@ -36,15 +36,15 @@ const ShareButtons = ({ url, title }) => {
   }
 
   return (
-    <div>
-    <br/>
+    <div className="flex flex-wrap gap-2">
       <button
         type="button"
-        className="text-white bg-[#3b5998] hover:bg-[#3b5998]/90 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2"
+        className="text-white bg-[#3b5998] hover:bg-[#3b5998]/90 font-medium rounded-md text-xs px-3 py-1.5 inline-flex items-center transition-colors"
         onClick={shareOnFacebook}
+        title="Share on Facebook"
       >
         <svg
-          className="w-4 h-4 mr-2 -ml-1"
+          className="w-3 h-3 mr-1.5"
           aria-hidden="true"
           focusable="false"
           data-prefix="fab"
@@ -59,11 +59,12 @@ const ShareButtons = ({ url, title }) => {
       </button>
       <button
         type="button"
-        className="text-white bg-[#1da1f2] hover:bg-[#1da1f2]/90 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2"
+        className="text-white bg-[#1da1f2] hover:bg-[#1da1f2]/90 font-medium rounded-md text-xs px-3 py-1.5 inline-flex items-center transition-colors"
         onClick={shareOnTwitter}
+        title="Share on Twitter"
       >
         <svg
-          className="w-4 h-4 mr-2 -ml-1"
+          className="w-3 h-3 mr-1.5"
           aria-hidden="true"
           focusable="false"
           data-prefix="fab"
@@ -78,11 +79,12 @@ const ShareButtons = ({ url, title }) => {
       </button>
       <button
         type="button"
-        className="text-white bg-[#0077B5] hover:bg-[#00A0DC]/90 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2"
+        className="text-white bg-[#0077B5] hover:bg-[#00A0DC]/90 font-medium rounded-md text-xs px-3 py-1.5 inline-flex items-center transition-colors"
         onClick={shareOnLinkedIn}
+        title="Share on LinkedIn"
       >
         <svg
-          className="w-4 h-4 mr-2 -ml-1"
+          className="w-3 h-3 mr-1.5"
           aria-hidden="true"
           focusable="false"
           data-prefix="fab"
@@ -97,11 +99,12 @@ const ShareButtons = ({ url, title }) => {
       </button>
       <button
         type="button"
-        className="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2"
+        className="text-white bg-gray-600 hover:bg-gray-700 font-medium rounded-md text-xs px-3 py-1.5 inline-flex items-center transition-colors"
         onClick={shareViaEmail}
+        title="Share via Email"
       >
         <svg
-          className="w-4 h-4 mr-2 -ml-1"
+          className="w-3 h-3 mr-1.5"
           aria-hidden="true"
           focusable="false"
           data-prefix="fab"
@@ -112,7 +115,7 @@ const ShareButtons = ({ url, title }) => {
         >
           <Mail className="fill-current" />
         </svg>
-        Share
+        Email
       </button>
     </div>
   )

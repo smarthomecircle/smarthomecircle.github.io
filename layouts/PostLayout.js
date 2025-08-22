@@ -219,10 +219,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 )}
 
                 {/* Share Buttons */}
-                <div className="not-prose mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
-                  <div className="bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-6">
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
-                      Share this article
+                <div className="not-prose mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-4 bg-gray-50 dark:bg-gray-800/30 rounded-lg">
+                    <h3 className="text-sm font-medium text-gray-700 dark:text-gray-300 flex-shrink-0">
+                      Share this article:
                     </h3>
                     <ShareButtons title={title} url={`${siteMetadata.siteUrl}/${customUrl}`} />
                   </div>
