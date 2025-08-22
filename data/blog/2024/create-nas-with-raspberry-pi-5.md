@@ -26,16 +26,37 @@ We will be making use of OpenMediaVault to manage and serve our shared storage u
 ## Requirements
 
 1.  **Raspberry Pi 5 or 4 or 3B** 
+
 [![Raspberry Pi 5 or 4 or 3B](/static/images/2024/raspberry-pi-nas/raspberry-pi5.jpg)](https://s.click.aliexpress.com/e/_Dk7NN6t)
-        -   [**Buy At AliExpress**](https://s.click.aliexpress.com/e/_Dk7NN6t)
-        -   [**Buy At Amazon**](https://amzn.to/3SuYRSo)    
-2.  **Micro SD Card**. 
+
+<AffiliateLinks 
+  title="" 
+  links={[
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_Dk7NN6t" },
+    { store: "Amazon", url: "https://amzn.to/3SuYRSo" }
+  ]}
+/>    
+2.  **Micro SD Card**
+
 [![Micro SD Card](/static/images/2024/raspberry-pi-nas/sd-card.jpg)](https://amzn.to/3OdnUqQ)
-        -   [**Buy At AliExpress**](https://s.click.aliexpress.com/e/_DBSUjn3)
-        -   [**Buy At Amazon**](https://amzn.to/3OdnUqQ)    
+
+<AffiliateLinks 
+  title="" 
+  links={[
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_DBSUjn3" },
+    { store: "Amazon", url: "https://amzn.to/3OdnUqQ" }
+  ]}
+/>    
 3.  **External Hard Drive**
+
 [![External Hard Drive](/static/images/2024/raspberry-pi-nas/external-drive.jpg)](https://amzn.to/3HqIaBz)
-        -   [**Buy At Amazon**](https://amzn.to/3HqIaBz)      
+
+<AffiliateLinks 
+  title="" 
+  links={[
+    { store: "Amazon", url: "https://amzn.to/3HqIaBz" }
+  ]}
+/>      
 
 
 ## Preparing Your SD Card

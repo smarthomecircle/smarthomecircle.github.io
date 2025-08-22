@@ -27,7 +27,15 @@ If you're searching for a **powerful yet portable travel router**, the [**GL.iNe
   <img src="/static/images/2025/glinet-slate-7-travel-router/1-router.webp" alt="router" />
 </p>
 
-**Buy This** (Affiliate Links) : [GLiNet Store](https://link.gl-inet.com/be3600-smarthomecircle-eustore-250523) | [Amazon US](https://amzn.to/3IwT8t7) \| [Amazon DE](https://amzn.to/44FkqWP) \| [AliExpress](https://s.click.aliexpress.com/e/_oDLL1GK)
+<AffiliateLinks 
+  title="Buy GL.iNet Slate 7" 
+  links={[
+    { store: "GLiNet Store", url: "https://link.gl-inet.com/be3600-smarthomecircle-eustore-250523" },
+    { store: "Amazon US", url: "https://amzn.to/3IwT8t7" },
+    { store: "Amazon DE", url: "https://amzn.to/44FkqWP" },
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oDLL1GK" }
+  ]}
+/>
 
 ## Lightning-Fast Hardware Specs
 
@@ -93,7 +101,14 @@ For those serious about privacy, the device includes **AdGuard Home DNS**, suppo
 
 At under $150, the GL.iNet Slate 7 is a **compelling value** — blending advanced networking features, premium performance, and excellent portability in a rugged travel-ready package.
 
-**Buy GLiNet Slate 7 Travel Router** (Affiliate Links) : [Amazon US](https://amzn.to/3IwT8t7) \| [Amazon DE](https://amzn.to/44FkqWP) \| [AliExpress](https://s.click.aliexpress.com/e/_oDLL1GK)
+<AffiliateLinks 
+  title="Buy GLiNet Slate 7 Travel Router" 
+  links={[
+    { store: "Amazon US", url: "https://amzn.to/3IwT8t7" },
+    { store: "Amazon DE", url: "https://amzn.to/44FkqWP" },
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oDLL1GK" }
+  ]}
+/>
 
 ## Watch the Full Walkthrough
 

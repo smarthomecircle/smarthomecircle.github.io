@@ -24,10 +24,14 @@ Installing Raspberry Pi OS on the Raspberry Pi Compute Module 5 (CM5) with eMMC 
 
 
 
-**Links to buy Raspberry Pi Compute Module 5:**
-- **AliExpress** : https://s.click.aliexpress.com/e/_DdzGQGd
-- **ThePiHut** : https://thepihut.com/products/raspberry-pi-compute-module-5
-- **BerryBase** : https://www.berrybase.de/en/detail/019350e97c767050917125760299ebf0
+<AffiliateLinks 
+  title="Buy Raspberry Pi Compute Module 5" 
+  links={[
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_DdzGQGd" },
+    { store: "ThePiHut", url: "https://thepihut.com/products/raspberry-pi-compute-module-5" },
+    { store: "BerryBase", url: "https://www.berrybase.de/en/detail/019350e97c767050917125760299ebf0" }
+  ]}
+/>
 
 --- 
 

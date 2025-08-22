@@ -32,7 +32,15 @@ The Comet is a compact, affordable, and powerful device that fits in the palm of
   <img src="/static/images/2025/comet-kvm/comet-kvm.webp" alt="router" />
 </p>
 
-**Buy This** (Affiliate Links) : [GLiNet Store](https://link.gl-inet.com/rm1-smarthomecircle-eustore-250515) | [Amazon US](https://amzn.to/3GKnCHz) \| [Amazon DE](https://amzn.to/44PyFbt) \| [AliExpress](https://s.click.aliexpress.com/e/_oDCndXd)
+<AffiliateLinks 
+  title="Buy This" 
+  links={[
+    { store: "GLiNet Store", url: "https://link.gl-inet.com/rm1-smarthomecircle-eustore-250515" },
+    { store: "Amazon US", url: "https://amzn.to/3GKnCHz" },
+    { store: "Amazon DE", url: "https://amzn.to/44PyFbt" },
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oDCndXd" }
+  ]}
+/>
 
 ## What is KVM Over IP?
 

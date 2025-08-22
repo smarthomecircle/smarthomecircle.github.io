@@ -36,32 +36,58 @@ This adapter, equipped with the ASM1166 chip, supports six SATA connections, mak
 
     ![sata adapater](/static/images/2024/diy-nas-cm5/cm5-front.webp)
 
-    - **AliExpress** : https://s.click.aliexpress.com/e/_DdzGQGd
-    - **ThePiHut** : https://thepihut.com/products/raspberry-pi-compute-module-5
-    - **BerryBase** : https://www.berrybase.de/en/detail/019350e97c767050917125760299ebf0
+<AffiliateLinks 
+  title="Buy Raspberry Pi Compute Module 5" 
+  links={[
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_DdzGQGd" },
+    { store: "ThePiHut", url: "https://thepihut.com/products/raspberry-pi-compute-module-5" },
+    { store: "BerryBase", url: "https://www.berrybase.de/en/detail/019350e97c767050917125760299ebf0" }
+  ]}
+/>
 
 2.  **NVMe to SATA Adapter**: Features the ASM1166 chip for connecting multiple SATA drives.
 
     ![sata adapater](/static/images/2024/diy-nas-cm5/sata-adapter.webp)
 
-    - Amazon EU:          https://amzn.to/4fjHg8j
-    - Amazon US:          https://amzn.to/3Bm0QmD
-    - AliExpress  :          https://s.click.aliexpress.com/e/_olOqrGf
+<AffiliateLinks 
+  title="Buy NVMe to SATA Adapter (ASM1166)" 
+  links={[
+    { store: "Amazon EU", url: "https://amzn.to/4fjHg8j" },
+    { store: "Amazon US", url: "https://amzn.to/3Bm0QmD" },
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_olOqrGf" }
+  ]}
+/>
 3.  **Acrylic HDD Rack Mount**: For neatly organizing hard drives.
 
     ![hdd rack](/static/images/2024/diy-nas-cm5/hdd-rack.webp)
 
-    - Amazon EU:          https://amzn.to/3BuOMPY
-    - Amazon US:          https://amzn.to/4iFN3rF
-    - AliExpress  :          https://s.click.aliexpress.com/e/_olEubxz
+<AffiliateLinks 
+  title="Buy Acrylic HDD Rack Mount" 
+  links={[
+    { store: "Amazon EU", url: "https://amzn.to/3BuOMPY" },
+    { store: "Amazon US", url: "https://amzn.to/4iFN3rF" },
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_olEubxz" }
+  ]}
+/>
 4.  **SATA Power Supply Cable**: Powered by a DC adapter (7.5A, 12V).
 
     ![sata power supply](/static/images/2024/diy-nas-cm5/sata-power.webp)
 
-    - AliExpress:           https://s.click.aliexpress.com/e/_ooaEC11
+<AffiliateLinks 
+  title="Buy SATA Power Supply Cable (7.5A, 12V)" 
+  links={[
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_ooaEC11" }
+  ]}
+/>
 5.  **Hard Drives**: Used for creating the storage array.
-    - Amazon EU:        https://amzn.to/3OZOzHs
-    - Amazon US:        https://amzn.to/4ghjE5E
+
+<AffiliateLinks 
+  title="Buy Hard Drives for NAS" 
+  links={[
+    { store: "Amazon EU", url: "https://amzn.to/3OZOzHs" },
+    { store: "Amazon US", url: "https://amzn.to/4ghjE5E" }
+  ]}
+/>
 
 6.  **OpenMediaVault (OMV)**: Software for managing NAS.
 

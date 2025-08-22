@@ -28,7 +28,13 @@ To start, you’ll need a few specific components:
 -   **5W Speaker**
 -   **Acrylic Enclosure (optional)**
 
-You can buy these from [here](https://www.seeedstudio.com/ReSpeaker-Lite-Voice-Assistant-Kit-p-5929.html). You can alternatively buy it from [AliExpress](https://s.click.aliexpress.com/e/_oCuVeir).
+<AffiliateLinks 
+  title="Buy ReSpeaker Lite Voice Assistant Kit" 
+  links={[
+    { store: "Seeed Studio", url: "https://www.seeedstudio.com/ReSpeaker-Lite-Voice-Assistant-Kit-p-5929.html" },
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oCuVeir" }
+  ]}
+/>
 
 Make sure to select the ESP32-S3 version of the ReSpeaker Lite and a 5W speaker for the best compatibility. The acrylic enclosure is optional but recommended if you want a polished look; it costs around $5. Alternatively, you can 3D print a [custom case](https://www.thingiverse.com/thing:6813270), which I did to personalize my setup.
 
