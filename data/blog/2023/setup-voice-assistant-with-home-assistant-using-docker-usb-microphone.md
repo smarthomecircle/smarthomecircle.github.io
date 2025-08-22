@@ -39,14 +39,11 @@ To set up voice assistant, we would need three components to create the voice as
 ## Important Note
 If you are new to docker, this setup can be overwhelming. I would recommend to use Home Assistant OS and install addons instead. Here is the video for the entire setup.
 
-                      <iframe
-                        id="video"
-                        className="w-full aspect-video"
-                        src="https://www.youtube.com/embed/P4V2JqCmk7M"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
+<VideoEmbed 
+  videoId="P4V2JqCmk7M" 
+  title="Setting up Voice Assistant with Home Assistant" 
+  width="half" 
+/>
 
 <br/>
 In case you want to set it up using Docker, then continue with the next steps. 

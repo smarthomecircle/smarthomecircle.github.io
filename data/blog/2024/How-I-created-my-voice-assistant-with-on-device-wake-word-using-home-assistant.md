@@ -102,16 +102,11 @@ To set up voice assistant, we would need two components to create the Voice Assi
 
 Now, following the below video, you have set up these components in Home Assistant using Addons.
 
-<div className="md:w-1/2"> 
-                      <iframe
-                        id="video"
-                        className="w-full aspect-video"
-                        src="https://www.youtube.com/embed/P4V2JqCmk7M"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
-</div>
+<VideoEmbed 
+  videoId="P4V2JqCmk7M" 
+  title="Setting up Voice Assistant in Home Assistant" 
+  width="half" 
+/>
 You will get to see how to set up the following components that are required
 
 1.  **Whisper** Addon

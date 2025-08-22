@@ -113,16 +113,11 @@ At under $150, the GL.iNet Slate 7 is a **compelling value** — blending advanc
 ## Watch the Full Walkthrough
 
 Check out the **in-depth video review** with setup steps, performance tests, and VPN configuration tips.
-<div className="md:w-1/2">
-                      <iframe
-                        id="video"
-                        className="w-full aspect-video"
-                        src="https://www.youtube.com/embed/ise2Hss3MtI"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
-</div>
+<VideoEmbed 
+  videoId="ise2Hss3MtI" 
+  title="GL.iNet Slate 7 WiFi 7 Travel Router Review" 
+  width="half" 
+/>
 ## Coming Soon: DIY 10-Inch Network Rack
 
 Stay tuned for my **upcoming build video**, showcasing the Slate 7 integrated into a custom 10″ rack. Subscribe and like to get notified!
