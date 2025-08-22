@@ -21,6 +21,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
     readingTime,
     youtubeLink,
     youtubeLink2,
+    suggestedArticles,
   } = frontMatter
   return (
     <SectionContainer>
@@ -191,12 +192,57 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                     <ShareButtons title={title} url={`${siteMetadata.siteUrl}/${customUrl}`} />
                   </div>
                 </div>
+
+                {/* Suggested Articles - Read Next Section (Desktop Only) */}
+                {suggestedArticles && suggestedArticles.length > 0 && (
+                  <div className="not-prose mt-16 hidden lg:block">
+                    <div className="text-center mb-8">
+                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+                        Read Next
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-300 text-lg">
+                        Continue your learning journey with these related articles
+                      </p>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      {suggestedArticles.map((article, index) => (
+                        <a
+                          key={index}
+                          href={article.url}
+                          className="group block bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-xl hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300 hover:-translate-y-2"
+                        >
+                          <div className="flex items-start space-x-4">
+                            <div className="flex-shrink-0">
+                              <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                </svg>
+                              </div>
+                            </div>
+                            <div className="flex-1 min-w-0">
+                              <h4 className="font-semibold text-gray-900 dark:text-gray-100 text-lg leading-snug group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300">
+                                {article.title}
+                              </h4>
+                              <div className="flex items-center mt-3 text-primary-600 dark:text-primary-400 font-medium text-sm">
+                                <span>Continue reading</span>
+                                <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
 
             {/* Sidebar */}
             <div className="lg:col-span-4 mt-12 lg:mt-0">
-              <div className="sticky top-8 space-y-8">
+              <div className="space-y-8">
                 {/* Tags */}
                 {tags && (
                   <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
@@ -211,43 +257,39 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   </div>
                 )}
 
-                {/* Navigation */}
-                {(next || prev) && (
+
+
+
+
+                {/* Suggested Articles */}
+                {suggestedArticles && suggestedArticles.length > 0 && (
                   <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-6">
-                      More Articles
+                      Suggested Articles
                     </h3>
                     <div className="space-y-6">
-                      {prev && (
-                        <div>
-                          <div className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">
-                            Previous
-                          </div>
-                          <Link 
-                            href={`/${prev.slug}`}
+                      {suggestedArticles.map((article, index) => (
+                        <div key={index}>
+                          <a
+                            href={article.url}
                             className="block group"
                           >
-                            <div className="text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 font-medium group-hover:underline transition-colors">
-                              {prev.title}
+                            <div className="flex items-start space-x-3">
+                              <svg className="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                              </svg>
+                              <div className="flex-1 min-w-0">
+                                <div className="text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 font-medium group-hover:underline transition-colors">
+                                  {article.title}
+                                </div>
+                              </div>
+                              <svg className="w-4 h-4 text-gray-400 group-hover:text-primary-500 transform group-hover:translate-x-1 transition-all duration-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                              </svg>
                             </div>
-                          </Link>
+                          </a>
                         </div>
-                      )}
-                      {next && (
-                        <div>
-                          <div className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">
-                            Next
-                          </div>
-                          <Link 
-                            href={`/${next.slug}`}
-                            className="block group"
-                          >
-                            <div className="text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 font-medium group-hover:underline transition-colors">
-                              {next.title}
-                            </div>
-                          </Link>
-                        </div>
-                      )}
+                      ))}
                     </div>
                   </div>
                 )}

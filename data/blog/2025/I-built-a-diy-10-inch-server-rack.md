@@ -12,6 +12,15 @@ imageUrl: /static/images/2025/diy-rack/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/66axG6TpT6A"
+suggestedArticles:
+  - title: "Create a NAS with Raspberry Pi 5"
+    url: "https://smarthomecircle.com/create-nas-with-raspberry-pi-5"
+  - title: "Radxa X4: 60$ Powerful Alternative to Raspberry Pi 5"
+    url: "https://smarthomecircle.com/radxa-x4-alternative-to-raspberry-pi-5"
+  - title: "Install OS on Raspberry Pi Compute Module 5 with eMMC Storage"
+    url: "https://smarthomecircle.com/how-to-install-os-on-raspberry-pi-compute-module-5-emmc-storage"
+  - title: "Orange Pi 5 MAX: A Powerful Successor to the Orange Pi 5 Pro"
+    url: "https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro"
 
 ---
 <TOCInline toc={props.toc} asDisclosure />  
@@ -167,10 +176,5 @@ If you enjoyed this project and want to see more like it:
     
 -   🔁 **Share** this article with fellow makers and tinkerers
 
-If you are interested in exploring more of such easy to follow step by step guides, then here are a few suggestions.
-
--   [**Create a NAS with Raspberry Pi 5**](https://smarthomecircle.com/create-nas-with-raspberry-pi-5)
--   [**Radxa X4: 60$ Powerful Atlernative to Raspberry Pi 5**](https://smarthomecircle.com/radxa-x4-alternative-to-raspberry-pi-5)
--   [**Install OS on Raspberry Pi Compute Module 5 with eMMC Storage**](https://smarthomecircle.com/how-to-install-os-on-raspberry-pi-compute-module-5-emmc-storage)
--   [**Orange Pi 5 MAX: A Powerful Successor to the Orange Pi 5 Pro**](https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro)
+If you are interested in exploring more of such easy to follow step by step guides, then check out the **Read Next** section below.
 
