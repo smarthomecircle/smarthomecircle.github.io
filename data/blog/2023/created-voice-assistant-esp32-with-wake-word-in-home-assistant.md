@@ -66,16 +66,12 @@ To set up voice assistant, we would need three components to create the voice as
 3.  **OpenWakeWord**: For invoking the Assist Pipeline
 
 Now, I have set up these components using Home Assistant Addons in the video below.
-<div className="md:w-1/2"> 
-                      <iframe
-                        id="video"
-                        className="w-full aspect-video"
-                        src="https://www.youtube.com/embed/P4V2JqCmk7M"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
-</div>
+
+<VideoEmbed 
+  videoId="P4V2JqCmk7M" 
+  title="Voice Assistant Components Setup" 
+  width="half" 
+/>
 You will get to see how to set up the following components that are required
 
 1.  **Whisper** Addon
@@ -278,16 +274,11 @@ Here is how finally the device looks like after assembling it.
 
 ## Playing Voice Assistant Output On An External Speaker
 
-<div className="md:w-1/2"> 
-                      <iframe
-                        id="video"
-                        className="w-full aspect-video"
-                        src="https://www.youtube.com/embed/RIpnyTJmJJ8"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
-</div>
+<VideoEmbed 
+  videoId="RIpnyTJmJJ8" 
+  title="ESP32 Voice Assistant Wiring and Setup" 
+  width="half" 
+/>
 
 Now, in case you want the output of the voice command to be played on an external speaker, then this is possible via the media player entity in Home Assistant.
 

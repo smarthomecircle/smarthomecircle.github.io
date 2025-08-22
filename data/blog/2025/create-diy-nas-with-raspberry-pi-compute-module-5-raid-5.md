@@ -12,7 +12,15 @@ imageUrl: /static/images/2024/diy-nas-cm5/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/5J-es6-DBU4"
-
+suggestedArticles:
+  - title: "Create a NAS with Raspberry Pi 5"
+    url: "https://smarthomecircle.com/create-nas-with-raspberry-pi-5"
+  - title: "Radxa X4: 60$ Powerful Atlernative to Raspberry Pi 5"
+    url: "https://smarthomecircle.com/radxa-x4-alternative-to-raspberry-pi-5"
+  - title: "Install OS on Raspberry Pi Compute Module 5 with eMMC Storage"
+    url: "https://smarthomecircle.com/how-to-install-os-on-raspberry-pi-compute-module-5-emmc-storage"
+  - title: "Orange Pi 5 MAX: A Powerful Successor to the Orange Pi 5 Pro"
+    url: "https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro"
 ---
 <TOCInline toc={props.toc} asDisclosure />  
 
@@ -28,32 +36,58 @@ This adapter, equipped with the ASM1166 chip, supports six SATA connections, mak
 
     ![sata adapater](/static/images/2024/diy-nas-cm5/cm5-front.webp)
 
-    - **AliExpress** : https://s.click.aliexpress.com/e/_DdzGQGd
-    - **ThePiHut** : https://thepihut.com/products/raspberry-pi-compute-module-5
-    - **BerryBase** : https://www.berrybase.de/en/detail/019350e97c767050917125760299ebf0
+<AffiliateLinks 
+  title="Buy Raspberry Pi Compute Module 5" 
+  links={[
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_DdzGQGd" },
+    { store: "ThePiHut", url: "https://thepihut.com/products/raspberry-pi-compute-module-5" },
+    { store: "BerryBase", url: "https://www.berrybase.de/en/detail/019350e97c767050917125760299ebf0" }
+  ]}
+/>
 
 2.  **NVMe to SATA Adapter**: Features the ASM1166 chip for connecting multiple SATA drives.
 
     ![sata adapater](/static/images/2024/diy-nas-cm5/sata-adapter.webp)
 
-    - Amazon EU:          https://amzn.to/4fjHg8j
-    - Amazon US:          https://amzn.to/3Bm0QmD
-    - AliExpress  :          https://s.click.aliexpress.com/e/_olOqrGf
+<AffiliateLinks 
+  title="Buy NVMe to SATA Adapter (ASM1166)" 
+  links={[
+    { store: "Amazon EU", url: "https://amzn.to/4fjHg8j" },
+    { store: "Amazon US", url: "https://amzn.to/3Bm0QmD" },
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_olOqrGf" }
+  ]}
+/>
 3.  **Acrylic HDD Rack Mount**: For neatly organizing hard drives.
 
     ![hdd rack](/static/images/2024/diy-nas-cm5/hdd-rack.webp)
 
-    - Amazon EU:          https://amzn.to/3BuOMPY
-    - Amazon US:          https://amzn.to/4iFN3rF
-    - AliExpress  :          https://s.click.aliexpress.com/e/_olEubxz
+<AffiliateLinks 
+  title="Buy Acrylic HDD Rack Mount" 
+  links={[
+    { store: "Amazon EU", url: "https://amzn.to/3BuOMPY" },
+    { store: "Amazon US", url: "https://amzn.to/4iFN3rF" },
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_olEubxz" }
+  ]}
+/>
 4.  **SATA Power Supply Cable**: Powered by a DC adapter (7.5A, 12V).
 
     ![sata power supply](/static/images/2024/diy-nas-cm5/sata-power.webp)
 
-    - AliExpress:           https://s.click.aliexpress.com/e/_ooaEC11
+<AffiliateLinks 
+  title="Buy SATA Power Supply Cable (7.5A, 12V)" 
+  links={[
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_ooaEC11" }
+  ]}
+/>
 5.  **Hard Drives**: Used for creating the storage array.
-    - Amazon EU:        https://amzn.to/3OZOzHs
-    - Amazon US:        https://amzn.to/4ghjE5E
+
+<AffiliateLinks 
+  title="Buy Hard Drives for NAS" 
+  links={[
+    { store: "Amazon EU", url: "https://amzn.to/3OZOzHs" },
+    { store: "Amazon US", url: "https://amzn.to/4ghjE5E" }
+  ]}
+/>
 
 6.  **OpenMediaVault (OMV)**: Software for managing NAS.
 
@@ -121,12 +155,9 @@ In comparison, my SSD-based NAS consumed only ~9W at peak load, making it more e
 
 This DIY NAS setup demonstrates the potential of the Raspberry Pi Compute Module 5 and the NVMe to SATA adapter. While it’s not as energy-efficient as SSD-based solutions, it offers a reliable backup system with decent performance.
 
-For more innovative projects, subscribe to [my channel](https://www.youtube.com/@SmartHomeCircle).
 
-If you’d like to support my work, consider [buying me a coffee](https://www.buymeacoffee.com/amrutprabhu) or contributing via [Patreon](https://patreon.com/AmrutPrabhu).
+If you enjoyed this project and want to see more like it:
 
--   [**Create a NAS with Raspberry Pi 5**](https://smarthomecircle.com/create-nas-with-raspberry-pi-5)
--   [**Radxa X4: 60$ Powerful Atlernative to Raspberry Pi 5**](https://smarthomecircle.com/radxa-x4-alternative-to-raspberry-pi-5)
--   [**Install OS on Raspberry Pi Compute Module 5 with eMMC Storage**](https://smarthomecircle.com/how-to-install-os-on-raspberry-pi-compute-module-5-emmc-storage)
--   [**Orange Pi 5 MAX: A Powerful Successor to the Orange Pi 5 Pro**](https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro)
-
+-   ✅ **Subscribe** to the [YouTube channel](https://www.youtube.com/@SmartHomeCircle?sub_confirmation=1)
+    
+-   ☕ **Support my work** on [Patreon](https://patreon.com/AmrutPrabhu) or [Buy Me a Coffee](https://www.buymeacoffee.com/amrutprabhu)

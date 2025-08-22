@@ -12,7 +12,13 @@ imageUrl: /static/images/2025/glinet-slate-7-travel-router/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/zRavD75-xwI"
-
+suggestedArticles:
+  - title: "How to Create a NAS with Raspberry Pi 5"
+    url: "https://smarthomecircle.com/create-nas-with-raspberry-pi-5"
+  - title: "Radxa X4L: A Pocket‑Sized Powerhouse"
+    url: "https://smarthomecircle.com/radxa-x4l-a-powerful-pocket-sized-computer"
+  - title: "How to Setup Zigbee2Mqtt with Home Assistant—Step by Step Guide"
+    url: "https://smarthomecircle.com/install-zigbee2mqtt-with-home-assistant"
 ---
 <TOCInline toc={props.toc} asDisclosure />  
 If you're searching for a **powerful yet portable travel router**, the [**GL.iNet Slate 7**](https://www.gl-inet.com/products/gl-be3600) delivers with dual‑band **Wi‑Fi 7**, dual **2.5GbE ports**, a sleek **touchscreen**, **OpenWrt** firmware, and efficient **USB‑C Power Delivery**. Whether you're working remotely, gaming, or setting up a private travel LAN, the Slate 7 is engineered to keep you connected anywhere in the world.
@@ -21,7 +27,15 @@ If you're searching for a **powerful yet portable travel router**, the [**GL.iNe
   <img src="/static/images/2025/glinet-slate-7-travel-router/1-router.webp" alt="router" />
 </p>
 
-**Buy This** (Affiliate Links) : [GLiNet Store](https://link.gl-inet.com/be3600-smarthomecircle-eustore-250523) | [Amazon US](https://amzn.to/3IwT8t7) \| [Amazon DE](https://amzn.to/44FkqWP) \| [AliExpress](https://s.click.aliexpress.com/e/_oDLL1GK)
+<AffiliateLinks 
+  title="Buy GL.iNet Slate 7" 
+  links={[
+    { store: "GLiNet Store", url: "https://link.gl-inet.com/be3600-smarthomecircle-eustore-250523" },
+    { store: "Amazon US", url: "https://amzn.to/3IwT8t7" },
+    { store: "Amazon DE", url: "https://amzn.to/44FkqWP" },
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oDLL1GK" }
+  ]}
+/>
 
 ## Lightning-Fast Hardware Specs
 
@@ -87,21 +101,23 @@ For those serious about privacy, the device includes **AdGuard Home DNS**, suppo
 
 At under $150, the GL.iNet Slate 7 is a **compelling value** — blending advanced networking features, premium performance, and excellent portability in a rugged travel-ready package.
 
-**Buy GLiNet Slate 7 Travel Router** (Affiliate Links) : [Amazon US](https://amzn.to/3IwT8t7) \| [Amazon DE](https://amzn.to/44FkqWP) \| [AliExpress](https://s.click.aliexpress.com/e/_oDLL1GK)
+<AffiliateLinks 
+  title="Buy GLiNet Slate 7 Travel Router" 
+  links={[
+    { store: "Amazon US", url: "https://amzn.to/3IwT8t7" },
+    { store: "Amazon DE", url: "https://amzn.to/44FkqWP" },
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oDLL1GK" }
+  ]}
+/>
 
 ## Watch the Full Walkthrough
 
 Check out the **in-depth video review** with setup steps, performance tests, and VPN configuration tips.
-<div className="md:w-1/2">
-                      <iframe
-                        id="video"
-                        className="w-full aspect-video"
-                        src="https://www.youtube.com/embed/ise2Hss3MtI"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
-</div>
+<VideoEmbed 
+  videoId="ise2Hss3MtI" 
+  title="GL.iNet Slate 7 WiFi 7 Travel Router Review" 
+  width="half" 
+/>
 ## Coming Soon: DIY 10-Inch Network Rack
 
 Stay tuned for my **upcoming build video**, showcasing the Slate 7 integrated into a custom 10″ rack. Subscribe and like to get notified!
@@ -114,9 +130,4 @@ Enjoyed this article? Consider supporting the channel:
     
 -   ☕ **Support my work** on [Patreon](https://patreon.com/AmrutPrabhu) or [Buy Me a Coffee](https://www.buymeacoffee.com/amrutprabhu)
 
-<br/>
-You might also enjoy these related guides and reviews:
 
-- [**How to Create a NAS with Raspberry Pi 5**](https://smarthomecircle.com/create-nas-with-raspberry-pi-5)
-- [**Radxa X4L: A Pocket‑Sized Powerhouse**](https://smarthomecircle.com/radxa-x4l-a-powerful-pocket-sized-computer)
-- [**How to Setup Zigbee2Mqtt with Home Assistant—Step by Step Guide**](https://smarthomecircle.com/install-zigbee2mqtt-with-home-assistant)

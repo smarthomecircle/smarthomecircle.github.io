@@ -12,6 +12,15 @@ imageUrl: /static/images/2025/diy-rack/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/66axG6TpT6A"
+suggestedArticles:
+  - title: "Create a NAS with Raspberry Pi 5"
+    url: "https://smarthomecircle.com/create-nas-with-raspberry-pi-5"
+  - title: "Radxa X4: 60$ Powerful Alternative to Raspberry Pi 5"
+    url: "https://smarthomecircle.com/radxa-x4-alternative-to-raspberry-pi-5"
+  - title: "Install OS on Raspberry Pi Compute Module 5 with eMMC Storage"
+    url: "https://smarthomecircle.com/how-to-install-os-on-raspberry-pi-compute-module-5-emmc-storage"
+  - title: "Orange Pi 5 MAX: A Powerful Successor to the Orange Pi 5 Pro"
+    url: "https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro"
 
 ---
 <TOCInline toc={props.toc} asDisclosure />  
@@ -48,15 +57,15 @@ Here’s a full list of components with images and links for purchase:
 
 | Item |  Specs & Affiliate Buying Links |
 |------|:----------------|
-| **2020 T Type Slot Aluminium extrusion profile** <br/> <img src="/static/images/2025/diy-rack/rails-1.webp" width="150"/>  |  - 4 pieces 500 mm length <br/> - 4 pieces 250 mm length  <br/> - 4 pieces 200 mm length  <br/> [Amazon US](https://amzn.to/4eb7wCL) \| [Amazon DE](https://amzn.to/44djPKs) \| [AliExpress](https://s.click.aliexpress.com/e/_olj4GKu) |
-| **2020 L-shape corner bracket** <br/> <img src="/static/images/2025/diy-rack/l-shaped-holder.jpg" width="150"/>  |  - 24 pieces with M5 Screws  <br/> [Amazon US](https://amzn.to/3T1tS02) \| [Amazon DE](https://amzn.to/4e9r9vf) \| [AliExpress](https://s.click.aliexpress.com/e/_onRkO2g) |
-| **2020 Aluminium Profile Handle** <br/> <img src="/static/images/2025/diy-rack/handle.webp" width="150"/>  |  - 2 pieces 100 mm for 20x20 Aluminium Profile  <br/> [Amazon US](https://amzn.to/45vtvST) \| [Amazon DE](https://amzn.to/44asr4u) \| [AliExpress](https://s.click.aliexpress.com/e/_oouOx5a) |
-| **M5 x 8mm Mounting Screws** <br/> <img src="/static/images/2025/diy-rack/m5-screws.avif" width="150"/>  |  - 50 pieces M5 Screws <br/> [Amazon US](https://amzn.to/3G3B7S6) \| [Amazon DE](https://amzn.to/44pkR7h) \| [AliExpress](https://s.click.aliexpress.com/e/_ooEQ5V6) |
-| **2020 M5 Spring Ball Nut** <br/> <img src="/static/images/2025/diy-rack/m5-spring-nut.avif" width="150"/>  |  - 50 pieces <br/> [Amazon US](https://amzn.to/4lgx18d) \| [Amazon DE](https://amzn.to/4jXskz6) \| [AliExpress](https://s.click.aliexpress.com/e/_oCe5PHw) |
-| **Micro HDMI to HDMI 30cm** <br/> <img src="/static/images/2025/diy-rack/micro-hdmi.avif" width="150"/>  |  - 2 pieces <br/> [Amazon US](https://amzn.to/3ZDAfub) \| [Amazon DE](https://amzn.to/43SKddI) \| [AliExpress](https://s.click.aliexpress.com/e/_oCs4tFe) |
-| **HDMI to HDMI 30cm** <br/> <img src="/static/images/2025/diy-rack/hdmi-to-hdmi.avif" width="150"/>  |  - 2 pieces <br/> [Amazon US](https://amzn.to/3T2E0pf) \| [Amazon DE](https://amzn.to/3HIhxvk) \| [AliExpress](https://s.click.aliexpress.com/e/_opwDBD2) |
-| **RJ45 Keystone Jack** <br/> <img src="/static/images/2025/diy-rack/rj45.webp" width="150"/>  |  - 10 pieces <br/> [Amazon US](https://amzn.to/4elkYnN) \| [Amazon DE](https://amzn.to/3G3Q72q) \| [AliExpress](https://s.click.aliexpress.com/e/_olPuxKy) |
-| **CAT6 Patch Cable** <br/> <img src="/static/images/2025/diy-rack/patch-cable.avif" width="150"/>  |  - 10 pieces <br/> [Amazon US](https://amzn.to/4l3gO5B) \| [Amazon DE](https://amzn.to/46BROPy) \| [AliExpress](https://s.click.aliexpress.com/e/_oEJLvyJ) |
+| **2020 T Type Slot Aluminium extrusion profile** <br/> <img src="/static/images/2025/diy-rack/rails-1.webp" width="150"/>  |  - 4 pieces 500 mm length <br/> - 4 pieces 250 mm length  <br/> - 4 pieces 200 mm length  <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://amzn.to/4eb7wCL" }, { store: "Amazon DE", url: "https://amzn.to/44djPKs" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_olj4GKu" }]} /> |
+| **2020 L-shape corner bracket** <br/> <img src="/static/images/2025/diy-rack/l-shaped-holder.jpg" width="150"/>  |  - 24 pieces with M5 Screws  <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://amzn.to/3T1tS02" }, { store: "Amazon DE", url: "https://amzn.to/4e9r9vf" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_onRkO2g" }]} /> |
+| **2020 Aluminium Profile Handle** <br/> <img src="/static/images/2025/diy-rack/handle.webp" width="150"/>  |  - 2 pieces 100 mm for 20x20 Aluminium Profile  <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://amzn.to/45vtvST" }, { store: "Amazon DE", url: "https://amzn.to/44asr4u" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oouOx5a" }]} /> |
+| **M5 x 8mm Mounting Screws** <br/> <img src="/static/images/2025/diy-rack/m5-screws.avif" width="150"/>  |  - 50 pieces M5 Screws <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://amzn.to/3G3B7S6" }, { store: "Amazon DE", url: "https://amzn.to/44pkR7h" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_ooEQ5V6" }]} /> |
+| **2020 M5 Spring Ball Nut** <br/> <img src="/static/images/2025/diy-rack/m5-spring-nut.avif" width="150"/>  |  - 50 pieces <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://amzn.to/4lgx18d" }, { store: "Amazon DE", url: "https://amzn.to/4jXskz6" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oCe5PHw" }]} /> |
+| **Micro HDMI to HDMI 30cm** <br/> <img src="/static/images/2025/diy-rack/micro-hdmi.avif" width="150"/>  |  - 2 pieces <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://amzn.to/3ZDAfub" }, { store: "Amazon DE", url: "https://amzn.to/43SKddI" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oCs4tFe" }]} /> |
+| **HDMI to HDMI 30cm** <br/> <img src="/static/images/2025/diy-rack/hdmi-to-hdmi.avif" width="150"/>  |  - 2 pieces <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://amzn.to/3T2E0pf" }, { store: "Amazon DE", url: "https://amzn.to/3HIhxvk" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_opwDBD2" }]} /> |
+| **RJ45 Keystone Jack** <br/> <img src="/static/images/2025/diy-rack/rj45.webp" width="150"/>  |  - 10 pieces <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://amzn.to/4elkYnN" }, { store: "Amazon DE", url: "https://amzn.to/3G3Q72q" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_olPuxKy" }]} /> |
+| **CAT6 Patch Cable** <br/> <img src="/static/images/2025/diy-rack/patch-cable.avif" width="150"/>  |  - 10 pieces <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://amzn.to/4l3gO5B" }, { store: "Amazon DE", url: "https://amzn.to/46BROPy" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oEJLvyJ" }]} /> |
 
 
 
@@ -78,7 +87,14 @@ Powered by a 1.1GHz quad-core Qualcomm CPU, it includes 1GB RAM, 512MB flash, an
 With speeds up to 1.3Gbps over WiFi and power use around 5W, it’s ideal for travel networking.
 At $150, it delivers strong value with NAS support, advanced features, and worldwide adapters included.
 
-**Buy This** (Affiliate Links) : [Amazon US](https://amzn.to/3IwT8t7) \| [Amazon DE](https://amzn.to/44FkqWP) \| [AliExpress](https://s.click.aliexpress.com/e/_oDLL1GK)
+<AffiliateLinks 
+  title="Buy This" 
+  links={[
+    { store: "Amazon US", url: "https://amzn.to/3IwT8t7" },
+    { store: "Amazon DE", url: "https://amzn.to/44FkqWP" },
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oDLL1GK" }
+  ]}
+/>
 
 ### 2. **Raspberry Pi 5 & Orange Pi 5 Max**
 
@@ -90,7 +106,14 @@ Now with a dedicated power button and real-time clock, it improves usability.
 The new RP1 I/O chip delivers faster USB, camera, and networking performance.
 Ideal for DIY projects, media centers, and light desktop tasks at an affordable price.
     
-**Buy This** (Affiliate Links) : [Amazon US](https://amzn.to/3IETvS9) \| [Amazon DE](https://amzn.to/4kOb1kn) \| [AliExpress](https://s.click.aliexpress.com/e/_opYsGai)  
+<AffiliateLinks 
+  title="Buy This" 
+  links={[
+    { store: "Amazon US", url: "https://amzn.to/3IETvS9" },
+    { store: "Amazon DE", url: "https://amzn.to/4kOb1kn" },
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_opYsGai" }
+  ]}
+/>  
 
 ### 3. **Jet KVM Interface**
 ![Raspberry Pi 5 Mount](/static/images/2025/diy-rack/jet-kvm-rack-mount.webp)
@@ -105,14 +128,28 @@ The [Radxa Rock 5T](https://radxa.com/products/rock5/5t/) is a powerful SBC powe
 It supports up to 4 displays (including 8K60 HDMI and USB-C), dual 2.5GbE, HDMI input, Wi-Fi 6, and Bluetooth 5.2. With LPDDR5 RAM, dual PCIe NVMe slots, and M.2 for 4G modules, it’s ideal for edge AI, media, or server use. Benchmark tests show strong multicore performance and fast NVMe and memory speeds.
 It can run Home Assistant, NAS setups, and AI workloads, making it great for home labs and DIY projects.
     
-**Buy This** (Affiliate Links) : [Amazon US](https://amzn.to/40Vp1BK) \| [All Net China](https://shop.allnetchina.cn/products/rock-5t) \| [AliExpress](https://s.click.aliexpress.com/e/_opvmiJ4)
+<AffiliateLinks 
+  title="Buy This" 
+  links={[
+    { store: "Amazon US", url: "https://amzn.to/40Vp1BK" },
+    { store: "All Net China", url: "https://shop.allnetchina.cn/products/rock-5t" },
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_opvmiJ4" }
+  ]}
+/>
 
 ### 5. **LattePanda Mu Lite Carrier Board**
 ![Latte Panda Mu](/static/images/2025/diy-rack/latte-panda-mu-rack-mount.webp)
 
 The [LattePanda Mu](https://www.lattepanda.com/lattepanda-mu) Lite Carrier Board, paired with the Intel N100-equipped Mu module, transforms the tiny 60×70 mm x86 board into a compact yet powerful top-tier mini PC reference design. It bridges essential I/O — HDMI 2.0 output, USB 3.2 Gen 2, Gigabit Ethernet, PCIe 3.0 x4 slot (with 12 V input), and dual M.2 slots for NVMe storage or wireless modules. Powered via USB‑C (up to 15 V) or a 12–20 V DC jack, it supports passive or active cooling modes and runs Windows or Linux seamlessly. The Intel N100 chip delivers roughly twice the CPU and 10–30× GPU performance compared to Raspberry Pi 5, all within a highly customizable, open-source carrier board platform. Perfect for DIY NAS, edge computing, mini servers, or custom embedded designs—this board is an ideal x86 foundation for maker and home-lab projects.
     
-**Buy This** (Affiliate Links) : [Amazon US](https://amzn.to/3IvQELw) \| [Amazon DE](https://amzn.to/3IvRzLY) \| [AliExpress](https://s.click.aliexpress.com/e/_oEVRfJs) 
+<AffiliateLinks 
+  title="Buy This" 
+  links={[
+    { store: "Amazon US", url: "https://amzn.to/3IvQELw" },
+    { store: "Amazon DE", url: "https://amzn.to/3IvRzLY" },
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oEVRfJs" }
+  ]}
+/> 
 
 
 ----------
@@ -167,10 +204,5 @@ If you enjoyed this project and want to see more like it:
     
 -   🔁 **Share** this article with fellow makers and tinkerers
 
-If you are interested in exploring more of such easy to follow step by step guides, then here are a few suggestions.
-
--   [**Create a NAS with Raspberry Pi 5**](https://smarthomecircle.com/create-nas-with-raspberry-pi-5)
--   [**Radxa X4: 60$ Powerful Atlernative to Raspberry Pi 5**](https://smarthomecircle.com/radxa-x4-alternative-to-raspberry-pi-5)
--   [**Install OS on Raspberry Pi Compute Module 5 with eMMC Storage**](https://smarthomecircle.com/how-to-install-os-on-raspberry-pi-compute-module-5-emmc-storage)
--   [**Orange Pi 5 MAX: A Powerful Successor to the Orange Pi 5 Pro**](https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro)
+If you are interested in exploring more of such easy to follow step by step guides, then check out the **Read Next** section below.
 

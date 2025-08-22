@@ -27,44 +27,29 @@ This article we will look at how you can connect an LG Washer with Home Assistan
 2.  **LG ThinQ App** should be installed with Washer/Dryer already connected.
     In case it’s not set up, you can set it up with the help of video below
     
-<div className="md:w-1/2">
-                    <iframe
-                    id="video"
-                    className="w-full aspect-video"
-                    src="https://www.youtube.com/embed/nazDVKuEFx4"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    ></iframe>
-</div>
+<VideoEmbed 
+  videoId="nazDVKuEFx4" 
+  title="LG Washer Home Assistant Setup - Part 1" 
+  width="half" 
+/>
 
 3.  **HACS** should be installed in Home Assistant.  
     In case it’s not setup, you can set it up using the video below
 
-<div className="md:w-1/2"> 
-                      <iframe
-                        id="video"
-                        className="w-full aspect-video"
-                        src="https://www.youtube.com/embed/c6kbItcHqwI"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
-</div>
+<VideoEmbed 
+  videoId="c6kbItcHqwI" 
+  title="LG Washer Home Assistant Setup - Part 2" 
+  width="half" 
+/>
 
 4.  **SSH** should have Access to Home Assistant.  
     In case it’s not setup, you can set it up using the video below
 
-<div className="md:w-1/2"> 
-                      <iframe
-                        id="video"
-                        className="w-full aspect-video"
-                        src="https://www.youtube.com/embed/dAmGYrKDpZE"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
-</div>
+<VideoEmbed 
+  videoId="dAmGYrKDpZE" 
+  title="LG Washer Dashboard Card Design" 
+  width="half" 
+/>
 
 ## Adding LG ThinQ Integration with Home Assistant
 

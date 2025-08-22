@@ -55,16 +55,11 @@ To set up voice assistant, we would need three components to create the voice as
 3.  **OpenWakeWord**: For invoking the Assist Pipeline
 
 Now, I have set up these components using Home Assistant Addons in the video below.
-<div className="md:w-1/2"> 
-                      <iframe
-                        id="video"
-                        className="w-full aspect-video"
-                        src="https://www.youtube.com/embed/P4V2JqCmk7M"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
-</div>
+<VideoEmbed 
+  videoId="P4V2JqCmk7M" 
+  title="Voice Assistant Setup Tutorial" 
+  width="half" 
+/>
 You will get to see how to set up the following components that are required
 
 1.  **Whisper** Addon

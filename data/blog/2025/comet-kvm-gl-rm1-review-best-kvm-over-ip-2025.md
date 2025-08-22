@@ -12,7 +12,13 @@ imageUrl: /static/images/2025/comet-kvm/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/H8AjtRZSeVQ"
-
+suggestedArticles:
+  - title: "Orange Pi 5 MAX: A Powerful Successor to the Orange Pi 5 Pro"
+    url: "https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro"
+  - title: "Local Voice Assistant with ReSpeaker Lite"
+    url: "https://smarthomecircle.com/local-voice-assistant-with-seeed-studio-respeaker-lite"
+  - title: "How to Create a NAS with Raspberry Pi 5"
+    url: "https://smarthomecircle.com/create-nas-with-raspberry-pi-5"
 ---
 <TOCInline toc={props.toc} asDisclosure />  
 
@@ -26,7 +32,15 @@ The Comet is a compact, affordable, and powerful device that fits in the palm of
   <img src="/static/images/2025/comet-kvm/comet-kvm.webp" alt="router" />
 </p>
 
-**Buy This** (Affiliate Links) : [GLiNet Store](https://link.gl-inet.com/rm1-smarthomecircle-eustore-250515) | [Amazon US](https://amzn.to/3GKnCHz) \| [Amazon DE](https://amzn.to/44PyFbt) \| [AliExpress](https://s.click.aliexpress.com/e/_oDCndXd)
+<AffiliateLinks 
+  title="Buy This" 
+  links={[
+    { store: "GLiNet Store", url: "https://link.gl-inet.com/rm1-smarthomecircle-eustore-250515" },
+    { store: "Amazon US", url: "https://amzn.to/3GKnCHz" },
+    { store: "Amazon DE", url: "https://amzn.to/44PyFbt" },
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oDCndXd" }
+  ]}
+/>
 
 ## What is KVM Over IP?
 
@@ -34,14 +48,11 @@ KVM stands for **Keyboard, Video, and Mouse**, and KVM-over-IP means you can con
 
 Unlike traditional remote desktop tools like TeamViewer or RDP, a **KVM-over-IP solution like the Comet** works **independently of the OS** and gives you **hardware-level control** of the machine.
 
-
-
 ## Unboxing the GL.iNet Comet
 
 <p align="center">
   <img src="/static/images/2025/comet-kvm/unboxing.webp" alt="router" />
 </p>
-
 
 Inside the Comet’s packaging, you’ll find the KVM device itself, a USB-C to USB-C cable for connecting to the host system, an HDMI cable for video input, and an Ethernet cable for network connectivity. While the unit does not come with a power adapter, it can be powered with any standard 5V/2A USB-C power supply.
 
@@ -122,7 +133,6 @@ The ability to interact with the machine **before the OS loads** makes this far 
 - USB 2.0 port may limit bandwidth for some peripherals
 - Requires a basic understanding of PC internals for ATX board installation
 
-
 ## Pricing and Availability
 
 As of the latest update, the **Comet KVM retails for 99 USD**. This is a one-time purchase—**no recurring subscription fees** like many enterprise KVM solutions. The **ATX board bundle** is available for around **$114 USD**, making it a smart upgrade for users who want complete power control.
@@ -152,10 +162,4 @@ Enjoyed this article? Consider supporting the channel:
 -   ✅ **Subscribe** to the [YouTube channel](https://www.youtube.com/@SmartHomeCircle?sub_confirmation=1)
     
 -   ☕ **Support my work** on [Patreon](https://patreon.com/AmrutPrabhu) or [Buy Me a Coffee](https://www.buymeacoffee.com/amrutprabhu)
-
-You might also enjoy these related guides and reviews:
-
-- [**Orange Pi 5 MAX: A Powerful Successor to the Orange Pi 5 Pro**](https://smarthomecircle.com/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro)
-- [**Local Voice Assistant with ReSpeaker Lite**](https://smarthomecircle.com/local-voice-assistant-with-seeed-studio-respeaker-lite)
-- [**How to Create a NAS with Raspberry Pi 5**](https://smarthomecircle.com/create-nas-with-raspberry-pi-5)
 

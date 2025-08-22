@@ -90,3 +90,228 @@ input:-webkit-autofill:focus {
     width: 25%;
   }
 }
+
+/* Modern article image styling */
+.prose img {
+  @apply rounded-xl shadow-lg mx-auto my-8 border border-gray-200 dark:border-gray-700;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Removed general image hover effect - now only applies to image-flex */
+
+/* Image with caption styling */
+.prose figure {
+  @apply my-8 text-center;
+}
+
+.prose figure img {
+  @apply mb-3 mx-auto;
+}
+
+.prose figcaption {
+  @apply text-sm text-gray-500 dark:text-gray-400 italic font-medium;
+}
+
+/* Table images - smaller and styled */
+.prose table img {
+  @apply rounded-lg shadow-md my-2 max-w-none border-0;
+  width: 120px;
+  height: auto;
+}
+
+/* Removed table image hover effect - now only image-flex has hover effects */
+
+/* Large feature images */
+.prose .image-large {
+  @apply rounded-2xl shadow-2xl my-12 border-2 border-gray-200 dark:border-gray-700;
+}
+
+/* Removed large image hover effect - now only image-flex has hover effects */
+
+/* Side-by-side images - Large format */
+.prose .image-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6 my-8;
+}
+
+.prose .image-grid img {
+  @apply mb-0 w-full;
+}
+
+/* Side-by-side table images - Override small size for specific cases */
+.prose .side-by-side-table img {
+  @apply w-full max-w-none rounded-xl shadow-lg border border-gray-200 dark:border-gray-700;
+  width: auto !important;
+  height: auto;
+}
+
+/* Removed side-by-side table image hover effect - now only image-flex has hover effects */
+
+/* Large side-by-side images using grid (max 2 per row) - Tight cluster */
+.prose .image-flex {
+  @apply grid grid-cols-1 md:grid-cols-2 my-2 mx-auto;
+  max-width: 80%;
+  width: 100%;
+  gap: 8px; /* Same vertical and horizontal gap */
+}
+
+/* Single image container behaves like regular article structure */
+.prose .image-flex:has(img:only-child),
+.prose .image-flex-single {
+  max-width: 100% !important;
+  display: block !important; /* Override grid */
+  grid-template-columns: none !important;
+  gap: 0 !important;
+  margin: 0 !important; /* Remove container margins - let image handle its own */
+}
+
+.prose .image-flex img {
+  @apply rounded-xl shadow-lg border border-gray-200 dark:border-gray-700;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  justify-self: center;
+  margin: 0; /* No margins - let grid gap handle spacing */
+  padding: 0;
+}
+
+/* Override for single images - match regular .prose img but constrain to article width */
+.prose .image-flex-single img,
+.prose .image-flex img:only-child {
+  /* Copy exact styling from .prose img */
+  @apply rounded-xl shadow-lg mx-auto my-8 border border-gray-200 dark:border-gray-700;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Size constraints */
+  max-width: 100% !important; /* Constrain to article width */
+  width: auto !important; /* Natural image width up to max */
+  height: auto !important; /* Maintain aspect ratio */
+  object-fit: initial !important; /* Don't crop */
+  justify-self: initial !important;
+  grid-column: initial !important;
+}
+
+/* Center the last image when odd number of images */
+.prose .image-flex img:nth-child(odd):last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: 300px;
+}
+
+/* (Single image rules moved above for higher specificity) */
+
+.prose .image-flex img {
+  cursor: zoom-in; /* Show it's expandable/zoomable */
+}
+
+.prose .image-flex img:hover {
+  @apply shadow-2xl;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Lightbox Modal for image-flex images */
+.image-lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.image-lightbox.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.image-lightbox img {
+  max-width: 90vw; /* 90% of viewport width */
+  max-height: 90vh; /* 90% of viewport height */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Mobile-specific constraints */
+@media (max-width: 768px) {
+  .image-lightbox img {
+    max-width: 85vw; /* Smaller on mobile */
+    max-height: 80vh; /* Account for mobile UI elements */
+    border-radius: 8px; /* Smaller border radius on mobile */
+  }
+  
+  .image-lightbox .close-button {
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+  }
+}
+
+.image-lightbox .close-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.image-lightbox .close-button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Custom scrollbar for sidebar */
+.sidebar-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(203 213 225) transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(203 213 225);
+  border-radius: 3px;
+  border: none;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(148 163 184);
+}
+
+.dark .sidebar-scroll {
+  scrollbar-color: rgb(71 85 105) transparent;
+}
+
+.dark .sidebar-scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(71 85 105);
+}
+
+.dark .sidebar-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(100 116 139);
+}

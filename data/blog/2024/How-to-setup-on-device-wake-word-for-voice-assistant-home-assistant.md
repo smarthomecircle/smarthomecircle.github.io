@@ -26,32 +26,55 @@ In this article, we will look at how we can set up an ESP32 S3 with on-device Wa
     You can check [this](https://smarthomecircle.com/how-to-connect-wifi-to-home-assistant-on-startup) link to see how you can install it for the first time
 2.  **ESPHome** is setup and running  
     In case you have not set it up, you can look at it [here](https://smarthomecircle.com/esp32-esp8266-esphome-with-home-assistant).
-3. **ESP32 S3 N8R2 Dev Board**  
-    Links to buy this:
+3. **ESP32 S3 N8R2 Dev Board**
+
 [![ESP32 S3 ](/static/images/2024/on-device-wake-word/esp32-s3-n8r2.webp)](https://s.click.aliexpress.com/e/_DFopt57)
-        -   [**AliExpress - ESP32 S3 N8R2 Dev Board**](https://s.click.aliexpress.com/e/_DFopt57)
-        -   [**Amazon - ESP32 S3 N8R2 Dev Board**](https://amzn.to/3xnA8ax)
+
+<AffiliateLinks 
+  title="" 
+  links={[
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_DFopt57" },
+    { store: "Amazon", url: "https://amzn.to/3xnA8ax" }
+  ]}
+/>
 
 Guide for ordering ESP32 N8R2 or N16R8 Board is [here](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/hw-reference/esp32s3/user-guide-devkitc-1.html#ordering-information)
       <br/>
-4.  **INMP441 Microphone**  
-    Links to buy this:
-        
+4.  **INMP441 Microphone**
+
 [![INMP441 MICROPHONE](/static/images/2023/esp32-voice-assistant/inmp441-microphone.webp)](https://s.click.aliexpress.com/e/_Dmn2PyR)
-        -   [**AliExpress - INMP441 Microphone**](https://s.click.aliexpress.com/e/_Dmn2PyR)
-        -   [**Amazon - INMP441 Microphone**](https://amzn.to/3GdxO7o)
+
+<AffiliateLinks 
+  title="" 
+  links={[
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_Dmn2PyR" },
+    { store: "Amazon", url: "https://amzn.to/3GdxO7o" }
+  ]}
+/>
         <br/>
-5. **MAX98357A Audio Amplifier**  
-    Links to buy this:
+5. **MAX98357A Audio Amplifier**
+
 [![MAX98357A](/static/images/2023/esp32-voice-assistant/MAX98357A.webp)](https://s.click.aliexpress.com/e/_DdyIFTH)
-        -   [**AliExpress - MAX98357A**](https://s.click.aliexpress.com/e/_DdyIFTH)
-        -   [**Amazon - MAX98357A**](https://amzn.to/46wKTmW)      
+
+<AffiliateLinks 
+  title="" 
+  links={[
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_DdyIFTH" },
+    { store: "Amazon", url: "https://amzn.to/46wKTmW" }
+  ]}
+/>      
         <br/>
-6.  **3-watt Speakers** (Optional: Only required to listen to the pipeline output)  
-    Links to buy these.  
+6.  **3-watt Speakers** (Optional: Only required to listen to the pipeline output)
+
 [![3 watt speaker](/static/images/2023/esp32-voice-assistant/3-watt-speakers.webp)](https://s.click.aliexpress.com/e/_DBDIScT)
-        -   [**AliExpress - 3-watt Speakers**](https://s.click.aliexpress.com/e/_DBDIScT)
-        -   [**Amazon - 3-watt Speakers**](https://amzn.to/49BbAJR)      
+
+<AffiliateLinks 
+  title="" 
+  links={[
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_DBDIScT" },
+    { store: "Amazon", url: "https://amzn.to/49BbAJR" }
+  ]}
+/>      
      
 
 ## Set Up Voice Assist Pipeline
@@ -63,16 +86,11 @@ To set up voice assistant, we would need two components to create the Voice Assi
 
 Now, following the below video, you have set up these components in Home Assistant using Addons.
 
-<div className="md:w-1/2"> 
-                      <iframe
-                        id="video"
-                        className="w-full aspect-video"
-                        src="https://www.youtube.com/embed/P4V2JqCmk7M"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
-</div>
+<VideoEmbed 
+  videoId="P4V2JqCmk7M" 
+  title="Setting up Voice Assistant in Home Assistant" 
+  width="half" 
+/>
 You will get to see how to set up the following components that are required
 
 1.  **Whisper** Addon
