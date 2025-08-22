@@ -6,6 +6,7 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import ShareButtons from '@/components/PostShare'
+import ImageLightbox from '@/components/ImageLightbox'
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
@@ -311,6 +312,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
           </div>
         </div>
       </article>
+      <ImageLightbox />
     </SectionContainer>
   )
 }

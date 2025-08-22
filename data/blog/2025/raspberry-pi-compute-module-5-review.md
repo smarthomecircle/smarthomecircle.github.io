@@ -17,8 +17,10 @@ youtubeLink: "https://www.youtube.com/embed/4m7v72YCzm4"
 <TOCInline toc={props.toc} asDisclosure />  
 
 
-| ![cm5 front](/static/images/2024/raspberrypi-cm5/cm5-front.webp) | ![cm5 back](/static/images/2024/raspberrypi-cm5/cm5-back.webp) |
-|-------------------------|-------------------------|
+<div class="image-flex">
+  <img src="/static/images/2024/raspberrypi-cm5/cm5-front.webp" alt="CM5 Front View" />
+  <img src="/static/images/2024/raspberrypi-cm5/cm5-back.webp" alt="CM5 Back View" />
+</div>
 
 
 
