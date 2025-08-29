@@ -43,7 +43,7 @@ The Raspberry Pi Compute Module 5 (CM5) is an impressively compact computer that
 
 ![Board-view](/static/images/2024/raspberrypi-cm5/io-board.webp)
 
-### Setting Up the Compute Module 5
+## Setting Up the Compute Module 5
 
 To get started, I installed Raspberry Pi OS using the [USBboot](https://github.com/raspberrypi/usbboot) mechanism, as my CM5 had 32GB eMMC storage. Once the OS was up and running, I began testing the module’s capabilities.
 
@@ -59,7 +59,7 @@ Using [iPerf3](https://iperf.fr/), I measured the Ethernet speed and recorded a 
 
 ![iperf3](/static/images/2024/raspberrypi-cm5/iperf3.webp)
 
-### Performance and Thermal Management
+## Performance and Thermal Management
 
 To evaluate the CM5’s thermal performance, I tested it with the official heatsink:
 
@@ -74,7 +74,7 @@ To evaluate the CM5’s thermal performance, I tested it with the official heats
     -   **Initial Stress Test:** Temperatures rose to 44°C.
     -   **Prolonged Testing:** After 5 minutes, the temperature reached 60°C, and after 10 minutes, it climbed to 65°C. These tests were conducted in an open setup at a room temperature of 23°C. During the stress test, energy consumption was 4.5–5W, excluding the NVMe drive.
 
-### Enhancing Cooling with a Fan
+## Enhancing Cooling with a Fan
 
 When I first received the CM5, I didn’t have a heatsink with a fan. However, I repurposed a fan from the official Raspberry Pi 5 case. By using 2.5mm screws, I securely attached the fan to the heatsink. Though slightly crooked, it stayed firmly in place without vibration. 
 
@@ -107,7 +107,7 @@ dtparam=fan_temp3_speed=250
 ```
 If you want to understand this configuration, there is a nice post on [StackExchange](https://raspberrypi.stackexchange.com/a/146007), that will explain the configuration
 
-### Shutdown Behavior
+## Shutdown Behavior
 
 Interestingly, on shutdown, the fan turned on at full speed and stayed on until the power cord was disconnected.
 

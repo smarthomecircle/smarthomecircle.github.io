@@ -25,7 +25,15 @@ const createAutoAdComponents = (pageId = '') => {
   
   const AutoAdH2 = (props) => {
     // Get heading text content for deterministic behavior
-    const headingText = typeof props.children === 'string' ? props.children : 'h2-heading'
+    let headingText = 'h2-heading'
+    if (typeof props.children === 'string') {
+      headingText = props.children
+    } else if (Array.isArray(props.children)) {
+      headingText = props.children.join('')
+    } else if (props.children && typeof props.children === 'object') {
+      headingText = props.children.toString()
+    }
+    
     const hash = simpleHash(headingText)
     
     // Show ad if hash is divisible by 2 (50% chance, but deterministic)
@@ -52,7 +60,13 @@ const createAutoAdComponents = (pageId = '') => {
 
 // Create dynamic MDX components based on frontmatter
 const createMDXComponents = (frontMatter = {}) => {
-  const pageId = frontMatter?.slug || frontMatter?.customUrl || 'page'
+  // Use a more reliable pageId - prefer slug, then customUrl, but avoid 'auto-generated'
+  let pageId = frontMatter?.slug || frontMatter?.customUrl || 'page'
+  if (pageId === 'auto-generated') {
+    // Fallback to using the title as pageId when customUrl is auto-generated
+    pageId = frontMatter?.title ? frontMatter.title.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') : 'page'
+  }
+  
   const autoAdComponents = frontMatter?.autoAds ? createAutoAdComponents(pageId) : null
   
   return {

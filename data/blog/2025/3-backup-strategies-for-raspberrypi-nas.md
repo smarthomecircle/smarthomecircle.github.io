@@ -27,7 +27,7 @@ suggestedArticles:
 
 A few months ago, I built a Raspberry Pi 5 NAS with RAID 5 using the [Penta SATA HAT](https://s.click.aliexpress.com/e/_olCRd9p) from Radxa. While it’s been a reliable setup, I wanted to enhance the data reliability. In this guide, I’ll walk you through three backup strategies I’ve implemented for my Raspberry Pi 5 NAS, and I’ll also discuss the energy consumption changes resulting from these updates.
 
-### Upgrading the Hardware
+## Upgrading the Hardware
 
 Before diving into the strategies, I made some significant hardware upgrades:
 
@@ -56,7 +56,7 @@ Before diving into the strategies, I made some significant hardware upgrades:
     | ![Acrylic Rack](/static/images/2025/backup-strategies/esata.jpg) | - Amazon EU: https://amzn.to/3Dsq2Z5 <br/>- Amazon US :  https://amzn.to/41RZWsz  <br/>- AliExpress : https://s.click.aliexpress.com/e/_ok7mfCB
     |-----------------------------|---------------------------------------------------------|
 
-### Backup Strategy 1: NAS OS Backup To The NAS
+## Backup Strategy 1: NAS OS Backup To The NAS
 
 First, I configured a system backup to safeguard the NAS OS:
 
@@ -85,7 +85,7 @@ First, I configured a system backup to safeguard the NAS OS:
 
 This strategy ensures I can quickly restore the NAS OS in case of SD card failure.
 
-### Backup Strategy 2: NAS Data Backup to Local HDD
+## Backup Strategy 2: NAS Data Backup to Local HDD
 
 Next, I implemented local data backup using the 4TB HDD:
 
@@ -104,7 +104,7 @@ Next, I implemented local data backup using the 4TB HDD:
 
 This strategy provides an on-site backup of the RAID 5 data.
 
-### Backup Strategy 3: Remote Backup to Another NAS
+## Backup Strategy 3: Remote Backup to Another NAS
 
 Lastly, I set up remote backups to a second NAS:
 
@@ -124,7 +124,7 @@ Lastly, I set up remote backups to a second NAS:
 
 This strategy ensures off-site redundancy, enhancing data security in case of physical damage to the primary NAS.
 
-### Conclusion
+## Conclusion
 
 By implementing these three strategies, I’ve significantly improved the reliability and security of my Raspberry Pi 5 NAS:
 
