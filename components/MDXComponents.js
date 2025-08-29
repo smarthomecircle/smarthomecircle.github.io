@@ -10,7 +10,7 @@ import AffiliateLinks from './AffiliateLinks'
 import VideoEmbed from './VideoEmbed'
 import InContentAd from './InContentAd'
 
-// Auto-inject ads after certain headings
+// Auto-inject ads after H2 sections complete
 const createAutoAdComponents = (pageId = '') => {
   // Simple hash function for deterministic ad placement
   const simpleHash = (str) => {
@@ -22,6 +22,9 @@ const createAutoAdComponents = (pageId = '') => {
     }
     return Math.abs(hash)
   }
+
+  // Track H2 sections for ad placement
+  let currentH2Section = null
   
   const AutoAdH2 = (props) => {
     // Get heading text content for deterministic behavior
@@ -35,27 +38,54 @@ const createAutoAdComponents = (pageId = '') => {
     }
     
     const hash = simpleHash(headingText)
-    
-    // Show ad if hash is divisible by 2 (50% chance, but deterministic)
     const shouldShowAd = hash % 2 === 0
     const adId = `${pageId}-h2-${hash.toString(36).slice(0, 6)}`
     
+    // Store this H2 section info
+    const sectionInfo = {
+      headingText,
+      hash,
+      shouldShowAd,
+      adId
+    }
+    
+    // If we have a previous section, add ad for it before starting new section
+    let previousSectionAd = null
+    if (currentH2Section && currentH2Section.shouldShowAd) {
+      previousSectionAd = (
+        <InContentAd 
+          key={`ad-${currentH2Section.adId}`}
+          id={currentH2Section.adId} 
+          slot={`4906783027`} 
+        />
+      )
+    }
+    
+    // Update current section
+    currentH2Section = sectionInfo
+    
     return (
       <>
+        {previousSectionAd}
         <h2 {...props} />
-        {shouldShowAd && (
-          <InContentAd 
-            id={adId} 
-            slot={`4906783027`} 
-          />
-        )}
       </>
     )
   }
 
-
+  // Component that can be manually placed to show ad for the current H2 section
+  const SectionEndAd = () => {
+    if (currentH2Section && currentH2Section.shouldShowAd) {
+      return (
+        <InContentAd 
+          id={currentH2Section.adId} 
+          slot={`4906783027`} 
+        />
+      )
+    }
+    return null
+  }
   
-  return { AutoAdH2 }
+  return { AutoAdH2, SectionEndAd }
 }
 
 // Create dynamic MDX components based on frontmatter
@@ -80,6 +110,7 @@ const createMDXComponents = (frontMatter = {}) => {
     InContentAd,
     // Conditionally use auto-ad headings if autoAds is enabled
     h2: autoAdComponents ? autoAdComponents.AutoAdH2 : 'h2',
+    SectionEndAd: autoAdComponents ? autoAdComponents.SectionEndAd : null,
     wrapper: ({ components, layout, ...rest }) => {
       const Layout = require(`../layouts/${layout}`).default
       return <Layout {...rest} />
