@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2025-03-12'
 draft: false
+autoAds: true
 summary: 'Unleash Raspberry Pi Compute Module 5: compact, versatile mini-computer for high-speed storage, DIY NAS, and innovative projects.'
 imageUrl: /static/images/2024/raspberrypi-cm5/cover.webp
 actualUrl: 'auto-generated'

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import React from 'react'
 import Pagination from '@/components/Pagination'
 import ListRecord from '@/components/ListRecord'
 import Image from '@/components/Image'
@@ -70,11 +71,21 @@ export default function ListLayout({
             {displayPosts.length > 0 && (
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                 {displayPosts.map((frontMatter, index) => (
-                  <ListRecord
-                    key={frontMatter.slug || index}
-                    frontMatter={frontMatter}
-                    authorDetails={authorDetails}
-                  />
+                  <React.Fragment key={frontMatter.slug || index}>
+                    <ListRecord
+                      frontMatter={frontMatter}
+                      authorDetails={authorDetails}
+                    />
+                    {/* Insert ad after every 3rd post */}
+                    {(index + 1) % 3 === 0 && index < displayPosts.length - 1 && (
+                      <div className="md:col-span-2 xl:col-span-3 my-8">
+                        <div className="bg-gray-50 dark:bg-gray-800/30 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 max-w-4xl mx-auto">
+                          <div className="text-xs text-gray-500 dark:text-gray-400 mb-2 text-center">Advertisement</div>
+                          <AdsSection id={`blog-list-ad-${index}`} slot={`400${index}567890`} />
+                        </div>
+                      </div>
+                    )}
+                  </React.Fragment>
                 ))}
               </div>
             )}

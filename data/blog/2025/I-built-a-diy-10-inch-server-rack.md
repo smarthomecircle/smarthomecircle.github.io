@@ -6,6 +6,7 @@ tags: [DIY, 10 inch rack, Raspberry Pi, radxa, latte panda, orange pi, Glinet]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2025-07-31'
+autoAds: true
 draft: false
 summary: 'DIY 10-inch rack using 2020 aluminium profiles—ideal for SBCs and home labs. Includes 3D print files and full build guide.'
 imageUrl: /static/images/2025/diy-rack/cover.webp

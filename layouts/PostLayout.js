@@ -7,6 +7,7 @@ import siteMetadata from '@/data/siteMetadata'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import ShareButtons from '@/components/PostShare'
 import ImageLightbox from '@/components/ImageLightbox'
+import AdsSection from '@/components/AdsSection'
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
@@ -23,6 +24,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
     youtubeLink,
     youtubeLink2,
     suggestedArticles,
+    autoAds,
   } = frontMatter
   return (
     <SectionContainer>
@@ -144,6 +146,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 </div>
               </div>
 
+
+
               {/* Featured Video Section */}
               {(youtubeLink || youtubeLink2) && (
                 <div className="mb-12 space-y-8">
@@ -181,8 +185,11 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
 
               {/* Article Content */}
               <div className="prose prose-lg dark:prose-dark max-w-none prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-gray-100 prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-a:text-primary-600 dark:prose-a:text-primary-400 prose-a:no-underline hover:prose-a:underline prose-strong:text-gray-900 dark:prose-strong:text-gray-100 prose-code:text-primary-600 dark:prose-code:text-primary-400 prose-pre:bg-gray-900 dark:prose-pre:bg-gray-800 prose-blockquote:border-primary-500 prose-blockquote:text-gray-700 dark:prose-blockquote:text-gray-300">
-                {/* Main Article Content */}
+
+                {/* Main Article Content - Auto-ads injected via MDX components */}
                 {children}
+
+
 
                 {/* Suggested Articles - Seamless Integration (Desktop Only) */}
                 {suggestedArticles && suggestedArticles.length > 0 && (
@@ -217,6 +224,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                     </div>
                   </div>
                 )}
+
+
 
                 {/* Share Buttons */}
                 <div className="not-prose mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
