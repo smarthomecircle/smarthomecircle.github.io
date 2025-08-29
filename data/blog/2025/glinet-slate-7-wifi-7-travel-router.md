@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2025-07-03'
 draft: false
+autoAds: true
 summary: 'Discover the GL.iNet Slate 7: a compact Wi‑Fi 7 travel router with dual 2.5GbE ports, touchscreen interface, and OpenWrt for secure, high-speed connectivity anywhere.'
 imageUrl: /static/images/2025/glinet-slate-7-travel-router/cover.webp
 actualUrl: 'auto-generated'

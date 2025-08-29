@@ -34,40 +34,20 @@ const createAutoAdComponents = (pageId = '') => {
     
     return (
       <>
+        <h2 {...props} />
         {shouldShowAd && (
           <InContentAd 
             id={adId} 
             slot={`4906783027`} 
           />
         )}
-        <h2 {...props} />
       </>
     )
   }
 
-  const AutoAdH3 = (props) => {
-    // Get heading text content for deterministic behavior  
-    const headingText = typeof props.children === 'string' ? props.children : 'h3-heading'
-    const hash = simpleHash(headingText)
-    
-    // Show ad if hash is divisible by 3 (33% chance, but deterministic)
-    const shouldShowAd = hash % 3 === 0
-    const adId = `${pageId}-h3-${hash.toString(36).slice(0, 6)}`
-    
-    return (
-      <>
-        {shouldShowAd && (
-          <InContentAd 
-            id={adId} 
-            slot={`5121856708`} 
-          />
-        )}
-        <h3 {...props} />
-      </>
-    )
-  }
+
   
-  return { AutoAdH2, AutoAdH3 }
+  return { AutoAdH2 }
 }
 
 // Create dynamic MDX components based on frontmatter
@@ -86,7 +66,6 @@ const createMDXComponents = (frontMatter = {}) => {
     InContentAd,
     // Conditionally use auto-ad headings if autoAds is enabled
     h2: autoAdComponents ? autoAdComponents.AutoAdH2 : 'h2',
-    h3: autoAdComponents ? autoAdComponents.AutoAdH3 : 'h3',
     wrapper: ({ components, layout, ...rest }) => {
       const Layout = require(`../layouts/${layout}`).default
       return <Layout {...rest} />

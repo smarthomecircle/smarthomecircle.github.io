@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2025-06-19'
 draft: false
+autoAds: true
 summary: 'The Comet KVM (GL-RM1) provides reliable, BIOS-level remote access over IP with HDMI and USB-C support—perfect for IT pros, home labs, and server maintenance, all without subscription fees.'
 imageUrl: /static/images/2025/comet-kvm/cover.webp
 actualUrl: 'auto-generated'
