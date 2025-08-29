@@ -80,7 +80,6 @@ export default function ListLayout({
                     {(index + 1) % 3 === 0 && index < displayPosts.length - 1 && (
                       <div className="md:col-span-2 xl:col-span-3 my-8">
                         <div className="bg-gray-50 dark:bg-gray-800/30 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 max-w-4xl mx-auto">
-                          <div className="text-xs text-gray-500 dark:text-gray-400 mb-2 text-center">Advertisement</div>
                           <AdsSection id={`blog-list-ad-${index}`} slot={`400${index}567890`} />
                         </div>
                       </div>
