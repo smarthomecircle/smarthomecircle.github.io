@@ -6,6 +6,7 @@ tags: [Voice Assistant, Home Assistant, Rhasspy Speech, Raspberry Pi, micro wake
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2025-08-21'
+autoAds: true
 draft: false
 summary: 'Discover how the Rhasspy Speech addon can supercharge your Home Assistant voice assistant on Raspberry Pi. Learn setup, performance tips, and why it might beat Whisper for speed.'
 imageUrl: /static/images/2025/rhasspy-speech/cover.webp
