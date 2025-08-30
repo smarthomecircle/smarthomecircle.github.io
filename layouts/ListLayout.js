@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import React from 'react'
 import Pagination from '@/components/Pagination'
 import ListRecord from '@/components/ListRecord'
@@ -6,6 +6,39 @@ import Image from '@/components/Image'
 import AdColumn from '@/components/AdColumn'
 import Script from 'next/script'
 import AdsSection from '@/components/AdsSection'
+import { getBlogListSlot, getLayoutKey } from '@/components/MDXComponents'
+
+// Wrapper component that only shows container when ad is present
+function ConditionalAdContainer({ id, slot }) {
+  const [hasAd, setHasAd] = useState(false)
+  
+  // Check if the ad slot is valid (not the placeholder)
+  const isValidSlot = slot && !slot.includes('567890')
+  
+  useEffect(() => {
+    // Set a timeout to check if ad loaded
+    const timer = setTimeout(() => {
+      if (isValidSlot) {
+        setHasAd(true)
+      }
+    }, 1000)
+    
+    return () => clearTimeout(timer)
+  }, [isValidSlot])
+  
+  // Don't render container if no valid ad
+  if (!isValidSlot) {
+    return null
+  }
+  
+  return (
+    <div className="md:col-span-2 xl:col-span-3 my-8">
+      <div className="bg-gray-50 dark:bg-gray-800/30 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 max-w-4xl mx-auto">
+        <AdsSection id={id} slot={slot} layoutKey={getLayoutKey(slot)} />
+      </div>
+    </div>
+  )
+}
 export default function ListLayout({
   posts,
   title,
@@ -78,11 +111,10 @@ export default function ListLayout({
                     />
                     {/* Insert ad after every 3rd post */}
                     {(index + 1) % 3 === 0 && index < displayPosts.length - 1 && (
-                      <div className="md:col-span-2 xl:col-span-3 my-8">
-                        <div className="bg-gray-50 dark:bg-gray-800/30 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 max-w-4xl mx-auto">
-                          <AdsSection id={`blog-list-ad-${index}`} slot={`400${index}567890`} />
-                        </div>
-                      </div>
+                      <ConditionalAdContainer 
+                        id={`blog-list-ad-${index}`} 
+                        slot={getBlogListSlot(index)} 
+                      />
                     )}
                   </React.Fragment>
                 ))}

@@ -1,16 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 
-function AdsSection({ id, slot }) {
+function AdsSection({ id, slot, layoutKey }) {
   const adRef = useRef(null)
-  
-  // Map slot IDs to their corresponding layout keys
-  const getLayoutKey = (slotId) => {
-    const layoutKeys = {
-      '5121856708': '-fb+5w+4e-db+86',  // H3 ads
-      '4906783027': '-g2+y-1l-kc+17h'   // H2 ads
-    }
-    return layoutKeys[slotId] || '-fb+5w+4e-db+86' // fallback
-  }
 
   useEffect(() => {
     const initializeAd = () => {
@@ -51,7 +42,7 @@ function AdsSection({ id, slot }) {
         data-ad-client="ca-pub-7490174059724719"
         data-ad-slot={slot}
         data-ad-format="fluid"
-        data-ad-layout-key={getLayoutKey(slot)}
+        data-ad-layout-key={layoutKey}
         id={id}
       />
     </div>
