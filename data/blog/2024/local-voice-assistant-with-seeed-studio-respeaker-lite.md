@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2024-10-31'
 draft: false
+autoAds: true
 summary: 'Step by step guide to create your own local voice assistant with Home Assistant with on-device Wake Word detection'
 imageUrl: /static/images/2024/respeaker-lite/cover.webp
 actualUrl: 'auto-generated'

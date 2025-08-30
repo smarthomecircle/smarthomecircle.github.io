@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-06-29'
 draft: false
+autoAds: true
 summary: 'In this article we will look into how we can run Home Assistant Container with Docker'
 imageUrl: /static/images/2023/run-home-assistant-container/cover.jpg
 actualUrl: 'auto-generated'

@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-12-11'
 draft: false
+autoAds: true
 summary: 'In this article, we will explore how we can share files with Home Assistant OS'
 imageUrl: /static/images/2023/share-files-with-home-assistant/cover.jpg
 actualUrl: 'auto-generated'

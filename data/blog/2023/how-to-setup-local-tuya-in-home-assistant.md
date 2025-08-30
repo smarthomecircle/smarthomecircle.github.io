@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-08-24'
 draft: false
+autoAds: true
 summary: 'In this article, we will be looking at how we control Tuya Devices Locally using Local Tuya.'
 imageUrl: /static/images/2023/local-tuya-setup-in-home-assistant/cover.jpg
 actualUrl: 'auto-generated'

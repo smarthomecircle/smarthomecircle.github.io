@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2024-12-19'
 draft: false
+autoAds: true
 summary: 'Step by step guide to install Raspberry Pi OS on Raspberry Pi Compute Module 5 with eMMC Storage '
 imageUrl: /static/images/2024/os-cm5-emmc/cover.webp
 actualUrl: 'auto-generated'

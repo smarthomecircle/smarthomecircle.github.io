@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-11-13'
 draft: false
+autoAds: true
 summary: '
 This article will look at how to setup an ESP32 as local voice assistant and use Wake word to invoke Home Assistant devices'
 imageUrl: /static/images/2023/esp32-voice-assistant/cover.jpg

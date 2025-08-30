@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2024-01-25'
 draft: false
+autoAds: true
 summary: 'In this article, we will create a NAS (network attached storage) usign a Raspberry Pi 5. This guide is also meant Raspberry Pi 4 and 3B'
 imageUrl: /static/images/2024/raspberry-pi-nas/cover.webp
 actualUrl: 'auto-generated'

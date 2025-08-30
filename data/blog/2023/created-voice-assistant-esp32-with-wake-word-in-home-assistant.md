@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-11-23'
 draft: false
+autoAds: true
 summary: 'In this article, we will look at how I created my voice assistant device to send commands to Home Assistant using Wake Word'
 imageUrl: /static/images/2023/voice-assistant-device-with-wake-word/cover.jpg
 actualUrl: 'auto-generated'

@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-10-12'
 draft: false
+autoAds: true
 summary: 'In this article, we will look at how you can control an LED strip with Home Assistant using WLED.'
 imageUrl: /static/images/2023/wled-with-home-assistant/cover.jpg
 actualUrl: 'auto-generated'

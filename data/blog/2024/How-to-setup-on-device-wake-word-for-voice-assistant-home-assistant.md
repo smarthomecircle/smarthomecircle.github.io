@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2024-04-04'
 draft: false
+autoAds: true
 summary: 'In this article, we will look at how we can set up an ESP32 S3 with on-device Wake Word detection using MicroWake Word for your Voice Assistant to send commands to Home Assistant'
 imageUrl: /static/images/2024/on-device-wake-word/cover.webp
 actualUrl: 'auto-generated'

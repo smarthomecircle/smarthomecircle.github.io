@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-06-22'
 draft: false
+autoAds: true
 summary: 'In this article we will look into how we can install Home Assistant OS and connect it to the Wifi on boot up.'
 imageUrl: /static/images/2023/install-homeassistant-with-wifi-on-raspberry-pi/cover.jpg
 actualUrl: 'auto-generated'

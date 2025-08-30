@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-10-23'
 draft: false
+autoAds: true
 summary: '
 This article will look at how you can set up voice assistance with Home Assistant and invoke Home Assistant devices using a USB microphone.'
 imageUrl: /static/images/2023/voice-home-assistant-usb-microphone/cover.jpg

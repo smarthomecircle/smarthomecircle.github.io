@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2024-02-08'
 draft: false
+autoAds: true
 summary: 'In this article, we will look at how we can take automated backups of Home Assistant on Google Drive.'
 imageUrl: /static/images/2024/home-assistant-backup/cover.webp
 actualUrl: 'auto-generated'

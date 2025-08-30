@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-09-07'
 draft: false
+autoAds: true
 summary: 'In this article, we will be looking at how we configure Frigate to detect object and then connect it to Home Assistant to receive notification.'
 imageUrl: /static/images/2023/frigate-setup-with-home-assistant/cover.jpg
 actualUrl: 'auto-generated'

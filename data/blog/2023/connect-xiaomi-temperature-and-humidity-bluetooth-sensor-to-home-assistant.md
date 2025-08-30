@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-12-18'
 draft: false
+autoAds: true
 summary: 'In this article, we will look at how we can connect the Xiaomi Temperature and Humidity (LYWSD03MMC) Bluetooth Sensor to Home Assistant'
 imageUrl: /static/images/2023/xiaomi-temp-humidity-sensor/cover.jpg
 actualUrl: 'auto-generated'

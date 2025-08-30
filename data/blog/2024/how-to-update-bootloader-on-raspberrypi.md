@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2024-02-17'
 draft: false
+autoAds: true
 summary: 'This article on how you can update the bootloader (EEPROM) on the Raspberry Pi'
 imageUrl: /static/images/2024/update-bootloader/cover.jpg
 actualUrl: 'auto-generated'

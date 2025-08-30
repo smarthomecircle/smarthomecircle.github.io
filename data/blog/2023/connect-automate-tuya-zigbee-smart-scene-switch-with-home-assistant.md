@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-12-25'
 draft: false
+autoAds: true
 summary: 'This article will explore how we can connect and automate the Tuya Zigbee 4 Button Smart Scene Switch with Home Assistant'
 imageUrl: /static/images/2023/tuya-smart-scene-switch/cover.jpg
 actualUrl: 'auto-generated'

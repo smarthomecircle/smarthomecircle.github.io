@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-11-16'
 draft: false
+autoAds: true
 summary: 'In this article we will look at how you can connect an LG Washer with Home Assistant using LG ThinQ integration and configure a dashboard card'
 imageUrl: /static/images/2023/lg-washer-card/cover.jpg
 actualUrl: 'auto-generated'

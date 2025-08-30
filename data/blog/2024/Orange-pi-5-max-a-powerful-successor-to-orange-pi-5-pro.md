@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2024-09-25'
 draft: false
+autoAds: true
 summary: 'In this article we will look at the Orange Pi 5 MAX and compare it with the Raspberry Pi 5 in terms of performance'
 imageUrl: /static/images/2024/orange-pi-5-max/cover.webp
 actualUrl: 'auto-generated'

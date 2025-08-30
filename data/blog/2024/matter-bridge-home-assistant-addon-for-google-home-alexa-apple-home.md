@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2024-10-24'
 draft: false
+autoAds: true
 summary: 'Securely connect Home Assistant devices to Google Home, Apple Home, and Alexa without internet exposure.'
 imageUrl: /static/images/2024/matter-bridge-addon/cover.webp
 actualUrl: 'auto-generated'

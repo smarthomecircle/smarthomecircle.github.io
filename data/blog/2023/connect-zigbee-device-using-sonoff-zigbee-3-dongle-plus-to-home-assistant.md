@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-08-17'
 draft: false
+autoAds: true
 summary: 'In this article, we will be looking at how we can connect Zigbee Devices using Sonoff Zigbee 3.0 USB Dongle Plus to Home Assistant.'
 imageUrl: /static/images/2023/sonoff-zigbee-3-dongle-home-assistant/cover.webp
 actualUrl: 'auto-generated'

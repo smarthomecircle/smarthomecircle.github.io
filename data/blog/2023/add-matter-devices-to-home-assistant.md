@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2023-08-03'
 draft: false
+autoAds: true
 summary: 'In this article, we will be looking at how we can connect Matter-enabled devices to Home Assistant'
 imageUrl: /static/images/2023/add-matter-to-home-assistant/cover.jpg
 actualUrl: 'auto-generated'

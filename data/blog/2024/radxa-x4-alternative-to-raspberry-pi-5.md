@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2024-11-07'
 draft: false
+autoAds: true
 summary: 'Radxa X4, A New Intel-Based Single Board Computer: Features, Performance, and Use Cases'
 imageUrl: /static/images/2024/radxa-x4-sbc/cover.webp
 actualUrl: 'auto-generated'

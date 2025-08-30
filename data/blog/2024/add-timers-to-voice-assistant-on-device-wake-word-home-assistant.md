@@ -7,6 +7,7 @@ photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2024-07-18'
 draft: false
+autoAds: true
 summary: 'In this article, we will look at how I added timers to my Voice Assistant with an ESP32 S3 with on-device Wake Word detection'
 imageUrl: /static/images/2024/add-timer-to-voice-assistant/cover.webp
 actualUrl: 'auto-generated'
