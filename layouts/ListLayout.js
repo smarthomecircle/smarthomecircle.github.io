@@ -33,9 +33,7 @@ function ConditionalAdContainer({ id, slot }) {
   
   return (
     <div className="md:col-span-2 xl:col-span-3 my-8">
-      <div className="bg-gray-50 dark:bg-gray-800/30 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 max-w-4xl mx-auto">
         <AdsSection id={id} slot={slot} layoutKey={getLayoutKey(slot)} />
-      </div>
     </div>
   )
 }
