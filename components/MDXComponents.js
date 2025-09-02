@@ -1,5 +1,5 @@
 /* eslint-disable react/display-name */
-import { useMemo } from 'react'
+import { useMemo, useState, useEffect } from 'react'
 import { getMDXComponent } from 'mdx-bundler/client'
 import Image from './Image'
 import CustomLink from './Link'
@@ -42,6 +42,21 @@ export const getBlogListSlot = (index) => {
   
   // Use modulo to cycle through available slots
   return slotIds[adPosition % slotIds.length]
+}
+
+// Client-side only wrapper to prevent hydration mismatches
+const ClientOnlyAd = ({ children }) => {
+  const [hasMounted, setHasMounted] = useState(false)
+
+  useEffect(() => {
+    setHasMounted(true)
+  }, [])
+
+  if (!hasMounted) {
+    return null
+  }
+
+  return children
 }
 
 // Auto-inject ads after H2 sections complete
@@ -101,11 +116,12 @@ const createAutoAdComponents = (pageId = '') => {
     let previousSectionAd = null
     if (currentH2Section && currentH2Section.shouldShowAd) {
       previousSectionAd = (
-        <InContentAd 
-          key={`ad-${currentH2Section.adId}`}
-          id={currentH2Section.adId} 
-          slot={getH2SectionSlot(currentH2Section.hash)} 
-        />
+        <ClientOnlyAd key={`ad-${currentH2Section.adId}`}>
+          <InContentAd 
+            id={currentH2Section.adId} 
+            slot={getH2SectionSlot(currentH2Section.hash)} 
+          />
+        </ClientOnlyAd>
       )
     }
     
@@ -124,10 +140,12 @@ const createAutoAdComponents = (pageId = '') => {
   const SectionEndAd = () => {
     if (currentH2Section && currentH2Section.shouldShowAd) {
       return (
-        <InContentAd 
-          id={currentH2Section.adId} 
-          slot={getH2SectionSlot(currentH2Section.hash)} 
-        />
+        <ClientOnlyAd>
+          <InContentAd 
+            id={currentH2Section.adId} 
+            slot={getH2SectionSlot(currentH2Section.hash)} 
+          />
+        </ClientOnlyAd>
       )
     }
     return null
@@ -155,7 +173,11 @@ const createMDXComponents = (frontMatter = {}) => {
     BlogNewsletterForm: BlogNewsletterForm,
     AffiliateLinks,
     VideoEmbed,
-    InContentAd,
+    InContentAd: (props) => (
+      <ClientOnlyAd>
+        <InContentAd {...props} />
+      </ClientOnlyAd>
+    ),
     // Conditionally use auto-ad headings if autoAds is enabled
     h2: autoAdComponents ? autoAdComponents.AutoAdH2 : 'h2',
     SectionEndAd: autoAdComponents ? autoAdComponents.SectionEndAd : null,
