@@ -1,5 +1,5 @@
 ---
-title: 'GL.iNet Slate 7 (GL‑BE3600) Review: Your Ultimate Wi‑Fi 7 Travel Router'
+title: 'GL.iNet Comet KVM Pro Review: Wi-Fi 6 KVM-over-IP with 4K HDMI Out Passthrough'
 author: 'Amrut Prabhu'
 categories: ''
 tags: [GliNet, KVM OVER IP, Remote Access, 4k, Audio, hdmi passthrough]
@@ -12,7 +12,7 @@ summary: 'Comet KVM Pro packs Wi-Fi 6 KVM-over-IP, 4K30 HDMI Out, mic/audio, vir
 imageUrl: /static/images/2025/glinet-comet-kvm-pro/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/zRavD75-xwI"
+youtubeLink: "https://www.youtube.com/embed/5C0tfvfKe10"
 suggestedArticles:
   - title: "GL.iNet Slate 7 (GL‑BE3600) Review"
     url: "https://smarthomecircle.com/glinet-slate-7-wifi-7-travel-router"
@@ -68,7 +68,7 @@ I was sent the Comet KVM Pro to test, and after spending time with it, here’s 
     
 -   **USB-A** for accessories (Fingerbot, ATX power board)
     
--   **2.2" touch display** for status and quick toggles
+-   **2.2" touch display** for status and quick settings
     
 
 
@@ -84,7 +84,7 @@ I was sent the Comet KVM Pro to test, and after spending time with it, here’s 
 
 ## Why this KVM stood out to me
 
-I’ve used the earlier Comet KVM (the tiny “just-works” box) and liked it for basic remote control with audio out. The **Pro** model, though, feels like the “no-compromises” version:
+I’ve used the earlier [Comet KVM](https://smarthomecircle.com/comet-kvm-gl-rm1-review-best-kvm-over-ip-2025) (the tiny “just-works” box) and liked it for basic remote control with audio out. The **Pro** model, though, feels like the “no-compromises” version:
 
 -   **Wi-Fi 6 (2.4 & 5 GHz)**: Connect the KVM over wireless and get going—no more hunting for a LAN cable every time. There’s **Gigabit Ethernet** too if you prefer rock-solid wired.
     
@@ -102,13 +102,13 @@ I’ve used the earlier Comet KVM (the tiny “just-works” box) and liked it f
 All of that is just the hardware story. What really ties it together is the software—so let’s peek at the firmware (I’m on v1.6 beta) and see how these features show up in real use.
 
 ----------
-## WebUI Feature Walkthrough ( Frimware version v1.6 beta on my unit)
+## WebUI Feature Walkthrough ( Firmware version v1.6 beta)
 <div class="image-flex">
   <img src="/static/images/2025/glinet-comet-kvm-pro/webui.webp" alt="system settings" />
 </div>
 Once I logged into the web UI (my unit’s on **v1.6 beta**), it felt familiar in a good way—clean layout, quick to find things, and no mystery toggles. The basics are where I always start: under **Video** I can pick a quality level, switch between **WebRTC** or **Direct** transport, and set the remote machine’s resolution. 
 
-**Audio** gets its own attention. You can access the Speaker output and **microphone input** of the remote machine. This make easier for sending audio and receiving audio from the remote machine.
+**Audio** gets its own attention. You can access the speaker output and **microphone input** of the remote machine. This make easier for sending audio and receiving audio from the remote machine.
 
 **Network** is equally straightforward: choose **DHCP** or a **static IP** for Ethernet, and quickly enable/disable **Wi-Fi** or jump to another network using the settings provided.
 
@@ -128,13 +128,13 @@ If you want to access the internals of the KVM, you can also access it via the  
 
 Finally, the **App Center** has **Tailscale** integration, to make remote access simple and secure.
 
-
+----------
 ## Cloud vs self-host: you choose
 
 GL.iNet offers a **cloud service** to bind and manage multiple KVMs over the internet. If you prefer full control, there’s also a [lightweight, open-source remote management platform](https://github.com/gl-inet/glkvm-cloud) you can **self-host**.  
 As someone who values flexibility, I’m happy they didn’t lock this behind a single proprietary service.
 
-
+----------
 ## Size & mounting
 
 <div class="image-flex">
@@ -162,8 +162,8 @@ Estimated shipping is this **December 2025**. If you’re reading this much late
 
 ## Final thoughts
 
-The **Comet KVM Pro** feels like a well-rounded, thought-through KVM-over-IP that cuts real friction: **touch screen**, **wireless setup**, **HDMI passthrough**, **mic-in/audio**, and **virtual media** are the headliners, but the little touches ( Tailscale, self-host option) make it feel polished.
-
+The **Comet KVM Pro** feels like a well-made, thought-through KVM-over-IP that cuts real friction: **touch screen**, **wireless setup**, **HDMI passthrough** and **mic-in/audio** are the headliners. Wi-Fi 6 removes real-life annoyances of hunting for cable conneciton and HDMI Out means no “local vs. remote” issue. Mic + audio can help with WFH calls if that is your use case. The tiny 2.2" touchscreen is surprisingly handy for some quick overview and quick access to some settings. 
+Bottom line: a modern, no-nonsense KVM-over-IP that’s earned a spot in my rack. 
 
 ## Support the Channel
 
