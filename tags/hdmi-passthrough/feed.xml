@@ -1,0 +1,25 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Smart Home Circle</title>
+      <link>https://smarthomecircle.com</link>
+      <description>A comprehensive resource covering Smart Home Tech, detailed Single Board Computers (SBC) reviews, mini PC, Home Automation, HomeLab upgrades, and Home Assistant guides.</description>
+      <language>en-us</language>
+      <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Thu, 04 Sep 2025 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://smarthomecircle.com/tags/hdmi-passthrough/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://smarthomecircle.com/tags/hdmi-passthrough" rel="alternate" type="text/html"/>
+      
+  <item>
+    <guid>https://smarthomecircle.com/glinet-comet-kvm-pro-review-kvm-over-ip-wifi-6</guid>
+    <title>GL.iNet Comet KVM Pro Review: Wi-Fi 6 KVM-over-IP with 4K HDMI Out Passthrough</title>
+    <link>https://smarthomecircle.com/glinet-comet-kvm-pro-review-kvm-over-ip-wifi-6</link>
+    <description>Comet KVM Pro packs Wi-Fi 6 KVM-over-IP, 4K30 HDMI Out, mic/audio, virtual media, Tailscale, plus cloud or self-hosted management for painless remote machine control.</description>
+    <pubDate>Thu, 04 Sep 2025 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>GliNet</category><category>KVM OVER IP</category><category>Remote Access</category><category>4k</category><category>Audio</category><category>hdmi passthrough</category>
+  </item>
+
+    </channel>
+  </rss>
