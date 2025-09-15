@@ -77,8 +77,8 @@ module.exports = {
               marginBottom: '0.75rem',
             },
             
-            // Enhanced link styles
-            a: {
+            // Enhanced link styles - only for article content
+            '.prose a': {
               color: theme('colors.primary.600'),
               textDecoration: 'underline',
               textDecorationColor: theme('colors.primary.300'),
@@ -163,7 +163,7 @@ module.exports = {
               fontFamily: theme('fontFamily.sans').join(', '),
             },
             
-            a: {
+            '.prose a': {
               color: theme('colors.primary.400'),
               textDecorationColor: theme('colors.primary.600'),
               '&:hover': {
