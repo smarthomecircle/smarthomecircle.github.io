@@ -7,10 +7,20 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 31 Jul 2025 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 18 Sep 2025 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/radxa/feed.xml" rel="self" type="application/rss+xml"/>
       <atom:link href="https://smarthomecircle.com/tags/radxa" rel="alternate" type="text/html"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/radxa-cubie-a5e-review-benchmarks-vs-raspberry-pi</guid>
+    <title>Radxa Cubie A5E Hands-On: The Budget NVMe SBC—Full Review &amp; Results</title>
+    <link>https://smarthomecircle.com/radxa-cubie-a5e-review-benchmarks-vs-raspberry-pi</link>
+    <description>Radxa Cubie A5E tested—performance, temps, NVMe speeds, and value vs Raspberry Pi, with real numbers and use-cases</description>
+    <pubDate>Thu, 18 Sep 2025 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Radxa</category><category>SBC</category><category>Allwinner</category><category>Octa Core</category><category>Wifi 6</category><category>NVME</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/I-built-a-diy-10-inch-server-rack</guid>
     <title>I Built A DIY 10 Inch Server Rack</title>
