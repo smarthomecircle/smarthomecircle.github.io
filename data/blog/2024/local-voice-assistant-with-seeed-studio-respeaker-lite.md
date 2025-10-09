@@ -66,7 +66,7 @@ Here’s the ESPHome Yaml Code
 ```yaml
 esphome:
   name: respeaker-lite
-  friendly_name: ReSpeaker-lite
+  friendly_name: ReSpeaker-Lite
   platformio_options:
     board_build.flash_mode: dio
     board_build.mcu: esp32s3
@@ -77,7 +77,7 @@ esphome:
         green: 100%
         blue: 0%
         brightness: 60%
-        effect: fast pulse 
+        effect: "Slow Pulse" 
   on_shutdown:
     then:
       # Prevent loud noise on software restart
@@ -85,6 +85,9 @@ esphome:
 
 esp32:
   board: esp32-s3-devkitc-1
+  cpu_frequency: 240MHz
+  variant: esp32s3
+  flash_size: 8MB
   framework:
     type: esp-idf
     sdkconfig_options:
@@ -92,7 +95,6 @@ esp32:
       CONFIG_ESP32S3_DATA_CACHE_64KB: "y"
       CONFIG_ESP32S3_DATA_CACHE_LINE_64B: "y"
       CONFIG_AUDIO_BOARD_CUSTOM: "y"
-      
 
 psram:
   mode: octal
@@ -144,6 +146,11 @@ wifi:
     password: "ojjt3U1DHzKn"
 
 captive_portal:
+
+button:
+  - platform: restart
+    name: "Restart"
+    id: but_rest
 
 i2c:
   - id: internal_i2c
@@ -251,7 +258,7 @@ media_player:
     internal: False
     volume_increment: 0.05
     volume_min: 0.4
-    volume_max: 0.85
+    volume_max: 1
     announcement_pipeline:
       speaker: announcement_resampling_speaker
       format: FLAC     # FLAC is the least processor intensive codec
@@ -269,7 +276,7 @@ media_player:
           duration: 0.0s
     files:
       - id: timer_audio
-        file: https://github.com/esphome/firmware/raw/main/voice-assistant/sounds/timer_finished.wav
+        file: https://github.com/esphome/home-assistant-voice-pe/raw/refs/heads/dev/sounds/wake_word_triggered.flac
 
 micro_wake_word:
   id: mww
@@ -282,6 +289,12 @@ micro_wake_word:
   stop_after_detection: false
   models:
     - model: hey_jarvis
+      probability_cutoff: 0.5
+      sliding_window_size: 5
+    - model: okay_nabu
+      probability_cutoff: 0.5
+      sliding_window_size: 5
+    - model: hey_mycroft
       probability_cutoff: 0.5
       sliding_window_size: 5
   on_wake_word_detected:
@@ -308,16 +321,46 @@ voice_assistant:
   noise_suppression_level: 0
   auto_gain: 0 dbfs
   volume_multiplier: 1
-  on_stt_end:
-       then: 
-         - light.turn_off: led
-         
+  on_listening:
+    - light.turn_on:
+        id: led           
+        red: 80%
+        green: 0%
+        blue: 80%
+        brightness: 60%
+        effect: fast pulse 
+  on_stt_vad_start: 
+    - light.turn_on:
+        id: led           
+        red: 0%
+        green: 80%
+        blue: 80%
+        brightness: 60%
+        effect: Slow pulse 
+      
+  on_stt_vad_end: #thinking phase
+    - light.turn_on:
+        id: led           
+        red: 80%
+        green: 0%
+        blue: 80%
+        brightness: 60%
+        effect: Slow Pulse 
+
   on_error:
           - micro_wake_word.start:  
+  on_tts_start:
+    - light.turn_on:
+        id: led           
+        red: 0%
+        green: 0%
+        blue: 80%
+        brightness: 60%
+        effect: Slow Pulse 
+
   on_end:
         then:
-          - light.turn_off: led
-          
+        
           - wait_until:
               not:
                 voice_assistant.is_running:
@@ -356,11 +399,48 @@ switch:
     internal: False
     name: "Timer Ringing"
     restore_mode: ALWAYS_OFF
-    
-button:
-  - platform: restart
-    name: "Restart"
-    id: but_rest
+
+  - platform: template
+    id: mute
+    name: Mute
+    optimistic: true
+    on_turn_on: 
+      - micro_wake_word.stop:
+      - voice_assistant.stop:
+      - light.turn_on:
+          id: led           
+          red: 100%
+          green: 0%
+          blue: 0%
+          brightness: 60%
+          effect: fast pulse 
+          
+      - delay: 2s
+      # - light.turn_off:
+      #     id: led_ww
+      - light.turn_off:
+          id: led
+
+      - light.turn_on:
+          id: led
+          red: 100%
+          green: 0%
+          blue: 0%
+          brightness: 30%
+
+    on_turn_off:
+      - micro_wake_word.start:
+      - light.turn_on:
+          id: led
+          red: 0%
+          green: 100%
+          blue: 0%
+          brightness: 60%
+          effect: fast pulse 
+      - delay: 2s
+      - light.turn_off:
+          id: led
+
 
 light:
   - platform: esp32_rmt_led_strip
