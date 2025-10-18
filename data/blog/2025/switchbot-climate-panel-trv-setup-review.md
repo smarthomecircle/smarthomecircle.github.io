@@ -12,14 +12,14 @@ summary: 'A hands‑on write‑up of how I installed and lived with the **Switch
 imageUrl: /static/images/2025/switchbot-climate-panel/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/5C0tfvfKe10"
+youtubeLink: "https://www.youtube.com/embed/S2J1UVsbNg8"
 suggestedArticles:
   - title: "GL.iNet Slate 7 (GL‑BE3600) Review"
     url: "https://smarthomecircle.com/glinet-slate-7-wifi-7-travel-router"
-  - title: "I Built A DIY 10 Inch Server Rack"
-    url: "https://smarthomecircle.com/I-built-a-diy-10-inch-server-rack"
-  - title: "Radxa X4: 60$ Powerful Atlernative to Raspberry Pi 5"
-    url: "https://smarthomecircle.com/radxa-x4-alternative-to-raspberry-pi-5"
+  - title: "Rhasspy Speech: Boost Home Assistant Voice Control on Raspberry Pi "
+    url: "https://smarthomecircle.com/rhasspy-speech-faster-than-whisper-home-assistant"
+  - title: "How to Integrate Home Assistant with Google Home, Apple Home, and Alexa Without Exposing it to the Internet"
+    url: "https://smarthomecircle.com/matter-bridge-home-assistant-addon-for-google-home-alexa-apple-home"
 ---
 <TOCInline toc={props.toc} asDisclosure />  
 
@@ -138,7 +138,7 @@ After that, the TRV showed up in **Home Assistant** and **Google Home** and I co
 </div>
 ---
 
-## Daily use: the feel of it
+## Daily use: The feel of it
 
 - **Responsiveness:** Panel‑to‑TRV control is snappy; tapping the panel feels “instant enough” for radiator control.  
 - **Noise:** The TRV’s motor is **effectively silent** in my space; no audible buzz when it adjusts.  
