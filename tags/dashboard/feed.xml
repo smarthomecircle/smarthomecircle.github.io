@@ -1,0 +1,25 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Smart Home Circle</title>
+      <link>https://smarthomecircle.com</link>
+      <description>A comprehensive resource covering Smart Home Tech, detailed Single Board Computers (SBC) reviews, mini PC, Home Automation, HomeLab upgrades, and Home Assistant guides.</description>
+      <language>en-us</language>
+      <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Thu, 23 Oct 2025 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://smarthomecircle.com/tags/dashboard/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://smarthomecircle.com/tags/dashboard" rel="alternate" type="text/html"/>
+      
+  <item>
+    <guid>https://smarthomecircle.com/seeed-studio-xiao-epaper-dashboard-home-assistant</guid>
+    <title>A Local E-Paper Dashboard for Home Assistant (Seeed Studio Xiao 7.5 inch ePaper Display + ESPHome)</title>
+    <link>https://smarthomecircle.com/seeed-studio-xiao-epaper-dashboard-home-assistant</link>
+    <description>Hands-on guide to a monochrome e-paper Home Assistant dashboard with ESP32-C3 &amp; ESPHome—local, no cloud, icon fonts, 3D-printed case, and clear code.</description>
+    <pubDate>Thu, 23 Oct 2025 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Dashboard</category><category>epaper</category><category>ESPHome</category><category>Home Assistant</category>
+  </item>
+
+    </channel>
+  </rss>
