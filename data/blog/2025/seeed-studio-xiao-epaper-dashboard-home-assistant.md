@@ -2,7 +2,7 @@
 title: 'A Local E-Paper Dashboard for Home Assistant (Seeed Studio Xiao 7.5 inch ePaper Display + ESPHome)'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [Dashboard, epaper, ESPHome, Home Assistant]
+tags: [Dashboard, epaper, ESPHome, Home Assistant, AI]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2025-10-23'
@@ -12,7 +12,7 @@ summary: 'Hands-on guide to a monochrome e-paper Home Assistant dashboard with E
 imageUrl: /static/images/2025/seeed-xiao-panel/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/S2J1UVsbNg8"
+youtubeLink: "https://www.youtube.com/embed/siESTMCwt8Q"
 suggestedArticles:
   - title: "GL.iNet Slate 7 (GL‑BE3600) Review"
     url: "https://smarthomecircle.com/glinet-slate-7-wifi-7-travel-router"
