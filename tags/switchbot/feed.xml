@@ -1,0 +1,25 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Smart Home Circle</title>
+      <link>https://smarthomecircle.com</link>
+      <description>A comprehensive resource covering Smart Home Tech, detailed Single Board Computers (SBC) reviews, mini PC, Home Automation, HomeLab upgrades, and Home Assistant guides.</description>
+      <language>en-us</language>
+      <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Fri, 24 Oct 2025 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://smarthomecircle.com/tags/switchbot/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://smarthomecircle.com/tags/switchbot" rel="alternate" type="text/html"/>
+      
+  <item>
+    <guid>https://smarthomecircle.com/raspberry-pi-cm5-small-io-board-hands-on</guid>
+    <title>A palm-size IO board for Raspberry Pi CM5 — my hands-on review and tests | CM5 Minima From Seeed Studio</title>
+    <link>https://smarthomecircle.com/raspberry-pi-cm5-small-io-board-hands-on</link>
+    <description>Hands-on with a palm-size Raspberry Pi Compute Module 5 IO board: M.2 NVMe, Gigabit Ethernet, USB-C PD, 4K60 HDMI. Setup tips, eMMC flashing, thermals, and real-world speed tests.</description>
+    <pubDate>Fri, 24 Oct 2025 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Switchbot</category><category>TRV</category><category>Climate</category><category>Matter</category><category>Home Assistant</category>
+  </item>
+
+    </channel>
+  </rss>
