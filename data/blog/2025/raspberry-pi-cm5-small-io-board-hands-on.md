@@ -2,7 +2,7 @@
 title: 'A palm-size IO board for Raspberry Pi CM5 — my hands-on review and tests | CM5 Minima From Seeed Studio'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [Switchbot, TRV, Climate, Matter, Home Assistant]
+tags: [Raspberry PI, NVME, CM5, Compute module, compute module 5]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2025-10-24'
