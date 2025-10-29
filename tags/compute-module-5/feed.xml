@@ -7,10 +7,20 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Tue, 03 Jun 2025 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Fri, 24 Oct 2025 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/compute-module-5/feed.xml" rel="self" type="application/rss+xml"/>
       <atom:link href="https://smarthomecircle.com/tags/compute-module-5" rel="alternate" type="text/html"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/raspberry-pi-cm5-small-io-board-hands-on</guid>
+    <title>A palm-size IO board for Raspberry Pi CM5 — my hands-on review and tests | CM5 Minima From Seeed Studio</title>
+    <link>https://smarthomecircle.com/raspberry-pi-cm5-small-io-board-hands-on</link>
+    <description>Hands-on with a palm-size Raspberry Pi Compute Module 5 IO board: M.2 NVMe, Gigabit Ethernet, USB-C PD, 4K60 HDMI. Setup tips, eMMC flashing, thermals, and real-world speed tests.</description>
+    <pubDate>Fri, 24 Oct 2025 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Raspberry PI</category><category>NVME</category><category>CM5</category><category>Compute module</category><category>compute module 5</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/create-diy-nas-with-raspberry-pi-compute-module-5-raid-5</guid>
     <title>Create a Network-Attached Storage (NAS) with Raspberry Pi Compute Module 5 and NVMe to SATA Adapter</title>
