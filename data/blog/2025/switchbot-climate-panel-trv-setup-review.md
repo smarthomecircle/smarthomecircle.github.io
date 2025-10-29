@@ -8,7 +8,7 @@ applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2025-10-20'
 draft: false
 autoAds: true
-summary: 'A hands‑on write‑up of how I installed and lived with the **SwitchBot Home Climate Panel** and the **Thermostat Radiator Valve (TRV)**—what the process looked like, which settings actually helped, and a few “wish‑I‑knew” tips for smoother day‑to‑day use'
+summary: 'A hands‑on write‑up of how I installed and lived with the SwitchBot Home Climate Panel and the Thermostat Radiator Valve (TRV)—what the process looked like, which settings actually helped, and a few “wish‑I‑knew” tips for smoother day‑to‑day use'
 imageUrl: /static/images/2025/switchbot-climate-panel/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
