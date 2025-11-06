@@ -9,10 +9,10 @@ date: '2025-11-06'
 draft: false
 autoAds: true
 summary: 'Make a beautiful, low-power status board on a 7.3″ color ePaper. My ESP32-S3 tips, SenseCraft presets, and ESPHome LVGL config notes inside'
-imageUrl: /static/images/2025/seeed-xiao-panel/cover.webp
+imageUrl: /static/images/2025/seeed-reterminal-e1002/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/siESTMCwt8Q"
+youtubeLink: "https://www.youtube.com/embed/Nb-NRA7cv1M"
 suggestedArticles:
   - title: "Seeed Studio Xiao 7.5 inch ePaper Display + ESPHome"
     url: "https://smarthomecircle.com/seeed-studio-xiao-epaper-dashboard-home-assistant"
