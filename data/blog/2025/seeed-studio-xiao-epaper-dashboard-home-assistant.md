@@ -33,7 +33,7 @@ I’ve been tinkering with a [**XIAO 7.5" ePaper Panel display from Seeed Studio
 <AffiliateLinks 
   title="XIAO 7.5 inch ePaper Panel Display" 
   links={[
-    { store: "Seeed Studio", url: "" },
+    { store: "Seeed Studio", url: "https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html?sensecap_affiliate=zkW5xlz&referring_service=link" },
   ]}
 />
 ---
