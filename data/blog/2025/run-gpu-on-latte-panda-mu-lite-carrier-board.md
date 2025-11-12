@@ -2,7 +2,7 @@
 title: 'Running an AMD Instinct MI50 on a LattePanda Mu Lite (OCuLink eGPU) for Local LLMs'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [GPU, latte panda, SBC, AI]
+tags: [GPU, latte panda, SBC, AI, Vulkan, ollama, llama cpp]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2025-11-13'
@@ -53,9 +53,9 @@ This is my living log: everything I did, what worked, and the exact commands I u
 </div>
 
 
-- **eGPU:** 
+- **eGPU + Oculink cable:** 
 <div class="image-flex">
-  <img src="/static/images/2025/gpu-experiment/egpu.webp" alt="vulkan eval" />
+  <img src="/static/images/2025/gpu-experiment/egpu.jpg" alt="vulkan eval" />
 </div>
 
 <AffiliateLinks 
