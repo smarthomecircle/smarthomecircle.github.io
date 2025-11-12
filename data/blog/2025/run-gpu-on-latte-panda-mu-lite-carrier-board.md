@@ -12,7 +12,7 @@ summary: 'Step-by-step AMD Instinct MI50 eGPU on LattePanda Mu Lite carrier boar
 imageUrl: /static/images/2025/gpu-experiment/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: ""
+youtubeLink: "https://www.youtube.com/embed/iXYsRK_gqTA"
 suggestedArticles:
   - title: "A palm-size IO board for Raspberry Pi CM5"
     url: "https://smarthomecircle.com/raspberry-pi-cm5-small-io-board-hands-on"
