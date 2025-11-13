@@ -7,10 +7,20 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 06 Nov 2025 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 13 Nov 2025 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/ai/feed.xml" rel="self" type="application/rss+xml"/>
       <atom:link href="https://smarthomecircle.com/tags/ai" rel="alternate" type="text/html"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/run-gpu-on-latte-panda-mu-lite-carrier-board</guid>
+    <title>Running an AMD Instinct MI50 on a LattePanda Mu Lite (OCuLink eGPU) for Local LLMs</title>
+    <link>https://smarthomecircle.com/run-gpu-on-latte-panda-mu-lite-carrier-board</link>
+    <description>Step-by-step AMD Instinct MI50 eGPU on LattePanda Mu Lite carrier board: Ubuntu 24.04 HWE, ROCm, Vulkan, Ollama &amp; llama.cpp on GPU, PCIe/OCuLink</description>
+    <pubDate>Thu, 13 Nov 2025 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>GPU</category><category>latte panda</category><category>SBC</category><category>AI</category><category>Vulkan</category><category>ollama</category><category>llama cpp</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/seeed-studio-reterminal-e1002-color-epaper-7-3-review</guid>
     <title>My Hands-On with a 7.3″ Color ePaper Display (Seeed Studio reTerminal E1002)</title>

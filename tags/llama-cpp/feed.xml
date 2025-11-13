@@ -1,0 +1,25 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Smart Home Circle</title>
+      <link>https://smarthomecircle.com</link>
+      <description>A comprehensive resource covering Smart Home Tech, detailed Single Board Computers (SBC) reviews, mini PC, Home Automation, HomeLab upgrades, and Home Assistant guides.</description>
+      <language>en-us</language>
+      <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Thu, 13 Nov 2025 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://smarthomecircle.com/tags/llama-cpp/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://smarthomecircle.com/tags/llama-cpp" rel="alternate" type="text/html"/>
+      
+  <item>
+    <guid>https://smarthomecircle.com/run-gpu-on-latte-panda-mu-lite-carrier-board</guid>
+    <title>Running an AMD Instinct MI50 on a LattePanda Mu Lite (OCuLink eGPU) for Local LLMs</title>
+    <link>https://smarthomecircle.com/run-gpu-on-latte-panda-mu-lite-carrier-board</link>
+    <description>Step-by-step AMD Instinct MI50 eGPU on LattePanda Mu Lite carrier board: Ubuntu 24.04 HWE, ROCm, Vulkan, Ollama &amp; llama.cpp on GPU, PCIe/OCuLink</description>
+    <pubDate>Thu, 13 Nov 2025 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>GPU</category><category>latte panda</category><category>SBC</category><category>AI</category><category>Vulkan</category><category>ollama</category><category>llama cpp</category>
+  </item>
+
+    </channel>
+  </rss>
