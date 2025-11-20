@@ -28,7 +28,16 @@ suggestedArticles:
 <p align="center">
   <img src="/static/images/2025/radxa-cubie-a7a/front.webp" alt="front" />
 </p>
-    
+
+<AffiliateLinks 
+  title="Buy Radxa Cubie A7A" 
+  links={[
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_c434m0ff" },
+    { store: "Amazon US", url: "https://amzn.to/47Q9yHd" },
+    { store: "Amazon EU", url: "https://amzn.to/4pjxHeU" }
+  ]}
+/>
+
 I’ve been spending time with the Radxa **Cubie A7A**, and I wanted to share how it behaved for me in real use—thermals, CPU and memory performance, storage, networking, desktop, and a bit of AI/voice. 
 
 
@@ -195,3 +204,11 @@ The Cubie A7A already **beats the Raspberry Pi 4** across most of aspects but st
 
 That said, engineering responses have been **quick**, and I’m expecting iterative improvements. If the RAM profile and NVMe support mature—and with the I/O this board already has—it could **outpace a Raspberry Pi 5 in value** at similar pricing, especially if you want **more RAM**.
 
+<AffiliateLinks 
+  title="Buy Radxa Cubie A7A" 
+  links={[
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_c434m0ff" },
+    { store: "Amazon US", url: "https://amzn.to/47Q9yHd" },
+    { store: "Amazon EU", url: "https://amzn.to/4pjxHeU" }
+  ]}
+/>
