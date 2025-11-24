@@ -1,5 +1,5 @@
 ---
-title: 'Raspberry Pi Compute Module 5'
+title: 'Radxa Cubie A5E'
 author: 'Amrut Prabhu'
 categories: ''
 tags: [Raspberry Pi, CM5, Compute Module, Compute Module 5, SBC, Linux]
@@ -14,17 +14,53 @@ customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/4m7v72YCzm4"
 slug: "raspberry-pi-5-review"
 specs:
-  Processor: >
-    Broadcom BCM2712
-    Quad-core Cortex-A76 (64-bit) @ 2.4GHz
-  RAM: 4GB, 8GB LPDDR4X
-  USB Ports: |
-    2 × USB 3.0  
-    2 × USB 2.0
+  SoC: >
+    Allwinner A527
+  CPU: |
+    4x Cortex®-A55 up to 1.8GHz
+    4x Cortex®‑A55 up to 1.4GHz
+  GPU:
+    model: Arm® Mali-G57 MC1
+    support: |
+      Vulkan® 1.1/1.2/1.3
+      OpenGL® ES 3.2/2.0/1.1
+      OpenCL® 2.2
+  NPU: Up to 2TOPs
+  RAM:
+    Type: LPDDR4
+    Speed: 2400MT/s
+    Bus: 32bit
   Video Output: |
-    2 × micro HDMI (up to 4Kp60)
-  Video Output 2: |
-    2 × micro HDMI (up to 4Kp60)  
+    - 1x HDMI 2.0 up to 4Kp60 
+    - 1x MIPI DSI 4-lane up to 1080p60 
+  Audio: No
+    
+  NVMe:
+    Onboard: Yes
+    Number Of Connectors: 1
+    Type: M.2 M-key 
+    Connectivity: PCIe 3.0 2-lane
+    Size: 2230
+  USB Ports: |
+    1 x USB Type-C (Power & USB 2.0 OTG)  
+    1 × USB 2.0
+  Network:
+    2 x 1 Gigabit Ethernet Port
+  PoE Support: No
+  Wireless Connectivity: |
+    1 x WiFi 6
+    1 x Bluetooth 5.2
+  Power Supply: |
+    1 x USB Type-C Port 5V/4A
+  GPIO: Yes
+  Dimension: |
+    Width: 56 mm
+    Height: 65 mm
+  Operation System:
+      Radxa OS:
+        url: https://docs.radxa.com/en/rock5/rock5t/getting-started/download
+      Ubuntu:
+        url: https://ubuntu.com/download/raspberry-pi
 affiliateLinks:
   - label: "Amazon"
     url: "https://amzn.to/raspberrypi5"

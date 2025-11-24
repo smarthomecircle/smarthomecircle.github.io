@@ -7,6 +7,7 @@ const headerNavLinks = [
     title: 'Devices',
     children: [
       { href: '/sbc', title: 'Single Board Computer' },
+      { href: '/sbc-compare', title: 'Compare SBCs' },
       // { href: '/', title: 'Smart Devices' },
       // { href: '/', title: 'Arduino' },
     ],
