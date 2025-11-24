@@ -6,7 +6,12 @@ import { getFileBySlug } from '@/lib/mdx'
 import SBCListLayout from '@/layouts/SBCListLayout'
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('sbc')
+  // Get all blog posts
+  const allBlogPosts = await getAllFilesFrontMatter('blog')
+  
+  // Filter only posts with includeAsSBC object present
+  const posts = allBlogPosts.filter(post => post.includeAsSBC && typeof post.includeAsSBC === 'object')
+  
   const authorList = ['default']
   const authorPromise = authorList.map(async (author) => {
     const authorResults = await getFileBySlug('authors', [author])

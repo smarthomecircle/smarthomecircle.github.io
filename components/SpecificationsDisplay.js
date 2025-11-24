@@ -134,21 +134,6 @@ export default function SpecificationsDisplay({
     return null
   }
 
-  // Use title for comparison link, fallback to slug if title not available
-  const compareParam = title ? titleToUrlFormat(title) : slug
-
-  // Handle both old format (array) and new format (object with title and links)
-  let affiliateLinksArray = []
-  if (Array.isArray(affiliateLinks)) {
-    // Old format: array of links
-    affiliateLinksArray = affiliateLinks
-  } else if (affiliateLinks && typeof affiliateLinks === 'object' && affiliateLinks.links) {
-    // New format: object with title and links
-    affiliateLinksArray = affiliateLinks.links || []
-  }
-
-  const hasAffiliateLinks = affiliateLinksArray.length > 0
-
   return (
     <div className="not-prose my-6 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-200 dark:border-gray-700">
       <style jsx>{`
@@ -169,7 +154,7 @@ export default function SpecificationsDisplay({
         }
       `}</style>
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
-        {(title || price || hasAffiliateLinks) && (
+        {(title || price || affiliateLinks.length > 0) && (
           <div className="border-l-4 border-primary-500 bg-primary-50 dark:bg-primary-900/20 pl-4 pr-3 py-1 rounded-r-lg prose-links">
             <div className="flex flex-col sm:flex-row sm:items-center gap-3">
               <div className="flex items-center gap-2">
@@ -194,9 +179,9 @@ export default function SpecificationsDisplay({
                   </div>
                 )}
               </div>
-              {hasAffiliateLinks && (
+              {affiliateLinks.length > 0 && (
                 <div className="flex flex-wrap gap-1.5">
-                  {affiliateLinksArray.map((link, idx) => (
+                  {affiliateLinks.map((link, idx) => (
                     <a
                       key={idx}
                       href={link.url}
@@ -225,9 +210,9 @@ export default function SpecificationsDisplay({
             </div>
           </div>
         )}
-        {comparable && compareParam && (
+        {slug && (
           <Link
-            href={`/sbc-compare?sbc1=${compareParam}`}
+            href={`/sbc-compare?sbc1=${slug}`}
             className="inline-flex items-center px-3 py-1.5 text-sm font-medium bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-all duration-200 hover:scale-105 shadow-sm"
           >
             <svg className="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
