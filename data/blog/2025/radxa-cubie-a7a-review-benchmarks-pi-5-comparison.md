@@ -20,6 +20,67 @@ suggestedArticles:
     url: "https://smarthomecircle.com/radxa-cubie-a5e-review-benchmarks-vs-raspberry-pi"
   - title: "I Built A DIY 10 Inch Server Rack"
     url: "https://smarthomecircle.com/I-built-a-diy-10-inch-server-rack"
+affiliateLinks:
+  - label: "AliExpress"
+    url: "https://s.click.aliexpress.com/e/_oka7U73"
+  - label: "Arace"
+    url: "https://arace.tech/products/radxa-cubie-a5e"
+
+includeAsSBC:
+  title: "Radxa Cubie A7A"
+  price: "39$"
+  specifications:
+    SoC: Allwinner A733
+    CPU: |
+      2× Cortex-A76 up to 2.0GHz
+      4× Cortex-A55 up to 1.8GHz
+    GPU:
+      model: Imagination BXM-4-64 MC1
+      support: |
+        OpenGL ES 3.2
+        Vulkan 1.3
+        OpenCL 3.0
+    NPU: Up to 3TOPs
+    RAM:
+      Size: 4GB
+      Type: LPDDR5
+      Speed: 1800MT/s
+      Bus: 32bit
+    Storage: |
+      MicroSD
+      NVMe (via PCIe NVME HAT)
+      eMMC/UFS
+      
+    Video Output: |
+      1 x HDMI 2.0 up to 4K@60fps
+      1 x 4-lane MIPI-DSI
+    NVMe:
+      Onboard: No (via NVMe PCIe Connector)
+      # Number Of Connectors: 1
+      # Type: M.2 M-key 
+      Connectivity: PCIe Gen 3 x1
+      Size: 2230 / 2280
+    USB: |
+      1 × USB Type-C (Power & USB 2.0 OTG)
+      1 × USB 3.1 gen2
+      3 x USB 2.0
+    Network:
+      Ethernet: 1 × 1 Gigabit Ethernet
+      WiFi: WiFi 6
+      Bluetooth: Bluetooth 5.4
+    PoE: Yes (PoE HAT required)
+    Power: 5V/4A or 5V/3A via USB-C
+    GPIO: Yes
+    Dimensions: |
+      Width: 56 mm
+      Length: 85 mm
+    Operating System:
+      Debian:
+        url: https://docs.radxa.com/en/cubie/a5e/download
+      Android: Android 13
+      Armbian:
+        url: https://www.armbian.com/radxa-cubie-a5e/
+
 ---
 
 <TOCInline toc={props.toc} asDisclosure /> 
