@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Link from '@/components/Link'
 import Image from '@/components/Image'
 
@@ -54,6 +55,9 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
     summary,
   } = frontMatter
 
+  const [isExpanded, setIsExpanded] = useState(false)
+  const maxSpecsToShow = 4
+
   // Mobile Card Layout
   if (layout === 'card') {
     return (
@@ -88,13 +92,13 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
             </p>
           )}
 
-          {/* Key Specifications - Top 4 */}
+          {/* Key Specifications */}
           {specs && (
             <div className="space-y-2">
               <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Key Specs:</h3>
               <div className="grid grid-cols-1 gap-1.5 text-xs">
                 {Object.entries(specs)
-                  .slice(0, 4)
+                  .slice(0, isExpanded ? Object.entries(specs).length : maxSpecsToShow)
                   .map(([key, value]) => {
                     // Check if value is an object (nested spec)
                     if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
@@ -130,6 +134,33 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
                     )
                   })}
               </div>
+              
+              {/* Expand/Collapse Button */}
+              {Object.entries(specs).length > maxSpecsToShow && (
+                <button
+                  onClick={(e) => {
+                    e.preventDefault()
+                    setIsExpanded(!isExpanded)
+                  }}
+                  className="w-full mt-3 py-2 text-sm font-medium text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors flex items-center justify-center gap-1"
+                >
+                  {isExpanded ? (
+                    <>
+                      Show Less
+                      <svg className="w-4 h-4 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </>
+                  ) : (
+                    <>
+                      Show More ({Object.entries(specs).length - maxSpecsToShow} more)
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </>
+                  )}
+                </button>
+              )}
             </div>
           )}
 
@@ -273,7 +304,9 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
             <div className="space-y-3">
               <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">Specifications:</h3>
               <div className="grid grid-cols-1 xl:grid-cols-2 gap-x-6 gap-y-2 text-sm">
-                {Object.entries(specs).map(([key, value]) => {
+                {Object.entries(specs)
+                  .slice(0, isExpanded ? Object.entries(specs).length : maxSpecsToShow)
+                  .map(([key, value]) => {
                   // Check if value is an object (nested spec)
                   if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
                     return (
@@ -308,6 +341,33 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
                   )
                 })}
               </div>
+              
+              {/* Expand/Collapse Button */}
+              {Object.entries(specs).length > maxSpecsToShow && (
+                <button
+                  onClick={(e) => {
+                    e.preventDefault()
+                    setIsExpanded(!isExpanded)
+                  }}
+                  className="w-full mt-3 py-2 text-sm font-medium text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors flex items-center justify-center gap-1"
+                >
+                  {isExpanded ? (
+                    <>
+                      Show Less
+                      <svg className="w-4 h-4 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </>
+                  ) : (
+                    <>
+                      Show More ({Object.entries(specs).length - maxSpecsToShow} more)
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </>
+                  )}
+                </button>
+              )}
             </div>
           )}
         </div>
