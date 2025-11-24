@@ -14,14 +14,65 @@ customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/5J-es6-DBU4"
 slug: "raspberry-pi-5-review"
 specs:
-  Processor: "Broadcom BCM2712, Quad-core Cortex-A76 @ 2.4GHz"
-  RAM: "4GB / 8GB LPDDR4X"
-  Video Output: "Dual micro-HDMI (4K@60Hz)"
-  Storage: "microSD + PCIe x1 via FFC connector"
-  Ethernet: "2x 2.5 Gigabit Ethernet ports, one with PoE support(Optional Build-in PoE)"
-  Wireless: |
-    - Onboard Wi-Fi 6 & BT 5.2 with Dual Antenna Connector(Consume-Grade)
-    - Onboard Wi-Fi 6E & BT 5.3 with Dual Antenna Connector(Industrial-Grade)
+  SoC: >
+    Rockchip RK3588
+  CPU: |
+    4 x Cortex®-A76 up to 2.4GHz
+    4 x Cortex®-A55 up to 1.8GHz
+  GPU:
+    model: Arm® Mali™ G610MC4
+    support: |
+      Vulkan® 1.1, 1.2
+      OpenGL® ES 3.2/2.0/1.1
+      OpenCL® 1.1, 1.2 and 2.2
+  NPU: Up to 6TOPs
+  RAM:
+    Type: LPDDR5
+    Speed: 2400MT/s
+    Bus: 64bit
+  Video Output: |
+    - 1 x HDMI 2.1 up to 8Kp60 
+    - 1 x HDMI 2.1 up to 4Kp60 
+    - 1 x USB Type C port DP up to 4Kp60
+    - 1 x 4-lane MIPI DSI up to 1080p60
+  Audio:
+    - 1 x 3.5mm Headphone Jack with Microphone Input
+  MicroSD Card Slot: Yes
+  eMMC Support: Yes
+  NVMe:
+    Onboard: Yes
+    Number Of Connectors: 2
+    Type: M.2 M-key 
+    Connectivity: PCIe 3.0 2-lane
+    Size: 2280
+  USB Ports: |
+    1 x USB Type-C (USB 3.1 Gen1 OTG, DP up to 4Kp60)  
+    2 x USB 3.1 Gen1 
+    2 × USB 2.0
+  Network:
+    2 x 2.5 Gigabit Ethernet ports
+  PoE Support: Yes (HAT Required)
+  Wireless Connectivity: |
+    1 x WiFi 6
+    1 x Bluetooth 5.2
+  Power Supply: |
+    1 x 5525 DC Jack Port 12V Input
+  GPIO: Yes
+
+  Dimension: |
+    Width: 82 mm
+    Lenght: 110 mm 
+  Operation System:
+    Radxa OS:
+      url: https://docs.radxa.com/en/rock5/rock5t/getting-started/download
+    Ubuntu:
+      url: https://ubuntu.com/download/raspberry-pi
+  Extra Connectors: |
+    1 x M.2 B Key Connector
+    1 x SIM Card Socket
+    1 x RTC battery connector
+    1 x PWM fan connector
+
 
 affiliateLinks:
   - label: "Amazon"
