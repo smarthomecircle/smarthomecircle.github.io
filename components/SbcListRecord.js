@@ -1,6 +1,49 @@
 import Link from '@/components/Link'
 import Image from '@/components/Image'
 
+// Helper function to render value (handles URLs)
+const renderValue = (value, label = null) => {
+  // Check if value is an object with a url property
+  if (typeof value === 'object' && value !== null && value.url) {
+    return (
+      <span className="inline-flex items-center gap-2">
+        <span className="text-gray-600 dark:text-gray-400 whitespace-pre-line">{label || 'Link'}</span>
+        <a 
+          href={value.url} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
+          title={value.url}
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </a>
+      </span>
+    )
+  }
+  
+  const stringValue = String(value).trim()
+  // Check if value is a direct URL
+  const urlPattern = /^https?:\/\/.+/i
+  if (urlPattern.test(stringValue)) {
+    return (
+      <a 
+        href={stringValue} 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 hover:underline inline-flex items-center gap-1"
+      >
+        link
+        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+      </a>
+    )
+  }
+  return <span className="whitespace-pre-line">{stringValue}</span>
+}
+
 export default function SbcListRecord({ frontMatter, layout = 'card' }) {
   const {
     slug,
@@ -16,14 +59,14 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
     return (
       <article className="group relative bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600">
         {/* Image Container with Hover Effects - Clickable */}
-        <Link href={`/sbc/${slug}`} className="relative h-48 overflow-hidden bg-gray-100 dark:bg-gray-800 block">
+        <Link href={`/sbc/${slug}`} className="relative w-full aspect-[16/9] overflow-hidden bg-gray-100 dark:bg-gray-800 block">
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
           <Image
             alt={title}
             src={imageUrl}
             className="object-cover object-center w-full h-full transform group-hover:scale-105 transition-transform duration-700 ease-out"
             width={400}
-            height={192}
+            height={225}
           />
         </Link>
 
@@ -52,12 +95,40 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
               <div className="grid grid-cols-1 gap-1.5 text-xs">
                 {Object.entries(specs)
                   .slice(0, 4)
-                  .map(([key, value]) => (
-                    <div key={key} className="flex justify-between items-center py-1 px-2 bg-gray-50 dark:bg-gray-700/50 rounded">
-                      <span className="font-medium text-gray-700 dark:text-gray-300">{key}:</span>
-                      <span className="text-gray-600 dark:text-gray-400 text-right">{String(value)}</span>
-                    </div>
-                  ))}
+                  .map(([key, value]) => {
+                    // Check if value is an object (nested spec)
+                    if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
+                      return (
+                        <div key={key} className="py-1 px-2 bg-gray-50 dark:bg-gray-700/50 rounded">
+                          <span className="font-bold text-gray-700 dark:text-gray-300">{key}:</span>
+                          <div className="ml-3 mt-1 space-y-1">
+                            {Object.entries(value).map(([subKey, subValue]) => {
+                              // Check if subValue has a url property (nested link)
+                              const hasUrl = typeof subValue === 'object' && subValue !== null && subValue.url
+                              return (
+                                <div key={subKey} className="flex items-start">
+                                  {hasUrl ? (
+                                    <span className="text-gray-600 dark:text-gray-400">{renderValue(subValue, subKey)}</span>
+                                  ) : (
+                                    <>
+                                      <span className="font-bold text-gray-600 dark:text-gray-400 mr-2">{subKey}:</span>
+                                      <span className="text-gray-600 dark:text-gray-400">{renderValue(subValue)}</span>
+                                    </>
+                                  )}
+                                </div>
+                              )
+                            })}
+                          </div>
+                        </div>
+                      )
+                    }
+                    return (
+                      <div key={key} className="flex items-start py-1 px-2 bg-gray-50 dark:bg-gray-700/50 rounded">
+                        <span className="font-bold text-gray-700 dark:text-gray-300 mr-2">{key}:</span>
+                        <span className="text-gray-600 dark:text-gray-400">{renderValue(value)}</span>
+                      </div>
+                    )
+                  })}
               </div>
             </div>
           )}
@@ -122,14 +193,14 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
         {/* Left column: Image + Affiliate Links */}
         <div className="col-span-4 flex flex-col items-center space-y-4">
           {/* Image - Clickable */}
-          <Link href={`/sbc/${slug}`} className="relative overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800 w-full aspect-[4/3] block">
+          <Link href={`/sbc/${slug}`} className="relative overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800 w-full aspect-[16/9] block">
             <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
             <Image
               alt={title}
               src={imageUrl}
               className="object-cover object-center w-full h-full transform group-hover:scale-105 transition-transform duration-700 ease-out"
               width={300}
-              height={225}
+              height={169}
             />
           </Link>
 
@@ -201,13 +272,41 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
           {specs && (
             <div className="space-y-3">
               <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">Specifications:</h3>
-              <div className="grid grid-cols-2 gap-x-6 gap-y-2 text-sm">
-                {Object.entries(specs).map(([key, value]) => (
-                  <div key={key} className="flex justify-between items-center py-1.5 px-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
-                    <span className="font-medium text-gray-700 dark:text-gray-300">{key}:</span>
-                    <span className="text-gray-600 dark:text-gray-400 text-right font-mono text-xs">{String(value)}</span>
-                  </div>
-                ))}
+              <div className="grid grid-cols-1 xl:grid-cols-2 gap-x-6 gap-y-2 text-sm">
+                {Object.entries(specs).map(([key, value]) => {
+                  // Check if value is an object (nested spec)
+                  if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
+                    return (
+                      <div key={key} className="py-1.5 px-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
+                        <span className="font-bold text-gray-700 dark:text-gray-300">{key}:</span>
+                        <div className="ml-4 mt-1 space-y-1">
+                          {Object.entries(value).map(([subKey, subValue]) => {
+                            // Check if subValue has a url property (nested link)
+                            const hasUrl = typeof subValue === 'object' && subValue !== null && subValue.url
+                            return (
+                              <div key={subKey} className="flex items-start">
+                                {hasUrl ? (
+                                  <span className="text-gray-600 dark:text-gray-400">{renderValue(subValue, subKey)}</span>
+                                ) : (
+                                  <>
+                                    <span className="font-bold text-gray-600 dark:text-gray-400 mr-2">{subKey}:</span>
+                                    <span className="text-gray-600 dark:text-gray-400">{renderValue(subValue)}</span>
+                                  </>
+                                )}
+                              </div>
+                            )
+                          })}
+                        </div>
+                      </div>
+                    )
+                  }
+                  return (
+                    <div key={key} className="flex items-start py-1.5 px-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
+                      <span className="font-bold text-gray-700 dark:text-gray-300 mr-2">{key}:</span>
+                      <span className="text-gray-600 dark:text-gray-400">{renderValue(value)}</span>
+                    </div>
+                  )
+                })}
               </div>
             </div>
           )}
