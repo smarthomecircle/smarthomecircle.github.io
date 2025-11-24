@@ -13,6 +13,7 @@ imageUrl: /static/images/2025/radxa-cubie-a5e/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/Bv6ReLJgSi8"
+
 suggestedArticles:
   - title: "GL.iNet Slate 7 (GL‑BE3600) Review"
     url: "https://smarthomecircle.com/glinet-slate-7-wifi-7-travel-router"
@@ -20,6 +21,67 @@ suggestedArticles:
     url: "https://smarthomecircle.com/I-built-a-diy-10-inch-server-rack"
   - title: "Radxa X4: 60$ Powerful Atlernative to Raspberry Pi 5"
     url: "https://smarthomecircle.com/radxa-x4-alternative-to-raspberry-pi-5"
+affiliateLinks:
+  - label: "AliExpress"
+    url: "https://s.click.aliexpress.com/e/_oka7U73"
+  - label: "Arace"
+    url: "https://arace.tech/products/radxa-cubie-a5e"
+
+includeAsSBC:
+  title: "Radxa Cubie A5E"
+  url: "https://radxa.com/products/cubie/a5e"
+  price: "$39"
+  specifications:
+    SoC: Allwinner A527
+    CPU: |
+      4× Cortex-A55 @ 1.8 GHz
+      4× Cortex-A55 @ 1.4 GHz
+    RAM:
+      Size: 4GB
+      Type: LPDDR4
+      Speed: 2400MT/s
+      Bus: 32bit
+    GPU:
+      model: Mali-G57 MC1
+      support: |
+        OpenGL ES 3.2
+        Vulkan 1.1–1.3
+        OpenCL 2.2
+    NPU: Up to 2TOPs
+
+    Storage: |
+      MicroSD slot
+      NVMe
+    Display: |
+      HDMI 2.0 up to 4K@60fps
+      4-lane MIPI-DSI
+    NVMe:
+      Onboard: Yes
+      Number Of Connectors: 1
+      Type: M.2 M-key 
+      Connectivity: PCIe Gen 2 x1
+      Size: 2230
+    USB: |
+      1× USB Type-C (Power & USB 2.0 OTG)
+      1× USB 2.0
+    Network:
+      Ethernet: 2× Gigabit Ethernet
+      WiFi: WiFi 6
+      Bluetooth: Bluetooth 5.2
+    PoE: No
+    Power: 5V/4A via USB-C
+    GPIO: Yes
+    Dimensions: |
+      Width: 56 mm
+      Height: 65 mm
+    Operating System:
+      Debian:
+        url: https://docs.radxa.com/en/cubie/a5e/download
+      Android: Android 13
+      Armbian:
+        url: https://www.armbian.com/radxa-cubie-a5e/
+
+
 ---
 <TOCInline toc={props.toc} asDisclosure />  
 
@@ -39,24 +101,9 @@ In this video/article I’m sharing my experience with the **Radxa Cubie A5E**�
   ]}
 />
 
-
 ## Technical Specification
 
-| Category         | Spec                                                                                                                   |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| SoC              | **Allwinner A527**  |
-| CPU              | 8× **Arm Cortex-A55**: 4× @ **1.8 GHz** + 4× @ **1.4 GHz**                                                             |
-| GPU              | **Mali-G57 MC1**; <br/>OpenGL ES 3.2, Vulkan 1.1–1.3, OpenCL 2.2                                                      |
-| Memory           | 4GB **LPDDR4**                                                                                        |
-| External storage | **microSD** slot <br/> **M.2 M-key** (NVMe **PCIe Gen 2 x1 lane**, **2230** modules)                                        |
-| Display          | **HDMI 2.0** up to **4K@60fps** <br/> **4-lane MIPI-DSI**                                                    |
-| Camera           | **MIPI-CSI**: 1× 4-lane or 2× 2-lane                                                                                   |
-| Networking       | **2× Gigabit Ethernet** (one **PoE-capable** with add-on HAT) <br/> **Wi-Fi 6 (802.11ax)** <br/> **Bluetooth 5.4**             |
-| USB              | **1× USB-A 3.0 (Host)** <br/> **1× USB-C 2.0 OTG** (data + power)                                                        |
-| Expansion        | **40-pin** 2.54 mm header (UART/I²C/SPI/GPIO/PWM)                                   |
-| Power            | **5 V** via **USB-C** or GPIO. <br/> Recommended **≥10 W** baseline; **≥15 W** when fully loading USB3/PCIe |
-| OS               | **Debian Linux** <br/> **Android 13**<br/> **Armbian OS**                           |
-
+<SpecificationsDisplay />
 
 (Specs as per Radxa’s product page.) [Radxa Cubie A5E](https://radxa.com/products/cubie/a5e/)
 
