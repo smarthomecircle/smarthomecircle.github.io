@@ -1,9 +1,11 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
+import { useRouter } from 'next/router'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import { PageSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
 import Image from '@/components/Image'
 import Link from '@/components/Link'
+import AffiliateLinks from '@/components/AffiliateLinks'
 
 // Helper function to render value (handles URLs)
 const renderValue = (value, label = null) => {
@@ -51,12 +53,33 @@ const renderValue = (value, label = null) => {
 }
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('sbc')
+  // Get all blog posts
+  const allBlogPosts = await getAllFilesFrontMatter('blog')
+  
+  // Filter only posts with includeAsSBC object present
+  const posts = allBlogPosts.filter(post => post.includeAsSBC && typeof post.includeAsSBC === 'object')
+  
   return { props: { posts } }
 }
 
 export default function SBCCompare({ posts }) {
+  const router = useRouter()
   const [selectedSBCs, setSelectedSBCs] = useState([null, null])
+  
+  // Pre-select SBCs from query parameters on mount
+  useEffect(() => {
+    if (router.isReady) {
+      const { sbc1, sbc2, sbc3, sbc4 } = router.query
+      const preSelectedSlugs = [sbc1, sbc2, sbc3, sbc4].filter(Boolean)
+      
+      if (preSelectedSlugs.length > 0) {
+        const preSelected = preSelectedSlugs.map(slug => 
+          posts.find(p => p.slug === slug) || null
+        )
+        setSelectedSBCs(preSelected.length > 0 ? preSelected : [null, null])
+      }
+    }
+  }, [router.isReady, router.query, posts])
   
   // Get all unique spec keys from only the SELECTED SBCs (including nested keys)
   const allSpecKeys = useMemo(() => {
@@ -67,8 +90,8 @@ export default function SBCCompare({ posts }) {
     const selectedPosts = selectedSBCs.filter(sbc => sbc !== null)
     
     selectedPosts.forEach(post => {
-      if (post.specs) {
-        Object.entries(post.specs).forEach(([key, value]) => {
+      if (post.includeAsSBC?.specifications) {
+        Object.entries(post.includeAsSBC.specifications).forEach(([key, value]) => {
           // If the value is an object (nested), check if it contains link properties
           if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
             // Check if all sub-values are either link objects or simple values
@@ -164,7 +187,7 @@ export default function SBCCompare({ posts }) {
                           value={post.slug}
                           disabled={selectedSBCs.some((s, i) => i !== index && s?.slug === post.slug)}
                         >
-                          {post.title}
+                          {post.includeAsSBC?.title || post.title}
                         </option>
                       ))}
                     </select>
@@ -213,7 +236,7 @@ export default function SBCCompare({ posts }) {
                               <div className="flex justify-center">
                                 <Image
                                   src={sbc.imageUrl}
-                                  alt={sbc.title}
+                                  alt={sbc.includeAsSBC?.title || sbc.title}
                                   width={150}
                                   height={100}
                                   className="rounded-lg object-cover"
@@ -222,10 +245,10 @@ export default function SBCCompare({ posts }) {
                             )}
                             <div>
                               <Link 
-                                href={`/sbc/${sbc.slug}`}
+                                href={`/${sbc.slug}`}
                                 className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
                               >
-                                {sbc.title}
+                                {sbc.includeAsSBC?.title || sbc.title}
                               </Link>
                             </div>
                           </div>
@@ -237,14 +260,34 @@ export default function SBCCompare({ posts }) {
                   </tr>
                 </thead>
                 <tbody className="bg-white dark:bg-gray-900 divide-y divide-gray-200 dark:divide-gray-700">
-                  {/* Summary Row */}
+                  {/* Price & Buy Links Row */}
                   <tr className="hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
                     <td className="sticky left-0 z-10 px-6 py-4 text-sm font-medium text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700">
-                      Summary
+                      Price
                     </td>
                     {selectedSBCs.map((sbc, index) => (
-                      <td key={index} className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 text-center">
-                        {sbc?.summary || '-'}
+                      <td key={index} className="px-6 py-4 text-sm">
+                        {sbc ? (
+                          <div className="flex flex-col gap-2 items-center">
+                            {sbc.includeAsSBC?.price && (
+                              <div className="font-bold text-base text-gray-900 dark:text-gray-100 text-center">
+                                {sbc.includeAsSBC.price}
+                              </div>
+                            )}
+                            {sbc.affiliateLinks?.length > 0 && (
+                              <div className="flex justify-center w-full">
+                                <AffiliateLinks
+                                  links={sbc.affiliateLinks.map(link => ({
+                                    store: link.label,
+                                    url: link.url
+                                  }))}
+                                />
+                              </div>
+                            )}
+                          </div>
+                        ) : (
+                          <span className="text-gray-400 text-center block">-</span>
+                        )}
                       </td>
                     ))}
                   </tr>
@@ -270,10 +313,10 @@ export default function SBCCompare({ posts }) {
                           let value
                           let displayLabel = null
                           if (isNested) {
-                            value = sbc?.specs?.[parentKey]?.[subKey]
+                            value = sbc?.includeAsSBC?.specifications?.[parentKey]?.[subKey]
                             displayLabel = subKey
                           } else {
-                            value = sbc?.specs?.[parentKey]
+                            value = sbc?.includeAsSBC?.specifications?.[parentKey]
                             // If value is an object, check if it contains link properties
                             if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
                               // Check if all sub-values are either link objects or simple values
@@ -307,37 +350,7 @@ export default function SBCCompare({ posts }) {
                       </tr>
                     )
                   })}
-                  
-                  {/* Affiliate Links Row */}
-                  <tr className="hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                    <td className="sticky left-0 z-10 px-6 py-4 text-sm font-medium text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700">
-                      Buy Links
-                    </td>
-                    {selectedSBCs.map((sbc, index) => (
-                      <td key={index} className="px-6 py-4 text-sm text-center">
-                        {sbc?.affiliateLinks?.length > 0 ? (
-                          <div className="flex flex-col gap-2">
-                            {sbc.affiliateLinks.map((link, idx) => (
-                              <a
-                                key={idx}
-                                href={link.url}
-                                target="_blank"
-                                rel="noopener noreferrer nofollow"
-                                className="inline-flex items-center justify-center px-3 py-2 text-xs font-medium bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-all duration-200 hover:scale-105"
-                              >
-                                <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                                </svg>
-                                Buy on {link.label}
-                              </a>
-                            ))}
-                          </div>
-                        ) : (
-                          <span className="text-gray-400">-</span>
-                        )}
-                      </td>
-                    ))}
-                  </tr>
+
                   
                   {/* Full Review Row */}
                   <tr className="bg-gray-50 dark:bg-gray-800">
@@ -348,7 +361,7 @@ export default function SBCCompare({ posts }) {
                       <td key={index} className="px-6 py-4 text-sm text-center">
                         {sbc ? (
                           <Link
-                            href={`/sbc/${sbc.slug}`}
+                            href={`/${sbc.slug}`}
                             className="inline-flex items-center px-4 py-2 text-sm font-medium bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-all duration-200"
                           >
                             Read Full Review

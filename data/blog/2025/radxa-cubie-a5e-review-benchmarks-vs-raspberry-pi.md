@@ -13,6 +13,7 @@ imageUrl: /static/images/2025/radxa-cubie-a5e/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/Bv6ReLJgSi8"
+
 suggestedArticles:
   - title: "GL.iNet Slate 7 (GL‑BE3600) Review"
     url: "https://smarthomecircle.com/glinet-slate-7-wifi-7-travel-router"
@@ -102,7 +103,6 @@ In this video/article I’m sharing my experience with the **Radxa Cubie A5E**�
     { store: "Arace", url: "https://arace.tech/products/radxa-cubie-a5e" }
   ]}
 />
-
 
 
 ## Technical Specifications

@@ -48,12 +48,16 @@ const renderValue = (value, label = null) => {
 export default function SbcListRecord({ frontMatter, layout = 'card' }) {
   const {
     slug,
-    title,
+    title: originalTitle,
     imageUrl,
-    specs,
-    affiliateLinks = [],
     summary,
+    includeAsSBC,
   } = frontMatter
+
+  // Extract SBC-specific data from includeAsSBC and frontMatter
+  const title = includeAsSBC?.title || originalTitle
+  const specifications = includeAsSBC?.specifications
+  const affiliateLinks = frontMatter.affiliateLinks || []
 
   const [isExpanded, setIsExpanded] = useState(false)
   const maxSpecsToShow = 4
@@ -63,7 +67,7 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
     return (
       <article className="group relative bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600">
         {/* Image Container with Hover Effects - Clickable */}
-        <Link href={`/sbc/${slug}`} className="relative w-full aspect-[16/9] overflow-hidden bg-gray-100 dark:bg-gray-800 block">
+        <Link href={`/${slug}`} className="relative w-full aspect-[16/9] overflow-hidden bg-gray-100 dark:bg-gray-800 block">
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
           <Image
             alt={title}
@@ -78,7 +82,7 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
         <div className="p-5 space-y-4">
           {/* Title - Clickable */}
           <div>
-            <Link href={`/sbc/${slug}`}>
+            <Link href={`/${slug}`}>
               <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 leading-tight group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300 line-clamp-2 cursor-pointer">
                 {title}
               </h2>
@@ -93,12 +97,12 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
           )}
 
           {/* Key Specifications */}
-          {specs && (
+          {specifications && (
             <div className="space-y-2">
               <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Key Specs:</h3>
               <div className="grid grid-cols-1 gap-1.5 text-xs">
-                {Object.entries(specs)
-                  .slice(0, isExpanded ? Object.entries(specs).length : maxSpecsToShow)
+                {Object.entries(specifications)
+                  .slice(0, isExpanded ? Object.entries(specifications).length : maxSpecsToShow)
                   .map(([key, value]) => {
                     // Check if value is an object (nested spec)
                     if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
@@ -136,7 +140,7 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
               </div>
               
               {/* Expand/Collapse Button */}
-              {Object.entries(specs).length > maxSpecsToShow && (
+              {Object.entries(specifications).length > maxSpecsToShow && (
                 <button
                   onClick={(e) => {
                     e.preventDefault()
@@ -153,7 +157,7 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
                     </>
                   ) : (
                     <>
-                      Show More ({Object.entries(specs).length - maxSpecsToShow} more)
+                      Show More ({Object.entries(specifications).length - maxSpecsToShow} more)
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                       </svg>
@@ -200,7 +204,7 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
             </div>
 
             {/* Read Review Button - Clickable */}
-            <Link href={`/sbc/${slug}`} className="flex items-center text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 text-sm font-medium transition-colors duration-200">
+            <Link href={`/${slug}`} className="flex items-center text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 text-sm font-medium transition-colors duration-200">
               <span>Full Review</span>
               <svg
                 className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-300"
@@ -224,7 +228,7 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
         {/* Left column: Image + Affiliate Links */}
         <div className="col-span-4 flex flex-col items-center space-y-4">
           {/* Image - Clickable */}
-          <Link href={`/sbc/${slug}`} className="relative overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800 w-full aspect-[16/9] block">
+          <Link href={`/${slug}`} className="relative overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800 w-full aspect-[16/9] block">
             <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
             <Image
               alt={title}
@@ -262,7 +266,7 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
           {/* Header */}
           <div className="flex items-start justify-between">
             <div className="flex-1">
-              <Link href={`/sbc/${slug}`}>
+              <Link href={`/${slug}`}>
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 leading-tight group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300 cursor-pointer">
                   {title}
                 </h2>
@@ -279,7 +283,7 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
             </div>
 
             {/* Read Review Arrow - Clickable */}
-            <Link href={`/sbc/${slug}`} className="flex items-center text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 text-sm font-medium transition-colors duration-200">
+            <Link href={`/${slug}`} className="flex items-center text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 text-sm font-medium transition-colors duration-200">
               <span>Full Review</span>
               <svg
                 className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300"
@@ -300,12 +304,12 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
           )}
 
           {/* Comprehensive Specifications */}
-          {specs && (
+          {specifications && (
             <div className="space-y-3">
               <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">Specifications:</h3>
               <div className="grid grid-cols-1 xl:grid-cols-2 gap-x-6 gap-y-2 text-sm">
-                {Object.entries(specs)
-                  .slice(0, isExpanded ? Object.entries(specs).length : maxSpecsToShow)
+                {Object.entries(specifications)
+                  .slice(0, isExpanded ? Object.entries(specifications).length : maxSpecsToShow)
                   .map(([key, value]) => {
                   // Check if value is an object (nested spec)
                   if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
@@ -343,7 +347,7 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
               </div>
               
               {/* Expand/Collapse Button */}
-              {Object.entries(specs).length > maxSpecsToShow && (
+              {Object.entries(specifications).length > maxSpecsToShow && (
                 <button
                   onClick={(e) => {
                     e.preventDefault()
@@ -360,7 +364,7 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
                     </>
                   ) : (
                     <>
-                      Show More ({Object.entries(specs).length - maxSpecsToShow} more)
+                      Show More ({Object.entries(specifications).length - maxSpecsToShow} more)
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                       </svg>
