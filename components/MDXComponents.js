@@ -209,8 +209,7 @@ const createMDXComponents = (frontMatter = {}) => {
         price={frontMatter?.includeAsSBC?.price}
         url={frontMatter?.includeAsSBC?.url}
         affiliateLinks={frontMatter?.affiliateLinks}
-        comparable={frontMatter?.includeAsSBC?.comparable}
-        {...props}
+        {...props} 
       />
     ),
     // Conditionally use auto-ad headings if autoAds is enabled

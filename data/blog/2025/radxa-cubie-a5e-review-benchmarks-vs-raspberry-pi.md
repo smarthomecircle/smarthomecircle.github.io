@@ -14,6 +14,7 @@ actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/Bv6ReLJgSi8"
 
+
 suggestedArticles:
   - title: "GL.iNet Slate 7 (GL‑BE3600) Review"
     url: "https://smarthomecircle.com/glinet-slate-7-wifi-7-travel-router"
@@ -22,69 +23,64 @@ suggestedArticles:
   - title: "Radxa X4: 60$ Powerful Atlernative to Raspberry Pi 5"
     url: "https://smarthomecircle.com/radxa-x4-alternative-to-raspberry-pi-5"
 affiliateLinks:
-    title: Buy Radxa Cubie A5E
-    links: 
-      - label: "AliExpress"
-        url: "https://s.click.aliexpress.com/e/_oka7U73"
-      - label: "Arace"
-        url: "https://arace.tech/products/radxa-cubie-a5e"
+  - label: "AliExpress"
+    url: "https://s.click.aliexpress.com/e/_oka7U73"
+  - label: "Arace"
+    url: "https://arace.tech/products/radxa-cubie-a5e"
 
 includeAsSBC:
   title: "Radxa Cubie A5E"
   url: "https://radxa.com/products/cubie/a5e"
-  price: "$ 39"
-  comparable: True
+  price: "$39"
   specifications:
     SoC: Allwinner A527
-    CPU:
-      No. Of Cores: 8
-      Cores: |
-        4 × Cortex-A55 up to 1.8GHz
-        4 × Cortex-A55 up to 1.4GHz
+    CPU: |
+      4× Cortex-A55 @ 1.8 GHz
+      4× Cortex-A55 @ 1.4 GHz
+    RAM:
+      Size: 4GB
+      Type: LPDDR4
+      Speed: 2400MT/s
+      Bus: 32bit
     GPU:
-      Model: Arm Mali-G57 MC1
-      Support: |
+      model: Mali-G57 MC1
+      support: |
         OpenGL ES 3.2
         Vulkan 1.1–1.3
         OpenCL 2.2
-    AI Capabilities: |
-        NPU: Up to 2 TOPS
-    RAM:
-      Size: 1GB / 2GB / 4GB
-      Type: LPDDR4
-      Speed: 2400MT/s
-      Bus: 32-bit
+    NPU: Up to 2TOPs
+
     Storage: |
-      MicroSD Card
+      MicroSD slot
       NVMe
-    Video Output: |
-      1 x HDMI 2.0 up to 4K@60fps
+    Display: |
+      HDMI 2.0 up to 4K@60fps
       4-lane MIPI-DSI
     NVMe:
       Onboard: Yes
       Number Of Connectors: 1
-      Connectivity: PCIe Gen2 x 1
+      Type: M.2 M-key 
+      Connectivity: PCIe Gen 2 x1
       Size: 2230
+    USB: |
+      1× USB Type-C (Power & USB 2.0 OTG)
+      1× USB 2.0
     Network:
-      Ethernet: 2 × Gigabit Ethernet
-      Wi-Fi: Wi-Fi 6
+      Ethernet: 2× Gigabit Ethernet
+      WiFi: WiFi 6
       Bluetooth: Bluetooth 5.2
     PoE: No
-    USB: |
-      1 × USB-C (Power & USB 2.0 OTG)
-      1 × USB-A 2.0
     Power: 5V/4A via USB-C
-    Audio: |
-      Only via HDMI
-    Camera: 1 x 4-lane MIPI CSI
-    Cooling: Passive or via GPIO pins
-    Dimensions:
+    GPIO: Yes
+    Dimensions: |
       Width: 56 mm
-      Length: 65 mm
-    Operating System: |
-      [Debian](https://docs.radxa.com/en/cubie/a5e/download)
-      [Android 13](https://docs.radxa.com/en/cubie/a5e/download#android)
-      [Armbian](https://www.armbian.com/radxa-cubie-a5e/)
+      Height: 65 mm
+    Operating System:
+      Debian:
+        url: https://docs.radxa.com/en/cubie/a5e/download
+      Android: Android 13
+      Armbian:
+        url: https://www.armbian.com/radxa-cubie-a5e/
 
 
 ---
@@ -98,12 +94,17 @@ In this video/article I’m sharing my experience with the **Radxa Cubie A5E**�
   <img src="/static/images/2025/radxa-cubie-a5e/front.webp" alt="front" />
 </p>
     
-<AffiliateLinksFromMetadata />
+<AffiliateLinks 
+  title="Buy Radxa Cubie A5E" 
+  links={[
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oka7U73" },
+    { store: "Arace", url: "https://arace.tech/products/radxa-cubie-a5e" }
+  ]}
+/>
 
+## Technical Specification
 
-## Technical Specifications
-
-<SpecificationsDisplay/>
+<SpecificationsDisplay />
 
 (Specs as per Radxa’s product page.) [Radxa Cubie A5E](https://radxa.com/products/cubie/a5e/)
 
