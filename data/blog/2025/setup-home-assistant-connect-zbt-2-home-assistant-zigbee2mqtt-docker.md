@@ -5,7 +5,7 @@ categories: ''
 tags: [Home Assistant, Zigbee2mqtt, Zigbee, docker, container]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2025-11-24'
+date: '2025-11-27'
 draft: false
 autoAds: true
 summary: 'We will look at setting up the new Home Assistant ZBT-2 with Home Assistant Container and Zigbee2MQTT container'
