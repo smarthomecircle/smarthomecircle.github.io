@@ -7,10 +7,20 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 06 Nov 2025 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 27 Nov 2025 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/home-assistant/feed.xml" rel="self" type="application/rss+xml"/>
       <atom:link href="https://smarthomecircle.com/tags/home-assistant" rel="alternate" type="text/html"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/setup-home-assistant-connect-zbt-2-home-assistant-zigbee2mqtt-docker</guid>
+    <title>Setup Home Assistant Connect ZBT-2 With Home Assistant Container And Zigbee2MQTT Container — Step By Step Guide</title>
+    <link>https://smarthomecircle.com/setup-home-assistant-connect-zbt-2-home-assistant-zigbee2mqtt-docker</link>
+    <description>We will look at setting up the new Home Assistant ZBT-2 with Home Assistant Container and Zigbee2MQTT container</description>
+    <pubDate>Thu, 27 Nov 2025 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Home Assistant</category><category>Zigbee2mqtt</category><category>Zigbee</category><category>docker</category><category>container</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/seeed-studio-reterminal-e1002-color-epaper-7-3-review</guid>
     <title>My Hands-On with a 7.3″ Color ePaper Display (Seeed Studio reTerminal E1002)</title>

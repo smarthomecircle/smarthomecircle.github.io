@@ -251,6 +251,12 @@
   </url>
 
   <url>
+    <loc
+      >https://smarthomecircle.com/setup-home-assistant-connect-zbt-2-home-assistant-zigbee2mqtt-docker</loc
+    >
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/switchbot-climate-panel-trv-setup-review</loc>
   </url>
 
@@ -328,6 +334,10 @@
 
   <url>
     <loc>https://smarthomecircle.com/tags/compute-module-5</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/container</loc>
   </url>
 
   <url>
