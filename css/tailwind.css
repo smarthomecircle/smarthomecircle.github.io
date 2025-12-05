@@ -149,9 +149,9 @@ input:-webkit-autofill:focus {
 /* Large side-by-side images using grid (max 2 per row) - Tight cluster */
 .prose .image-flex {
   @apply grid grid-cols-1 md:grid-cols-2 my-2 mx-auto;
-  max-width: 80%;
+  max-width: 100%;
   width: 100%;
-  gap: 8px; /* Same vertical and horizontal gap */
+  gap: 4px; /* Minimal gap */
 }
 
 /* Single image container behaves like regular article structure */
@@ -167,7 +167,7 @@ input:-webkit-autofill:focus {
 .prose .image-flex img {
   @apply rounded-xl shadow-lg border border-gray-200 dark:border-gray-700;
   width: 100%;
-  max-width: 300px;
+  max-width: 100%;
   height: auto;
   object-fit: cover;
   justify-self: center;
@@ -195,7 +195,7 @@ input:-webkit-autofill:focus {
 .prose .image-flex img:nth-child(odd):last-child {
   grid-column: 1 / -1;
   justify-self: center;
-  max-width: 300px;
+  max-width: 50%;
 }
 
 /* (Single image rules moved above for higher specificity) */
