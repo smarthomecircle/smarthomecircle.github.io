@@ -2,17 +2,17 @@
 title: 'Muse Pi Pro (Spacemit K1 / M1) – My First Real RISC-V Experience'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [GPU, latte panda, SBC, AI, Vulkan, ollama, llama cpp]
+tags: [RISC V, SBC, benchmarks, Performance, Spacemit ]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2025-12-14'
+date: '2025-12-11'
 draft: false
 autoAds: true
 summary: 'Hands-on review of the Muse Pi Pro RISC-V SBC with the SpacemiT K1 SoC – benchmarks, thermals, NVMe and Wi-Fi 6 performance, plus my honest thoughts for developers.'
 imageUrl: /static/images/2025/muse-pi-pro/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/3MdcOY9aIn4"
+youtubeLink: "https://www.youtube.com/embed/xETkRuCWASw"
 suggestedArticles:
   - title: "Radxa Cubie A7A Review: Pi-Sized Power With PCIe, NVMe, USB 3.1 Gen2"
     url: "https://smarthomecircle.com/adxa-cubie-a7a-review-benchmarks-pi-5-comparison"
@@ -224,7 +224,7 @@ I also ran **Geekbench** using the build compiled for RISC-V.
 
 ## Memory Performance
 
-### membench
+### Memory Bandwidth Test
 
 For the memory bandwidth test, I saw:
 
@@ -235,7 +235,7 @@ For the memory bandwidth test, I saw:
   <img src="/static/images/2025/muse-pi-pro/mbw.webp" alt="mbw" />
 </p>
 
-### tinymembench
+### Tinymembench Test
 
 Running **tinymembench** test output:
 
@@ -336,22 +336,11 @@ The UEFI firmware is based on **EDK2**.
 
 ---
 
-## So, Where Does RISC-V Stand Today (On This Board)?
+## So, Where Does RISC-V Stand Today (Considering This Board)?
 
 After using the Muse Pi Pro for a while, here’s my honest take.
 
-- RISC-V boards, **including this one**, still **haven’t fully caught up** to mature ARM SBCs like the Raspberry Pi 4/5 in overall performance and polish.
-- Some of the gap is down to:
-  - Software optimization
-  - Tooling
-  - Ecosystem maturity
-
-But at the same time:
-
-- Seeing **OpenGL and Vulkan working**
-- Getting solid **networking performance**
-- Having **NVMe, USB 3.0, Wi-Fi 6**, and decent thermals
-
-All of that makes me feel like we are **getting closer** to what ARM SBCs offer today.
+RISC-V boards, **including this one**, still **haven’t fully caught up** to mature ARM SBCs like the Raspberry Pi 4/5 in overall performance and polish.
+But at the same time, seeing **OpenGL and Vulkan working**, getting solid **networking performance**, having **NVMe, USB 3.0, Wi-Fi 6**, and decent thermals, makes me feel like we are **getting closer** to what ARM SBCs offer today.
 
 
