@@ -15,7 +15,7 @@ customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/xETkRuCWASw"
 suggestedArticles:
   - title: "Radxa Cubie A7A Review: Pi-Sized Power With PCIe, NVMe, USB 3.1 Gen2"
-    url: "https://smarthomecircle.com/adxa-cubie-a7a-review-benchmarks-pi-5-comparison"
+    url: "https://smarthomecircle.com/radxa-cubie-a7a-review-benchmarks-pi-5-comparison"
   - title: "Radxa Cubie A5E Hands-On: The Budget NVMe SBC"
     url: "https://smarthomecircle.com/radxa-cubie-a5e-review-benchmarks-vs-raspberry-pi"
   - title: "I Built A DIY 10 Inch Server Rack"
