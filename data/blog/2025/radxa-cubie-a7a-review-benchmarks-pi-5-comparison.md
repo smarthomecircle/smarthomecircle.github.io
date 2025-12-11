@@ -2,7 +2,7 @@
 title: 'Radxa Cubie A7A Review: Pi-Sized Power With PCIe, NVMe, USB 3.1 Gen2, Thermals & Real-World Benchmarks'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [GPU, latte panda, SBC, AI, Vulkan, ollama, llama cpp]
+tags: [SBC, radxa, perfromance, cubie, benchmarks]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2025-11-20'
