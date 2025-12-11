@@ -1,0 +1,25 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Smart Home Circle</title>
+      <link>https://smarthomecircle.com</link>
+      <description>A comprehensive resource covering Smart Home Tech, detailed Single Board Computers (SBC) reviews, mini PC, Home Automation, HomeLab upgrades, and Home Assistant guides.</description>
+      <language>en-us</language>
+      <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Thu, 11 Dec 2025 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://smarthomecircle.com/tags/spacemit/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://smarthomecircle.com/tags/spacemit" rel="alternate" type="text/html"/>
+      
+  <item>
+    <guid>https://smarthomecircle.com/spacemit-muse-pi-pro-riscv-review-performance-benchmarks</guid>
+    <title>Muse Pi Pro (Spacemit K1 / M1) – My First Real RISC-V Experience</title>
+    <link>https://smarthomecircle.com/spacemit-muse-pi-pro-riscv-review-performance-benchmarks</link>
+    <description>Hands-on review of the Muse Pi Pro RISC-V SBC with the SpacemiT K1 SoC – benchmarks, thermals, NVMe and Wi-Fi 6 performance, plus my honest thoughts for developers.</description>
+    <pubDate>Thu, 11 Dec 2025 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>RISC V</category><category>SBC</category><category>benchmarks</category><category>Performance</category><category>Spacemit</category>
+  </item>
+
+    </channel>
+  </rss>

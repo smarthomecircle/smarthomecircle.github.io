@@ -7,20 +7,10 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 20 Nov 2025 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 13 Nov 2025 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/llama-cpp/feed.xml" rel="self" type="application/rss+xml"/>
       <atom:link href="https://smarthomecircle.com/tags/llama-cpp" rel="alternate" type="text/html"/>
       
-  <item>
-    <guid>https://smarthomecircle.com/radxa-cubie-a7a-review-benchmarks-pi-5-comparison</guid>
-    <title>Radxa Cubie A7A Review: Pi-Sized Power With PCIe, NVMe, USB 3.1 Gen2, Thermals &amp; Real-World Benchmarks</title>
-    <link>https://smarthomecircle.com/radxa-cubie-a7a-review-benchmarks-pi-5-comparison</link>
-    <description>I benchmarked the Radxa Cubie A7A (Allwinner A733): thermals, Geekbench, LPDDR5, PCIe NVMe, USB 3.1 Gen2, Whisper/HA, and Pi 5 vs Pi 4 comparisons.</description>
-    <pubDate>Thu, 20 Nov 2025 00:00:00 GMT</pubDate>
-    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
-    <category>GPU</category><category>latte panda</category><category>SBC</category><category>AI</category><category>Vulkan</category><category>ollama</category><category>llama cpp</category>
-  </item>
-
   <item>
     <guid>https://smarthomecircle.com/run-gpu-on-latte-panda-mu-lite-carrier-board</guid>
     <title>Running an AMD Instinct MI50 on a LattePanda Mu Lite (OCuLink eGPU) for Local LLMs</title>
