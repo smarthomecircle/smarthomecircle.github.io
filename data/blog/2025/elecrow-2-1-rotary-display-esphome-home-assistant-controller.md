@@ -12,7 +12,7 @@ summary: 'I turned a 2.1" ESP32 rotary display into a Home Assistant controller 
 imageUrl: /static/images/2025/elecrow-rotatory-display/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/xETkRuCWASw"
+youtubeLink: "https://www.youtube.com/embed/vGk1guQUCec"
 suggestedArticles:
   - title: "Setup Home Assistant Connect ZBT-2 With Home Assistant Container"
     url: "https://smarthomecircle.com/setup-home-assistant-connect-zbt-2-home-assistant-zigbee2mqtt-docker"
