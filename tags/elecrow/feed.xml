@@ -1,0 +1,25 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Smart Home Circle</title>
+      <link>https://smarthomecircle.com</link>
+      <description>A comprehensive resource covering Smart Home Tech, detailed Single Board Computers (SBC) reviews, mini PC, Home Automation, HomeLab upgrades, and Home Assistant guides.</description>
+      <language>en-us</language>
+      <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Thu, 18 Dec 2025 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://smarthomecircle.com/tags/elecrow/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://smarthomecircle.com/tags/elecrow" rel="alternate" type="text/html"/>
+      
+  <item>
+    <guid>https://smarthomecircle.com/elecrow-2-1-rotary-display-esphome-home-assistant-controller</guid>
+    <title>A Rotary Display as My Home Assistant Knob: Elecrow CrowPanel 2.1&quot; ESP32 rotary display</title>
+    <link>https://smarthomecircle.com/elecrow-2-1-rotary-display-esphome-home-assistant-controller</link>
+    <description>I turned a 2.1&quot; ESP32 rotary display into a Home Assistant controller for lights and volume using ESPHome, LVGL, and 3D-printed mounts.</description>
+    <pubDate>Thu, 18 Dec 2025 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Elecrow</category><category>Display</category><category>ESPHOME</category><category>Home Assistant</category>
+  </item>
+
+    </channel>
+  </rss>

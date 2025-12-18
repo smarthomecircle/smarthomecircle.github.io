@@ -7,10 +7,20 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 06 Nov 2025 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 18 Dec 2025 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/esphome/feed.xml" rel="self" type="application/rss+xml"/>
       <atom:link href="https://smarthomecircle.com/tags/esphome" rel="alternate" type="text/html"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/elecrow-2-1-rotary-display-esphome-home-assistant-controller</guid>
+    <title>A Rotary Display as My Home Assistant Knob: Elecrow CrowPanel 2.1&quot; ESP32 rotary display</title>
+    <link>https://smarthomecircle.com/elecrow-2-1-rotary-display-esphome-home-assistant-controller</link>
+    <description>I turned a 2.1&quot; ESP32 rotary display into a Home Assistant controller for lights and volume using ESPHome, LVGL, and 3D-printed mounts.</description>
+    <pubDate>Thu, 18 Dec 2025 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Elecrow</category><category>Display</category><category>ESPHOME</category><category>Home Assistant</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/seeed-studio-reterminal-e1002-color-epaper-7-3-review</guid>
     <title>My Hands-On with a 7.3″ Color ePaper Display (Seeed Studio reTerminal E1002)</title>
