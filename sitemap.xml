@@ -25,6 +25,114 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/Setup-LG-Washer-with-Home-Assistant</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/add-matter-devices-to-home-assistant</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/air-quality-sensor-and-light-sensor-esp32-home-assistant</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/change-graph-colors-in-energy-dashboard-home-assistant</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://smarthomecircle.com/connect-automate-tuya-zigbee-smart-scene-switch-with-home-assistant</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://smarthomecircle.com/connect-bluetooth-devices-to-home-assistant-with-bluetooth-proxy</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://smarthomecircle.com/connect-xiaomi-temperature-and-humidity-bluetooth-sensor-to-home-assistant</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://smarthomecircle.com/connect-zigbee-device-using-sonoff-zigbee-3-dongle-plus-to-home-assistant</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://smarthomecircle.com/created-voice-assistant-esp32-with-wake-word-in-home-assistant</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/custom-sentences-for-voice-assistant-in-home-assistant</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/custom-wake-word-for-voice-assistant-with-home-assistant</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/easily-share-files-with-home-assistant-using-samba-share</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/esp32-cam-esphome-with-home-assistant</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/esp32-esp8266-esphome-with-home-assistant</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/how-to-connect-led-strip-with-home-assistant-using-wled</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/how-to-connect-wifi-to-home-assistant-on-startup</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/how-to-setup-frigate-with-home-assistant</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/how-to-setup-local-tuya-in-home-assistant</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/how-to-setup-mqtt-docker-container-with-home-assistant</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/install-zigbee2mqtt-with-home-assistant</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/moes-zigbee-smart-knob-with-homeassistant</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/run-home-assistant-container-with-docker</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/setup-esp32-with-wake-word-in-home-assistant</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://smarthomecircle.com/setup-voice-assistant-with-home-assistant-using-docker-usb-microphone</loc
+    >
+  </url>
+
+  <url>
     <loc
       >https://smarthomecircle.com/How-I-created-my-voice-assistant-with-on-device-wake-word-using-home-assistant</loc
     >
@@ -160,114 +268,6 @@
 
   <url>
     <loc>https://smarthomecircle.com/switchbot-climate-panel-trv-setup-review</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/Setup-LG-Washer-with-Home-Assistant</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/add-matter-devices-to-home-assistant</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/air-quality-sensor-and-light-sensor-esp32-home-assistant</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/change-graph-colors-in-energy-dashboard-home-assistant</loc>
-  </url>
-
-  <url>
-    <loc
-      >https://smarthomecircle.com/connect-automate-tuya-zigbee-smart-scene-switch-with-home-assistant</loc
-    >
-  </url>
-
-  <url>
-    <loc
-      >https://smarthomecircle.com/connect-bluetooth-devices-to-home-assistant-with-bluetooth-proxy</loc
-    >
-  </url>
-
-  <url>
-    <loc
-      >https://smarthomecircle.com/connect-xiaomi-temperature-and-humidity-bluetooth-sensor-to-home-assistant</loc
-    >
-  </url>
-
-  <url>
-    <loc
-      >https://smarthomecircle.com/connect-zigbee-device-using-sonoff-zigbee-3-dongle-plus-to-home-assistant</loc
-    >
-  </url>
-
-  <url>
-    <loc
-      >https://smarthomecircle.com/created-voice-assistant-esp32-with-wake-word-in-home-assistant</loc
-    >
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/custom-sentences-for-voice-assistant-in-home-assistant</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/custom-wake-word-for-voice-assistant-with-home-assistant</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/easily-share-files-with-home-assistant-using-samba-share</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/esp32-cam-esphome-with-home-assistant</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/esp32-esp8266-esphome-with-home-assistant</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/how-to-connect-led-strip-with-home-assistant-using-wled</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/how-to-connect-wifi-to-home-assistant-on-startup</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/how-to-setup-frigate-with-home-assistant</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/how-to-setup-local-tuya-in-home-assistant</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/how-to-setup-mqtt-docker-container-with-home-assistant</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/install-zigbee2mqtt-with-home-assistant</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/moes-zigbee-smart-knob-with-homeassistant</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/run-home-assistant-container-with-docker</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/setup-esp32-with-wake-word-in-home-assistant</loc>
-  </url>
-
-  <url>
-    <loc
-      >https://smarthomecircle.com/setup-voice-assistant-with-home-assistant-using-docker-usb-microphone</loc
-    >
   </url>
 
   <url>
