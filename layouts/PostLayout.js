@@ -8,6 +8,7 @@ import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import ShareButtons from '@/components/PostShare'
 import ImageLightbox from '@/components/ImageLightbox'
 import AdsSection from '@/components/AdsSection'
+import ReadingProgress from '@/components/ReadingProgress'
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
@@ -33,6 +34,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
         authorDetails={authorDetails}
         {...frontMatter}
       />
+      <ReadingProgress />
       <ScrollTopAndComment />
       <article>
         {/* Modern Hero Section */}
@@ -184,7 +186,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               )}
 
               {/* Article Content */}
-              <div className="prose prose-lg dark:prose-dark max-w-none prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-gray-100 prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-strong:text-gray-900 dark:prose-strong:text-gray-100 prose-code:text-primary-600 dark:prose-code:text-primary-400 prose-pre:bg-gray-900 dark:prose-pre:bg-gray-800 prose-blockquote:border-primary-500 prose-blockquote:text-gray-700 dark:prose-blockquote:text-gray-300">
+              <div className="prose prose-lg dark:prose-dark max-w-none prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-gray-100 prose-p:text-gray-700 dark:prose-p:text-gray-200 prose-strong:text-gray-900 dark:prose-strong:text-gray-100 prose-code:text-primary-600 dark:prose-code:text-primary-400 prose-pre:bg-gray-900 dark:prose-pre:bg-gray-800 prose-blockquote:border-primary-500 prose-blockquote:text-gray-700 dark:prose-blockquote:text-gray-300 prose-a:font-medium">
 
                 {/* Main Article Content - Auto-ads injected via MDX components */}
                 {children}
@@ -193,7 +195,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
 
                 {/* Suggested Articles - Seamless Integration (Desktop Only) */}
                 {suggestedArticles && suggestedArticles.length > 0 && (
-                  <div className="mt-12 hidden lg:block">
+                  <div className="mt-12 hidden lg:block prose-a:!border-b-0">
                     
                     {/* Subtle divider */}
                     <div className="flex items-center my-8">

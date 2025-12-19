@@ -16,8 +16,10 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        // Modern font stack like your IDE
+        // Enhanced font stack for better readability
         sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        // Alternative: Consider 'Plus Jakarta Sans' or 'DM Sans' for more personality
+        // sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
         mono: ['JetBrains Mono', 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'monospace'],
       },
       fontSize: {
@@ -46,9 +48,11 @@ module.exports = {
           css: {
             // Enhanced typography for better reading
             fontSize: '1.125rem', // 18px base for better readability
-            lineHeight: '1.7',
+            lineHeight: '1.75', // Slightly increased for better breathing room
             color: theme('colors.gray.700'),
             fontFamily: theme('fontFamily.sans').join(', '),
+            maxWidth: '65ch', // Optimal reading width (65 characters)
+            letterSpacing: '-0.011em', // Slightly tighter for modern feel
             
             // Improved heading styles
             'h1, h2, h3, h4, h5, h6': {
@@ -64,29 +68,37 @@ module.exports = {
             },
             h2: {
               fontSize: '1.875rem', 
-              lineHeight: '1.4',
+              lineHeight: '1.3',
               color: theme('colors.gray.900'),
-              marginTop: '2.5rem',
-              marginBottom: '1rem',
+              marginTop: '3rem',
+              marginBottom: '1.25rem',
+              fontWeight: '800', // Bolder for better hierarchy
+              letterSpacing: '-0.02em',
             },
             h3: {
               fontSize: '1.5rem',
-              lineHeight: '1.5', 
+              lineHeight: '1.4', 
               color: theme('colors.gray.900'),
-              marginTop: '2rem',
-              marginBottom: '0.75rem',
+              marginTop: '2.5rem',
+              marginBottom: '1rem',
+              fontWeight: '700',
+              letterSpacing: '-0.015em',
             },
             
             // Enhanced link styles - only for article content
             '.prose a': {
               color: theme('colors.primary.600'),
-              textDecoration: 'underline',
+              textDecoration: 'none',
               textDecorationColor: theme('colors.primary.300'),
-              textUnderlineOffset: '3px',
+              textUnderlineOffset: '4px',
+              borderBottom: '2px solid',
+              borderColor: theme('colors.primary.300'),
               transition: 'all 0.2s ease',
+              fontWeight: '500',
               '&:hover': {
                 color: theme('colors.primary.700'),
-                textDecorationColor: theme('colors.primary.500'),
+                borderColor: theme('colors.primary.500'),
+                transform: 'translateY(-1px)',
               },
             },
             
@@ -133,12 +145,15 @@ module.exports = {
               color: theme('colors.gray.700'),
             },
             
-            // Better list styling
-            'ul > li': {
-              paddingLeft: '0.5rem',
+            // Better list styling with improved spacing
+            'ul > li, ol > li': {
+              paddingLeft: '0.75rem',
+              marginTop: '0.5rem',
+              marginBottom: '0.5rem',
             },
-            'ol > li': {
-              paddingLeft: '0.5rem',
+            'ul > li > p, ol > li > p': {
+              marginTop: '0.5rem',
+              marginBottom: '0.5rem',
             },
             'ul > li::marker': {
               color: theme('colors.primary.500'),
@@ -148,15 +163,30 @@ module.exports = {
               fontWeight: '600',
             },
             
-            strong: { color: theme('colors.gray.900') },
-            hr: { borderColor: theme('colors.gray.200') },
+            strong: { 
+              color: theme('colors.gray.900'),
+              fontWeight: '700',
+              letterSpacing: '-0.01em',
+            },
+            p: {
+              marginTop: '1.25rem',
+              marginBottom: '1.25rem',
+            },
+            hr: { 
+              borderColor: theme('colors.gray.200'),
+              marginTop: '3rem',
+              marginBottom: '3rem',
+              borderWidth: '1px',
+            },
           },
         },
         // Enhanced dark mode
         dark: {
           css: {
-            color: theme('colors.gray.300'),
+            color: theme('colors.gray.200'), // Lighter for better contrast
             fontFamily: theme('fontFamily.sans').join(', '),
+            maxWidth: '65ch',
+            letterSpacing: '-0.011em',
             
             'h1, h2, h3, h4, h5, h6': {
               color: theme('colors.gray.100'),
@@ -195,8 +225,20 @@ module.exports = {
               color: theme('colors.primary.400'),
             },
             
-            strong: { color: theme('colors.gray.100') },
-            hr: { borderColor: theme('colors.gray.700') },
+            strong: { 
+              color: theme('colors.gray.100'),
+              fontWeight: '700',
+              letterSpacing: '-0.01em',
+            },
+            p: {
+              marginTop: '1.25rem',
+              marginBottom: '1.25rem',
+            },
+            hr: { 
+              borderColor: theme('colors.gray.700'),
+              marginTop: '3rem',
+              marginBottom: '3rem',
+            },
             
             thead: {
               color: theme('colors.gray.100'),
