@@ -9,6 +9,7 @@ import { BlogNewsletterForm } from './NewsletterForm'
 import AffiliateLinks from './AffiliateLinks'
 import VideoEmbed from './VideoEmbed'
 import InContentAd from './InContentAd'
+import Collapsible from './Collapsible'
 
 // Centralized slot ID and layout key mappings
 const SLOT_MAPPINGS = {
@@ -173,6 +174,7 @@ const createMDXComponents = (frontMatter = {}) => {
     BlogNewsletterForm: BlogNewsletterForm,
     AffiliateLinks,
     VideoEmbed,
+    Collapsible,
     InContentAd: (props) => (
       <ClientOnlyAd>
         <InContentAd {...props} />
