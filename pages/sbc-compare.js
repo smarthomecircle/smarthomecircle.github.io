@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { useRouter } from 'next/router'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import { PageSEO } from '@/components/SEO'
@@ -65,21 +65,56 @@ export async function getStaticProps() {
 export default function SBCCompare({ posts }) {
   const router = useRouter()
   const [selectedSBCs, setSelectedSBCs] = useState([null, null])
+  const [copySuccess, setCopySuccess] = useState(false)
   
-  // Pre-select SBCs from query parameters on mount
+  // Helper to convert title to URL-friendly format (spaces to hyphens)
+  const titleToUrlFormat = (title) => {
+    return title
+      .replace(/\s+/g, '-')  // Replace spaces with hyphens
+      .replace(/[^a-zA-Z0-9\-]/g, '') // Remove special characters except hyphens
+      .replace(/-+/g, '-')  // Replace multiple hyphens with single hyphen
+      .replace(/^-+|-+$/g, '') // Remove leading/trailing hyphens
+  }
+
+  // Helper to convert URL format back to title (hyphens to spaces, also handles old %20 format)
+  const urlFormatToTitle = (urlFormat) => {
+    // First decode any URL encoding (for backward compatibility)
+    const decoded = decodeURIComponent(urlFormat)
+    // Replace hyphens with spaces
+    return decoded.replace(/-/g, ' ')
+  }
+
+  // Pre-select SBCs from query parameters on mount and when query changes (using titles with hyphens)
   useEffect(() => {
     if (router.isReady) {
       const { sbc1, sbc2, sbc3, sbc4 } = router.query
-      const preSelectedSlugs = [sbc1, sbc2, sbc3, sbc4].filter(Boolean)
+      const preSelectedTitles = [sbc1, sbc2, sbc3, sbc4].filter(Boolean)
       
-      if (preSelectedSlugs.length > 0) {
-        const preSelected = preSelectedSlugs.map(slug => 
-          posts.find(p => p.slug === slug) || null
-        )
-        setSelectedSBCs(preSelected.length > 0 ? preSelected : [null, null])
+      if (preSelectedTitles.length > 0) {
+        // Find posts by matching title (SBC title or post title)
+        // Handle both hyphen format and old %20 format for backward compatibility
+        const preSelected = preSelectedTitles.map(urlTitle => {
+          // Convert URL format back to title
+          const titleFromUrl = urlFormatToTitle(urlTitle)
+          
+          return posts.find(p => {
+            const sbcTitle = p.includeAsSBC?.title || ''
+            const postTitle = p.title || ''
+            // Try exact match first, then try with spaces normalized
+            return sbcTitle === titleFromUrl || 
+                   postTitle === titleFromUrl ||
+                   sbcTitle.replace(/\s+/g, ' ') === titleFromUrl.replace(/\s+/g, ' ') ||
+                   postTitle.replace(/\s+/g, ' ') === titleFromUrl.replace(/\s+/g, ' ')
+          }) || null
+        })
+        // Ensure we have at least 2 slots, pad with nulls if needed
+        const padded = preSelected.length >= 2 ? preSelected : [...preSelected, ...Array(2 - preSelected.length).fill(null)]
+        setSelectedSBCs(padded)
+      } else {
+        setSelectedSBCs([null, null])
       }
     }
-  }, [router.isReady, router.query, posts])
+  }, [router.isReady, router.query.sbc1, router.query.sbc2, router.query.sbc3, router.query.sbc4, posts])
   
   // Get all unique spec keys from only the SELECTED SBCs (including nested keys)
   const allSpecKeys = useMemo(() => {
@@ -128,15 +163,42 @@ export default function SBCCompare({ posts }) {
     return keys
   }, [selectedSBCs])
 
+  // Update URL with selected SBCs (using titles as query parameters with hyphens)
+  const updateURL = (newSelected) => {
+    const query = {}
+    newSelected.forEach((sbc, index) => {
+      if (sbc) {
+        // Use SBC title or fallback to post title
+        const title = sbc.includeAsSBC?.title || sbc.title
+        if (title) {
+          query[`sbc${index + 1}`] = titleToUrlFormat(title)
+        }
+      }
+    })
+    
+    // Use shallow routing to update URL without page reload
+    router.push(
+      {
+        pathname: router.pathname,
+        query: query,
+      },
+      undefined,
+      { shallow: true }
+    )
+  }
+
   const handleSBCSelect = (index, slug) => {
     const newSelected = [...selectedSBCs]
     newSelected[index] = slug ? posts.find(p => p.slug === slug) : null
     setSelectedSBCs(newSelected)
+    updateURL(newSelected)
   }
 
   const addComparison = () => {
     if (selectedSBCs.length < 4) {
-      setSelectedSBCs([...selectedSBCs, null])
+      const newSelected = [...selectedSBCs, null]
+      setSelectedSBCs(newSelected)
+      updateURL(newSelected)
     }
   }
 
@@ -144,6 +206,34 @@ export default function SBCCompare({ posts }) {
     if (selectedSBCs.length > 2) {
       const newSelected = selectedSBCs.filter((_, i) => i !== index)
       setSelectedSBCs(newSelected)
+      updateURL(newSelected)
+    }
+  }
+
+  // Copy comparison link to clipboard
+  const copyComparisonLink = async () => {
+    const query = {}
+    selectedSBCs.forEach((sbc, index) => {
+      if (sbc) {
+        // Use SBC title or fallback to post title
+        const title = sbc.includeAsSBC?.title || sbc.title
+        if (title) {
+          query[`sbc${index + 1}`] = titleToUrlFormat(title)
+        }
+      }
+    })
+    
+    const url = new URL(`${siteMetadata.siteUrl}/sbc-compare`)
+    Object.entries(query).forEach(([key, value]) => {
+      url.searchParams.set(key, value)
+    })
+    
+    try {
+      await navigator.clipboard.writeText(url.toString())
+      setCopySuccess(true)
+      setTimeout(() => setCopySuccess(false), 2000)
+    } catch (err) {
+      console.error('Failed to copy link:', err)
     }
   }
 
@@ -168,6 +258,31 @@ export default function SBCCompare({ posts }) {
         <div className="py-8">
           {/* SBC Selectors */}
           <div className="mb-8 space-y-4">
+            {/* Copy Link Button */}
+            {selectedSBCs.some(sbc => sbc !== null) && (
+              <div className="flex justify-end mb-4">
+                <button
+                  onClick={copyComparisonLink}
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors text-sm font-medium"
+                >
+                  {copySuccess ? (
+                    <>
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      Link Copied!
+                    </>
+                  ) : (
+                    <>
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                      </svg>
+                      Copy Comparison Link
+                    </>
+                  )}
+                </button>
+              </div>
+            )}
             <div className="flex flex-wrap gap-4 items-end">
               {selectedSBCs.map((selectedSBC, index) => (
                 <div key={index} className="flex-1 min-w-[250px]">
