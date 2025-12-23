@@ -2,20 +2,20 @@
 title: 'Radxa Dragon Q6A: my hands-on experience (benchmarks, thermals, and Windows 11 Pro on ARM)'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [SBC, radxa, perfromance, cubie, benchmarks]
+tags: [SBC, radxa, perfromance, qualcomm, benchmarks]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2025-12-20'
+date: '2026-01-02'
 draft: false
 autoAds: true
-summary: 'I benchmarked the Radxa Cubie A7A (Allwinner A733): thermals, Geekbench, LPDDR5, PCIe NVMe, USB 3.1 Gen2, Whisper/HA, and Pi 5 vs Pi 4 comparisons.'
-imageUrl: /static/images/2025/radxa-cubie-a7a/cover.webp
+summary: 'My Radxa Dragon Q6A review with benchmark results, thermals, NVMe/UFS speeds, Home Assistant voice tests, and a walkthrough of Windows 11 on ARM (UEFI).'
+imageUrl: /static/images/2025/radxa-dragon-q6a/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/3MdcOY9aIn4"
 suggestedArticles:
-  - title: "A palm-size IO board for Raspberry Pi CM5"
-    url: "https://smarthomecircle.com/raspberry-pi-cm5-small-io-board-hands-on"
+  - title: "Radxa Cubie A7A Review: Pi-Sized Power With PCIe, NVMe, USB 3.1 Gen2"
+    url: "https://smarthomecircle.com/radxa-cubie-a7a-review-benchmarks-pi-5-comparison"
   - title: "Radxa Cubie A5E Hands-On: The Budget NVMe SBC"
     url: "https://smarthomecircle.com/radxa-cubie-a5e-review-benchmarks-vs-raspberry-pi"
   - title: "I Built A DIY 10 Inch Server Rack"
