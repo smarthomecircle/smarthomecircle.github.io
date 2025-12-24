@@ -45,11 +45,13 @@ includeAsSBC:
     GPU:
       Model: Imagination BXM-4-64 MC1
       Support: |
+      Model: Imagination BXM-4-64 MC1
+      Support: |
         OpenGL ES 3.2
         Vulkan 1.3
         OpenCL 3.0
     AI Capabilities: |
-        NPU: Up to 3 TOPS
+        NPU: Up to 3TOPs
     RAM:
       Size: 2GB / 4GB / 6GB / 8GB / 12 GB / 16GB
       Type: LPDDR5

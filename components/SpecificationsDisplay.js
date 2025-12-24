@@ -134,6 +134,9 @@ export default function SpecificationsDisplay({
     return null
   }
 
+  // Use title for comparison link, fallback to slug if title not available
+  const compareParam = title ? titleToUrlFormat(title) : slug
+
   return (
     <div className="not-prose my-6 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-200 dark:border-gray-700">
       <style jsx>{`
@@ -210,9 +213,9 @@ export default function SpecificationsDisplay({
             </div>
           </div>
         )}
-        {slug && (
+        {compareParam && (
           <Link
-            href={`/sbc-compare?sbc1=${slug}`}
+            href={`/sbc-compare?sbc1=${compareParam}`}
             className="inline-flex items-center px-3 py-1.5 text-sm font-medium bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-all duration-200 hover:scale-105 shadow-sm"
           >
             <svg className="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
