@@ -36,23 +36,23 @@ includeAsSBC:
     CPU: |
       4× Cortex-A55 @ 1.8 GHz
       4× Cortex-A55 @ 1.4 GHz
+    GPU:
+      Model: Mali-G57 MC1
+      Support: |
+        OpenGL ES 3.2
+        Vulkan 1.1–1.3
+        OpenCL 2.2
+    AI Capbilities: |
+        NPU: Up to 2TOPs
     RAM:
       Size: 4GB
       Type: LPDDR4
       Speed: 2400MT/s
       Bus: 32bit
-    GPU:
-      model: Mali-G57 MC1
-      support: |
-        OpenGL ES 3.2
-        Vulkan 1.1–1.3
-        OpenCL 2.2
-    NPU: Up to 2TOPs
-
     Storage: |
       MicroSD slot
       NVMe
-    Display: |
+    Video Output: |
       HDMI 2.0 up to 4K@60fps
       4-lane MIPI-DSI
     NVMe:
@@ -61,25 +61,23 @@ includeAsSBC:
       Type: M.2 M-key 
       Connectivity: PCIe Gen 2 x1
       Size: 2230
-    USB: |
-      1× USB Type-C (Power & USB 2.0 OTG)
-      1× USB 2.0
     Network:
       Ethernet: 2× Gigabit Ethernet
       WiFi: WiFi 6
       Bluetooth: Bluetooth 5.2
     PoE: No
+    USB: |
+      1× USB Type-C (Power & USB 2.0 OTG)
+      1× USB 2.0
     Power: 5V/4A via USB-C
-    GPIO: Yes
+    Audio:
     Dimensions: |
       Width: 56 mm
       Height: 65 mm
-    Operating System:
-      Debian:
-        url: https://docs.radxa.com/en/cubie/a5e/download
-      Android: Android 13
-      Armbian:
-        url: https://www.armbian.com/radxa-cubie-a5e/
+    Operating System: |
+      [Debian](https://docs.radxa.com/en/cubie/a5e/download)
+      Android 13
+      [Armbian](https://www.armbian.com/radxa-cubie-a5e/)
 
 
 ---
