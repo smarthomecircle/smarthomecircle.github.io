@@ -95,6 +95,7 @@ The Muse Pi Pro isn’t just a bare board thrown together; it’s a fairly featu
 
 ## Technical Specification
 
+
 ## Muse Pi Pro – Technical Specifications
 
 | Category        | Specification |
