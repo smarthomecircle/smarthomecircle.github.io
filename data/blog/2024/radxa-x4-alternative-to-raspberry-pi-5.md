@@ -30,7 +30,6 @@ includeAsSBC:
         openGL 4.6
         openCL 3.0
         directX 12.1
-    NPU: '-'
     RAM:
       Size: 8GB
       Type: LPDDR5
