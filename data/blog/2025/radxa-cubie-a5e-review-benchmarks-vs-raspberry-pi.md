@@ -42,7 +42,7 @@ includeAsSBC:
         OpenGL ES 3.2
         Vulkan 1.1–1.3
         OpenCL 2.2
-    AI Capbilities: |
+    AI Capabilities: |
         NPU: Up to 2TOPs
     RAM:
       Size: 4GB

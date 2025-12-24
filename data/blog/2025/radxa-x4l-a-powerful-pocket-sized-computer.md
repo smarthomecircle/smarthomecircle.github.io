@@ -29,7 +29,6 @@ includeAsSBC:
         openGL 4.6
         openCL 3.0
         directX 12.1
-    NPU: '-'
     RAM:
       Size: 8GB
       Type: LPDDR5
@@ -55,9 +54,9 @@ includeAsSBC:
     Power: 12V/3A direct or USB PD (Power Delivery)
     Audio: 1× 3.5mm jack, support audio input/output
     Dimensions:
-    Others: |
+    Extras: |
       1× Power Button
-      1× R(Recovery) Button
+      1× Recovery Button
       1× Status LED
       1× Kensington Lock
 
