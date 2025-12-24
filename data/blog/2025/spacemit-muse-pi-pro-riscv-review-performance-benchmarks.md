@@ -93,6 +93,8 @@ I’ll focus on how it feels to use, what works well, where it falls short, and 
 
 The Muse Pi Pro isn’t just a bare board thrown together; it’s a fairly feature-rich SBC based on a **64-bit RISC-V octa-core CPU** running at **1.6 GHz**.
 
+## Technical Specification
+
 
 ## Technical Specifications
 
