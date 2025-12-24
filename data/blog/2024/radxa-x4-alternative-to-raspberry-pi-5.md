@@ -82,6 +82,9 @@ includeAsSBC:
 ---
 <TOCInline toc={props.toc} asDisclosure />  
 
+# Technical Specification
+
+<SpecificationsDisplay />
 
 In the world of single-board computers (SBCs), there’s an intriguing new player i.e the [Radxa X4](https://s.click.aliexpress.com/e/_DkuskjB) —an Intel-based board that’s almost the same size as a Raspberry Pi. Powered by the Intel N100 processor, this board packs an impressive punch, reaching speeds up to 3.4 GHz. 
 

@@ -7,6 +7,51 @@ import Image from '@/components/Image'
 import Link from '@/components/Link'
 import AffiliateLinks from '@/components/AffiliateLinks'
 
+// Helper function to parse markdown links and convert to React elements
+const parseMarkdownLinks = (text) => {
+  if (typeof text !== 'string') return text
+  
+  // Pattern to match markdown links: [text](url)
+  const linkPattern = /\[([^\]]+)\]\(([^)]+)\)/g
+  const parts = []
+  let lastIndex = 0
+  let match
+  
+  while ((match = linkPattern.exec(text)) !== null) {
+    // Add text before the link
+    if (match.index > lastIndex) {
+      parts.push(text.substring(lastIndex, match.index))
+    }
+    
+    // Add the link
+    const linkText = match[1]
+    const linkUrl = match[2]
+    parts.push(
+      <a
+        key={match.index}
+        href={linkUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 hover:underline inline-flex items-center gap-1"
+      >
+        {linkText}
+        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+      </a>
+    )
+    
+    lastIndex = linkPattern.lastIndex
+  }
+  
+  // Add remaining text after the last link
+  if (lastIndex < text.length) {
+    parts.push(text.substring(lastIndex))
+  }
+  
+  return parts.length > 0 ? parts : text
+}
+
 // Helper function to render value (handles URLs)
 const renderValue = (value, label = null) => {
   if (!value) return <span className="text-gray-400">-</span>
@@ -49,7 +94,9 @@ const renderValue = (value, label = null) => {
       </a>
     )
   }
-  return <span className="whitespace-pre-line">{stringValue}</span>
+  
+  // Parse markdown links in the text
+  return <span className="whitespace-pre-line">{parseMarkdownLinks(stringValue)}</span>
 }
 
 export async function getStaticProps() {
@@ -116,51 +163,108 @@ export default function SBCCompare({ posts }) {
     }
   }, [router.isReady, router.query.sbc1, router.query.sbc2, router.query.sbc3, router.query.sbc4, posts])
   
-  // Get all unique spec keys from only the SELECTED SBCs (including nested keys)
+  // Get all unique spec keys from only the SELECTED SBCs (parent keys and nested sub-keys as separate rows)
   const allSpecKeys = useMemo(() => {
-    const keys = []
-    const seenKeys = new Set()
-    
     // Only process selected SBCs
     const selectedPosts = selectedSBCs.filter(sbc => sbc !== null)
     
+    // Maps to store all keys and their relationships
+    const parentKeyMap = new Map() // key -> { entry, hasSubKeys, firstSeenIndex }
+    const subKeysMap = new Map() // parentKey -> array of { subKey, entry }
+    const seenParentKeys = new Set()
+    const seenSubKeys = new Set() // tracks "parentKey.subKey" combinations
+    const keyOrder = [] // Track the order parent keys first appear
+    
+    // First pass: collect all keys from all selected SBCs
     selectedPosts.forEach(post => {
       if (post.includeAsSBC?.specifications) {
         Object.entries(post.includeAsSBC.specifications).forEach(([key, value]) => {
-          // If the value is an object (nested), check if it contains link properties
+          // Track parent key order (only on first appearance)
+          if (!seenParentKeys.has(key)) {
+            seenParentKeys.add(key)
+            keyOrder.push(key)
+          }
+          
+          // If the value is an object (nested), check if it contains sub-keys that should be displayed separately
           if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
-            // Check if all sub-values are either link objects or simple values
-            const hasOnlyLinks = Object.values(value).every(subValue => 
-              (typeof subValue === 'object' && subValue !== null && subValue.url) || 
-              typeof subValue === 'string'
+            // Check if all sub-values are link objects (with url property)
+            const hasOnlyLinkObjects = Object.values(value).every(subValue => 
+              typeof subValue === 'object' && subValue !== null && subValue.url
             )
             
-            if (hasOnlyLinks) {
-              // If all are link properties or strings, treat as a single composite key
-              if (!seenKeys.has(key)) {
-                keys.push(key)
-                seenKeys.add(key)
+            if (hasOnlyLinkObjects) {
+              // If all are link objects, treat as a single composite key (e.g., Operating System with multiple OS links)
+              if (!parentKeyMap.has(key)) {
+                parentKeyMap.set(key, { 
+                  entry: { key, isParent: true, subKeys: null }, 
+                  hasSubKeys: false 
+                })
               }
             } else {
-              // Otherwise, add as separate nested keys
+              // This parent key has sub-keys that should be displayed separately
+              if (!parentKeyMap.has(key)) {
+                parentKeyMap.set(key, { 
+                  entry: { key, isParent: true, hasSubKeys: true }, 
+                  hasSubKeys: true 
+                })
+              } else {
+                // Update existing entry to mark it has sub-keys
+                const existing = parentKeyMap.get(key)
+                if (!existing.hasSubKeys) {
+                  existing.entry.hasSubKeys = true
+                  existing.hasSubKeys = true
+                }
+              }
+              
+              // Collect all sub-keys for this parent
+              if (!subKeysMap.has(key)) {
+                subKeysMap.set(key, [])
+              }
+              
               Object.keys(value).forEach(subKey => {
-                const compositeKey = `${key}.${subKey}`
-                if (!seenKeys.has(compositeKey)) {
-                  keys.push(compositeKey)
-                  seenKeys.add(compositeKey)
+                const subKeyId = `${key}.${subKey}`
+                if (!seenSubKeys.has(subKeyId)) {
+                  seenSubKeys.add(subKeyId)
+                  subKeysMap.get(key).push({
+                    subKey,
+                    entry: { key, subKey, isParent: false, parentKey: key }
+                  })
                 }
               })
             }
           } else {
-            if (!seenKeys.has(key)) {
-              keys.push(key)
-              seenKeys.add(key)
+            // Simple value (not an object)
+            if (!parentKeyMap.has(key)) {
+              parentKeyMap.set(key, { 
+                entry: { key, isParent: true, subKeys: null }, 
+                hasSubKeys: false 
+              })
             }
           }
         })
       }
     })
-    return keys
+    
+    // Build final array: parent keys followed immediately by their sub-keys, in order of first appearance
+    const sortedKeys = []
+    
+    keyOrder.forEach(key => {
+      const parentData = parentKeyMap.get(key)
+      if (parentData) {
+        // Add parent key
+        sortedKeys.push(parentData.entry)
+        
+        // Immediately add all its sub-keys (if any)
+        if (parentData.hasSubKeys && subKeysMap.has(key)) {
+          const subKeys = subKeysMap.get(key)
+          subKeys.forEach(({ entry }) => {
+            sortedKeys.push(entry)
+          })
+        }
+      }
+    })
+    
+    return sortedKeys
   }, [selectedSBCs])
 
   // Update URL with selected SBCs (using titles as query parameters with hyphens)
@@ -375,80 +479,116 @@ export default function SBCCompare({ posts }) {
                   </tr>
                 </thead>
                 <tbody className="bg-white dark:bg-gray-900 divide-y divide-gray-200 dark:divide-gray-700">
-                  {/* Price & Buy Links Row */}
+                  {/* Price Row */}
                   <tr className="hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
                     <td className="sticky left-0 z-10 px-6 py-4 text-sm font-medium text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700">
                       Price
                     </td>
                     {selectedSBCs.map((sbc, index) => (
-                      <td key={index} className="px-6 py-4 text-sm">
+                      <td key={index} className="px-6 py-4 text-sm text-center">
                         {sbc ? (
-                          <div className="flex flex-col gap-2 items-center">
-                            {sbc.includeAsSBC?.price && (
-                              <div className="font-bold text-base text-gray-900 dark:text-gray-100 text-center">
-                                {sbc.includeAsSBC.price}
-                              </div>
-                            )}
-                            {sbc.affiliateLinks?.length > 0 && (
-                              <div className="flex justify-center w-full">
-                                <AffiliateLinks
-                                  links={sbc.affiliateLinks.map(link => ({
-                                    store: link.label,
-                                    url: link.url
-                                  }))}
-                                />
-                              </div>
-                            )}
-                          </div>
+                          sbc.includeAsSBC?.price ? (
+                            <div className="font-bold text-base text-gray-900 dark:text-gray-100">
+                              {sbc.includeAsSBC.price}
+                            </div>
+                          ) : (
+                            <span className="text-gray-400">-</span>
+                          )
                         ) : (
-                          <span className="text-gray-400 text-center block">-</span>
+                          <span className="text-gray-400">-</span>
+                        )}
+                      </td>
+                    ))}
+                  </tr>
+                  
+                  {/* Buy Links Row */}
+                  <tr className="hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+                    <td className="sticky left-0 z-10 px-6 py-4 text-sm font-medium text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700">
+                      Where to Buy
+                    </td>
+                    {selectedSBCs.map((sbc, index) => (
+                      <td key={index} className="px-6 py-4 text-sm text-center">
+                        {sbc ? (
+                          sbc.affiliateLinks?.length > 0 ? (
+                            <div className="flex justify-center gap-2 flex-wrap">
+                              {sbc.affiliateLinks.map((link, linkIndex) => (
+                                <a
+                                  key={linkIndex}
+                                  href={link.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer nofollow"
+                                  className="inline-flex items-center px-3 py-1.5 text-xs font-medium bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-all duration-200 hover:scale-105"
+                                >
+                                  {link.label}
+                                </a>
+                              ))}
+                            </div>
+                          ) : (
+                            <span className="text-gray-400">-</span>
+                          )
+                        ) : (
+                          <span className="text-gray-400">-</span>
                         )}
                       </td>
                     ))}
                   </tr>
                   
                   {/* Specification Rows */}
-                  {allSpecKeys.map((specKey) => {
-                    // Check if this is a nested key (e.g., "GPU.support")
-                    const isNested = specKey.includes('.')
-                    const [parentKey, subKey] = isNested ? specKey.split('.') : [specKey, null]
+                  {allSpecKeys.map((specEntry, idx) => {
+                    const { key, subKey, isParent, parentKey, hasSubKeys } = specEntry
+                    const isSubKeyRow = !isParent && subKey
                     
                     return (
-                      <tr key={specKey} className="hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                        <td className="sticky left-0 z-10 px-6 py-4 text-sm font-medium text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700">
-                          {isNested ? (
-                            <span>
-                              {parentKey} <span className="text-gray-500">→</span> {subKey}
-                            </span>
+                      <tr key={isSubKeyRow ? `${parentKey}.${subKey}` : key} className="hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+                        <td className={`sticky left-0 z-10 px-6 ${isSubKeyRow ? 'py-2' : 'py-4'} text-sm font-medium text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700`}>
+                          {isSubKeyRow ? (
+                            <div className="pl-4 text-gray-600 dark:text-gray-400">
+                              {subKey}
+                            </div>
                           ) : (
-                            specKey
+                            <span className="font-semibold">{key}</span>
                           )}
                         </td>
                         {selectedSBCs.map((sbc, index) => {
                           let value
-                          let displayLabel = null
-                          if (isNested) {
+                          let shouldShowEmpty = false
+                          
+                          if (isSubKeyRow) {
+                            // For sub-key rows, get the specific sub-key value
                             value = sbc?.includeAsSBC?.specifications?.[parentKey]?.[subKey]
-                            displayLabel = subKey
                           } else {
-                            value = sbc?.includeAsSBC?.specifications?.[parentKey]
-                            // If value is an object, check if it contains link properties
-                            if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
-                              // Check if all sub-values are either link objects or simple values
-                              const hasOnlyLinks = Object.values(value).every(subValue => 
-                                (typeof subValue === 'object' && subValue !== null && subValue.url) || 
-                                typeof subValue === 'string'
+                            // For parent rows, get the parent value
+                            value = sbc?.includeAsSBC?.specifications?.[key]
+                            
+                            // If this parent key has sub-keys that will be displayed separately
+                            if (hasSubKeys) {
+                              // If the value exists and is an object (not a string), show empty cell
+                              // because the sub-keys will be displayed in separate rows below
+                              if (value !== null && value !== undefined && typeof value === 'object' && !Array.isArray(value)) {
+                                shouldShowEmpty = true
+                                value = null
+                              }
+                            } else if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
+                              // Check if all sub-values are link objects (with url property)
+                              const hasOnlyLinkObjects = Object.values(value).every(subValue => 
+                                typeof subValue === 'object' && subValue !== null && subValue.url
                               )
                               
-                              if (!hasOnlyLinks) {
+                              // If it has sub-keys that will be shown separately, don't show the parent value
+                              if (!hasOnlyLinkObjects) {
+                                shouldShowEmpty = true
                                 value = null
                               }
                             }
                           }
                           
                           return (
-                            <td key={index} className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 text-center">
-                              {value && typeof value === 'object' && !value.url ? (
+                            <td key={index} className={`px-6 ${isSubKeyRow ? 'py-2' : 'py-4'} text-sm text-gray-700 dark:text-gray-300 text-center`}>
+                              {shouldShowEmpty ? (
+                                // Empty cell for parent keys that have sub-keys
+                                <span></span>
+                              ) : value && typeof value === 'object' && !value.url && !isSubKeyRow ? (
+                                // Display as composite (all links or strings) for parent row
                                 <div className="flex flex-col gap-1 items-center">
                                   {Object.entries(value).map(([itemKey, itemValue]) => (
                                     <div key={itemKey}>
@@ -457,7 +597,8 @@ export default function SBCCompare({ posts }) {
                                   ))}
                                 </div>
                               ) : (
-                                renderValue(value, displayLabel)
+                                // Simple value or sub-key value
+                                renderValue(value)
                               )}
                             </td>
                           )
