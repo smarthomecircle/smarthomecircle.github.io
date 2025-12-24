@@ -2,6 +2,51 @@ import { useState } from 'react'
 import Link from '@/components/Link'
 import Image from '@/components/Image'
 
+// Helper function to parse markdown links and convert to React elements
+const parseMarkdownLinks = (text) => {
+  if (typeof text !== 'string') return text
+  
+  // Pattern to match markdown links: [text](url)
+  const linkPattern = /\[([^\]]+)\]\(([^)]+)\)/g
+  const parts = []
+  let lastIndex = 0
+  let match
+  
+  while ((match = linkPattern.exec(text)) !== null) {
+    // Add text before the link
+    if (match.index > lastIndex) {
+      parts.push(text.substring(lastIndex, match.index))
+    }
+    
+    // Add the link
+    const linkText = match[1]
+    const linkUrl = match[2]
+    parts.push(
+      <a
+        key={match.index}
+        href={linkUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 hover:underline inline-flex items-center gap-1"
+      >
+        {linkText}
+        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+      </a>
+    )
+    
+    lastIndex = linkPattern.lastIndex
+  }
+  
+  // Add remaining text after the last link
+  if (lastIndex < text.length) {
+    parts.push(text.substring(lastIndex))
+  }
+  
+  return parts.length > 0 ? parts : text
+}
+
 // Helper function to render value (handles URLs)
 const renderValue = (value, label = null) => {
   // Check if value is an object with a url property
@@ -42,7 +87,9 @@ const renderValue = (value, label = null) => {
       </a>
     )
   }
-  return <span className="whitespace-pre-line">{stringValue}</span>
+  
+  // Parse markdown links in the text
+  return <span className="whitespace-pre-line">{parseMarkdownLinks(stringValue)}</span>
 }
 
 export default function SbcListRecord({ frontMatter, layout = 'card' }) {
