@@ -28,19 +28,20 @@ affiliateLinks:
 
 includeAsSBC:
   title: "Radxa Cubie A7A"
-  price: "39$"
+  price: "39 $"
   specifications:
     SoC: Allwinner A733
     CPU: |
       2× Cortex-A76 up to 2.0GHz
       4× Cortex-A55 up to 1.8GHz
     GPU:
-      model: Imagination BXM-4-64 MC1
-      support: |
+      Model: Imagination BXM-4-64 MC1
+      Support: |
         OpenGL ES 3.2
         Vulkan 1.3
         OpenCL 3.0
-    NPU: Up to 3TOPs
+    AI Capabilities: |
+        NPU: Up to 3TOPs
     RAM:
       Size: 4GB
       Type: LPDDR5
@@ -60,26 +61,25 @@ includeAsSBC:
       # Type: M.2 M-key 
       Connectivity: PCIe Gen 3 x1
       Size: 2230 / 2280
+    Network:
+      Ethernet: 1 × Gigabit Ethernet
+      WiFi: WiFi 6
+      Bluetooth: Bluetooth 5.4
+    PoE: Yes (PoE HAT required)
     USB: |
       1 × USB Type-C (Power & USB 2.0 OTG)
       1 × USB 3.1 gen2
       3 x USB 2.0
-    Network:
-      Ethernet: 1 × 1 Gigabit Ethernet
-      WiFi: WiFi 6
-      Bluetooth: Bluetooth 5.4
-    PoE: Yes (PoE HAT required)
     Power: 5V/4A or 5V/3A via USB-C
-    GPIO: Yes
+    Audio: 1× 3.5mm jack, support audio input/output
     Dimensions: |
       Width: 56 mm
       Length: 85 mm
-    Operating System:
-      Debian:
-        url: https://docs.radxa.com/en/cubie/a5e/download
-      Android: Android 13
-      Armbian:
-        url: https://www.armbian.com/radxa-cubie-a5e/
+
+    Operating System: |
+      [Debian](https://docs.radxa.com/en/cubie/a5e/download) 
+      Android 13
+      [Armbian](https://www.armbian.com/radxa-cubie-a5e/)
 
 ---
 
@@ -104,6 +104,8 @@ I’ve been spending time with the Radxa **Cubie A7A**, and I wanted to share ho
 
 
 ## Technical Specification
+
+<SpecificationsDisplay />
 
 | Category       | Specifications                                                                                                                                                                                           |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
