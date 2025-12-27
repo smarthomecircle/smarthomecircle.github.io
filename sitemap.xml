@@ -83,86 +83,6 @@
   </url>
 
   <url>
-    <loc>https://smarthomecircle.com/3-backup-strategies-for-raspberrypi-nas</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/I-built-a-diy-10-inch-server-rack</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/comet-kvm-gl-rm1-review-best-kvm-over-ip-2025</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/create-diy-nas-with-raspberry-pi-compute-module-5-raid-5</loc>
-  </url>
-
-  <url>
-    <loc
-      >https://smarthomecircle.com/elecrow-2-1-rotary-display-esphome-home-assistant-controller</loc
-    >
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/glinet-comet-kvm-pro-review-kvm-over-ip-wifi-6</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/glinet-slate-7-wifi-7-travel-router</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/radxa-cubie-a5e-review-benchmarks-vs-raspberry-pi</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/radxa-cubie-a7a-review-benchmarks-pi-5-comparison</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/radxa-x4l-a-powerful-pocket-sized-computer</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/raspberry-pi-cm5-small-io-board-hands-on</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/raspberry-pi-compute-module-5-review</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/rhasspy-speech-faster-than-whisper-home-assistant</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/run-gpu-on-latte-panda-mu-lite-carrier-board</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/seeed-studio-reterminal-e1002-color-epaper-7-3-review</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/seeed-studio-xiao-epaper-dashboard-home-assistant</loc>
-  </url>
-
-  <url>
-    <loc
-      >https://smarthomecircle.com/setup-home-assistant-connect-zbt-2-home-assistant-zigbee2mqtt-docker</loc
-    >
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/spacemit-muse-pi-pro-riscv-review-performance-benchmarks</loc>
-  </url>
-
-  <url>
-    <loc>https://smarthomecircle.com/switchbot-climate-panel-trv-setup-review</loc>
-  </url>
-
-  <url>
     <loc>https://smarthomecircle.com/Setup-LG-Washer-with-Home-Assistant</loc>
   </url>
 
@@ -268,6 +188,86 @@
     <loc
       >https://smarthomecircle.com/setup-voice-assistant-with-home-assistant-using-docker-usb-microphone</loc
     >
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/3-backup-strategies-for-raspberrypi-nas</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/I-built-a-diy-10-inch-server-rack</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/comet-kvm-gl-rm1-review-best-kvm-over-ip-2025</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/create-diy-nas-with-raspberry-pi-compute-module-5-raid-5</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://smarthomecircle.com/elecrow-2-1-rotary-display-esphome-home-assistant-controller</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/glinet-comet-kvm-pro-review-kvm-over-ip-wifi-6</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/glinet-slate-7-wifi-7-travel-router</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/radxa-cubie-a5e-review-benchmarks-vs-raspberry-pi</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/radxa-cubie-a7a-review-benchmarks-pi-5-comparison</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/radxa-x4l-a-powerful-pocket-sized-computer</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/raspberry-pi-cm5-small-io-board-hands-on</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/raspberry-pi-compute-module-5-review</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/rhasspy-speech-faster-than-whisper-home-assistant</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/run-gpu-on-latte-panda-mu-lite-carrier-board</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/seeed-studio-reterminal-e1002-color-epaper-7-3-review</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/seeed-studio-xiao-epaper-dashboard-home-assistant</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://smarthomecircle.com/setup-home-assistant-connect-zbt-2-home-assistant-zigbee2mqtt-docker</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/spacemit-muse-pi-pro-riscv-review-performance-benchmarks</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/switchbot-climate-panel-trv-setup-review</loc>
   </url>
 
   <url>
