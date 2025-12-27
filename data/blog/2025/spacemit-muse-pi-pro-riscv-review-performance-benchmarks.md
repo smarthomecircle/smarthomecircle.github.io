@@ -81,6 +81,7 @@ Spacemit provides a few OS options for the Muse Pi Pro:
 - **Bianbu Star** – built on top of Bianbu OS, more polished for user interaction and desktop usage. [link](https://archive.spacemit.com/image/k1/version/bianbu-computer/)
 - **Fedora** – available via Fedora-V Force Images. [link](https://images.fedoravforce.org/Muse%20Pi%20Pro)
 - **Debian** – build by SpacemiT. [link](https://archive.spacemit.com/image/k1/version/debian/)
+- **Deepin** – [link](https://deepin-community.github.io/sig-deepin-ports/matrix)
 
 ### Trying Debian (Trixie)
 
