@@ -2,7 +2,7 @@
 title: 'ReSpeaker XVF3800: a surprisingly solid local voice assistant for Home Assistant'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [RISC V, SBC, benchmarks, Performance, Spacemit ]
+tags: [Home Assistant, Voice Assistant, Local, ESP32 S3, ESPHome ]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2026-01-11'
@@ -112,7 +112,15 @@ Pricing can vary depending on where you buy it, but the numbers I’m seeing:
 - Around **$53** on Seeed Studio’s website
 - Around **€59** on AliExpress
 
-> 📌 I’ll add links in the description/resources section of the post.
+<AffiliateLinks 
+  title="Buy Seeed Studio ReSpeaker XVF3800" 
+  links={[
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_c3v77jId" },
+    { store: "Amazon EU", url: "https://amzn.to/3LjM0lp" },
+    { store: "Amazon US", url: "https://amzn.to/3KNXiyh" },
+    { store: "Seeed Studio", url: "https://www.seeedstudio.com/ReSpeaker-XVF3800-USB-Mic-Array-p-6488.html?sensecap_affiliate=zkW5xlz&referring_service=link" }
+  ]}
+/>
 
 ---
 
