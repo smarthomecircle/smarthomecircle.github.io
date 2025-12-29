@@ -9,6 +9,7 @@ import { BlogNewsletterForm } from './NewsletterForm'
 import AffiliateLinks from './AffiliateLinks'
 import VideoEmbed from './VideoEmbed'
 import InContentAd from './InContentAd'
+import SpecificationsDisplay from './SpecificationsDisplay'
 import Collapsible from './Collapsible'
 
 // Centralized slot ID and layout key mappings
@@ -179,6 +180,18 @@ const createMDXComponents = (frontMatter = {}) => {
       <ClientOnlyAd>
         <InContentAd {...props} />
       </ClientOnlyAd>
+    ),
+    SpecificationsDisplay: (props) => (
+      <SpecificationsDisplay 
+        specifications={frontMatter?.includeAsSBC?.specifications} 
+        slug={frontMatter?.slug}
+        title={frontMatter?.includeAsSBC?.title}
+        price={frontMatter?.includeAsSBC?.price}
+        url={frontMatter?.includeAsSBC?.url}
+        affiliateLinks={frontMatter?.affiliateLinks}
+        comparable={frontMatter?.includeAsSBC?.comparable}
+        {...props} 
+      />
     ),
     // Conditionally use auto-ad headings if autoAds is enabled
     h2: autoAdComponents ? autoAdComponents.AutoAdH2 : 'h2',
