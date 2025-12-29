@@ -100,7 +100,7 @@ const titleToUrlFormat = (title) => {
     .replace(/^-+|-+$/g, '') // Remove leading/trailing hyphens
 }
 
-export default function SpecificationsDisplay({ specifications, slug, price, affiliateLinks = [], title, url }) {
+export default function SpecificationsDisplay({ specifications, slug, price, affiliateLinks = [], title, url, comparable = false }) {
   if (!specifications) {
     return null
   }
@@ -175,7 +175,7 @@ export default function SpecificationsDisplay({ specifications, slug, price, aff
             </div>
           </div>
         )}
-        {compareParam && (
+        {comparable && compareParam && (
           <Link
             href={`/sbc-compare?sbc1=${compareParam}`}
             className="inline-flex items-center px-3 py-1.5 text-sm font-medium bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-all duration-200 hover:scale-105 shadow-sm"
