@@ -7,6 +7,7 @@ import TOCInline from './TOCInline'
 import Pre from './Pre'
 import { BlogNewsletterForm } from './NewsletterForm'
 import AffiliateLinks from './AffiliateLinks'
+import AffiliateLinksFromMetadata from './AffiliateLinksFromMetadata'
 import VideoEmbed from './VideoEmbed'
 import InContentAd from './InContentAd'
 import SpecificationsDisplay from './SpecificationsDisplay'
@@ -174,6 +175,12 @@ const createMDXComponents = (frontMatter = {}) => {
     pre: Pre,
     BlogNewsletterForm: BlogNewsletterForm,
     AffiliateLinks,
+    AffiliateLinksFromMetadata: (props) => (
+      <AffiliateLinksFromMetadata 
+        affiliateLinks={frontMatter?.affiliateLinks}
+        {...props} 
+      />
+    ),
     VideoEmbed,
     Collapsible,
     InContentAd: (props) => (
