@@ -9,10 +9,10 @@ date: '2026-01-02'
 draft: false
 autoAds: true
 summary: 'My Radxa Dragon Q6A review with benchmark results, thermals, NVMe/UFS speeds, Home Assistant voice tests, and a walkthrough of Windows 11 on ARM (UEFI).'
-imageUrl: /static/images/2025/radxa-dragon-q6a/cover.webp
+imageUrl: /static/images/2026/radxa-dragon-q6a/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/3MdcOY9aIn4"
+youtubeLink: "https://www.youtube.com/embed/oiIn1y9-Dxk"
 suggestedArticles:
   - title: "Radxa Cubie A7A Review: Pi-Sized Power With PCIe, NVMe, USB 3.1 Gen2"
     url: "https://smarthomecircle.com/radxa-cubie-a7a-review-benchmarks-pi-5-comparison"
@@ -20,6 +20,69 @@ suggestedArticles:
     url: "https://smarthomecircle.com/radxa-cubie-a5e-review-benchmarks-vs-raspberry-pi"
   - title: "I Built A DIY 10 Inch Server Rack"
     url: "https://smarthomecircle.com/I-built-a-diy-10-inch-server-rack"
+
+includeAsSBC:
+  title: "Radxa Dragon Q6A"
+  price: "$59.50+"
+  comparable: False
+  specifications:
+    SoC: Qualcomm QCS6490
+    CPU: |
+      1× Kryo Prime @ 2.7GHz
+      3× Kryo Gold @ 2.4GHz
+      4× Kryo Silver @ 1.9GHz
+    GPU:
+      Model: Qualcomm Adreno 643
+      Support: |
+        OpenGL ES 3.2
+        Vulkan 1.3
+        OpenCL 2.2
+        DirectX Feature Level 12
+    AI Capabilities: |
+      Qualcomm AI Engine (Hexagon DSP + Hexagon Tensor Accelerator): up to 12 TOPS
+    RAM:
+      Size: 4GB / 6GB / 8GB / 12GB / 16GB (options)
+      Type: LPDDR5
+      Speed: 5500MT/s
+      Bus: Not specified
+    Storage: |
+      MicroSD card slot
+      eMMC/UFS module
+      M.2 2230 NVMe SSD (PCIe)
+    Video Output: |
+      1 × HDMI 2.0 Type-A up to 4K@30fps
+      1 × MIPI DSI (4-lane, FHD+)
+    NVMe:
+      Onboard: Yes (M.2 M-Key 2230 slot)
+      Connectivity: PCIe Gen3 x 2 lane
+      Size: 2230
+    Network:
+      Ethernet: 1 × Gigabit Ethernet
+      WiFi: WiFi 6 
+      Bluetooth: Bluetooth 5.4
+    PoE: Yes (requires PoE HAT)
+    USB: |
+      1 × USB 2.0 Type-C
+      1 × USB 3.1 Type-A OTG
+      3 × USB 2.0 Type-A Host
+    Power: |
+      12V via USB-C PD input (12V capable)
+      12V via 3-pin power connector
+      5V via 40-pin header (2 × 5V in/out)
+    Audio: |
+      1 × 3.5mm audio/microphone jack
+      HDMI audio out
+    Dimensions: |
+      Width: 65 mm
+      Length: 85 mm
+      Height: 20 mm
+    Operating System: |
+      [Radxa OS](https://github.com/radxa-build/radxa-dragon-q6a/releases)
+      [Fedora](https://images.arm.fedoravforce.org/Radxa%20Dragon%20Q6A)
+      [Deepin Linux](https://deepin-community.github.io/sig-deepin-ports/images/arm64)
+      [Armbian](https://www.armbian.com/radxa-dragon-q6a/)
+      Windows on Arm
+
 ---
 
 <TOCInline toc={props.toc} asDisclosure /> 
@@ -28,8 +91,8 @@ suggestedArticles:
 I’ve been testing the **Radxa Dragon Q6A** as a compact, high-performance single-board computer, and I want to share what I learned after pushing it through real benchmarks, storage tests, thermals, and even **Windows 11 on ARM**.
 
 <div class="image-flex">
-  <img src="/static/images/2025/radxa-dragon-q6a/dragon-q6a.webp" alt="dragon q6a" />
-  <img src="/static/images/2025/radxa-dragon-q6a/dragon-q6a-1.webp" alt="dragon q6a" />
+  <img src="/static/images/2026/radxa-dragon-q6a/dragon-q6a.webp" alt="dragon q6a" />
+  <img src="/static/images/2026/radxa-dragon-q6a/dragon-q6a-1.webp" alt="dragon q6a" />
 </div>
 
 <AffiliateLinks 
@@ -44,22 +107,7 @@ I’ve been testing the **Radxa Dragon Q6A** as a compact, high-performance sing
 
 ## Technical Specification
 
-| Category      | Technical specification                                                                                                                                                                                                                                                                                                                                                                            |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **SoC:** |  Qualcomm QCS6490 |
-| **CPU:**        | 1× Kryo Gold Plus @ 2.7GHz <br/> 3× Kryo Gold @ 2.4GHz <br/> 4× Kryo Silver @ 1.9GHz|
-| **GPU:**        | Qualcomm® Adreno 643 <br/> - OpenGL ES 3.2<br/> - Vulkan 1.3<br/> - OpenCL 2.2, DirectX 12|
-| **AI Accelerator:**        | Hexagon DSP + Hexagon Tensor Accelerator (up to 12 TOPS)|
-| **Memory**        | LPDDR5 — 8GB|
-| **Storage**       | - Onboard 32MB QSPI Nor Flash<br/> - MicroSD<br/> - eMMC module / UFS module<br/> - M.2 M-Key 2230 NVMe SSD  (PCIe Gen 3 x 2 lane)      |
-| **Networking**    | 1× Gigabit Ethernet (PoE requires external PoE HAT)<br/> Wi-Fi 6 + Bluetooth 5.4 (with external antenna)   |
-| **Video Output**  | - 1× HDMI up to 4K@30Hz<br/> - MIPI DSI: 1× 4-lane MIPI DSI    |
-| **Camera**        | - 1× 4-lane MIPI CSI <br/>- 2× 2-lane MIPI CSI    |
-| **Audio**         | 3.5mm 4-segment headset jack (mic input supported)with Stereo output    |
-| **USB**           | 1x USB 3.1 Type-A with OTG<br/> 3x USB 2.0 Type-A     |
-| **Expansion**     | **40-pin GPIO header:** UART / SPI / I2C etc.                   |
-| **Power Supply**  | - USB-C 12V input<br/>- External 12V pin input<br/>- PoE power (requires external PoE HAT)     |   |
-
+<SpecificationsDisplay/>
 
 ---
 
@@ -70,7 +118,7 @@ I initially ran the board **bare**, without any heatsink. That worked fine for l
 My fix was simple: I installed a tiny **25 mm heatsink + fan** (the kind often used on a Raspberry Pi 4) and powered it via the **GPIO pins**. 
 
 <div class="image-flex">
-  <img src="/static/images/2025/radxa-dragon-q6a/with-fan.webp" alt="dragon q6a fan" />
+  <img src="/static/images/2026/radxa-dragon-q6a/with-fan.webp" alt="dragon q6a fan" />
 </div>
 
 ---
@@ -88,9 +136,9 @@ To get UEFI support, you need to flash the custom firmware mentioned in this [he
 With UEFI available, I downloaded the **Windows for ARM** image and prepared a USB drive with **Rufus**. Next, I plugged it into the board and started the installation selecting the USB as the boot medium.
 
 <div class="image-flex">
-  <img src="/static/images/2025/radxa-dragon-q6a/boot-select.webp" alt="dragon q6a" />
-  <img src="/static/images/2025/radxa-dragon-q6a/uefi-boot.webp" alt="dragon q6a" />
-  <img src="/static/images/2025/radxa-dragon-q6a/windows.webp" alt="dragon q6a" />
+  <img src="/static/images/2026/radxa-dragon-q6a/boot-select.webp" alt="dragon q6a" />
+  <img src="/static/images/2026/radxa-dragon-q6a/uefi-boot.webp" alt="dragon q6a" />
+  <img src="/static/images/2026/radxa-dragon-q6a/windows.webp" alt="dragon q6a" />
 </div>
 
 
@@ -137,12 +185,12 @@ Geekbench test showed pretty high result which were similar to those from an Int
 ### Graphics benchmarks
 - glmark2 (OpenGL) Score: **2946**
 <p align="center">
-  <img src="/static/images/2025/radxa-dragon-q6a/glmark2.webp" alt="dragon q6a" />
+  <img src="/static/images/2026/radxa-dragon-q6a/glmark2.webp" alt="dragon q6a" />
 </p>
 
 - vkmark (Vulkan) Score: **4557**
 <p align="center">
-  <img src="/static/images/2025/radxa-dragon-q6a/vkmark.webp" alt="dragon q6a" />
+  <img src="/static/images/2026/radxa-dragon-q6a/vkmark.webp" alt="dragon q6a" />
 </p>
 
 ### CPU benchmark (sysbench)
@@ -188,7 +236,7 @@ Threads fairness:
 </Collapsible>
 
 <p align="center">
-  <img src="/static/images/2025/radxa-dragon-q6a/sysbench.webp" alt="dragon q6a" />
+  <img src="/static/images/2026/radxa-dragon-q6a/sysbench.webp" alt="dragon q6a" />
 </p>
 
 
@@ -241,7 +289,7 @@ AVG     Method: MCBLOCK Elapsed: 0.13639        MiB: 1024.00000 Copy: 7507.618 M
 </Collapsible>
 
 <p align="center">
-  <img src="/static/images/2025/radxa-dragon-q6a/mbw.webp" alt="router" />
+  <img src="/static/images/2026/radxa-dragon-q6a/mbw.webp" alt="router" />
 </p>
 
 #### Tinymembench Test
@@ -386,7 +434,7 @@ block size : single random read / dual random read, [MADV_HUGEPAGE]
 ```
 </Collapsible>
 <p align="center">
-  <img src="/static/images/2025/radxa-dragon-q6a/tinymembench.webp" alt="router" />
+  <img src="/static/images/2026/radxa-dragon-q6a/tinymembench.webp" alt="router" />
 </p>
 
 
@@ -398,8 +446,8 @@ I tested the ethernet and Wifi speeds using iPerf3 test and these were the resul
 - Wi‑Fi: ~**170 Mbps** 
 
 <div class="image-flex">
-  <img src="/static/images/2025/radxa-dragon-q6a/iperf3-ethernet.webp" alt="dragon q6a" />
-  <img src="/static/images/2025/radxa-dragon-q6a/iperf3-wifi.webp" alt="dragon q6a" />
+  <img src="/static/images/2026/radxa-dragon-q6a/iperf3-ethernet.webp" alt="dragon q6a" />
+  <img src="/static/images/2026/radxa-dragon-q6a/iperf3-wifi.webp" alt="dragon q6a" />
 </div>
 
 ---
@@ -414,7 +462,7 @@ The **M.2 M-key** onboard slot provide **PCIe Gen 3** speeds with **2 lane** con
 - Radxa OS : **~750 MB/s**
 
 <div class="image-flex">
-  <img src="/static/images/2025/radxa-dragon-q6a/windows-nvme.webp" alt="dragon q6a" />
+  <img src="/static/images/2026/radxa-dragon-q6a/windows-nvme.webp" alt="dragon q6a" />
 </div>
 
 
@@ -488,7 +536,7 @@ I ran **Home Assistant, Whisper and Piper with Docker**:
 When I gave a voice command, **Whisper (with small-int8 model)** converted speech-to-text in about **~4 seconds**, which was roughly **~50% faster** than the Raspberry Pi 5 in my own comparisons.
 
 <p align="center">
-  <img src="/static/images/2025/radxa-dragon-q6a/faster-whisper.webp" alt="dragon q6a" />
+  <img src="/static/images/2026/radxa-dragon-q6a/faster-whisper.webp" alt="dragon q6a" />
 </p>
 
 
@@ -502,8 +550,8 @@ With **NVMe + UFS module + fan** connected:
 - Under stress testing: **~9.5 – 10 Watt**
 
 <div class="image-flex">
-  <img src="/static/images/2025/radxa-dragon-q6a/peak-watts.webp" alt="dragon q6a" />
-  <img src="/static/images/2025/radxa-dragon-q6a/idle-watts.webp" alt="dragon q6a" />
+  <img src="/static/images/2026/radxa-dragon-q6a/peak-watts.webp" alt="dragon q6a" />
+  <img src="/static/images/2026/radxa-dragon-q6a/idle-watts.webp" alt="dragon q6a" />
 </div>
 
 ---
@@ -525,11 +573,11 @@ I can see it fitting in a few different roles:
 
 Prices for the **8Gb** variant as below
 In my searches, I saw pricing around:
-- **~€90 on AliExpress**: [Link](https://s.click.aliexpress.com/e/_c4EfuAYd)
+- **~€90 on AliExpress**: [Link](https://de.aliexpress.com/item/1005010224206962.html?aff_fcid=79f77f80ca9543b49d03804d6e991f74-1766435965636-09027-_DEhJfB1&tt=CPS_NORMAL&aff_fsk=_DEhJfB1&aff_platform=shareComponent-detail&sk=_DEhJfB1&aff_trace_key=79f77f80ca9543b49d03804d6e991f74-1766435965636-09027-_DEhJfB1)
 - **~€70 on Arace**: [Link](https://arace.tech/products/radxa-dragon-q6a?variant=44069918802100)
 
 <div class="image-flex">
-  <img src="/static/images/2025/radxa-dragon-q6a/dragon-q6a-1.webp" alt="dragon q6a" />
+  <img src="/static/images/2026/radxa-dragon-q6a/dragon-q6a-1.webp" alt="dragon q6a" />
 </div>
 
 <AffiliateLinks 
