@@ -21,6 +21,14 @@ suggestedArticles:
   - title: "I Built A DIY 10 Inch Server Rack"
     url: "https://smarthomecircle.com/I-built-a-diy-10-inch-server-rack"
 
+affiliateLinks:
+  title: Buy Radxa Dragon Q6A
+  links: 
+    - label: "AliExpress"
+      url: "https://de.aliexpress.com/item/1005010224206962.html?aff_fcid=79f77f80ca9543b49d03804d6e991f74-1766435965636-09027-_DEhJfB1&tt=CPS_NORMAL&aff_fsk=_DEhJfB1&aff_platform=shareComponent-detail&sk=_DEhJfB1&aff_trace_key=79f77f80ca9543b49d03804d6e991f74-1766435965636-09027-_DEhJfB1"
+    - label: "Arace"
+      url: "https://arace.tech/products/radxa-dragon-q6a?variant=44069918802100"
+
 includeAsSBC:
   title: "Radxa Dragon Q6A"
   price: "$59.50+"
@@ -103,6 +111,7 @@ I’ve been testing the **Radxa Dragon Q6A** as a compact, high-performance sing
   ]}
 />
 
+<AffiliateLinksFromMetadata />
 ---
 
 ## Technical Specification
