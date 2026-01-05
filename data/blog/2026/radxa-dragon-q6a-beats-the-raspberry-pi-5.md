@@ -5,7 +5,7 @@ categories: ''
 tags: [SBC, radxa, perfromance, qualcomm, benchmarks]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2026-01-02'
+date: '2026-01-08'
 draft: false
 autoAds: true
 summary: 'My Radxa Dragon Q6A review with benchmark results, thermals, NVMe/UFS speeds, Home Assistant voice tests, and a walkthrough of Windows 11 on ARM (UEFI).'
@@ -102,14 +102,6 @@ I’ve been testing the **Radxa Dragon Q6A** as a compact, high-performance sing
   <img src="/static/images/2026/radxa-dragon-q6a/dragon-q6a.webp" alt="dragon q6a" />
   <img src="/static/images/2026/radxa-dragon-q6a/dragon-q6a-1.webp" alt="dragon q6a" />
 </div>
-
-<AffiliateLinks 
-  title="Buy Radxa Dragon Q6A" 
-  links={[
-    { store: "AliExpress", url: "https://de.aliexpress.com/item/1005010224206962.html?aff_fcid=79f77f80ca9543b49d03804d6e991f74-1766435965636-09027-_DEhJfB1&tt=CPS_NORMAL&aff_fsk=_DEhJfB1&aff_platform=shareComponent-detail&sk=_DEhJfB1&aff_trace_key=79f77f80ca9543b49d03804d6e991f74-1766435965636-09027-_DEhJfB1" },
-    { store: "Arace", url: "https://arace.tech/products/radxa-dragon-q6a?variant=44069918802100" }
-  ]}
-/>
 
 <AffiliateLinksFromMetadata />
 ---
@@ -589,12 +581,6 @@ In my searches, I saw pricing around:
   <img src="/static/images/2026/radxa-dragon-q6a/dragon-q6a-1.webp" alt="dragon q6a" />
 </div>
 
-<AffiliateLinks 
-  title="Buy Radxa Dragon Q6A" 
-  links={[
-    { store: "AliExpress", url: "https://de.aliexpress.com/item/1005010224206962.html?aff_fcid=79f77f80ca9543b49d03804d6e991f74-1766435965636-09027-_DEhJfB1&tt=CPS_NORMAL&aff_fsk=_DEhJfB1&aff_platform=shareComponent-detail&sk=_DEhJfB1&aff_trace_key=79f77f80ca9543b49d03804d6e991f74-1766435965636-09027-_DEhJfB1" },
-    { store: "Arace", url: "https://arace.tech/products/radxa-dragon-q6a?variant=44069918802100" }
-  ]}
-/>
+<AffiliateLinksFromMetadata />
 
 
