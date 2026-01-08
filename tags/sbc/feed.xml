@@ -7,10 +7,20 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 11 Dec 2025 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 08 Jan 2026 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/sbc/feed.xml" rel="self" type="application/rss+xml"/>
       <atom:link href="https://smarthomecircle.com/tags/sbc" rel="alternate" type="text/html"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/radxa-dragon-q6a-beats-the-raspberry-pi-5</guid>
+    <title>Radxa Dragon Q6A: my hands-on experience (benchmarks, thermals, and Windows 11 Pro on ARM)</title>
+    <link>https://smarthomecircle.com/radxa-dragon-q6a-beats-the-raspberry-pi-5</link>
+    <description>My Radxa Dragon Q6A review with benchmark results, thermals, NVMe/UFS speeds, Home Assistant voice tests, and a walkthrough of Windows 11 on ARM (UEFI).</description>
+    <pubDate>Thu, 08 Jan 2026 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>SBC</category><category>radxa</category><category>perfromance</category><category>qualcomm</category><category>benchmarks</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/spacemit-muse-pi-pro-riscv-review-performance-benchmarks</guid>
     <title>Muse Pi Pro (Spacemit K1 / M1) – My First Real RISC-V Experience</title>
