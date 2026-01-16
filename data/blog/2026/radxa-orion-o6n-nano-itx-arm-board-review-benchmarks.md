@@ -148,11 +148,11 @@ Because of that, I used **Radxa OS** for most of my performance testing, since i
 To get a quick feel for GPU performance, I ran **Furmark**:
 
 - **Vulkan (API 1.4):** ~**23 FPS**
-- **OpenGL (3.2):** ~**18 FPS**
+- **OpenGL (4.6):** ~**18 FPS**
 
 <div class="image-flex">
-  <img src="/static/images/2026/orion-o6n/furmark-opengl.png" alt="furmark-opengl" />
-  <img src="/static/images/2026/orion-o6n/furmark-opengl.png" alt="furmark-opengl" />
+  <img src="/static/images/2026/orion-o6n/furmark-opengl.jpg" alt="furmark-opengl" />
+  <img src="/static/images/2026/orion-o6n/furmark-vulkan.jpg" alt="furmark-opengl" />
 </div>
 
 
@@ -212,8 +212,8 @@ Important note: these were **CPU-only** runs. I wasn’t using the NPU.
 ## CPU benchmarks: Geekbench and Sysbench
 
 ### Geekbench
-- **Single-core:** ~**1300**
-- **Multi-core:** ~**6600**
+- **Single-core:** **1329**
+- **Multi-core:** **6683**
 
 In my comparisons, that lands around **~2× the performance of a Rock 5T (RK3588)** in the same general test style.
 
@@ -221,7 +221,9 @@ In my comparisons, that lands around **~2× the performance of a Rock 5T (RK3588
   <img src="/static/images/2026/orion-o6n/geekbench.png" alt="geekbench" />
 </p>
 
-### Sysbench (prime calculation test)
+[Geekbench Score](https://browser.geekbench.com/v6/cpu/15863367)
+
+### Sysbench
 I ran a sysbench prime test (up to 20,000 per 100,000 requests), and this board completed it in:
 - **~9.8 seconds**
 
@@ -236,10 +238,10 @@ That was also roughly **~2× faster than the Rock 5T** in the same type of workl
 ## Memory performance:
 
 I ran the following tests:
-- **memory bandwidth test**
-- **tinymembench**
+- **Memory Bandwidth Test**
+- **Tinymembench**
 
-And the results were *way* ahead of what I typically see on boards like the Rock 5T and Raspberry Pi 5. This is exactly where that **128-bit memory bus** makes a difference.
+The results were *way* ahead of what I typically see on boards like the Rock 5T and Raspberry Pi 5. This is exactly where that **128-bit memory bus** makes a difference.
 
 
 <div class="image-flex">
@@ -250,11 +252,11 @@ And the results were *way* ahead of what I typically see on boards like the Rock
 
 ---
 
-## USB and NVMe: fast I/O everywhere
+## I/O Tests
 
 ### USB 3.2 test
 With a USB-to-NVMe adapter, I confirmed it was running on the **10,000 Mbit bus**, and using fio I saw:
-- ~**970 MB/s write**
+- ~**970 MB/s write speed**
 
 ### Dual Gen4 NVMe slots
 Both M.2 M-key slots provide **PCIe Gen 4 x4**, and in hdparm I saw read speeds around:
@@ -262,7 +264,9 @@ Both M.2 M-key slots provide **PCIe Gen 4 x4**, and in hdparm I saw read speeds 
 
 That’s excellent for a board in this category, and it makes it much more realistic to run it as a proper server or lab box with fast local storage.
 
-> 📷 **Photo suggestion:** Photo of the NVMe installed + terminal screenshots of fio/hdparm results.
+<p align="center">
+  <img src="/static/images/2026/orion-o6n/hdparm.jpg" alt="hdparm" />
+</p>
 
 ---
 
@@ -271,10 +275,7 @@ That’s excellent for a board in this category, and it makes it much more reali
 For Ethernet, I tested with **iperf3** and got about:
 - ~**2.3 Gbit/s** sending and receiving
 
-For Wi-Fi, I used an **Intel BE200 (Wi-Fi 7)** card:
-- It was detected, but **firmware wasn’t loaded**
-- After copying the required firmware file, Wi-Fi worked
-- I measured about **~500 Mbit/s**
+For Wi-Fi, I used an **Intel BE200 (Wi-Fi 7)** card, which was detected, but **firmware wasn’t loaded**. After copying the required firmware file, Wi-Fi worked and I measured about **~500 Mbit/s**
 
 <div class="image-flex">
   <img src="/static/images/2026/orion-o6n/wifi7.jpg" alt="llamacpp" />
@@ -284,9 +285,7 @@ For Wi-Fi, I used an **Intel BE200 (Wi-Fi 7)** card:
 
 ## Home Assistant + local voice: surprisingly quick
 
-I ran **Home Assistant** as a container (Docker), along with local voice assistant components:
-- **Piper**
-- **Whisper** (small int8 model)
+I ran **Home Assistant** as a container (Docker), along with local voice assistant components i.e **Piper** and  **Whisper** (small int8 model)
 
 When I gave it a voice command, the board converted speech to text in about:
 - **~2.3 seconds**
@@ -304,7 +303,7 @@ That’s a strong result—better than what I’ve seen from the Rock 5T and eve
 
 Right now, mainline Linux support still isn’t fully complete, and it’s been in progress for close to a year since the Orion O6 release.
 
-There *is* hope though: there’s a **skylinux** repository that provides patches intended for Linux **6.18**, so you can build a patched kernel yourself. I tried that approach on the O6N, but I couldn’t get it working properly on this board yet.
+There is a [**linux-sky**](https://github.com/Sky1-Linux/linux-sky1) repository that provides patches intended for Linux **6.18**, so you can build a patched kernel yourself. I tried that approach on the O6N, but I couldn’t get it working properly on this board yet.
 
 So at the moment, if you want the best experience—especially around things like GPU acceleration—**Radxa OS is the safer choice**.
 
