@@ -12,7 +12,7 @@ summary: 'ReSpeaker XVF3800 review for Home Assistant: ESPHome configuration, wa
 imageUrl: /static/images/2026/respeaker-xvf3800/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/xETkRuCWASw"
+youtubeLink: "https://www.youtube.com/embed/wjb2suqYGJY"
 suggestedArticles:
   - title: "Build Your Own Local Voice Assistant with ReSpeaker Lite and Home Assistant"
     url: "https://smarthomecircle.com/local-voice-assistant-with-seeed-studio-respeaker-lite"
@@ -51,7 +51,7 @@ After living with it day-to-day for a full month, I can finally say it feels lik
 
 ---
 
-## Quick hardware tour (what’s on the board)
+## Hardware Overview
 
 
 | Component / Feature       | Description                                                                                      |
@@ -73,11 +73,11 @@ After living with it day-to-day for a full month, I can finally say it feels lik
 
 ## Real-world comparison: ReSpeaker XVF3800 vs Home Assistant Voice Assistant Preview Edition
 
-A question I keep getting is: **Why use this if you already have the official Home Assistant Voice Assistant Preview Edition?**
+A question I would get is: **Why use this if you already have the official Home Assistant Voice Assistant Preview Edition?**
 
 I’ve been using both devices side by side for about a month, and here’s the difference that stood out immediately in my daily use:
 
-### Wake word detection range (this is the big one)
+### Wake word detection range
 With the ReSpeaker XVF3800 setup, wake word was detected from almost anywhere in the room — even around **3 meters away**. I didn’t need to face it. I didn’t need to “aim” my voice.
 
 It reminded me of how natural it felt using something like a Google Home Mini — just speak normally in the room and it reacts.
@@ -140,9 +140,11 @@ Pricing can vary depending on where you buy it, but the numbers I’m seeing:
 ---
 
 
-## ESPHome Configuration
+## ESPHome YAML Configuration
 
-A huge shout-out to [**Andrii (FormatBCE on GitHub)**](https://github.com/formatBCE) — the ESPHome configuration from his repository is what made this device work into place for me. The link to the ESPHome Configuration file is [here](https://github.com/formatBCE/Respeaker-XVF3800-ESPHome-integration/blob/main/config/respeaker-xvf-satellite-example.yaml)
+A huge shout-out to [**Andrii (FormatBCE on GitHub)**](https://github.com/formatBCE) — the ESPHome configuration from his repository is what made this device work into place for me. 
+
+The link to the ESPHome Configuration file is [here](https://github.com/formatBCE/Respeaker-XVF3800-ESPHome-integration/blob/main/config/respeaker-xvf-satellite-example.yaml)
 
 ---
 
