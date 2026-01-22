@@ -7,10 +7,20 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 21 Aug 2025 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 22 Jan 2026 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/voice-assistant/feed.xml" rel="self" type="application/rss+xml"/>
       <atom:link href="https://smarthomecircle.com/tags/voice-assistant" rel="alternate" type="text/html"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/respeaker-xvf3800-home-assistant-voice-assistant</guid>
+    <title>ReSpeaker XVF3800: a surprisingly solid local voice assistant for Home Assistant</title>
+    <link>https://smarthomecircle.com/respeaker-xvf3800-home-assistant-voice-assistant</link>
+    <description>ReSpeaker XVF3800 review for Home Assistant: ESPHome configuration, wake-word performance, practical placement tips for best results.</description>
+    <pubDate>Thu, 22 Jan 2026 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Home Assistant</category><category>Voice Assistant</category><category>Local</category><category>ESP32 S3</category><category>ESPHome</category><category>Seed Studio</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/rhasspy-speech-faster-than-whisper-home-assistant</guid>
     <title>Rhasspy Speech: Boost Home Assistant Voice Control on Raspberry Pi — Faster Than Whisper</title>
