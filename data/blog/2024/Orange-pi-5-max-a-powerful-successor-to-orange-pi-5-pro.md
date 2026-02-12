@@ -14,24 +14,100 @@ actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/OVam317j-bc"
 
+
+affiliateLinks:
+  title: Buy Orange Pi 5 Max
+  links: 
+    - label: "AliExpress"
+      url: "https://s.click.aliexpress.com/e/_De07TWt"
+    - label: "Amazon"
+      url: "https://amzn.to/4gAEOw4"
+
+
+includeAsSBC:
+  title: "Orange Pi 5 Max"
+  price: "$75+"
+  comparable: True
+  specifications:
+    SoC: Rockchip RK3588
+    CPU: |
+      8-core 64-bit
+      4 × Cortex-A76 up to 2.4GHz
+      4 × Cortex-A55 up to 1.8GHz
+    GPU:
+      Model: ARM Mali-G610
+      Support: |
+        OpenGL ES 1.1/2.0/3.2
+        OpenCL 2.2
+        Vulkan 1.2
+    AI Capabilities: |
+      NPU: up to 6 TOPS
+      Precision: INT4 / INT8 / INT16 / FP16 (hybrid computing)
+    RAM:
+      Size: 4GB / 8GB / 16GB (options)
+      Type: LPDDR5
+      Speed: Not specified
+      Bus: Not specified
+    Storage: |
+      MicroSD card slot
+      eMMC flash socket (optional onboard eMMC)
+      NVMe
+    Video Output: |
+      2× HDMI 2.1 up to 8K@60fps
+      1× MIPI DSI TX (4-lane)
+    NVMe:
+      Onboard: Yes (M.2 M-Key)
+      Connectivity: PCIe 3.0 x 4 (4-lane)
+      Size: 2280
+    Network:
+      Ethernet: 1× 2.5GbE
+      WiFi: Wi-Fi 6E
+      Bluetooth: Bluetooth 5.3
+    PoE: No
+    USB: |
+      2× USB 3.0
+      2× USB 2.0
+    Power: |
+      USB Type-C power input
+      5V @ 5A
+    Audio: |
+      Audio codec: ES8388
+      1× 3.5mm audio jack (with mic)
+      1× MIC In
+      HDMI 2.1 eARC
+      Onboard microphone (mentioned in launch coverage)
+    Camera: |
+      2× MIPI CSI (4-lane)
+      1× MIPI D-PHY RX (4-lane)
+    Expansion: |
+      40-pin GPIO header (2.54mm)
+      Supports UART, PWM, I2C, SPI, CAN, GPIO, etc.
+    Buttons: |
+      1× BOOT key
+      1× On/Off key
+    Dimensions: Not specified
+    Operating System: |
+      [Orange Pi OS (Droid)](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-Pi-5-Max.html)
+      [Orange Pi OS (Arch)](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-Pi-5-Max.html)
+      [Orange Pi OS (OH)](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-Pi-5-Max.html)
+      [Ubuntu](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-Pi-5-Max.html)
+      [Debian](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-Pi-5-Max.html)
+      [Android 12](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-Pi-5-Max.html)
+
 ---
 <TOCInline toc={props.toc} asDisclosure />  
 
-## Components
 
-1.  Orange Pi 5 MAX.  
-    -   [**Amazon (Affiliate Link)**](https://amzn.to/4gAEOw4)
-    -   [**AliExpress (Affiliate Link)**](https://s.click.aliexpress.com/e/_De07TWt)
+
 [![ orange-pi-5-max ](/static/images/components/orange-pi-5-max.webp)](https://amzn.to/4gAEOw4)
 
-2.  Acrylic Case
-
- -   [**Amazon (Affiliate Link)**](https://amzn.to/4doQTkZ)
- -   [**AliExpress (Affiliate Link)**](https://s.click.aliexpress.com/e/_DmIKkdF)
-[![orange-pi-5-max-case](/static/images/components/orange-pi-5-max-case.webp)](https://s.click.aliexpress.com/e/_DmIKkdF)
-
+<AffiliateLinksFromMetadata/>
 
 The Orange Pi 5 MAX is an exciting new single-board computer (SBC) that follows in the footsteps of its predecessor, the Orange Pi 5 Pro, while maintaining the same form factor as the Raspberry Pi 5. In this article, we'll dive into the details of the Orange Pi 5 MAX, exploring its various components, performance benchmarks, and practical use cases.
+
+## Technical Specification 
+
+<SpecificationsDisplay />
 
 ## Operating System Compatibility
 
@@ -159,6 +235,16 @@ Here is the output of 1 GB of memory bandwidth test.
 The Orange Pi 5 MAX offers significant improvements over its predecessor and strong competition to the Raspberry Pi 5. With built-in support for PCIe Gen 3, faster NVMe speeds, and excellent multi-core performance, it’s an excellent option for those looking to build home servers, NAS devices, or home automation systems.
 
 If you're interested in purchasing the Orange Pi 5 MAX, you can find it on [AliExpress](https://s.click.aliexpress.com/e/_De07TWt) or [Amazon](https://amzn.to/4gAEOw4). I’ll be making another video soon to demonstrate its AI capabilities, including the 6 TOPs NPU.
+
+[![orange-pi-5-max-case](/static/images/components/orange-pi-5-max-case.webp)](https://s.click.aliexpress.com/e/_DmIKkdF)
+<AffiliateLinks 
+  title="Acrylic Case" 
+  links={[
+    { store: "Amazon", url: "https://amzn.to/4doQTkZ" },
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_DmIKkdF" }
+  ]}
+/>
+
 
 If you are interested in exploring more of such easy to follow step by step guides about Home Assistant, then here are a few suggestions
 
