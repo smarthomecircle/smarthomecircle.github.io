@@ -1,18 +1,32 @@
-import { getAllFilesFrontMatter } from '@/lib/mdx'
+import { getAllFilesFrontMatter, getFileBySlug } from '@/lib/mdx'
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
-import { getFileBySlug } from '@/lib/mdx'
 import SBCListLayout from '@/layouts/SBCListLayout'
+import { SBC_POSTS_PER_PAGE } from '../../sbc'
 
-export const SBC_POSTS_PER_PAGE = 4
+export async function getStaticPaths() {
+  const allBlogPosts = await getAllFilesFrontMatter('blog')
+  const posts = allBlogPosts.filter(post => post.includeAsSBC && typeof post.includeAsSBC === 'object')
+  const totalPages = Math.ceil(posts.length / SBC_POSTS_PER_PAGE) || 1
+  // Page 1 is at /sbc, so only generate paths for page 2, 3, ...
+  const paths = Array.from({ length: Math.max(0, totalPages - 1) }, (_, i) => ({
+    params: { page: String(i + 2) },
+  }))
+  return { paths, fallback: false }
+}
 
-export async function getStaticProps() {
+export async function getStaticProps(context) {
+  const { params } = context
+  const page = parseInt(params.page, 10)
   const allBlogPosts = await getAllFilesFrontMatter('blog')
   const posts = allBlogPosts.filter(post => post.includeAsSBC && typeof post.includeAsSBC === 'object')
 
-  const initialDisplayPosts = posts.slice(0, SBC_POSTS_PER_PAGE)
+  const initialDisplayPosts = posts.slice(
+    SBC_POSTS_PER_PAGE * (page - 1),
+    SBC_POSTS_PER_PAGE * page
+  )
   const pagination = {
-    currentPage: 1,
+    currentPage: page,
     totalPages: Math.ceil(posts.length / SBC_POSTS_PER_PAGE) || 1,
   }
 
@@ -22,10 +36,13 @@ export async function getStaticProps() {
     return authorResults.frontMatter
   })
   const authorDetails = await Promise.all(authorPromise)
-  return { props: { posts, initialDisplayPosts, pagination, authorDetails } }
+
+  return {
+    props: { posts, initialDisplayPosts, pagination, authorDetails },
+  }
 }
 
-export default function SbcPage({ posts, initialDisplayPosts, pagination, authorDetails }) {
+export default function SbcPageNumber({ posts, initialDisplayPosts, pagination, authorDetails }) {
   return (
     <>
       <PageSEO

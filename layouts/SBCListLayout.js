@@ -7,6 +7,7 @@ export default function SBCListLayout({
   initialDisplayPosts = [],
   authorDetails,
   pagination,
+  basePath = '',
 }) {
   const [searchValue, setSearchValue] = useState('')
   const filteredBlogPosts = posts.filter((frontMatter) => {
@@ -101,6 +102,7 @@ export default function SBCListLayout({
                 <Pagination
                   currentPage={pagination.currentPage}
                   totalPages={pagination.totalPages}
+                  basePath={basePath}
                 />
               </div>
             )}
