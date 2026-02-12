@@ -7,10 +7,20 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 22 Jan 2026 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sun, 08 Feb 2026 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/home-assistant/feed.xml" rel="self" type="application/rss+xml"/>
       <atom:link href="https://smarthomecircle.com/tags/home-assistant" rel="alternate" type="text/html"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/sonoff-dongle-max-features-and-home-assistant-setup</guid>
+    <title>Sonoff Dongle Max: what makes it “Max”</title>
+    <link>https://smarthomecircle.com/sonoff-dongle-max-features-and-home-assistant-setup</link>
+    <description>a powerful Zigbee/Thread coordinator with stronger antenna, built-in 2.4GHz Wi-Fi access point, WireGuard VPN support for remote Zigbee management, Home Assistant configuration, webhook triggers, and PoE power</description>
+    <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Sonoff</category><category>zigbee</category><category>thread</category><category>home assistant</category><category>wifi</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/respeaker-xvf3800-home-assistant-voice-assistant</guid>
     <title>ReSpeaker XVF3800: a surprisingly solid local voice assistant for Home Assistant</title>

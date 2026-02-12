@@ -1,0 +1,25 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Smart Home Circle</title>
+      <link>https://smarthomecircle.com</link>
+      <description>A comprehensive resource covering Smart Home Tech, detailed Single Board Computers (SBC) reviews, mini PC, Home Automation, HomeLab upgrades, and Home Assistant guides.</description>
+      <language>en-us</language>
+      <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Sun, 08 Feb 2026 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://smarthomecircle.com/tags/thread/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://smarthomecircle.com/tags/thread" rel="alternate" type="text/html"/>
+      
+  <item>
+    <guid>https://smarthomecircle.com/sonoff-dongle-max-features-and-home-assistant-setup</guid>
+    <title>Sonoff Dongle Max: what makes it “Max”</title>
+    <link>https://smarthomecircle.com/sonoff-dongle-max-features-and-home-assistant-setup</link>
+    <description>a powerful Zigbee/Thread coordinator with stronger antenna, built-in 2.4GHz Wi-Fi access point, WireGuard VPN support for remote Zigbee management, Home Assistant configuration, webhook triggers, and PoE power</description>
+    <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Sonoff</category><category>zigbee</category><category>thread</category><category>home assistant</category><category>wifi</category>
+  </item>
+
+    </channel>
+  </rss>
