@@ -9,10 +9,10 @@ date: '2026-02-08'
 draft: false
 autoAds: true
 summary: 'a powerful Zigbee/Thread coordinator with stronger antenna, built-in 2.4GHz Wi-Fi access point, WireGuard VPN support for remote Zigbee management, Home Assistant configuration, webhook triggers, and PoE power'
-imageUrl: /static/images/2026/radxa-dragon-q6a/cover.webp
+imageUrl: /static/images/2026/sonoff-dongle-max/cover.png
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/oiIn1y9-Dxk"
+youtubeLink: "https://www.youtube.com/embed/MAxX_g46rlQ"
 suggestedArticles:
   - title: "A Rotary Display as My Home Assistant Knob"
     url: "https://smarthomecircle.com/elecrow-2-1-rotary-display-esphome-home-assistant-controller"
