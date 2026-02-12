@@ -1,4 +1,5 @@
 import Link from './Link'
+import AffiliateLinkButtons from './AffiliateLinkButtons'
 
 // Helper function to parse markdown links and convert to React elements
 const parseMarkdownLinks = (text) => {
@@ -136,6 +137,7 @@ export default function SpecificationsDisplay({
 
   // Use title for comparison link, fallback to slug if title not available
   const compareParam = title ? titleToUrlFormat(title) : slug
+  const affiliateLinksList = affiliateLinks?.links || []
 
   return (
     <div className="not-prose my-6 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-200 dark:border-gray-700">
@@ -156,8 +158,8 @@ export default function SpecificationsDisplay({
           text-decoration-color: rgb(45 212 191);
         }
       `}</style>
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
-        {(title || price || affiliateLinks.length > 0) && (
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 flex-wrap">
+        {(title || price || affiliateLinksList.length > 0) && (
           <div className="border-l-4 border-primary-500 bg-primary-50 dark:bg-primary-900/20 pl-4 pr-3 py-1 rounded-r-lg prose-links">
             <div className="flex flex-col sm:flex-row sm:items-center gap-3">
               <div className="flex items-center gap-2">
@@ -213,7 +215,7 @@ export default function SpecificationsDisplay({
             </div>
           </div>
         )}
-        {compareParam && (
+        {comparable && compareParam && (
           <Link
             href={`/sbc-compare?sbc1=${compareParam}`}
             className="inline-flex items-center px-3 py-1.5 text-sm font-medium bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-all duration-200 hover:scale-105 shadow-sm"
