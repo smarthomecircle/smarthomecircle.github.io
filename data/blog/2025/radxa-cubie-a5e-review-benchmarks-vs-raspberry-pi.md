@@ -23,10 +23,12 @@ suggestedArticles:
   - title: "Radxa X4: 60$ Powerful Atlernative to Raspberry Pi 5"
     url: "https://smarthomecircle.com/radxa-x4-alternative-to-raspberry-pi-5"
 affiliateLinks:
-  - label: "AliExpress"
-    url: "https://s.click.aliexpress.com/e/_oka7U73"
-  - label: "Arace"
-    url: "https://arace.tech/products/radxa-cubie-a5e"
+    title: Buy Radxa Cubie A5E
+    links: 
+      - label: "AliExpress"
+        url: "https://s.click.aliexpress.com/e/_oka7U73"
+      - label: "Arace"
+        url: "https://arace.tech/products/radxa-cubie-a5e"
 
 includeAsSBC:
   title: "Radxa Cubie A5E"
@@ -92,13 +94,7 @@ In this video/article Iâ€™m sharing my experience with the **Radxa Cubie A5E**â€
   <img src="/static/images/2025/radxa-cubie-a5e/front.webp" alt="front" />
 </p>
     
-<AffiliateLinks 
-  title="Buy Radxa Cubie A5E" 
-  links={[
-    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oka7U73" },
-    { store: "Arace", url: "https://arace.tech/products/radxa-cubie-a5e" }
-  ]}
-/>
+<AffiliateLinksFromMetadata />
 
 ## Technical Specification
 

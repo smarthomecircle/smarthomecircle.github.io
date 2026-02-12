@@ -1,28 +1,31 @@
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import Link from '@/components/Link'
-import formatDate from '@/lib/utils/formatDate'
 import { PageSEO } from '@/components/SEO'
 import { getFileBySlug } from '@/lib/mdx'
 import SBCListLayout from '@/layouts/SBCListLayout'
 
+export const SBC_POSTS_PER_PAGE = 4
+
 export async function getStaticProps() {
-  // Get all blog posts
   const allBlogPosts = await getAllFilesFrontMatter('blog')
-  
-  // Filter only posts with includeAsSBC object present
   const posts = allBlogPosts.filter(post => post.includeAsSBC && typeof post.includeAsSBC === 'object')
-  
+
+  const initialDisplayPosts = posts.slice(0, SBC_POSTS_PER_PAGE)
+  const pagination = {
+    currentPage: 1,
+    totalPages: Math.ceil(posts.length / SBC_POSTS_PER_PAGE) || 1,
+  }
+
   const authorList = ['default']
   const authorPromise = authorList.map(async (author) => {
     const authorResults = await getFileBySlug('authors', [author])
     return authorResults.frontMatter
   })
   const authorDetails = await Promise.all(authorPromise)
-  return { props: { posts, authorDetails } }
+  return { props: { posts, initialDisplayPosts, pagination, authorDetails } }
 }
 
-export default function posts({ posts , authorDetails}) {
-  var yearheader = ''
+export default function SbcPage({ posts, initialDisplayPosts, pagination, authorDetails }) {
   return (
     <>
       <PageSEO
@@ -30,7 +33,6 @@ export default function posts({ posts , authorDetails}) {
         description="Single Board Computer such as raspberry pi, rockchip, allwinner"
       />
       <div className="mb-8 ">
-        {/* Compare SBCs Button */}
         <div className="flex justify-end mb-4">
           <Link
             href="/sbc-compare"
@@ -44,12 +46,13 @@ export default function posts({ posts , authorDetails}) {
         </div>
 
         <SBCListLayout
-                posts={posts}
-                initialDisplayPosts={posts}
-                pagination={0}
-                authorDetails={[]}
-                title="Single Board Computer "
-              />
+          posts={posts}
+          initialDisplayPosts={initialDisplayPosts}
+          pagination={pagination}
+          authorDetails={authorDetails ?? []}
+          title="Single Board Computer"
+          basePath="/sbc"
+        />
       </div>
     </>
   )

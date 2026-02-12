@@ -22,15 +22,17 @@ suggestedArticles:
     url: "https://smarthomecircle.com/I-built-a-diy-10-inch-server-rack"
 
 affiliateLinks:
-  - label: "AliExpress"
-    url: "https://s.click.aliexpress.com/e/_c41dKfrP"
+  title: Buy Radxa Dragon Q6A
+  links:
+    - label: "AliExpress"
+      url: "https://s.click.aliexpress.com/e/_c41dKfrP"
 includeAsSBC:
   title: "Muse Pi Pro"
   price: "128 EUR"
   specifications:
     SoC: SpacemiT M1 RISC-V SoC (similar to K1)
     CPU: |
-      8× X60 RISC-V cores @ 1.6 GHz
+      8 × X60 RISC-V cores @ 1.6 GHz
     GPU:
       Model: Imagination IMG BXE-2-32
       Support: |
@@ -95,12 +97,9 @@ The Muse Pi Pro isn’t just a bare board thrown together; it’s a fairly featu
 
 ## Technical Specification
 
+<SpecificationsDisplay />
 
-## Technical Specifications
-
-<SpecificationsDisplay/>
-
-<div className="image-flex">
+<div class="image-flex">
   <img src="/static/images/2025/muse-pi-pro/muse-pi-pro-m1.webp" alt="muse-pi=pro" />
 </div>
 

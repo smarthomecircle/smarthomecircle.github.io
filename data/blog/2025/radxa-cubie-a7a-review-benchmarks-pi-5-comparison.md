@@ -21,10 +21,16 @@ suggestedArticles:
   - title: "I Built A DIY 10 Inch Server Rack"
     url: "https://smarthomecircle.com/I-built-a-diy-10-inch-server-rack"
 affiliateLinks:
-  - label: "AliExpress"
-    url: "https://s.click.aliexpress.com/e/_oka7U73"
-  - label: "Arace"
-    url: "https://arace.tech/products/radxa-cubie-a5e"
+    title: Buy Radxa Cubie A7A
+    links:
+      - label: "AliExpress"
+        url: "https://s.click.aliexpress.com/e/_c434m0ff"
+      - label: "Amazon US"
+        url: "https://amzn.to/47Q9yHd"
+      - label: "Amazon Europe"
+        url: "https://amzn.to/4pjxHeU"
+      - label: "Arace"
+        url: "https://arace.tech/products/radxa-cubie-a7a"
 
 includeAsSBC:
   title: "Radxa Cubie A7A"
@@ -43,7 +49,7 @@ includeAsSBC:
     AI Capabilities: |
         NPU: Up to 3TOPs
     RAM:
-      Size: 4GB
+      Size: 8GB
       Type: LPDDR5
       Speed: 1800MT/s
       Bus: 32bit
