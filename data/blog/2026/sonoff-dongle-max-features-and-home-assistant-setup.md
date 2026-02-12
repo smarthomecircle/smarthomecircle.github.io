@@ -5,7 +5,7 @@ categories: ''
 tags: [Sonoff, zigbee, thread, home assistant, wifi ]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2026-02-08'
+date: '2026-02-12'
 draft: false
 autoAds: true
 summary: 'a powerful Zigbee/Thread coordinator with stronger antenna, built-in 2.4GHz Wi-Fi access point, WireGuard VPN support for remote Zigbee management, Home Assistant configuration, webhook triggers, and PoE power'
