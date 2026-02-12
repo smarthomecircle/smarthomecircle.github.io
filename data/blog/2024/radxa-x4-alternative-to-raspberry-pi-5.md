@@ -14,10 +14,18 @@ actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/IiDMtrdSGsg"
 
+affiliateLinks:
+  title: Buy Radxa X4
+  links: 
+    - label: "AliExpress TBF"
+      url: "https://s.click.aliexpress.com/e/_oka7U73"
+    - label: "Arace TBF"
+      url: "https://arace.tech/products/radxa-cubie-a5e"
+
 includeAsSBC:
   title: "Radxa X4 ( TBF)"
   price:
-  url: "https://palmshell.io/slim-x4l"
+  url: "https://radxa.com/products/x/x4"
   specifications:
     SoC: Intel N100
     CPU: |

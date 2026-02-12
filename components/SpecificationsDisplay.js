@@ -1,4 +1,5 @@
 import Link from './Link'
+import AffiliateLinkButtons from './AffiliateLinkButtons'
 
 // Helper function to parse markdown links and convert to React elements
 const parseMarkdownLinks = (text) => {
@@ -100,13 +101,14 @@ const titleToUrlFormat = (title) => {
     .replace(/^-+|-+$/g, '') // Remove leading/trailing hyphens
 }
 
-export default function SpecificationsDisplay({ specifications, slug, price, affiliateLinks = [], title, url }) {
+export default function SpecificationsDisplay({ specifications, slug, price, affiliateLinks = {}, title, url, comparable = false }) {
   if (!specifications) {
     return null
   }
 
   // Use title for comparison link, fallback to slug if title not available
   const compareParam = title ? titleToUrlFormat(title) : slug
+  const affiliateLinksList = affiliateLinks?.links || []
 
   return (
     <div className="not-prose my-6 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-200 dark:border-gray-700">
@@ -127,8 +129,8 @@ export default function SpecificationsDisplay({ specifications, slug, price, aff
           text-decoration-color: rgb(45 212 191);
         }
       `}</style>
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
-        {(title || price || affiliateLinks.length > 0) && (
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 flex-wrap">
+        {(title || price || affiliateLinksList.length > 0) && (
           <div className="border-l-4 border-primary-500 bg-primary-50 dark:bg-primary-900/20 pl-4 pr-3 py-1 rounded-r-lg prose-links">
             <div className="flex flex-col sm:flex-row sm:items-center gap-3">
               <div className="flex items-center gap-2">
@@ -154,28 +156,11 @@ export default function SpecificationsDisplay({ specifications, slug, price, aff
                   </div>
                 )}
               </div>
-              {affiliateLinks.length > 0 && (
-                <div className="flex flex-wrap gap-1.5">
-                  {affiliateLinks.map((link, idx) => (
-                    <a
-                      key={idx}
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center px-2 py-1 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
-                    >
-                      <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                      </svg>
-                      {link.label}
-                    </a>
-                  ))}
-                </div>
-              )}
+              <AffiliateLinkButtons links={affiliateLinksList} />
             </div>
           </div>
         )}
-        {compareParam && (
+        {comparable && compareParam && (
           <Link
             href={`/sbc-compare?sbc1=${compareParam}`}
             className="inline-flex items-center px-3 py-1.5 text-sm font-medium bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-all duration-200 hover:scale-105 shadow-sm"

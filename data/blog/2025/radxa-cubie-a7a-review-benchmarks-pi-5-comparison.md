@@ -21,10 +21,16 @@ suggestedArticles:
   - title: "I Built A DIY 10 Inch Server Rack"
     url: "https://smarthomecircle.com/I-built-a-diy-10-inch-server-rack"
 affiliateLinks:
-  - label: "AliExpress"
-    url: "https://s.click.aliexpress.com/e/_oka7U73"
-  - label: "Arace"
-    url: "https://arace.tech/products/radxa-cubie-a5e"
+    title: Buy Radxa Cubie A7A
+    links:
+      - label: "AliExpress"
+        url: "https://s.click.aliexpress.com/e/_c434m0ff"
+      - label: "Amazon US"
+        url: "https://amzn.to/47Q9yHd"
+      - label: "Amazon Europe"
+        url: "https://amzn.to/4pjxHeU"
+      - label: "Arace"
+        url: "https://arace.tech/products/radxa-cubie-a7a"
 
 includeAsSBC:
   title: "Radxa Cubie A7A"
@@ -43,7 +49,7 @@ includeAsSBC:
     AI Capabilities: |
         NPU: Up to 3TOPs
     RAM:
-      Size: 4GB
+      Size: 8GB
       Type: LPDDR5
       Speed: 1800MT/s
       Bus: 32bit
@@ -90,14 +96,7 @@ includeAsSBC:
   <img src="/static/images/2025/radxa-cubie-a7a/front.webp" alt="front" />
 </p>
 
-<AffiliateLinks 
-  title="Buy Radxa Cubie A7A" 
-  links={[
-    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_c434m0ff" },
-    { store: "Amazon US", url: "https://amzn.to/47Q9yHd" },
-    { store: "Amazon EU", url: "https://amzn.to/4pjxHeU" }
-  ]}
-/>
+<AffiliateLinksFromMetadata />
 
 I’ve been spending time with the Radxa **Cubie A7A**, and I wanted to share how it behaved for me in real use—thermals, CPU and memory performance, storage, networking, desktop, and a bit of AI/voice. 
 
@@ -531,11 +530,4 @@ The Cubie A7A already **beats the Raspberry Pi 4** across most of aspects but st
 
 That said, engineering responses have been **quick**, and I’m expecting iterative improvements. If the RAM profile and NVMe support mature—and with the I/O this board already has—it could **outpace a Raspberry Pi 5 in value** at similar pricing, especially if you want **more RAM**.
 
-<AffiliateLinks 
-  title="Buy Radxa Cubie A7A" 
-  links={[
-    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_c434m0ff" },
-    { store: "Amazon US", url: "https://amzn.to/47Q9yHd" },
-    { store: "Amazon EU", url: "https://amzn.to/4pjxHeU" }
-  ]}
-/>
+<AffiliateLinksFromMetadata />
