@@ -96,13 +96,7 @@ In this video/article Iâ€™m sharing my experience with the **Radxa Cubie A5E**â€
   <img src="/static/images/2025/radxa-cubie-a5e/front.webp" alt="front" />
 </p>
     
-<AffiliateLinks 
-  title="Buy Radxa Cubie A5E" 
-  links={[
-    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oka7U73" },
-    { store: "Arace", url: "https://arace.tech/products/radxa-cubie-a5e" }
-  ]}
-/>
+<AffiliateLinksFromMetadata />
 
 
 ## Technical Specifications
@@ -253,13 +247,8 @@ Finally I would be still monitoring the Armbian community build for a more stabl
 <p>
   <img src="/static/images/2025/radxa-cubie-a5e/case.webp" alt="router" />
 </p>
-<AffiliateLinks 
-  title="Buy Radxa Cubie A5E Metal Case" 
-  links={[
-    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_om1Up25" },
-    { store: "Arace", url: "https://arace.tech/products/radxa-metal-case-7264" }
-  ]}
-/>
+
+<AffiliateLinksFromMetadata />
 
 
 ## Support the Channel

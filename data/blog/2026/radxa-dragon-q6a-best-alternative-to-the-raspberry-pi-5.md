@@ -23,6 +23,7 @@ suggestedArticles:
 
 affiliateLinks:
   title: Buy Radxa Dragon Q6A
+  url: https://radxa.com/products/dragon/q6a
   links: 
     - label: "AliExpress"
       url: "https://de.aliexpress.com/item/1005010224206962.html?aff_fcid=79f77f80ca9543b49d03804d6e991f74-1766435965636-09027-_DEhJfB1&tt=CPS_NORMAL&aff_fsk=_DEhJfB1&aff_platform=shareComponent-detail&sk=_DEhJfB1&aff_trace_key=79f77f80ca9543b49d03804d6e991f74-1766435965636-09027-_DEhJfB1"

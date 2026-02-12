@@ -104,7 +104,9 @@ export default function SbcListRecord({ frontMatter, layout = 'card' }) {
   // Extract SBC-specific data from includeAsSBC and frontMatter
   const title = includeAsSBC?.title || originalTitle
   const specifications = includeAsSBC?.specifications
-  const affiliateLinks = frontMatter.affiliateLinks || []
+
+  // affiliateLinks format: { title?: string, links: [{ label, url }] }
+  const affiliateLinks = frontMatter.affiliateLinks?.links || []
 
   const [isExpanded, setIsExpanded] = useState(false)
   const maxSpecsToShow = 4
