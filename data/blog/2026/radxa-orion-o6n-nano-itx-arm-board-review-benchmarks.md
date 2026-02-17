@@ -5,14 +5,14 @@ categories: ''
 tags: [SBC, radxa, perfromance, qualcomm, benchmarks]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2026-02-05'
+date: '2026-02-19'
 draft: false
 autoAds: true
 summary: 'My Radxa Dragon Q6A review with benchmark results, thermals, NVMe/UFS speeds, Home Assistant voice tests, and a walkthrough of Windows 11 on ARM (UEFI).'
-imageUrl: /static/images/2026/radxa-dragon-q6a/cover.webp
+imageUrl: /static/images/2026/orion-o6n/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/oiIn1y9-Dxk"
+youtubeLink: "https://www.youtube.com/embed/JzfFAwOaWFI"
 suggestedArticles:
   - title: "Radxa Cubie A7A Review: Pi-Sized Power With PCIe, NVMe, USB 3.1 Gen2"
     url: "https://smarthomecircle.com/radxa-cubie-a7a-review-benchmarks-pi-5-comparison"
@@ -31,7 +31,7 @@ affiliateLinks:
 
 includeAsSBC:
   title: "Radxa Orion O6N"
-  price: "$199+ (varies by RAM / bundle)"
+  price: "$199+"
   comparable: False
   specifications:
     SoC: Cix P1 (CD8160 variant)
@@ -109,8 +109,8 @@ About a year ago Radxa launched the **Orion O6**, and now there’s a **Nano-ITX
 
 
 <div class="image-flex">
-  <img src="/static/images/2026/orion-o6n/o6n-view1.jpg" alt="o6n-view1" />
-  <img src="/static/images/2026/orion-o6n/o6n-view2.jpg" alt="o6n-view2" />
+  <img src="/static/images/2026/orion-o6n/o6n-view1.webp" alt="o6n-view1" />
+  <img src="/static/images/2026/orion-o6n/o6n-view2.webp" alt="o6n-view2" />
 </div>
 
 
@@ -136,8 +136,8 @@ I’ve also seen people in the Radxa Discord running other operating systems lik
 Because of that, I used **Radxa OS** for most of my performance testing, since it *does* provide hardware acceleration.
 
 <div class="image-flex">
-  <img src="/static/images/2026/orion-o6n/uefi-2.jpg" alt="uefi" />
-  <img src="/static/images/2026/orion-o6n/uefi-1.jpg" alt="uefi" />
+  <img src="/static/images/2026/orion-o6n/uefi-2.webp" alt="uefi" />
+  <img src="/static/images/2026/orion-o6n/uefi-1.webp" alt="uefi" />
 </div>
 
 
@@ -151,8 +151,8 @@ To get a quick feel for GPU performance, I ran **Furmark**:
 - **OpenGL (4.6):** ~**18 FPS**
 
 <div class="image-flex">
-  <img src="/static/images/2026/orion-o6n/furmark-opengl.jpg" alt="furmark-opengl" />
-  <img src="/static/images/2026/orion-o6n/furmark-vulkan.jpg" alt="furmark-opengl" />
+  <img src="/static/images/2026/orion-o6n/furmark-opengl.webp" alt="furmark-opengl" />
+  <img src="/static/images/2026/orion-o6n/furmark-vulkan.webp" alt="furmark-opengl" />
 </div>
 
 
@@ -170,7 +170,7 @@ Temperature-wise:
 - **10-minute stress test:** didn’t go above ~**43°C**
 
 <div class="image-flex">
-  <img src="/static/images/2026/orion-o6n/o6n-fan.jpg" alt="o6n-fan" />
+  <img src="/static/images/2026/orion-o6n/o6n-fan.webp" alt="o6n-fan" />
 </div>
 
 
@@ -184,7 +184,7 @@ During the stress test I noticed the 12 cores weren’t all locked to the same c
 
 
 <p align="center">
-  <img src="/static/images/2026/orion-o6n/htop.jpg" alt="geekbench" />
+  <img src="/static/images/2026/orion-o6n/htop.webp" alt="geekbench" />
 </p>
 
 ---
@@ -203,8 +203,8 @@ Important note: these were **CPU-only** runs. I wasn’t using the NPU.
 
 
 <div class="image-flex">
-  <img src="/static/images/2026/orion-o6n/ollama.jpg" alt="ollama" />
-  <img src="/static/images/2026/orion-o6n/llamacpp.jpg" alt="llamacpp" />
+  <img src="/static/images/2026/orion-o6n/ollama.webp" alt="ollama" />
+  <img src="/static/images/2026/orion-o6n/llamacpp.webp" alt="llamacpp" />
 </div>
 
 ---
@@ -218,7 +218,7 @@ Important note: these were **CPU-only** runs. I wasn’t using the NPU.
 In my comparisons, that lands around **~2× the performance of a Rock 5T (RK3588)** in the same general test style.
 
 <p align="center">
-  <img src="/static/images/2026/orion-o6n/geekbench.png" alt="geekbench" />
+  <img src="/static/images/2026/orion-o6n/geekbench.webp" alt="geekbench" />
 </p>
 
 [Geekbench Score](https://browser.geekbench.com/v6/cpu/15863367)
@@ -230,7 +230,7 @@ I ran a sysbench prime test (up to 20,000 per 100,000 requests), and this board 
 That was also roughly **~2× faster than the Rock 5T** in the same type of workload.
 
 <p align="center">
-  <img src="/static/images/2026/orion-o6n/sysbench.png" alt="sysbench" />
+  <img src="/static/images/2026/orion-o6n/sysbench.webp" alt="sysbench" />
 </p>
 
 ---
@@ -245,8 +245,8 @@ The results were *way* ahead of what I typically see on boards like the Rock 5T 
 
 
 <div class="image-flex">
-  <img src="/static/images/2026/orion-o6n/mbw.png" alt="mbw" />
-  <img src="/static/images/2026/orion-o6n/tinymembench.png" alt="tinymembench" />
+  <img src="/static/images/2026/orion-o6n/mbw.webp" alt="mbw" />
+  <img src="/static/images/2026/orion-o6n/tinymembench.webp" alt="tinymembench" />
 </div>
 
 
@@ -265,7 +265,7 @@ Both M.2 M-key slots provide **PCIe Gen 4 x4**, and in hdparm I saw read speeds 
 That’s excellent for a board in this category, and it makes it much more realistic to run it as a proper server or lab box with fast local storage.
 
 <p align="center">
-  <img src="/static/images/2026/orion-o6n/hdparm.jpg" alt="hdparm" />
+  <img src="/static/images/2026/orion-o6n/hdparm.webp" alt="hdparm" />
 </p>
 
 ---
@@ -278,7 +278,7 @@ For Ethernet, I tested with **iperf3** and got about:
 For Wi-Fi, I used an **Intel BE200 (Wi-Fi 7)** card, which was detected, but **firmware wasn’t loaded**. After copying the required firmware file, Wi-Fi worked and I measured about **~500 Mbit/s**
 
 <div class="image-flex">
-  <img src="/static/images/2026/orion-o6n/wifi7.jpg" alt="llamacpp" />
+  <img src="/static/images/2026/orion-o6n/wifi7.webp" alt="llamacpp" />
 </div>
 
 ---
@@ -293,8 +293,8 @@ When I gave it a voice command, the board converted speech to text in about:
 That’s a strong result—better than what I’ve seen from the Rock 5T and even Radxa X4 (Intel N100) in similar “local voice” style workloads.
 
 <div class="image-flex">
-  <img src="/static/images/2026/orion-o6n/ha.jpg" alt="llamacpp" />
-  <img src="/static/images/2026/orion-o6n/ha-voice.jpg" alt="llamacpp" />
+  <img src="/static/images/2026/orion-o6n/ha.webp" alt="llamacpp" />
+  <img src="/static/images/2026/orion-o6n/ha-voice.webp" alt="llamacpp" />
 </div>
 
 ---
@@ -323,7 +323,7 @@ Right now I see it as a really capable **server / lab / compute box**, especiall
 
 
 <div class="image-flex">
-  <img src="/static/images/2026/orion-o6n/o6n-fan.jpg" alt="o6n-fan" />
+  <img src="/static/images/2026/orion-o6n/o6n-fan.webp" alt="o6n-fan" />
 </div>
 
 
