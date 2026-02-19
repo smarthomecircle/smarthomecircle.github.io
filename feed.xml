@@ -7,10 +7,20 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 12 Feb 2026 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 19 Feb 2026 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/feed.xml" rel="self" type="application/rss+xml"/>
       <atom:link href="https://smarthomecircle.com" rel="alternate" type="text/html"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/radxa-orion-o6n-nano-itx-arm-board-review-benchmarks</guid>
+    <title>Radxa Orion O6N: My experience with this Nano-ITX Arm powerhouse</title>
+    <link>https://smarthomecircle.com/radxa-orion-o6n-nano-itx-arm-board-review-benchmarks</link>
+    <description>My Radxa Dragon Q6A review with benchmark results, thermals, NVMe/UFS speeds, Home Assistant voice tests, and a walkthrough of Windows 11 on ARM (UEFI).</description>
+    <pubDate>Thu, 19 Feb 2026 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>SBC</category><category>radxa</category><category>perfromance</category><category>qualcomm</category><category>benchmarks</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/sonoff-dongle-max-features-and-home-assistant-setup</guid>
     <title>Sonoff Dongle Max: what makes it “Max”</title>
