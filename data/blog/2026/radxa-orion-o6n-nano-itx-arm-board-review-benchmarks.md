@@ -8,7 +8,7 @@ applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2026-02-19'
 draft: false
 autoAds: true
-summary: 'My Radxa Dragon Q6A review with benchmark results, thermals, NVMe/UFS speeds, Home Assistant voice tests, and a walkthrough of Windows 11 on ARM (UEFI).'
+summary: 'Powerful Radxa Orion O6N Nano-ITX review: benchmarks, Linux support, thermals, AI tests, and I/O performance with UEFI support.'
 imageUrl: /static/images/2026/orion-o6n/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
