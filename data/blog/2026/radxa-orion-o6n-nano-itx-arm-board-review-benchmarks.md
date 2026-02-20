@@ -137,7 +137,7 @@ Because of that, I used **Radxa OS** for most of my performance testing, since i
 
 <div class="image-flex">
   <img src="/static/images/2026/orion-o6n/uefi-2.webp" alt="uefi" />
-  <img src="/static/images/2026/orion-o6n/uefi-1.webp" alt="uefi" />
+  <img src="/static/images/2026/orion-o6n/uefi-11.webp" alt="uefi" />
 </div>
 
 
