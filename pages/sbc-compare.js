@@ -391,7 +391,7 @@ export default function SBCCompare({ posts }) {
               {selectedSBCs.map((selectedSBC, index) => (
                 <div key={index} className="flex-1 min-w-[250px]">
                   <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Select SBC {index + 1}
+                    Select SBC
                   </label>
                   <div className="flex gap-2">
                     <select
