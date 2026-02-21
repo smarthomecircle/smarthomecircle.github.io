@@ -19,6 +19,12 @@ const siteMetadata = {
   youtube: 'https://www.youtube.com/@SmartHomeCircle',
   linkedin: '',
   locale: 'en-US',
+  // Optional: shown in footer "Support" section (Buy Me a Coffee, Patreon, etc.)
+  // icon: 'buymeacoffee' | 'patreon' uses the official logo; omit for text-only.
+  supportLinks: [
+    { href: 'https://www.buymeacoffee.com/amrutprabhu', label: 'Buy Me a Coffee', icon: 'buymeacoffee' },
+    { href: 'https://patreon.com/AmrutPrabhu', label: 'Patreon', icon: 'patreon' },
+  ],
   analytics: {
     // supports plausible, simpleAnalytics or googleAnalytics
     plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
