@@ -10,7 +10,13 @@ const headerNavLinks = [
       { href: '/sbc', title: 'Single Board Computer' },
     ],
   },
-  { href: '/sale', title: 'Sale' },
+  {
+    title: 'Sale',
+    children: [
+      { href: '/sale/aliexpress', title: 'AliExpress Deals' },
+      { href: '/sale/amazon', title: 'Amazon Deals' },
+    ],
+  },
   { href: '/about', title: 'About & Contact' },
   {
     title: 'More',
