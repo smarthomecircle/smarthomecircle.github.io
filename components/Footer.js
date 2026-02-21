@@ -1,7 +1,43 @@
 import Link from './Link'
 import Image from '@/components/Image'
+import Image from '@/components/Image'
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
+
+// Official Patreon logo (Simple Icons)
+function PatreonLogo({ className = 'h-6 w-6' }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
+      aria-hidden
+    >
+      <path d="M15.386.524c-4.764 0-8.64 3.876-8.64 8.64 0 4.75 3.876 8.613 8.64 8.613 4.75 0 8.614-3.864 8.614-8.613C24 4.4 20.136.524 15.386.524zM2.854 23.537V.524H.524v23.013h2.33z" />
+    </svg>
+  )
+}
+
+const socialEntries = [
+  { kind: 'mail', href: siteMetadata.email ? `mailto:${siteMetadata.email}` : '' },
+  { kind: 'github', href: siteMetadata.github },
+  { kind: 'facebook', href: siteMetadata.facebook },
+  { kind: 'youtube', href: siteMetadata.youtube },
+  { kind: 'linkedin', href: siteMetadata.linkedin },
+  { kind: 'twitter', href: siteMetadata.twitter },
+  { kind: 'blueSky', href: siteMetadata.blueSky },
+].filter((e) => e.href)
+
+const exploreLinks = [
+  { href: '/', title: 'Home' },
+  { href: '/sbc', title: 'SBCs' },
+  { href: '/sbc-compare', title: 'Compare SBCs' },
+  { href: '/about', title: 'About' },
+  { href: '/tags', title: 'Tags' },
+  { href: '/posts', title: 'Posts' },
+  { href: '/privacy', title: 'Privacy' },
+]
 
 // Official Patreon logo (Simple Icons)
 function PatreonLogo({ className = 'h-6 w-6' }) {
@@ -41,16 +77,15 @@ const exploreLinks = [
 export default function Footer() {
   const supportLinks = siteMetadata.supportLinks || []
 
+  const supportLinks = siteMetadata.supportLinks || []
+
   return (
     <footer className="border-t border-primary-200/60 dark:border-primary-800/50 bg-primary-50/70 dark:bg-gray-900/60">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link
-              href="/"
-              className="inline-block font-semibold text-lg text-gray-900 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
-            >
+            <Link href="/" className="inline-block font-semibold text-lg text-gray-900 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
               {siteMetadata.title}
             </Link>
             <p className="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-xs">
@@ -71,9 +106,7 @@ export default function Footer() {
               ))}
             </div>
             {socialEntries.length === 0 && (
-              <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                No social links configured.
-              </p>
+              <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">No social links configured.</p>
             )}
           </div>
 
@@ -110,9 +143,7 @@ export default function Footer() {
                         <span className="text-[#FF424D] dark:text-[#FF424D] shrink-0">
                           <PatreonLogo className="h-10 w-10" />
                         </span>
-                        <span className="font-semibold text-gray-800 dark:text-gray-200">
-                          Patreon
-                        </span>
+                        <span className="font-semibold text-gray-800 dark:text-gray-200">Patreon</span>
                       </>
                     )}
                     {!icon && label}
@@ -141,6 +172,23 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+
+        {/* Bottom bar */}
+        <div className="mt-10 pt-6 border-t border-primary-200/60 dark:border-primary-800/50 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-gray-500 dark:text-gray-400">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-2 gap-y-1">
+            <span>© {new Date().getFullYear()}</span>
+            <span className="hidden sm:inline">·</span>
+            <Link href="/" className="hover:text-primary-600 dark:hover:text-primary-400">
+              {siteMetadata.title}
+            </Link>
+            <span className="hidden sm:inline">·</span>
+            <span>{siteMetadata.author}</span>
+          </div>
+          <div className="flex items-center gap-x-3">
+            <Link href="/privacy" className="hover:text-primary-600 dark:hover:text-primary-400">
+              Privacy
+            </Link>
+          </div>
 
         {/* Bottom bar */}
         <div className="mt-10 pt-6 border-t border-primary-200/60 dark:border-primary-800/50 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-gray-500 dark:text-gray-400">
