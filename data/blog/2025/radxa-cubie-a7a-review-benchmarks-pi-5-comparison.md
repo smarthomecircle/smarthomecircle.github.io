@@ -119,21 +119,10 @@ I’ve been spending time with the Radxa **Cubie A7A**, and I wanted to share ho
 
 
 
-## Technical Specification
 
-| Category       | Specifications                                                                                                                                                                                           |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Processor**  | **SoC:** Allwinner A733<br/>**CPU:** 2× Cortex-A76 + 6× Cortex-A55 (up to 2.0 GHz)<br/>**GPU:** Imagination BXM-4-64 MC1 (OpenGL ES 3.2, Vulkan 1.3, OpenCL 3.0)<br/>**NPU:** 3 TOPS AI acceleration engine |
-| **Memory**     | LPDDR5: 8 GB                                                                                                                                                        |
-| **Storage**    | **Boot:** 8 MB SPI NOR flash<br/>**System:** MicroSD / eMMC module / UFS module                                                                                                                           |
-| **Network**    | **Wired:** 1× Gigabit Ethernet (PoE via external PoE HAT)<br/>**Wireless:** Wi-Fi 6, Bluetooth 5.4, external antenna interface                                                                            |
-| **Video Out**  | 1× HDMI (up to 4K@60 fps)<br/>1× 4-lane MIPI DSI                                                                                                                                                          |
-| **Camera**     | 1× 4-lane MIPI CSI **or** 2× 2-lane MIPI CSI                                                                                                                                                             |
-| **Audio**      | 3.5 mm 4-pole headphone jack with mic input; stereo output can directly drive 32 Ω headphones                                                                                                            |
-| **USB**        | 1× USB 3.1 Type-A (HOST)<br/>3× USB 2.0 Type-A (HOST)<br/>1× USB 2.0 Type-C (OTG/Power)                                                                                                                    |
-| **Expansion**  | 40-pin GPIO header (UART/SPI/I²C, etc.)<br/>1× single-lane PCIe 3.0 via FPC connector<br/>Fan header: 1× 2-pin 1.25 mm<br/>RTC header: 1× 2-pin 1.25 mm                                                     |
-| **Power**      | USB Type-C 5 V<br/>PoE (with PoE HAT)<br/>5 V via GPIO pins 2 & 4                                                                                                                                          |
-| **OS Support** | Debian Linux, Android 13            |
+## Technical Specifications
+
+<SpecificationsDisplay/>
 
 The board is about the same footprint as a Raspberry Pi 5, but it won’t fit Pi 5 cases because the Ethernet and USB ports are arranged differently.
 

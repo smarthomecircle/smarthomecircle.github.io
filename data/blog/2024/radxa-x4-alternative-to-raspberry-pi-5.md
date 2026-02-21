@@ -91,6 +91,11 @@ Since it’s built on x86 architecture, it offers broad compatibility with vario
 
 Let’s take a closer look at this board's performance and potential uses.
 
+
+## Technical Specifications
+
+<SpecificationsDisplay/>
+
 ### Performance on Windows and Linux
 
 First, I installed Windows 11 and drivers from Radxa’s site. The setup ran smoothly, and general tasks performed well, giving a near-desktop experience. Streaming was also surprisingly fluid: Full HD YouTube videos played without a hitch, and even 4K videos streamed smoothly, with no dropped frames. Graphics-intensive tasks were similarly impressive on Windows. 

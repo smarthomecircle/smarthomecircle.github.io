@@ -47,6 +47,10 @@ const parseMarkdownLinks = (text) => {
 
 // Helper function to render value (handles URLs)
 const renderValue = (value, label = null) => {
+  // Empty / null: show dash
+  if (value == null || (typeof value === 'string' && value.trim() === '')) {
+    return <span className="text-gray-400 dark:text-gray-500">-</span>
+  }
   // Check if value is an object with a url property
   if (typeof value === 'object' && value !== null && value.url) {
     return (

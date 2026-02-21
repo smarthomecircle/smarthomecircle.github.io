@@ -102,6 +102,11 @@ Radxa has recently launched the **X4L**, the successor to their popular X4. Mark
 - **Arace** : https://arace.tech/products/palmshell-slim-x4l
 ----------
 
+
+## Technical Specifications
+
+<SpecificationsDisplay/>
+
 ## Key Features and Specifications
 
 The **X4L** is noticeably larger than its predecessor, being roughly **twice the size of the X4** and weighing around **289 grams**. Both models are powered by the **Intel N100 processor**, a quad-core x86 chip capable of clock speeds up to **3.4 GHz**, making them compatible with a variety of operating systems, including Windows and Linux.

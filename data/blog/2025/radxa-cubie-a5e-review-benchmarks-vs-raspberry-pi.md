@@ -104,23 +104,10 @@ In this video/article I’m sharing my experience with the **Radxa Cubie A5E**�
 />
 
 
-## Technical Specification
 
-| Category         | Spec                                                                                                                   |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| SoC              | **Allwinner A527**  |
-| CPU              | 8× **Arm Cortex-A55**: 4× @ **1.8 GHz** + 4× @ **1.4 GHz**                                                             |
-| GPU              | **Mali-G57 MC1**; <br/>OpenGL ES 3.2, Vulkan 1.1–1.3, OpenCL 2.2                                                      |
-| Memory           | 4GB **LPDDR4**                                                                                        |
-| External storage | **microSD** slot <br/> **M.2 M-key** (NVMe **PCIe Gen 2 x1 lane**, **2230** modules)                                        |
-| Display          | **HDMI 2.0** up to **4K@60fps** <br/> **4-lane MIPI-DSI**                                                    |
-| Camera           | **MIPI-CSI**: 1× 4-lane or 2× 2-lane                                                                                   |
-| Networking       | **2× Gigabit Ethernet** (one **PoE-capable** with add-on HAT) <br/> **Wi-Fi 6 (802.11ax)** <br/> **Bluetooth 5.4**             |
-| USB              | **1× USB-A 3.0 (Host)** <br/> **1× USB-C 2.0 OTG** (data + power)                                                        |
-| Expansion        | **40-pin** 2.54 mm header (UART/I²C/SPI/GPIO/PWM)                                   |
-| Power            | **5 V** via **USB-C** or GPIO. <br/> Recommended **≥10 W** baseline; **≥15 W** when fully loading USB3/PCIe |
-| OS               | **Debian Linux** <br/> **Android 13**<br/> **Armbian OS**                           |
+## Technical Specifications
 
+<SpecificationsDisplay/>
 
 (Specs as per Radxa’s product page.) [Radxa Cubie A5E](https://radxa.com/products/cubie/a5e/)
 

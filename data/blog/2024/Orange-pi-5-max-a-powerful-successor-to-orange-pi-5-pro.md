@@ -109,6 +109,11 @@ includeAsSBC:
 
 The Orange Pi 5 MAX is an exciting new single-board computer (SBC) that follows in the footsteps of its predecessor, the Orange Pi 5 Pro, while maintaining the same form factor as the Raspberry Pi 5. In this article, we'll dive into the details of the Orange Pi 5 MAX, exploring its various components, performance benchmarks, and practical use cases.
 
+
+## Technical Specifications
+
+<SpecificationsDisplay/>
+
 ## Operating System Compatibility
 
 Orange Pi offers a wide variety of operating systems for the 5 MAX, which can be downloaded directly from their [website](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-Pi-5-Max.html). These include popular Linux distributions like Ubuntu, Debian, and Arch Linux, as well as an Android image. Additionally, there’s [Ubuntu for Rockchip](https://github.com/Joshua-Riek/ubuntu-rockchip), an open-source project that supports Rockchip SoCs, providing builds specifically for the [Orange Pi 5 MAX](https://joshua-riek.github.io/ubuntu-rockchip-download/boards/orangepi-5-max.html).

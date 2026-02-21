@@ -104,31 +104,10 @@ I’ll focus on how it feels to use, what works well, where it falls short, and 
 
 The Muse Pi Pro isn’t just a bare board thrown together; it’s a fairly feature-rich SBC based on a **64-bit RISC-V octa-core CPU** running at **1.6 GHz**.
 
-## Technical Specification
 
-## Muse Pi Pro – Technical Specifications
+## Technical Specifications
 
-| Category        | Specification |
-|----------------|---------------|
-| **SoC**        | SpacemiT **M1** RISC-V SoC (similar to K1), octa-core 64-bit X60 CPU @ **1.6 GHz** |
-| **CPU**        | **8× X60 RISC-V cores** @ 1.6 GHz |
-| **GPU**        | **Imagination IMG BXE-2-32** GPU, supports **OpenGL ES 3.2**, **Vulkan 1.2** <br/> Hardware **H.265 / H.264** video decoder/encoder, up to **1080p60** |
-| **NPU**        | Integrated AI accelerator, up to **2.0 TOPS (INT8)** |
-| **System memory** | **8 GB LPDDR4X** @ **2400 MT/s** (board-mounted) |
-| **On-board storage** | **eMMC 5.1**, typically **64 GB** |
-| **Removable storage** | **microSD** card slot (UHS-II) |
-| **M.2 slot**  | **M.2 M-Key 2230** socket for **NVMe SSD** (PCIe Gen 2 **x2** lanes) |
-| **Mini PCIe** | Full-size **miniPCIe** slot (PCIe Gen 2 **x1** lane), typically for **4G/5G** or extra Wi-Fi/network modules |
-| **HDMI output** | **HDMI 1.4**, up to **1080p @ 60 Hz** |
-| **MIPI DSI**  | **2-lane MIPI DSI** via 15-pin FPC, up to **1080p60** |
-| **MIPI CSI (camera)** | One **4-lane MIPI CSI** via 22-pin FPC + one **2-lane MIPI CSI** via 15-pin FPC |
-| **Audio**     | **3.5 mm** audio jack |
-| **Ethernet**  | **Gigabit Ethernet** (RJ45) |
-| **Wireless**  | On-board **Wi-Fi 6** + **Bluetooth 5.2** module |
-| **USB ports** | **4 × USB 3.0 Type-A** ports; **1 × USB 2.0 Type-C OTG** port (also used for power/PD) |
-| **RTC**       | **RTC battery** connector on board |
-| **Power input** | **USB-C** (USB PD), supports **5 V / 9 V / 12 V** up to **3 A** |
-
+<SpecificationsDisplay/>
 
 <div class="image-flex">
   <img src="/static/images/2025/muse-pi-pro/muse-pi-pro-m1.webp" alt="muse-pi=pro" />
