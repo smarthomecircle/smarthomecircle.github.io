@@ -31,14 +31,16 @@ affiliateLinks:
 
 includeAsSBC:
   title: "Radxa Dragon Q6A"
-  price: "$59.50+"
+  price: "$ 59.50+"
   comparable: False
   specifications:
     SoC: Qualcomm QCS6490
-    CPU: |
-      1× Kryo Prime @ 2.7GHz
-      3× Kryo Gold @ 2.4GHz
-      4× Kryo Silver @ 1.9GHz
+    CPU:
+      No. Of Cores: 8
+      Cores: |
+        1 × Kryo Prime @ 2.7GHz
+        3 × Kryo Gold @ 2.4GHz
+        4 × Kryo Silver @ 1.9GHz
     GPU:
       Model: Qualcomm Adreno 643
       Support: |
@@ -49,26 +51,27 @@ includeAsSBC:
     AI Capabilities: |
       Qualcomm AI Engine (Hexagon DSP + Hexagon Tensor Accelerator): up to 12 TOPS
     RAM:
-      Size: 4GB / 6GB / 8GB / 12GB / 16GB (options)
+      Size: 4GB / 6GB / 8GB / 12GB / 16GB
       Type: LPDDR5
       Speed: 5500MT/s
       Bus: Not specified
     Storage: |
-      MicroSD card slot
+      MicroSD card
       eMMC/UFS module
-      M.2 2230 NVMe SSD (PCIe)
+      NVMe
     Video Output: |
       1 × HDMI 2.0 Type-A up to 4K@30fps
       1 × MIPI DSI (4-lane, FHD+)
     NVMe:
-      Onboard: Yes (M.2 M-Key 2230 slot)
-      Connectivity: PCIe Gen3 x 2 lane
+      Onboard: Yes
+      Number Of Connectors: 1
+      Connectivity: PCIe Gen3 x 2
       Size: 2230
     Network:
       Ethernet: 1 × Gigabit Ethernet
-      WiFi: WiFi 6 
+      WiFi: Wi-Fi 6 
       Bluetooth: Bluetooth 5.4
-    PoE: Yes (requires PoE HAT)
+    PoE: Yes (PoE HAT required)
     USB: |
       1 × USB 2.0 Type-C
       1 × USB 3.1 Type-A OTG
@@ -78,8 +81,15 @@ includeAsSBC:
       12V via 3-pin power connector
       5V via 40-pin header (2 × 5V in/out)
     Audio: |
-      1 × 3.5mm audio/microphone jack
-      HDMI audio out
+      1 × 3.5mm audio jack (with mic)
+    Camera: |
+      1 × 4-lane MIPI CSI
+      2 × 2-lane MIPI CSI
+    Cooling: |
+      CPU Fan via GPIO pins
+    Other Expansion Capabilities: |
+      RTC battery connector
+      40-pin GPIO header
     Dimensions: |
       Width: 65 mm
       Length: 85 mm
