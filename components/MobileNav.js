@@ -116,10 +116,15 @@ const MobileNav = () => {
                 ) : (
                   <Link
                     href={link.href}
-                    className="group relative inline-block text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100 transition-all duration-300 hover:text-primary-600 dark:hover:text-primary-400 hover:translate-x-2"
+                    className="group relative inline-flex items-baseline gap-1 text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100 transition-all duration-300 hover:text-primary-600 dark:hover:text-primary-400 hover:translate-x-2"
                     onClick={onToggleNav}
                   >
                     <span className="relative z-10">{link.title}</span>
+                    {link.badge && (
+                      <span className="relative z-10 ml-1 -mt-3 self-start inline-flex items-center p-0.5 rounded leading-tight text-[10px] font-semibold uppercase tracking-wider text-white bg-primary-500 dark:bg-primary-500">
+                        {link.badge}
+                      </span>
+                    )}
                     {/* Mobile animated underline */}
                     <div className="absolute bottom-0 left-0 w-0 h-1 bg-primary-500 group-hover:w-full transition-all duration-500"></div>
                     {/* Mobile glow effect */}
