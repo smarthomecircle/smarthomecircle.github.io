@@ -57,7 +57,7 @@ includeAsSBC:
     NVMe:
       Onboard: Yes
       Number Of Connectors: 1
-      Connectivity: PCIe Gen 2 x 2
+      Connectivity: PCIe Gen2 x 2
       Size: 2230
     Network:
       Ethernet: 1 × Gigabit Ethernet
