@@ -20,6 +20,72 @@ suggestedArticles:
     url: "https://smarthomecircle.com/radxa-cubie-a5e-review-benchmarks-vs-raspberry-pi"
   - title: "I Built A DIY 10 Inch Server Rack"
     url: "https://smarthomecircle.com/I-built-a-diy-10-inch-server-rack"
+
+affiliateLinks:
+  title: Buy Radxa Dragon Q6A
+  links:
+    - label: "AliExpress"
+      url: "https://s.click.aliexpress.com/e/_c41dKfrP"
+includeAsSBC:
+  title: "Muse Pi Pro"
+  price: "$ 138+"
+  url:
+  specifications:
+    SoC: SpacemiT M1 RISC-V SoC (similar to K1)
+    CPU:
+      No. Of Cores: 8
+      Cores: |
+        8 × X60 RISC-V cores @ 1.6 GHz
+    GPU:
+      Model: Imagination IMG BXE-2-32
+      Support: |
+        OpenGL ES 3.2
+        Vulkan 1.2
+    AI Capabilities: |
+        NPU: Up to 2.0 TOPS
+    RAM:
+      Size: 8GB / 16GB
+      Type: LPDDR4X
+      Speed: 2400MT/s
+    Storage: |
+      MicroSD
+      NVMe
+      eMMC 5.1
+    Video Output: |
+      1 x HDMI 1.4 up to 1080p @ 60 Hz
+      1 x 2-lane MIPI DSI via 15-pin FPC, up to 1080p60
+    NVMe:
+      Onboard: Yes
+      Number Of Connectors: 1
+      Connectivity: PCIe Gen 2 x 2
+      Size: 2230
+    Network:
+      Ethernet: 1 × Gigabit Ethernet
+      WiFi: Wi-Fi 6
+      Bluetooth: Bluetooth 5.2
+    PoE: No
+    USB: |
+      4 × USB 3.0 Type-A
+      1 × USB 2.0 Type-C OTG (also used for power/PD)
+    Power: USB-C (USB PD), supports 5 V / 9 V / 12 V up to 3 A
+    Audio: 3.5 mm audio jack
+    Camera: |
+      1 x 4-lane MIPI CSI via 22-pin FPC
+      1 x 2-lane MIPI CSI via 15-pin FPC
+    Cooling: |
+      CPU Fan via GPIO pins
+    Other Expansion Capabilities:
+        RTC battery connector
+
+        Full-size miniPCIe slot (PCIe Gen 2 x1 lane)
+    Operating System: |
+      [Bianbu OS](https://archive.spacemit.com/image/k1/version/bianbu/)
+      [Bianbu Star](https://archive.spacemit.com/image/k1/version/bianbu-computer/)
+      [Fedora](https://images.fedoravforce.org/Muse%20Pi%20Pro)
+      [Debian](https://archive.spacemit.com/image/k1/version/debian/)
+      [Armbian](https://www.armbian.com/muse-pi-pro/)
+
+
 ---
 
 <TOCInline toc={props.toc} asDisclosure /> 

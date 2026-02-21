@@ -14,6 +14,82 @@ actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/OVam317j-bc"
 
+
+affiliateLinks:
+  title: Buy Orange Pi 5 Max
+  links: 
+    - label: "AliExpress"
+      url: "https://s.click.aliexpress.com/e/_De07TWt"
+    - label: "Amazon"
+      url: "https://amzn.to/4gAEOw4"
+
+
+includeAsSBC:
+  title: "Orange Pi 5 Max"
+  price: "$ 75+"
+  comparable: True
+  specifications:
+    SoC: Rockchip RK3588
+    CPU: 
+      No. Of Cores: 8
+      Cores : |
+        4 × Cortex-A76 up to 2.4GHz
+        4 × Cortex-A55 up to 1.8GHz
+    GPU:
+      Model: ARM Mali-G610
+      Support: |
+        OpenGL ES 1.1/2.0/3.2
+        OpenCL 2.2
+        Vulkan 1.2
+    AI Capabilities: |
+      NPU: up to 6 TOPS
+    RAM:
+      Size: 4GB / 8GB / 16GB
+      Type: LPDDR5
+      Speed: Not specified
+      Bus: Not specified
+    Storage: |
+      MicroSD card
+      eMMC flash socket (optional onboard eMMC)
+      NVMe
+    Video Output: |
+      2 × HDMI 2.1 up to 8K@60fps
+      1 × MIPI DSI TX (4-lane)
+    NVMe:
+      Onboard: Yes
+      Number Of Connectors: 1
+      Connectivity: PCIe Gen3 x 4
+      Size: 2280
+    Network:
+      Ethernet: 1 × 2.5 Gigabit Ethernet
+      WiFi: Wi-Fi 6E
+      Bluetooth: Bluetooth 5.3
+    PoE: No
+    USB: |
+      2 × USB 3.0
+      2 × USB 2.0
+    Power: |
+      USB Type-C power input
+      5V @ 5A
+    Audio: |
+      1 × 3.5mm audio jack (with mic)
+    Camera: |
+      2 × MIPI CSI (4-lane)
+      1 × MIPI D-PHY RX (4-lane)
+    Cooling: |
+      2-pin CPU Fan Connector
+    Other Expansion Capabilities: |
+      RTC battery connector
+      40-pin GPIO header
+    Dimensions: 
+    Operating System: |
+      [Orange Pi OS (Droid)](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-Pi-5-Max.html)
+      [Orange Pi OS (Arch)](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-Pi-5-Max.html)
+      [Orange Pi OS (OH)](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-Pi-5-Max.html)
+      [Ubuntu](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-Pi-5-Max.html)
+      [Debian](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-Pi-5-Max.html)
+      [Android 12](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-Pi-5-Max.html)
+
 ---
 <TOCInline toc={props.toc} asDisclosure />  
 

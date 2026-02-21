@@ -20,6 +20,83 @@ suggestedArticles:
     url: "https://smarthomecircle.com/radxa-cubie-a5e-review-benchmarks-vs-raspberry-pi"
   - title: "I Built A DIY 10 Inch Server Rack"
     url: "https://smarthomecircle.com/I-built-a-diy-10-inch-server-rack"
+affiliateLinks:
+    title: Buy Radxa Cubie A7A
+    links:
+      - label: "AliExpress"
+        url: "https://s.click.aliexpress.com/e/_c434m0ff"
+      - label: "Amazon US"
+        url: "https://amzn.to/47Q9yHd"
+      - label: "Amazon Europe"
+        url: "https://amzn.to/4pjxHeU"
+      - label: "Arace"
+        url: "https://arace.tech/products/radxa-cubie-a7a"
+
+includeAsSBC:
+  title: "Radxa Cubie A7A"
+  price: "$ 39+"
+  specifications:
+    SoC: Allwinner A733
+    CPU:
+      No. Of Cores: 8
+      Cores: |
+        2 × Cortex-A76 up to 2.0GHz
+        6 × Cortex-A55 up to 1.8GHz
+    GPU:
+      Model: Imagination BXM-4-64 MC1
+      Support: |
+        OpenGL ES 3.2
+        Vulkan 1.3
+        OpenCL 3.0
+    AI Capabilities: |
+        NPU: Up to 3TOPs
+    RAM:
+      Size: 2GB / 4GB / 6GB / 8GB / 12 GB / 16GB
+      Type: LPDDR5
+      Speed: 1800MT/s
+      Bus: 32-bit
+    Storage: |
+      MicroSD card
+      eMMC/UFS
+      NVMe (via PCIe NVME HAT)
+      
+    Video Output: |
+      1 x HDMI 2.0 up to 4K@60fps
+      1 x 4-lane MIPI-DSI
+    NVMe:
+      Onboard: No (via NVMe PCIe Connector)
+      Number Of Connectors: N/A
+      # Type: M.2 M-key 
+      Connectivity: PCIe Gen3 x 1
+      Size: 2230 / 2280
+    Network:
+      Ethernet: 1 × Gigabit Ethernet
+      WiFi: Wi-Fi 6
+      Bluetooth: Bluetooth 5.4
+    PoE: Yes (PoE HAT required)
+    USB: |
+      1 × USB Type-C (Power & USB 2.0 OTG)
+      1 × USB 3.1 gen2
+      3 x USB 2.0
+    Power: 5V/4A or 5V/3A via USB-C
+    Audio: 1 × 3.5mm audio jack (with mic)
+    Camera: |
+      1 x MIPI CSI (4-lane or 2-lane)
+      
+    Cooling: |
+      2-pin CPU Fan Connector with PWM Control
+    Other Expansion Capabilities: |
+      40-pin GPIO header
+
+    Dimensions: |
+      Width: 56 mm
+      Length: 85 mm
+
+    Operating System: |
+      [Debian](https://docs.radxa.com/en/cubie/a5e/download) 
+      [Android 13](https://github.com/radxa/allwinner-android-manifests/releases/)
+      [Armbian](https://www.armbian.com/radxa-cubie-a5e/)
+
 ---
 
 <TOCInline toc={props.toc} asDisclosure /> 

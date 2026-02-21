@@ -31,16 +31,17 @@ affiliateLinks:
 
 includeAsSBC:
   title: "Radxa Orion O6N"
-  price: "$199+"
+  price: "$ 199+"
   comparable: False
   specifications:
     SoC: Cix P1 (CD8160 variant)
-    CPU: |
-      12-core tri-cluster:
-      4× Cortex-A720 (big) up to 2.6GHz
-      4× Cortex-A720 (mid) up to 2.4GHz
-      4× Cortex-A520 (LITTLE) up to 1.8GHz
-      12MB shared L3 cache
+    CPU:
+      No. Of Cores: 12
+      Cores: |
+        4 × Cortex-A720 (big) up to 2.6GHz
+        4 × Cortex-A720 (mid) up to 2.4GHz
+        4 × Cortex-A520 (LITTLE) up to 1.8GHz
+
     GPU:
       Model: Arm Immortalis-G720 MC10
       Support: |
@@ -50,56 +51,57 @@ includeAsSBC:
         Hardware ray tracing
     AI Capabilities: |
       NPU: 30 TOPS
-      Precision: INT4 / INT8 / INT16, FP16, TF32
     RAM:
       Size: 8GB / 16GB / 24GB / 32GB / 48GB / 64GB (options)
       Type: LPDDR5
       Speed: 5000MT/s or 6000MT/s (SKU dependent)
       Bus: 128-bit
     Storage: |
-      2× M.2 M-Key NVMe SSD slots (PCIe Gen4 x4 per slot)
-      1× UFS module connector (Radxa UFS module)
+      2 × M.2 M-Key NVMe SSD slots (PCIe Gen4 x4 per slot)
+      1 × UFS module connector (Radxa UFS module)
     Video Output: |
-      1× DisplayPort 1.4 (up to 4K@120Hz, MST supported)
-      1× HDMI 2.0 (up to 4K@60Hz)
-      1× USB-C (USB 3.2 Gen2 + DisplayPort Alt Mode, up to 4K@60Hz)
+      1 × DisplayPort 1.4 (up to 4K@120Hz, MST supported)
+      1 × HDMI 2.0 (up to 4K@60Hz)
+      1 × USB-C (USB 3.2 Gen2 + DisplayPort Alt Mode, up to 4K@60Hz)
     NVMe:
-      Onboard: Yes (2× M.2 M-Key)
-      Connectivity: PCIe Gen4 x4 (per slot)
+      Onboard: Yes
+      Number Of Connectors: 2
+      Connectivity: PCIe Gen4 x 4 (per slot)
       Size: 2280
     Network:
-      Ethernet: 2× 2.5 Gigabit RJ45 Ethernet
+      Ethernet: 2 × 2.5 Gigabit Ethernet
       WiFi: Optional via M.2 E-Key module
       Bluetooth: Optional via M.2 E-Key module
-      Cellular: Optional via M.2 B-Key + Nano SIM slot
+
     USB: |
-      1× USB-C (USB 3.2 Gen2 10Gbps + DP Alt Mode)
-      2× USB-A (USB 3.2 Gen2 10Gbps)
-      3× USB-A (USB 2.0)
+      1 × USB-C (USB 3.2 Gen2 10Gbps + DP Alt Mode)
+      2 × USB-A (USB 3.2 Gen2 10Gbps)
+      3 × USB-A (USB 2.0)
     PoE: No
     Power: |
       12V DC via 5.5×2.5mm (5525) barrel jack
       12V via 4-pin power connector.
     Audio: No dedicated 3.5mm audio jack (audio via HDMI/DP)
     Camera: |
-      2× MIPI CSI camera connectors
-      4-lane or 2-lane per port
+      2 × MIPI CSI (4-lane or 2-lane per port)
+      
     Cooling: |
       4-pin CPU fan header with PWM control + TACH feedback
       75×75mm heatsink mounting holes
     Dimensions: |
       Form factor: Nano-ITX
       Board size: 120mm × 120mm
-    Expansion: |
-      1× M.2 E-Key (PCIe Gen4 x2 + USB) for wireless modules
-      1× M.2 B-Key (USB) for cellular modules
-      40-pin GPIO header (onboard)
+    Other Expansion Capabilities: |
+      1 × M.2 E-Key (PCIe Gen4 x2 + USB) for wireless modules
+      1 × M.2 B-Key (USB) for cellular modules
+      1 x Nano SIM slot
+      40-pin GPIO header
 
     Operating System: |
-      Debian 
-      Ubuntu
+      [Debian](https://cdimage.debian.org/debian-cd/current/arm64/iso-dvd/) 
+      [Ubuntu 25.10](https://ubuntu.com/download/desktop)
       Fedora Linux
-      Radxa OS
+      [Radxa OS](https://github.com/radxa-build/radxa-orion-cix-p1/releases)
 ---
 
 <TOCInline toc={props.toc} asDisclosure /> 

@@ -14,6 +14,71 @@ actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/IiDMtrdSGsg"
 
+affiliateLinks:
+  title: Buy Radxa X4
+  links: 
+    - label: "AliExpress"
+      url: "https://s.click.aliexpress.com/e/_c4SciGWr"
+    - label: "Arace"
+      url: "https://arace.tech/products/radxa-x4?_pos=1&_psq=x4&_ss=e&_v=1.0&variant=43415199219892"
+
+includeAsSBC:
+  title: "Radxa X4"
+  price: $109+
+  url: "https://radxa.com/products/x/x4"
+  specifications:
+    SoC: Intel N100 (Alder Lake-N)
+    CPU:
+      No. Of Cores: 4
+      Cores: |
+        4 Cores / 4 Threads
+        Base Frequency: 2.0 GHz
+        Max Turbo Frequency: 3.4 GHz
+    GPU:
+      Model: Intel UHD Graphics
+      Support: |
+        OpenGL 4.6
+        OpenCL 3.0
+        DirectX 12.1
+    AI Capabilities : CPU Only
+    RAM:
+      Size: 4GB / 8GB / 12GB / 16GB
+      Type: LPDDR5
+      Speed: 4800 MT/s
+      Bus: 32-bit
+    Storage: |
+        1 x M.2 M Key for NVMe SSD
+    Video Output: |
+      2 × HDMI 2.0 up to dual 4K@60fps support
+    NVMe:
+        Onboard: Yes
+        Number Of Connectors: 1
+        Connectivity: PCIe Gen 3 x 4
+        Size: 2230
+    Network:
+      Ethernet: 1 × 2.5 Gigabit RJ45 port
+      WiFi: Wi-Fi 6
+      Bluetooth: Bluetooth 5.2
+    PoE: No  
+    USB: |
+      3 × USB 3.0
+      1 × USB 2.0
+    Power: 12V/3A direct or USB PD (Power Delivery)
+    Audio: 3.5mm jack, support audio input/output
+    Camera:
+    Cooling: |
+      2-pin CPU Fan Connector with Constant Power
+    Dimensions:
+    Other Expansion Capabilities:
+    # Others: |
+    #   1 × Power Button
+    #   1 × Status LED
+    Operating System: |
+      [Debian](https://www.debian.org/distrib/) 
+      [Ubuntu](https://ubuntu.com/download/desktop)
+      [Fedora Linux](https://www.fedoraproject.org/)
+      Windows 11
+
 ---
 <TOCInline toc={props.toc} asDisclosure />  
 
