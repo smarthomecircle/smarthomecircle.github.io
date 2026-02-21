@@ -94,9 +94,14 @@ const LayoutWrapper = ({ children }) => {
                    <Link
                      key={link.title}
                      href={link.href}
-                     className="group relative px-4 py-2 font-medium text-gray-700 dark:text-gray-300 rounded-lg transition-all duration-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:shadow-md hover:-translate-y-0.5"
+                     className="group relative px-4 py-2 font-medium text-gray-700 dark:text-gray-300 rounded-lg transition-all duration-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:shadow-md hover:-translate-y-0.5 inline-flex items-baseline gap-0.5"
                    >
                      <span className="relative z-10">{link.title}</span>
+                     {link.badge && (
+                       <span className="relative z-10 ml-0.5 -mt-2 self-start inline-flex items-center p-0.5 rounded leading-tight text-[9px] font-semibold uppercase tracking-wider text-white bg-primary-500 dark:bg-primary-500">
+                         {link.badge}
+                       </span>
+                     )}
                      {/* Animated underline */}
                      <div className="absolute bottom-1 left-4 right-4 h-0.5 bg-primary-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
                      {/* Subtle glow effect */}
