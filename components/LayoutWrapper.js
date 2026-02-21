@@ -104,9 +104,9 @@ const LayoutWrapper = ({ children }) => {
                    </Link>
                  )
                )}
-              <div className="ml-2">
+              {/* <div className="ml-2">
                 <BuyMeACoffee />
-              </div>
+              </div> */}
             </div>
             <ThemeSwitch />
             <MobileNav />
