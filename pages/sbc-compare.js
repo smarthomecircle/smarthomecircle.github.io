@@ -113,7 +113,7 @@ export default function SBCCompare({ posts }) {
   const router = useRouter()
   const [selectedSBCs, setSelectedSBCs] = useState([null, null])
   const [copySuccess, setCopySuccess] = useState(false)
-  
+
   // Helper to convert title to URL-friendly format (spaces to hyphens)
   const titleToUrlFormat = (title) => {
     return title
@@ -438,17 +438,17 @@ export default function SBCCompare({ posts }) {
             </div>
           </div>
 
-          {/* Comparison Table */}
+          {/* Comparison Table - no overflow on wrapper so sticky header works with page scroll */}
           {selectedSBCs.some(sbc => sbc !== null) && (
-            <div className="overflow-x-auto">
+            <div>
               <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700 border border-gray-200 dark:border-gray-700 rounded-lg">
-                <thead className="bg-gray-50 dark:bg-gray-800">
+                <thead className="bg-gray-50 dark:bg-gray-800 border-b-2 border-gray-200 dark:border-gray-700">
                   <tr>
-                    <th className="sticky left-0 z-10 px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700">
+                    <th className="sticky left-0 top-0 z-20 px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700">
                       Specification
                     </th>
                     {selectedSBCs.map((sbc, index) => (
-                      <th key={index} className="px-6 py-4 text-center text-sm font-semibold text-gray-900 dark:text-gray-100">
+                      <th key={index} className="sticky top-0 z-20 px-6 py-4 text-center text-sm font-semibold text-gray-900 dark:text-gray-100 bg-gray-50 dark:bg-gray-800">
                         {sbc ? (
                           <div className="space-y-3">
                             {sbc.imageUrl && (
