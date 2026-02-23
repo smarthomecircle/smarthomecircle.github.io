@@ -7,6 +7,9 @@ import Image from '@/components/Image'
 import Link from '@/components/Link'
 import AffiliateLinks from '@/components/AffiliateLinks'
 
+// Temporary: allow comparing up to 8 SBCs (revert to 4 when done)
+const MAX_SBC_COMPARE = 4
+
 // Helper function to parse markdown links and convert to React elements
 const parseMarkdownLinks = (text) => {
   if (typeof text !== 'string') return text
@@ -134,8 +137,7 @@ export default function SBCCompare({ posts }) {
   // Pre-select SBCs from query parameters on mount and when query changes (using titles with hyphens)
   useEffect(() => {
     if (router.isReady) {
-      const { sbc1, sbc2, sbc3, sbc4 } = router.query
-      const preSelectedTitles = [sbc1, sbc2, sbc3, sbc4].filter(Boolean)
+      const preSelectedTitles = Array.from({ length: MAX_SBC_COMPARE }, (_, i) => router.query[`sbc${i + 1}`]).filter(Boolean)
       
       if (preSelectedTitles.length > 0) {
         // Find posts by matching title (SBC title or post title)
@@ -156,12 +158,20 @@ export default function SBCCompare({ posts }) {
         })
         // Ensure we have at least 2 slots, pad with nulls if needed
         const padded = preSelected.length >= 2 ? preSelected : [...preSelected, ...Array(2 - preSelected.length).fill(null)]
-        setSelectedSBCs(padded)
+        setSelectedSBCs((prev) => {
+          // If user added more slots than URL has (e.g. clicked "Add SBC"), keep those extra slots
+          if (prev.length > padded.length) {
+            const next = [...prev]
+            for (let i = 0; i < padded.length; i++) next[i] = padded[i]
+            return next
+          }
+          return padded
+        })
       } else {
         setSelectedSBCs([null, null])
       }
     }
-  }, [router.isReady, router.query.sbc1, router.query.sbc2, router.query.sbc3, router.query.sbc4, posts])
+  }, [router.isReady, router.query, posts])
   
   // Get all unique spec keys from only the SELECTED SBCs (parent keys and nested sub-keys as separate rows)
   const allSpecKeys = useMemo(() => {
@@ -299,10 +309,11 @@ export default function SBCCompare({ posts }) {
   }
 
   const addComparison = () => {
-    if (selectedSBCs.length < 4) {
+    if (selectedSBCs.length < MAX_SBC_COMPARE) {
       const newSelected = [...selectedSBCs, null]
       setSelectedSBCs(newSelected)
-      updateURL(newSelected)
+      // Don't call updateURL here: URL only has params for selected SBCs, so the effect
+      // would overwrite state back to fewer slots. URL updates when user selects an SBC in the new slot.
     }
   }
 
@@ -424,7 +435,7 @@ export default function SBCCompare({ posts }) {
                   </div>
                 </div>
               ))}
-              {selectedSBCs.length < 4 && (
+              {selectedSBCs.length < MAX_SBC_COMPARE && (
                 <button
                   onClick={addComparison}
                   className="px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors flex items-center gap-2"
@@ -441,7 +452,13 @@ export default function SBCCompare({ posts }) {
           {/* Comparison Table - no overflow on wrapper so sticky header works with page scroll */}
           {selectedSBCs.some(sbc => sbc !== null) && (
             <div>
-              <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700 border border-gray-200 dark:border-gray-700 rounded-lg">
+              <table className="min-w-full w-full table-fixed divide-y divide-gray-200 dark:divide-gray-700 border border-gray-200 dark:border-gray-700 rounded-lg">
+                <colgroup>
+                  <col style={{ width: '18%' }} />
+                  {selectedSBCs.map((_, index) => (
+                    <col key={index} style={{ width: `${82 / selectedSBCs.length}%` }} />
+                  ))}
+                </colgroup>
                 <thead className="bg-gray-50 dark:bg-gray-800 border-b-2 border-gray-200 dark:border-gray-700">
                   <tr>
                     <th className="sticky left-0 top-0 z-20 px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700">
