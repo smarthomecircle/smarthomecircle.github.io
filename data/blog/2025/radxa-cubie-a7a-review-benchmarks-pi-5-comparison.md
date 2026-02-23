@@ -49,15 +49,15 @@ includeAsSBC:
         Vulkan 1.3
         OpenCL 3.0
     AI Capabilities: |
-        NPU: Up to 3TOPs
+        NPU: Up to 3 TOPS
     RAM:
       Size: 2GB / 4GB / 6GB / 8GB / 12 GB / 16GB
       Type: LPDDR5
       Speed: 1800MT/s
       Bus: 32-bit
     Storage: |
-      MicroSD card
-      eMMC/UFS
+      MicroSD Card
+      eMMC/UFS Module Connector
       NVMe (via PCIe NVME HAT)
       
     Video Output: |
@@ -71,24 +71,24 @@ includeAsSBC:
       Size: 2230 / 2280
     Network:
       Ethernet: 1 × Gigabit Ethernet
-      WiFi: Wi-Fi 6
+      Wi-Fi: Wi-Fi 6
       Bluetooth: Bluetooth 5.4
     PoE: Yes (PoE HAT required)
     USB: |
-      1 × USB Type-C (Power & USB 2.0 OTG)
-      1 × USB 3.1 gen2
-      3 x USB 2.0
+      1 × USB-C (Power & USB 2.0 OTG)
+      1 × USB-A 3.1 Gen2
+      3 x USB-A 2.0
     Power: 5V/4A or 5V/3A via USB-C
-    Audio: 1 × 3.5mm audio jack (with mic)
+    Audio: 3.5mm Audio Jack (with Mic)
     Camera: |
-      1 x MIPI CSI (4-lane or 2-lane)
+      1 x 4-lane or 2-lane MIPI CSI
       
     Cooling: |
       2-pin CPU Fan Connector with PWM Control
     Other Expansion Capabilities: |
       40-pin GPIO header
 
-    Dimensions: |
+    Dimensions:
       Width: 56 mm
       Length: 85 mm
 

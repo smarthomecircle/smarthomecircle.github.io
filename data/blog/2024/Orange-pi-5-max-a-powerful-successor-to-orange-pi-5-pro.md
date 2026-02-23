@@ -42,14 +42,14 @@ includeAsSBC:
         OpenCL 2.2
         Vulkan 1.2
     AI Capabilities: |
-      NPU: up to 6 TOPS
+      NPU: Up to 6 TOPS
     RAM:
       Size: 4GB / 8GB / 16GB
       Type: LPDDR5
       Speed: Not specified
-      Bus: Not specified
+      Bus: 2 x 32-bit
     Storage: |
-      MicroSD card
+      MicroSD Card
       eMMC flash socket (optional onboard eMMC)
       NVMe
     Video Output: |
@@ -62,26 +62,27 @@ includeAsSBC:
       Size: 2280
     Network:
       Ethernet: 1 × 2.5 Gigabit Ethernet
-      WiFi: Wi-Fi 6E
+      Wi-Fi: Wi-Fi 6E
       Bluetooth: Bluetooth 5.3
     PoE: No
     USB: |
-      2 × USB 3.0
-      2 × USB 2.0
+      2 × USB-A 3.0
+      2 × USB-A 2.0
     Power: |
-      USB Type-C power input
-      5V @ 5A
+      5V/5A via USB-C
     Audio: |
-      1 × 3.5mm audio jack (with mic)
+      1 × 3.5mm Audio Jack (with Mic)
     Camera: |
-      2 × MIPI CSI (4-lane)
-      1 × MIPI D-PHY RX (4-lane)
+      2 × 4-lane MIPI CSI
+      1 × 4-lane MIPI D-PHY RX
     Cooling: |
-      2-pin CPU Fan Connector
+      2-pin CPU Fan Connector with PWM
     Other Expansion Capabilities: |
       RTC battery connector
       40-pin GPIO header
-    Dimensions: 
+    Dimensions:
+      Width: 57mm
+      Length: 89mm
     Operating System: |
       [Orange Pi OS (Droid)](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-Pi-5-Max.html)
       [Orange Pi OS (Arch)](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-Pi-5-Max.html)

@@ -37,47 +37,48 @@ includeAsSBC:
     CPU:
       No. Of Cores: 8
       Cores: |
-        4 × Cortex-A55 @ 1.8 GHz
-        4 × Cortex-A55 @ 1.4 GHz
+        4 × Cortex-A55 up to 1.8GHz
+        4 × Cortex-A55 up to 1.4GHz
     GPU:
-      Model: Mali-G57 MC1
+      Model: Arm Mali-G57 MC1
       Support: |
         OpenGL ES 3.2
         Vulkan 1.1–1.3
         OpenCL 2.2
     AI Capabilities: |
-        NPU: Up to 2TOPs
+        NPU: Up to 2 TOPS
     RAM:
       Size: 1GB / 2GB / 4GB
       Type: LPDDR4
       Speed: 2400MT/s
       Bus: 32-bit
     Storage: |
-      MicroSD
-      1 x M.2 M-Key For NVMe SSD
+      MicroSD Card
+      NVMe
     Video Output: |
       1 x HDMI 2.0 up to 4K@60fps
       4-lane MIPI-DSI
     NVMe:
       Onboard: Yes
       Number Of Connectors: 1
-      Connectivity: PCIe Gen 2 x 1
+      Connectivity: PCIe Gen2 x 1
       Size: 2230
     Network:
       Ethernet: 2 × Gigabit Ethernet
-      WiFi: Wi-Fi 6
+      Wi-Fi: Wi-Fi 6
       Bluetooth: Bluetooth 5.2
     PoE: No
     USB: |
-      1 × USB Type-C (Power & USB 2.0 OTG)
-      1 × USB 2.0
+      1 × USB-C (Power & USB 2.0 OTG)
+      1 × USB-A 2.0
     Power: 5V/4A via USB-C
-    Audio:
-    Camera:
-    Cooling:
-    Dimensions: |
+    Audio: |
+      Only via HDMI
+    Camera: 1 x 4-lane MIPI CSI
+    Cooling: Passive or via GPIO pins
+    Dimensions:
       Width: 56 mm
-      Height: 65 mm
+      Length: 65 mm
     Operating System: |
       [Debian](https://docs.radxa.com/en/cubie/a5e/download)
       [Android 13](https://docs.radxa.com/en/cubie/a5e/download#android)
