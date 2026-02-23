@@ -31,43 +31,45 @@ includeAsSBC:
       No. Of Cores: 4
       Cores: |
         4 Cores / 4 Threads
-        Base Frequency: 2.0 GHz
-        Max Turbo Frequency: 3.4 GHz
+        Base Frequency: 2.0GHz
+        Max Turbo Frequency: 3.4GHz
     GPU:
       Model: Intel UHD Graphics
       Support: |
         OpenGL 4.6
         OpenCL 3.0
         DirectX 12.1
-    AI Capabilities: CPU ONly
+    AI Capabilities: CPU Only
     RAM:
       Size: 8GB / 16GB / 32GB
       Type: LPDDR5
       Speed: 4800 MT/s
-      Bus: Dual 32-bit
+      Bus: 2 x 32-bit
     Storage: |
-      1 x M.2 M Key for NVMe SSD
+      NVMe
     Video Output: |
       2 × HDMI 2.0 up to dual 4K@60fps support
     NVMe:
         Onboard: Yes
         Number Of Connectors: 1
-        Connectivity: PCIe Gen 3 x 4
+        Connectivity: PCIe Gen3 x 4
         Size: 2280
     Network:
-      Ethernet: 1 × 2.5 Gigabit RJ45 port
-      WiFi: Wi-Fi 6
+      Ethernet: 1 × 2.5 Gigabit
+      Wi-Fi: Wi-Fi 6
       Bluetooth: Bluetooth 5.2
     PoE: Yes (PoE HAT required)
     USB: |
-      3 × USB 3.0
-      1 × USB 2.0
-    Power: 12V/3A direct or USB PD (Power Delivery)
-    Audio: 1× 3.5mm jack, support audio input/output
-    Camera: 
+      3 × USB-A 3.0
+      1 × USB-A 2.0
+    Power: 12V/3A direct or USB-C PD
+    Audio: 3.5mm Audio Jack (with Mic)
+    Camera: via USB
     Cooling: |
-      Passive or via GPIO pins
-    Dimensions:
+      4-pin CPU Fan Connector with PWM
+    Dimensions: 
+      Width: 80mm
+      Length: 155mm
     Other Expansion Capabilities:
     # Others: |
     #   1 × Power Button

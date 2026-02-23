@@ -35,7 +35,7 @@ includeAsSBC:
     CPU:
       No. Of Cores: 8
       Cores: |
-        8 × X60 RISC-V cores @ 1.6 GHz
+        8 × X60 RISC-V cores up to 1.6GHz
     GPU:
       Model: Imagination IMG BXE-2-32
       Support: |
@@ -48,9 +48,9 @@ includeAsSBC:
       Type: LPDDR4X
       Speed: 2400MT/s
     Storage: |
-      MicroSD
+      MicroSD Card
       NVMe
-      eMMC 5.1
+      Onboard eMMC 5.1
     Video Output: |
       1 x HDMI 1.4 up to 1080p @ 60 Hz
       1 x 2-lane MIPI DSI via 15-pin FPC, up to 1080p60
@@ -61,23 +61,25 @@ includeAsSBC:
       Size: 2230
     Network:
       Ethernet: 1 × Gigabit Ethernet
-      WiFi: Wi-Fi 6
+      Wi-Fi: Wi-Fi 6
       Bluetooth: Bluetooth 5.2
     PoE: No
     USB: |
-      4 × USB 3.0 Type-A
-      1 × USB 2.0 Type-C OTG (also used for power/PD)
-    Power: USB-C (USB PD), supports 5 V / 9 V / 12 V up to 3 A
-    Audio: 3.5 mm audio jack
+      4 × USB-A 3.0
+      1 × USB-C 2.0 with OTG (also used for power/PD)
+    Power: 5 V / 9 V / 12 V up to 3 A via USB-C PD Input
+    Audio: 3.5 mm Audio Jack (with Mic)
     Camera: |
       1 x 4-lane MIPI CSI via 22-pin FPC
       1 x 2-lane MIPI CSI via 15-pin FPC
     Cooling: |
       CPU Fan via GPIO pins
-    Other Expansion Capabilities:
+    Other Expansion Capabilities: |
         RTC battery connector
-
         Full-size miniPCIe slot (PCIe Gen 2 x1 lane)
+    Dimensions:
+      Width: 56mm
+      Length: 85mm
     Operating System: |
       [Bianbu OS](https://archive.spacemit.com/image/k1/version/bianbu/)
       [Bianbu Star](https://archive.spacemit.com/image/k1/version/bianbu-computer/)

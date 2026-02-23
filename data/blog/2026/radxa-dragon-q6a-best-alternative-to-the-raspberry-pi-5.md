@@ -49,19 +49,19 @@ includeAsSBC:
         OpenCL 2.2
         DirectX Feature Level 12
     AI Capabilities: |
-      Qualcomm AI Engine (Hexagon DSP + Hexagon Tensor Accelerator): up to 12 TOPS
+      Qualcomm AI Engine (Hexagon DSP + Hexagon Tensor Accelerator): Up to 12 TOPS
     RAM:
       Size: 4GB / 6GB / 8GB / 12GB / 16GB
       Type: LPDDR5
       Speed: 5500MT/s
-      Bus: Not specified
+      Bus: 32-bit
     Storage: |
-      MicroSD card
-      eMMC/UFS module
+      MicroSD Card
+      eMMC/UFS Module Connector
       NVMe
     Video Output: |
       1 × HDMI 2.0 Type-A up to 4K@30fps
-      1 × MIPI DSI (4-lane, FHD+)
+      1 × 4-lane MIPI DSI (FHD+)
     NVMe:
       Onboard: Yes
       Number Of Connectors: 1
@@ -69,19 +69,19 @@ includeAsSBC:
       Size: 2230
     Network:
       Ethernet: 1 × Gigabit Ethernet
-      WiFi: Wi-Fi 6 
+      Wi-Fi: Wi-Fi 6 
       Bluetooth: Bluetooth 5.4
     PoE: Yes (PoE HAT required)
     USB: |
-      1 × USB 2.0 Type-C
-      1 × USB 3.1 Type-A OTG
-      3 × USB 2.0 Type-A Host
+      1 × USB-C 2.0 
+      1 × USB-A 3.1 with OTG
+      3 × USB-A 2.0
     Power: |
-      12V via USB-C PD input (12V capable)
+      12V via USB-C PD
       12V via 3-pin power connector
       5V via 40-pin header (2 × 5V in/out)
     Audio: |
-      1 × 3.5mm audio jack (with mic)
+      3.5mm Audio Jack (with Mic)
     Camera: |
       1 × 4-lane MIPI CSI
       2 × 2-lane MIPI CSI
@@ -90,10 +90,10 @@ includeAsSBC:
     Other Expansion Capabilities: |
       RTC battery connector
       40-pin GPIO header
-    Dimensions: |
+    Dimensions:
       Width: 65 mm
       Length: 85 mm
-      Height: 20 mm
+      # Height: 20 mm
     Operating System: |
       [Radxa OS](https://github.com/radxa-build/radxa-dragon-q6a/releases)
       [Fedora](https://images.arm.fedoravforce.org/Radxa%20Dragon%20Q6A)
