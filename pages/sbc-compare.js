@@ -6,6 +6,7 @@ import siteMetadata from '@/data/siteMetadata'
 import Image from '@/components/Image'
 import Link from '@/components/Link'
 import AffiliateLinks from '@/components/AffiliateLinks'
+import AffiliateLinksFromMetadata from '@/components/AffiliateLinksFromMetadata'
 
 // Temporary: allow comparing up to 8 SBCs (revert to 4 when done)
 const MAX_SBC_COMPARE = 4
@@ -529,18 +530,8 @@ export default function SBCCompare({ posts }) {
                         <td key={index} className="px-6 py-4 text-sm text-center">
                           {sbc ? (
                             buyLinks.length > 0 ? (
-                              <div className="flex justify-center gap-2 flex-wrap">
-                                {buyLinks.map((link, linkIndex) => (
-                                  <a
-                                    key={linkIndex}
-                                    href={link.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer nofollow"
-                                    className="inline-flex items-center px-3 py-1.5 text-xs font-medium bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-all duration-200 hover:scale-105"
-                                  >
-                                    {link.label}
-                                  </a>
-                                ))}
+                              <div className="flex justify-center">
+                                <AffiliateLinksFromMetadata affiliateLinks={{ links: buyLinks }} />
                               </div>
                             ) : (
                               <span className="text-gray-400">-</span>
