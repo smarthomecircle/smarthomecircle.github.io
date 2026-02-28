@@ -10,6 +10,13 @@ draft: false
 autoAds: true
 summary: 'Tune Armbian’s PWM fan curve using a Device Tree Overlay. This step-by-step guide shows how to locate the pwm-fan node, edit cooling-levels and temp-trips, compile a .dtbo overlay, enable it in armbianEnv.txt, and verify fan speed changes in Linux'
 imageUrl: /static/images/2026/armbian-pwm-fan-curve/cover.webp
+suggestedArticles:
+  - title: "How to Auto-Mount an NVMe Drive on Linux at Startup"
+    url: "https://smarthomecircle.com/how-to-auto-mount-storage-in-linux-on-startup"
+  - title: "Radxa Cubie A5E Hands-On: The Budget NVMe SBC"
+    url: "https://smarthomecircle.com/radxa-cubie-a5e-review-benchmarks-vs-raspberry-pi"
+  - title: "How to Back Up an SD Card (Full OS Image) to an IMG File Using Linux"
+    url: "https://smarthomecircle.com/how-to-backup-os-on-sd-card-to-img-linux"
 
 ---
 

@@ -10,6 +10,13 @@ draft: false
 autoAds: true
 summary: 'Create a complete SD card backup image (.img or .img.gz) on Linux using command line tools. Restore the image anytime to recover an OS and all installed software if the card gets corrupted.'
 imageUrl: /static/images/2026/backup-os-sd-card/cover.webp
+suggestedArticles:
+  - title: "Radxa Cubie A7A Review: Pi-Sized Power With PCIe, NVMe, USB 3.1 Gen2"
+    url: "https://smarthomecircle.com/radxa-cubie-a7a-review-benchmarks-pi-5-comparison"
+  - title: "How to Tune CPU FAN Speed With PWM on Armbian "
+    url: "https://smarthomecircle.com/armbian-pwm-custom-fan-speed-curve-overlay"
+  - title: "How to Auto-Mount an NVMe Drive on Linux at Startup"
+    url: "https://smarthomecircle.com/how-to-auto-mount-storage-in-linux-on-startup"
 
 ---
 
@@ -132,14 +139,14 @@ When you need to recover, restore the image to an SD card.
 
 ```bash
 gzip -dc sdcard_backup.img.gz | sudo dd of=/dev/sdX bs=4M status=progress conv=fsync
-sync
+
 ```
 
 ### Restore an uncompressed image (`.img`)
 
 ```bash
 sudo dd if=sdcard_backup.img of=/dev/sdX bs=4M status=progress conv=fsync
-sync
+
 ```
 
 (Optional) Refresh partition info:
@@ -147,7 +154,11 @@ sync
 sudo partprobe /dev/sdX || true
 ```
 
-Eject the card safely, insert it into your device, and boot. It should come up exactly as it was.
+Eject the card safely.
+```shell
+sudo eject /dev/sdX
+```
+Then insert it into your device, and boot. It should come up exactly as it was.
 
 ---
 
