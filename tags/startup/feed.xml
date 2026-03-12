@@ -1,0 +1,25 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Smart Home Circle</title>
+      <link>https://smarthomecircle.com</link>
+      <description>A comprehensive resource covering Smart Home Tech, detailed Single Board Computers (SBC) reviews, mini PC, Home Automation, HomeLab upgrades, and Home Assistant guides.</description>
+      <language>en-us</language>
+      <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Thu, 05 Mar 2026 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://smarthomecircle.com/tags/startup/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://smarthomecircle.com/tags/startup" rel="alternate" type="text/html"/>
+      
+  <item>
+    <guid>https://smarthomecircle.com/how-to-auto-mount-storage-in-linux-on-startup</guid>
+    <title>How to Auto-Mount an NVMe Drive on Linux at Startup (Using /etc/fstab)</title>
+    <link>https://smarthomecircle.com/how-to-auto-mount-storage-in-linux-on-startup</link>
+    <description>Auto-mount your NVMe SSD on Linux at startup using /etc/fstab the right way. Learn how to find the UUID, create a mount point, add a safe fstab entry</description>
+    <pubDate>Thu, 05 Mar 2026 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>SBC</category><category>linux</category><category>storage</category><category>mount</category><category>startup</category>
+  </item>
+
+    </channel>
+  </rss>

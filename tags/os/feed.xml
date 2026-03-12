@@ -7,10 +7,30 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 22 Jun 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 05 Mar 2026 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/os/feed.xml" rel="self" type="application/rss+xml"/>
       <atom:link href="https://smarthomecircle.com/tags/os" rel="alternate" type="text/html"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/armbian-pwm-custom-fan-speed-curve-overlay</guid>
+    <title>How to Tune CPU FAN Speed With PWM on Armbian (cooling-levels based on Temperature)</title>
+    <link>https://smarthomecircle.com/armbian-pwm-custom-fan-speed-curve-overlay</link>
+    <description>Tune Armbian’s PWM fan curve using a Device Tree Overlay. This step-by-step guide shows how to locate the pwm-fan node, edit cooling-levels and temp-trips, compile a .dtbo overlay, enable it in armbianEnv.txt, and verify fan speed changes in Linux</description>
+    <pubDate>Thu, 05 Mar 2026 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>SBC</category><category>armbian</category><category>os</category><category>fan speed</category><category>overlay</category>
+  </item>
+
+  <item>
+    <guid>https://smarthomecircle.com/how-to-backup-os-on-sd-card-to-img-linux</guid>
+    <title>How to Back Up an SD Card (Full OS Image) to an IMG File Using Linux Command Line</title>
+    <link>https://smarthomecircle.com/how-to-backup-os-on-sd-card-to-img-linux</link>
+    <description>Create a complete SD card backup image (.img or .img.gz) on Linux using command line tools. Restore the image anytime to recover an OS and all installed software if the card gets corrupted.</description>
+    <pubDate>Mon, 02 Mar 2026 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>SBC</category><category>backup</category><category>os</category><category>sdcard</category><category>linux</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/how-to-connect-wifi-to-home-assistant-on-startup</guid>
     <title>How to Install Home Assistant and Connect to WIFI on Raspberry PI</title>

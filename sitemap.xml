@@ -271,6 +271,18 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/armbian-pwm-custom-fan-speed-curve-overlay</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/how-to-auto-mount-storage-in-linux-on-startup</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/how-to-backup-os-on-sd-card-to-img-linux</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/radxa-cubie-a7z-my-experience</loc>
   </url>
 
@@ -323,11 +335,19 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/tags/armbian</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/tags/audio</loc>
   </url>
 
   <url>
     <loc>https://smarthomecircle.com/tags/back-up</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/backup</loc>
   </url>
 
   <url>
@@ -455,6 +475,10 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/tags/fan-speed</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/tags/glinet</loc>
   </url>
 
@@ -547,6 +571,10 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/tags/mount</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/tags/mqtt</loc>
   </url>
 
@@ -588,6 +616,10 @@
 
   <url>
     <loc>https://smarthomecircle.com/tags/os</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/overlay</loc>
   </url>
 
   <url>
@@ -651,6 +683,10 @@
   </url>
 
   <url>
+    <loc>https://smarthomecircle.com/tags/sdcard</loc>
+  </url>
+
+  <url>
     <loc>https://smarthomecircle.com/tags/seed-studio</loc>
   </url>
 
@@ -688,6 +724,14 @@
 
   <url>
     <loc>https://smarthomecircle.com/tags/spacemit</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/startup</loc>
+  </url>
+
+  <url>
+    <loc>https://smarthomecircle.com/tags/storage</loc>
   </url>
 
   <url>
