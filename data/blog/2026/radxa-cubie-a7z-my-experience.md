@@ -5,14 +5,14 @@ categories: ''
 tags: [Radxa, SBC, benchmarks, Performance, Cubie ]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2026-01-11'
+date: '2026-03-12'
 draft: false
 autoAds: true
-summary: ''
-imageUrl: /static/images/2025/muse-pi-pro/cover.webp
+summary: 'Radxa Cubie A7Z review with benchmarks, NVMe over PCIe Gen3 x1, USB 3.1 Gen2 speeds, thermals, power draw, and real-world 1080p/4K playback tests.'
+imageUrl: /static/images/2026/radxa-cubie-a7z/cover.png
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/xETkRuCWASw"
+youtubeLink: "https://www.youtube.com/embed/1nyaeCO8pH0"
 suggestedArticles:
   - title: "Radxa Cubie A7A Review: Pi-Sized Power With PCIe, NVMe, USB 3.1 Gen2"
     url: "https://smarthomecircle.com/radxa-cubie-a7a-review-benchmarks-pi-5-comparison"
@@ -90,7 +90,6 @@ If you like tiny single-board computers, the **Radxa Cubie A7Z** is one of those
 
 <SpecificationsDisplay/>
 
-> 📸 **Photo suggestion:** close-up shots of the connectors: micro HDMI, both USB‑C ports, the FPC PCIe connector, and the Wi‑Fi antennas.
 
 ---
 
