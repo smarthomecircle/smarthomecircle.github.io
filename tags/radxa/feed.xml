@@ -7,10 +7,20 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 19 Feb 2026 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 12 Mar 2026 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/radxa/feed.xml" rel="self" type="application/rss+xml"/>
       <atom:link href="https://smarthomecircle.com/tags/radxa" rel="alternate" type="text/html"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/radxa-cubie-a7z-my-experience</guid>
+    <title>Radxa Cubie A7Z: Raspberry Pi Zero–sized Powerful SBC</title>
+    <link>https://smarthomecircle.com/radxa-cubie-a7z-my-experience</link>
+    <description>Radxa Cubie A7Z review with benchmarks, NVMe over PCIe Gen3 x1, USB 3.1 Gen2 speeds, thermals, power draw, and real-world 1080p/4K playback tests.</description>
+    <pubDate>Thu, 12 Mar 2026 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Radxa</category><category>SBC</category><category>benchmarks</category><category>Performance</category><category>Cubie</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/radxa-orion-o6n-nano-itx-arm-board-review-benchmarks</guid>
     <title>Radxa Orion O6N: My experience with this Nano-ITX Arm powerhouse</title>
