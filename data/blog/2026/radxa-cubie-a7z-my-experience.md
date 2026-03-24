@@ -27,9 +27,11 @@ includeAsSBC:
   comparable: False
   specifications:
     SoC: Allwinner A733
-    CPU: |
-      2× Cortex-A76 up to 2.0GHz
-      6× Cortex-A55 up to 1.8GHz
+    CPU:
+      No. Of Cores: 8
+      Cores: |
+        2 × Cortex-A76 up to 2.0GHz
+        6 × Cortex-A55 up to 1.8GHz
     GPU:
       Model: Imagination BXM-4-64 MC1
       Support: |
@@ -52,11 +54,11 @@ includeAsSBC:
       1 × USB-C (DP Alt Mode) for external displays
     NVMe:
       Onboard: No (via PCIe FPC + external HAT)
-      Connectivity: PCIe Gen3 x1 (1-lane)
+      Connectivity: PCIe Gen3 x 1
       Size: Depends on NVMe HAT
     Network:
       Ethernet: None onboard
-      WiFi: WiFi 6
+      Wi-Fi: WiFi 6
       Bluetooth: Bluetooth 5.4
     PoE: No
     USB: |
@@ -65,8 +67,8 @@ includeAsSBC:
     Power: |
       5V via USB-C power port
       5V via GPIO pins 2 & 4
-    Audio: Not specified
-    Dimensions: |
+    Audio: via USB-C
+    Dimensions:
       Width: 30 mm
       Length: 65 mm
     Operating System: |
