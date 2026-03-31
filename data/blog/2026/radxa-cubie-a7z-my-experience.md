@@ -21,6 +21,15 @@ suggestedArticles:
   - title: "I Built A DIY 10 Inch Server Rack"
     url: "https://smarthomecircle.com/I-built-a-diy-10-inch-server-rack"
 
+affiliateLinks:
+  title: Buy Radxa Cubie A7Z
+  links: 
+    - label: "AliExpress"
+      url: "https://s.click.aliexpress.com/e/_c3Qz14bl"
+    - label: "Evelta"
+      url: "https://evelta.com/cubie-a7z-tiny-size-mighty-ai-sbc-radxa"
+
+
 includeAsSBC:
   title: "Radxa Cubie A7Z"
   price: "$19"
@@ -85,7 +94,7 @@ If you like tiny single-board computers, the **Radxa Cubie A7Z** is one of those
   <img src="/static/images/2026/radxa-cubie-a7z/cubie-a7z-back.jpg" alt="back" />
 </div>
     
-
+<AffiliateLinksFromMetadata />
 ---
 
 ## Technical Specification
@@ -507,3 +516,5 @@ A couple of real-world notes from my testing:
 ## My conclusion
 
 For a Pi Zero–sized board, the Cubie A7Z feels *way* more powerful than its dimensions suggest. Between the PCIe expansion, fast USB storage, and efficient power draw, it’s the kind of SBC that makes me want to build something practical with it—especially in the “portable” category.
+
+<AffiliateLinksFromMetadata />
