@@ -1,5 +1,5 @@
 ---
-title: 'Building the Ultimate DIY NAS: ZimaBoard 2 Review & Setup Guide'
+title: 'Building the Ultimate DIY NAS: ZimaBoard 2 Review & Benchmarks'
 author: 'Amrut Prabhu'
 categories: ''
 tags: [Zimaboard, SBC, benchmarks, Performance, NAS, ZimaOS ]
@@ -20,6 +20,18 @@ suggestedArticles:
     url: "https://smarthomecircle.com/radxa-cubie-a5e-review-benchmarks-vs-raspberry-pi"
   - title: "I Built A DIY 10 Inch Server Rack"
     url: "https://smarthomecircle.com/I-built-a-diy-10-inch-server-rack"
+
+affiliateLinks:
+  title: Buy Zimaboard 2
+  links: 
+    - label: "Official Site"
+      url: "https://bit.ly/4t9vZij"
+    - label: "Amazon DE"
+      url: "https://amzn.to/4bVWEb8"
+    - label: "Amazon US"
+      url: "https://amzn.to/4s373YA"
+    - label: "Amazon UK"
+      url: "https://amzn.to/4bUYEAt"
 
 includeAsSBC:
   title: "ZimaBoard 2"
