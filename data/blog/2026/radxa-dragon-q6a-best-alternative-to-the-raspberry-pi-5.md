@@ -109,7 +109,7 @@ includeAsSBC:
 
 I’ve been testing the **Radxa Dragon Q6A** as a compact, high-performance single-board computer, and I want to share what I learned after pushing it through real benchmarks, storage tests, thermals, and even **Windows 11 on ARM**.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/radxa-dragon-q6a/dragon-q6a.webp" alt="dragon q6a" />
   <img src="/static/images/2026/radxa-dragon-q6a/dragon-q6a-1.webp" alt="dragon q6a" />
 </div>
@@ -129,7 +129,7 @@ I initially ran the board **bare**, without any heatsink. That worked fine for l
 
 My fix was simple: I installed a tiny **25 mm heatsink + fan** (the kind often used on a Raspberry Pi 4) and powered it via the **GPIO pins**. 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/radxa-dragon-q6a/with-fan.webp" alt="dragon q6a fan" />
 </div>
 
@@ -147,7 +147,7 @@ To get UEFI support, you need to flash the custom firmware mentioned in this [he
 
 With UEFI available, I downloaded the **Windows for ARM** image and prepared a USB drive with **Rufus**. Next, I plugged it into the board and started the installation selecting the USB as the boot medium.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/radxa-dragon-q6a/boot-select.webp" alt="dragon q6a" />
   <img src="/static/images/2026/radxa-dragon-q6a/uefi-boot.webp" alt="dragon q6a" />
   <img src="/static/images/2026/radxa-dragon-q6a/windows.webp" alt="dragon q6a" />
@@ -457,7 +457,7 @@ I tested the ethernet and Wifi speeds using iPerf3 test and these were the resul
 - Gigabit Ethernet: ~**942 Mbps** 
 - Wi‑Fi: ~**170 Mbps** 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/radxa-dragon-q6a/iperf3-ethernet.webp" alt="dragon q6a" />
   <img src="/static/images/2026/radxa-dragon-q6a/iperf3-wifi.webp" alt="dragon q6a" />
 </div>
@@ -473,7 +473,7 @@ The **M.2 M-key** onboard slot provide **PCIe Gen 3** speeds with **2 lane** con
 - Armbian : **~1000 MB/s**
 - Radxa OS : **~750 MB/s**
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/radxa-dragon-q6a/windows-nvme.webp" alt="dragon q6a" />
 </div>
 
@@ -561,7 +561,7 @@ With **NVMe + UFS module + fan** connected:
 - Idle power draw: **~3.9 – 4 Watt**
 - Under stress testing: **~9.5 – 10 Watt**
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/radxa-dragon-q6a/peak-watts.webp" alt="dragon q6a" />
   <img src="/static/images/2026/radxa-dragon-q6a/idle-watts.webp" alt="dragon q6a" />
 </div>
@@ -588,7 +588,7 @@ In my searches, I saw pricing around:
 - **~€90 on AliExpress**: [Link](https://de.aliexpress.com/item/1005010224206962.html?aff_fcid=79f77f80ca9543b49d03804d6e991f74-1766435965636-09027-_DEhJfB1&tt=CPS_NORMAL&aff_fsk=_DEhJfB1&aff_platform=shareComponent-detail&sk=_DEhJfB1&aff_trace_key=79f77f80ca9543b49d03804d6e991f74-1766435965636-09027-_DEhJfB1)
 - **~€70 on Arace**: [Link](https://arace.tech/products/radxa-dragon-q6a?variant=44069918802100)
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/radxa-dragon-q6a/dragon-q6a-1.webp" alt="dragon q6a" />
 </div>
 

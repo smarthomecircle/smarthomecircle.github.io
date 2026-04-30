@@ -130,7 +130,7 @@ The board is about the same footprint as a Raspberry Pi 5, but it won’t fit Pi
 Radxa provides [**Debian**](https://github.com/radxa-build/radxa-a733/releases) and [**Android**](https://github.com/radxa/allwinner-android-manifests/releases/) images. I went with Debian and jumped in over SSH. At idle and **without a heatsink**, the CPU sat around **54 °C**. To see where the ceiling was, I ran a quick `sysbench` CPU stress; without any cooling, temps climbed to **~75 °C**.
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/radxa-cubie-a7a/side.webp" alt="side" />
 </div>
     
@@ -185,7 +185,7 @@ Threads fairness:
 ```
 </Collapsible>
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/radxa-cubie-a7a/sysbench.webp" alt="sysbench" />
 </div>
     
@@ -244,13 +244,13 @@ AVG     Method: MCBLOCK Elapsed: 0.39923        MiB: 1024.00000 Copy: 2564.941 M
 ```
 </Collapsible>
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/radxa-cubie-a7a/mbw.webp" alt="mbw" />
 </div>
 
 ### Tiny MemBench Test
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/radxa-cubie-a7a/tinymembench.webp" alt="tinymembench" />
 </div>
 
@@ -353,7 +353,7 @@ My **8 GB** unit’s **LPDDR5** seemed clocked at **1800 MHz**. From what I’ve
 
 On **Geekbench**, I recorded **636 (single-core)** and **1496 (multi-core)**. That’s **roughly 2× a Pi 4**, but still a notch under a Pi 5.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/radxa-cubie-a7a/geekbench.webp" alt="geekbench" />
 </div>
 
@@ -398,7 +398,7 @@ On the **USB 3.1** port, `lsusb` showed my USB-to-NVMe bridge enumerated on the 
 I spun up **Docker**, then ran **Home Assistant**, **Whisper**, and **Piper** in containers. With **Whisper small-int8**, speech-to-text on my clip took about **~7.6 s**. That’s **far better than Pi 4** in my environment and **about 1 s slower than Pi 5** using the same model.
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/radxa-cubie-a7a/faster-whisper.webp" alt="faster-whisper" />
 </div>
 
@@ -511,7 +511,7 @@ radxa@radxa-cubie-a7a:~$ vkmark
 </Collapsible>
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/radxa-cubie-a7a/vkmark.webp" alt="vkmark" />
 </div>
 

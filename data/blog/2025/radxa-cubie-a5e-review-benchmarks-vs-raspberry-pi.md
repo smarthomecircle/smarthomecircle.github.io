@@ -107,7 +107,7 @@ In this video/article I’m sharing my experience with the **Radxa Cubie A5E**�
 (Specs as per Radxa’s product page.) [Radxa Cubie A5E](https://radxa.com/products/cubie/a5e/)
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/radxa-cubie-a5e/front-small.webp" alt="sbc-front" />
   <img src="/static/images/2025/radxa-cubie-a5e/back.webp" alt="sbc-back" />
   <img src="/static/images/2025/radxa-cubie-a5e/case-photo.webp" alt="sbc-back" />

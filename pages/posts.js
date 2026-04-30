@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import Link from '@/components/Link'
 import formatDate from '@/lib/utils/formatDate'
@@ -26,7 +27,7 @@ export default function posts({ posts }) {
         {posts.map((frontMatter) => {
           const { slug, date, title } = frontMatter
           return (
-            <>
+            <Fragment key={slug}>
               {/* Year header */}
               {yearheader != new Date(frontMatter.date).getFullYear() && (
                 <>
@@ -50,7 +51,7 @@ export default function posts({ posts }) {
                   </div>
                 </Link>
               </div>
-            </>
+            </Fragment>
           )
         })}
       </div>

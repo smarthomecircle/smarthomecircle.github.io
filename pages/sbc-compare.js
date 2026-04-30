@@ -7,9 +7,7 @@ import Image from '@/components/Image'
 import Link from '@/components/Link'
 import AffiliateLinks from '@/components/AffiliateLinks'
 import AffiliateLinksFromMetadata from '@/components/AffiliateLinksFromMetadata'
-
-// Temporary: allow comparing up to 8 SBCs (revert to 4 when done)
-const MAX_SBC_COMPARE = 4
+import { MAX_SBC_COMPARE } from '@/lib/sbcConfig'
 
 // Helper function to parse markdown links and convert to React elements
 const parseMarkdownLinks = (text) => {

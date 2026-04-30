@@ -114,7 +114,7 @@ includeAsSBC:
 About a year ago Radxa launched the **Orion O6**, and now there’s a **Nano-ITX** version of the same platform: the **Orion O6N**. I’ve been putting it through the kind of real-world tests I actually care about—booting different OS images, checking hardware acceleration, measuring power and thermals, and seeing how it behaves as a small server and an AI box.
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/orion-o6n/o6n-view1.webp" alt="o6n-view1" />
   <img src="/static/images/2026/orion-o6n/o6n-view2.webp" alt="o6n-view2" />
 </div>
@@ -141,7 +141,7 @@ I’ve also seen people in the Radxa Discord running other operating systems lik
 
 Because of that, I used **Radxa OS** for most of my performance testing, since it *does* provide hardware acceleration.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/orion-o6n/uefi-2.webp" alt="uefi" />
   <img src="/static/images/2026/orion-o6n/uefi-11.webp" alt="uefi" />
 </div>
@@ -156,7 +156,7 @@ To get a quick feel for GPU performance, I ran **Furmark**:
 - **Vulkan (API 1.4):** ~**23 FPS**
 - **OpenGL (4.6):** ~**18 FPS**
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/orion-o6n/furmark-opengl.webp" alt="furmark-opengl" />
   <img src="/static/images/2026/orion-o6n/furmark-vulkan.webp" alt="furmark-opengl" />
 </div>
@@ -175,7 +175,7 @@ Temperature-wise:
 - **Idle:** ~**32°C**
 - **10-minute stress test:** didn’t go above ~**43°C**
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/orion-o6n/o6n-fan.webp" alt="o6n-fan" />
 </div>
 
@@ -208,7 +208,7 @@ Then I built **llama.cpp** locally:
 Important note: these were **CPU-only** runs. I wasn’t using the NPU.
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/orion-o6n/ollama.webp" alt="ollama" />
   <img src="/static/images/2026/orion-o6n/llamacpp.webp" alt="llamacpp" />
 </div>
@@ -250,7 +250,7 @@ I ran the following tests:
 The results were *way* ahead of what I typically see on boards like the Rock 5T and Raspberry Pi 5. This is exactly where that **128-bit memory bus** makes a difference.
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/orion-o6n/mbw.webp" alt="mbw" />
   <img src="/static/images/2026/orion-o6n/tinymembench.webp" alt="tinymembench" />
 </div>
@@ -283,7 +283,7 @@ For Ethernet, I tested with **iperf3** and got about:
 
 For Wi-Fi, I used an **Intel BE200 (Wi-Fi 7)** card, which was detected, but **firmware wasn’t loaded**. After copying the required firmware file, Wi-Fi worked and I measured about **~500 Mbit/s**
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/orion-o6n/wifi7.webp" alt="llamacpp" />
 </div>
 
@@ -298,7 +298,7 @@ When I gave it a voice command, the board converted speech to text in about:
 
 That’s a strong result—better than what I’ve seen from the Rock 5T and even Radxa X4 (Intel N100) in similar “local voice” style workloads.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/orion-o6n/ha.webp" alt="llamacpp" />
   <img src="/static/images/2026/orion-o6n/ha-voice.webp" alt="llamacpp" />
 </div>
@@ -328,7 +328,7 @@ But even with that caveat, this board is already very usable because:
 Right now I see it as a really capable **server / lab / compute box**, especially if you want to run serious workloads on Arm hardware that starts to feel comparable to modern desktop-class CPUs in day-to-day usage.
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/orion-o6n/o6n-fan.webp" alt="o6n-fan" />
 </div>
 

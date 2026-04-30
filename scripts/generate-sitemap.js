@@ -4,6 +4,7 @@ const globby = require('globby')
 const prettier = require('prettier')
 const matter = require('gray-matter')
 const siteMetadata = require('../data/siteMetadata')
+const { MAX_SBC_COMPARE } = require('../lib/sbcConfig')
 
 // Helper to get all files recursively
 function getAllFilesRecursively(dir) {
@@ -78,7 +79,6 @@ function encodeTitle(title) {
     'pages/*.js',
     'data/blog/**/*.mdx',
     'data/blog/**/*.md',
-    'data/sbc/**/*.md',
     'public/tags/**/*.xml',
     '!pages/_*.js',
     '!pages/api',
@@ -89,8 +89,8 @@ function encodeTitle(title) {
   try {
     const sbcPosts = getSBCPosts()
     
-    // Generate comparison URLs for 2, 3, and 4 SBC combinations
-    for (let count = 2; count <= 4; count++) {
+    // Generate comparison URLs for 2..MAX_SBC_COMPARE SBC combinations
+    for (let count = 2; count <= MAX_SBC_COMPARE; count++) {
       const combinations = generateCombinations(sbcPosts, count)
       combinations.forEach(combo => {
         const params = combo.map((post, index) => {
@@ -112,7 +112,6 @@ function encodeTitle(title) {
               .map((page) => {
                 const path = page
                   .replace('pages/', '/')
-                  .replace('data/sbc/', '/sbc/')
                   .replace('data/blog', '')
                   .replace('public/', '/')
                   .replace('2020/', '')

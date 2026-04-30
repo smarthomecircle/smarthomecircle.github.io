@@ -42,7 +42,7 @@ I’ve been testing the **Seeed Studio ReSpeaker XVF3800** with a **XIAO ESP32-S
 
 After living with it day-to-day for a full month, I can finally say it feels like a **polished Home Assistant voice assistant** — but it didn’t start out that way. What made the real difference was the updated firmware and the ESPHome configuration that properly uses the audio features this hardware is built for.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/respeaker-xvf3800/respeaker-back.webp" alt="respeaker-back.webp" />
 </div>
 
@@ -86,7 +86,7 @@ With the Home Assistant Preview device, I found I often had to speak more **towa
 
 For me, that difference matters a lot. It changes behavior: I stop thinking about the device and just talk naturally.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/respeaker-xvf3800/with-ha.webp" alt="with-ha.webp" />
 </div>
 
@@ -108,7 +108,7 @@ I built a custom case to hold the speaker and board, but once I added a top cove
 
 In the end, I ran it with an open top so Wi‑Fi stayed stable.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/respeaker-xvf3800/case-1.webp" alt="case-1.webp" />
 </div>
 
@@ -129,7 +129,7 @@ Pricing can vary depending on where you buy it, but the numbers I’m seeing:
 - Around **$53** on Seeed Studio’s website
 - Around **€59** on AliExpress
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/respeaker-xvf3800/respeaker-front.webp" alt="respeaker-back.webp" />
   <img src="/static/images/2026/respeaker-xvf3800/respeaker-back.webp" alt="respeaker-back.webp" />
 </div>
@@ -151,7 +151,7 @@ The link to the ESPHome Configuration file is [here](https://github.com/formatBC
 ## 3D Model Print Files
 
 Now I have designed this case for the ReSpeaker XVF3800 and you can download the model from [here](https://www.printables.com/model/1528256)
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/respeaker-xvf3800/case.webp" alt="respeaker-back.webp" />
   <img src="/static/images/2026/respeaker-xvf3800/case-2.webp" alt="respeaker-back.webp" />
 </div>

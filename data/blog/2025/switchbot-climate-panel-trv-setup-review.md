@@ -47,7 +47,7 @@ A few things I noticed quickly:
 - The panel and TRV can talk **directly over Bluetooth**; I can adjust the setpoint on the panel, and the radiator responds without any cloud service dependency.
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/switchbot-climate-panel/trv.webp" alt="trv" />
   <img src="/static/images/2025/switchbot-climate-panel/climate-panel.webp" alt="climate panel" />
 </div>
@@ -79,7 +79,7 @@ A few things I noticed quickly:
 
 Calibration took a minute and then the app displayed valve position and current temperature.
 
-<div class="image-flex" height="50">
+<div className="image-flex" height="50">
   <img src="/static/images/2025/switchbot-climate-panel/trv-temp.webp" alt="trv-temp" />
 </div>
 
@@ -91,7 +91,7 @@ Calibration took a minute and then the app displayed valve position and current 
 
 Small but satisfying: I don’t have to reach for my phone to tweak the heat.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/switchbot-climate-panel/climate-panel-app.webp" alt="climate-panel-app" />
 </div>
 
@@ -115,7 +115,7 @@ The TRV has its **own temperature sensor**, but it sits right on the radiator—
 
 I also keep **open‑window detection** enabled so the valve backs off if the temperature suddenly drops.
 
-<div class="image-flex" height="50">
+<div className="image-flex" height="50">
   <img src="/static/images/2025/switchbot-climate-panel/data-source.webp"  alt="data-source" />
 </div>
 ---
@@ -133,7 +133,7 @@ Out of the box, the **panel and TRV work fine over Bluetooth**. If you want them
 
 After that, the TRV showed up in **Home Assistant** and **Google Home** and I could change setpoints from either app.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/switchbot-climate-panel/homeassistant.webp" alt="system settings" />
 </div>
 ---

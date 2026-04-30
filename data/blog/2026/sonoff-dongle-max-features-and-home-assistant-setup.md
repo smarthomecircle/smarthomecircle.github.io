@@ -39,7 +39,7 @@ affiliateLinks:
 If you’ve been playing around with Zigbee (and even Thread) in Home Assistant, you know how much the *adapter* matters. Today I’m sharing my experience with the **Sonoff Dongle Max**—and honestly, the “Max” name isn’t just marketing. This thing packs a surprising number of features into one device.
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/sonoff-dongle-max/dongle-max.jpg" alt="dongle-max.jpg" />
 </div>
 
@@ -83,7 +83,7 @@ Here’s what stood out to me:
 
   The Dongle Max can be powered using **Power over Ethernet** alternatively.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/sonoff-dongle-max/poe.jpg" alt="poe" />
 </div>
 
@@ -94,7 +94,7 @@ This opens up a really practical setup option:
 
 If you’ve ever fought USB extension cables and “where do I put the coordinator”, PoE can make life easier.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/sonoff-dongle-max/dongle-max-view-2.jpg" alt="dongle-max.jpg" />
   <img src="/static/images/2026/sonoff-dongle-max/dongle-max-view-1.jpg" alt="dongle-max.jpg" />
 </div>
@@ -118,7 +118,7 @@ After using it, the “Max” name makes sense: it’s not just a Zigbee adapter
 
 If you’re building a Home Assistant setup where reliability and flexibility matter, this is the kind of device that can simplify a lot of messy “extra parts” in one go.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/sonoff-dongle-max/dongle-max.jpg" alt="dongle-max.jpg" />
 </div>
 

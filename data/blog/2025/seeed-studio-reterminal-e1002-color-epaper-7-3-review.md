@@ -27,7 +27,7 @@ suggestedArticles:
 I’ve been living with a 7.3-inch color ePaper panel from Seeed Studio for a bit, and I want to walk you through what it’s like to set up, customize, and actually use it day-to-day. If you enjoy the idea of a low-power, always-on status board that can show real color, this thing is fun.
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/seeed-reterminal-e1002/frontshot.webp" alt="front panel" />
 </div>
 
@@ -50,7 +50,7 @@ Under the hood it’s powered by an ESP32-S3 with 8 MB PSRAM and 32 MB of flash,
 - **Left side:** I²S and GPIO breakouts if you want to wire in external sensors.  
 - **Top edge:** a set of hardware buttons for quick interaction, plus a **microphone input**.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/seeed-reterminal-e1002/side-left.webp" alt="right side panel" />
   <img src="/static/images/2025/seeed-reterminal-e1002/side-right.webp" alt="left side view" />
 </div>
@@ -76,7 +76,7 @@ If you’re the “drag-and-drop and ship it” type, SenseCraft HMI is surprisi
 
 ## SenseCraft HMI: No-Code, Lots of Presets
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/seeed-reterminal-e1002/sensecraft-hmi.webp" alt="sensecraft hmi" />
 </div>
 
@@ -92,7 +92,7 @@ The **Data** component is where it gets interesting: you point it at a public UR
 
 You can also surface **on-device sensors**—battery percentage, temperature, and humidity—right in the dashboard.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/seeed-reterminal-e1002/sensecraft-output.webp" alt="sensecraft hmi output" />
 </div>
 
@@ -111,7 +111,7 @@ ESPHome now has [**LVGL**](https://esphome.io/components/lvgl/) support, so I bu
 - Customize **exactly** how the dashboard looks and behaves  
 - Avoid external dependencies once it’s flashed and configured
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/seeed-reterminal-e1002/esphome.webp" alt="esphome output" />
 </div>
 
@@ -856,7 +856,7 @@ Honestly, I’m happy this device supports both ends of that spectrum—start fa
 
 The display is about **$109**, with shipping options from **EU, US, and China** warehouses.  
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/seeed-reterminal-e1002/display.webp" alt="display" />
 </div>
 

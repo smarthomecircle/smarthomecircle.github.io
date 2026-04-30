@@ -26,7 +26,7 @@ suggestedArticles:
 
 I’ve been tinkering with a [**XIAO 7.5" ePaper Panel display from Seeed Studio**](https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html?sensecap_affiliate=zkW5xlz&referring_service=link), and I turned it into a clean, battery-powered dashboard that pulls live data from **Home Assistant**. In this write-up I’ll walk you through how I built it in **ESPHome**, how I handled **icons and fonts**, how I grabbed **entity states** from Home Assistant, and how I iterated on the layout—with a little help from AI.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/seeed-xiao-panel/hero-shot.webp" alt="xiao panel" />
 </div>
 
@@ -120,7 +120,7 @@ binary_sensor:
 
 To find an entity ID, I went to **Home Assistant → Developer Tools → States**, copy the exact `entity_id`, and paste it into my ESPHome config.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/seeed-xiao-panel/dev-tools.webp" alt="ha dev tools" />
 </div>
 ---
@@ -151,7 +151,7 @@ font:
 
 **How I pick an icon codepoint:** I open an icon set [site](https://pictogrammers.com/library/mdi/), copy the F value, add `\U000` preceeding it, add it to `glyphs`, and then use it as a variable in the display.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/seeed-xiao-panel/material-designs.webp" alt="material design" />
 </div>
 ---
