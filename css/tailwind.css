@@ -1,6 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+/* Bridge the v3 JS config (theme + typography plugin + custom colors)
+   into Tailwind v4. See https://tailwindcss.com/docs/upgrade-guide */
+@config '../tailwind.config.js';
+
+/* Tailwind v4 treats the ring utility as `ring-3` by default; the
+   rest of this stylesheet expects the v3 behaviour where `ring`
+   produced a 3px ring. */
+@theme {
+  --default-ring-width: 3px;
+}
+
+/* Tailwind v4 no longer applies the preflight `border-color` of
+   gray-200 to every element; restore it to keep existing markup
+   (border-based dividers/cards) rendering the same. */
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 .task-list-item::before {
   @apply hidden;

@@ -24,8 +24,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-
-    // ✅ Always take the tag from params
+  // ✅ Always take the tag from params
   const tagParam = Array.isArray(params?.tag) ? params.tag[0] : params?.tag
 
   const allPosts = await getAllFilesFrontMatter('blog')
@@ -59,7 +58,10 @@ export default function Tag({ posts, authorDetails, tag }) {
   // Capitalize first letter and convert space to dash
   const humanTitle =
     tag && tag.length
-      ? tag.split('-').join(' ').replace(/^./, (c) => c.toUpperCase())
+      ? tag
+          .split('-')
+          .join(' ')
+          .replace(/^./, (c) => c.toUpperCase())
       : 'Tag'
 
   return (

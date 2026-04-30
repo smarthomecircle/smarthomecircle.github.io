@@ -13,7 +13,7 @@ function AdsSection({ id, slot, layoutKey }) {
       try {
         // Initialize adsbygoogle array if it doesn't exist
         window.adsbygoogle = window.adsbygoogle || []
-        
+
         // Check if ad is already initialized
         if (adRef.current && !adRef.current.dataset.adStatus) {
           window.adsbygoogle.push({})

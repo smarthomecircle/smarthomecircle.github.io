@@ -3,19 +3,19 @@ import Link from './Link'
 // Helper function to parse markdown links and convert to React elements
 const parseMarkdownLinks = (text) => {
   if (typeof text !== 'string') return text
-  
+
   // Pattern to match markdown links: [text](url)
   const linkPattern = /\[([^\]]+)\]\(([^)]+)\)/g
   const parts = []
   let lastIndex = 0
   let match
-  
+
   while ((match = linkPattern.exec(text)) !== null) {
     // Add text before the link
     if (match.index > lastIndex) {
       parts.push(text.substring(lastIndex, match.index))
     }
-    
+
     // Add the link
     const linkText = match[1]
     const linkUrl = match[2]
@@ -29,19 +29,24 @@ const parseMarkdownLinks = (text) => {
       >
         {linkText}
         <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+          />
         </svg>
       </a>
     )
-    
+
     lastIndex = linkPattern.lastIndex
   }
-  
+
   // Add remaining text after the last link
   if (lastIndex < text.length) {
     parts.push(text.substring(lastIndex))
   }
-  
+
   return parts.length > 0 ? parts : text
 }
 
@@ -55,41 +60,53 @@ const renderValue = (value, label = null) => {
   if (typeof value === 'object' && value !== null && value.url) {
     return (
       <span className="inline-flex items-center gap-2">
-        <span className="text-gray-600 dark:text-gray-400 whitespace-pre-line">{label || 'Link'}</span>
-        <a 
-          href={value.url} 
-          target="_blank" 
+        <span className="text-gray-600 dark:text-gray-400 whitespace-pre-line">
+          {label || 'Link'}
+        </span>
+        <a
+          href={value.url}
+          target="_blank"
           rel="noopener noreferrer"
           className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
           title={value.url}
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+            />
           </svg>
         </a>
       </span>
     )
   }
-  
+
   const stringValue = String(value).trim()
   // Check if value is a direct URL
   const urlPattern = /^https?:\/\/.+/i
   if (urlPattern.test(stringValue)) {
     return (
-      <a 
-        href={stringValue} 
-        target="_blank" 
+      <a
+        href={stringValue}
+        target="_blank"
         rel="noopener noreferrer"
         className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 hover:underline inline-flex items-center gap-1"
       >
         link
         <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+          />
         </svg>
       </a>
     )
   }
-  
+
   // Parse markdown links in the text
   return <span className="whitespace-pre-line">{parseMarkdownLinks(stringValue)}</span>
 }
@@ -98,13 +115,21 @@ const renderValue = (value, label = null) => {
 const titleToUrlFormat = (title) => {
   if (!title) return ''
   return title
-    .replace(/\s+/g, '-')  // Replace spaces with hyphens
+    .replace(/\s+/g, '-') // Replace spaces with hyphens
     .replace(/[^a-zA-Z0-9\-]/g, '') // Remove special characters except hyphens
-    .replace(/-+/g, '-')  // Replace multiple hyphens with single hyphen
+    .replace(/-+/g, '-') // Replace multiple hyphens with single hyphen
     .replace(/^-+|-+$/g, '') // Remove leading/trailing hyphens
 }
 
-export default function SpecificationsDisplay({ specifications, slug, price, affiliateLinks = [], title, url, comparable = false }) {
+export default function SpecificationsDisplay({
+  specifications,
+  slug,
+  price,
+  affiliateLinks = [],
+  title,
+  url,
+  comparable = false,
+}) {
   if (!specifications) {
     return null
   }
@@ -148,9 +173,9 @@ export default function SpecificationsDisplay({ specifications, slug, price, aff
           <div className="border-l-4 border-primary-500 bg-primary-50 dark:bg-primary-900/20 pl-4 pr-3 py-1 rounded-r-lg prose-links">
             <div className="flex flex-col sm:flex-row sm:items-center gap-3">
               <div className="flex items-center gap-2">
-                {title && (
-                  url ? (
-                    <a 
+                {title &&
+                  (url ? (
+                    <a
                       href={url}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -162,8 +187,7 @@ export default function SpecificationsDisplay({ specifications, slug, price, aff
                     <p className="text-base font-medium text-gray-900 dark:text-gray-100">
                       {title}:
                     </p>
-                  )
-                )}
+                  ))}
                 {price && (
                   <div className="text-base font-bold text-gray-900 dark:text-gray-100">
                     {price}
@@ -180,8 +204,18 @@ export default function SpecificationsDisplay({ specifications, slug, price, aff
                       rel="noopener noreferrer"
                       className="inline-flex items-center px-2 py-1 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
                     >
-                      <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      <svg
+                        className="w-3 h-3 mr-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
                       </svg>
                       {link.label}
                     </a>
@@ -197,19 +231,27 @@ export default function SpecificationsDisplay({ specifications, slug, price, aff
             className="inline-flex items-center px-3 py-1.5 text-sm font-medium bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-all duration-200 hover:scale-105 shadow-sm"
           >
             <svg className="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+              />
             </svg>
             Compare
           </Link>
         )}
       </div>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         {Object.entries(specifications).map(([key, value]) => {
           // Check if value is an object (nested spec)
           if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
             return (
-              <div key={key} className="py-2 px-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg text-sm">
+              <div
+                key={key}
+                className="py-2 px-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg text-sm"
+              >
                 <span className="font-bold text-gray-900 dark:text-gray-100">{key}:</span>
                 <div className="ml-4 mt-1 space-y-1">
                   {Object.entries(value).map(([subKey, subValue]) => {
@@ -218,11 +260,17 @@ export default function SpecificationsDisplay({ specifications, slug, price, aff
                     return (
                       <div key={subKey} className="flex items-start text-sm">
                         {hasUrl ? (
-                          <span className="text-gray-700 dark:text-gray-300">{renderValue(subValue, subKey)}</span>
+                          <span className="text-gray-700 dark:text-gray-300">
+                            {renderValue(subValue, subKey)}
+                          </span>
                         ) : (
                           <>
-                            <span className="font-bold text-gray-700 dark:text-gray-300 mr-2">{subKey}:</span>
-                            <span className="text-gray-700 dark:text-gray-300">{renderValue(subValue)}</span>
+                            <span className="font-bold text-gray-700 dark:text-gray-300 mr-2">
+                              {subKey}:
+                            </span>
+                            <span className="text-gray-700 dark:text-gray-300">
+                              {renderValue(subValue)}
+                            </span>
                           </>
                         )}
                       </div>
@@ -233,7 +281,10 @@ export default function SpecificationsDisplay({ specifications, slug, price, aff
             )
           }
           return (
-            <div key={key} className="flex items-start py-2 px-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg text-sm">
+            <div
+              key={key}
+              className="flex items-start py-2 px-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg text-sm"
+            >
               <span className="font-bold text-gray-900 dark:text-gray-100 mr-2">{key}:</span>
               <span className="text-gray-700 dark:text-gray-300">{renderValue(value)}</span>
             </div>

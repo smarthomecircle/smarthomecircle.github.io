@@ -1,4 +1,3 @@
-/* eslint-disable react/display-name */
 import { useMemo, useState, useEffect } from 'react'
 import { getMDXComponent } from 'mdx-bundler/client'
 import Image from './Image'
@@ -12,17 +11,34 @@ import VideoEmbed from './VideoEmbed'
 import InContentAd from './InContentAd'
 import SpecificationsDisplay from './SpecificationsDisplay'
 import Collapsible from './Collapsible'
+import PostLayout from '../layouts/PostLayout'
+import PostSimple from '../layouts/PostSimple'
+import AuthorLayout from '../layouts/AuthorLayout'
+import Policy from '../layouts/Policy'
+import ListLayout from '../layouts/ListLayout'
+
+// Explicit layout map. Previously the wrapper used a dynamic
+// `require(`../layouts/${layout}`)`, which returned `undefined` under the
+// new webpack module format in Next 16 and caused "Element type is invalid"
+// during SSR. Static imports are also easier for bundlers to tree-shake.
+const LAYOUTS = {
+  PostLayout,
+  PostSimple,
+  AuthorLayout,
+  Policy,
+  ListLayout,
+}
 
 // Centralized slot ID and layout key mappings
 const SLOT_MAPPINGS = {
   // Original slots
-  '5121856708': '-fb+5w+4e-db+86',  // H3 ads
-  '4906783027': '-g2+y-1l-kc+17h',  // H2 ads
-  
+  5121856708: '-fb+5w+4e-db+86', // H3 ads
+  4906783027: '-g2+y-1l-kc+17h', // H2 ads
+
   // Blog list ad slots
-  '3638066836': '-fb+5w+4e-db+86',  // Blog list ads - position 1
-  '1398098062': '-fb+5w+4e-db+86',  // Blog list ads - position 2
-  '8873812148': '-fb+5w+4e-db+86'  // Blog list ads - position 3
+  3638066836: '-fb+5w+4e-db+86', // Blog list ads - position 1
+  1398098062: '-fb+5w+4e-db+86', // Blog list ads - position 2
+  8873812148: '-fb+5w+4e-db+86', // Blog list ads - position 3
 }
 
 // Function to get layout key for any slot ID
@@ -33,16 +49,16 @@ export const getLayoutKey = (slotId) => {
 // Function to get different slot IDs for blog list ads
 export const getBlogListSlot = (index) => {
   const slotIds = [
-    '5121856708',  // Position 1
-    '4906783027',  // Position 2
-    '3638066836',  // Position 3
-    '1398098062',  // Position 4
-    '8873812148'  // Position 5
+    '5121856708', // Position 1
+    '4906783027', // Position 2
+    '3638066836', // Position 3
+    '1398098062', // Position 4
+    '8873812148', // Position 5
   ]
-  
+
   // Calculate which ad position this is (every 3rd post)
   const adPosition = Math.floor(index / 3)
-  
+
   // Use modulo to cycle through available slots
   return slotIds[adPosition % slotIds.length]
 }
@@ -69,7 +85,7 @@ const createAutoAdComponents = (pageId = '') => {
     let hash = 0
     for (let i = 0; i < str.length; i++) {
       const char = str.charCodeAt(i)
-      hash = ((hash << 5) - hash) + char
+      hash = (hash << 5) - hash + char
       hash = hash & hash // Convert to 32bit integer
     }
     return Math.abs(hash)
@@ -78,20 +94,20 @@ const createAutoAdComponents = (pageId = '') => {
   // Function to get different slot IDs for H2 section ads
   const getH2SectionSlot = (hash) => {
     const slotIds = [
-      '5121856708',  // Position 1
-      '4906783027',  // Position 2
-      '3638066836',  // Position 3
-      '1398098062',  // Position 4
-      '8873812148'  // Position 5
+      '5121856708', // Position 1
+      '4906783027', // Position 2
+      '3638066836', // Position 3
+      '1398098062', // Position 4
+      '8873812148', // Position 5
     ]
-    
+
     // Use hash to deterministically select a slot
     return slotIds[hash % slotIds.length]
   }
 
   // Track H2 sections for ad placement
   let currentH2Section = null
-  
+
   const AutoAdH2 = (props) => {
     // Get heading text content for deterministic behavior
     let headingText = 'h2-heading'
@@ -102,35 +118,32 @@ const createAutoAdComponents = (pageId = '') => {
     } else if (props.children && typeof props.children === 'object') {
       headingText = props.children.toString()
     }
-    
+
     const hash = simpleHash(headingText)
     const shouldShowAd = hash % 2 === 0
     const adId = `${pageId}-h2-${hash.toString(36).slice(0, 6)}`
-    
+
     // Store this H2 section info
     const sectionInfo = {
       headingText,
       hash,
       shouldShowAd,
-      adId
+      adId,
     }
-    
+
     // If we have a previous section, add ad for it before starting new section
     let previousSectionAd = null
     if (currentH2Section && currentH2Section.shouldShowAd) {
       previousSectionAd = (
         <ClientOnlyAd key={`ad-${currentH2Section.adId}`}>
-          <InContentAd 
-            id={currentH2Section.adId} 
-            slot={getH2SectionSlot(currentH2Section.hash)} 
-          />
+          <InContentAd id={currentH2Section.adId} slot={getH2SectionSlot(currentH2Section.hash)} />
         </ClientOnlyAd>
       )
     }
-    
+
     // Update current section
     currentH2Section = sectionInfo
-    
+
     return (
       <>
         {previousSectionAd}
@@ -144,16 +157,13 @@ const createAutoAdComponents = (pageId = '') => {
     if (currentH2Section && currentH2Section.shouldShowAd) {
       return (
         <ClientOnlyAd>
-          <InContentAd 
-            id={currentH2Section.adId} 
-            slot={getH2SectionSlot(currentH2Section.hash)} 
-          />
+          <InContentAd id={currentH2Section.adId} slot={getH2SectionSlot(currentH2Section.hash)} />
         </ClientOnlyAd>
       )
     }
     return null
   }
-  
+
   return { AutoAdH2, SectionEndAd }
 }
 
@@ -163,11 +173,17 @@ const createMDXComponents = (frontMatter = {}) => {
   let pageId = frontMatter?.slug || frontMatter?.customUrl || 'page'
   if (pageId === 'auto-generated') {
     // Fallback to using the title as pageId when customUrl is auto-generated
-    pageId = frontMatter?.title ? frontMatter.title.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') : 'page'
+    pageId = frontMatter?.title
+      ? frontMatter.title
+          .toLowerCase()
+          .replace(/[^a-z0-9]/g, '-')
+          .replace(/-+/g, '-')
+          .replace(/^-|-$/g, '')
+      : 'page'
   }
-  
+
   const autoAdComponents = frontMatter?.autoAds ? createAutoAdComponents(pageId) : null
-  
+
   return {
     Image,
     TOCInline,
@@ -176,10 +192,7 @@ const createMDXComponents = (frontMatter = {}) => {
     BlogNewsletterForm: BlogNewsletterForm,
     AffiliateLinks,
     AffiliateLinksFromMetadata: (props) => (
-      <AffiliateLinksFromMetadata 
-        affiliateLinks={frontMatter?.affiliateLinks}
-        {...props} 
-      />
+      <AffiliateLinksFromMetadata affiliateLinks={frontMatter?.affiliateLinks} {...props} />
     ),
     VideoEmbed,
     Collapsible,
@@ -189,22 +202,22 @@ const createMDXComponents = (frontMatter = {}) => {
       </ClientOnlyAd>
     ),
     SpecificationsDisplay: (props) => (
-      <SpecificationsDisplay 
-        specifications={frontMatter?.includeAsSBC?.specifications} 
+      <SpecificationsDisplay
+        specifications={frontMatter?.includeAsSBC?.specifications}
         slug={frontMatter?.slug}
         title={frontMatter?.includeAsSBC?.title}
         price={frontMatter?.includeAsSBC?.price}
         url={frontMatter?.includeAsSBC?.url}
         affiliateLinks={frontMatter?.affiliateLinks}
         comparable={frontMatter?.includeAsSBC?.comparable}
-        {...props} 
+        {...props}
       />
     ),
     // Conditionally use auto-ad headings if autoAds is enabled
     h2: autoAdComponents ? autoAdComponents.AutoAdH2 : 'h2',
     SectionEndAd: autoAdComponents ? autoAdComponents.SectionEndAd : null,
     wrapper: ({ components, layout, ...rest }) => {
-      const Layout = require(`../layouts/${layout}`).default
+      const Layout = LAYOUTS[layout] || PostLayout
       return <Layout {...rest} />
     },
   }
@@ -216,5 +229,7 @@ export const MDXLayoutRenderer = ({ layout, mdxSource, frontMatter, ...rest }) =
   const MDXLayout = useMemo(() => getMDXComponent(mdxSource), [mdxSource])
   const dynamicComponents = useMemo(() => createMDXComponents(frontMatter), [frontMatter])
 
-  return <MDXLayout layout={layout} components={dynamicComponents} frontMatter={frontMatter} {...rest} />
+  return (
+    <MDXLayout layout={layout} components={dynamicComponents} frontMatter={frontMatter} {...rest} />
+  )
 }
