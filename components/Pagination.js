@@ -15,9 +15,7 @@ export default function Pagination({ totalPages, currentPage, basePath = '' }) {
       : basePath
         ? `${basePath}/page/${currentPage - 1}`
         : `/page/${currentPage - 1}`
-  const nextHref = basePath
-    ? `${basePath}/page/${currentPage + 1}`
-    : `/page/${currentPage + 1}`
+  const nextHref = basePath ? `${basePath}/page/${currentPage + 1}` : `/page/${currentPage + 1}`
 
   return (
     <div className="pt-6 pb-8 space-y-2 md:space-y-5">

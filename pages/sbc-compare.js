@@ -12,19 +12,19 @@ import { MAX_SBC_COMPARE } from '@/lib/sbcConfig'
 // Helper function to parse markdown links and convert to React elements
 const parseMarkdownLinks = (text) => {
   if (typeof text !== 'string') return text
-  
+
   // Pattern to match markdown links: [text](url)
   const linkPattern = /\[([^\]]+)\]\(([^)]+)\)/g
   const parts = []
   let lastIndex = 0
   let match
-  
+
   while ((match = linkPattern.exec(text)) !== null) {
     // Add text before the link
     if (match.index > lastIndex) {
       parts.push(text.substring(lastIndex, match.index))
     }
-    
+
     // Add the link
     const linkText = match[1]
     const linkUrl = match[2]
@@ -38,65 +38,82 @@ const parseMarkdownLinks = (text) => {
       >
         {linkText}
         <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+          />
         </svg>
       </a>
     )
-    
+
     lastIndex = linkPattern.lastIndex
   }
-  
+
   // Add remaining text after the last link
   if (lastIndex < text.length) {
     parts.push(text.substring(lastIndex))
   }
-  
+
   return parts.length > 0 ? parts : text
 }
 
 // Helper function to render value (handles URLs)
 const renderValue = (value, label = null) => {
   if (!value) return <span className="text-gray-400">-</span>
-  
+
   // Check if value is an object with a url property
   if (typeof value === 'object' && value !== null && value.url) {
     return (
       <span className="inline-flex items-center gap-2">
-        <span className="text-gray-600 dark:text-gray-300 whitespace-pre-line">{label || 'Link'}</span>
-        <a 
-          href={value.url} 
-          target="_blank" 
+        <span className="text-gray-600 dark:text-gray-300 whitespace-pre-line">
+          {label || 'Link'}
+        </span>
+        <a
+          href={value.url}
+          target="_blank"
           rel="noopener noreferrer"
           className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
           title={value.url}
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+            />
           </svg>
         </a>
       </span>
     )
   }
-  
+
   const stringValue = String(value).trim()
   // Check if value is a direct URL
   const urlPattern = /^https?:\/\/.+/i
   if (urlPattern.test(stringValue)) {
     return (
-      <a 
-        href={stringValue} 
-        target="_blank" 
+      <a
+        href={stringValue}
+        target="_blank"
         rel="noopener noreferrer"
         className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 hover:underline inline-flex items-center gap-1"
       >
         link
         <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+          />
         </svg>
       </a>
     )
   }
-  
+
   // Parse markdown links in the text
   return <span className="whitespace-pre-line">{parseMarkdownLinks(stringValue)}</span>
 }
@@ -104,10 +121,12 @@ const renderValue = (value, label = null) => {
 export async function getStaticProps() {
   // Get all blog posts
   const allBlogPosts = await getAllFilesFrontMatter('blog')
-  
+
   // Filter only posts with includeAsSBC object present
-  const posts = allBlogPosts.filter(post => post.includeAsSBC && typeof post.includeAsSBC === 'object')
-  
+  const posts = allBlogPosts.filter(
+    (post) => post.includeAsSBC && typeof post.includeAsSBC === 'object'
+  )
+
   return { props: { posts } }
 }
 
@@ -119,9 +138,9 @@ export default function SBCCompare({ posts }) {
   // Helper to convert title to URL-friendly format (spaces to hyphens)
   const titleToUrlFormat = (title) => {
     return title
-      .replace(/\s+/g, '-')  // Replace spaces with hyphens
+      .replace(/\s+/g, '-') // Replace spaces with hyphens
       .replace(/[^a-zA-Z0-9\-]/g, '') // Remove special characters except hyphens
-      .replace(/-+/g, '-')  // Replace multiple hyphens with single hyphen
+      .replace(/-+/g, '-') // Replace multiple hyphens with single hyphen
       .replace(/^-+|-+$/g, '') // Remove leading/trailing hyphens
   }
 
@@ -136,27 +155,37 @@ export default function SBCCompare({ posts }) {
   // Pre-select SBCs from query parameters on mount and when query changes (using titles with hyphens)
   useEffect(() => {
     if (router.isReady) {
-      const preSelectedTitles = Array.from({ length: MAX_SBC_COMPARE }, (_, i) => router.query[`sbc${i + 1}`]).filter(Boolean)
-      
+      const preSelectedTitles = Array.from(
+        { length: MAX_SBC_COMPARE },
+        (_, i) => router.query[`sbc${i + 1}`]
+      ).filter(Boolean)
+
       if (preSelectedTitles.length > 0) {
         // Find posts by matching title (SBC title or post title)
         // Handle both hyphen format and old %20 format for backward compatibility
-        const preSelected = preSelectedTitles.map(urlTitle => {
+        const preSelected = preSelectedTitles.map((urlTitle) => {
           // Convert URL format back to title
           const titleFromUrl = urlFormatToTitle(urlTitle)
-          
-          return posts.find(p => {
-            const sbcTitle = p.includeAsSBC?.title || ''
-            const postTitle = p.title || ''
-            // Try exact match first, then try with spaces normalized
-            return sbcTitle === titleFromUrl || 
-                   postTitle === titleFromUrl ||
-                   sbcTitle.replace(/\s+/g, ' ') === titleFromUrl.replace(/\s+/g, ' ') ||
-                   postTitle.replace(/\s+/g, ' ') === titleFromUrl.replace(/\s+/g, ' ')
-          }) || null
+
+          return (
+            posts.find((p) => {
+              const sbcTitle = p.includeAsSBC?.title || ''
+              const postTitle = p.title || ''
+              // Try exact match first, then try with spaces normalized
+              return (
+                sbcTitle === titleFromUrl ||
+                postTitle === titleFromUrl ||
+                sbcTitle.replace(/\s+/g, ' ') === titleFromUrl.replace(/\s+/g, ' ') ||
+                postTitle.replace(/\s+/g, ' ') === titleFromUrl.replace(/\s+/g, ' ')
+              )
+            }) || null
+          )
         })
         // Ensure we have at least 2 slots, pad with nulls if needed
-        const padded = preSelected.length >= 2 ? preSelected : [...preSelected, ...Array(2 - preSelected.length).fill(null)]
+        const padded =
+          preSelected.length >= 2
+            ? preSelected
+            : [...preSelected, ...Array(2 - preSelected.length).fill(null)]
         setSelectedSBCs((prev) => {
           // If user added more slots than URL has (e.g. clicked "Add SBC"), keep those extra slots
           if (prev.length > padded.length) {
@@ -171,21 +200,21 @@ export default function SBCCompare({ posts }) {
       }
     }
   }, [router.isReady, router.query, posts])
-  
+
   // Get all unique spec keys from only the SELECTED SBCs (parent keys and nested sub-keys as separate rows)
   const allSpecKeys = useMemo(() => {
     // Only process selected SBCs
-    const selectedPosts = selectedSBCs.filter(sbc => sbc !== null)
-    
+    const selectedPosts = selectedSBCs.filter((sbc) => sbc !== null)
+
     // Maps to store all keys and their relationships
     const parentKeyMap = new Map() // key -> { entry, hasSubKeys, firstSeenIndex }
     const subKeysMap = new Map() // parentKey -> array of { subKey, entry }
     const seenParentKeys = new Set()
     const seenSubKeys = new Set() // tracks "parentKey.subKey" combinations
     const keyOrder = [] // Track the order parent keys first appear
-    
+
     // First pass: collect all keys from all selected SBCs
-    selectedPosts.forEach(post => {
+    selectedPosts.forEach((post) => {
       if (post.includeAsSBC?.specifications) {
         Object.entries(post.includeAsSBC.specifications).forEach(([key, value]) => {
           // Track parent key order (only on first appearance)
@@ -193,28 +222,28 @@ export default function SBCCompare({ posts }) {
             seenParentKeys.add(key)
             keyOrder.push(key)
           }
-          
+
           // If the value is an object (nested), check if it contains sub-keys that should be displayed separately
           if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
             // Check if all sub-values are link objects (with url property)
-            const hasOnlyLinkObjects = Object.values(value).every(subValue => 
-              typeof subValue === 'object' && subValue !== null && subValue.url
+            const hasOnlyLinkObjects = Object.values(value).every(
+              (subValue) => typeof subValue === 'object' && subValue !== null && subValue.url
             )
-            
+
             if (hasOnlyLinkObjects) {
               // If all are link objects, treat as a single composite key (e.g., Operating System with multiple OS links)
               if (!parentKeyMap.has(key)) {
-                parentKeyMap.set(key, { 
-                  entry: { key, isParent: true, subKeys: null }, 
-                  hasSubKeys: false 
+                parentKeyMap.set(key, {
+                  entry: { key, isParent: true, subKeys: null },
+                  hasSubKeys: false,
                 })
               }
             } else {
               // This parent key has sub-keys that should be displayed separately
               if (!parentKeyMap.has(key)) {
-                parentKeyMap.set(key, { 
-                  entry: { key, isParent: true, hasSubKeys: true }, 
-                  hasSubKeys: true 
+                parentKeyMap.set(key, {
+                  entry: { key, isParent: true, hasSubKeys: true },
+                  hasSubKeys: true,
                 })
               } else {
                 // Update existing entry to mark it has sub-keys
@@ -224,19 +253,19 @@ export default function SBCCompare({ posts }) {
                   existing.hasSubKeys = true
                 }
               }
-              
+
               // Collect all sub-keys for this parent
               if (!subKeysMap.has(key)) {
                 subKeysMap.set(key, [])
               }
-              
-              Object.keys(value).forEach(subKey => {
+
+              Object.keys(value).forEach((subKey) => {
                 const subKeyId = `${key}.${subKey}`
                 if (!seenSubKeys.has(subKeyId)) {
                   seenSubKeys.add(subKeyId)
                   subKeysMap.get(key).push({
                     subKey,
-                    entry: { key, subKey, isParent: false, parentKey: key }
+                    entry: { key, subKey, isParent: false, parentKey: key },
                   })
                 }
               })
@@ -244,25 +273,25 @@ export default function SBCCompare({ posts }) {
           } else {
             // Simple value (not an object)
             if (!parentKeyMap.has(key)) {
-              parentKeyMap.set(key, { 
-                entry: { key, isParent: true, subKeys: null }, 
-                hasSubKeys: false 
+              parentKeyMap.set(key, {
+                entry: { key, isParent: true, subKeys: null },
+                hasSubKeys: false,
               })
             }
           }
         })
       }
     })
-    
+
     // Build final array: parent keys followed immediately by their sub-keys, in order of first appearance
     const sortedKeys = []
-    
-    keyOrder.forEach(key => {
+
+    keyOrder.forEach((key) => {
       const parentData = parentKeyMap.get(key)
       if (parentData) {
         // Add parent key
         sortedKeys.push(parentData.entry)
-        
+
         // Immediately add all its sub-keys (if any)
         if (parentData.hasSubKeys && subKeysMap.has(key)) {
           const subKeys = subKeysMap.get(key)
@@ -272,7 +301,7 @@ export default function SBCCompare({ posts }) {
         }
       }
     })
-    
+
     return sortedKeys
   }, [selectedSBCs])
 
@@ -288,7 +317,7 @@ export default function SBCCompare({ posts }) {
         }
       }
     })
-    
+
     // Use shallow routing to update URL without page reload
     router.push(
       {
@@ -302,7 +331,7 @@ export default function SBCCompare({ posts }) {
 
   const handleSBCSelect = (index, slug) => {
     const newSelected = [...selectedSBCs]
-    newSelected[index] = slug ? posts.find(p => p.slug === slug) : null
+    newSelected[index] = slug ? posts.find((p) => p.slug === slug) : null
     setSelectedSBCs(newSelected)
     updateURL(newSelected)
   }
@@ -336,12 +365,12 @@ export default function SBCCompare({ posts }) {
         }
       }
     })
-    
+
     const url = new URL(`${siteMetadata.siteUrl}/sbc-compare`)
     Object.entries(query).forEach(([key, value]) => {
       url.searchParams.set(key, value)
     })
-    
+
     try {
       await navigator.clipboard.writeText(url.toString())
       setCopySuccess(true)
@@ -358,7 +387,7 @@ export default function SBCCompare({ posts }) {
         description="Compare specifications of different Single Board Computers (SBCs) side by side. Compare Raspberry Pi, Radxa, Orange Pi, and other SBCs."
         url={`${siteMetadata.siteUrl}/sbc-compare`}
       />
-      
+
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
@@ -373,7 +402,7 @@ export default function SBCCompare({ posts }) {
           {/* SBC Selectors */}
           <div className="mb-8 space-y-4">
             {/* Copy Link Button */}
-            {selectedSBCs.some(sbc => sbc !== null) && (
+            {selectedSBCs.some((sbc) => sbc !== null) && (
               <div className="flex justify-end mb-4">
                 <button
                   onClick={copyComparisonLink}
@@ -381,15 +410,35 @@ export default function SBCCompare({ posts }) {
                 >
                   {copySuccess ? (
                     <>
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
                       </svg>
                       Link Copied!
                     </>
                   ) : (
                     <>
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                        />
                       </svg>
                       Copy Comparison Link
                     </>
@@ -411,10 +460,12 @@ export default function SBCCompare({ posts }) {
                     >
                       <option value="">-- Select SBC --</option>
                       {posts.map((post) => (
-                        <option 
-                          key={post.slug} 
+                        <option
+                          key={post.slug}
                           value={post.slug}
-                          disabled={selectedSBCs.some((s, i) => i !== index && s?.slug === post.slug)}
+                          disabled={selectedSBCs.some(
+                            (s, i) => i !== index && s?.slug === post.slug
+                          )}
                         >
                           {post.includeAsSBC?.title || post.title}
                         </option>
@@ -426,8 +477,18 @@ export default function SBCCompare({ posts }) {
                         className="px-3 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-colors"
                         title="Remove"
                       >
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        <svg
+                          className="w-5 h-5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M6 18L18 6M6 6l12 12"
+                          />
                         </svg>
                       </button>
                     )}
@@ -440,7 +501,12 @@ export default function SBCCompare({ posts }) {
                   className="px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors flex items-center gap-2"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 4v16m8-8H4"
+                    />
                   </svg>
                   Add SBC
                 </button>
@@ -453,7 +519,7 @@ export default function SBCCompare({ posts }) {
               viewport and scroll horizontally; the `sticky left-0` first column then
               acts as a frozen label column. On md+ the wrapper is `overflow-visible`
               so the `sticky top-0` thead can stick to the page (not the wrapper). */}
-          {selectedSBCs.some(sbc => sbc !== null) && (
+          {selectedSBCs.some((sbc) => sbc !== null) && (
             <div className="overflow-x-auto md:overflow-visible -mx-4 sm:mx-0">
               {/* `border-separate border-spacing-0` is required for `position: sticky` on
                   table cells to render correctly. Tailwind's default `border-collapse: collapse`
@@ -475,7 +541,10 @@ export default function SBCCompare({ posts }) {
                       Specification
                     </th>
                     {selectedSBCs.map((sbc, index) => (
-                      <th key={index} className="sticky top-0 z-20 px-3 sm:px-6 py-3 sm:py-4 text-center text-sm font-semibold text-gray-900 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 border-b-2 border-gray-200 dark:border-gray-700 align-top">
+                      <th
+                        key={index}
+                        className="sticky top-0 z-20 px-3 sm:px-6 py-3 sm:py-4 text-center text-sm font-semibold text-gray-900 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 border-b-2 border-gray-200 dark:border-gray-700 align-top"
+                      >
                         {sbc ? (
                           <div className="space-y-3">
                             {sbc.imageUrl && (
@@ -561,8 +630,13 @@ export default function SBCCompare({ posts }) {
                     const isSubKeyRow = !isParent && subKey
 
                     return (
-                      <tr key={isSubKeyRow ? `${parentKey}.${subKey}` : key} className="hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                        <td className={`sticky left-0 z-20 px-3 sm:px-6 ${isSubKeyRow ? 'py-2' : 'py-3 sm:py-4'} text-sm font-medium text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700 shadow-sticky-col`}>
+                      <tr
+                        key={isSubKeyRow ? `${parentKey}.${subKey}` : key}
+                        className="hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+                      >
+                        <td
+                          className={`sticky left-0 z-20 px-3 sm:px-6 ${isSubKeyRow ? 'py-2' : 'py-3 sm:py-4'} text-sm font-medium text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700 shadow-sticky-col`}
+                        >
                           {isSubKeyRow ? (
                             <div className="pl-3 sm:pl-4 text-gray-600 dark:text-gray-400 break-words">
                               {subKey}
@@ -586,14 +660,24 @@ export default function SBCCompare({ posts }) {
                             if (hasSubKeys) {
                               // If the value exists and is an object (not a string), show empty cell
                               // because the sub-keys will be displayed in separate rows below
-                              if (value !== null && value !== undefined && typeof value === 'object' && !Array.isArray(value)) {
+                              if (
+                                value !== null &&
+                                value !== undefined &&
+                                typeof value === 'object' &&
+                                !Array.isArray(value)
+                              ) {
                                 shouldShowEmpty = true
                                 value = null
                               }
-                            } else if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
+                            } else if (
+                              typeof value === 'object' &&
+                              value !== null &&
+                              !Array.isArray(value)
+                            ) {
                               // Check if all sub-values are link objects (with url property)
-                              const hasOnlyLinkObjects = Object.values(value).every(subValue =>
-                                typeof subValue === 'object' && subValue !== null && subValue.url
+                              const hasOnlyLinkObjects = Object.values(value).every(
+                                (subValue) =>
+                                  typeof subValue === 'object' && subValue !== null && subValue.url
                               )
 
                               // If it has sub-keys that will be shown separately, don't show the parent value
@@ -605,17 +689,21 @@ export default function SBCCompare({ posts }) {
                           }
 
                           return (
-                            <td key={index} className={`px-3 sm:px-6 ${isSubKeyRow ? 'py-2' : 'py-3 sm:py-4'} text-sm text-gray-700 dark:text-gray-300 text-center break-words`}>
+                            <td
+                              key={index}
+                              className={`px-3 sm:px-6 ${isSubKeyRow ? 'py-2' : 'py-3 sm:py-4'} text-sm text-gray-700 dark:text-gray-300 text-center break-words`}
+                            >
                               {shouldShowEmpty ? (
                                 // Empty cell for parent keys that have sub-keys
                                 <span></span>
-                              ) : value && typeof value === 'object' && !value.url && !isSubKeyRow ? (
+                              ) : value &&
+                                typeof value === 'object' &&
+                                !value.url &&
+                                !isSubKeyRow ? (
                                 // Display as composite (all links or strings) for parent row
                                 <div className="flex flex-col gap-1 items-center">
                                   {Object.entries(value).map(([itemKey, itemValue]) => (
-                                    <div key={itemKey}>
-                                      {renderValue(itemValue, itemKey)}
-                                    </div>
+                                    <div key={itemKey}>{renderValue(itemValue, itemKey)}</div>
                                   ))}
                                 </div>
                               ) : (
@@ -628,7 +716,6 @@ export default function SBCCompare({ posts }) {
                       </tr>
                     )
                   })}
-
 
                   {/* Full Review Row */}
                   <tr className="bg-gray-50 dark:bg-gray-800">
@@ -643,8 +730,18 @@ export default function SBCCompare({ posts }) {
                             className="inline-flex items-center px-3 sm:px-4 py-2 text-sm font-medium bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-all duration-200"
                           >
                             Read Full Review
-                            <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            <svg
+                              className="w-4 h-4 ml-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"
+                              />
                             </svg>
                           </Link>
                         ) : (
@@ -659,12 +756,24 @@ export default function SBCCompare({ posts }) {
           )}
 
           {/* Empty State */}
-          {!selectedSBCs.some(sbc => sbc !== null) && (
+          {!selectedSBCs.some((sbc) => sbc !== null) && (
             <div className="text-center py-16 bg-gray-50 dark:bg-gray-800 rounded-lg">
-              <svg className="mx-auto h-12 w-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+              <svg
+                className="mx-auto h-12 w-12 text-gray-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                />
               </svg>
-              <h3 className="mt-2 text-sm font-medium text-gray-900 dark:text-gray-100">No SBCs selected</h3>
+              <h3 className="mt-2 text-sm font-medium text-gray-900 dark:text-gray-100">
+                No SBCs selected
+              </h3>
               <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
                 Select SBCs from the dropdowns above to compare their specifications
               </p>
@@ -678,7 +787,12 @@ export default function SBCCompare({ posts }) {
               className="inline-flex items-center text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium"
             >
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 19l-7-7m0 0l7-7m-7 7h18"
+                />
               </svg>
               Back to SBC List
             </Link>

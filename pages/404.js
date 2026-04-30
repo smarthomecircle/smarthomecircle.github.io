@@ -12,7 +12,9 @@ export default function FourZeroFour() {
         <p className="mb-4 text-xl font-bold leading-normal md:text-2xl">
           Sorry we couldn&apos;t find this page.
         </p>
-        <p className="mb-8">But don&apos;t worry, you can find plenty of other things on our homepage.</p>
+        <p className="mb-8">
+          But don&apos;t worry, you can find plenty of other things on our homepage.
+        </p>
         <Link href="/">
           <button className="inline px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:hover:bg-blue-500 dark:focus:ring-offset-gray-900">
             Back to homepage

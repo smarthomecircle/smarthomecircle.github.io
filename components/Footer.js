@@ -47,7 +47,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" className="inline-block font-semibold text-lg text-gray-900 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+            <Link
+              href="/"
+              className="inline-block font-semibold text-lg text-gray-900 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+            >
               {siteMetadata.title}
             </Link>
             <p className="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-xs">
@@ -68,7 +71,9 @@ export default function Footer() {
               ))}
             </div>
             {socialEntries.length === 0 && (
-              <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">No social links configured.</p>
+              <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+                No social links configured.
+              </p>
             )}
           </div>
 
@@ -105,7 +110,9 @@ export default function Footer() {
                         <span className="text-[#FF424D] dark:text-[#FF424D] shrink-0">
                           <PatreonLogo className="h-10 w-10" />
                         </span>
-                        <span className="font-semibold text-gray-800 dark:text-gray-200">Patreon</span>
+                        <span className="font-semibold text-gray-800 dark:text-gray-200">
+                          Patreon
+                        </span>
                       </>
                     )}
                     {!icon && label}

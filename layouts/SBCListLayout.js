@@ -55,9 +55,7 @@ export default function SBCListLayout({
           <div>
             {!filteredBlogPosts.length && (
               <div className="text-center py-12">
-                <div className="text-gray-500 dark:text-gray-400 text-lg">
-                  No SBCs found.
-                </div>
+                <div className="text-gray-500 dark:text-gray-400 text-lg">No SBCs found.</div>
                 <p className="text-gray-400 dark:text-gray-500 text-sm mt-2">
                   Try adjusting your search terms or browse all single board computers.
                 </p>

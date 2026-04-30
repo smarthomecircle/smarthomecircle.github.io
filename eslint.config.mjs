@@ -36,6 +36,9 @@ export default [
       'react-hooks/refs': 'warn',
       'react-hooks/immutability': 'warn',
       'react-hooks/config': 'warn',
+      // Ported from the old `.eslintrc.json`: some components use the
+      // `jsx` / `global` attributes on <style> for styled-jsx.
+      'react/no-unknown-property': ['error', { ignore: ['jsx', 'global'] }],
     },
   },
 ]

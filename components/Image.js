@@ -5,7 +5,7 @@ import NextImage from 'next/image'
 // warning for. This is upstream bug vercel/next.js#65161, fixed in Next 14+.
 // The dev-only console filter in pages/_app.js silences that specific warning so it
 // doesn't drown out real ones. Remove the filter once we upgrade Next.
-// eslint-disable-next-line jsx-a11y/alt-text
+
 const Image = (props) => <NextImage unoptimized={true} {...props} />
 
 export default Image

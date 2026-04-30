@@ -75,7 +75,9 @@ export default function Benchmarks({ data = {} }) {
           let fallbackBullets = null
           if (!bullets && testData && typeof testData === 'object' && !Array.isArray(testData)) {
             fallbackBullets = Object.entries(testData)
-              .filter(([k]) => !['bullets', 'url', 'raw', 'linkText', 'links', 'screenshots'].includes(k))
+              .filter(
+                ([k]) => !['bullets', 'url', 'raw', 'linkText', 'links', 'screenshots'].includes(k)
+              )
               .map(([k, v]) => ({ [k]: Array.isArray(v) ? v.join(', ') : String(v) }))
           }
 
