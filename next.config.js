@@ -52,17 +52,25 @@ const securityHeaders = [
   },
 ]
 
+// Next 14+ replaced the `next export` command with `output: 'export'`.
+// We only turn it on for production builds — `next dev` needs the server
+// features (API routes, headers, etc.) that a static export disables.
+const isProductionBuild = process.env.NODE_ENV === 'production'
+
 module.exports = withBundleAnalyzer({
-  // basePath: '', //Change this later
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
+  ...(isProductionBuild ? { output: 'export' } : {}),
   images: {
     loader: 'akamai',
-    path: '', // Change this later
+    path: '',
+    unoptimized: true,
   },
-  assetPrefix: '/', // change this later
-  eslint: {
-    dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
+  assetPrefix: '/',
+  // Silence the multi-lockfile detection warning by explicitly pinning the
+  // workspace root to this project (Turbopack walks upwards otherwise).
+  turbopack: {
+    root: __dirname,
   },
   async headers() {
     return [
@@ -74,27 +82,16 @@ module.exports = withBundleAnalyzer({
   },
   webpack: (config, { dev, isServer }) => {
     config.module.rules.push({
-      test: /\.(png|jpe?g|gif|mp4)$/i,
-      use: [
-        {
-          loader: 'file-loader',
-          options: {
-            publicPath: '/_next',
-            name: 'static/media/[name].[hash].[ext]',
-          },
-        },
-      ],
-    })
-
-    config.module.rules.push({
       test: /\.svg$/,
       use: ['@svgr/webpack'],
     })
 
     if (!dev && !isServer) {
-      // Replace React with Preact only in client production build
+      // Replace React with Preact only in client production build.
+      // Preact 10.22+ claims React 19 compatibility.
       Object.assign(config.resolve.alias, {
         'react/jsx-runtime.js': 'preact/compat/jsx-runtime',
+        'react/jsx-runtime': 'preact/compat/jsx-runtime',
         react: 'preact/compat',
         'react-dom/test-utils': 'preact/test-utils',
         'react-dom': 'preact/compat',

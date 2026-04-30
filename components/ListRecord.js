@@ -5,14 +5,18 @@ import Image from '@/components/Image'
 
 export default function ListRecord({ frontMatter, authorDetails }) {
   const { slug, date, title, summary, tags, imageUrl, readingTime } = frontMatter
-  
+
   return (
     <article className="group relative bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600 cursor-pointer">
       {/* Clickable overlay for entire card */}
-      <Link href={`/${slug}`} className="absolute inset-0 z-30" aria-label={`Read article: ${title}`}>
+      <Link
+        href={`/${slug}`}
+        className="absolute inset-0 z-30"
+        aria-label={`Read article: ${title}`}
+      >
         <span className="sr-only">Read more about {title}</span>
       </Link>
-      
+
       {/* Image Container with Hover Effects */}
       <div className="relative h-48 overflow-hidden bg-gray-100 dark:bg-gray-800">
         <div className="block relative h-full">
@@ -45,8 +49,8 @@ export default function ListRecord({ frontMatter, authorDetails }) {
         {tags && tags.length > 0 && (
           <div className="flex flex-wrap gap-2 relative z-10">
             {tags.slice(0, 4).map((tag) => (
-              <span 
-                key={tag} 
+              <span
+                key={tag}
                 className="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
               >
                 {tag}
@@ -73,9 +77,7 @@ export default function ListRecord({ frontMatter, authorDetails }) {
                 {authorDetails && authorDetails[0]?.name}
               </p>
               <div className="flex items-center space-x-2 text-gray-500 dark:text-gray-400">
-                <time dateTime={date}>
-                  {formatDate(date)}
-                </time>
+                <time dateTime={date}>{formatDate(date)}</time>
                 {readingTime?.text && (
                   <>
                     <span>•</span>
@@ -89,13 +91,18 @@ export default function ListRecord({ frontMatter, authorDetails }) {
           {/* Visual indicator for clickable card */}
           <div className="flex items-center text-primary-600 dark:text-primary-400 text-sm font-medium relative z-10 pointer-events-none">
             <span>Read more</span>
-            <svg 
-              className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-300" 
-              fill="none" 
-              stroke="currentColor" 
+            <svg
+              className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-300"
+              fill="none"
+              stroke="currentColor"
               viewBox="0 0 24 24"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
             </svg>
           </div>
         </div>

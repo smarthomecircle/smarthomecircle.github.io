@@ -41,16 +41,24 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
         <header className="relative">
           {/* Background gradient */}
           <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-primary-50 dark:from-gray-900 dark:via-gray-900 dark:to-primary-900/20 -z-10"></div>
-          
+
           <div className="relative pt-12 pb-16">
             {/* Breadcrumb / Category */}
             <div className="flex items-center justify-center mb-6">
-                          <Link href="/" className="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 transition-colors">
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-              Blog Article
-            </Link>
+              <Link
+                href="/"
+                className="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 transition-colors"
+              >
+                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
+                Blog Article
+              </Link>
             </div>
 
             {/* Title Section */}
@@ -58,12 +66,22 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-100 leading-tight">
                 {title}
               </h1>
-              
+
               {/* Meta Info */}
               <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-600 dark:text-gray-300">
                 <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  <svg
+                    className="w-4 h-4 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
                   </svg>
                   <time dateTime={date}>
                     {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
@@ -71,8 +89,18 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 </div>
                 {readingTime && (
                   <div className="flex items-center">
-                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <svg
+                      className="w-4 h-4 mr-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
                     </svg>
                     {readingTime.text}
                   </div>
@@ -95,8 +123,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 </div>
                 {photoCredits && (
                   <div className="mt-3 text-center">
-                    <Link 
-                      href={photoCredits} 
+                    <Link
+                      href={photoCredits}
                       className="text-sm text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors"
                     >
                       Photo Credits
@@ -148,15 +176,18 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 </div>
               </div>
 
-
-
               {/* Featured Video Section */}
               {(youtubeLink || youtubeLink2) && (
                 <div className="mb-12 space-y-8">
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Featured Video</h3>
-                  
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
+                    Featured Video
+                  </h3>
+
                   {youtubeLink && (
-                    <div className="relative w-full rounded-2xl overflow-hidden shadow-lg" style={{ paddingBottom: '56.25%' }}>
+                    <div
+                      className="relative w-full rounded-2xl overflow-hidden shadow-lg"
+                      style={{ paddingBottom: '56.25%' }}
+                    >
                       <iframe
                         id={`youtubeLink1${date}`}
                         className="absolute top-0 left-0 w-full h-full"
@@ -170,7 +201,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   )}
 
                   {youtubeLink2 && (
-                    <div className="relative w-full rounded-2xl overflow-hidden shadow-lg" style={{ paddingBottom: '56.25%' }}>
+                    <div
+                      className="relative w-full rounded-2xl overflow-hidden shadow-lg"
+                      style={{ paddingBottom: '56.25%' }}
+                    >
                       <iframe
                         id={`youtubeLink2${date}`}
                         className="absolute top-0 left-0 w-full h-full"
@@ -187,23 +221,21 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
 
               {/* Article Content */}
               <div className="prose prose-lg dark:prose-dark max-w-none prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-gray-100 prose-p:text-gray-700 dark:prose-p:text-gray-200 prose-strong:text-gray-900 dark:prose-strong:text-gray-100 prose-code:text-primary-600 dark:prose-code:text-primary-400 prose-pre:bg-gray-900 dark:prose-pre:bg-gray-800 prose-blockquote:border-primary-500 prose-blockquote:text-gray-700 dark:prose-blockquote:text-gray-300 prose-a:font-medium">
-
                 {/* Main Article Content - Auto-ads injected via MDX components */}
                 {children}
-
-
 
                 {/* Suggested Articles - Seamless Integration (Desktop Only) */}
                 {suggestedArticles && suggestedArticles.length > 0 && (
                   <div className="mt-12 hidden lg:block prose-a:!border-b-0">
-                    
                     {/* Subtle divider */}
                     <div className="flex items-center my-8">
                       <div className="flex-1 border-t border-gray-300 dark:border-gray-600"></div>
                     </div>
-                    
-                    <p className="text-gray-700 dark:text-gray-300 font-medium mb-4">You might also enjoy these related guides and reviews:</p>
-                    
+
+                    <p className="text-gray-700 dark:text-gray-300 font-medium mb-4">
+                      You might also enjoy these related guides and reviews:
+                    </p>
+
                     <div className="space-y-3">
                       {suggestedArticles.map((article, index) => (
                         <a
@@ -212,8 +244,18 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                           className="group flex items-center space-x-3 py-1 px-0 transition-all duration-200"
                         >
                           <div className="flex-shrink-0">
-                            <svg className="w-4 h-4 text-primary-600 dark:text-primary-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            <svg
+                              className="w-4 h-4 text-primary-600 dark:text-primary-400 transition-colors"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                              />
                             </svg>
                           </div>
                           <div className="flex-1 min-w-0">
@@ -226,8 +268,6 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                     </div>
                   </div>
                 )}
-
-
 
                 {/* Share Buttons */}
                 <div className="not-prose mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
@@ -258,10 +298,6 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   </div>
                 )}
 
-
-
-
-
                 {/* Suggested Articles */}
                 {suggestedArticles && suggestedArticles.length > 0 && (
                   <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
@@ -271,21 +307,38 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                     <div className="space-y-6">
                       {suggestedArticles.map((article, index) => (
                         <div key={index}>
-                          <a
-                            href={article.url}
-                            className="block group"
-                          >
+                          <a href={article.url} className="block group">
                             <div className="flex items-start space-x-3">
-                              <svg className="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                              <svg
+                                className="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                                />
                               </svg>
                               <div className="flex-1 min-w-0">
                                 <div className="text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 font-medium group-hover:underline transition-colors">
                                   {article.title}
                                 </div>
                               </div>
-                              <svg className="w-4 h-4 text-gray-400 group-hover:text-primary-500 transform group-hover:translate-x-1 transition-all duration-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                              <svg
+                                className="w-4 h-4 text-gray-400 group-hover:text-primary-500 transform group-hover:translate-x-1 transition-all duration-200 flex-shrink-0"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                />
                               </svg>
                             </div>
                           </a>
@@ -301,8 +354,18 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                     href="/"
                     className="flex items-center text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 font-semibold transition-colors group"
                   >
-                    <svg className="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                    <svg
+                      className="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M15 19l-7-7 7-7"
+                      />
                     </svg>
                     Back to Articles
                   </Link>

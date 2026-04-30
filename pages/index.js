@@ -29,7 +29,7 @@ export default function Blog({ posts, initialDisplayPosts, pagination, authorDet
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      
+
       {/* Hero Section */}
       <div className="relative py-16 md:py-24 bg-gradient-to-br from-gray-50 via-white to-primary-50 dark:from-gray-900 dark:via-gray-900 dark:to-primary-900/20">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,7 +46,7 @@ export default function Blog({ posts, initialDisplayPosts, pagination, authorDet
             </div>
           </div>
         </div>
-        
+
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary-500/5 rounded-full blur-3xl"></div>

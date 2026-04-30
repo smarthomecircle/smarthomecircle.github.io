@@ -1,9 +1,12 @@
 const fs = require('fs')
-const globby = require('globby')
-const prettier = require('prettier')
 const siteMetadata = require('../data/siteMetadata')
 
 ;(async () => {
+  // globby is ESM-only since v12; load it dynamically from CJS.
+  const { globby } = await import('globby')
+  // prettier v3 also ships as an ES module, so load it dynamically as well.
+  const prettier = (await import('prettier')).default
+
   const prettierConfig = await prettier.resolveConfig('./.prettierrc.js')
   const pages = await globby([
     'pages/*.js',
@@ -50,11 +53,11 @@ const siteMetadata = require('../data/siteMetadata')
         </urlset>
     `
 
-  const formatted = prettier.format(sitemap, {
+  // prettier v3 returns a Promise from `format()`.
+  const formatted = await prettier.format(sitemap, {
     ...prettierConfig,
     parser: 'html',
   })
 
-  // eslint-disable-next-line no-sync
   fs.writeFileSync('public/sitemap.xml', formatted)
 })()

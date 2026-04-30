@@ -11,10 +11,10 @@ import { getBlogListSlot, getLayoutKey } from '@/components/MDXComponents'
 // Wrapper component that only shows container when ad is present
 function ConditionalAdContainer({ id, slot }) {
   const [hasAd, setHasAd] = useState(false)
-  
+
   // Check if the ad slot is valid (not the placeholder)
   const isValidSlot = slot && !slot.includes('567890')
-  
+
   useEffect(() => {
     // Set a timeout to check if ad loaded
     const timer = setTimeout(() => {
@@ -22,18 +22,18 @@ function ConditionalAdContainer({ id, slot }) {
         setHasAd(true)
       }
     }, 1000)
-    
+
     return () => clearTimeout(timer)
   }, [isValidSlot])
-  
+
   // Don't render container if no valid ad
   if (!isValidSlot) {
     return null
   }
-  
+
   return (
     <div className="md:col-span-2 xl:col-span-3 my-8">
-        <AdsSection id={id} slot={slot} layoutKey={getLayoutKey(slot)} />
+      <AdsSection id={id} slot={slot} layoutKey={getLayoutKey(slot)} />
     </div>
   )
 }
@@ -90,28 +90,23 @@ export default function ListLayout({
           <div>
             {!filteredBlogPosts.length && (
               <div className="text-center py-12">
-                <div className="text-gray-500 dark:text-gray-400 text-lg">
-                  No posts found.
-                </div>
+                <div className="text-gray-500 dark:text-gray-400 text-lg">No posts found.</div>
                 <p className="text-gray-400 dark:text-gray-500 text-sm mt-2">
                   Try adjusting your search terms or browse all articles.
                 </p>
               </div>
             )}
-            
+
             {displayPosts.length > 0 && (
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                 {displayPosts.map((frontMatter, index) => (
                   <React.Fragment key={frontMatter.slug || index}>
-                    <ListRecord
-                      frontMatter={frontMatter}
-                      authorDetails={authorDetails}
-                    />
+                    <ListRecord frontMatter={frontMatter} authorDetails={authorDetails} />
                     {/* Insert ad after every 3rd post */}
                     {(index + 1) % 3 === 0 && index < displayPosts.length - 1 && (
-                      <ConditionalAdContainer 
-                        id={`blog-list-ad-${index}`} 
-                        slot={getBlogListSlot(index)} 
+                      <ConditionalAdContainer
+                        id={`blog-list-ad-${index}`}
+                        slot={getBlogListSlot(index)}
                       />
                     )}
                   </React.Fragment>
@@ -122,9 +117,9 @@ export default function ListLayout({
             {/* Pagination */}
             {pagination && pagination.totalPages > 1 && !searchValue && (
               <div className="mt-16 flex justify-center">
-                <Pagination 
-                  currentPage={pagination.currentPage} 
-                  totalPages={pagination.totalPages} 
+                <Pagination
+                  currentPage={pagination.currentPage}
+                  totalPages={pagination.totalPages}
                 />
               </div>
             )}

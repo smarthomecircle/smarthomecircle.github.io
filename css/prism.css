@@ -1,3 +1,9 @@
+/* Tailwind v4 processes each CSS module independently; @reference makes
+   Tailwind's utility + theme definitions available to @apply here without
+   re-emitting them. Reference the project's entry stylesheet so that the
+   configured theme + plugins (via @config) are picked up too. */
+@reference "./tailwind.css";
+
 /**
  * CSS Styles for code highlighting.
  * Feel free to customize token styles 
@@ -63,19 +69,19 @@ pre[class*="language-"] {
 }
 
 .code-line {
-  @apply block pl-4 pr-4 -mx-4 border-l-4 border-opacity-0;
+  @apply block pl-4 pr-4 -mx-4 border-l-4 border-transparent;
 }
 
 .code-line.inserted {
-  @apply bg-green-500 bg-opacity-20;
+  @apply bg-green-500/20;
 }
 
 .code-line.deleted {
-  @apply bg-red-500 bg-opacity-20;
+  @apply bg-red-500/20;
 }
 
 .highlight-line {
-  @apply -mx-4 bg-gray-700 bg-opacity-50 border-l-4 border-primary-500;
+  @apply -mx-4 bg-gray-700/50 border-l-4 border-primary-500;
 }
 
 .line-number::before {

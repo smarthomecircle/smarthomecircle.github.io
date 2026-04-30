@@ -50,13 +50,13 @@ module.exports = {
             fontSize: '1.125rem', // 18px base for better readability
             lineHeight: '1.75', // Slightly increased for better breathing room
             color: theme('colors.gray.700'),
-            fontFamily: theme('fontFamily.sans').join(', '),
+            fontFamily: theme('fontFamily.sans'),
             maxWidth: '65ch', // Optimal reading width (65 characters)
             letterSpacing: '-0.011em', // Slightly tighter for modern feel
             
             // Improved heading styles
             'h1, h2, h3, h4, h5, h6': {
-              fontFamily: theme('fontFamily.sans').join(', '),
+              fontFamily: theme('fontFamily.sans'),
               fontWeight: '700',
               letterSpacing: '-0.025em',
             },
@@ -105,7 +105,7 @@ module.exports = {
             // Modern code styling
             code: {
               fontSize: '0.875rem',
-              fontFamily: theme('fontFamily.mono').join(', '),
+              fontFamily: theme('fontFamily.mono'),
               color: theme('colors.primary.700'),
               backgroundColor: theme('colors.primary.50'),
               padding: '0.25rem 0.375rem',
@@ -118,7 +118,7 @@ module.exports = {
             // Enhanced pre/code block styling  
             pre: {
               fontSize: '0.875rem',
-              fontFamily: theme('fontFamily.mono').join(', '),
+              fontFamily: theme('fontFamily.mono'),
               backgroundColor: theme('colors.gray.900'),
               color: theme('colors.gray.100'),
               borderRadius: '0.75rem',
@@ -184,13 +184,13 @@ module.exports = {
         dark: {
           css: {
             color: theme('colors.gray.200'), // Lighter for better contrast
-            fontFamily: theme('fontFamily.sans').join(', '),
+            fontFamily: theme('fontFamily.sans'),
             maxWidth: '65ch',
             letterSpacing: '-0.011em',
             
             'h1, h2, h3, h4, h5, h6': {
               color: theme('colors.gray.100'),
-              fontFamily: theme('fontFamily.sans').join(', '),
+              fontFamily: theme('fontFamily.sans'),
             },
             
             '.prose a': {
@@ -251,5 +251,5 @@ module.exports = {
       }),
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography'),require('@tailwindcss/aspect-ratio'),],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 }

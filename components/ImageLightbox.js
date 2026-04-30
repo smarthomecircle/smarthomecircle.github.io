@@ -5,7 +5,7 @@ export default function ImageLightbox() {
     // Create lightbox HTML structure
     const createLightbox = () => {
       if (document.querySelector('.image-lightbox')) return // Already exists
-      
+
       const lightbox = document.createElement('div')
       lightbox.className = 'image-lightbox'
       lightbox.innerHTML = `
@@ -19,7 +19,7 @@ export default function ImageLightbox() {
     const openLightbox = (imageSrc, imageAlt) => {
       const lightbox = document.querySelector('.image-lightbox')
       const lightboxImg = lightbox.querySelector('img')
-      
+
       lightboxImg.src = imageSrc
       lightboxImg.alt = imageAlt
       lightbox.classList.add('active')
@@ -36,20 +36,20 @@ export default function ImageLightbox() {
     // Initialize lightbox
     const initLightbox = () => {
       createLightbox()
-      
+
       // Handle single image containers for full width
       const imageFlexContainers = document.querySelectorAll('.prose .image-flex')
-      imageFlexContainers.forEach(container => {
+      imageFlexContainers.forEach((container) => {
         const images = container.querySelectorAll('img')
         if (images.length === 1) {
           container.classList.add('image-flex-single')
         }
       })
-      
+
       // Add click listeners to all images in .image-flex containers
       const imageFlexImages = document.querySelectorAll('.prose .image-flex img')
-      
-      imageFlexImages.forEach(img => {
+
+      imageFlexImages.forEach((img) => {
         img.addEventListener('click', (e) => {
           e.preventDefault()
           openLightbox(img.src, img.alt)

@@ -1,0 +1,25 @@
+diff --git a/node_modules/@mdx-js/esbuild/lib/index.js b/node_modules/@mdx-js/esbuild/lib/index.js
+index 69d8434..2617b5b 100644
+--- a/node_modules/@mdx-js/esbuild/lib/index.js
++++ b/node_modules/@mdx-js/esbuild/lib/index.js
+@@ -111,11 +111,16 @@ export function esbuild(options) {
+ 
+       try {
+         file = await process(file)
++        // Patched locally via patch-package: `@mdx-js/mdx@3.1.x` does not
++        // populate `file.map`, which made the original `Buffer.from(
++        // JSON.stringify(file.map))` throw and fail the whole build.
+         value =
+-          String(file.value) +
+-          '\n//# sourceMappingURL=data:application/json;base64,' +
+-          Buffer.from(JSON.stringify(file.map)).toString('base64') +
+-          '\n'
++          file.map
++            ? String(file.value) +
++              '\n//# sourceMappingURL=data:application/json;base64,' +
++              Buffer.from(JSON.stringify(file.map)).toString('base64') +
++              '\n'
++            : String(file.value)
+         messages = file.messages
+       } catch (error_) {
+         const cause = /** @type {VFileMessage | Error} */ (error_)

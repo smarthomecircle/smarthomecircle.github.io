@@ -2,7 +2,7 @@ export default function AffiliateLinksFromMetadata({ affiliateLinks }) {
   // Handle both old format (array) and new format (object with title and links)
   let title = null
   let links = []
-  
+
   if (Array.isArray(affiliateLinks)) {
     // Old format: array of links
     links = affiliateLinks
@@ -11,7 +11,7 @@ export default function AffiliateLinksFromMetadata({ affiliateLinks }) {
     title = affiliateLinks.title
     links = affiliateLinks.links || []
   }
-  
+
   if (!links || links.length === 0) {
     return null
   }
@@ -37,9 +37,7 @@ export default function AffiliateLinksFromMetadata({ affiliateLinks }) {
       `}</style>
       {title ? (
         <div className="flex flex-col sm:flex-row sm:items-center gap-3">
-          <p className="text-sm font-medium text-gray-900 dark:text-gray-100">
-            {title}:
-          </p>
+          <p className="text-sm font-medium text-gray-900 dark:text-gray-100">{title}:</p>
           <div className="flex flex-wrap gap-1.5">
             {links.map((link, index) => (
               <a
@@ -50,7 +48,12 @@ export default function AffiliateLinksFromMetadata({ affiliateLinks }) {
                 className="inline-flex items-center px-2 py-1 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
               >
                 <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
                 </svg>
                 {link.label}
               </a>
@@ -68,7 +71,12 @@ export default function AffiliateLinksFromMetadata({ affiliateLinks }) {
               className="inline-flex items-center px-2 py-1 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
             >
               <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
               </svg>
               {link.label}
             </a>
@@ -78,4 +86,3 @@ export default function AffiliateLinksFromMetadata({ affiliateLinks }) {
     </div>
   )
 }
-
