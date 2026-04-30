@@ -89,9 +89,10 @@ const MobileNav = () => {
                     {/* Mobile submenu with animation */}
                     <div className={`overflow-hidden transition-all duration-300 ${openMenus[link.title] ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
                       {link.children.map((child, index) => (
-                        <div 
-                          key={child.title} 
-                          className={`mt-3 ml-6 transform transition-all duration-300 delay-${index * 100} ${openMenus[link.title] ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'}`}
+                        <div
+                          key={child.title}
+                          style={{ transitionDelay: `${index * 100}ms` }}
+                          className={`mt-3 ml-6 transform transition-all duration-300 ${openMenus[link.title] ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'}`}
                         >
                           <Link
                             href={child.href}

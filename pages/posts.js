@@ -41,7 +41,7 @@ export default function posts({ posts }) {
               )}
               <div className="mt-3">
                 <Link href={`/${slug}`}>
-                  <div className="grid grid-cols-8 hover:bg-teal-500 hover:dark:bg-slate-500 rounded p-4">
+                  <div className="grid grid-cols-8 rounded p-4 hover:bg-primary-500 hover:text-white dark:hover:bg-primary-600">
                     <div className="col-span-2">
                       <time className="float-left" dateTime={date}>
                         {formatDate(date)}

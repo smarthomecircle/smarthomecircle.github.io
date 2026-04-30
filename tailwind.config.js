@@ -2,7 +2,13 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  content: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js', './lib/**/*.js'],
+  content: [
+    './pages/**/*.{js,jsx}',
+    './components/**/*.{js,jsx}',
+    './layouts/**/*.{js,jsx}',
+    './lib/**/*.{js,jsx}',
+    './data/**/*.{md,mdx}',
+  ],
   darkMode: 'class',
   theme: {
     extend: {
@@ -204,7 +210,7 @@ module.exports = {
             
             code: {
               color: theme('colors.primary.300'),
-              backgroundColor: theme('colors.primary.900/20'),
+              backgroundColor: 'rgb(19 78 74 / 0.2)',
             },
             
             pre: {
@@ -214,7 +220,7 @@ module.exports = {
             
             blockquote: {
               borderLeftColor: theme('colors.primary.500'),
-              backgroundColor: theme('colors.primary.900/10'),
+              backgroundColor: 'rgb(19 78 74 / 0.1)',
               color: theme('colors.gray.300'),
             },
             
