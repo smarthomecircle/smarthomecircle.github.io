@@ -49,6 +49,11 @@ module.exports = {
         warning: colors.amber,
         gray: colors.slate, // More modern gray palette
       },
+      boxShadow: {
+        // Right-edge shadow for sticky table columns so the boundary stays
+        // visible when other columns scroll underneath on mobile.
+        'sticky-col': '4px 0 6px -2px rgb(15 23 42 / 0.08)',
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {

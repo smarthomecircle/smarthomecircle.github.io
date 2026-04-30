@@ -448,23 +448,34 @@ export default function SBCCompare({ posts }) {
             </div>
           </div>
 
-          {/* Comparison Table - no overflow on wrapper so sticky header works with page scroll */}
+          {/* Comparison Table.
+              On mobile we wrap in `overflow-x-auto` so the table can be wider than the
+              viewport and scroll horizontally; the `sticky left-0` first column then
+              acts as a frozen label column. On md+ the wrapper is `overflow-visible`
+              so the `sticky top-0` thead can stick to the page (not the wrapper). */}
           {selectedSBCs.some(sbc => sbc !== null) && (
-            <div>
-              <table className="min-w-full w-full table-fixed divide-y divide-gray-200 dark:divide-gray-700 border border-gray-200 dark:border-gray-700 rounded-lg">
+            <div className="overflow-x-auto md:overflow-visible -mx-4 sm:mx-0">
+              {/* `border-separate border-spacing-0` is required for `position: sticky` on
+                  table cells to render correctly. Tailwind's default `border-collapse: collapse`
+                  has long-standing browser bugs where sticky cells lose borders or get
+                  visually overlapped by neighbouring scrolling columns. */}
+              <table
+                className="min-w-full w-full table-fixed border-separate border-spacing-0 border border-gray-200 dark:border-gray-700 rounded-lg"
+                style={{ minWidth: `${140 + 220 * selectedSBCs.length}px` }}
+              >
                 <colgroup>
-                  <col style={{ width: '18%' }} />
+                  <col style={{ width: '22%' }} />
                   {selectedSBCs.map((_, index) => (
-                    <col key={index} style={{ width: `${82 / selectedSBCs.length}%` }} />
+                    <col key={index} style={{ width: `${78 / selectedSBCs.length}%` }} />
                   ))}
                 </colgroup>
-                <thead className="bg-gray-50 dark:bg-gray-800 border-b-2 border-gray-200 dark:border-gray-700">
+                <thead className="bg-gray-50 dark:bg-gray-800">
                   <tr>
-                    <th className="sticky left-0 top-0 z-20 px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700">
+                    <th className="sticky left-0 top-0 z-30 px-3 sm:px-6 py-3 sm:py-4 text-left text-sm font-semibold text-gray-900 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 border-b-2 border-r border-gray-200 dark:border-gray-700 align-top shadow-sticky-col">
                       Specification
                     </th>
                     {selectedSBCs.map((sbc, index) => (
-                      <th key={index} className="sticky top-0 z-20 px-6 py-4 text-center text-sm font-semibold text-gray-900 dark:text-gray-100 bg-gray-50 dark:bg-gray-800">
+                      <th key={index} className="sticky top-0 z-20 px-3 sm:px-6 py-3 sm:py-4 text-center text-sm font-semibold text-gray-900 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 border-b-2 border-gray-200 dark:border-gray-700 align-top">
                         {sbc ? (
                           <div className="space-y-3">
                             {sbc.imageUrl && (
@@ -474,14 +485,14 @@ export default function SBCCompare({ posts }) {
                                   alt={sbc.includeAsSBC?.title || sbc.title}
                                   width={150}
                                   height={100}
-                                  className="rounded-lg object-cover"
+                                  className="rounded-lg object-cover max-w-full h-auto"
                                 />
                               </div>
                             )}
                             <div>
-                              <Link 
+                              <Link
                                 href={`/${sbc.slug}`}
-                                className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
+                                className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 break-words"
                               >
                                 {sbc.includeAsSBC?.title || sbc.title}
                               </Link>
@@ -494,14 +505,16 @@ export default function SBCCompare({ posts }) {
                     ))}
                   </tr>
                 </thead>
-                <tbody className="bg-white dark:bg-gray-900 divide-y divide-gray-200 dark:divide-gray-700">
+                {/* `border-separate` disables `<tr>` borders, so row dividers are added to
+                    the cells themselves via the arbitrary variant below. */}
+                <tbody className="bg-white dark:bg-gray-900 align-top [&_tr:not(:last-child)>td]:border-b [&_tr:not(:last-child)>td]:border-gray-200 dark:[&_tr:not(:last-child)>td]:border-gray-700">
                   {/* Price Row */}
                   <tr className="hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                    <td className="sticky left-0 z-10 px-6 py-4 text-sm font-medium text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700">
+                    <td className="sticky left-0 z-20 px-3 sm:px-6 py-3 sm:py-4 text-sm font-medium text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700 shadow-sticky-col">
                       Price
                     </td>
                     {selectedSBCs.map((sbc, index) => (
-                      <td key={index} className="px-6 py-4 text-sm text-center">
+                      <td key={index} className="px-3 sm:px-6 py-3 sm:py-4 text-sm text-center">
                         {sbc ? (
                           sbc.includeAsSBC?.price ? (
                             <div className="font-bold text-base text-gray-900 dark:text-gray-100">
@@ -516,16 +529,16 @@ export default function SBCCompare({ posts }) {
                       </td>
                     ))}
                   </tr>
-                  
+
                   {/* Buy Links Row */}
                   <tr className="hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                    <td className="sticky left-0 z-10 px-6 py-4 text-sm font-medium text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700">
+                    <td className="sticky left-0 z-20 px-3 sm:px-6 py-3 sm:py-4 text-sm font-medium text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700 shadow-sticky-col">
                       Where to Buy
                     </td>
                     {selectedSBCs.map((sbc, index) => {
                       const buyLinks = sbc?.affiliateLinks?.links || []
                       return (
-                        <td key={index} className="px-6 py-4 text-sm text-center">
+                        <td key={index} className="px-3 sm:px-6 py-3 sm:py-4 text-sm text-center">
                           {sbc ? (
                             buyLinks.length > 0 ? (
                               <div className="flex justify-center">
@@ -541,34 +554,34 @@ export default function SBCCompare({ posts }) {
                       )
                     })}
                   </tr>
-                  
+
                   {/* Specification Rows */}
                   {allSpecKeys.map((specEntry, idx) => {
                     const { key, subKey, isParent, parentKey, hasSubKeys } = specEntry
                     const isSubKeyRow = !isParent && subKey
-                    
+
                     return (
                       <tr key={isSubKeyRow ? `${parentKey}.${subKey}` : key} className="hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                        <td className={`sticky left-0 z-10 px-6 ${isSubKeyRow ? 'py-2' : 'py-4'} text-sm font-medium text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700`}>
+                        <td className={`sticky left-0 z-20 px-3 sm:px-6 ${isSubKeyRow ? 'py-2' : 'py-3 sm:py-4'} text-sm font-medium text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700 shadow-sticky-col`}>
                           {isSubKeyRow ? (
-                            <div className="pl-4 text-gray-600 dark:text-gray-400">
+                            <div className="pl-3 sm:pl-4 text-gray-600 dark:text-gray-400 break-words">
                               {subKey}
                             </div>
                           ) : (
-                            <span className="font-semibold">{key}</span>
+                            <span className="font-semibold break-words">{key}</span>
                           )}
                         </td>
                         {selectedSBCs.map((sbc, index) => {
                           let value
                           let shouldShowEmpty = false
-                          
+
                           if (isSubKeyRow) {
                             // For sub-key rows, get the specific sub-key value
                             value = sbc?.includeAsSBC?.specifications?.[parentKey]?.[subKey]
                           } else {
                             // For parent rows, get the parent value
                             value = sbc?.includeAsSBC?.specifications?.[key]
-                            
+
                             // If this parent key has sub-keys that will be displayed separately
                             if (hasSubKeys) {
                               // If the value exists and is an object (not a string), show empty cell
@@ -579,10 +592,10 @@ export default function SBCCompare({ posts }) {
                               }
                             } else if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
                               // Check if all sub-values are link objects (with url property)
-                              const hasOnlyLinkObjects = Object.values(value).every(subValue => 
+                              const hasOnlyLinkObjects = Object.values(value).every(subValue =>
                                 typeof subValue === 'object' && subValue !== null && subValue.url
                               )
-                              
+
                               // If it has sub-keys that will be shown separately, don't show the parent value
                               if (!hasOnlyLinkObjects) {
                                 shouldShowEmpty = true
@@ -590,9 +603,9 @@ export default function SBCCompare({ posts }) {
                               }
                             }
                           }
-                          
+
                           return (
-                            <td key={index} className={`px-6 ${isSubKeyRow ? 'py-2' : 'py-4'} text-sm text-gray-700 dark:text-gray-300 text-center`}>
+                            <td key={index} className={`px-3 sm:px-6 ${isSubKeyRow ? 'py-2' : 'py-3 sm:py-4'} text-sm text-gray-700 dark:text-gray-300 text-center break-words`}>
                               {shouldShowEmpty ? (
                                 // Empty cell for parent keys that have sub-keys
                                 <span></span>
@@ -616,18 +629,18 @@ export default function SBCCompare({ posts }) {
                     )
                   })}
 
-                  
+
                   {/* Full Review Row */}
                   <tr className="bg-gray-50 dark:bg-gray-800">
-                    <td className="sticky left-0 z-10 px-6 py-4 text-sm font-medium text-gray-900 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700">
+                    <td className="sticky left-0 z-20 px-3 sm:px-6 py-3 sm:py-4 text-sm font-medium text-gray-900 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 shadow-sticky-col">
                       Full Review
                     </td>
                     {selectedSBCs.map((sbc, index) => (
-                      <td key={index} className="px-6 py-4 text-sm text-center">
+                      <td key={index} className="px-3 sm:px-6 py-3 sm:py-4 text-sm text-center">
                         {sbc ? (
                           <Link
                             href={`/${sbc.slug}`}
-                            className="inline-flex items-center px-4 py-2 text-sm font-medium bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-all duration-200"
+                            className="inline-flex items-center px-3 sm:px-4 py-2 text-sm font-medium bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-all duration-200"
                           >
                             Read Full Review
                             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
