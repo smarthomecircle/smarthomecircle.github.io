@@ -55,7 +55,7 @@
     <guid>https://smarthomecircle.com/setup-esp32-with-wake-word-in-home-assistant</guid>
     <title>ESP32 as a Local Voice Assistant With Wake Word In Home Assistant</title>
     <link>https://smarthomecircle.com/setup-esp32-with-wake-word-in-home-assistant</link>
-    <description> This article will look at how to setup an ESP32 as local voice assistant and use Wake word to invoke Home Assistant devices</description>
+    <description>This article will look at how to setup an ESP32 as local voice assistant and use Wake word to invoke Home Assistant devices</description>
     <pubDate>Mon, 13 Nov 2023 00:00:00 GMT</pubDate>
     <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>Wake Word</category><category>ESP32</category><category>Voice Assistant</category><category>Home Assistant</category>
