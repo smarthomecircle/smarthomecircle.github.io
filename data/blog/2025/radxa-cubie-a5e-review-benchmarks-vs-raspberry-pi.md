@@ -33,6 +33,7 @@ includeAsSBC:
   title: "Radxa Cubie A5E"
   url: "https://radxa.com/products/cubie/a5e"
   price: "$ 39"
+  comparable: True
   specifications:
     SoC: Allwinner A527
     CPU:

@@ -35,6 +35,7 @@ affiliateLinks:
 includeAsSBC:
   title: "Radxa Cubie A7A"
   price: "$ 39+"
+  comparable: True
   specifications:
     SoC: Allwinner A733
     CPU:
@@ -64,11 +65,11 @@ includeAsSBC:
       1 x HDMI 2.0 up to 4K@60fps
       1 x 4-lane MIPI-DSI
     NVMe:
-      Onboard: No (via NVMe PCIe Connector)
+      Onboard: No (via PCIe FPC + external HAT)
       Number Of Connectors: N/A
       # Type: M.2 M-key 
       Connectivity: PCIe Gen3 x 1
-      Size: 2230 / 2280
+      Size: Depends on NVMe HAT
     Network:
       Ethernet: 1 × Gigabit Ethernet
       Wi-Fi: Wi-Fi 6

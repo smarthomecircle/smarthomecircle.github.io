@@ -26,6 +26,7 @@ includeAsSBC:
   title: "Radxa X4"
   price: $109+
   url: "https://radxa.com/products/x/x4"
+  comparable: True
   specifications:
     SoC: Intel N100 (Alder Lake-N)
     CPU:
@@ -59,7 +60,7 @@ includeAsSBC:
       Ethernet: 1 × 2.5 Gigabit Ethernet
       Wi-Fi: Wi-Fi 6
       Bluetooth: Bluetooth 5.2
-    PoE: No  
+    PoE: Yes (PoE HAT required)  
     USB: |
       3 × USB-A 3.0
       1 × USB-A 2.0

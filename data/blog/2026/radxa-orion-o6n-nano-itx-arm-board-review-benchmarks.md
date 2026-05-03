@@ -35,7 +35,7 @@ affiliateLinks:
 includeAsSBC:
   title: "Radxa Orion O6N"
   price: "$ 199+"
-  comparable: False
+  comparable: True
   specifications:
     SoC: Cix P1 (CD8160 variant)
     CPU:
@@ -55,7 +55,7 @@ includeAsSBC:
     AI Capabilities: |
       NPU: Up to 30 TOPS
     RAM:
-      Size: 8GB / 16GB / 24GB / 32GB / 48GB / 64GB (options)
+      Size: 8GB / 16GB / 24GB / 32GB / 48GB / 64GB
       Type: LPDDR5
       Speed: 5000MT/s or 6000MT/s (SKU dependent)
       Bus: 4 x 32-bit

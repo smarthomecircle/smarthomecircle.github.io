@@ -33,7 +33,7 @@ affiliateLinks:
 includeAsSBC:
   title: "Radxa Dragon Q6A"
   price: "$ 59.50+"
-  comparable: False
+  comparable: True
   specifications:
     SoC: Qualcomm QCS6490
     CPU:

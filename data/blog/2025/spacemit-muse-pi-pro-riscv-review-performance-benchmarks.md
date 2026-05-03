@@ -30,6 +30,7 @@ includeAsSBC:
   title: "Muse Pi Pro"
   price: "$ 138+"
   url:
+  comparable: True
   specifications:
     SoC: SpacemiT M1 RISC-V SoC (similar to K1)
     CPU:

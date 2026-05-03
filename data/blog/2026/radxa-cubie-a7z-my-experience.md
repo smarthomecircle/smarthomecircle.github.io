@@ -36,7 +36,7 @@ affiliateLinks:
 includeAsSBC:
   title: "Radxa Cubie A7Z"
   price: "$19"
-  comparable: False
+  comparable: True
   specifications:
     SoC: Allwinner A733
     CPU:
@@ -53,7 +53,7 @@ includeAsSBC:
     AI Capabilities: |
       NPU: 3 TOPS
     RAM:
-      Size: 1GB / 2GB / 4GB / 8GB / 16GB (options)
+      Size: 1GB / 2GB / 4GB / 8GB / 16GB
       Type: LPDDR4X
       Speed: Not specified
       Bus: Not specified
