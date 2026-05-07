@@ -5,19 +5,19 @@ categories: ''
 tags: [Zimaboard, SBC, benchmarks, Performance, NAS, ZimaOS ]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2026-04-02'
+date: '2026-05-14'
 draft: false
 autoAds: true
 summary: 'Build the ultimate compact DIY NAS with ZimaBoard 2. Leveraging ZimaOS and dual 2.5GbE, this energy-efficient kit simplifies backups, media streaming, and running virtual machines for your personal home lab'
 imageUrl: /static/images/2026/zimaboard-2-review/cover.png
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/1nyaeCO8pH0"
+youtubeLink: "https://www.youtube.com/embed/Pd4WTQIPUAs"
 suggestedArticles:
   - title: "Radxa Cubie A7A Review: Pi-Sized Power With PCIe, NVMe, USB 3.1 Gen2"
     url: "https://smarthomecircle.com/radxa-cubie-a7a-review-benchmarks-pi-5-comparison"
-  - title: "Radxa Cubie A5E Hands-On: The Budget NVMe SBC"
-    url: "https://smarthomecircle.com/radxa-cubie-a5e-review-benchmarks-vs-raspberry-pi"
+  - title: "Radxa Dragon Q6A: Benchmarks, thermals, and Windows 11 Pro on ARM"
+    url: "https://smarthomecircle.com/radxa-dragon-q6a-best-alternative-to-the-raspberry-pi-5"
   - title: "I Built A DIY 10 Inch Server Rack"
     url: "https://smarthomecircle.com/I-built-a-diy-10-inch-server-rack"
 
@@ -92,11 +92,6 @@ includeAsSBC:
 
 Are you looking for a powerful, compact, and easy-to-manage home server? Today, we’re diving into the **ZimaBoard 2**, a single-board server that packs a serious punch for its size. Whether you're a pro or a beginner, this might just be the **ultimate DIY NAS** hardware for your home lab.
 
-<div class="image-flex">
-  <img src="/static/images/2026/radxa-cubie-a7z/cubie-a7z-front.jpg" alt="front" />
-  <img src="/static/images/2026/radxa-cubie-a7z/cubie-a7z-back.jpg" alt="back" />
-</div>
-    
 
 ---
 
