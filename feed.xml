@@ -7,10 +7,30 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 12 Mar 2026 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sun, 19 Apr 2026 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/feed.xml" rel="self" type="application/rss+xml"/>
       <atom:link href="https://smarthomecircle.com" rel="alternate" type="text/html"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/radxa-orion-o6n-nano-itx-arm-board-review-benchmarks</guid>
+    <title>Radxa Orion O6N: My experience with this Nano-ITX Arm powerhouse</title>
+    <link>https://smarthomecircle.com/radxa-orion-o6n-nano-itx-arm-board-review-benchmarks</link>
+    <description>Powerful Radxa Orion O6N Nano-ITX review: benchmarks, Linux support, thermals, AI tests, and I/O performance with UEFI support.</description>
+    <pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>SBC</category><category>radxa</category><category>perfromance</category><category>qualcomm</category><category>benchmarks</category>
+  </item>
+
+  <item>
+    <guid>https://smarthomecircle.com/sonoff-dongle-max-features-and-home-assistant-setup</guid>
+    <title>Sonoff Dongle Max: what makes it “Max”</title>
+    <link>https://smarthomecircle.com/sonoff-dongle-max-features-and-home-assistant-setup</link>
+    <description>a powerful Zigbee/Thread coordinator with stronger antenna, built-in 2.4GHz Wi-Fi access point, WireGuard VPN support for remote Zigbee management, Home Assistant configuration, webhook triggers, and PoE power</description>
+    <pubDate>Sun, 12 Apr 2026 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Sonoff</category><category>zigbee</category><category>thread</category><category>home assistant</category><category>wifi</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/radxa-cubie-a7z-my-experience</guid>
     <title>Radxa Cubie A7Z: Raspberry Pi Zero–sized Powerful SBC</title>
@@ -49,26 +69,6 @@
     <pubDate>Mon, 02 Mar 2026 00:00:00 GMT</pubDate>
     <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
     <category>SBC</category><category>backup</category><category>os</category><category>sdcard</category><category>linux</category>
-  </item>
-
-  <item>
-    <guid>https://smarthomecircle.com/radxa-orion-o6n-nano-itx-arm-board-review-benchmarks</guid>
-    <title>Radxa Orion O6N: My experience with this Nano-ITX Arm powerhouse</title>
-    <link>https://smarthomecircle.com/radxa-orion-o6n-nano-itx-arm-board-review-benchmarks</link>
-    <description>Powerful Radxa Orion O6N Nano-ITX review: benchmarks, Linux support, thermals, AI tests, and I/O performance with UEFI support.</description>
-    <pubDate>Thu, 19 Feb 2026 00:00:00 GMT</pubDate>
-    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
-    <category>SBC</category><category>radxa</category><category>perfromance</category><category>qualcomm</category><category>benchmarks</category>
-  </item>
-
-  <item>
-    <guid>https://smarthomecircle.com/sonoff-dongle-max-features-and-home-assistant-setup</guid>
-    <title>Sonoff Dongle Max: what makes it “Max”</title>
-    <link>https://smarthomecircle.com/sonoff-dongle-max-features-and-home-assistant-setup</link>
-    <description>a powerful Zigbee/Thread coordinator with stronger antenna, built-in 2.4GHz Wi-Fi access point, WireGuard VPN support for remote Zigbee management, Home Assistant configuration, webhook triggers, and PoE power</description>
-    <pubDate>Thu, 12 Feb 2026 00:00:00 GMT</pubDate>
-    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
-    <category>Sonoff</category><category>zigbee</category><category>thread</category><category>home assistant</category><category>wifi</category>
   </item>
 
   <item>
