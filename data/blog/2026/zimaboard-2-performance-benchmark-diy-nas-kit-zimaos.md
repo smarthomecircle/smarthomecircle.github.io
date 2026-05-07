@@ -9,7 +9,7 @@ date: '2026-04-02'
 draft: false
 autoAds: true
 summary: 'Build the ultimate compact DIY NAS with ZimaBoard 2. Leveraging ZimaOS and dual 2.5GbE, this energy-efficient kit simplifies backups, media streaming, and running virtual machines for your personal home lab'
-imageUrl: /static/images/2026/radxa-cubie-a7z/cover.png
+imageUrl: /static/images/2026/zimaboard-2-review/cover.png
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/1nyaeCO8pH0"
@@ -113,7 +113,7 @@ The unboxing experience feels premium. It comes in eco-friendly packaging with a
 The real magic happens when you power it on. **ZimaOS** provides a clean, web-based dashboard that makes server management feel like using a smartphone.
 
 ### Key Features:
-* **Easy RAID Setup:** Setting up **RAID 1** (for data redundancy) is a few clicks away. It clearly shows your available capacity before you commit.
+* **Easy RAID Setup:** Setting up **RAID** Levels (for data redundancy) is a few clicks away. It clearly shows your available capacity before you commit.
 * **PeerDrop:** A fantastic tool for transferring files between your phone or your computer and the NAS via a browser.
 * **Zima Virtual Machine:** Want to run Windows 11? You can install and access OS environments directly through your web browser.
 * **App Store:** One-click installs for **Home Assistant**, **Tailscale VPN**, and other Docker-based applications.
@@ -127,6 +127,9 @@ Performance is where the ZimaBoard 2 truly shines. Thanks to the **2.5 Gigabit E
 **Power Consumption:**
 * **Idle:** 11–13 Watts (With two HDDs connected)
 * **Under Load:** ~26 Watts during heavy file transfers
+<p align="center">
+  <img src="/static/images/2026/zimaboard-2-review/power-consumption.webp" alt="power-consumption" />
+</p>
 
 This makes it an incredibly energy-efficient choice for a server that stays on 24/7.
 
@@ -138,13 +141,34 @@ I put the ZimaBoard 2 through a series of tests to see how the **Intel N150** ho
 
 ### CPU & Memory Testing
 * **Sysbench:** Calculated primes up to 20,000 in **24 seconds** (4,170 req/s), performing similarly to the Intel N100-based Radxa X4.
+<div class="image-flex">
+  <img src="/static/images/2026/zimaboard-2-review/sysbench.webp" alt="sysbench" />
+</div>
+
 * **Geekbench:** Scored **1,235 (Single-Core)** and **2,980 (Multi-Core)**.
+
+<div class="image-flex">
+  <img src="/static/images/2026/zimaboard-2-review/geekbench.webp" alt="geekbench" />
+</div>
+
 * **Memory Bandwidth Test:** Hit **9,800 MiB/s** for block copies. Thanks to the 64-bit bus size, it offers superior memory access performance compared to many peers.
+
+<div class="image-flex">
+  <img src="/static/images/2026/zimaboard-2-review/mbw.webp" alt="mbw" />
+</div>
 
 ### Connectivity & Speed
 - **iPerf3 Networking:** Both ports easily hit **2.35 Gbps** for both uploads and downloads.
 
+<p align="center">
+  <img src="/static/images/2026/zimaboard-2-review/iperf3.webp" alt="iperf3" />
+</p>
+
 - **USB 3.1:** Confirmed Gen 1 speeds (10,000 bus size) using an NVMe-to-USB adapter.
+
+<p align="center">
+  <img src="/static/images/2026/zimaboard-2-review/lsusb.webp" alt="lsusb" />
+</p>
 
 ### Edge AI: Running LLMs Locally
 Can this small board handle AI? I ran **Qwen 3 (8B parameter model)** via Ollama.
@@ -152,21 +176,14 @@ Can this small board handle AI? I ran **Qwen 3 (8B parameter model)** via Ollama
 - **Prompt Evaluation:** 6.4 tokens per second.
 - **Response Generation:** 4.26 tokens per second.
 
+<p align="center">
+  <img src="/static/images/2026/zimaboard-2-review/ollama.webp" alt="ollama" />
+</p>
+
 While not a dedicated AI powerhouse, it is more than capable of running local, private AI assistants without any cloud subscriptions.
-[Image 3: Performance Charts - Side-by-side comparison of Geekbench or Sysbench scores.]
 
 
 ---
 
 ## Final Verdict
 The **ZimaBoard 2** is the perfect balance of **x86 flexibility** and **passive cooling**. Whether you want a private local storage solution or a flexible home lab for AI and VMs, this kit delivers performance without the subscription fees.
-
-
----
-
-### Support the Channel
-If you found this guide helpful, consider supporting the journey!
-* **Subscribe** for upcoming benchmarking tests.
-* Support me on **Patreon** or **Buy Me a Coffee**.
-
-See you in the next one!
