@@ -5,7 +5,7 @@ categories: ''
 tags: [SBC, radxa, perfromance, qualcomm, benchmarks]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2026-02-19'
+date: '2026-04-19'
 draft: false
 autoAds: true
 summary: 'Powerful Radxa Orion O6N Nano-ITX review: benchmarks, Linux support, thermals, AI tests, and I/O performance with UEFI support.'
