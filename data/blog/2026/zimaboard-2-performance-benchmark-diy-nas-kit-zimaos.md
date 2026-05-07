@@ -92,6 +92,13 @@ includeAsSBC:
 
 Are you looking for a powerful, compact, and easy-to-manage home server? Today, we’re diving into the **ZimaBoard 2**, a single-board server that packs a serious punch for its size. Whether you're a pro or a beginner, this might just be the **ultimate DIY NAS** hardware for your home lab.
 
+<div class="image-flex">
+  <img src="/static/images/2026/zimaboard-2-review/zimaboard-2.webp" alt="o6n-view1" />
+  <img src="/static/images/2026/zimaboard-2-review/zimaboard-2-1.webp" alt="zimaboard-2" />
+  <img src="/static/images/2026/zimaboard-2-review/zimaboard-2-2.webp" alt="zimaboard-2" />
+  <img src="/static/images/2026/zimaboard-2-review/zimaboard-2-3.webp" alt="zimaboard-2" />
+  <img src="/static/images/2026/zimaboard-2-review/zimaboard-2-4.webp" alt="zimaboard-2" />
+</div>
 
 ---
 
