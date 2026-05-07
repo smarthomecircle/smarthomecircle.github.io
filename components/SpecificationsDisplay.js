@@ -1,5 +1,4 @@
 import Link from './Link'
-import AffiliateLinkButtons from './AffiliateLinkButtons'
 
 // Helper function to parse markdown links and convert to React elements
 const parseMarkdownLinks = (text) => {
@@ -137,7 +136,18 @@ export default function SpecificationsDisplay({
 
   // Use title for comparison link, fallback to slug if title not available
   const compareParam = title ? titleToUrlFormat(title) : slug
-  const affiliateLinksList = affiliateLinks?.links || []
+
+  // Handle both old format (array) and new format (object with title and links)
+  let affiliateLinksArray = []
+  if (Array.isArray(affiliateLinks)) {
+    // Old format: array of links
+    affiliateLinksArray = affiliateLinks
+  } else if (affiliateLinks && typeof affiliateLinks === 'object' && affiliateLinks.links) {
+    // New format: object with title and links
+    affiliateLinksArray = affiliateLinks.links || []
+  }
+
+  const hasAffiliateLinks = affiliateLinksArray.length > 0
 
   return (
     <div className="not-prose my-6 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-200 dark:border-gray-700">
@@ -158,8 +168,8 @@ export default function SpecificationsDisplay({
           text-decoration-color: rgb(45 212 191);
         }
       `}</style>
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 flex-wrap">
-        {(title || price || affiliateLinksList.length > 0) && (
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+        {(title || price || hasAffiliateLinks) && (
           <div className="border-l-4 border-primary-500 bg-primary-50 dark:bg-primary-900/20 pl-4 pr-3 py-1 rounded-r-lg prose-links">
             <div className="flex flex-col sm:flex-row sm:items-center gap-3">
               <div className="flex items-center gap-2">
@@ -184,9 +194,9 @@ export default function SpecificationsDisplay({
                   </div>
                 )}
               </div>
-              {affiliateLinks.length > 0 && (
+              {hasAffiliateLinks && (
                 <div className="flex flex-wrap gap-1.5">
-                  {affiliateLinks.map((link, idx) => (
+                  {affiliateLinksArray.map((link, idx) => (
                     <a
                       key={idx}
                       href={link.url}
