@@ -10,6 +10,7 @@ draft: false
 autoAds: true
 summary: 'Learn how to set up Tuya Local in Home Assistant for fast, reliable local control. Discover how to extract your local key and track energy usage without any cloud delays.'
 imageUrl: /static/images/2026/tuya-local-setup/cover.webp
+youtubeLink: "https://www.youtube.com/embed/RTcaSoOcgb0"
 suggestedArticles:
   - title: "Sonoff Dongle Max: what makes it “Max”"
     url: "https://smarthomecircle.com/sonoff-dongle-max-features-and-home-assistant-setup"
@@ -216,5 +217,12 @@ Finally, let's track this data.
   <img src="/static/images/2026/tuya-local-setup/power-consumption-entity-2.webp" alt="power-consumption-sensor.webp" />
 </p>
 
-
 That’s it! You have successfully bypassed the cloud and set up local control and local energy monitoring for your Tuya devices.
+
+## Fix: Extend Tuya Developer Trail Period
+
+In case you are facing an error as shown below while fetching the local key for your Tuya device, then you can visit [this](https://support.tuya.com/en/help/_detail/Kc3n6kr7kllhc) guide to extend your IoT core service trail period
+
+<p align="center">
+  <img src="/static/images/2026/tuya-local-setup/cloud-error.webp" alt="power-consumption-sensor.webp" />
+</p>
