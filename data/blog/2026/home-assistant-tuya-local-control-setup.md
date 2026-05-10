@@ -19,6 +19,19 @@ suggestedArticles:
   - title: "ReSpeaker XVF3800: a surprisingly solid local voice assistant for Home Assistant"
     url: "https://smarthomecircle.com/respeaker-xvf3800-home-assistant-voice-assistant"
 
+affiliateLinks:
+  title: Buy Tuya Wifi Smart Plug
+  links: 
+    - label: "AliExpress"
+      url: "https://s.click.aliexpress.com/e/_c4SlJNBl"
+    - label: "Amazon US"
+      url: "https://amzn.to/4d0AK8D"
+    - label: "Amazon EU"
+      url: "https://amzn.to/433hX6A"
+    - label: "Amazon UK"
+      url: "https://amzn.to/4fcY5Fq"
+
+
 ---
 
 <TOCInline toc={props.toc} asDisclosure /> 
@@ -27,6 +40,8 @@ suggestedArticles:
 If you have Tuya or Smart Life devices, you probably want to control them locally. Relying on the cloud can cause delays, and internet outages shouldn't stop your smart home from working.
 
 Today, I’ll show you exactly how to set up the [**Tuya Local**](https://github.com/make-all/tuya-local) integration in Home Assistant. This allows you to control your Tuya-based devices entirely on your local network. Let's get started.
+
+<AffiliateLinksFromMetadata />
 
 ## Step 1: Install Tuya Local via HACS
 
@@ -218,6 +233,8 @@ Finally, let's track this data.
 </p>
 
 That’s it! You have successfully bypassed the cloud and set up local control and local energy monitoring for your Tuya devices.
+
+<AffiliateLinksFromMetadata />
 
 ## Fix: Extend Tuya Developer Trail Period
 
