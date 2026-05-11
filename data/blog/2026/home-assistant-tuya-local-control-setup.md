@@ -21,6 +21,9 @@ suggestedArticles:
 
 affiliateLinks:
   title: Buy Tuya Wifi Smart Plug
+  image:
+    src: /static/images/2026/tuya-local-setup/tuya-plug.png
+    alt: Tuya Wifi Smart Plug
   links: 
     - label: "AliExpress"
       url: "https://s.click.aliexpress.com/e/_c4SlJNBl"

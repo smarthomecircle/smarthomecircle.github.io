@@ -23,6 +23,9 @@ suggestedArticles:
 
 affiliateLinks:
   title: Buy Seeed Studio ReSpeaker XVF3800
+  image:
+    src: /static/images/2026/respeaker-xvf3800/respeaker-front.webp
+    alt: Seeed Studio ReSpeaker XVF3800
   links: 
     - label: "AliExpress"
       url: "https://s.click.aliexpress.com/e/_c3v77jId"
