@@ -22,10 +22,13 @@ suggestedArticles:
     url: "https://smarthomecircle.com/I-built-a-diy-10-inch-server-rack"
 
 affiliateLinks:
-  title: Buy Radxa Dragon Q6A
+  title: Buy Radxa Orion O6N
+  image:
+    src: /static/images/2026/orion-o6n/o6n-view1.webp
+    alt: Radxa Orion O6N board
   links: 
     - label: "AliExpress"
-      url: "https://de.aliexpress.com/item/1005010224206962.html?aff_fcid=79f77f80ca9543b49d03804d6e991f74-1766435965636-09027-_DEhJfB1&tt=CPS_NORMAL&aff_fsk=_DEhJfB1&aff_platform=shareComponent-detail&sk=_DEhJfB1&aff_trace_key=79f77f80ca9543b49d03804d6e991f74-1766435965636-09027-_DEhJfB1"
+      url: "https://s.click.aliexpress.com/e/_c3dnDep1"
     - label: "Arace"
       url: "https://arace.tech/products/radxa-dragon-q6a?variant=44069918802100"
 

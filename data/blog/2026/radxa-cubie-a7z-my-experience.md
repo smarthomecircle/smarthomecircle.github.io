@@ -23,6 +23,9 @@ suggestedArticles:
 
 affiliateLinks:
   title: Buy Radxa Cubie A7Z
+  image:
+    src: /static/images/2026/radxa-cubie-a7z/cubie-a7z-front.jpg
+    alt: Radxa Cubie A7Z board
   links: 
     - label: "AliExpress"
       url: "https://s.click.aliexpress.com/e/_c3Qz14bl"
