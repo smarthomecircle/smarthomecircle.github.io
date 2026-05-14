@@ -36,7 +36,7 @@ affiliateLinks:
 includeAsSBC:
   title: "ZimaBoard 2"
   price: "$279 - $349"
-  comparable: False
+  comparable: True
   specifications:
     SoC: Intel Processor N150 (Alder Lake-N)
     CPU:
