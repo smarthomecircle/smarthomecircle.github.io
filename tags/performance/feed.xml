@@ -7,10 +7,20 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 12 Mar 2026 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 14 May 2026 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/performance/feed.xml" rel="self" type="application/rss+xml"/>
       <atom:link href="https://smarthomecircle.com/tags/performance" rel="alternate" type="text/html"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/zimaboard-2-performance-benchmark-diy-nas-kit-zimaos</guid>
+    <title>Building the Ultimate DIY NAS: ZimaBoard 2 Review &amp; Benchmarks</title>
+    <link>https://smarthomecircle.com/zimaboard-2-performance-benchmark-diy-nas-kit-zimaos</link>
+    <description>Build the ultimate compact DIY NAS with ZimaBoard 2. Leveraging ZimaOS and dual 2.5GbE, this energy-efficient kit simplifies backups, media streaming, and running virtual machines for your personal home lab</description>
+    <pubDate>Thu, 14 May 2026 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Zimaboard</category><category>SBC</category><category>benchmarks</category><category>Performance</category><category>NAS</category><category>ZimaOS</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/radxa-cubie-a7z-my-experience</guid>
     <title>Radxa Cubie A7Z: Raspberry Pi Zero–sized Powerful SBC</title>
