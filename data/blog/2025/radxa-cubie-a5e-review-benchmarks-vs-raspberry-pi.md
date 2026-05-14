@@ -13,6 +13,7 @@ imageUrl: /static/images/2025/radxa-cubie-a5e/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/Bv6ReLJgSi8"
+
 suggestedArticles:
   - title: "GL.iNet Slate 7 (GL‑BE3600) Review"
     url: "https://smarthomecircle.com/glinet-slate-7-wifi-7-travel-router"
@@ -32,6 +33,7 @@ includeAsSBC:
   title: "Radxa Cubie A5E"
   url: "https://radxa.com/products/cubie/a5e"
   price: "$ 39"
+  comparable: True
   specifications:
     SoC: Allwinner A527
     CPU:
@@ -96,14 +98,7 @@ In this video/article I’m sharing my experience with the **Radxa Cubie A5E**�
   <img src="/static/images/2025/radxa-cubie-a5e/front.webp" alt="front" />
 </p>
     
-<AffiliateLinks 
-  title="Buy Radxa Cubie A5E" 
-  links={[
-    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oka7U73" },
-    { store: "Arace", url: "https://arace.tech/products/radxa-cubie-a5e" }
-  ]}
-/>
-
+<AffiliateLinksFromMetadata />
 
 
 ## Technical Specifications
@@ -113,7 +108,7 @@ In this video/article I’m sharing my experience with the **Radxa Cubie A5E**�
 (Specs as per Radxa’s product page.) [Radxa Cubie A5E](https://radxa.com/products/cubie/a5e/)
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/radxa-cubie-a5e/front-small.webp" alt="sbc-front" />
   <img src="/static/images/2025/radxa-cubie-a5e/back.webp" alt="sbc-back" />
   <img src="/static/images/2025/radxa-cubie-a5e/case-photo.webp" alt="sbc-back" />
@@ -254,13 +249,8 @@ Finally I would be still monitoring the Armbian community build for a more stabl
 <p>
   <img src="/static/images/2025/radxa-cubie-a5e/case.webp" alt="router" />
 </p>
-<AffiliateLinks 
-  title="Buy Radxa Cubie A5E Metal Case" 
-  links={[
-    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_om1Up25" },
-    { store: "Arace", url: "https://arace.tech/products/radxa-metal-case-7264" }
-  ]}
-/>
+
+<AffiliateLinksFromMetadata />
 
 
 ## Support the Channel

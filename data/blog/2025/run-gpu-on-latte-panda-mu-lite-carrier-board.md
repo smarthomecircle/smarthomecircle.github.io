@@ -34,7 +34,7 @@ This is my living log: everything I did, what worked, and the exact commands I u
 ## Hardware & Topology I Used
 
 - **Host:** **LattePanda Mu Lite** carrier board, Ubuntu **24.04.1 LTS** (kernel was `6.14.0-33-generic` in my case)
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/gpu-experiment/latte-panda-mu.webp" alt="vulkan eval" />
 </div>
 
@@ -48,13 +48,13 @@ This is my living log: everything I did, what worked, and the exact commands I u
 
 
 - **GPU:** AMD **Instinct MI50** (gfx906, 16 GB HBM2, passive)
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/gpu-experiment/amd-instinct-mi50.webp" alt="Amd instinct mi50" />
 </div>
 
 
 - **eGPU + Oculink cable:** 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/gpu-experiment/egpu.jpg" alt="vulkan eval" />
 </div>
 
@@ -70,7 +70,7 @@ This is my living log: everything I did, what worked, and the exact commands I u
 **Connection :** Mu Lite **PCIe x4** slot → **OCuLink** host adapter → OCuLink cable → x16 eGPU riser/backplane → **MI50**
 - **PCIE 4X to Oculink SFF-8612**
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/gpu-experiment/pcie-adapter.webp" alt="PCIE 4X to Oculink SFF-8612" />
 </div>
 
@@ -85,7 +85,7 @@ This is my living log: everything I did, what worked, and the exact commands I u
 
 - **Power:** 12 V for the carrier (required for the on-board PCIe slot), ATX PSU for the MI50 (2× 8‑pin), *lots* of airflow through the passive heatsink
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/gpu-experiment/full-setup.webp" alt="full setup" />
 </div>
 
@@ -96,7 +96,7 @@ This is my living log: everything I did, what worked, and the exact commands I u
 
 I did a **fresh Ubuntu 24.04.1** install to NVMe. After connecting the eGPU chain and powering the GPU first, I booted the Mu and SSH’d in.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/gpu-experiment/ubuntu.webp" alt="ubuntu" />
 </div>
 
@@ -240,14 +240,14 @@ amd-smi monitor --gpu 0
 ./build/bin/llama-cli   -m ~/AI/models/Qwen3-14B-Q4_K_M.gguf   -ngl 999 -t 4 -c 4096 -b 512 
 ```
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/gpu-experiment/roc-eval.webp" alt="rocm eval" />
 </div>
 
 
 ### Token statistics 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/gpu-experiment/rocm-stats.webp" alt="rocm stats" />
 </div>
 
@@ -290,12 +290,12 @@ export GGML_VK_VISIBLE_DEVICES=0  # optional if multiple GPUs
 ./build/bin/llama-cli   -m ~/AI/models/Qwen3-14B-Q4_K_M.gguf   -ngl 999 -t 4 -c 4096 -b 512 
 ```
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/gpu-experiment/vulkun-eval.webp" alt="vulkan eval" />
 </div>
 
 ### Token statistics 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/gpu-experiment/vulkan-stats.webp" alt="PCIE 4X to Oculink SFF-8612" />
 </div>

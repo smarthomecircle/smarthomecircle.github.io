@@ -35,6 +35,7 @@ affiliateLinks:
 includeAsSBC:
   title: "Radxa Cubie A7A"
   price: "$ 39+"
+  comparable: True
   specifications:
     SoC: Allwinner A733
     CPU:
@@ -49,7 +50,7 @@ includeAsSBC:
         Vulkan 1.3
         OpenCL 3.0
     AI Capabilities: |
-        NPU: Up to 3 TOPS
+        NPU: Up to 3TOPs
     RAM:
       Size: 2GB / 4GB / 6GB / 8GB / 12 GB / 16GB
       Type: LPDDR5
@@ -64,11 +65,11 @@ includeAsSBC:
       1 x HDMI 2.0 up to 4K@60fps
       1 x 4-lane MIPI-DSI
     NVMe:
-      Onboard: No (via NVMe PCIe Connector)
+      Onboard: No (via PCIe FPC + external HAT)
       Number Of Connectors: N/A
       # Type: M.2 M-key 
       Connectivity: PCIe Gen3 x 1
-      Size: 2230 / 2280
+      Size: Depends on NVMe HAT
     Network:
       Ethernet: 1 × Gigabit Ethernet
       Wi-Fi: Wi-Fi 6
@@ -106,14 +107,7 @@ includeAsSBC:
   <img src="/static/images/2025/radxa-cubie-a7a/front.webp" alt="front" />
 </p>
 
-<AffiliateLinks 
-  title="Buy Radxa Cubie A7A" 
-  links={[
-    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_c434m0ff" },
-    { store: "Amazon US", url: "https://amzn.to/47Q9yHd" },
-    { store: "Amazon EU", url: "https://amzn.to/4pjxHeU" }
-  ]}
-/>
+<AffiliateLinksFromMetadata />
 
 I’ve been spending time with the Radxa **Cubie A7A**, and I wanted to share how it behaved for me in real use—thermals, CPU and memory performance, storage, networking, desktop, and a bit of AI/voice. 
 
@@ -137,7 +131,7 @@ The board is about the same footprint as a Raspberry Pi 5, but it won’t fit Pi
 Radxa provides [**Debian**](https://github.com/radxa-build/radxa-a733/releases) and [**Android**](https://github.com/radxa/allwinner-android-manifests/releases/) images. I went with Debian and jumped in over SSH. At idle and **without a heatsink**, the CPU sat around **54 °C**. To see where the ceiling was, I ran a quick `sysbench` CPU stress; without any cooling, temps climbed to **~75 °C**.
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/radxa-cubie-a7a/side.webp" alt="side" />
 </div>
     
@@ -192,7 +186,7 @@ Threads fairness:
 ```
 </Collapsible>
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/radxa-cubie-a7a/sysbench.webp" alt="sysbench" />
 </div>
     
@@ -251,13 +245,13 @@ AVG     Method: MCBLOCK Elapsed: 0.39923        MiB: 1024.00000 Copy: 2564.941 M
 ```
 </Collapsible>
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/radxa-cubie-a7a/mbw.webp" alt="mbw" />
 </div>
 
 ### Tiny MemBench Test
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/radxa-cubie-a7a/tinymembench.webp" alt="tinymembench" />
 </div>
 
@@ -360,7 +354,7 @@ My **8 GB** unit’s **LPDDR5** seemed clocked at **1800 MHz**. From what I’ve
 
 On **Geekbench**, I recorded **636 (single-core)** and **1496 (multi-core)**. That’s **roughly 2× a Pi 4**, but still a notch under a Pi 5.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/radxa-cubie-a7a/geekbench.webp" alt="geekbench" />
 </div>
 
@@ -405,7 +399,7 @@ On the **USB 3.1** port, `lsusb` showed my USB-to-NVMe bridge enumerated on the 
 I spun up **Docker**, then ran **Home Assistant**, **Whisper**, and **Piper** in containers. With **Whisper small-int8**, speech-to-text on my clip took about **~7.6 s**. That’s **far better than Pi 4** in my environment and **about 1 s slower than Pi 5** using the same model.
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/radxa-cubie-a7a/faster-whisper.webp" alt="faster-whisper" />
 </div>
 
@@ -518,7 +512,7 @@ radxa@radxa-cubie-a7a:~$ vkmark
 </Collapsible>
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/radxa-cubie-a7a/vkmark.webp" alt="vkmark" />
 </div>
 
@@ -534,11 +528,4 @@ The Cubie A7A already **beats the Raspberry Pi 4** across most of aspects but st
 
 That said, engineering responses have been **quick**, and I’m expecting iterative improvements. If the RAM profile and NVMe support mature—and with the I/O this board already has—it could **outpace a Raspberry Pi 5 in value** at similar pricing, especially if you want **more RAM**.
 
-<AffiliateLinks 
-  title="Buy Radxa Cubie A7A" 
-  links={[
-    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_c434m0ff" },
-    { store: "Amazon US", url: "https://amzn.to/47Q9yHd" },
-    { store: "Amazon EU", url: "https://amzn.to/4pjxHeU" }
-  ]}
-/>
+<AffiliateLinksFromMetadata />

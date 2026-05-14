@@ -103,7 +103,7 @@ All of that is just the hardware story. What really ties it together is the soft
 
 ----------
 ## WebUI Feature Walkthrough ( Firmware version v1.6 beta)
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/glinet-comet-kvm-pro/webui.webp" alt="system settings" />
 </div>
 Once I logged into the web UI (my unit’s on **v1.6 beta**), it felt familiar in a good way—clean layout, quick to find things, and no mystery toggles. The basics are where I always start: under **Video** I can pick a quality level, switch between **WebRTC** or **Direct** transport, and set the remote machine’s resolution. 
@@ -113,7 +113,7 @@ Once I logged into the web UI (my unit’s on **v1.6 beta**), it felt familiar i
 **Network** is equally straightforward: choose **DHCP** or a **static IP** for Ethernet, and quickly enable/disable **Wi-Fi** or jump to another network using the settings provided.
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/glinet-comet-kvm-pro/system-settings.webp" alt="system settings" />
   <img src="/static/images/2025/glinet-comet-kvm-pro/speaker-settings.webp" alt="speaker-settings" />
   <img src="/static/images/2025/glinet-comet-kvm-pro/toolbox.webp" alt="toolbox" />
@@ -137,7 +137,7 @@ As someone who values flexibility, I’m happy they didn’t lock this behind a 
 ----------
 ## Size & mounting
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/glinet-comet-kvm-pro/size.webp" alt="system settings" />
 </div>
 It’s **about twice the size of the JetKVM** but **slightly smaller than GL.iNet’s Slate 7 travel router**. I’m putting together a **10" rack-mount** for it and will share the 3D print files soon.

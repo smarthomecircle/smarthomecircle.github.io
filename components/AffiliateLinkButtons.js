@@ -2,7 +2,7 @@
  * Reusable affiliate link buttons. Renders a row of styled buttons for links [{ label, url }].
  * Returns null when links is empty or not provided.
  */
-export default function AffiliateLinkButtons({ links = [], className = '' }) {
+export default function AffiliateLinkButtons({ links = [] }) {
   const list = Array.isArray(links) ? links : []
 
   if (list.length === 0) {
@@ -10,7 +10,7 @@ export default function AffiliateLinkButtons({ links = [], className = '' }) {
   }
 
   return (
-    <div className={`flex flex-wrap gap-1.5 ${className}`.trim()}>
+    <div className="flex flex-wrap gap-1.5">
       {list.map((link, index) => (
         <a
           key={index}

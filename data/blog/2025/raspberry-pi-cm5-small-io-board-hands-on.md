@@ -24,14 +24,14 @@ suggestedArticles:
 <TOCInline toc={props.toc} asDisclosure />  
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/seeed-studio-cm5-minima/board-view.webp" alt="trboard-view" />
 </div>
 
 
 If you’re playing with the Raspberry Pi Compute Module 5 (CM5), you know the official dev board is huge. For a couple of my projects I wanted something tiny—something I could tuck behind a display or drop into a small enclosure. That’s where this small [**CM5 Minima IO board from Seeed Studio**](https://www.seeedstudio.com/CM5-MINIMA-p-6485.html?sensecap_affiliate=zkW5xlz&referring_service=link) came into my workflow. It literally fits in my palm, but it still exposes the bits I care about.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/seeed-studio-cm5-minima/in-hand.webp" alt="trboard-view" />
 </div>
 
@@ -57,7 +57,7 @@ Despite the footprint, it’s a surprisingly complete breakout:
 - **CM5 connectors** and a **boot/flash switch** (run OS vs. eMMC flashing).
 - Open-source hardware design (co-created with a [GitHub contributor](https://github.com/piecol)), which I always appreciate when I’m building around a board.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/seeed-studio-cm5-minima/minima-label-1.webp" alt="minima-label-1" />
   <img src="/static/images/2025/seeed-studio-cm5-minima/minima-label-2.webp" alt="minima-label-1" />
 </div>
@@ -67,7 +67,7 @@ Despite the footprint, it’s a surprisingly complete breakout:
 
 I started by mounting a small fan on my CM5, dropped the module onto the board, and plugged the fan into the dedicated header. Then I slid in a 2242 NVMe just to see how storage would behave on a single PCIe lane.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/seeed-studio-cm5-minima/full-1.webp" alt="minima-label-1" />
   <img src="/static/images/2025/seeed-studio-cm5-minima/full-2.webp" alt="minima-label-1" />
 </div>
@@ -87,7 +87,7 @@ If you’re new to this, the switch is the key—wrong position and the eMMC won
 Here is a detailed guide to [flash an OS on the eMMC storage on the Raspberry Pi Compute Module 5](https://smarthomecircle.com/how-to-install-os-on-raspberry-pi-compute-module-5-emmc-storage).
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/seeed-studio-cm5-minima/switch.webp" alt="minima-switch" />
 </div>
 ---
@@ -96,14 +96,14 @@ Here is a detailed guide to [flash an OS on the eMMC storage on the Raspberry Pi
 
 **NVMe:** After confirming the drive was detected, I bumped the PCIe link to **Gen 3** in the config. With a single lane, I saw roughly **~864 MB/s**, which is right in line with PCIe Gen3 x1 expectations for a decent 2230/2240 drive.
 
-<div class="image-flex">
+<div className="image-flex">
 
   <img src="/static/images/2025/seeed-studio-cm5-minima/hdparm.webp" alt="hdparm" />
 </div>
 
 **Ethernet:** The gigabit port behaved as it should—around **~940 Mb/s** in my tests.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/seeed-studio-cm5-minima/iperf3.webp" alt="iperf3" />
 </div>
 
@@ -116,7 +116,7 @@ Here is a detailed guide to [flash an OS on the eMMC storage on the Raspberry Pi
 
 The **power** port negotiated fine with my PD bricks. The **data** port enumerated my USB 3.x device as **Gen 2 capable** (10 Gb/s class), which is what I expect here. For my use, plugging in a fast external SSD for quick copies felt snappy.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/seeed-studio-cm5-minima/usb-c.webp" alt="usb-c" />
 </div>
 ---
@@ -131,7 +131,7 @@ Curiosity got the better of me, so I tried a **CM4** on this board. A couple of 
 
 Bottom line: you can make it talk over Ethernet (and even get HDMI out), but this board isn’t officially aimed at CM4, and the missing NVMe/USB makes it a limited fit unless you’re happy running **headless over Ethernet** or with basic HDMI output only.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/seeed-studio-cm5-minima/cm4-mount.webp" alt="usb-c" />
 </div>
 ---
@@ -154,7 +154,7 @@ Bottom line: you can make it talk over Ethernet (and even get HDMI out), but thi
 
 Anywhere I need a **compact CM5 brain** with real storage and 4K60 HDMI: kiosk displays, edge nodes with local caching, instrument controllers in tight spaces—this board slides in without forcing a giant carrier.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/seeed-studio-cm5-minima/fits-in-hand.webp" alt="fits-in-hand" />
 </div>
 

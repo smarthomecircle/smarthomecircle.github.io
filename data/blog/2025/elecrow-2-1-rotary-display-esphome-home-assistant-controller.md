@@ -29,7 +29,7 @@ Ever had that moment at night where you want to tweak the lights or turn the vol
 
 That’s exactly where this little gadget fits into my life: the **Elecrow CrowPanel 2.1" ESP32 rotary display** – a 2.1" circular IPS touch screen (480×480) with a clickable rotary knob, powered by an ESP32-S3 with 16 MB flash and 8 MB PSRAM.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/elecrow-rotatory-display/elecrow-rotatory-display.webp" alt="display-with-stand" />
 </div>
 
@@ -64,7 +64,7 @@ That’s exactly where this little gadget fits into my life: the **Elecrow CrowP
 | Enclosure             | Aluminum alloy + plastic + acrylic                                      |
 | Net weight            | 80 g                                                                    |
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/elecrow-rotatory-display/display-with-stand.webp" alt="elecrow-rotatory-display" />
 </div>
 
@@ -73,7 +73,7 @@ That’s exactly where this little gadget fits into my life: the **Elecrow CrowP
 
 ## 3D Print Files
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/elecrow-rotatory-display/table-stand.webp" alt="wall-mount" />
   <img src="/static/images/2025/elecrow-rotatory-display/wall-mount.webp" alt="wall-mount" />
 </div>

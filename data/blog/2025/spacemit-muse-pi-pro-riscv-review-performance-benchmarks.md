@@ -30,6 +30,7 @@ includeAsSBC:
   title: "Muse Pi Pro"
   price: "$ 138+"
   url:
+  comparable: True
   specifications:
     SoC: SpacemiT M1 RISC-V SoC (similar to K1)
     CPU:
@@ -57,7 +58,7 @@ includeAsSBC:
     NVMe:
       Onboard: Yes
       Number Of Connectors: 1
-      Connectivity: PCIe Gen 2 x 2
+      Connectivity: PCIe Gen2 x 2
       Size: 2230
     Network:
       Ethernet: 1 × Gigabit Ethernet
@@ -96,7 +97,7 @@ In this article, I want to walk you through **my actual hands-on experience** us
 
 I’ll focus on how it feels to use, what works well, where it falls short, and whether I’d use it day-to-day.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/muse-pi-pro/muse-pi-pro-view.webp" alt="muse-pi-pro" />
   <img src="/static/images/2025/muse-pi-pro/muse-pi-pro-view-1.webp" alt="muse-pi-pro" />
 </div>
@@ -111,7 +112,7 @@ The Muse Pi Pro isn’t just a bare board thrown together; it’s a fairly featu
 
 <SpecificationsDisplay/>
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/muse-pi-pro/muse-pi-pro-m1.webp" alt="muse-pi=pro" />
 </div>
 
@@ -140,7 +141,7 @@ In reality:
 - Launching applications like Chrome felt **painfully slow**.
 - Overall, it just didn’t feel optimized for this hardware yet.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/muse-pi-pro/debian.webp" alt="debian" />
 </div>
 
@@ -155,7 +156,7 @@ I flashed [**Bianbu Star 3.0 (beta)**](https://archive.spacemit.com/image/k1/ver
 - The desktop environment felt more polished.
 - Apps opened in a reasonable amount of time.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/muse-pi-pro/bianbu-star.webp" alt="vkmark" />
 </div>
 
@@ -209,7 +210,7 @@ The result:
 
 This actually surprised me in a good way. Seeing **both OpenGL and Vulkan** working on a RISC-V SBC is a sign that the software ecosystem is moving forward.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/muse-pi-pro/vkmark.webp" alt="vkmark" />
   <img src="/static/images/2025/muse-pi-pro/glmark.webp" alt="glmark" />
 </div>
@@ -332,7 +333,7 @@ I checked the NVMe performance on a 2230 SSD:
 
 That’s consistent with **PCIe Gen 2 with 2 lane** speeds.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/muse-pi-pro/muse-pi-pro-nvme-view.webp" alt="glmark" />
 </div>
 
@@ -374,7 +375,7 @@ I use the [Titanium Flashing tool](https://developer.spacemit.com/documentation?
 The UEFI firmware is based on **EDK2**.
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2025/muse-pi-pro/uefi-1.webp" alt="uefi" />
   <img src="/static/images/2025/muse-pi-pro/uefi-2.webp" alt="uefi" />
   <img src="/static/images/2025/muse-pi-pro/uefi-3.webp" alt="uefi" />

@@ -2,7 +2,13 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  content: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js', './lib/**/*.js'],
+  content: [
+    './pages/**/*.{js,jsx}',
+    './components/**/*.{js,jsx}',
+    './layouts/**/*.{js,jsx}',
+    './lib/**/*.{js,jsx}',
+    './data/**/*.{md,mdx}',
+  ],
   darkMode: 'class',
   theme: {
     extend: {
@@ -42,6 +48,11 @@ module.exports = {
         success: colors.emerald,
         warning: colors.amber,
         gray: colors.slate, // More modern gray palette
+      },
+      boxShadow: {
+        // Right-edge shadow for sticky table columns so the boundary stays
+        // visible when other columns scroll underneath on mobile.
+        'sticky-col': '4px 0 6px -2px rgb(15 23 42 / 0.08)',
       },
       typography: (theme) => ({
         DEFAULT: {
@@ -204,7 +215,7 @@ module.exports = {
             
             code: {
               color: theme('colors.primary.300'),
-              backgroundColor: theme('colors.primary.900/20'),
+              backgroundColor: 'rgb(19 78 74 / 0.2)',
             },
             
             pre: {
@@ -214,7 +225,7 @@ module.exports = {
             
             blockquote: {
               borderLeftColor: theme('colors.primary.500'),
-              backgroundColor: theme('colors.primary.900/10'),
+              backgroundColor: 'rgb(19 78 74 / 0.1)',
               color: theme('colors.gray.300'),
             },
             

@@ -25,6 +25,7 @@ includeAsSBC:
   title: "Radxa X4L"
   price: $ 135+
   url: "https://palmshell.io/slim-x4l"
+  comparable: True
   specifications:
     SoC: Intel N100 (Alder Lake-N)
     CPU:
@@ -58,7 +59,7 @@ includeAsSBC:
       Ethernet: 1 × 2.5 Gigabit
       Wi-Fi: Wi-Fi 6
       Bluetooth: Bluetooth 5.2
-    PoE: Yes (PoE HAT required)
+    PoE: No
     USB: |
       3 × USB-A 3.0
       1 × USB-A 2.0

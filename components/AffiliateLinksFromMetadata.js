@@ -1,4 +1,4 @@
-import AffiliateLinkButtons from "./AffiliateLinkButtons"
+import AffiliateLinkButtons from './AffiliateLinkButtons'
 
 export default function AffiliateLinksFromMetadata({ affiliateLinks }) {
   // Handle both old format (array) and new format (object with title and links)

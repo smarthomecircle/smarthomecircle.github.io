@@ -26,6 +26,7 @@ includeAsSBC:
   title: "Radxa X4"
   price: $109+
   url: "https://radxa.com/products/x/x4"
+  comparable: True
   specifications:
     SoC: Intel N100 (Alder Lake-N)
     CPU:
@@ -59,7 +60,7 @@ includeAsSBC:
       Ethernet: 1 × 2.5 Gigabit Ethernet
       Wi-Fi: Wi-Fi 6
       Bluetooth: Bluetooth 5.2
-    PoE: No  
+    PoE: Yes (PoE HAT required)  
     USB: |
       3 × USB-A 3.0
       1 × USB-A 2.0
@@ -84,6 +85,9 @@ includeAsSBC:
 ---
 <TOCInline toc={props.toc} asDisclosure />  
 
+# Technical Specification
+
+<SpecificationsDisplay />
 
 In the world of single-board computers (SBCs), there’s an intriguing new player i.e the [Radxa X4](https://s.click.aliexpress.com/e/_DkuskjB) —an Intel-based board that’s almost the same size as a Raspberry Pi. Powered by the Intel N100 processor, this board packs an impressive punch, reaching speeds up to 3.4 GHz. 
 

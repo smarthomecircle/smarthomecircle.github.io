@@ -36,7 +36,7 @@ affiliateLinks:
 includeAsSBC:
   title: "Radxa Cubie A7Z"
   price: "$19"
-  comparable: False
+  comparable: True
   specifications:
     SoC: Allwinner A733
     CPU:
@@ -53,7 +53,7 @@ includeAsSBC:
     AI Capabilities: |
       NPU: 3 TOPS
     RAM:
-      Size: 1GB / 2GB / 4GB / 8GB / 16GB (options)
+      Size: 1GB / 2GB / 4GB / 8GB / 16GB
       Type: LPDDR4X
       Speed: Not specified
       Bus: Not specified
@@ -92,7 +92,7 @@ includeAsSBC:
 
 If you like tiny single-board computers, the **Radxa Cubie A7Z** is one of those boards that makes you do a double‑take. It’s basically **Pi Zero–sized**, but it packs a lot more I/O and compute than you wouldn't expect from something this small.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/radxa-cubie-a7z/cubie-a7z-front.jpg" alt="front" />
   <img src="/static/images/2026/radxa-cubie-a7z/cubie-a7z-back.jpg" alt="back" />
 </div>
@@ -114,7 +114,7 @@ I connected a **Raspberry Pi NVMe hat** to the FPC connector to access PCIe capa
 With a **WD NVMe**, I measured about **654 MB/s read**. That’s absolutely usable, but it was still **lower than my Raspberry Pi 5**, even though I’m using **PCIe Gen3 x1** here.
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/radxa-cubie-a7z/nvme-hat.jpg" alt="nvme" />
 </div>
     
@@ -142,7 +142,7 @@ the temperatures with that setup and desktop environment running:
 
 For a tiny passively cooled board, that felt **pretty acceptable**, and it gave me enough confidence to move on to the rest of my tests.
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2026/radxa-cubie-a7z/heatsink.jpg" alt="heatsink" />
 </div>
     

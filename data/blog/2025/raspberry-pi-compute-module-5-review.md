@@ -26,7 +26,7 @@ suggestedArticles:
 <TOCInline toc={props.toc} asDisclosure />  
 
 
-<div class="image-flex">
+<div className="image-flex">
   <img src="/static/images/2024/raspberrypi-cm5/cm5-front.webp" alt="CM5 Front View" />
   <img src="/static/images/2024/raspberrypi-cm5/cm5-back.webp" alt="CM5 Back View" />
 </div>
