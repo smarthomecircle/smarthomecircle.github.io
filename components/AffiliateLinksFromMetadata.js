@@ -1,13 +1,22 @@
 import AffiliateLinkButtons from './AffiliateLinkButtons'
 
-import AffiliateLinkButtons from './AffiliateLinkButtons'
-
 export default function AffiliateLinksFromMetadata({ affiliateLinks }) {
-  // affiliateLinks format: { title?: string, links: [{ label, url }] }
-  const title = affiliateLinks?.title ?? null
-  const links = affiliateLinks?.links || []
+  // Handle both old format (array) and new format (object with title and links)
+  let title = null
+  let links = []
+  let image = null
 
-  if (links.length === 0) {
+  if (Array.isArray(affiliateLinks)) {
+    // Old format: array of links
+    links = affiliateLinks
+  } else if (affiliateLinks && typeof affiliateLinks === 'object') {
+    // New format: object with title and links
+    title = affiliateLinks.title
+    links = affiliateLinks.links || []
+    image = affiliateLinks.image
+  }
+
+  if (!links || links.length === 0) {
     return null
   }
 
@@ -56,15 +65,11 @@ export default function AffiliateLinksFromMetadata({ affiliateLinks }) {
         </div>
       ) : title ? (
         <div className="flex flex-col sm:flex-row sm:items-center gap-3">
-          <p className="text-sm font-medium text-gray-900 dark:text-gray-100">
-            {title}:
-          </p>
+          <p className="m-0 text-sm font-bold text-gray-900 dark:text-gray-100">{title}:</p>
           <AffiliateLinkButtons links={links} />
         </div>
       ) : (
-        <div className="py-1.5">
-          <AffiliateLinkButtons links={links} />
-        </div>
+        <AffiliateLinkButtons links={links} className="py-1.5" />
       )}
     </div>
   )
