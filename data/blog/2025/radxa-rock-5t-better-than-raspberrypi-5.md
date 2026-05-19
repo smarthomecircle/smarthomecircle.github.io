@@ -5,7 +5,7 @@ categories: ''
 tags: [SBC, radxa, perfromance, rockchip, benchmarks]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2025-04-27'
+date: '2026-05-27'
 draft: false
 autoAds: true
 summary: ''
@@ -24,6 +24,7 @@ affiliateLinks:
 includeAsSBC:
   title: "Radxa Rock 5T"
   price: "$ 108+"
+  comparable: True
   url:
   specifications:
     SoC: Rockchip RK3588
@@ -116,8 +117,6 @@ One of the first things I tried was multi-display output, because this board is 
 - **MIPI DSI connector** for another display
 
 In my testing, I connected **three displays at the same time**, and they worked **flawlessly**. It behaved like a proper multi-monitor system.
-
-> 📸 **Photo suggestion:** A photo of the board connected to multiple monitors (even two is fine), showing the setup powered on.
 
 ---
 
