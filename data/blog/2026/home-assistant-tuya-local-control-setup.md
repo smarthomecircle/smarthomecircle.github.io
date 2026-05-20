@@ -5,7 +5,7 @@ categories: ''
 tags: [Tuya, Home Assistant, Local, Tuya Local, Smart plug, Energy Monitor]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2026-05-14'
+date: '2026-05-21'
 draft: false
 autoAds: true
 summary: 'Learn how to set up Tuya Local in Home Assistant for fast, reliable local control. Discover how to extract your local key and track energy usage without any cloud delays.'
