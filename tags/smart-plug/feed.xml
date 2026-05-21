@@ -7,10 +7,20 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 03 Aug 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 21 May 2026 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/smart-plug/feed.xml" rel="self" type="application/rss+xml"/>
       <atom:link href="https://smarthomecircle.com/tags/smart-plug" rel="alternate" type="text/html"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/home-assistant-tuya-local-control-setup</guid>
+    <title>How to Set Up Tuya Local in Home Assistant (Complete Guide)</title>
+    <link>https://smarthomecircle.com/home-assistant-tuya-local-control-setup</link>
+    <description>Learn how to set up Tuya Local in Home Assistant for fast, reliable local control. Discover how to extract your local key and track energy usage without any cloud delays.</description>
+    <pubDate>Thu, 21 May 2026 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>Tuya</category><category>Home Assistant</category><category>Local</category><category>Tuya Local</category><category>Smart plug</category><category>Energy Monitor</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/add-matter-devices-to-home-assistant</guid>
     <title>How I Added a Matter Device to Home Assistant - Step By Step Guide</title>
