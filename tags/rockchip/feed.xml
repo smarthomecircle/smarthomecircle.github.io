@@ -1,0 +1,25 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Smart Home Circle</title>
+      <link>https://smarthomecircle.com</link>
+      <description>A comprehensive resource covering Smart Home Tech, detailed Single Board Computers (SBC) reviews, mini PC, Home Automation, HomeLab upgrades, and Home Assistant guides.</description>
+      <language>en-us</language>
+      <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Sat, 23 May 2026 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://smarthomecircle.com/tags/rockchip/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://smarthomecircle.com/tags/rockchip" rel="alternate" type="text/html"/>
+      
+  <item>
+    <guid>https://smarthomecircle.com/radxa-rock-5t-better-than-raspberrypi-5</guid>
+    <title>Radxa Rock 5T: Pi-Sized Power With PCIe, NVMe, USB 3.1 Gen2, Thermals &amp; Real-World Benchmarks</title>
+    <link>https://smarthomecircle.com/radxa-rock-5t-better-than-raspberrypi-5</link>
+    <description>Discover real-world benchmarks, dual NVMe testing, and blazing-fast Home Assistant AI performance that easily outshines the Raspberry Pi 5</description>
+    <pubDate>Sat, 23 May 2026 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>SBC</category><category>radxa</category><category>perfromance</category><category>rockchip</category><category>benchmarks</category>
+  </item>
+
+    </channel>
+  </rss>
