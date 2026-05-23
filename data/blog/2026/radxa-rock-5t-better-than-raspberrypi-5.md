@@ -5,16 +5,16 @@ categories: ''
 tags: [SBC, radxa, perfromance, rockchip, benchmarks]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2026-05-27'
+date: '2026-05-23'
 draft: false
 autoAds: true
-summary: ''
-imageUrl: /static/images/2025/rock-5t/cover.png
+summary: 'Discover real-world benchmarks, dual NVMe testing, and blazing-fast Home Assistant AI performance that easily outshines the Raspberry Pi 5'
+imageUrl: /static/images/2026/rock-5t/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/EO1mQR8f_Kw"
 affiliateLinks:
-  title: Buy Radxa Dragon Q6A
+  title: Buy Radxa Rock 5T
   links:
     - label: "AliExpress"
       url: "https://s.click.aliexpress.com/e/_c40YIHzD"
@@ -90,7 +90,6 @@ includeAsSBC:
 
 ---
 <TOCInline toc={props.toc} asDisclosure />  
-"Radxa Rock 5T (RK3588) — My Hands-On Experience"
 
 I’ve been spending time with the **Radxa Rock 5T**, and it’s the kind of single-board computer that immediately feels like it wants to do *a lot* more than the usual SBC tasks. At the heart of it is the **Rockchip RK3588**, an octa‑core SoC with:
 
@@ -100,10 +99,21 @@ I’ve been spending time with the **Radxa Rock 5T**, and it’s the kind of sin
 
 That NPU part is especially interesting because it opens the door to running certain AI workloads locally—more on that later when I talk about my voice assistant setup.
 
-> 📸 **Photo suggestion:** A clean top-down shot of the Rock 5T board with key ports visible (HDMI, Ethernet, USB, M.2 slots).  
-> *(Place it right after this intro so readers immediately see the board.)*
+
+<div className="image-flex">
+  <img src="/static/images/2026/rock-5t/front.webp" alt="rock 5t front" />
+  <img src="/static/images/2026/rock-5t/back.webp" alt="rock 5t back" />
+</div>
+
+<AffiliateLinksFromMetadata />
 
 ---
+
+## Technical Specification
+
+<SpecificationsDisplay/>
+
+--- 
 
 ## Displays: I Ran Three at Once
 
@@ -140,7 +150,10 @@ For connectivity, I got a lot of flexibility:
 
 The dual 2.5 GbE is especially useful if you’re thinking NAS + services, routing between networks, or even just having one port for LAN and another for a dedicated storage network.
 
-> 📸 **Photo suggestion:** Close-up shot of the two Ethernet ports and the wireless module.
+<div className="image-flex">
+  <img src="/static/images/2026/rock-5t/ports.webp" alt="rock 5t front" />
+  <img src="/static/images/2026/rock-5t/wifi.webp" alt="rock 5t back" />
+</div>
 
 ---
 
@@ -156,7 +169,9 @@ One port that immediately caught my attention is the **HDMI input**. This lets t
 When I connected the HDMI input to my laptop’s HDMI output, something really interesting happened:  
 my laptop **detected the board as an external display**, and I could **mirror or extend** my MacBook display through that connection.
 
-> 📸 **Photo suggestion:** A photo showing HDMI cable connected from a laptop to the Rock 5T’s HDMI input, with the laptop display settings visible (mirroring/extending).
+<div className="image-flex">
+  <img src="/static/images/2026/rock-5t/input-hdmi.webp" alt="rock 5t back" />
+</div>
 
 ---
 
@@ -174,7 +189,9 @@ Each slot uses **PCI Express 3.0** with **2 lanes (x2)** per connector
 
 Naturally, I had to test this because dual NVMe on an SBC is *exactly* the kind of thing that makes it feel like a mini server.
 
-> 📸 **Photo suggestion:** A back-side photo showing both NVMe drives installed (or at least the two M.2 slots clearly visible).
+<div className="image-flex">
+  <img src="/static/images/2026/rock-5t/nvme.webp" alt="rock 5t nvme" />
+</div>
 
 ---
 
@@ -195,6 +212,12 @@ I also noticed a couple of practical additions:
 Power is delivered through a **5525 DC barrel jack**, requiring:
 - **12V**
 - **minimum 3A**
+
+<div className="image-flex">
+  <img src="/static/images/2026/rock-5t/ports2.webp" alt="rock 5t nvme" />
+  <img src="/static/images/2026/rock-5t/sim.webp" alt="rock 5t nvme" />
+  <img src="/static/images/2026/rock-5t/b-key.webp" alt="rock 5t nvme" />
+</div>
 
 ---
 
@@ -293,11 +316,7 @@ Important detail: these measurements were taken **with both NVMe drives connecte
 
 ## PCIe Link Check
 
-To confirm the M.2 behavior, I ran:
-
-- `lspci`
-
-And verified that each connector provides **PCIe 3.0** with **2 lanes**—exactly what I expected based on the board layout.
+To confirm the M.2 behavior, I ran `lspci` And verified that each connector provides **PCIe 3.0** with **2 lanes**—exactly what I expected based on the board layout.
 
 ## NVMe Throughput
 
@@ -342,13 +361,16 @@ The difference that stood out immediately was Whisper speed.
 
 Using the **small-int8** model:
 - On this board: **speech-to-text in ~4 seconds**
-- On Raspberry Pi 5: **nearly ~14 seconds**
+- On Raspberry Pi 5: **nearly 6 seconds**
 
 And this isn’t just a benchmark for me—I actually use this model day-to-day because it gives me the right result about **95% of the time**.
 
 So in practical terms, it made my local voice assistant feel dramatically more responsive.
 
-> 📸 **Photo suggestion:** Screenshot of Docker containers running (Home Assistant + Whisper + Piper), or a terminal screenshot showing container list and resource usage.
+<div className="image-flex">
+  <img src="/static/images/2026/rock-5t/ha.webp" alt="home assistant" />
+</div>
+
 
 ---
 
