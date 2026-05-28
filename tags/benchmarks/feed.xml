@@ -7,10 +7,20 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Sat, 23 May 2026 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 28 May 2026 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/benchmarks/feed.xml" rel="self" type="application/rss+xml"/>
       <atom:link href="https://smarthomecircle.com/tags/benchmarks" rel="alternate" type="text/html"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/how-frigate-performs-on-rockchip-radxa-rock-5t</guid>
+    <title>How to Run Frigate NVR on Radxa Rock 5T Using the Built-In NPU</title>
+    <link>https://smarthomecircle.com/how-frigate-performs-on-rockchip-radxa-rock-5t</link>
+    <description>Learn how to run Frigate NVR on the Radxa Rock 5T. Leverage the built-in RK3588 NPU for low-power, subscription-free local AI object detection with multiple IP video streams and see how it performs</description>
+    <pubDate>Thu, 28 May 2026 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>SBC</category><category>radxa</category><category>perfromance</category><category>rockchip</category><category>frigate</category><category>docker</category><category>AI</category><category>benchmarks</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/radxa-rock-5t-better-than-raspberrypi-5</guid>
     <title>Radxa Rock 5T: Pi-Sized Power With PCIe, NVMe, USB 3.1 Gen2, Thermals &amp; Real-World Benchmarks</title>
