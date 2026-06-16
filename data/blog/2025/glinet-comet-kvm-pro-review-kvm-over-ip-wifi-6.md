@@ -2,7 +2,7 @@
 title: 'GL.iNet Comet KVM Pro Review: Wi-Fi 6 KVM-over-IP with 4K HDMI Out Passthrough'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [GliNet, KVM OVER IP, Remote Access, 4k, Audio, hdmi passthrough]
+tags: [GliNet, KVM OVER IP, Remote Access, 4K, Audio, HDMI passthrough]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2025-09-04'

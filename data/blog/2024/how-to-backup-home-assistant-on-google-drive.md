@@ -2,7 +2,7 @@
 title: 'How To Backup Home Assistant On Google Drive'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [Home Assistant, Google Drive, Back up]
+tags: [Home Assistant, Google Drive, Backup]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2024-02-08'

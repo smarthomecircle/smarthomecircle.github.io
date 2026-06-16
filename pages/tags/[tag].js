@@ -4,6 +4,7 @@ import ListLayout from '@/layouts/ListLayout'
 import generateRss from '@/lib/generate-rss'
 import { getAllFilesFrontMatter, getFileBySlug } from '@/lib/mdx'
 import { getAllTags } from '@/lib/tags'
+import formatTagText from '@/lib/utils/formatTagText'
 import kebabCase from '@/lib/utils/kebabCase'
 import fs from 'fs'
 import path from 'path'
@@ -54,15 +55,13 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Tag({ posts, authorDetails, tag }) {
-  // Human-friendly title: "Raspberry pi" from "raspberry-pi"
-  // Capitalize first letter and convert space to dash
+  const matchingTagFromPost =
+    posts
+      ?.flatMap((post) => post.tags || [])
+      .find((postTag) => kebabCase(postTag) === tag) || tag?.split('-').join(' ')
+
   const humanTitle =
-    tag && tag.length
-      ? tag
-          .split('-')
-          .join(' ')
-          .replace(/^./, (c) => c.toUpperCase())
-      : 'Tag'
+    matchingTagFromPost && matchingTagFromPost.length ? formatTagText(matchingTagFromPost) : 'Tag'
 
   return (
     <>
