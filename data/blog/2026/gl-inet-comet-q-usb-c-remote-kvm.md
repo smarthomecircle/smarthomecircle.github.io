@@ -9,10 +9,10 @@ date: '2026-06-18'
 draft: false
 autoAds: true
 summary: 'Control any device, including iPads and phones, with the GL.iNet Comet Q. This compact USB-C remote KVM offers wireless, plug-and-play access for your home lab setup.'
-imageUrl: /static/images/2026/glinet-comet-q/cover.png
+imageUrl: /static/images/2026/glinet-comet-q/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/EO1mQR8f_Kw"
+youtubeLink: "https://www.youtube.com/embed/CSdrbLqHRuw"
 # affiliateLinks:
 #   title: Buy Radxa Rock 5T
 #   links:
@@ -27,7 +27,11 @@ youtubeLink: "https://www.youtube.com/embed/EO1mQR8f_Kw"
 
 If you are a home lab enthusiast, a developer, or someone who manages multiple devices, you know the struggle of juggling monitors, keyboards, and mice. GL.iNet has been making waves with their KVM-over-IP solutions, and their latest, the **Comet Q (GL-RMQ1)**, changes the game entirely.
 
-## What is the Comet Q?
+<div className="image-flex">
+  <img src="/static/images/2026/glinet-comet-q/view.webp" alt="comet-q" />
+</div>
+
+## Introducing the Comet Q
 
 The Comet Q is an all-in-one USB-C Remote KVM that does what others can't: it doesn't just control servers or laptops—it controls mobile phones, tablets, and even iPads. It is a true "plug-and-play" device.
 
@@ -43,16 +47,19 @@ The Comet Q is an all-in-one USB-C Remote KVM that does what others can't: it do
     
 -   **Built-in Protection:** Comes with a soft protective rubber case to survive the accidental drops of daily use.
     
-
+<div className="image-flex">
+  <img src="/static/images/2026/glinet-comet-q/front.webp" alt="comet-q" />
+  <img src="/static/images/2026/glinet-comet-q/back.webp" alt="comet-q" />
+</div>
 ## Technical Specifications at a Glance
 
 For the tech-savvy, here is what’s packed under the hood:
 
 -   **Display:** 1.8-inch touchscreen for easy setup and status monitoring.
     
--   **Processor:** Quad-core ARM Cortex CPU.
+-   **Processor:** Dual-core ARM Cortex-A53.
     
--   **Memory:** 512 MB LPDDR4 RAM / 512 MB Flash storage.
+-   **Memory:** 512 MB LPDDR4 RAM / NAND 512 MB.
     
 -   **Connectivity:** Wi-Fi 6 (802.11 ax) support for both 2.4 GHz and 5 GHz frequencies.
     
@@ -84,3 +91,7 @@ Setting up the Comet Q is incredibly straightforward.
 The Comet Q is perfect for remote troubleshooting or managing headless devices. Whether you are an iOS developer testing apps on a real iPhone from your Windows desk, or a sysadmin managing a remote server, this device provides hardware-level access without the need for additional software installations.
 
 You can currently grab the Comet Q via its [Kickstarter campaign](https://www.gl-inet.com/products/gl-rmq1/) with early-bird pricing.
+
+<div className="image-flex">
+  <img src="/static/images/2026/glinet-comet-q/with-cover.webp" alt="comet-q" />
+</div>
