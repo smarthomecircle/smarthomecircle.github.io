@@ -7,10 +7,20 @@
       <language>en-us</language>
       <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
       <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
-      <lastBuildDate>Thu, 04 Sep 2025 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 18 Jun 2026 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://smarthomecircle.com/tags/remote-access/feed.xml" rel="self" type="application/rss+xml"/>
       <atom:link href="https://smarthomecircle.com/tags/remote-access" rel="alternate" type="text/html"/>
       
+  <item>
+    <guid>https://smarthomecircle.com/gl-inet-comet-q-usb-c-remote-kvm</guid>
+    <title>Control Any Device Anywhere: Meet the GL.iNet Comet Q KVM</title>
+    <link>https://smarthomecircle.com/gl-inet-comet-q-usb-c-remote-kvm</link>
+    <description>Control any device, including iPads and phones, with the GL.iNet Comet Q. This compact USB-C remote KVM offers wireless, plug-and-play access for your home lab setup.</description>
+    <pubDate>Thu, 18 Jun 2026 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>KVM</category><category>remote access</category><category>home lab</category><category>glinet</category>
+  </item>
+
   <item>
     <guid>https://smarthomecircle.com/glinet-comet-kvm-pro-review-kvm-over-ip-wifi-6</guid>
     <title>GL.iNet Comet KVM Pro Review: Wi-Fi 6 KVM-over-IP with 4K HDMI Out Passthrough</title>

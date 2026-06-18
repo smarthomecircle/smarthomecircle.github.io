@@ -1,0 +1,25 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Smart Home Circle</title>
+      <link>https://smarthomecircle.com</link>
+      <description>A comprehensive resource covering Smart Home Tech, detailed Single Board Computers (SBC) reviews, mini PC, Home Automation, HomeLab upgrades, and Home Assistant guides.</description>
+      <language>en-us</language>
+      <managingEditor>contactsmarthomecircle@gmail.com (Amrut Prabhu)</managingEditor>
+      <webMaster>contactsmarthomecircle@gmail.com (Amrut Prabhu)</webMaster>
+      <lastBuildDate>Thu, 18 Jun 2026 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://smarthomecircle.com/tags/home-lab/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://smarthomecircle.com/tags/home-lab" rel="alternate" type="text/html"/>
+      
+  <item>
+    <guid>https://smarthomecircle.com/gl-inet-comet-q-usb-c-remote-kvm</guid>
+    <title>Control Any Device Anywhere: Meet the GL.iNet Comet Q KVM</title>
+    <link>https://smarthomecircle.com/gl-inet-comet-q-usb-c-remote-kvm</link>
+    <description>Control any device, including iPads and phones, with the GL.iNet Comet Q. This compact USB-C remote KVM offers wireless, plug-and-play access for your home lab setup.</description>
+    <pubDate>Thu, 18 Jun 2026 00:00:00 GMT</pubDate>
+    <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
+    <category>KVM</category><category>remote access</category><category>home lab</category><category>glinet</category>
+  </item>
+
+    </channel>
+  </rss>
