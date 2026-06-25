@@ -140,16 +140,40 @@ wget https://repo.radeon.com/amdgpu-install/7.0.2/ubuntu/noble/amdgpu-install_7.
 sudo apt install ./amdgpu-install_7.0.2.70002-1_all.deb
 
 # install ROCm user-space + graphics, but NO DKMS
-sudo amdgpu-install -y --usecase=rocm
+sudo amdgpu-install -y --usecase=rocm --no-dkms
+
+sudo usermod -a -G render,video $USER
+
+sudo reboot now
 ```
-I then copied the required files as mentioned in this [reddit post]()
+
+I then copied the required files as mentioned in this [reddit post](https://www.reddit.com/r/linux4noobs/comments/1ly8rq6/comment/nb9uiye/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 ```
 1. Download the 6.4 rocblas from here: https://archlinux.org/packages/extra/x86_64/rocblas/
 2. Extract it 
 3. Copy all tensor files that contain gfx906 in rocblas-6.4.3-3-x86_64.pkg/opt/rocm/lib/rocblas/library to /opt/rocm/lib/rocblas/library
 4. sudo reboot
 ```
-_[source](https://www.reddit.com/r/linux4noobs/comments/1ly8rq6/comment/nb9uiye/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)_
+
+
+### AMD GPU Driver Doesn't Load at Boot
+
+If the native kernel driver is not auto-loading, but running `sudo modprobe amdgpu` on every restart does detect the GPU, then do the following. 
+
+
+1.  **Find and delete the blacklist file:**
+    
+    ```bash
+    grep -r "blacklist amdgpu" /etc/modprobe.d/
+    sudo rm /etc/modprobe.d/blacklist-amdgpu.conf  # Replace with the file found above
+    
+    ```
+    
+2.  **Rebuild the boot config and reboot:**
+    
+    ```bash
+    sudo update-initramfs -u -k all && sudo reboot
+    ```
 
 ## Ollama with AMD ROCm
 
