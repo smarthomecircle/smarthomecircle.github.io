@@ -34,7 +34,7 @@ export async function getStaticProps({ params }) {
   )
 
   // rss
-  if (filteredPosts.length > 0) {
+  if (process.env.NODE_ENV === 'production' && filteredPosts.length > 0) {
     const rss = generateRss(filteredPosts, {
       page: `tags/${tagParam}/feed.xml`,
       canonicalUrl: `${siteMetadata.siteUrl}/tags/${tagParam}`,

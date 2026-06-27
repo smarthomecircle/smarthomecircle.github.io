@@ -42,7 +42,7 @@ export async function getStaticProps({ params }) {
   const authorDetails = await Promise.all(authorPromise)
 
   // rss
-  if (allPosts.length > 0) {
+  if (process.env.NODE_ENV === 'production' && allPosts.length > 0) {
     const rss = generateRss(allPosts)
     fs.writeFileSync('./public/feed.xml', rss)
   }
