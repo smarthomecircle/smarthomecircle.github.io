@@ -98,7 +98,7 @@
     <description>Tune Armbian’s PWM fan curve using a Device Tree Overlay. This step-by-step guide shows how to locate the pwm-fan node, edit cooling-levels and temp-trips, compile a .dtbo overlay, enable it in armbianEnv.txt, and verify fan speed changes in Linux</description>
     <pubDate>Thu, 05 Mar 2026 00:00:00 GMT</pubDate>
     <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
-    <category>SBC</category><category>armbian</category><category>os</category><category>fan speed</category><category>overlay</category>
+    <category>SBC</category><category>armbian</category><category>OS</category><category>fan speed</category><category>overlay</category>
   </item>
 
   <item>
@@ -118,7 +118,7 @@
     <description>Create a complete SD card backup image (.img or .img.gz) on Linux using command line tools. Restore the image anytime to recover an OS and all installed software if the card gets corrupted.</description>
     <pubDate>Mon, 02 Mar 2026 00:00:00 GMT</pubDate>
     <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
-    <category>SBC</category><category>backup</category><category>os</category><category>sdcard</category><category>linux</category>
+    <category>SBC</category><category>backup</category><category>OS</category><category>SDCard</category><category>linux</category>
   </item>
 
   <item>
@@ -248,7 +248,7 @@
     <description>Comet KVM Pro packs Wi-Fi 6 KVM-over-IP, 4K30 HDMI Out, mic/audio, virtual media, Tailscale, plus cloud or self-hosted management for painless remote machine control.</description>
     <pubDate>Thu, 04 Sep 2025 00:00:00 GMT</pubDate>
     <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
-    <category>GliNet</category><category>KVM OVER IP</category><category>Remote Access</category><category>4k</category><category>Audio</category><category>hdmi passthrough</category>
+    <category>GliNet</category><category>KVM OVER IP</category><category>Remote Access</category><category>4K</category><category>Audio</category><category>HDMI passthrough</category>
   </item>
 
   <item>
@@ -288,7 +288,7 @@
     <description>The Comet KVM (GL-RM1) provides reliable, BIOS-level remote access over IP with HDMI and USB-C support—perfect for IT pros, home labs, and server maintenance, all without subscription fees.</description>
     <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
     <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
-    <category>GliNet</category><category>KVM OVER IP</category><category>Remote Access</category><category>4k</category><category>Mass Storage</category>
+    <category>GliNet</category><category>KVM OVER IP</category><category>Remote Access</category><category>4K</category><category>Mass Storage</category>
   </item>
 
   <item>
@@ -298,7 +298,7 @@
     <description>Build a DIY NAS using Raspberry Pi Compute Module 5, NVMe to SATA adapter, and OpenMediaVault with RAID 5.</description>
     <pubDate>Tue, 03 Jun 2025 00:00:00 GMT</pubDate>
     <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
-    <category>Raspberry Pi</category><category>CM5</category><category>Compute Module</category><category>Compute Module 5</category><category>open media vault</category><category>NAS</category><category>Raid 5</category>
+    <category>Raspberry Pi</category><category>CM5</category><category>Compute Module</category><category>Compute Module 5</category><category>OpenMediaVault</category><category>NAS</category><category>Raid 5</category>
   </item>
 
   <item>
@@ -328,7 +328,7 @@
     <description>Unleash Raspberry Pi Compute Module 5: compact, versatile mini-computer for high-speed storage, DIY NAS, and innovative projects.</description>
     <pubDate>Thu, 16 Jan 2025 00:00:00 GMT</pubDate>
     <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
-    <category>Raspberry Pi</category><category>NAS</category><category>Open Media Vault</category><category>Radxa</category><category>Raspberry Pi HAT</category>
+    <category>Raspberry Pi</category><category>NAS</category><category>OpenMediaVault</category><category>Radxa</category><category>Raspberry Pi HAT</category>
   </item>
 
   <item>
@@ -438,7 +438,7 @@
     <description>In this article, we will look at how we can take automated backups of Home Assistant on Google Drive.</description>
     <pubDate>Thu, 08 Feb 2024 00:00:00 GMT</pubDate>
     <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
-    <category>Home Assistant</category><category>Google Drive</category><category>Back up</category>
+    <category>Home Assistant</category><category>Google Drive</category><category>Backup</category>
   </item>
 
   <item>
@@ -448,7 +448,7 @@
     <description>In this article, we will create a NAS (network attached storage) usign a Raspberry Pi 5. This guide is also meant Raspberry Pi 4 and 3B</description>
     <pubDate>Thu, 25 Jan 2024 00:00:00 GMT</pubDate>
     <author>contactsmarthomecircle@gmail.com (Amrut Prabhu)</author>
-    <category>Raspberry Pi 5</category><category>NAS</category><category>Raspberry Pi</category><category>open media vault</category>
+    <category>Raspberry Pi 5</category><category>NAS</category><category>Raspberry Pi</category><category>OpenMediaVault</category>
   </item>
 
   <item>
