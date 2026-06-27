@@ -2,7 +2,7 @@
 title: "How to Tune CPU FAN Speed With PWM on Armbian (cooling-levels based on Temperature)"
 author: 'Amrut Prabhu'
 categories: ''
-tags: [SBC, armbian, os, fan speed, overlay]
+tags: [SBC, armbian, OS, fan speed, overlay]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2026-03-05'

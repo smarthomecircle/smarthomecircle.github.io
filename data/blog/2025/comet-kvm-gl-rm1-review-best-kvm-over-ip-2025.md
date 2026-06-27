@@ -2,7 +2,7 @@
 title: 'Comet KVM (GL‑RM1) Review: The Best Affordable KVM Over IP for Remote Access'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [GliNet, KVM OVER IP, Remote Access, 4k, Mass Storage ]
+tags: [GliNet, KVM OVER IP, Remote Access, 4K, Mass Storage ]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2025-06-19'

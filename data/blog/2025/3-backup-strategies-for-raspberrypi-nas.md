@@ -2,7 +2,7 @@
 title: '3 Backup Strategies for My Raspberry Pi 5 NAS with RAID 5'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [Raspberry Pi, NAS, Open Media Vault, Radxa, Raspberry Pi HAT]
+tags: [Raspberry Pi, NAS, OpenMediaVault, Radxa, Raspberry Pi HAT]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2025-01-16'

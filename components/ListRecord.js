@@ -2,6 +2,7 @@ import formatDate from '@/lib/utils/formatDate'
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import Image from '@/components/Image'
+import formatTagText from '@/lib/utils/formatTagText'
 
 export default function ListRecord({ frontMatter, authorDetails }) {
   const { slug, date, title, summary, tags, imageUrl, readingTime } = frontMatter
@@ -53,7 +54,7 @@ export default function ListRecord({ frontMatter, authorDetails }) {
                 key={tag}
                 className="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
               >
-                {tag}
+                {formatTagText(tag)}
               </span>
             ))}
           </div>
