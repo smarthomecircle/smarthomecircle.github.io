@@ -9,10 +9,10 @@ date: '2026-07-02'
 draft: false
 autoAds: true
 summary: 'Secure your travel data with the GL.iNet Slate 7 Pro, featuring Wi-Fi 7, touchscreen controls, and blazing VPN speeds.'
-imageUrl: /static/images/2026/glinet-comet-q/cover.webp
+imageUrl: /static/images/2026/slate-7-pro/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
-youtubeLink: "https://www.youtube.com/embed/CSdrbLqHRuw"
+youtubeLink: "https://www.youtube.com/embed/8SszZjyTBbQ"
 # affiliateLinks:
 #   title: Buy Radxa Rock 5T
 #   links:
@@ -31,7 +31,10 @@ That is exactly where a **portable VPN router** changes the game. GL.iNet has a 
 
 Let's dive into why this pocket-sized device might just be the ultimate travel companion for digital nomads and power users.
 
-`[INSERT PHOTO 1: High-quality hero shot of the GL.iNet Slate 7 Pro sitting on a travel desk next to a laptop and passport]`
+<div className="image-flex">
+  <img src="/static/images/2026/slate-7-pro/slate-7-pro.webp" alt="slate-7-pro" />
+</div>
+
 
 ## Next-Level Wi-Fi 7 and Multi-Link Operation
 
@@ -44,7 +47,9 @@ The standard Slate 7 is an excellent device, but the Pro model brings true **Wi-
 -   **Massive Speed Upgrade:** You can achieve up to **9.3 Gigabit Wi-Fi speeds** across all three frequencies, a massive leap from the 3.5 Gbps limit on the previous dual-band Slate 7.
     
 
-`[INSERT PHOTO 2: Close-up of the router's foldable antennas and premium exterior highlighting the Wi-Fi 7 design]`
+<div className="image-flex">
+  <img src="/static/images/2026/slate-7-pro/wifi-7.webp" alt="slate-7-pro" />
+</div>
 
 ## Blazing Fast VPN Throughput
 
@@ -70,7 +75,12 @@ The physical port layout on this hardware offers massive flexibility for remote 
 -   **Customizable Toggle Switch:** Features a physical side button you can customize to instantly trigger repeater mode, guest Wi-Fi, or other security features.
     
 
-`[INSERT PHOTO 3: Rear view of the router focusing on the dual 2.5G Ethernet ports, USB-C data port, and the customizable side toggle button]`
+
+<div className="image-flex">
+  <img src="/static/images/2026/slate-7-pro/ethernet.webp" alt="slate-7-pro" />
+  <img src="/static/images/2026/slate-7-pro/toggle-button.webp" alt="slate-7-pro" />
+</div>
+
 
 ## Interactive Touchscreen Display
 
@@ -87,7 +97,11 @@ The most prominent physical feature of the **GL-BE10000** is its vibrant **2.8-i
 -   **Metrics & Failover:** Prioritize your network failover settings and check system performance statistics.
     
 
-`[INSERT PHOTO 4: A clear macro shot of the 2.8-inch touchscreen interface displaying live bandwidth metrics or an active VPN status screen]`
+<div className="image-flex">
+  <img src="/static/images/2026/slate-7-pro/screen1.webp" alt="slate-7-pro" />
+  <img src="/static/images/2026/slate-7-pro/screen2.webp" alt="slate-7-pro" />
+</div>
+
 
 ## Power Consumption and Smart Efficiency
 
@@ -111,11 +125,10 @@ High performance generates heat, but this router manages thermals exceptionally 
 -   **Quiet Operation:** Setting the target threshold to **65°C** keeps the fan completely silent during desk use, offering reliable performance even in hot and humid climates.
     
 
-`[INSERT PHOTO 5: Top-down view of the router showing the subtle design details where active cooling ventilation takes place]`
-
 <div className="image-flex">
-  <img src="/static/images/2026/glinet-comet-q/with-cover.webp" alt="comet-q" />
+  <img src="/static/images/2026/slate-7-pro/view2.webp" alt="slate-7-pro" />
 </div>
+
 
 ## Deep Dive and Next Steps
 
@@ -123,8 +136,14 @@ The Slate 7 Pro packs incredible technical features, including advanced tools li
 
 I have put together an exhaustive **deep dive video walk-through** where I explore every option on that beautiful touchscreen and test the brand-new DPI features in real-time. Make sure to check out that video, which I have linked right here and down in the description below!
 
-If you found this overview helpful, consider subscribing to the channel and hitting that like button so I can continue creating high-quality networking gear breakdowns for you.
+<VideoEmbed 
+  videoId="8SszZjyTBbQ" 
+  title="GLiNet Slate 7 Pro Deep Dive" 
+  
+/>
+
+If you found this overview helpful, [consider subscribing to the channel](https://www.youtube.com/@smarthomecircle) so I can continue creating high-quality networking gear breakdowns for you.
 
 <div className="image-flex">
-  <img src="/static/images/2026/glinet-comet-q/with-cover.webp" alt="comet-q" />
+  <img src="/static/images/2026/slate-7-pro/both.webp" alt="slate-7-pro" />
 </div>

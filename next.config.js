@@ -86,6 +86,21 @@ module.exports = withBundleAnalyzer({
       use: ['@svgr/webpack'],
     })
 
+    if (dev) {
+      config.watchOptions = {
+        ...config.watchOptions,
+        ignored: [
+          '**/node_modules/**',
+          '**/.next/**',
+          '**/.git/**',
+          '**/out/**',
+          '**/public/feed.xml',
+          '**/public/sitemap.xml',
+          '**/public/tags/**',
+        ],
+      }
+    }
+
     if (!dev && !isServer) {
       // Replace React with Preact only in client production build.
       // Preact 10.22+ claims React 19 compatibility.
