@@ -2,7 +2,7 @@
 title: 'GL.iNet Slate 7 Pro Review: The Ultimate Wi-Fi 7 Travel Router'
 author: 'Amrut Prabhu'
 categories: ''
-tags: [KVM, remote access, home lab, glinet]
+tags: [Travel Router, VPN, home lab,  glinet]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
 date: '2026-07-02'
@@ -13,13 +13,13 @@ imageUrl: /static/images/2026/slate-7-pro/cover.webp
 actualUrl: 'auto-generated'
 customUrl: 'auto-generated'
 youtubeLink: "https://www.youtube.com/embed/8SszZjyTBbQ"
-# affiliateLinks:
-#   title: Buy Radxa Rock 5T
-#   links:
-#     - label: "AliExpress"
-#       url: "https://s.click.aliexpress.com/e/_c40YIHzD"
-#     - label: "Arace"
-#       url: "https://arace.tech/products/radxa-rock-5t"
+affiliateLinks:
+  title: Buy GLiNet Slate 7 Pro
+  links:
+    - label: "GLiNet"
+      url: "https://link.gl-inet.com/be10000-smarthomecircle-eustore-260519"
+    - label: "Amazon EU"
+      url: "https://amzn.to/3SGxSGf"
 
 
 ---
@@ -35,6 +35,7 @@ Let's dive into why this pocket-sized device might just be the ultimate travel c
   <img src="/static/images/2026/slate-7-pro/slate-7-pro.webp" alt="slate-7-pro" />
 </div>
 
+<AffiliateLinksFromMetadata />
 
 ## Next-Level Wi-Fi 7 and Multi-Link Operation
 
@@ -147,3 +148,5 @@ If you found this overview helpful, [consider subscribing to the channel](https:
 <div className="image-flex">
   <img src="/static/images/2026/slate-7-pro/both.webp" alt="slate-7-pro" />
 </div>
+
+<AffiliateLinksFromMetadata />
