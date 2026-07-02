@@ -1,15 +1,9 @@
 import { TagSEO } from '@/components/SEO'
-import siteMetadata from '@/data/siteMetadata'
 import ListLayout from '@/layouts/ListLayout'
-import generateRss from '@/lib/generate-rss'
 import { getAllFilesFrontMatter, getFileBySlug } from '@/lib/mdx'
 import { getAllTags } from '@/lib/tags'
 import formatTagText from '@/lib/utils/formatTagText'
 import kebabCase from '@/lib/utils/kebabCase'
-import fs from 'fs'
-import path from 'path'
-
-const root = process.cwd()
 
 export async function getStaticPaths() {
   const tags = await getAllTags('blog')
@@ -33,16 +27,6 @@ export async function getStaticProps({ params }) {
     (post) => post.draft !== true && post.tags.map((t) => kebabCase(t)).includes(tagParam)
   )
 
-  // rss
-  if (filteredPosts.length > 0) {
-    const rss = generateRss(filteredPosts, {
-      page: `tags/${tagParam}/feed.xml`,
-      canonicalUrl: `${siteMetadata.siteUrl}/tags/${tagParam}`,
-    })
-    const rssPath = path.join(root, 'public', 'tags', tagParam)
-    fs.mkdirSync(rssPath, { recursive: true })
-    fs.writeFileSync(path.join(rssPath, 'feed.xml'), rss)
-  }
   // TODO: Fix this
   const authorList = ['default']
   const authorPromise = authorList.map(async (author) => {

@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
-    "dev": "next dev --webpack",
-    "build": "next build --webpack && node ./scripts/generate-sitemap.js",
+    "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev --webpack",
+    "build": "next build --webpack && node ./scripts/generate-rss.js && node ./scripts/generate-sitemap.js",
     "export": "npm run build",
     "serve": "npx serve@latest out",
     "analyze": "cross-env ANALYZE=true next build --webpack",
