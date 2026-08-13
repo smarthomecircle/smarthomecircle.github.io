@@ -195,7 +195,7 @@ For anyone already using **Tailscale in a home lab**, this is a particularly use
 
 ## Radxa Linkr Price
 
-When I tested the Linkr, I was told by the Radxa team that the **pre-sale price would be around $45**. That would make it a very interesting option considering its compact size and feature set.
+When I tested the Linkr, I was told by the Radxa team that the **pre-sale price would be around $59**. That would make it a very interesting option considering its compact size and feature set.
 
 However, pricing can change once the product becomes widely available, so I recommend checking the latest Radxa Linkr pricing before purchasing.
 
