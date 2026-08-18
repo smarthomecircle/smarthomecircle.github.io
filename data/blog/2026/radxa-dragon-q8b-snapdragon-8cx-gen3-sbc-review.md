@@ -104,8 +104,8 @@ If you are looking for a powerhouse Single Board Computer (SBC) that rivals the 
 Powered by the Qualcomm Snapdragon 8cx Gen 3 CPU, this board is built for heavy multitasking, lightning-fast storage, and running local AI models right out of the box. Today, I'll walk you through its core specs, performance benchmarks, and local AI capabilities so you can see exactly what this beast can do.
 
 <div className="image-flex">
-  <img src="/static/images/2026/radxa-linkr/radxa-linkr-front-1.webp" alt="radxa-linkr-front" />
-  <img src="/static/images/2026/radxa-linkr/radxa-linkr-front.webp" alt="radxa-linkr-front-1" />
+  <img src="/static/images/2026/radxa-dragon-q8b/front-1.webp" alt="front-1" />
+  <img src="/static/images/2026/radxa-dragon-q8b/front.webp" alt="front" />
 </div>
 
 <AffiliateLinksFromMetadata />
@@ -114,7 +114,6 @@ Powered by the Qualcomm Snapdragon 8cx Gen 3 CPU, this board is built for heavy 
 
 <SpecificationsDisplay/>
 
-_(Photo Suggestion: A top-down graphic highlighting the different ports on the front, followed by a close-up of the dual M.2 NVMe slots on the back.)_
 
 ## Smooth Operating System & GPU Performance
 
@@ -223,11 +222,8 @@ radxa@radxa-dragon-q8b:~/vkmark$ vkmark --winsys wayland
 </Collapsible>
 
 <div className="image-flex">
-  <img src="/static/images/2026/radxa-linkr/radxa-linkr-front-1.webp" alt="radxa-linkr-front" />
-  <img src="/static/images/2026/radxa-linkr/radxa-linkr-front.webp" alt="radxa-linkr-front-1" />
+  <img src="/static/images/2026/radxa-dragon-q8b/chipset.webp" alt="chipset" />
 </div>
-
-_(Photo Suggestion: A screenshot showing the Ubuntu desktop running a 4K YouTube video flawlessly alongside a terminal window displaying the GLmark2 score.)_
 
 ## Blazing Fast CPU & Memory
 
@@ -337,8 +333,8 @@ AVG     Method: MCBLOCK Elapsed: 0.11664        MiB: 1024.00000 Copy: 8779.420 M
 </Collapsible>
 
 <div className="image-flex">
-  <img src="/static/images/2026/radxa-linkr/radxa-linkr-front-1.webp" alt="radxa-linkr-front" />
-  <img src="/static/images/2026/radxa-linkr/radxa-linkr-front.webp" alt="radxa-linkr-front-1" />
+  <img src="/static/images/2026/radxa-dragon-q8b/e-key.webp" alt="e-key" />
+  <img src="/static/images/2026/radxa-dragon-q8b/fpc.webp" alt="e-key" />
 </div>
 
 
@@ -352,10 +348,8 @@ Despite all this power, the board stays remarkably cool and energy-efficient.
     
 
 <div className="image-flex">
-  <img src="/static/images/2026/radxa-linkr/radxa-linkr-front-1.webp" alt="radxa-linkr-front" />
-  <img src="/static/images/2026/radxa-linkr/radxa-linkr-front.webp" alt="radxa-linkr-front-1" />
+  <img src="/static/images/2026/radxa-dragon-q8b/top-view.webp" alt="top-view" />
 </div>
-
 
 ## Storage & Transfer Speeds
 
@@ -368,7 +362,14 @@ Having dual M.2 NVMe slots is an absolute game-changer for homelab servers. Here
 -   **PCIe FPC Connector (via NVMe HAT):** ~721 MB/s.
     
 -   **USB 3.2 Gen 2 (via USB-to-NVMe adapter):** ~880 MB/s write speeds (copied 53GB in under 60 seconds).
-    
+
+
+<div className="image-flex">
+  <img src="/static/images/2026/radxa-dragon-q8b/back.webp" alt="chipset" />
+  <img src="/static/images/2026/radxa-dragon-q8b/port.webp" alt="chipset" />
+</div>
+
+ 
 
 ## Next-Level Local AI & Home Assistant
 
@@ -377,7 +378,7 @@ If you are running smart home setups or local LLMs, this SBC is a powerhouse.
 -   **Home Assistant (Docker):** Using the Whisper **small-int8** model for local voice assistance, speech-to-text converted in under 2 seconds.
 
 <p align="center">
-  <img src="/static/images/2026/radxa-dragon-q8b/mbw.webp" alt="mbw" />
+  <img src="/static/images/2026/radxa-dragon-q8b/whisper.webp" alt="whisper" />
 </p>
 
 
@@ -393,8 +394,8 @@ I am incredibly impressed by the overall performance of this board.
 If you are debating buying a 16GB Raspberry Pi 5 (which will cost you around €300), you should seriously consider the Radxa Dragon Q8B instead. For roughly €290 on Arace (or ~€380 on AliExpress) for the 16GB RAM variant, you get dual NVMe slots, dual 2.5GbE networking, and a built-in AI NPU that absolutely crushes edge computing tasks.
 
 <div className="image-flex">
-  <img src="/static/images/2026/radxa-linkr/radxa-linkr-front-1.webp" alt="radxa-linkr-front" />
-  <img src="/static/images/2026/radxa-linkr/radxa-linkr-front.webp" alt="radxa-linkr-front-1" />
+  <img src="/static/images/2026/radxa-dragon-q8b/stand-1.webp" alt="stand-1" />
+  <img src="/static/images/2026/radxa-dragon-q8b/front-2.webp" alt="front-2" />
 </div>
 
 <AffiliateLinksFromMetadata />
