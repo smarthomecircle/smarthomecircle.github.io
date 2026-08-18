@@ -24,67 +24,65 @@ includeAsSBC:
   comparable: True
   url: "https://radxa.com/products/dragon/q8b/"
   specifications:
-    SoC: Qualcomm QCS8550
+    SoC: Qualcomm SC 8280 XP
     CPU: 
       No. Of Cores: 8
       Cores: |
-        1 x Cortex®-X3 up to 3.2GHz
-        2 x Cortex®-A715 up to 2.8GHz
-        2 x Cortex®-A710 up to 2.8GHz
-        3 x Cortex®-A510 up to 2.0GHz
+        4 x Kryo Prime up to 3.0GHz
+        4 x Kryo Gold up to 2.4GHz
     GPU:
-      Model: Qualcomm® Adreno™ 740
+      Model: Qualcomm® Adreno™ 690
       Support: |
         Vulkan® 1.3
         OpenGL® ES 3.2
-        OpenCL® 3.0
+        DirectX 12
     AI Capabilities: |
-        NPU: Up to 48 TOPS (Qualcomm® Hexagon™)
+        NPU: Qualcomm® AI Engine Up to 29 TOPS
     RAM:
-      Size: 8GB / 12GB / 16GB / 24GB
-      Type: LPDDR5X
-      Speed: 4200MHz
-      Bus: 64bit
+      Size: 4GB / 8GB / 16GB / 32GB
+      Type: LPDDR4X
+      Speed: 4184 MT/s
+      Bus: 128bit
     Storage: |
       MicroSD Card Slot
-      1 x M.2 2280 NVMe SSD
-      UFS 4.0 / eMMC 5.1
+      2 x M.2 2280 NVMe SSD
+      UFS 3.1 
     Video Output: |
-      1 x HDMI 2.1 up to 8Kp60 
-      1 x USB Type-C DP up to 8Kp60
-      1 x 4-lane MIPI DSI up to 4Kp60
+      1 x HDMI 2.1 up to 4K@120
+      2 x USB Type-C DP up to 4K@120
     NVMe:
-      Onboard: No
-      Number Of Connectors: 1
-      Connectivity: PCIe Gen4 x 2
+      Onboard: Yes
+      Number Of Connectors: 2
+      Connectivity: PCIe Gen3 x 4 / PCIe Gen3 x 2
       Size: 2280
     Network:
-      Ethernet: 1 x 2.5 Gigabit Ethernet
-      Wi-Fi: Wi-Fi 7 / Wi-Fi 6E
-      Bluetooth: Bluetooth 5.3
-    PoE: Yes (PoE HAT Required)
+      Ethernet: 2 x 2.5 Gigabit Ethernet
+      Wi-Fi: Optional via M.2 E-Key module
+      Bluetooth: Optional via M.2 E-Key module
+    PoE: No
     USB: |
-      1 x USB Type-C (USB 3.2 Gen2, DP 1.4)  
-      2 x USB 3.2 Gen1 Type-A 
-      2 × USB 2.0
+      2 x USB Type-C (USB 3.2 Gen2, DP 1.4)  
+      2 x USB 3.2 Gen2 Type-A 
+      2 × USB 2.0  Type-A 
     Power: |
-      12V DC via 5525 Barrel Jack or USB PD Type-C
+      12/20V USB PD Type-C
     Audio: |
       3.5mm Audio Jack (with Mic)
-      1 x Speaker Header
-    Camera: 3 x 4-lane MIPI CSI
-    Cooling: 4-pin Fan Connector with PWM
+      1 x mic input connector
+    Camera: None
+    Cooling: 3-pin Fan Connector with PWM
     Other Expansion Capabilities: |
       1 x M.2 Key E Connector
-      1 x SIM Card Socket
       1 x RTC Battery Connector
+      1 X UFS connectors
     Dimensions:
-      Width: 85 mm
+      Width: 75 mm
       Length: 100 mm 
     Operating System: |
-      [Radxa OS](https://github.com/radxa-build/)
-      Android 13
-      Ubuntu / Debian
+      [Radxa OS](https://github.com/radxa-build/radxa-dragon-midstream/releases)
+      [Armbian](https://armbian.com/boards/radxa-dragon-q8b)
+      Ubuntu
+      Windows
 
 affiliateLinks:
   title: Buy Radxa Dragon Q8B
@@ -347,10 +345,6 @@ Despite all this power, the board stays remarkably cool and energy-efficient.
 -   **Power Draw:** Consumes just **4 Watts** at idle. Under maximum Geekbench load, it peaked at only **20 Watts**.
     
 
-<div className="image-flex">
-  <img src="/static/images/2026/radxa-dragon-q8b/top-view.webp" alt="top-view" />
-</div>
-
 ## Storage & Transfer Speeds
 
 Having dual M.2 NVMe slots is an absolute game-changer for homelab servers. Here are the read speeds you can expect:
@@ -367,6 +361,7 @@ Having dual M.2 NVMe slots is an absolute game-changer for homelab servers. Here
 <div className="image-flex">
   <img src="/static/images/2026/radxa-dragon-q8b/back.webp" alt="chipset" />
   <img src="/static/images/2026/radxa-dragon-q8b/port.webp" alt="chipset" />
+  <img src="/static/images/2026/radxa-dragon-q8b/top-view.webp" alt="top-view" />
 </div>
 
  
