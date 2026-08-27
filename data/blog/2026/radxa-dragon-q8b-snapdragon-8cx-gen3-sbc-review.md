@@ -10,7 +10,7 @@ draft: false
 autoAds: true
 summary: 'With 29 TOPS of local AI performance, dual 2.5GbE ports, and blazingly fast M.2 NVMe storage, check out our full hands-on review and benchmarks of the Radxa Dragon Q8B.'
 imageUrl: /static/images/2026/radxa-dragon-q8b/cover.webp
-youtubeLink: "https://www.youtube.com/embed/KEFTjnUbaLU"
+youtubeLink: "https://www.youtube.com/embed/LlRqZRpe0Bo"
 suggestedArticles:
   - title: "Radxa Rock 5T: Pi-Sized Power With PCIe, NVMe, USB 3.1 Gen2, Thermals & Real-World Benchmarks"
     url: "https://smarthomecircle.com/radxa-rock-5t-better-than-raspberrypi-5"
