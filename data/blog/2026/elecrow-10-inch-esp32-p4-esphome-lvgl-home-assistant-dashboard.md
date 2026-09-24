@@ -1,16 +1,16 @@
 ---
-title: "Building a Home Assistant Dashboard with Elecrow ESP32-P4 and ESPHome LVGL"
+title: "How to Build a Smart Home Dashboard for Home Assistant with Elecrow ESP32-P4 and ESPHome LVGL"
 author: 'Amrut Prabhu'
 categories: ''
 tags: [Home Assistant, ESPHome, Dashboard, ESP32 P4, Elecrow ]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2026-09-17'
+date: '2026-09-24'
 draft: false
 autoAds: true
 summary: 'Build an interactive Home Assistant dashboard using the Elecrow 10-inch ESP32-P4 display, ESPHome, and LVGL step-by-step.'
 imageUrl: /static/images/2026/elecrow-esp32-p4-display/cover.webp
-youtubeLink: "https://www.youtube.com/embed/du-4jJSz0OI"
+youtubeLink: "https://www.youtube.com/embed/1WrbyPul6Z0"
 suggestedArticles:
   - title: "A Rotary Display as My Home Assistant Knob"
     url: "https://smarthomecircle.com/elecrow-2-1-rotary-display-esphome-home-assistant-controller"
