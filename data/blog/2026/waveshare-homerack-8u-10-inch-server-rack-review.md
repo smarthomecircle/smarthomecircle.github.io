@@ -5,7 +5,7 @@ categories: ''
 tags: [Server Rack, Dashboard, Waveshare, Home lab ]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2026-10-02'
+date: '2026-10-01'
 draft: false
 autoAds: true
 summary: 'A compact aluminum 10-inch home lab rack with touchscreen, Raspberry Pi support, networking hardware, and Home Assistant monitoring.'
@@ -123,7 +123,7 @@ For my setup, the screen displays a **Home Assistant dashboard** showing perform
 
 The main downside is the price.
 
-I found the rack costing roughly **€230 on Amazon** and around **€190 on AliExpress including shipping**, depending on the seller.
+I found the rack costing roughly **$129 on Wavesahre**, around **€190 on AliExpress including shipping**, depending on the seller and **€230 on Amazon**.
 
 There are definitely cheaper DIY options, But with the HomeRack, you are paying for:
 
