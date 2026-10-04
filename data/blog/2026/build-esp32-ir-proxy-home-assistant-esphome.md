@@ -2,35 +2,35 @@
 title: "How to Build an ESP32 IR Proxy for Home Assistant with ESPHome"
 author: 'Amrut Prabhu'
 categories: ''
-tags: [KVM, Remote Access, GLiNet, Server, Rack ]
+tags: [ESP32, DIY, IR Proxy, Home Assistant ]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2026-10-20'
+date: '2026-10-29'
 draft: false
 autoAds: true
-summary: 'Control four computers remotely with the GL.iNet Comet X, featuring 4K KVM access, PoE, touchscreen and remote BIOS control.'
-imageUrl: /static/images/2026/glinet-comet-x/cover.webp
-youtubeLink: "https://www.youtube.com/embed/v1CB7fxd1BM"
+summary: 'Build an ESP32 IR Proxy with ESPHome to learn and control infrared devices directly from Home Assistant.'
+imageUrl: /static/images/2026/diy-ir-proxy/cover.webp
+youtubeLink: "https://www.youtube.com/embed/4OoTQkhVlKE"
 suggestedArticles:
-  - title: "Meet the GL.iNet Comet Q KVM"
-    url: "https://smarthomecircle.com/gl-inet-comet-q-usb-c-remote-kvm"
-  - title: "GL.iNet Comet KVM Pro"
-    url: "https://smarthomecircle.com/glinet-comet-kvm-pro-review-kvm-over-ip-wifi-6"
-  - title: "Radxa Linkr : Tiny KVM"
-    url: "https://smarthomecircle.com/radxa-linkr-kvm-review-api-remote-access"
+  - title: "How I Created My Voice Assistant With ESP32"
+    url: "https://smarthomecircle.com/How-I-created-my-voice-assistant-with-on-device-wake-word-using-home-assistant"
+  - title: "How to Build a Smart Home Dashboard"
+    url: "https://smarthomecircle.com/elecrow-10-inch-esp32-p4-esphome-lvgl-home-assistant-dashboard"
+  - title: "A Rotary Display as My Home Assistant Knob"
+    url: "https://smarthomecircle.com/elecrow-2-1-rotary-display-esphome-home-assistant-controller"
 
 
-affiliateLinks:
-  title: Buy GL.iNet Comet X
-  links:
-    - label: "Amazon EU"
-      url: "https://link.amazon/B02nga0JD"
-    - label: "Amazon US"
-      url: "https://link.amazon/B0bPsgQ09"
-    - label: "AliExpress"
-      url: "https://s.click.aliexpress.com/e/_c4TyX7pP"
-    - label: "Elecrow"
-      url: "https://www.gl-inet.com/en-de/products/gl-rm4pe"
+# affiliateLinks:
+#   title: Buy GL.iNet Comet X
+#   links:
+#     - label: "Amazon EU"
+#       url: "https://link.amazon/B02nga0JD"
+#     - label: "Amazon US"
+#       url: "https://link.amazon/B0bPsgQ09"
+#     - label: "AliExpress"
+#       url: "https://s.click.aliexpress.com/e/_c4TyX7pP"
+#     - label: "Elecrow"
+#       url: "https://www.gl-inet.com/en-de/products/gl-rm4pe"
 ---
 
 <TOCInline toc={props.toc} asDisclosure /> 
@@ -45,7 +45,7 @@ The hardware is inexpensive, the wiring is simple, and ESPHome handles most of t
 In this guide, I'll show you how I built it and how you can use it to control an IR-based LED strip from Home Assistant.
 
 <div className="image-flex">
-  <img src="/static/images/2026/diy-ir-proxy/ir-proxy.jpg" alt="ir-proxy" />
+  <img src="/static/images/2026/diy-ir-proxy/ir-proxy.webp" alt="ir-proxy" />
 </div>
 
 ----------
@@ -56,40 +56,47 @@ For this project you mainly need:
 
 -   **ESP32 development board**
 
+[![ ESP32 ](/static/images/components/esp32.webp)](https://link.amazon/B0gnRbgGm)
+
   <AffiliateLinks 
   title="Buy ESP32" 
   links={[
-    { store: "Amazon US", url: "https://amzn.to/3IvQELw" },
-    { store: "Amazon DE", url: "https://amzn.to/3IvRzLY" },
-    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oEVRfJs" }
+    { store: "Amazon US", url: "https://link.amazon/B0gnRbgGm" },
+    { store: "Amazon DE", url: "https://link.amazon/B0fPhwPWV" },
+    { store: "Amazon UK", url: "https://link.amazon/B0buhGVZS" },
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_c4PXACzP" }
   ]}
- /> 
+  /> 
 
 -   **IR receiver**
 
-  <AffiliateLinks 
-  title="Buy ESP32" 
-  links={[
-    { store: "Amazon US", url: "https://amzn.to/3IvQELw" },
-    { store: "Amazon DE", url: "https://amzn.to/3IvRzLY" },
-    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oEVRfJs" }
-  ]}
- /> 
-
 -   **IR transmitter module**
 
+[![ IR Transmitter & Receiver ](/static/images/components/Ir-trans-receiver.webp)](https://link.amazon/B0c7iiiWy)
+
   <AffiliateLinks 
-  title="Buy ESP32" 
+  title="Buy IR Transmitter & Receiver" 
   links={[
-    { store: "Amazon US", url: "https://amzn.to/3IvQELw" },
-    { store: "Amazon DE", url: "https://amzn.to/3IvRzLY" },
-    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oEVRfJs" }
+    { store: "Amazon US", url: "https://link.amazon/B0c7iiiWy" },
+    { store: "Amazon DE", url: "https://link.amazon/B0dAsscgW" },
+    { store: "Amazon UK", url: "https://link.amazon/B0iD8Y41E" },
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_c3iCNo9X" }
   ]}
- /> 
+  /> 
 
--   Jumper wires
 
-    
+-   **Jumper wires**
+
+  <AffiliateLinks 
+  title="Buy IR Transmitter & Receiver" 
+  links={[
+    { store: "Amazon US", url: "https://link.amazon/B0cVapyqG" },
+    { store: "Amazon DE", url: "https://link.amazon/B0eUpXi6A" },
+    { store: "Amazon UK", url: "https://link.amazon/B09poxwlo" },
+    { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_c4LtYohr" }
+  ]}
+  /> 
+  
 
 The IR receiver allows the ESP32 to **learn signals from existing remotes**, while the transmitter sends those signals back to your devices.
 
@@ -104,7 +111,7 @@ Use the diagram below to make the connections.
 ### Connection Diagram
 
 <div className="image-flex">
-  <img src="/static/images/2026/diy-ir-proxy/diagram.png" alt="diagram" />
+  <img src="/static/images/2026/diy-ir-proxy/diagram.webp" alt="diagram" />
 </div>
 
 
@@ -187,7 +194,7 @@ This configuration sets up:
 
 
 <div className="image-flex">
-  <img src="/static/images/2026/diy-ir-proxy/esphome.png" alt="diagram" />
+  <img src="/static/images/2026/diy-ir-proxy/esphome.webp" alt="diagram" />
 </div>
 
 
@@ -243,7 +250,7 @@ Copy the key and paste it into Home Assistant.
 Once setup is complete, you should see the IR receiver and transmitter provided by your ESP32.
 
 <div className="image-flex">
-  <img src="/static/images/2026/diy-ir-proxy/added-to-ha.png" alt="added-to-ha" />
+  <img src="/static/images/2026/diy-ir-proxy/added-to-ha.webp" alt="added-to-ha" />
 </div>
 
 ----------
