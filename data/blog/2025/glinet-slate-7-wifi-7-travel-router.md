@@ -119,9 +119,7 @@ Check out the **in-depth video review** with setup steps, performance tests, and
   title="GL.iNet Slate 7 WiFi 7 Travel Router Review" 
   width="half" 
 />
-## Coming Soon: DIY 10-Inch Network Rack
 
-Stay tuned for my **upcoming build video**, showcasing the Slate 7 integrated into a custom 10″ rack. Subscribe and like to get notified!
 
 ## Support the Channel
 
