@@ -5,7 +5,7 @@ categories: ''
 tags: [KVM, Remote Access, GLiNet, Server, Rack ]
 photo-credits:
 applaud-link: 2021/spring-boot-stream-kafka.json
-date: '2026-10-14'
+date: '2026-10-08'
 draft: false
 autoAds: true
 summary: 'Control four computers remotely with the GL.iNet Comet X, featuring 4K KVM access, PoE, touchscreen and remote BIOS control.'
