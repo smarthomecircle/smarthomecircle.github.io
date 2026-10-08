@@ -67,6 +67,10 @@ module.exports = withBundleAnalyzer({
     unoptimized: true,
   },
   assetPrefix: '/',
+  // Next blocks dev-only requests (incl. the HMR websocket) from non-localhost
+  // origins. Without this, opening the "Network" URL makes the HMR socket fail
+  // repeatedly and the page force-reloads every minute or two.
+  allowedDevOrigins: ['192.168.8.123'],
   // Silence the multi-lockfile detection warning by explicitly pinning the
   // workspace root to this project (Turbopack walks upwards otherwise).
   turbopack: {
