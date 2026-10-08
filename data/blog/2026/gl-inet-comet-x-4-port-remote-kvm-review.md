@@ -58,7 +58,7 @@ But the Comet X goes further than a normal **4-port KVM switch**. It gives me re
 That makes it particularly interesting for **homelabs, remote servers, mini PCs, and rack-mounted systems**.
 
 <div className="image-flex">
-  <img src="/static/images/2026/glinet-comet-x/kvm.jpg" alt="slate-7-pro" />
+  <img src="/static/images/2026/glinet-comet-x/kvm.webp" alt="slate-7-pro" />
 </div>
 
 <AffiliateLinksFromMetadata />
@@ -87,7 +87,7 @@ If a computer fails to boot properly, I can still see what is happening and inte
 GL.iNet officially lists **BIOS access**, browser/app access, and remote control for up to four systems as core Comet X features.
 
 <div className="image-flex">
-  <img src="/static/images/2026/glinet-comet-x/bios.jpg" alt="slate-7-pro" />
+  <img src="/static/images/2026/glinet-comet-x/bios.webp" alt="slate-7-pro" />
 </div>
 
 ----------
@@ -103,7 +103,7 @@ For example, I could remotely access another computer and still use it for a vid
 This makes the Comet X useful beyond traditional server management, especially when remotely operating **desktop PCs or workstations**.
 
 <div className="image-flex">
-  <img src="/static/images/2026/glinet-comet-x/web-camera.jpg" alt="slate-7-pro" />
+  <img src="/static/images/2026/glinet-comet-x/web-camera.webp" alt="slate-7-pro" />
 </div>
 
 ----------
@@ -132,7 +132,7 @@ The HDMI connection carries the video signal from each computer, while USB handl
 GL.iNet rates the Comet X for resolutions up to **4K at 30 FPS**.
 
 <div className="image-flex">
-  <img src="/static/images/2026/glinet-comet-x/back.jpg" alt="slate-7-pro" />
+  <img src="/static/images/2026/glinet-comet-x/back.webp" alt="slate-7-pro" />
 </div>
 
 ----------
@@ -159,8 +159,8 @@ This gives me both **local KVM control and remote KVM access** from the same dev
 That is particularly convenient when the rack is sitting next to your desk but you still want remote access when you are away.
 
 <div className="image-flex">
-  <img src="/static/images/2026/glinet-comet-x/view1.jpg" alt="slate-7-pro" />
-  <img src="/static/images/2026/glinet-comet-x/view2.jpg" alt="slate-7-pro" />
+  <img src="/static/images/2026/glinet-comet-x/view1.webp" alt="slate-7-pro" />
+  <img src="/static/images/2026/glinet-comet-x/view2.webp" alt="slate-7-pro" />
 </div>
 
 ----------
@@ -193,7 +193,7 @@ For example, I can:
 There is also a **quick device switcher button**, which makes moving between connected systems much faster.
 
 <div className="image-flex">
-  <img src="/static/images/2026/glinet-comet-x/settings.jpg" alt="slate-7-pro" />
+  <img src="/static/images/2026/glinet-comet-x/settings.webp" alt="slate-7-pro" />
 </div>
 
 
@@ -212,7 +212,7 @@ The Ethernet port supports **Gigabit Ethernet and 802.3af/at PoE**.
 For a clean **10-inch homelab rack**, this is a particularly useful feature.
 
 <div className="image-flex">
-  <img src="/static/images/2026/glinet-comet-x/poe.jpg" alt="slate-7-pro" />
+  <img src="/static/images/2026/glinet-comet-x/poe.webp" alt="slate-7-pro" />
 </div>
 
 ----------
@@ -237,7 +237,7 @@ It occupies a single rack position and gives me remote control over four compute
 GL.iNet officially lists compatibility with both **10-inch and 19-inch racks**, with brackets for both included.
 
 <div className="image-flex">
-  <img src="/static/images/2026/glinet-comet-x/10-inch-brackets.jpg" alt="slate-7-pro" />
+  <img src="/static/images/2026/glinet-comet-x/10-inch-brackets.webp" alt="slate-7-pro" />
 </div>
 
 ----------
@@ -287,7 +287,7 @@ Instead of maintaining separate KVMs or constantly moving cables between compute
 For anyone building a **10-inch homelab rack, mini PC cluster, Raspberry Pi rack, or multi-server setup**, the Comet X is an interesting way to add proper **remote KVM over IP access** without cluttering the rack with several separate devices.
 
 <div className="image-flex">
-  <img src="/static/images/2026/glinet-comet-x/kvm.jpg" alt="slate-7-pro" />
+  <img src="/static/images/2026/glinet-comet-x/kvm.webp" alt="slate-7-pro" />
 </div>
 
 <AffiliateLinksFromMetadata />
