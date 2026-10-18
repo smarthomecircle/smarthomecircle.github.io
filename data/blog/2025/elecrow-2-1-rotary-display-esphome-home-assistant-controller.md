@@ -229,6 +229,9 @@ display:
     model: Custom
     color_order: rgb
     invert_colors: false
+    # Panel must run in RGB666 (0x3A=0x66) with MDT set, like Elecrow's factory firmware.
+    # In 16bit mode black renders as green on this board.
+    pixel_mode: 18bit
 
     dimensions:
       width: 480
@@ -256,10 +259,15 @@ display:
     pclk_frequency: 18MHz
     pclk_inverted: true
 
-    # ST7701 init sequence (from your working config)
+    # ST7701 init sequence (Elecrow st7701_type5_init_operations)
     init_sequence:
       - [0x01]
+      - delay 120ms
       - [0xFF, 0x77, 0x01, 0x00, 0x00, 0x10]
+
+      - [0xC0, 0x3B, 0x00]
+      - [0xC1, 0x0B, 0x02]
+      - [0xC2, 0x00, 0x02]
 
       - [0xCC, 0x10]
       - [0xCD, 0x08]
@@ -313,14 +321,20 @@ display:
 
       - [0xFF, 0x77, 0x01, 0x00, 0x00, 0x00]
 
-      - [0x36, 0x00]
-      - [0x3A, 0x50]  # 0x70=RGB888, 0x60=RGB666, 0x50=RGB565
-
-      - [0x11]
-      - delay 100ms
-
-      - [0x29]
-      - delay 50ms
+font:
+  - file:
+      type: gfonts
+      family: Montserrat
+      weight: 700
+    id: montserrat_22_bold
+    size: 22
+    bpp: 4
+  - file:
+      type: gfonts
+      family: Montserrat
+    id: montserrat_100
+    size: 100
+    bpp: 4
 
 light:
   - platform: monochromatic
@@ -420,8 +434,8 @@ sensor:
                     static char buf[16];
                     snprintf(buf, sizeof(buf), "%d%%", id(brightness_value));
                     return buf;
-              - homeassistant.service:
-                  service: light.turn_on
+              - homeassistant.action:
+                  action: light.turn_on
                   data:
                     entity_id: light.smart_night_light_w
                   data_template:
@@ -443,8 +457,8 @@ sensor:
                     static char buf[8];
                     snprintf(buf, sizeof(buf), "%d", id(volume_value));
                     return buf;
-              - homeassistant.service:
-                  service: media_player.volume_set
+              - homeassistant.action:
+                  action: media_player.volume_set
                   data:
                     entity_id: media_player.esp32_s3_wake_word_media_player_2
                   data_template:
@@ -471,8 +485,8 @@ sensor:
                     static char buf[16];
                     snprintf(buf, sizeof(buf), "%d%%", id(brightness_value));
                     return buf;
-              - homeassistant.service:
-                  service: light.turn_on
+              - homeassistant.action:
+                  action: light.turn_on
                   data:
                     entity_id: light.smart_night_light_w
                   data_template:
@@ -494,8 +508,8 @@ sensor:
                     static char buf[8];
                     snprintf(buf, sizeof(buf), "%d", id(volume_value));
                     return buf;
-              - homeassistant.service:
-                  service: media_player.volume_set
+              - homeassistant.action:
+                  action: media_player.volume_set
                   data:
                     entity_id: media_player.esp32_s3_wake_word_media_player_2
                   data_template:
@@ -550,35 +564,35 @@ lvgl:
       enter_button: encoder_button
       group: menu_group
 
-  default_font: roboto16
+  default_font: montserrat_16
 
   # Global background: dark, low-glare navy
-  disp_bg_color: 0x020617
-  bg_color: 0x020617
+  disp_bg_color: 0x006f4d
+  bg_color: 0x006f4d
   scroll_on_focus: false
   
   theme:
     button:
       # Default (not selected)
-      bg_color: 0x111827
-      text_color: 0xFFFFFF
-      border_width: 2
-      border_color: 0x3B82F6
+      bg_color: 0xD9EFE5
+      text_color: 0x073C2A
+      border_width: 1
+      border_color: 0x073C2A
       radius: 12
 
       # Focused / selected
       focused:
-        bg_color: 0x1D4ED8
-        text_color: 0xFFFFFF
+        bg_color: 0xFFD166
+        text_color: 0x073C2A
         border_width: 3
-        border_color: 0x93C5FD
+        border_color: 0xFFFFFF
 
       # Pressed
       pressed:
-        bg_color: 0x1E40AF
-        text_color: 0xFFFFFF
-        border_width: 3
-        border_color: 0x93C5FD
+        bg_color: 0x70C79B
+        text_color: 0x073C2A
+        border_width: 2
+        border_color: 0x236B4A
 
   pages:
     # Connecting Page (shown while HA is not connected)
@@ -594,7 +608,7 @@ lvgl:
             x: 0
             y: -10
             align: CENTER
-            text_font: roboto20
+            text_font: montserrat_20
             text_color: 0xE5E7EB
 
         - label:
@@ -602,7 +616,7 @@ lvgl:
             x: 0
             y: 30
             align: CENTER
-            text_font: roboto16
+            text_font: montserrat_16
             text_color: 0x9CA3AF
 
     # Main Menu Page
@@ -626,7 +640,7 @@ lvgl:
             widgets:
               - label:
                   text: "Brightness"
-                  text_font: roboto22_bold
+                  text_font: montserrat_22_bold
                   align: CENTER
 
         - button:
@@ -642,7 +656,7 @@ lvgl:
             widgets:
               - label:
                   text: "Volume"
-                  text_font: roboto22_bold
+                  text_font: montserrat_22_bold
                   align: CENTER
 
     # Brightness Page
@@ -665,7 +679,7 @@ lvgl:
             x: 0
             y: -100
             align: CENTER
-            text_font: roboto32
+            text_font: montserrat_32
             text_color: 0xE5E7EB
 
         - label:
@@ -674,7 +688,7 @@ lvgl:
             x: 0
             y: 0
             align: CENTER
-            text_font: roboto100
+            text_font: montserrat_100
             text_color: 0x38BDF8
 
         - button:
@@ -691,7 +705,7 @@ lvgl:
               - label:
                   text: "Back"
                   align: CENTER
-                  text_font: roboto22_bold
+                  text_font: montserrat_22_bold
 
     # Volume Page
     - id: volume_page
@@ -713,7 +727,7 @@ lvgl:
             x: 0
             y: -100
             align: CENTER
-            text_font: roboto32
+            text_font: montserrat_32
             text_color: 0xE5E7EB
 
         - label:
@@ -722,7 +736,7 @@ lvgl:
             x: 0
             y: 0
             align: CENTER
-            text_font: roboto100
+            text_font: montserrat_100
             text_color: 0x38BDF8
 
         - button:
@@ -739,7 +753,7 @@ lvgl:
               - label:
                   text: "Back"
                   align: CENTER
-                  text_font: roboto22_bold
+                  text_font: montserrat_22_bold
 
 ```
 
