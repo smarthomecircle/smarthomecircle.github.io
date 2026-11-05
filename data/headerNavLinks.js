@@ -14,7 +14,7 @@ const headerNavLinks = [
     title: 'Sale',
     children: [
       { href: '/sale/aliexpress', title: 'AliExpress Deals' },
-      { href: '/sale/amazon', title: 'Amazon Deals' },
+      // { href: '/sale/amazon', title: 'Amazon Deals' },
     ],
   },
   { href: '/about', title: 'About & Contact' },
