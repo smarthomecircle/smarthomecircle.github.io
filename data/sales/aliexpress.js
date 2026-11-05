@@ -25,7 +25,7 @@
  *     badge         - optional tag on the image; defaults to the % off, then event.badge
  */
 module.exports = {
-  imageUrl: '/static/images/sales/aliexpress-cover.webp',
+  imageUrl: '/static/sales/aliexpress-cover.webp',
   event: {
     name: '11.11 Singles Day Sale',
     start: 'Nov 1, 2026',

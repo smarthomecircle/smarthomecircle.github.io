@@ -10,7 +10,7 @@
  * short link redirects to (amazon.com → US, amazon.de → DE, amazon.co.uk → UK).
  */
 module.exports = {
-  imageUrl: '/static/images/sales/amazon-cover.webp',
+  imageUrl: '/static/sales/amazon-cover.webp',
   categories: [
     {
       id: 'zigbee-smart-home',
