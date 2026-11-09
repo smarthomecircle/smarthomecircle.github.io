@@ -34,8 +34,8 @@ If you have not installed it, here is a step-by-step guide to install it on Home
 
 You can buy it from this link:
 
--   [Tuya Wifi Plug](https://amzn.to/3KKg32j)
-[![Zigbee Plug](/static/images/2023/local-tuya-setup-in-home-assistant/tuya-smart-plug.jpg)](https://amzn.to/3KKg32j)
+-   [Tuya Wifi Plug](https://link.amazon/B0dxMGN2F)
+[![Zigbee Plug](/static/images/2023/local-tuya-setup-in-home-assistant/tuya-smart-plug.jpg)](https://link.amazon/B0dxMGN2F)
 
 4. Tuya device setup with either Tuya app or Smart Life app.
 

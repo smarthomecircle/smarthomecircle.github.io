@@ -33,19 +33,19 @@ In this article, we will look at how we can set up an ESP32 with a microphone as
         
 [![INMP441 MICROPHONE](/static/images/2023/esp32-voice-assistant/inmp441-microphone.webp)](https://s.click.aliexpress.com/e/_Dmn2PyR)
         -   [**AliExpress - INMP441 Microphone**](https://s.click.aliexpress.com/e/_Dmn2PyR)
-        -   [**Amazon - INMP441 Microphone**](https://amzn.to/47uScws)
+        -   [**Amazon - INMP441 Microphone**](https://link.amazon/B0at9Bc93)
         <br/>
 4. **MAX98357A Audio Amplifier**  
     Links to buy this:
 [![MAX98357A](/static/images/2023/esp32-voice-assistant/MAX98357A.webp)](https://s.click.aliexpress.com/e/_DdyIFTH)
         -   [**AliExpress - MAX98357A**](https://s.click.aliexpress.com/e/_DdyIFTH)
-        -   [**Amazon - MAX98357A**](https://amzn.to/47vEMjH)      
+        -   [**Amazon - MAX98357A**](https://link.amazon/B0ezLXRoP)      
         <br/>
 5.  **3-watt Speakers** (Optional: Only required to listen to the pipeline output)  
     Links to buy these.  
 [![3 watt speaker](/static/images/2023/esp32-voice-assistant/3-watt-speakers.webp)](https://s.click.aliexpress.com/e/_DBDIScT)
         -   [**AliExpress - 3-watt Speakers**](https://s.click.aliexpress.com/e/_DBDIScT)
-        -   [**Amazon - 3-watt Speakers**](https://amzn.to/49BbAJR)      
+        -   [**Amazon - 3-watt Speakers**](https://link.amazon/B00HfZqtU)      
     
 
 To set up voice assistant, we would need three components to create the voice assist pipeline in Home Assistant.

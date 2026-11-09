@@ -32,8 +32,8 @@ If you're searching for a **powerful yet portable travel router**, the [**GL.iNe
   title="Buy GL.iNet Slate 7" 
   links={[
     { store: "GLiNet Store", url: "https://link.gl-inet.com/be3600-smarthomecircle-eustore-250523" },
-    { store: "Amazon US", url: "https://amzn.to/3IwT8t7" },
-    { store: "Amazon DE", url: "https://amzn.to/44FkqWP" },
+    { store: "Amazon US", url: "https://link.amazon/B0bN9nPyL" },
+    { store: "Amazon DE", url: "https://link.amazon/B072gfGZ5" },
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oDLL1GK" }
   ]}
 />
@@ -105,8 +105,8 @@ At under $150, the GL.iNet Slate 7 is a **compelling value** — blending advanc
 <AffiliateLinks 
   title="Buy GLiNet Slate 7 Travel Router" 
   links={[
-    { store: "Amazon US", url: "https://amzn.to/3IwT8t7" },
-    { store: "Amazon DE", url: "https://amzn.to/44FkqWP" },
+    { store: "Amazon US", url: "https://link.amazon/B0bN9nPyL" },
+    { store: "Amazon DE", url: "https://link.amazon/B072gfGZ5" },
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oDLL1GK" }
   ]}
 />

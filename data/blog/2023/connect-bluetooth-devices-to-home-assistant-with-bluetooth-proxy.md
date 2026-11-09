@@ -29,7 +29,7 @@ In this article, we will explore how we can create a Bluetooth proxy with ESP32 
     Links to buy this:
 [![ESP32 Wroom](/static/images/2023/wled-with-home-assistant/esp32-wroom.webp)](https://s.click.aliexpress.com/e/_DB4HfST)
         -   [**AliExpress - ESP32 Dev Board**](https://s.click.aliexpress.com/e/_DB4HfST)
-        -   [**Amazon - ESP32 Dev Board**](https://amzn.to/3QPvyrR)
+        -   [**Amazon - ESP32 Dev Board**](https://link.amazon/B03TVRxxL)
       <br/>
 
 

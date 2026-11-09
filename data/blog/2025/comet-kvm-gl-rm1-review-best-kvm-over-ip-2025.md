@@ -37,8 +37,8 @@ The Comet is a compact, affordable, and powerful device that fits in the palm of
   title="Buy This" 
   links={[
     { store: "GLiNet Store", url: "https://link.gl-inet.com/rm1-smarthomecircle-eustore-250515" },
-    { store: "Amazon US", url: "https://amzn.to/3GKnCHz" },
-    { store: "Amazon DE", url: "https://amzn.to/44PyFbt" },
+    { store: "Amazon US", url: "https://link.amazon/B0dGyrOpT" },
+    { store: "Amazon DE", url: "https://link.amazon/B08vVsiPd" },
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oDCndXd" }
   ]}
 />
@@ -142,9 +142,9 @@ As of the latest update, the **Comet KVM retails for 99 USD**. This is a one-tim
 
 **GLiNet at 99$**: [Here](https://store-eu.gl-inet.com/products/comet-gl-rm1-remote-keyboard-video-mouse)
 
-**Amazon US at 89$** (Affliate Link) : [Here](https://amzn.to/3GKnCHz)
+**Amazon US at 89$** (Affliate Link) : [Here](https://link.amazon/B0dGyrOpT)
 
-**Amazon DE at 99 Euros** (Affliate Link) : [Here](https://amzn.to/44PyFbt)
+**Amazon DE at 99 Euros** (Affliate Link) : [Here](https://link.amazon/B08vVsiPd)
 
 **AliExpress at 97 Euros** (Affliate Link) : [Here](https://s.click.aliexpress.com/e/_oDCndXd)
 

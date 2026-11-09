@@ -21,13 +21,13 @@ youtubeLink: "https://www.youtube.com/embed/L5L_ABFvAjg"
 
 1.  8x32 LED Matrix with individual programmable LEDs of type WS2812B.  
     You can buy using the links below.
-    -   [**Amazon -  8x32 LED Matrix**](https://amzn.to/3TJnZ8z)
+    -   [**Amazon -  8x32 LED Matrix**](https://link.amazon/B09RJixyB)
     -   [**AliExpress -  8x32 LED Matrix**](https://s.click.aliexpress.com/e/_DFOOsH9)
-[![ 8x32 LED Matrix ](/static/images/2024/led-matrix/8x32-led-matrix.webp)](https://amzn.to/3TJnZ8z)
+[![ 8x32 LED Matrix ](/static/images/2024/led-matrix/8x32-led-matrix.webp)](https://link.amazon/B09RJixyB)
 
 2.  D1 Mini board
 
- -   [**Amazon -  D1 Mini**](https://amzn.to/3AT0Z0f)
+ -   [**Amazon -  D1 Mini**](https://link.amazon/B00i6s1e2)
  -   [**AliExpress - D1 Mini**](https://s.click.aliexpress.com/e/_De0exaL)
 [![D1 Mini](/static/images/2023/wled-with-home-assistant/d1-mini.webp)](https://s.click.aliexpress.com/e/_De0exaL)
 

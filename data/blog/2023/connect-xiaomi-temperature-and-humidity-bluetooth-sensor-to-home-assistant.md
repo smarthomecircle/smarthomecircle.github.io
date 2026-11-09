@@ -30,7 +30,7 @@ In this article, we will explore how we can connect the Xiaomi Temperature and H
 3. **Xiaomi Temperature and Humidity (LYWSD03MMC) Bluetooth Sensor**
     [![Xiaomi Temperature and Humidity (LYWSD03MMC) Bluetooth Sensor](/static/images/2023/xiaomi-temp-humidity-sensor/xiaomi-temp-humidity-sensor.png)](https://s.click.aliexpress.com/e/_DkrUrzT)
         -   [**Buy On AliExpress**](https://s.click.aliexpress.com/e/_DkrUrzT)
-        -   [**Buy On Amazon**](https://amzn.to/480BKEO)
+        -   [**Buy On Amazon**](https://link.amazon/B05TfBdUe)
       <br/> 
 To connect the sensor to Home Assistant, we must first Factory Reset the device and then flash it with custom firmware.
 
