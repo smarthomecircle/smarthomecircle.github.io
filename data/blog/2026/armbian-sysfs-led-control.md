@@ -1,6 +1,6 @@
 ---
 title: "How to Control Armbian Status LEDs Through sysfs (Turn Off / Heartbeat on Radxa Rock 5)"
-author: 'Amrut Prabhu'
+author: 'Akshata Prabhu'
 categories: ''
 tags: [SBC, armbian, Radxa Rock 5, LED, Linux, sysfs]
 photo-credits:

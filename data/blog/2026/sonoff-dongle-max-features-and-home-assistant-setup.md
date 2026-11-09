@@ -1,6 +1,6 @@
 ---
 title: 'Sonoff Dongle Max: what makes it “Max”'
-author: 'Amrut Prabhu'
+author: 'Akshata Prabhu'
 categories: ''
 tags: [Sonoff, zigbee, thread, home assistant, wifi ]
 photo-credits:

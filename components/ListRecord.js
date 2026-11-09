@@ -3,9 +3,11 @@ import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import Image from '@/components/Image'
 import formatTagText from '@/lib/utils/formatTagText'
+import resolveAuthors from '@/lib/utils/resolveAuthors'
 
 export default function ListRecord({ frontMatter, authorDetails }) {
   const { slug, date, title, summary, tags, imageUrl, readingTime } = frontMatter
+  const [author] = resolveAuthors(frontMatter, authorDetails)
 
   return (
     <article className="group relative bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600 cursor-pointer">
@@ -64,19 +66,17 @@ export default function ListRecord({ frontMatter, authorDetails }) {
         <div className="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700 relative z-10">
           {/* Author & Date */}
           <div className="flex items-center space-x-3">
-            {authorDetails && authorDetails[0]?.avatar && (
+            {author?.avatar && (
               <Image
-                src={authorDetails[0].avatar}
+                src={author.avatar}
                 width="32"
                 height="32"
-                alt="avatar"
-                className="w-8 h-8 rounded-full ring-2 ring-gray-100 dark:ring-gray-700"
+                alt={`${author.name} avatar`}
+                className="w-8 h-8 rounded-full object-cover ring-2 ring-gray-100 dark:ring-gray-700"
               />
             )}
             <div className="text-sm">
-              <p className="font-medium text-gray-900 dark:text-gray-100">
-                {authorDetails && authorDetails[0]?.name}
-              </p>
+              <p className="font-medium text-gray-900 dark:text-gray-100">{author?.name}</p>
               <div className="flex items-center space-x-2 text-gray-500 dark:text-gray-400">
                 <time dateTime={date}>{formatDate(date)}</time>
                 {readingTime?.text && (

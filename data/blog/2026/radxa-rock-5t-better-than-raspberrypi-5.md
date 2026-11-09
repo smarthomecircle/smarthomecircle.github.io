@@ -1,6 +1,6 @@
 ---
 title: 'Radxa Rock 5T: Pi-Sized Power With PCIe, NVMe, USB 3.1 Gen2, Thermals & Real-World Benchmarks'
-author: 'Amrut Prabhu'
+author: 'Akshata Prabhu'
 categories: ''
 tags: [SBC, radxa, perfromance, rockchip, benchmarks]
 photo-credits:

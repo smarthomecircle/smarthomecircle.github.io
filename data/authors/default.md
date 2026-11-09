@@ -13,7 +13,7 @@ youtube: "https://www.youtube.com/@SmartHomeCircle"
 
 **Hi there,**
 
-We’re **Amrut** and **Akshata**, and if you’re passionate about **home automation, smart homes, and home labs**, you’re in the right place! We love exploring the latest technologies and **sharing our setups and experiences** with a growing audience.
+We’re **Amrut** and **Akshata**, a brother-and-sister duo, and if you’re passionate about **home automation, smart homes, and home labs**, you’re in the right place! We love exploring the latest technologies and **sharing our setups and experiences** with a growing audience.
 
 We primarily use **Home Assistant** to automate and monitor our home with **various sensors and complex automation scenarios**. Through our content, we showcase how smart technology can practically improve **efficiency, security, and daily convenience**.
 

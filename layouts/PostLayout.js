@@ -155,7 +155,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                           width="48"
                           height="48"
                           alt={`${author.name} avatar`}
-                          className="w-12 h-12 rounded-full ring-2 ring-white dark:ring-gray-700"
+                          className="w-12 h-12 rounded-full object-cover ring-2 ring-white dark:ring-gray-700"
                         />
                       )}
                       <div>

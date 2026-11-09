@@ -1,6 +1,7 @@
 import { PageSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
-import { getAllFilesFrontMatter, getFileBySlug } from '@/lib/mdx'
+import { getAllFilesFrontMatter } from '@/lib/mdx'
+import { getAllAuthors } from '@/lib/authors'
 import ListLayout from '@/layouts/ListLayout'
 import { POSTS_PER_PAGE } from '../index'
 
@@ -31,13 +32,7 @@ export async function getStaticProps(context) {
     currentPage: pageNumber,
     totalPages: Math.ceil(posts.length / POSTS_PER_PAGE),
   }
-  // TODO Imporove this
-  const authorList = ['default']
-  const authorPromise = authorList.map(async (author) => {
-    const authorResults = await getFileBySlug('authors', [author])
-    return authorResults.frontMatter
-  })
-  const authorDetails = await Promise.all(authorPromise)
+  const authorDetails = getAllAuthors()
 
   return {
     props: {

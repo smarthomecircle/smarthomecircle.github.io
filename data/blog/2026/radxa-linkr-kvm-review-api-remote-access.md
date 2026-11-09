@@ -1,6 +1,6 @@
 ---
 title: "Radxa Linkr : Tiny KVM with Wi-Fi, APIs and 2K Remote Access"
-author: 'Amrut Prabhu'
+author: 'Akshata Prabhu'
 categories: ''
 tags: [Radxa, kvm, KVM OVER IP, Remote Access, Tailscale ]
 photo-credits:

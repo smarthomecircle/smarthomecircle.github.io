@@ -1,6 +1,6 @@
 ---
 title: "Waveshare HomeRack 8U Review – Premium 10-Inch Mini Server Rack for a Home Lab"
-author: 'Amrut Prabhu'
+author: 'Akshata Prabhu'
 categories: ''
 tags: [Server Rack, Dashboard, Waveshare, Home lab ]
 photo-credits:

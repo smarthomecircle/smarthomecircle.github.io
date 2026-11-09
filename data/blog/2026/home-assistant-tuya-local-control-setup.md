@@ -1,6 +1,6 @@
 ---
 title: "How to Set Up Tuya Local in Home Assistant (Complete Guide)"
-author: 'Amrut Prabhu'
+author: 'Akshata Prabhu'
 categories: ''
 tags: [Tuya, Home Assistant, Local, Tuya Local, Smart plug, Energy Monitor]
 photo-credits:
