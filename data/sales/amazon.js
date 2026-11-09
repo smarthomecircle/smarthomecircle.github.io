@@ -23,8 +23,8 @@ module.exports = {
           specs: ['PoE / Wi-Fi / USB', 'EFR32MG24', 'Zigbee/Thread'],
           image: '/static/images/2026/sonoff-dongle-max/dongle-max.jpg',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/4qPgpqY' },
-            { label: 'Amazon DE', url: 'https://amzn.to/4qejil7' },
+            { label: 'Amazon US', url: 'https://link.amazon/B0jd6Rqzf' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B0dMI05fG' },
           ],
           post: {
             label: 'Read my review',
@@ -37,7 +37,7 @@ module.exports = {
           specs: ['USB', 'EFR32MG21', 'Zigbee 3.0'],
           image:
             '/static/images/2023/sonoff-zigbee-3-dongle-home-assistant/sonoff-zigbee-3-dongle-plus-image.webp',
-          links: [{ label: 'Amazon US', url: 'https://amzn.to/456Yzp1' }],
+          links: [{ label: 'Amazon US', url: 'https://link.amazon/B054CBJ1G' }],
           post: {
             label: 'See my Zigbee2MQTT guide',
             href: '/install-zigbee2mqtt-with-home-assistant',
@@ -48,7 +48,7 @@ module.exports = {
           name: 'Tuya Zigbee Smart Plug',
           specs: ['Zigbee', 'Energy monitoring'],
           image: '/static/images/2023/sonoff-zigbee-3-dongle-home-assistant/zigbee-plug.webp',
-          links: [{ label: 'Amazon DE', url: 'https://amzn.to/3ZFioSq' }],
+          links: [{ label: 'Amazon DE', url: 'https://link.amazon/B0e986Ltv' }],
           post: {
             label: 'See my Zigbee2MQTT guide',
             href: '/install-zigbee2mqtt-with-home-assistant',
@@ -60,9 +60,9 @@ module.exports = {
           specs: ['Wi-Fi', 'Energy monitoring', 'Tuya Local'],
           image: '/static/images/2026/tuya-local-setup/tuya-plug.png',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/4d0AK8D' },
-            { label: 'Amazon DE', url: 'https://amzn.to/433hX6A' },
-            { label: 'Amazon UK', url: 'https://amzn.to/4fcY5Fq' },
+            { label: 'Amazon US', url: 'https://link.amazon/B0gdeM4wr' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B08k91bnY' },
+            { label: 'Amazon UK', url: 'https://link.amazon/B09v9mAUK' },
           ],
           post: {
             label: 'See my Tuya Local guide',
@@ -74,7 +74,7 @@ module.exports = {
           name: 'Tuya / MOES Zigbee Smart Knob',
           specs: ['Rotary', 'Zigbee', 'Scene control'],
           image: '/static/images/2023/moes-zigbee-smart-knob/moes-smart-knob.webp',
-          links: [{ label: 'Amazon DE', url: 'https://amzn.to/47Nvn7S' }],
+          links: [{ label: 'Amazon DE', url: 'https://link.amazon/B0fZdbKeG' }],
           post: { label: 'See my setup guide', href: '/moes-zigbee-smart-knob-with-homeassistant' },
         },
         {
@@ -82,7 +82,7 @@ module.exports = {
           name: 'Xiaomi Temperature & Humidity Monitor 2 (LYWSD03MMC)',
           specs: ['Bluetooth', 'Temp/Humidity'],
           image: '/static/images/2023/xiaomi-temp-humidity-sensor/xiaomi-temp-humidity-sensor.png',
-          links: [{ label: 'Amazon DE', url: 'https://amzn.to/480BKEO' }],
+          links: [{ label: 'Amazon DE', url: 'https://link.amazon/B05TfBdUe' }],
           post: {
             label: 'See my setup guide',
             href: '/connect-xiaomi-temperature-and-humidity-bluetooth-sensor-to-home-assistant',
@@ -93,7 +93,7 @@ module.exports = {
           name: 'SwitchBot Climate Panel + Radiator Thermostat',
           specs: ['Bluetooth', 'Radiator thermostat'],
           image: '/static/images/2025/switchbot-climate-panel/view.webp',
-          links: [{ label: 'Amazon DE', url: 'https://amzn.to/43cbgj7' }],
+          links: [{ label: 'Amazon DE', url: 'https://link.amazon/B06z2Q50G' }],
           post: { label: 'Read my review', href: '/switchbot-climate-panel-trv-setup-review' },
         },
       ],
@@ -109,8 +109,8 @@ module.exports = {
           specs: ['XMOS XVF3800', '4-mic array', 'USB'],
           image: '/static/images/2026/respeaker-xvf3800/respeaker-front.webp',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/3KNXiyh' },
-            { label: 'Amazon DE', url: 'https://amzn.to/3LjM0lp' },
+            { label: 'Amazon US', url: 'https://link.amazon/B00cxEmqQ' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B0cZ8Cqzz' },
           ],
           post: {
             label: 'Read my review',
@@ -122,7 +122,7 @@ module.exports = {
           name: 'Razer USB Streaming Microphone',
           specs: ['USB', 'Microphone'],
           image: '/static/images/2023/voice-home-assistant-usb-microphone/microphone.jpg',
-          links: [{ label: 'Amazon DE', url: 'https://amzn.to/402lMXB' }],
+          links: [{ label: 'Amazon DE', url: 'https://link.amazon/B0auB3irc' }],
           post: {
             label: 'See my voice assistant setup',
             href: '/setup-voice-assistant-with-home-assistant-using-docker-usb-microphone',
@@ -141,7 +141,7 @@ module.exports = {
           name: 'ESP32-S3 Dev Board',
           specs: ['ESP32-S3', 'PSRAM', 'Wi-Fi + BLE'],
           image: '/static/images/components/esp32-s3-n8r2.webp',
-          links: [{ label: 'Amazon US', url: 'https://amzn.to/3xnA8ax' }],
+          links: [{ label: 'Amazon US', url: 'https://link.amazon/B0gMWgtOd' }],
           post: {
             label: 'See my voice assistant build',
             href: '/How-I-created-my-voice-assistant-with-on-device-wake-word-using-home-assistant',
@@ -152,7 +152,7 @@ module.exports = {
           name: 'ESP32 WROOM Dev Board (2-pack)',
           specs: ['ESP32', 'Wi-Fi + BLE'],
           image: '/static/images/2023/wled-with-home-assistant/esp32-wroom.webp',
-          links: [{ label: 'Amazon DE', url: 'https://amzn.to/3QPvyrR' }],
+          links: [{ label: 'Amazon DE', url: 'https://link.amazon/B03TVRxxL' }],
           post: {
             label: 'See my Bluetooth proxy guide',
             href: '/connect-bluetooth-devices-to-home-assistant-with-bluetooth-proxy',
@@ -163,7 +163,7 @@ module.exports = {
           name: 'D1 Mini (ESP8266)',
           specs: ['ESP8266', 'Wi-Fi'],
           image: '/static/images/2023/wled-with-home-assistant/d1-mini.webp',
-          links: [{ label: 'Amazon US', url: 'https://amzn.to/3AT0Z0f' }],
+          links: [{ label: 'Amazon US', url: 'https://link.amazon/B00i6s1e2' }],
           post: {
             label: 'See my LED matrix guide',
             href: '/how-to-control-8x32-led-matrix-like-a-pro',
@@ -175,8 +175,8 @@ module.exports = {
           specs: ['I2S', 'Microphone'],
           image: '/static/images/2023/esp32-voice-assistant/inmp441-microphone.webp',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/3GdxO7o' },
-            { label: 'Amazon DE', url: 'https://amzn.to/47uScws' },
+            { label: 'Amazon US', url: 'https://link.amazon/B0edLVEFB' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B0at9Bc93' },
           ],
           post: {
             label: 'See my voice assistant build',
@@ -189,8 +189,8 @@ module.exports = {
           specs: ['I2S', '3W', 'Amplifier'],
           image: '/static/images/2023/esp32-voice-assistant/MAX98357A.webp',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/46wKTmW' },
-            { label: 'Amazon DE', url: 'https://amzn.to/47vEMjH' },
+            { label: 'Amazon US', url: 'https://link.amazon/B09E2swM6' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B0ezLXRoP' },
           ],
           post: {
             label: 'See my voice assistant build',
@@ -202,7 +202,7 @@ module.exports = {
           name: 'WS2812B LED Strip',
           specs: ['Addressable', '5V', 'WLED'],
           image: '/static/images/2023/wled-with-home-assistant/led-strip-aliexpress.webp',
-          links: [{ label: 'Amazon DE', url: 'https://amzn.to/3Pjtmbr' }],
+          links: [{ label: 'Amazon DE', url: 'https://link.amazon/B0aYteLRi' }],
           post: {
             label: 'See my WLED guide',
             href: '/how-to-connect-led-strip-with-home-assistant-using-wled',
@@ -213,7 +213,7 @@ module.exports = {
           name: 'WS2812B COB LED Strip',
           specs: ['COB', 'Addressable', '5V'],
           image: '/static/images/components/Ws2812b-cob-led-strip.webp',
-          links: [{ label: 'Amazon DE', url: 'https://amzn.to/3yqR7t7' }],
+          links: [{ label: 'Amazon DE', url: 'https://link.amazon/B02LDgXnh' }],
           post: {
             label: 'See my voice assistant build',
             href: '/How-I-created-my-voice-assistant-with-on-device-wake-word-using-home-assistant',
@@ -224,7 +224,7 @@ module.exports = {
           name: '8x32 LED Matrix',
           specs: ['8x32', 'Addressable'],
           image: '/static/images/2024/led-matrix/8x32-led-matrix.webp',
-          links: [{ label: 'Amazon US', url: 'https://amzn.to/3TJnZ8z' }],
+          links: [{ label: 'Amazon US', url: 'https://link.amazon/B09RJixyB' }],
           post: {
             label: 'See my LED matrix guide',
             href: '/how-to-control-8x32-led-matrix-like-a-pro',
@@ -242,7 +242,7 @@ module.exports = {
           name: 'Radxa Rock 5T',
           specs: ['Rockchip RK3588', '4–32GB RAM', 'Dual 2.5GbE'],
           image: '/static/images/2026/rock-5t/front.webp',
-          links: [{ label: 'Amazon US', url: 'https://amzn.to/40Vp1BK' }],
+          links: [{ label: 'Amazon US', url: 'https://link.amazon/B03XAwz8p' }],
           post: { label: 'Read my review', href: '/radxa-rock-5t-better-than-raspberrypi-5' },
         },
         {
@@ -250,7 +250,7 @@ module.exports = {
           name: 'Radxa Dragon Q8B',
           specs: ['Snapdragon SC8280XP', '4–32GB RAM', 'Dual NVMe'],
           image: '/static/images/2026/radxa-dragon-q8b/front.webp',
-          links: [{ label: 'Amazon US', url: 'https://amzn.to/4zpbHVV' }],
+          links: [{ label: 'Amazon US', url: 'https://link.amazon/B05tOzdRo' }],
           post: {
             label: 'Read my review',
             href: '/radxa-dragon-q8b-snapdragon-8cx-gen3-sbc-review',
@@ -262,8 +262,8 @@ module.exports = {
           specs: ['Allwinner A733', '2–16GB RAM', 'PCIe NVMe'],
           image: '/static/images/2025/radxa-cubie-a7a/front.webp',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/47Q9yHd' },
-            { label: 'Amazon DE', url: 'https://amzn.to/4pjxHeU' },
+            { label: 'Amazon US', url: 'https://link.amazon/B03qDN506' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B0bxJrA5I' },
           ],
           post: {
             label: 'Read my review',
@@ -275,7 +275,7 @@ module.exports = {
           name: 'Orange Pi 5 Max',
           specs: ['Rockchip RK3588', '8GB RAM', '6 TOPS NPU'],
           image: '/static/images/components/orange-pi-5-max.webp',
-          links: [{ label: 'Amazon DE', url: 'https://amzn.to/4gAEOw4' }],
+          links: [{ label: 'Amazon DE', url: 'https://link.amazon/B0hW2m4qX' }],
           post: {
             label: 'Read my review',
             href: '/Orange-pi-5-max-a-powerful-successor-to-orange-pi-5-pro',
@@ -287,8 +287,8 @@ module.exports = {
           specs: ['Broadcom BCM2712', '4GB RAM', 'PCIe'],
           image: '/static/images/2024/raspberry-pi-nas/raspberry-pi5.jpg',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/3IETvS9' },
-            { label: 'Amazon DE', url: 'https://amzn.to/4kOb1kn' },
+            { label: 'Amazon US', url: 'https://link.amazon/B004ZiTgV' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B0i2M4J3P' },
           ],
           post: { label: 'See my Pi 5 NAS build', href: '/create-nas-with-raspberry-pi-5' },
         },
@@ -298,9 +298,9 @@ module.exports = {
           specs: ['Intel N150', 'x86', '2-bay NAS'],
           image: '/static/images/2026/zimaboard-2-review/zimaboard-2.webp',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/4s373YA' },
-            { label: 'Amazon DE', url: 'https://amzn.to/4bVWEb8' },
-            { label: 'Amazon UK', url: 'https://amzn.to/4bUYEAt' },
+            { label: 'Amazon US', url: 'https://link.amazon/B03gkt5Yt' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B0cwN6mpH' },
+            { label: 'Amazon UK', url: 'https://link.amazon/B093UgduN' },
           ],
           post: {
             label: 'Read my review',
@@ -313,8 +313,8 @@ module.exports = {
           specs: ['Intel N100', '8GB RAM', '64GB eMMC'],
           image: '/static/images/2025/gpu-experiment/latte-panda-mu.webp',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/3WLJS88' },
-            { label: 'Amazon DE', url: 'https://amzn.to/4qQevai' },
+            { label: 'Amazon US', url: 'https://link.amazon/B046zbiva' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B01iOmcA2' },
           ],
           post: {
             label: 'See my eGPU build',
@@ -326,7 +326,7 @@ module.exports = {
           name: 'LattePanda Mu Lite Carrier Board',
           specs: ['PCIe 3.0', 'M.2 M-key', 'Ethernet'],
           image: '/static/images/2025/diy-rack/latte-panda-mu-rack-mount.webp',
-          links: [{ label: 'Amazon DE', url: 'https://amzn.to/3IvRzLY' }],
+          links: [{ label: 'Amazon DE', url: 'https://link.amazon/B006thewg' }],
           post: { label: 'See my DIY rack build', href: '/I-built-a-diy-10-inch-server-rack' },
         },
       ],
@@ -343,8 +343,8 @@ module.exports = {
           specs: ['3.5"', '5400 rpm', 'CMR'],
           image: '/static/images/2025/backup-strategies/hdd.jpg',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/3ZXRqFQ' },
-            { label: 'Amazon DE', url: 'https://amzn.to/3ZN5To0' },
+            { label: 'Amazon US', url: 'https://link.amazon/B0aKMfbjb' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B03YUQwoM' },
           ],
           post: {
             label: 'See my NAS backup setup',
@@ -357,8 +357,8 @@ module.exports = {
           specs: ['2.5"', 'SATA 6 Gbps'],
           image: '/static/images/2025/backup-strategies/ssd.jpg',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/4gKmeRC' },
-            { label: 'Amazon DE', url: 'https://amzn.to/3VU6T8Q' },
+            { label: 'Amazon US', url: 'https://link.amazon/B07qx4h5x' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B04LopsNo' },
           ],
           post: {
             label: 'See my NAS backup setup',
@@ -371,8 +371,8 @@ module.exports = {
           specs: ['ASM1166', '6x SATA', 'M.2'],
           image: '/static/images/2024/diy-nas-cm5/sata-adapter.webp',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/3Bm0QmD' },
-            { label: 'Amazon DE', url: 'https://amzn.to/4fjHg8j' },
+            { label: 'Amazon US', url: 'https://link.amazon/B07p3T3MH' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B03oxvZqb' },
           ],
           post: {
             label: 'See my CM5 NAS build',
@@ -385,8 +385,8 @@ module.exports = {
           specs: ['3.5" HDD', 'Rack mount'],
           image: '/static/images/2024/diy-nas-cm5/hdd-rack.webp',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/4iFN3rF' },
-            { label: 'Amazon DE', url: 'https://amzn.to/3BuOMPY' },
+            { label: 'Amazon US', url: 'https://link.amazon/B09tM1qzY' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B00u6LcZ3' },
           ],
           post: {
             label: 'See my CM5 NAS build',
@@ -399,8 +399,8 @@ module.exports = {
           specs: ['USB 3.0', '2.5" SSD/HDD'],
           image: '/static/images/2025/backup-strategies/usb-sata.jpg',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/3VS6uDJ' },
-            { label: 'Amazon DE', url: 'https://amzn.to/41ZiW8y' },
+            { label: 'Amazon US', url: 'https://link.amazon/B02M5UFSk' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B000a1yz2' },
           ],
           post: {
             label: 'See my NAS backup setup',
@@ -413,8 +413,8 @@ module.exports = {
           specs: ['eSATAp', '2.5"/3.5" HDD'],
           image: '/static/images/2025/backup-strategies/esata.jpg',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/41RZWsz' },
-            { label: 'Amazon DE', url: 'https://amzn.to/3Dsq2Z5' },
+            { label: 'Amazon US', url: 'https://link.amazon/B0flfPF3q' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B05fF7tiI' },
           ],
           post: {
             label: 'See my NAS backup setup',
@@ -426,7 +426,7 @@ module.exports = {
           name: 'External Hard Drive',
           specs: ['USB', 'NAS storage'],
           image: '/static/images/2024/raspberry-pi-nas/external-drive.jpg',
-          links: [{ label: 'Amazon US', url: 'https://amzn.to/3HqIaBz' }],
+          links: [{ label: 'Amazon US', url: 'https://link.amazon/B0ahlnyTL' }],
           post: { label: 'See my Pi 5 NAS build', href: '/create-nas-with-raspberry-pi-5' },
         },
         {
@@ -434,7 +434,7 @@ module.exports = {
           name: 'Micro SD Card',
           specs: ['microSD'],
           image: '/static/images/2024/raspberry-pi-nas/sd-card.jpg',
-          links: [{ label: 'Amazon US', url: 'https://amzn.to/3OdnUqQ' }],
+          links: [{ label: 'Amazon US', url: 'https://link.amazon/B05FHCXf3' }],
           post: { label: 'See my Pi 5 NAS build', href: '/create-nas-with-raspberry-pi-5' },
         },
         {
@@ -443,8 +443,8 @@ module.exports = {
           specs: ['OCuLink', 'PCIe 4.0 x4'],
           image: '/static/images/2025/gpu-experiment/egpu.jpg',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/4nEnY1v' },
-            { label: 'Amazon DE', url: 'https://amzn.to/43mrXbU' },
+            { label: 'Amazon US', url: 'https://link.amazon/B0j15tW9x' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B000KyTCr' },
           ],
           post: {
             label: 'See my eGPU build',
@@ -457,8 +457,8 @@ module.exports = {
           specs: ['PCIe x4', 'SFF-8611/8612'],
           image: '/static/images/2025/gpu-experiment/pcie-adapter.webp',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/3JNQL61' },
-            { label: 'Amazon DE', url: 'https://amzn.to/49kKVDH' },
+            { label: 'Amazon US', url: 'https://link.amazon/B04o67V4H' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B05kMPxZz' },
           ],
           post: {
             label: 'See my eGPU build',
@@ -478,8 +478,8 @@ module.exports = {
           specs: ['KVM over IP', '4K', 'Tailscale'],
           image: '/static/images/2025/comet-kvm/comet-kvm.webp',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/3GKnCHz' },
-            { label: 'Amazon DE', url: 'https://amzn.to/44PyFbt' },
+            { label: 'Amazon US', url: 'https://link.amazon/B0dGyrOpT' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B08vVsiPd' },
           ],
           post: { label: 'Read my review', href: '/comet-kvm-gl-rm1-review-best-kvm-over-ip-2025' },
         },
@@ -489,8 +489,8 @@ module.exports = {
           specs: ['Wi-Fi 7', 'Travel router'],
           image: '/static/images/2025/glinet-slate-7-travel-router/1-router.webp',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/3IwT8t7' },
-            { label: 'Amazon DE', url: 'https://amzn.to/44FkqWP' },
+            { label: 'Amazon US', url: 'https://link.amazon/B0bN9nPyL' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B072gfGZ5' },
           ],
           post: { label: 'Read my review', href: '/glinet-slate-7-wifi-7-travel-router' },
         },
@@ -499,7 +499,7 @@ module.exports = {
           name: 'GL.iNet Slate 7 Pro',
           specs: ['Wi-Fi 7', '6 GHz', '2.5G'],
           image: '/static/images/2026/slate-7-pro/slate-7-pro.webp',
-          links: [{ label: 'Amazon DE', url: 'https://amzn.to/3SGxSGf' }],
+          links: [{ label: 'Amazon DE', url: 'https://link.amazon/B0erZHIPb' }],
           post: {
             label: 'Read my review',
             href: '/gl-inet-slate-7-pro-wifi-7-travel-router-review',
@@ -518,7 +518,7 @@ module.exports = {
           name: 'Waveshare HomeRack 8U',
           specs: ['8U', '10-inch rack'],
           image: '/static/images/2026/waveshare-homerack/product-view.webp',
-          links: [{ label: 'Amazon US', url: 'https://amzn.to/4zOCpYi' }],
+          links: [{ label: 'Amazon US', url: 'https://link.amazon/B0hLmctoN' }],
           post: {
             label: 'Read my review',
             href: '/waveshare-homerack-8u-10-inch-server-rack-review',
@@ -530,8 +530,8 @@ module.exports = {
           specs: ['2020', 'T-slot'],
           image: '/static/images/2025/diy-rack/rails-1.webp',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/4eb7wCL' },
-            { label: 'Amazon DE', url: 'https://amzn.to/44djPKs' },
+            { label: 'Amazon US', url: 'https://link.amazon/B01SOzOnc' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B02Jc7aKf' },
           ],
           post: { label: 'See my DIY rack build', href: '/I-built-a-diy-10-inch-server-rack' },
         },
@@ -541,8 +541,8 @@ module.exports = {
           specs: ['2020', 'M5 screws'],
           image: '/static/images/2025/diy-rack/l-shaped-holder.jpg',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/3T1tS02' },
-            { label: 'Amazon DE', url: 'https://amzn.to/4e9r9vf' },
+            { label: 'Amazon US', url: 'https://link.amazon/B08GyyLfx' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B09RZPw5E' },
           ],
           post: { label: 'See my DIY rack build', href: '/I-built-a-diy-10-inch-server-rack' },
         },
@@ -552,8 +552,8 @@ module.exports = {
           specs: ['2020', 'Handle'],
           image: '/static/images/2025/diy-rack/handle.webp',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/45vtvST' },
-            { label: 'Amazon DE', url: 'https://amzn.to/44asr4u' },
+            { label: 'Amazon US', url: 'https://link.amazon/B0a0maAwE' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B09oNPAv6' },
           ],
           post: { label: 'See my DIY rack build', href: '/I-built-a-diy-10-inch-server-rack' },
         },
@@ -563,8 +563,8 @@ module.exports = {
           specs: ['M5', '8 mm'],
           image: '/static/images/2025/diy-rack/m5-screws.avif',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/3G3B7S6' },
-            { label: 'Amazon DE', url: 'https://amzn.to/44pkR7h' },
+            { label: 'Amazon US', url: 'https://link.amazon/B0j2HGkrv' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B076hBUiv' },
           ],
           post: { label: 'See my DIY rack build', href: '/I-built-a-diy-10-inch-server-rack' },
         },
@@ -574,8 +574,8 @@ module.exports = {
           specs: ['2020', 'M5'],
           image: '/static/images/2025/diy-rack/m5-spring-nut.avif',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/4lgx18d' },
-            { label: 'Amazon DE', url: 'https://amzn.to/4jXskz6' },
+            { label: 'Amazon US', url: 'https://link.amazon/B0cRyRvMV' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B06l6Y7dE' },
           ],
           post: { label: 'See my DIY rack build', href: '/I-built-a-diy-10-inch-server-rack' },
         },
@@ -585,8 +585,8 @@ module.exports = {
           specs: ['30 cm', '4K'],
           image: '/static/images/2025/diy-rack/micro-hdmi.avif',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/3ZDAfub' },
-            { label: 'Amazon DE', url: 'https://amzn.to/43SKddI' },
+            { label: 'Amazon US', url: 'https://link.amazon/B0hvMHTJX' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B0a5ibiaj' },
           ],
           post: { label: 'See my DIY rack build', href: '/I-built-a-diy-10-inch-server-rack' },
         },
@@ -596,8 +596,8 @@ module.exports = {
           specs: ['30 cm', '4K'],
           image: '/static/images/2025/diy-rack/hdmi-to-hdmi.avif',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/3T2E0pf' },
-            { label: 'Amazon DE', url: 'https://amzn.to/3HIhxvk' },
+            { label: 'Amazon US', url: 'https://link.amazon/B0fNeKehY' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B07ieUnO8' },
           ],
           post: { label: 'See my DIY rack build', href: '/I-built-a-diy-10-inch-server-rack' },
         },
@@ -607,8 +607,8 @@ module.exports = {
           specs: ['RJ45', 'Keystone', '10 pcs'],
           image: '/static/images/2025/diy-rack/rj45.webp',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/4elkYnN' },
-            { label: 'Amazon DE', url: 'https://amzn.to/3G3Q72q' },
+            { label: 'Amazon US', url: 'https://link.amazon/B0bvWcpVj' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B0dCQ09DC' },
           ],
           post: { label: 'See my DIY rack build', href: '/I-built-a-diy-10-inch-server-rack' },
         },
@@ -618,8 +618,8 @@ module.exports = {
           specs: ['CAT6', 'Short'],
           image: '/static/images/2025/diy-rack/patch-cable.avif',
           links: [
-            { label: 'Amazon US', url: 'https://amzn.to/4l3gO5B' },
-            { label: 'Amazon DE', url: 'https://amzn.to/46BROPy' },
+            { label: 'Amazon US', url: 'https://link.amazon/B05yj7Kol' },
+            { label: 'Amazon DE', url: 'https://link.amazon/B03hIeDuY' },
           ],
           post: { label: 'See my DIY rack build', href: '/I-built-a-diy-10-inch-server-rack' },
         },

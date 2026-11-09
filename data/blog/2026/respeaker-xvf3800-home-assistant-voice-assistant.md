@@ -30,9 +30,9 @@ affiliateLinks:
     - label: "AliExpress"
       url: "https://s.click.aliexpress.com/e/_c3v77jId"
     - label: "Amazon EU"
-      url: "https://amzn.to/3LjM0lp"
+      url: "https://link.amazon/B0cZ8Cqzz"
     - label: "Amazon US"
-      url: "https://amzn.to/3KNXiyh"
+      url: "https://link.amazon/B00cxEmqQ"
     - label: "Seeed Studio"
       url: "https://www.seeedstudio.com/ReSpeaker-XVF3800-USB-Mic-Array-p-6488.html?sensecap_affiliate=zkW5xlz&referring_service=link"
 

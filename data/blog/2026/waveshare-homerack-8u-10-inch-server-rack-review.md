@@ -26,7 +26,7 @@ affiliateLinks:
     - label: "Amazon EU"
       url: "https://link.amazon/B05gvaoK1"
     - label: "Amazon US"
-      url: "https://amzn.to/4zOCpYi"
+      url: "https://link.amazon/B0hLmctoN"
     - label: "AliExpress"
       url: "https://s.click.aliexpress.com/e/_c3VLqecX"
     - label: "Waveshare"

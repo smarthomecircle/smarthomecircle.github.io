@@ -58,15 +58,15 @@ Here’s a full list of components with images and links for purchase:
 
 | Item |  Specs & Affiliate Buying Links |
 |------|:----------------|
-| **2020 T Type Slot Aluminium extrusion profile** <br/> <img src="/static/images/2025/diy-rack/rails-1.webp" width="150"/>  |  - 4 pieces 500 mm length <br/> - 4 pieces 250 mm length  <br/> - 4 pieces 200 mm length  <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://amzn.to/4eb7wCL" }, { store: "Amazon DE", url: "https://amzn.to/44djPKs" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_olj4GKu" }]} /> |
-| **2020 L-shape corner bracket** <br/> <img src="/static/images/2025/diy-rack/l-shaped-holder.jpg" width="150"/>  |  - 24 pieces with M5 Screws  <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://amzn.to/3T1tS02" }, { store: "Amazon DE", url: "https://amzn.to/4e9r9vf" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_onRkO2g" }]} /> |
-| **2020 Aluminium Profile Handle** <br/> <img src="/static/images/2025/diy-rack/handle.webp" width="150"/>  |  - 2 pieces 100 mm for 20x20 Aluminium Profile  <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://amzn.to/45vtvST" }, { store: "Amazon DE", url: "https://amzn.to/44asr4u" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oouOx5a" }]} /> |
-| **M5 x 8mm Mounting Screws** <br/> <img src="/static/images/2025/diy-rack/m5-screws.avif" width="150"/>  |  - 50 pieces M5 Screws <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://amzn.to/3G3B7S6" }, { store: "Amazon DE", url: "https://amzn.to/44pkR7h" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_ooEQ5V6" }]} /> |
-| **2020 M5 Spring Ball Nut** <br/> <img src="/static/images/2025/diy-rack/m5-spring-nut.avif" width="150"/>  |  - 50 pieces <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://amzn.to/4lgx18d" }, { store: "Amazon DE", url: "https://amzn.to/4jXskz6" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oCe5PHw" }]} /> |
-| **Micro HDMI to HDMI 30cm** <br/> <img src="/static/images/2025/diy-rack/micro-hdmi.avif" width="150"/>  |  - 2 pieces <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://amzn.to/3ZDAfub" }, { store: "Amazon DE", url: "https://amzn.to/43SKddI" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oCs4tFe" }]} /> |
-| **HDMI to HDMI 30cm** <br/> <img src="/static/images/2025/diy-rack/hdmi-to-hdmi.avif" width="150"/>  |  - 2 pieces <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://amzn.to/3T2E0pf" }, { store: "Amazon DE", url: "https://amzn.to/3HIhxvk" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_opwDBD2" }]} /> |
-| **RJ45 Keystone Jack** <br/> <img src="/static/images/2025/diy-rack/rj45.webp" width="150"/>  |  - 10 pieces <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://amzn.to/4elkYnN" }, { store: "Amazon DE", url: "https://amzn.to/3G3Q72q" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_olPuxKy" }]} /> |
-| **CAT6 Patch Cable** <br/> <img src="/static/images/2025/diy-rack/patch-cable.avif" width="150"/>  |  - 10 pieces <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://amzn.to/4l3gO5B" }, { store: "Amazon DE", url: "https://amzn.to/46BROPy" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oEJLvyJ" }]} /> |
+| **2020 T Type Slot Aluminium extrusion profile** <br/> <img src="/static/images/2025/diy-rack/rails-1.webp" width="150"/>  |  - 4 pieces 500 mm length <br/> - 4 pieces 250 mm length  <br/> - 4 pieces 200 mm length  <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://link.amazon/B01SOzOnc" }, { store: "Amazon DE", url: "https://link.amazon/B02Jc7aKf" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_olj4GKu" }]} /> |
+| **2020 L-shape corner bracket** <br/> <img src="/static/images/2025/diy-rack/l-shaped-holder.jpg" width="150"/>  |  - 24 pieces with M5 Screws  <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://link.amazon/B08GyyLfx" }, { store: "Amazon DE", url: "https://link.amazon/B09RZPw5E" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_onRkO2g" }]} /> |
+| **2020 Aluminium Profile Handle** <br/> <img src="/static/images/2025/diy-rack/handle.webp" width="150"/>  |  - 2 pieces 100 mm for 20x20 Aluminium Profile  <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://link.amazon/B0a0maAwE" }, { store: "Amazon DE", url: "https://link.amazon/B09oNPAv6" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oouOx5a" }]} /> |
+| **M5 x 8mm Mounting Screws** <br/> <img src="/static/images/2025/diy-rack/m5-screws.avif" width="150"/>  |  - 50 pieces M5 Screws <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://link.amazon/B0j2HGkrv" }, { store: "Amazon DE", url: "https://link.amazon/B076hBUiv" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_ooEQ5V6" }]} /> |
+| **2020 M5 Spring Ball Nut** <br/> <img src="/static/images/2025/diy-rack/m5-spring-nut.avif" width="150"/>  |  - 50 pieces <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://link.amazon/B0cRyRvMV" }, { store: "Amazon DE", url: "https://link.amazon/B06l6Y7dE" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oCe5PHw" }]} /> |
+| **Micro HDMI to HDMI 30cm** <br/> <img src="/static/images/2025/diy-rack/micro-hdmi.avif" width="150"/>  |  - 2 pieces <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://link.amazon/B0hvMHTJX" }, { store: "Amazon DE", url: "https://link.amazon/B0a5ibiaj" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oCs4tFe" }]} /> |
+| **HDMI to HDMI 30cm** <br/> <img src="/static/images/2025/diy-rack/hdmi-to-hdmi.avif" width="150"/>  |  - 2 pieces <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://link.amazon/B0fNeKehY" }, { store: "Amazon DE", url: "https://link.amazon/B07ieUnO8" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_opwDBD2" }]} /> |
+| **RJ45 Keystone Jack** <br/> <img src="/static/images/2025/diy-rack/rj45.webp" width="150"/>  |  - 10 pieces <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://link.amazon/B0bvWcpVj" }, { store: "Amazon DE", url: "https://link.amazon/B0dCQ09DC" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_olPuxKy" }]} /> |
+| **CAT6 Patch Cable** <br/> <img src="/static/images/2025/diy-rack/patch-cable.avif" width="150"/>  |  - 10 pieces <br/> <AffiliateLinks title="" links={[{ store: "Amazon US", url: "https://link.amazon/B05yj7Kol" }, { store: "Amazon DE", url: "https://link.amazon/B03hIeDuY" }, { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oEJLvyJ" }]} /> |
 
 
 
@@ -91,8 +91,8 @@ At $150, it delivers strong value with NAS support, advanced features, and world
 <AffiliateLinks 
   title="Buy This" 
   links={[
-    { store: "Amazon US", url: "https://amzn.to/3IwT8t7" },
-    { store: "Amazon DE", url: "https://amzn.to/44FkqWP" },
+    { store: "Amazon US", url: "https://link.amazon/B0bN9nPyL" },
+    { store: "Amazon DE", url: "https://link.amazon/B072gfGZ5" },
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oDLL1GK" }
   ]}
 />
@@ -110,8 +110,8 @@ Ideal for DIY projects, media centers, and light desktop tasks at an affordable 
 <AffiliateLinks 
   title="Buy This" 
   links={[
-    { store: "Amazon US", url: "https://amzn.to/3IETvS9" },
-    { store: "Amazon DE", url: "https://amzn.to/4kOb1kn" },
+    { store: "Amazon US", url: "https://link.amazon/B004ZiTgV" },
+    { store: "Amazon DE", url: "https://link.amazon/B0i2M4J3P" },
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_opYsGai" }
   ]}
 />  
@@ -132,7 +132,7 @@ It can run Home Assistant, NAS setups, and AI workloads, making it great for hom
 <AffiliateLinks 
   title="Buy This" 
   links={[
-    { store: "Amazon US", url: "https://amzn.to/40Vp1BK" },
+    { store: "Amazon US", url: "https://link.amazon/B03XAwz8p" },
     { store: "All Net China", url: "https://shop.allnetchina.cn/products/rock-5t" },
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_opvmiJ4" }
   ]}
@@ -146,8 +146,8 @@ The [LattePanda Mu](https://www.lattepanda.com/lattepanda-mu) Lite Carrier Boa
 <AffiliateLinks 
   title="Buy This" 
   links={[
-    { store: "Amazon US", url: "https://amzn.to/3IvQELw" },
-    { store: "Amazon DE", url: "https://amzn.to/3IvRzLY" },
+    { store: "Amazon US", url: "https://link.amazon/B0e1o9qxi" },
+    { store: "Amazon DE", url: "https://link.amazon/B006thewg" },
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_oEVRfJs" }
   ]}
 /> 

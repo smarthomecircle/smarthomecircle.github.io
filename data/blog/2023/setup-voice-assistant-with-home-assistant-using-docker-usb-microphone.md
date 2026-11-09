@@ -27,8 +27,8 @@ This article will look at how you can set up voice assistance with Home Assistan
     You can check [this](https://smarthomecircle.com/connect-wifi-on-home-assistant-on-startup) link to see how you can install it for the first time
 2.  USB Microphone  
     For Example
-    -   [**Amazon - Razon Mini**](https://amzn.to/402lMXB)
-[![Razon Mini](/static/images/2023/voice-home-assistant-usb-microphone/microphone.jpg)](https://amzn.to/402lMXB)
+    -   [**Amazon - Razon Mini**](https://link.amazon/B0auB3irc)
+[![Razon Mini](/static/images/2023/voice-home-assistant-usb-microphone/microphone.jpg)](https://link.amazon/B0auB3irc)
 
 To set up voice assistant, we would need three components to create the voice assist pipeline in Home Assistant.
 

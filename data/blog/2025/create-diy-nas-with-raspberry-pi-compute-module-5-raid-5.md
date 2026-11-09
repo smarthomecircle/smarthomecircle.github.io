@@ -53,8 +53,8 @@ This adapter, equipped with the ASM1166 chip, supports six SATA connections, mak
 <AffiliateLinks 
   title="Buy NVMe to SATA Adapter (ASM1166)" 
   links={[
-    { store: "Amazon EU", url: "https://amzn.to/4fjHg8j" },
-    { store: "Amazon US", url: "https://amzn.to/3Bm0QmD" },
+    { store: "Amazon EU", url: "https://link.amazon/B03oxvZqb" },
+    { store: "Amazon US", url: "https://link.amazon/B07p3T3MH" },
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_olOqrGf" }
   ]}
 />
@@ -65,8 +65,8 @@ This adapter, equipped with the ASM1166 chip, supports six SATA connections, mak
 <AffiliateLinks 
   title="Buy Acrylic HDD Rack Mount" 
   links={[
-    { store: "Amazon EU", url: "https://amzn.to/3BuOMPY" },
-    { store: "Amazon US", url: "https://amzn.to/4iFN3rF" },
+    { store: "Amazon EU", url: "https://link.amazon/B00u6LcZ3" },
+    { store: "Amazon US", url: "https://link.amazon/B09tM1qzY" },
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_olEubxz" }
   ]}
 />
@@ -85,8 +85,8 @@ This adapter, equipped with the ASM1166 chip, supports six SATA connections, mak
 <AffiliateLinks 
   title="Buy Hard Drives for NAS" 
   links={[
-    { store: "Amazon EU", url: "https://amzn.to/3OZOzHs" },
-    { store: "Amazon US", url: "https://amzn.to/4ghjE5E" }
+    { store: "Amazon EU", url: "https://link.amazon/B08rUIeec" },
+    { store: "Amazon US", url: "https://link.amazon/B07peERtg" }
   ]}
 />
 

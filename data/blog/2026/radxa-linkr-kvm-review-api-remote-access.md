@@ -24,7 +24,7 @@ affiliateLinks:
   #   - label: "AliExpress"
   #     url: "https://link.gl-inet.com/be10000-smarthomecircle-eustore-260519"
   #   - label: "Amazon"
-  #     url: "https://amzn.to/3SGxSGf"
+  #     url: "https://link.amazon/B0erZHIPb"
 ---
 
 <TOCInline toc={props.toc} asDisclosure /> 

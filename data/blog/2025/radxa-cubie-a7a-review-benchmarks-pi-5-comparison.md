@@ -26,9 +26,9 @@ affiliateLinks:
       - label: "AliExpress"
         url: "https://s.click.aliexpress.com/e/_c434m0ff"
       - label: "Amazon US"
-        url: "https://amzn.to/47Q9yHd"
+        url: "https://link.amazon/B03qDN506"
       - label: "Amazon Europe"
-        url: "https://amzn.to/4pjxHeU"
+        url: "https://link.amazon/B0bxJrA5I"
       - label: "Arace"
         url: "https://arace.tech/products/radxa-cubie-a7a"
 

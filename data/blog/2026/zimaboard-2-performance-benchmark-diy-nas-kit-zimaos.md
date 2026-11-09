@@ -27,11 +27,11 @@ affiliateLinks:
     - label: "Official Site"
       url: "https://bit.ly/4t9vZij"
     - label: "Amazon DE"
-      url: "https://amzn.to/4bVWEb8"
+      url: "https://link.amazon/B0cwN6mpH"
     - label: "Amazon US"
-      url: "https://amzn.to/4s373YA"
+      url: "https://link.amazon/B03gkt5Yt"
     - label: "Amazon UK"
-      url: "https://amzn.to/4bUYEAt"
+      url: "https://link.amazon/B093UgduN"
 
 includeAsSBC:
   title: "ZimaBoard 2"
