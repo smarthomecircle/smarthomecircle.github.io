@@ -1,8 +1,6 @@
 import PageTitle from '@/components/PageTitle'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
-import { getAllAuthors } from '@/lib/authors'
-import resolveAuthors, { findAuthor, getRequestedAuthors } from '@/lib/utils/resolveAuthors'
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
@@ -34,19 +32,12 @@ export async function getStaticProps({ params }) {
 
   const post = await getFileBySlug('blog', currentPost.actualUrl)
 
-  const allAuthors = getAllAuthors()
-  const unknownAuthors = getRequestedAuthors(post.frontMatter).filter(
-    (author) => !findAuthor(author, allAuthors)
-  )
-  if (unknownAuthors.length) {
-    throw new Error(
-      `Unknown author ${unknownAuthors.join(', ')} in post "${params.slug}". ` +
-        `Use a name or file name from data/authors: ${allAuthors
-          .map((author) => `${author.name} (${author.slug})`)
-          .join(', ')}`
-    )
-  }
-  const authorDetails = resolveAuthors(post.frontMatter, allAuthors)
+  const authorList = post.frontMatter.authors || ['default']
+  const authorPromise = authorList.map(async (author) => {
+    const authorResults = await getFileBySlug('authors', [author])
+    return authorResults.frontMatter
+  })
+  const authorDetails = await Promise.all(authorPromise)
 
   return { props: { post, authorDetails, prev, next } }
 }

@@ -1,6 +1,6 @@
 ---
 title: "How to Auto-Mount an NVMe Drive on Linux at Startup (Using /etc/fstab)"
-author: 'Akshata Prabhu'
+author: 'Amrut Prabhu'
 categories: ''
 tags: [SBC, linux, storage, mount, startup]
 photo-credits:

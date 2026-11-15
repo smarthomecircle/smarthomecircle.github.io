@@ -1,7 +1,6 @@
 import { TagSEO } from '@/components/SEO'
 import ListLayout from '@/layouts/ListLayout'
-import { getAllFilesFrontMatter } from '@/lib/mdx'
-import { getAllAuthors } from '@/lib/authors'
+import { getAllFilesFrontMatter, getFileBySlug } from '@/lib/mdx'
 import { getAllTags } from '@/lib/tags'
 import formatTagText from '@/lib/utils/formatTagText'
 import kebabCase from '@/lib/utils/kebabCase'
@@ -28,7 +27,13 @@ export async function getStaticProps({ params }) {
     (post) => post.draft !== true && post.tags.map((t) => kebabCase(t)).includes(tagParam)
   )
 
-  const authorDetails = getAllAuthors()
+  // TODO: Fix this
+  const authorList = ['default']
+  const authorPromise = authorList.map(async (author) => {
+    const authorResults = await getFileBySlug('authors', [author])
+    return authorResults.frontMatter
+  })
+  const authorDetails = await Promise.all(authorPromise)
 
   return { props: { posts: filteredPosts, tag: tagParam, authorDetails: authorDetails } }
 }
