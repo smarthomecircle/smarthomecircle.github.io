@@ -1,6 +1,6 @@
 ---
 title: 'GL.iNet Slate 7 Pro Review: The Ultimate Wi-Fi 7 Travel Router'
-author: 'Akshata Prabhu'
+author: 'Amrut Prabhu'
 categories: ''
 tags: [Travel Router, VPN, home lab,  glinet]
 photo-credits:

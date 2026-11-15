@@ -1,6 +1,6 @@
 ---
 title: "GL.iNet Comet X Review: Control 4 Computers Remotely with One KVM"
-author: 'Akshata Prabhu'
+author: 'Amrut Prabhu'
 categories: ''
 tags: [KVM, Remote Access, GLiNet, Server, Rack ]
 photo-credits:

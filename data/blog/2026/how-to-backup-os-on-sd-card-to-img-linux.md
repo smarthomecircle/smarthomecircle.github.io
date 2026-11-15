@@ -1,6 +1,6 @@
 ---
 title: "How to Back Up an SD Card (Full OS Image) to an IMG File Using Linux Command Line"
-author: 'Akshata Prabhu'
+author: 'Amrut Prabhu'
 categories: ''
 tags: [SBC, backup, OS, SDCard, linux]
 photo-credits:
