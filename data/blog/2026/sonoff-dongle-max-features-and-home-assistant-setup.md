@@ -27,9 +27,9 @@ affiliateLinks:
     - label: "AliExpress"
       url: "https://s.click.aliexpress.com/e/_c3kHBYyn"
     - label: "Amazon EU"
-      url: "https://link.amazon/B0dMI05fG"
+      url: "https://amzn.to/4qejil7"
     - label: "Amazon US"
-      url: "https://link.amazon/B0jd6Rqzf"
+      url: "https://amzn.to/4qPgpqY"
 
 ---
 
