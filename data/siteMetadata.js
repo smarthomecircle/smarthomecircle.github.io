@@ -35,7 +35,7 @@ const siteMetadata = {
   adsense: {
     // Ads are not rendered while publisherId is empty.
     // Also update public/ads.txt when changing publisherId.
-    publisherId: 'ca-pub-4338088833951936',
+    publisherId: 'ca-pub-4338088833951938',
     // In-feed ad units. Used for blog list ads and in-article (H2 section) ads.
     // e.g. { slot: '1234567890', layoutKey: '-fb+5w+4e-db+86' }
     slots: [],
