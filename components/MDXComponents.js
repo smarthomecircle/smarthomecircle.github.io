@@ -16,6 +16,7 @@ import PostSimple from '../layouts/PostSimple'
 import AuthorLayout from '../layouts/AuthorLayout'
 import Policy from '../layouts/Policy'
 import ListLayout from '../layouts/ListLayout'
+import siteMetadata from '@/data/siteMetadata'
 
 // Explicit layout map. Previously the wrapper used a dynamic
 // `require(`../layouts/${layout}`)`, which returned `undefined` under the
@@ -29,33 +30,17 @@ const LAYOUTS = {
   ListLayout,
 }
 
-// Centralized slot ID and layout key mappings
-const SLOT_MAPPINGS = {
-  // Original slots
-  5121856708: '-fb+5w+4e-db+86', // H3 ads
-  4906783027: '-g2+y-1l-kc+17h', // H2 ads
-
-  // Blog list ad slots
-  3638066836: '-fb+5w+4e-db+86', // Blog list ads - position 1
-  1398098062: '-fb+5w+4e-db+86', // Blog list ads - position 2
-  8873812148: '-fb+5w+4e-db+86', // Blog list ads - position 3
-}
+const AD_SLOTS = siteMetadata.adsense.slots
 
 // Function to get layout key for any slot ID
 export const getLayoutKey = (slotId) => {
-  return SLOT_MAPPINGS[slotId] || '-fb+5w+4e-db+86' // fallback
+  return AD_SLOTS.find((adSlot) => adSlot.slot === slotId)?.layoutKey
 }
+
+const slotIds = AD_SLOTS.map((adSlot) => adSlot.slot)
 
 // Function to get different slot IDs for blog list ads
 export const getBlogListSlot = (index) => {
-  const slotIds = [
-    '5121856708', // Position 1
-    '4906783027', // Position 2
-    '3638066836', // Position 3
-    '1398098062', // Position 4
-    '8873812148', // Position 5
-  ]
-
   // Calculate which ad position this is (every 3rd post)
   const adPosition = Math.floor(index / 3)
 
@@ -93,14 +78,6 @@ const createAutoAdComponents = (pageId = '') => {
 
   // Function to get different slot IDs for H2 section ads
   const getH2SectionSlot = (hash) => {
-    const slotIds = [
-      '5121856708', // Position 1
-      '4906783027', // Position 2
-      '3638066836', // Position 3
-      '1398098062', // Position 4
-      '8873812148', // Position 5
-    ]
-
     // Use hash to deterministically select a slot
     return slotIds[hash % slotIds.length]
   }

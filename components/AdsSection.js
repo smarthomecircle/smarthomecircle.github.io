@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import siteMetadata from '@/data/siteMetadata'
 
 function AdsSection({ id, slot, layoutKey }) {
   const adRef = useRef(null)
@@ -30,7 +31,7 @@ function AdsSection({ id, slot, layoutKey }) {
   }, [id, slot])
 
   // Don't render anything if we don't have valid slot IDs
-  if (!slot || slot.includes('567890')) {
+  if (!siteMetadata.adsense.publisherId || !slot || slot.includes('567890')) {
     return null
   }
 
@@ -39,7 +40,7 @@ function AdsSection({ id, slot, layoutKey }) {
       <ins
         className="adsbygoogle"
         style={{ display: 'block' }}
-        data-ad-client="ca-pub-7490174059724719"
+        data-ad-client={siteMetadata.adsense.publisherId}
         data-ad-slot={slot}
         data-ad-format="fluid"
         data-ad-layout-key={layoutKey}

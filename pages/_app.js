@@ -43,13 +43,6 @@ export default function App({ Component, pageProps }) {
       </Head>
 
       <Script
-        id="google-adsense"
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7490174059724719"
-        crossOrigin="anonymous"
-        strategy="afterInteractive"
-      />
-
-      <Script
         id="buymeacoffee"
         src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
         data-name="BMC-Widget"

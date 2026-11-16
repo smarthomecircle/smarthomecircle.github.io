@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import siteMetadata from '@/data/siteMetadata'
 class MyDocument extends Document {
   render() {
     return (
@@ -15,11 +16,13 @@ class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
           {/* Google AdSense */}
-          <script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7490174059724719"
-            crossOrigin="anonymous"
-          ></script>
+          {siteMetadata.adsense.publisherId && (
+            <script
+              async
+              src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${siteMetadata.adsense.publisherId}`}
+              crossOrigin="anonymous"
+            ></script>
+          )}
 
           {/* Modern fonts for better readability */}
           <link
