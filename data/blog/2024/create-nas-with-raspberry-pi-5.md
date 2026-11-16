@@ -34,28 +34,28 @@ We will be making use of OpenMediaVault to manage and serve our shared storage u
   title="" 
   links={[
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_Dk7NN6t" },
-    { store: "Amazon", url: "https://link.amazon/B004ZiTgV" }
+    { store: "Amazon", url: "https://amzn.to/3SuYRSo" }
   ]}
 />    
 2.  **Micro SD Card**
 
-[![Micro SD Card](/static/images/2024/raspberry-pi-nas/sd-card.jpg)](https://link.amazon/B05FHCXf3)
+[![Micro SD Card](/static/images/2024/raspberry-pi-nas/sd-card.jpg)](https://amzn.to/3OdnUqQ)
 
 <AffiliateLinks 
   title="" 
   links={[
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_DBSUjn3" },
-    { store: "Amazon", url: "https://link.amazon/B05FHCXf3" }
+    { store: "Amazon", url: "https://amzn.to/3OdnUqQ" }
   ]}
 />    
 3.  **External Hard Drive**
 
-[![External Hard Drive](/static/images/2024/raspberry-pi-nas/external-drive.jpg)](https://link.amazon/B0ahlnyTL)
+[![External Hard Drive](/static/images/2024/raspberry-pi-nas/external-drive.jpg)](https://amzn.to/3HqIaBz)
 
 <AffiliateLinks 
   title="" 
   links={[
-    { store: "Amazon", url: "https://link.amazon/B0ahlnyTL" }
+    { store: "Amazon", url: "https://amzn.to/3HqIaBz" }
   ]}
 />      
 
