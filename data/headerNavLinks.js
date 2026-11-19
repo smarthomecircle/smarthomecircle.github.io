@@ -11,7 +11,7 @@ const headerNavLinks = [
     ],
   },
   {
-    title: 'Sale',
+    title: 'Black Friday Sale',
     children: [
       { href: '/sale/aliexpress', title: 'AliExpress Deals' },
       { href: '/sale/amazon', title: 'Amazon Deals' },
