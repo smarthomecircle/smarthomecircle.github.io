@@ -36,9 +36,14 @@ const siteMetadata = {
     // Ads are not rendered while publisherId is empty.
     // Also update public/ads.txt when changing publisherId.
     publisherId: 'ca-pub-4338088833951938',
-    // In-feed ad units. Used for blog list ads and in-article (H2 section) ads.
+    // Ad units used for blog list ads and in-article (H2 section) ads.
+    // In-feed units need a layoutKey; units without one render as responsive display ads.
     // e.g. { slot: '1234567890', layoutKey: '-fb+5w+4e-db+86' }
-    slots: [],
+    slots: [
+      { slot: '3083866782' },
+      { slot: '3331278792' },
+      { slot: '8392033787' },
+    ],
   },
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo

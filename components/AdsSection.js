@@ -42,8 +42,9 @@ function AdsSection({ id, slot, layoutKey }) {
         style={{ display: 'block' }}
         data-ad-client={siteMetadata.adsense.publisherId}
         data-ad-slot={slot}
-        data-ad-format="fluid"
-        data-ad-layout-key={layoutKey}
+        {...(layoutKey
+          ? { 'data-ad-format': 'fluid', 'data-ad-layout-key': layoutKey }
+          : { 'data-ad-format': 'auto', 'data-full-width-responsive': 'true' })}
         id={id}
       />
     </div>
