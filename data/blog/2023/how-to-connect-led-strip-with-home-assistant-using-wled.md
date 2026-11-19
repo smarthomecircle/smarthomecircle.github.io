@@ -23,8 +23,9 @@ In this article, we will look at how you can control an LED strip with Home Assi
 
 1.  LED strip with individual programmable LEDS of type WS2812B, WS2811, or SK6812.  
     You can buy using the links below.
-    -   [**Amazon - WS2812B LED**](https://amzn.to/3Pjtmbr)
-[![WS2812B LED](/static/images/2023/wled-with-home-assistant/led-strip.jpg)](https://amzn.to/3Pjtmbr)
+    -   [**Amazon (Worldwide) - WS2812B LED**](https://link.amazon/B0iSX8jMX)
+    -   [**Amazon (Germany) - WS2812B LED**](https://link.amazon/B0j77pe1H)
+[![WS2812B LED](/static/images/2023/wled-with-home-assistant/led-strip.jpg)](https://link.amazon/B0j77pe1H)
 
 -   [**AliExpress - WS2812B LED**](https://s.click.aliexpress.com/e/_DEYtbQb)
 [![WS2812B LED](/static/images/2023/wled-with-home-assistant/led-strip-aliexpress.webp)](https://s.click.aliexpress.com/e/_DEYtbQb)

@@ -89,8 +89,10 @@ affiliateLinks:
   links:
     - label: "AliExpress"
       url: "https://de.aliexpress.com/item/1005012429736010.html?aff_fcid=c4a1c9982013494896246251091de99b-1786995865085-09588-_c3Wt2byj&tt=CPS_NORMAL&aff_fsk=_c3Wt2byj&aff_platform=shareComponent-detail&sk=_c3Wt2byj&aff_trace_key=c4a1c9982013494896246251091de99b-1786995865085-09588-_c3Wt2byj&terminal_id=e062923139f9418882511dd06d5f4091&afSmartRedirect=y"
-    - label: "Amazon"
+    - label: "Amazon (Worldwide)"
       url: "https://amzn.to/4zpbHVV"
+    - label: "Amazon (Germany)"
+      url: "https://link.amazon/B0c3OPqoJ"
     - label: "Arace"
       url: "https://arace.tech/products/radxa-dragon-q8b"
 ---

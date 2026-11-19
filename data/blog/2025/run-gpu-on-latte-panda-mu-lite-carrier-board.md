@@ -41,8 +41,8 @@ This is my living log: everything I did, what worked, and the exact commands I u
 <AffiliateLinks 
   title="Latte Panda Mu Lite Carrier Board" 
   links={[
-    { store: "Amazon DE", url: "https://amzn.to/4qQevai" },
-    { store: "Amazon US", url: "https://amzn.to/3WLJS88" },
+    { store: "Amazon (Germany)", url: "https://amzn.to/4qQevai" },
+    { store: "Amazon (Worldwide)", url: "https://amzn.to/3WLJS88" },
   ]}
 />
 
@@ -62,8 +62,8 @@ This is my living log: everything I did, what worked, and the exact commands I u
   title="eGPU Mount with Oculink Cable" 
   links={[
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_c3Gutyd1" },
-    { store: "Amazon US", url: "https://amzn.to/4nEnY1v" },
-    { store: "Amazon DE", url: "https://amzn.to/43mrXbU" },
+    { store: "Amazon (Worldwide)", url: "https://amzn.to/4nEnY1v" },
+    { store: "Amazon (Germany)", url: "https://amzn.to/43mrXbU" },
   ]}
 />
 
@@ -78,8 +78,8 @@ This is my living log: everything I did, what worked, and the exact commands I u
   title="PCIE 4X to Oculink SFF-8612" 
   links={[
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_c3X4MKnV" },
-    { store: "Amazon US", url: "https://amzn.to/3JNQL61" },
-    { store: "Amazon DE", url: "https://amzn.to/49kKVDH" },
+    { store: "Amazon (Worldwide)", url: "https://amzn.to/3JNQL61" },
+    { store: "Amazon (Germany)", url: "https://amzn.to/49kKVDH" },
   ]}
 />
 

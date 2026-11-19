@@ -18,8 +18,10 @@ affiliateLinks:
   links:
     - label: "GLiNet"
       url: "https://link.gl-inet.com/be10000-smarthomecircle-eustore-260519"
-    - label: "Amazon EU"
-      url: "https://amzn.to/3SGxSGf"
+    - label: "Amazon (Worldwide)"
+      url: "https://link.amazon/B0fYJYYzu"
+    - label: "Amazon (Germany)"
+      url: "https://link.amazon/B0ih27BS9"
 
 
 ---

@@ -20,7 +20,9 @@ affiliateLinks:
   links: 
     - label: "AliExpress"
       url: "https://s.click.aliexpress.com/e/_De07TWt"
-    - label: "Amazon"
+    - label: "Amazon (Worldwide)"
+      url: "https://link.amazon/B08NiriSH"
+    - label: "Amazon (Germany)"
       url: "https://amzn.to/4gAEOw4"
 
 
@@ -232,13 +234,14 @@ Here is the output of 1 GB of memory bandwidth test.
 
 The Orange Pi 5 MAX offers significant improvements over its predecessor and strong competition to the Raspberry Pi 5. With built-in support for PCIe Gen 3, faster NVMe speeds, and excellent multi-core performance, it’s an excellent option for those looking to build home servers, NAS devices, or home automation systems.
 
-If you're interested in purchasing the Orange Pi 5 MAX, you can find it on [AliExpress](https://s.click.aliexpress.com/e/_De07TWt) or [Amazon](https://amzn.to/4gAEOw4). I’ll be making another video soon to demonstrate its AI capabilities, including the 6 TOPs NPU.
+If you're interested in purchasing the Orange Pi 5 MAX, you can find it on [AliExpress](https://s.click.aliexpress.com/e/_De07TWt), [Amazon (Worldwide)](https://link.amazon/B08NiriSH) or [Amazon (Germany)](https://amzn.to/4gAEOw4). I’ll be making another video soon to demonstrate its AI capabilities, including the 6 TOPs NPU.
 
 [![orange-pi-5-max-case](/static/images/components/orange-pi-5-max-case.webp)](https://s.click.aliexpress.com/e/_DmIKkdF)
 <AffiliateLinks 
   title="Acrylic Case" 
   links={[
-    { store: "Amazon", url: "https://amzn.to/4doQTkZ" },
+    { store: "Amazon (Worldwide)", url: "https://link.amazon/B00KtoCeG" },
+    { store: "Amazon (Germany)", url: "https://link.amazon/B06E5TrE8" },
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_DmIKkdF" }
   ]}
 />

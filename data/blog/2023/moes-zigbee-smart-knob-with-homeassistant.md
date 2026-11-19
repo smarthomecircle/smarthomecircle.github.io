@@ -38,7 +38,8 @@ In case you have not set it up, you can look at it [here](https://smarthomecircl
     Links to buy these.  
 [![Moes Zigbee Smart Knob](/static/images/2023/moes-zigbee-smart-knob/moes-smart-knob.webp)](https://s.click.aliexpress.com/e/_DkdrcSv)
         -   [**AliExpress - Moes Zigbee Smart Knob**](https://s.click.aliexpress.com/e/_DkdrcSv)
-        -   [**Amazon - Moes Zigbee Smart Knob**](https://amzn.to/47Nvn7S)      
+        -   [**Amazon (Worldwide) - Moes Zigbee Smart Knob**](https://link.amazon/B0iiWyGYN)
+        -   [**Amazon (Germany) - Moes Zigbee Smart Knob**](https://link.amazon/B0hM5Pkbn)      
     
 
 

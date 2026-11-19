@@ -35,7 +35,8 @@ In this article, we will look at how I created my voice Assistant with On-Device
   title="" 
   links={[
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_DFopt57" },
-    { store: "Amazon", url: "https://amzn.to/3xnA8ax" }
+    { store: "Amazon (Worldwide)", url: "https://amzn.to/3xnA8ax" },
+    { store: "Amazon (Germany)", url: "https://link.amazon/B08NVI4zu" }
   ]}
 />
 
@@ -49,7 +50,8 @@ Guide for ordering ESP32 S3 N8R2 or N16R8 Board is [here](https://docs.espressif
   title="" 
   links={[
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_Dmn2PyR" },
-    { store: "Amazon", url: "https://amzn.to/3GdxO7o" }
+    { store: "Amazon (Worldwide)", url: "https://link.amazon/B0bJhwlXn" },
+    { store: "Amazon (Germany)", url: "https://link.amazon/B0cNRViPr" }
   ]}
 />
         <br/>
@@ -61,7 +63,8 @@ Guide for ordering ESP32 S3 N8R2 or N16R8 Board is [here](https://docs.espressif
   title="" 
   links={[
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_DdyIFTH" },
-    { store: "Amazon", url: "https://amzn.to/46wKTmW" }
+    { store: "Amazon (Worldwide)", url: "https://link.amazon/B08DZVT8f" },
+    { store: "Amazon (Germany)", url: "https://link.amazon/B0f3Pv2Wf" }
   ]}
 />      
         <br/>
@@ -73,7 +76,8 @@ Guide for ordering ESP32 S3 N8R2 or N16R8 Board is [here](https://docs.espressif
   title="" 
   links={[
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_DBDIScT" },
-    { store: "Amazon", url: "https://amzn.to/49BbAJR" }
+    { store: "Amazon (Worldwide)", url: "https://link.amazon/B04n7eTqE" },
+    { store: "Amazon (Germany)", url: "https://link.amazon/B0ba5I6SU" }
   ]}
 />      
 
@@ -86,7 +90,8 @@ Guide for ordering ESP32 S3 N8R2 or N16R8 Board is [here](https://docs.espressif
   title="" 
   links={[
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_DDtD9SP" },
-    { store: "Amazon", url: "https://amzn.to/3yqR7t7" }
+    { store: "Amazon (Worldwide)", url: "https://link.amazon/B0b4PS063" },
+    { store: "Amazon (Germany)", url: "https://link.amazon/B01OGbPkk" }
   ]}
 />      
 

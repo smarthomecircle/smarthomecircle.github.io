@@ -26,11 +26,11 @@ affiliateLinks:
   links: 
     - label: "Official Site"
       url: "https://bit.ly/4t9vZij"
-    - label: "Amazon DE"
+    - label: "Amazon (Germany)"
       url: "https://amzn.to/4bVWEb8"
-    - label: "Amazon US"
+    - label: "Amazon (Worldwide)"
       url: "https://amzn.to/4s373YA"
-    - label: "Amazon UK"
+    - label: "Amazon (UK)"
       url: "https://amzn.to/4bUYEAt"
 
 includeAsSBC:

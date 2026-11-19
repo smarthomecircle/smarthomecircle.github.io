@@ -35,7 +35,8 @@ In this article, we will look at how we can set up an ESP32 S3 with on-device Wa
   title="" 
   links={[
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_DFopt57" },
-    { store: "Amazon", url: "https://amzn.to/3xnA8ax" }
+    { store: "Amazon (Worldwide)", url: "https://amzn.to/3xnA8ax" },
+    { store: "Amazon (Germany)", url: "https://link.amazon/B08NVI4zu" }
   ]}
 />
 
@@ -49,7 +50,8 @@ Guide for ordering ESP32 N8R2 or N16R8 Board is [here](https://docs.espressif.co
   title="" 
   links={[
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_Dmn2PyR" },
-    { store: "Amazon", url: "https://amzn.to/3GdxO7o" }
+    { store: "Amazon (Worldwide)", url: "https://link.amazon/B0bJhwlXn" },
+    { store: "Amazon (Germany)", url: "https://link.amazon/B0cNRViPr" }
   ]}
 />
         <br/>
@@ -61,7 +63,8 @@ Guide for ordering ESP32 N8R2 or N16R8 Board is [here](https://docs.espressif.co
   title="" 
   links={[
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_DdyIFTH" },
-    { store: "Amazon", url: "https://amzn.to/46wKTmW" }
+    { store: "Amazon (Worldwide)", url: "https://link.amazon/B08DZVT8f" },
+    { store: "Amazon (Germany)", url: "https://link.amazon/B0f3Pv2Wf" }
   ]}
 />      
         <br/>
@@ -73,7 +76,8 @@ Guide for ordering ESP32 N8R2 or N16R8 Board is [here](https://docs.espressif.co
   title="" 
   links={[
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_DBDIScT" },
-    { store: "Amazon", url: "https://amzn.to/49BbAJR" }
+    { store: "Amazon (Worldwide)", url: "https://link.amazon/B04n7eTqE" },
+    { store: "Amazon (Germany)", url: "https://link.amazon/B0ba5I6SU" }
   ]}
 />      
      

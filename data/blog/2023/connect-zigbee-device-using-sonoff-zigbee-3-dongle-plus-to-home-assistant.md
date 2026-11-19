@@ -30,7 +30,8 @@ You can check [this](https://smarthomecircle.com/connect-wifi-on-home-assistant-
 
 You can buy these from these links:
 
--   [**Sonoff Zigbee 3.0 USB Dongle Plus**](https://amzn.to/456Yzp1)
+-   [**Sonoff Zigbee 3.0 USB Dongle Plus - Amazon (Worldwide)**](https://amzn.to/456Yzp1)
+-   [**Sonoff Zigbee 3.0 USB Dongle Plus - Amazon (Germany)**](https://link.amazon/B0a5cK4sO)
 [![Sonoff Zigbee 3.0 USB Dongle Plus](/static/images/2023/sonoff-zigbee-3-dongle-home-assistant/sonoff-zigbee-3-dongle-plus-image.webp)](https://amzn.to/456Yzp1)
 
 -   [**Zigbee Plug**](https://s.click.aliexpress.com/e/_DchhTXp)

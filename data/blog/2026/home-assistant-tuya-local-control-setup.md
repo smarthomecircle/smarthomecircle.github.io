@@ -27,11 +27,11 @@ affiliateLinks:
   links: 
     - label: "AliExpress"
       url: "https://s.click.aliexpress.com/e/_c4SlJNBl"
-    - label: "Amazon US"
+    - label: "Amazon (Worldwide)"
       url: "https://amzn.to/4d0AK8D"
-    - label: "Amazon EU"
+    - label: "Amazon (Germany)"
       url: "https://amzn.to/433hX6A"
-    - label: "Amazon UK"
+    - label: "Amazon (UK)"
       url: "https://amzn.to/4fcY5Fq"
 
 
