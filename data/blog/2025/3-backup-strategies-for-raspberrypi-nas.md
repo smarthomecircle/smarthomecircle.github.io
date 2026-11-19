@@ -33,27 +33,27 @@ Before diving into the strategies, I made some significant hardware upgrades:
 
 -   **Added a 120GB SSD** for the OS, replacing the SD card on the Pi 5.
     
-    | ![Alt text](/static/images/2025/backup-strategies/ssd.jpg) | - Amazon EU : https://amzn.to/3VU6T8Q <br/>- Amazon US : https://amzn.to/4gKmeRC |
+    | ![Alt text](/static/images/2025/backup-strategies/ssd.jpg) | - Amazon (Germany) : https://amzn.to/3VU6T8Q <br/>- Amazon (Worldwide) : https://amzn.to/4gKmeRC |
     |-----------------------------|---------------------------------------------------------|
     
 -   **Installed a 4TB HDD** as secondary storage for backups.
     
-    | ![HDD Drives](/static/images/2025/backup-strategies/hdd.jpg) | - Amazon EU : https://amzn.to/3ZN5To0 <br/>- Amazon US : https://amzn.to/3ZXRqFQ |
+    | ![HDD Drives](/static/images/2025/backup-strategies/hdd.jpg) | - Amazon (Germany) : https://amzn.to/3ZN5To0 <br/>- Amazon (Worldwide) : https://amzn.to/3ZXRqFQ |
     |-----------------------------|---------------------------------------------------------|
     
 -   Organized the components into a compact and efficient rack setup using an Acrylic HDD Mount rack.
 
-    | ![Acrylic Rack](/static/images/2025/backup-strategies/case.jpg) | - Amazon EU: https://amzn.to/3BuOMPY <br/>- Amazon US :  https://amzn.to/4iFN3rF  <br/>- AliExpress : https://s.click.aliexpress.com/e/_olEubxz 
+    | ![Acrylic Rack](/static/images/2025/backup-strategies/case.jpg) | - Amazon (Germany): https://amzn.to/3BuOMPY <br/>- Amazon (Worldwide) :  https://amzn.to/4iFN3rF  <br/>- AliExpress : https://s.click.aliexpress.com/e/_olEubxz 
     |-----------------------------|---------------------------------------------------------|
 
 -   USB to SATA connector
 
-    | ![Acrylic Rack](/static/images/2025/backup-strategies/usb-sata.jpg) | - Amazon EU: https://amzn.to/41ZiW8y <br/>- Amazon US :  https://amzn.to/3VS6uDJ  <br/>- AliExpress : https://s.click.aliexpress.com/e/_oFQ4SfZ
+    | ![Acrylic Rack](/static/images/2025/backup-strategies/usb-sata.jpg) | - Amazon (Germany): https://amzn.to/41ZiW8y <br/>- Amazon (Worldwide) :  https://amzn.to/3VS6uDJ  <br/>- AliExpress : https://s.click.aliexpress.com/e/_oFQ4SfZ
     |-----------------------------|---------------------------------------------------------|
 
 - eSATA cable for 3.5 inch HDD with 12v pins.
 
-    | ![Acrylic Rack](/static/images/2025/backup-strategies/esata.jpg) | - Amazon EU: https://amzn.to/3Dsq2Z5 <br/>- Amazon US :  https://amzn.to/41RZWsz  <br/>- AliExpress : https://s.click.aliexpress.com/e/_ok7mfCB
+    | ![Acrylic Rack](/static/images/2025/backup-strategies/esata.jpg) | - Amazon (Germany): https://amzn.to/3Dsq2Z5 <br/>- Amazon (Worldwide) :  https://amzn.to/41RZWsz  <br/>- AliExpress : https://s.click.aliexpress.com/e/_ok7mfCB
     |-----------------------------|---------------------------------------------------------|
 
 ## Backup Strategy 1: NAS OS Backup To The NAS

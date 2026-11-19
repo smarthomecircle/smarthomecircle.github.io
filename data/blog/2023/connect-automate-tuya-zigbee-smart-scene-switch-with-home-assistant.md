@@ -30,7 +30,8 @@ This article will explore how we can connect and automate the Tuya Zigbee 4 Butt
 
 [![Tuya — 4 Button Smart Scene Switch](/static/images/2023/tuya-smart-scene-switch/Tuya-ZigBee-Smart-Switch.webp)](https://s.click.aliexpress.com/e/_DmPgWRR)
         -   [**Buy At AliExpress**](https://s.click.aliexpress.com/e/_DmPgWRR)
-        -   [**Buy At Amazon**](https://amzn.to/47Nvn7S)      
+        -   [**Buy At Amazon (Worldwide)**](https://link.amazon/B0iiWyGYN)
+        -   [**Buy At Amazon (Germany)**](https://link.amazon/B0hM5Pkbn)      
     
 
 ## Connecting Zigbee Smart Scene Switch To Home Assistant Via ZHA

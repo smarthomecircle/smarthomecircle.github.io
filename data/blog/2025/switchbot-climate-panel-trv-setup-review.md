@@ -31,7 +31,8 @@ suggestedArticles:
 <AffiliateLinks 
   title="Buy SwitchBot Climate Panel + Thermostat Radiator Valve" 
   links={[
-    { store: "Amazon", url: "https://amzn.to/43cbgj7" },
+    { store: "Amazon (Worldwide)", url: "https://link.amazon/B05Cty3eg" },
+    { store: "Amazon (Germany)", url: "https://link.amazon/B08srR3kG" },
     { store: "SwitchBot", url: "https://www.switch-bot.com/products/switchbot-smart-radiator-thermostat-panel-combo" }
   ]}
 />
@@ -157,7 +158,8 @@ After that, the TRV showed up in **Home Assistant** and **Google Home** and I co
 <AffiliateLinks 
   title="Buy SwitchBot Climate Panel + Thermostat Radiator Valve" 
   links={[
-    { store: "Amazon", url: "https://amzn.to/43cbgj7" },
+    { store: "Amazon (Worldwide)", url: "https://link.amazon/B05Cty3eg" },
+    { store: "Amazon (Germany)", url: "https://link.amazon/B08srR3kG" },
     { store: "SwitchBot", url: "https://www.switch-bot.com/products/switchbot-smart-radiator-thermostat-panel-combo" }
   ]}
 />

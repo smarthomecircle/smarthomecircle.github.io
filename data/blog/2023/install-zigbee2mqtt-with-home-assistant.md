@@ -27,14 +27,16 @@ In this article, we will look at how you can set up a Zigbee2Mqtt with Home Assi
 3.  A Zigbee Adapter Coordinator  
 -   [**Sonoff Zigbee 3.0 USB Dongle Plus**](https://amzn.to/456Yzp1)
 [![Sonoff Zigbee 3.0 USB Dongle Plus](/static/images/2023/sonoff-zigbee-3-dongle-home-assistant/sonoff-zigbee-3-dongle-plus-image.webp)](https://amzn.to/456Yzp1)
-- [**Amazon**](https://amzn.to/456Yzp1)
+- [**Amazon (Worldwide)**](https://amzn.to/456Yzp1)
+- [**Amazon (Germany)**](https://link.amazon/B0a5cK4sO)
 - [**Aliexpress**](https://s.click.aliexpress.com/e/_DemtGJ9)
     
 4.  A Zigbee device.  
     In our case, we will use a Zigbee plug.
 -   [**Zigbee Plug**](https://s.click.aliexpress.com/e/_DchhTXp)
 [![Zigbee Plug](/static/images/2023/sonoff-zigbee-3-dongle-home-assistant/zigbee-plug.webp)](https://s.click.aliexpress.com/e/_DchhTXp)
-- [**Amazon**](https://amzn.to/3ZFioSq)
+- [**Amazon (Worldwide)**](https://link.amazon/B011p9Np0)
+- [**Amazon (Germany)**](https://link.amazon/B078FRFT2)
 - [**Aliexpress**](https://s.click.aliexpress.com/e/_DchhTXp)
 
 There are two ways to set up Zigbee2Mqtt.

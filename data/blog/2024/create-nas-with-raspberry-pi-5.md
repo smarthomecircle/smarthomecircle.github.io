@@ -34,7 +34,8 @@ We will be making use of OpenMediaVault to manage and serve our shared storage u
   title="" 
   links={[
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_Dk7NN6t" },
-    { store: "Amazon", url: "https://amzn.to/3SuYRSo" }
+    { store: "Amazon (Worldwide)", url: "https://link.amazon/B02DT3DB7" },
+    { store: "Amazon (Germany)", url: "https://link.amazon/B0eyvOLFg" }
   ]}
 />    
 2.  **Micro SD Card**
@@ -45,7 +46,8 @@ We will be making use of OpenMediaVault to manage and serve our shared storage u
   title="" 
   links={[
     { store: "AliExpress", url: "https://s.click.aliexpress.com/e/_DBSUjn3" },
-    { store: "Amazon", url: "https://amzn.to/3OdnUqQ" }
+    { store: "Amazon (Worldwide)", url: "https://amzn.to/3OdnUqQ" },
+    { store: "Amazon (Germany)", url: "https://link.amazon/B07d7KgcA" }
   ]}
 />    
 3.  **External Hard Drive**
@@ -55,7 +57,8 @@ We will be making use of OpenMediaVault to manage and serve our shared storage u
 <AffiliateLinks 
   title="" 
   links={[
-    { store: "Amazon", url: "https://amzn.to/3HqIaBz" }
+    { store: "Amazon (Worldwide)", url: "https://amzn.to/3HqIaBz" },
+    { store: "Amazon (Germany)", url: "https://link.amazon/B0g081kcT" }
   ]}
 />      
 

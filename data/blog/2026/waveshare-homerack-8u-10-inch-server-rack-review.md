@@ -23,9 +23,9 @@ suggestedArticles:
 affiliateLinks:
   title: Buy Waveshare HomeRack 8U 
   links:
-    - label: "Amazon EU"
-      url: "https://link.amazon/B05gvaoK1"
-    - label: "Amazon US"
+    - label: "Amazon (Germany)"
+      url: "https://link.amazon/B07zkXIuj"
+    - label: "Amazon (Worldwide)"
       url: "https://amzn.to/4zOCpYi"
     - label: "AliExpress"
       url: "https://s.click.aliexpress.com/e/_c3VLqecX"

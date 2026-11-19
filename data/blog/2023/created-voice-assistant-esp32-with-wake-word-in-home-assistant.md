@@ -32,32 +32,37 @@ In this article, we will look at how I created my voice assistant device to send
     Links to buy this:
 [![ESP32 Wroom](/static/images/2023/wled-with-home-assistant/esp32-wroom.webp)](https://s.click.aliexpress.com/e/_DB4HfST)
         -   [**AliExpress - ESP32 Dev Board**](https://s.click.aliexpress.com/e/_DB4HfST)
-        -   [**Amazon - ESP32 Dev Board**](https://amzn.to/3QPvyrR)
+        -   [**Amazon (Worldwide) - ESP32 Dev Board**](https://link.amazon/B0iuNBjtN)
+        -   [**Amazon (Germany) - ESP32 Dev Board**](https://link.amazon/B0hM6lFSM)
       <br/>
 4. **WS2812B LED Strip**  
     Links to buy this:
 [![WS2812B LED Strip](/static/images/2023/wled-with-home-assistant/led-strip-aliexpress.webp)](https://s.click.aliexpress.com/e/_DEYtbQb)
         -   [**AliExpress - WS2812B LED**](https://s.click.aliexpress.com/e/_DEYtbQb)
-        -   [**Amazon - WS2812B LED**](https://amzn.to/47nsU3F)
+        -   [**Amazon (Worldwide) - WS2812B LED**](https://link.amazon/B0iSX8jMX)
+        -   [**Amazon (Germany) - WS2812B LED**](https://link.amazon/B0j77pe1H)
       <br/>
 5.  **INMP441 Microphone**  
     Links to buy this:
         
 [![INMP441 MICROPHONE](/static/images/2023/esp32-voice-assistant/inmp441-microphone.webp)](https://s.click.aliexpress.com/e/_Dmn2PyR)
         -   [**AliExpress - INMP441 Microphone**](https://s.click.aliexpress.com/e/_Dmn2PyR)
-        -   [**Amazon - INMP441 Microphone**](https://amzn.to/47uScws)
+        -   [**Amazon (Worldwide) - INMP441 Microphone**](https://link.amazon/B0bJhwlXn)
+        -   [**Amazon (Germany) - INMP441 Microphone**](https://link.amazon/B0cNRViPr)
         <br/>
 4. **MAX98357A Audio Amplifier**  
     Links to buy this:
 [![MAX98357A](/static/images/2023/esp32-voice-assistant/MAX98357A.webp)](https://s.click.aliexpress.com/e/_DdyIFTH)
         -   [**AliExpress - MAX98357A**](https://s.click.aliexpress.com/e/_DdyIFTH)
-        -   [**Amazon - MAX98357A**](https://amzn.to/47vEMjH)      
+        -   [**Amazon (Worldwide) - MAX98357A**](https://link.amazon/B08DZVT8f)
+        -   [**Amazon (Germany) - MAX98357A**](https://link.amazon/B0f3Pv2Wf)      
         <br/>
 5.  **3-watt Speakers** (Optional: Only required to listen to the pipeline output)  
     Links to buy these.  
 [![3 watt speaker](/static/images/2023/esp32-voice-assistant/3-watt-speakers.webp)](https://s.click.aliexpress.com/e/_DBDIScT)
         -   [**AliExpress - 3-watt Speakers**](https://s.click.aliexpress.com/e/_DBDIScT)
-        -   [**Amazon - 3-watt Speakers**](https://amzn.to/49BbAJR)      
+        -   [**Amazon (Worldwide) - 3-watt Speakers**](https://link.amazon/B04n7eTqE)
+        -   [**Amazon (Germany) - 3-watt Speakers**](https://link.amazon/B0ba5I6SU)      
     
 
 To set up voice assistant, we would need three components to create the voice assist pipeline in Home Assistant.

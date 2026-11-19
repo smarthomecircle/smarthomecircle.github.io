@@ -23,9 +23,9 @@ suggestedArticles:
 affiliateLinks:
   title: Buy Elecrow ESP32 P4 Display
   links:
-    - label: "Amazon EU"
+    - label: "Amazon (Germany)"
       url: "https://link.amazon/B02dAk2Wd"
-    - label: "Amazon US"
+    - label: "Amazon (Worldwide)"
       url: "https://link.amazon/B04pnvU3h"
     - label: "AliExpress"
       url: "https://s.click.aliexpress.com/e/_c35xo2QH"
